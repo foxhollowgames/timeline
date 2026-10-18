@@ -28,7 +28,9 @@ const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&':
 
 async function start() {
   const initial = readHash(location.hash);
-  const hidden = new Set(initial.hide ?? []);
+  // The Book of Mormon pill shows the panel, so 'bom' is hidden exactly while the panel is closed.
+  const hidden = new Set((initial.hide ?? []).filter(v => v !== 'bom'));
+  if (!initial.bom) hidden.add('bom');
   let data = null, stops = [], card = null, pins = null, selected = null;
   let bom = null, bomPins = null, bomLoading = null, layoutInfo = null;
 
@@ -73,14 +75,17 @@ async function start() {
     return bomLoading;
   }
   function setBomOpen(open) {
-    if (open === split.open) return;
-    split.setOpen(open);
-    $('bom-toggle').setAttribute('aria-pressed', String(open));
-    if (open) ensureBom();
+    if (open) hidden.delete('bom');
+    else hidden.add('bom');
+    if (open !== split.open) {
+      split.setOpen(open);
+      $('bom-toggle').setAttribute('aria-pressed', String(open));
+      if (open) ensureBom();
+    }
+    if (!open && selected?.volume === 'bom') card?.close();
     applyFilters();
   }
   $('bom-toggle').addEventListener('click', () => setBomOpen(!split.open));
-  $('bom-chip').addEventListener('click', () => setBomOpen(true));
   $('bom-close').addEventListener('click', () => { setBomOpen(false); $('bom-toggle').focus(); });
 
   // ---------- Strip ----------
@@ -128,8 +133,6 @@ async function start() {
     if ([...onGlobe, ...(split.open ? onMap : [])].some(e => e.start == null)) parts.push('Years are not given for some.');
     $('overview-count').textContent = parts.length ? parts.join(' ') : 'No scripture events in this window.';
 
-    // The chip offers the panel when the window has Book of Mormon map events (DESIGN.md Q32).
-    $('bom-chip').hidden = split.open || hidden.has('bom') || !onMap.length;
     updatePanelNotes(onMap, window);
 
     const previous = previousStop(stops, year), next = nextStop(stops, year);
@@ -173,7 +176,7 @@ async function start() {
   function saveAddress() {
     clearTimeout(saveTimer);
     saveTimer = setTimeout(() => {
-      const hash = writeHash({ year: scrubber.year, event: selected?.id, hide: [...hidden], view: scrubber.view, bom: split.open });
+      const hash = writeHash({ year: scrubber.year, event: selected?.id, hide: [...hidden].filter(v => v !== 'bom'), view: scrubber.view, bom: split.open });
       if (hash !== location.hash) history.replaceState(null, '', hash || location.pathname + location.search);
     }, 250);
   }
@@ -263,6 +266,7 @@ async function start() {
   for (const button of $('legend').querySelectorAll('[data-volume]')) {
     button.addEventListener('click', () => {
       const v = button.dataset.volume;
+      if (v === 'bom') { setBomOpen(hidden.has('bom')); return; }
       if (hidden.has(v)) hidden.delete(v);
       else hidden.add(v);
       if (selected && hidden.has(selected.volume)) card.close();
@@ -345,7 +349,7 @@ async function start() {
 
   addEventListener('hashchange', () => {
     const next = readHash(location.hash);
-    hidden.clear(); for (const v of next.hide ?? []) hidden.add(v);
+    hidden.clear(); for (const v of next.hide ?? []) if (v !== 'bom') hidden.add(v);
     if (next.view) scrubber.setView(next.view);
     if (next.year != null) scrubber.setYear(next.year);
     setBomOpen(Boolean(next.bom));
