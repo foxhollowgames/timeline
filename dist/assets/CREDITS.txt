@@ -1,0 +1,2 @@
+Earth imagery: NASA Earth Observatory, Blue Marble: Next Generation, July 2004. https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/
+3D graphics: three.js (MIT license). See vendor/THREE-LICENSE.txt.
