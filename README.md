@@ -55,7 +55,7 @@ The Book of Mormon map is relative. It is not placed on real land. One unit is o
 
 The strip is not drawn to one scale. It gives more space to 2000 BCE–100 CE and to 1800–2026. The striped spans, 4000–2000 BCE and 100–1800 CE, are compressed.
 
-The bars show how many events fall at each point. The gold band around the selected year is the active window. The window is about 2% of the visible strip, so it narrows when you zoom in.
+The bars show how many events fall at each point. The gold band around the selected year is the active window. The window is about 2% of the visible strip, so it narrows when you zoom in. It never reaches more than 10 years either side of the selected year.
 
 The block marked **Years not given** holds Genesis 1–11 and Adam-ondi-Ahman. The Church chronology gives their order, not their years. All of them count as active while the selected year is inside the block.
 
@@ -117,7 +117,7 @@ To take in a fix from a Wayfinder repository, change its commit in `scripts/sour
 | `dist/scrubber.js` | The timeline strip |
 | `dist/time-scale.js` | Year math: the warped scale, zoom, ticks, and BCE/CE dates |
 | `dist/events.js` | Which events fall in the window, and the event-button stops |
-| `dist/pins.js` | Pins, groups, the trail, and place markers on the globe |
+| `dist/pins.js` | Pins, groups, and place markers on the globe |
 | `dist/card.js` | The event card and the event lists |
 | `dist/search.js` | The search box |
 | `dist/volumes.js` | Each volume's hue and shape |
