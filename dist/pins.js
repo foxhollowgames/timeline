@@ -1,7 +1,7 @@
 // Pins on the globe or the Book of Mormon map. Each pin is a button drawn over the map, as in the conference globe.
 // A view supplies project(key, place) -> {x, y} or null, and onFrame(callback) for redraws.
 // Events at the same place, or within one pin width on screen, join one group with a count.
-// Active events are full strength. Recent past events show as a faded trail (DESIGN.md Q6).
+// Only events in the active window get pins (DESIGN.md Q6).
 
 import { shapeSVG, VOLUMES, VOLUME_ORDER } from './volumes.js';
 import { formatYear } from './time-scale.js';
@@ -53,9 +53,9 @@ export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
       g.items.push(...place.items);
     });
     return [...groups.values()].map(g => {
-      g.items.sort((a, b) => (a.state === b.state ? 0 : a.state === 'active' ? -1 : 1) || VOLUME_ORDER.indexOf(a.event.volume) - VOLUME_ORDER.indexOf(b.event.volume) || (a.event.start ?? -1e9) - (b.event.start ?? -1e9));
+      g.items.sort((a, b) => VOLUME_ORDER.indexOf(a.event.volume) - VOLUME_ORDER.indexOf(b.event.volume) || (a.event.start ?? -1e9) - (b.event.start ?? -1e9));
       const anchor = g.places.reduce((best, p) => (p.items.length > best.items.length ? p : best));
-      return { key: g.items.map(i => i.event.id).sort().join('|'), x: anchor.x, y: anchor.y, items: g.items, active: g.items.some(i => i.state === 'active') };
+      return { key: g.items.map(i => i.event.id).sort().join('|'), x: anchor.x, y: anchor.y, items: g.items };
     });
   }
 
@@ -97,7 +97,6 @@ export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
       }
       button.group = g;
       button.setAttribute('aria-label', label(g));
-      button.classList.toggle('trail', !g.active);
       button.classList.toggle('undated', g.items.every(i => i.event.start == null));
       button.classList.toggle('secondary', g.items.every(i => i.event.volume === 'history'));
       button.classList.toggle('selected', Boolean(selectedId) && g.items.some(i => i.event.id === selectedId));
@@ -118,7 +117,7 @@ export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
   });
 
   return {
-    // items: [{event, placeKey, place, state: 'active' | 'trail'}]
+    // items: [{event, placeKey, place}]
     setItems(next) { items = next; view.request?.(); },
     setSelected(id) { selectedId = id; view.request?.(); },
     // Small labeled dots for the selected event's other places.

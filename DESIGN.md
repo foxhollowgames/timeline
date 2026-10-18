@@ -21,10 +21,8 @@ The decisions below were settled in a design interview on 2026-10-18. The questi
 - **Span (Q3).** From 4000 BCE (the Fall of Adam in the Church Bible Chronology) to 2026 CE.
 - **Scale (Q3).** The scale is non-linear, and users can zoom with the wheel or a pinch on the strip. The default view compresses 4000–2000 BCE and 100–1800 CE. It expands 2000 BCE–100 CE and 1800–2026 CE.
 - **Notation (Q14).** BCE and CE. BCE years are negative integers in data, as in the Bible repository.
-- **Active window (Q6).** The scrubber selects one year. An event is active when its date or range overlaps a window around that year. The window is about 2% of the visible timeline width, so it narrows as the user zooms in.
-  - Active pins show at full strength.
-  - Pins just behind the scrubber fade as a trail.
-  - Future pins are hidden.
+- **Active window (Q6).** The scrubber selects one year. An event is active when its date or range overlaps a window around that year. The window is about 2% of the visible timeline width, so it narrows as the user zooms in, but it never reaches more than 10 years either side of the selected year.
+  - Only active events get pins. Past and future pins are hidden.
 - **Navigation (Q6, Q12).** There is no play button. Users drag the scrubber or type a year, as in the conference globe. Arrow keys step through time. The previous and next event buttons jump to the nearest scripture event.
 - **Strip contents (Q33).**
   - A density bar shows the number of events in each period.
@@ -179,7 +177,6 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - Each shape has a 2px ring in the surface color.
 - **History pins (Q5).** Smaller, hollow, and grey. They are secondary to scripture pins. They arrive in milestone 5 and will need a fifth shape.
 - **Groups.** Events at one place, or within one pin width on screen, form one group. A group shows the lead volume's shape and a count. A mixed group adds a small second shape. Selecting a group opens a list.
-- **Trail (Q6).** Events that ended in the three window widths before the window show as faded, smaller pins.
 - **Wide dates.** An event whose range spans more than 300 years, which today means the 48 placed Psalms, gets no pin. The count line names them, and search and place lists still find them.
 - **Book of Mormon map events** are counted but not pinned on the globe. They wait for the panel in milestone 4.
 - **Selection.** The selected event's group gets a gold ring. Its other places show as small gold dots, labeled where labels do not overlap. Its routes are drawn as gold arcs.

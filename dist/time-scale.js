@@ -94,12 +94,14 @@ export function revealInView(view, u, margin = 0.08) {
   return view;
 }
 
-// The active window is about 2% of the visible strip, centred on the selected year.
+// The active window is about 2% of the visible strip, centred on the selected year,
+// but never reaches more than 10 years either side of it.
 export const WINDOW_SHARE = 0.02;
+export const MAX_WINDOW_HALF_YEARS = 10;
 export function activeWindow(year, view) {
-  const u = yearToU(year), half = ((view.u1 - view.u0) * WINDOW_SHARE) / 2;
-  const startAstro = Math.floor(uToAstro(Math.max(0, u - half)));
-  const endAstro = Math.ceil(uToAstro(Math.min(1, u + half)));
+  const u = yearToU(year), half = ((view.u1 - view.u0) * WINDOW_SHARE) / 2, astro = toAstro(year);
+  const startAstro = Math.max(Math.floor(uToAstro(Math.max(0, u - half))), astro - MAX_WINDOW_HALF_YEARS);
+  const endAstro = Math.min(Math.ceil(uToAstro(Math.min(1, u + half))), astro + MAX_WINDOW_HALF_YEARS);
   return { start: fromAstro(Math.min(startAstro, toAstro(year))), end: fromAstro(Math.max(endAstro, toAstro(year))) };
 }
 
