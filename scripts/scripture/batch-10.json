@@ -1,0 +1,164 @@
+{
+  "about": "Scripture events, batch 10: Lehi's family, the small plates, and the Jaredites (DESIGN.md section 3). Same fields as batch-1.json. 1 Nephi 1–17 events go on the globe. Later events go on the Book of Mormon map. Ether's events join the Jaredite band.",
+  "batch": 10,
+  "era": "Lehi's journey, the small plates, and the Jaredites",
+  "covers": [
+    { "book": "1-nephi", "chapters": [1, 22] },
+    { "book": "2-nephi", "chapters": [1, 33] },
+    { "book": "jacob", "chapters": [1, 7] },
+    { "book": "enos", "chapters": [1, 1] },
+    { "book": "jarom", "chapters": [1, 1] },
+    { "book": "omni", "chapters": [1, 1] },
+    { "book": "words-of-mormon", "chapters": [1, 1] },
+    { "book": "ether", "chapters": [1, 15] }
+  ],
+  "events": [
+    {
+      "id": "lehi-warns-jerusalem",
+      "volume": "bom",
+      "title": "Lehi sees a vision and warns Jerusalem",
+      "chapters": ["1-nephi-1"],
+      "verse": "1-nephi-1:20",
+      "summary": "Nephi, a son of Lehi, begins his record in Jerusalem. It is the first year of King Zedekiah. Lehi prays for his people and sees God in a vision. He reads a heavenly book about Jerusalem's destruction. He warns the people and speaks of a coming Messiah. The people mock him and seek to kill him.",
+      "alsoRead": [{ "ref": "2 Kings 24:17", "note": "Babylon makes Zedekiah king in Jerusalem." }]
+    },
+    {
+      "id": "lehi-leaves-jerusalem",
+      "volume": "bom",
+      "title": "Lehi's family leaves Jerusalem",
+      "chapters": ["1-nephi-2"],
+      "verse": "1-nephi-2:20",
+      "summary": "The Lord tells Lehi in a dream to leave Jerusalem. Lehi takes his family into the wilderness near the Red Sea. They camp in a valley he names Lemuel. Laman and Lemuel, Nephi's older brothers, complain. Nephi prays, and the Lord softens his heart. The Lord promises Nephi a land if he keeps the commandments."
+    },
+    {
+      "id": "nephi-gets-the-brass-plates",
+      "volume": "bom",
+      "title": "Nephi and his brothers get the brass plates",
+      "chapters": ["1-nephi-3", "1-nephi-4", "1-nephi-5"],
+      "verse": "1-nephi-3:7",
+      "summary": "Lehi sends his sons back to Jerusalem for the brass plates. Laban keeps this record. Nephi says the Lord prepares a way for what he commands. Laban refuses them and takes their property. Laman and Lemuel beat their younger brothers, and an angel stops them. Nephi goes into the city at night and finds Laban drunk. The Spirit tells him to kill Laban, and he takes the plates. Laban's servant Zoram joins the family."
+    },
+    {
+      "id": "ishmaels-family-joins",
+      "volume": "bom",
+      "title": "Ishmael's family joins the journey",
+      "chapters": ["1-nephi-7"],
+      "verse": "1-nephi-7:12",
+      "summary": "The Lord tells Lehi that his sons should take wives. The sons return to Jerusalem for the family of Ishmael. On the way back, Laman and Lemuel and some of Ishmael's family rebel. They tie Nephi up and leave him to die. Nephi prays, and the ropes come loose. Some of Ishmael's family plead for him. The families return to Lehi and give thanks."
+    },
+    {
+      "id": "why-nephi-keeps-two-records",
+      "volume": "bom",
+      "title": "Nephi explains why he keeps two records",
+      "chapters": ["1-nephi-6", "1-nephi-9"],
+      "verse": "1-nephi-6:4",
+      "summary": "Nephi says he will not give his family's full line of ancestors. He wants to persuade readers to come to the God of Abraham and be saved. He keeps two sets of plates. One holds the history of kings and wars. The other is mostly for teaching and prophecy. He says the Lord has a wise purpose for both."
+    },
+    {
+      "id": "lehis-dream",
+      "volume": "bom",
+      "title": "Lehi dreams of the tree of life",
+      "chapters": ["1-nephi-8", "1-nephi-10"],
+      "verse": "1-nephi-8:10",
+      "summary": "Lehi dreams of a tree whose fruit makes people happy. He eats it and calls his family to come. Sariah, Sam, and Nephi eat, but Laman and Lemuel will not come. People hold to an iron rod along a path through a mist of darkness. People in a great building mock those who eat. Lehi then speaks of Jerusalem's fall and the coming Messiah. He compares Israel to an olive tree whose branches are broken off."
+    },
+    {
+      "id": "nephis-vision",
+      "volume": "bom",
+      "title": "Nephi sees the tree and the Son of God",
+      "chapters": ["1-nephi-11", "1-nephi-12", "1-nephi-13", "1-nephi-14"],
+      "verse": "1-nephi-11:22",
+      "summary": "Nephi wants to see what his father saw. The Spirit shows him the tree. An angel says it is the love of God. He sees Mary and the Son of God. He sees Christ's ministry and death. He sees his descendants' wars and Christ's visit to them. He sees people cross the sea to a new land with a book. He sees two churches and the power given to God's covenant people.",
+      "alsoRead": [{ "ref": "Luke 1:31", "note": "Gabriel tells Mary she will bear a son." }]
+    },
+    {
+      "id": "nephi-answers-his-brothers",
+      "volume": "bom",
+      "title": "Nephi explains the dream to his brothers",
+      "chapters": ["1-nephi-15"],
+      "verse": "1-nephi-15:24",
+      "summary": "Nephi returns to find his brothers arguing about Lehi's words. He asks if they have asked the Lord. He explains the olive tree as Israel scattered and later gathered. They ask what the iron rod means. He says it is the word of God. The river is the filth that separates the wicked from God."
+    },
+    {
+      "id": "the-liahona",
+      "volume": "bom",
+      "title": "The Liahona guides the family through the wilderness",
+      "chapters": ["1-nephi-16"],
+      "place": "bom-old:nahom",
+      "verse": "1-nephi-16:10",
+      "summary": "Lehi's sons marry Ishmael's daughters. One morning Lehi finds a brass ball outside his tent. Its spindles point the way into the wilderness. Nephi breaks his steel bow, and the family has no food. He makes a new bow and asks his father where to hunt. The ball works as they have faith. Ishmael dies at a place called Nahom."
+    },
+    {
+      "id": "nephi-builds-a-ship",
+      "volume": "bom",
+      "title": "Nephi is told to build a ship",
+      "chapters": ["1-nephi-17"],
+      "place": "bom-old:old-bountiful",
+      "verse": "1-nephi-17:8",
+      "summary": "After eight years in the wilderness, the family reaches a coast they call Bountiful. The Lord tells Nephi to build a ship. His brothers mock him. Nephi reminds them how the Lord divided the Red Sea for Moses. They try to throw him into the sea. The Lord shocks them by his power when they touch Nephi. They help him build the ship.",
+      "alsoRead": [{ "ref": "Exodus 14:21", "note": "The Red Sea is divided before Israel." }]
+    },
+    {
+      "id": "voyage-to-the-promised-land",
+      "volume": "bom",
+      "title": "Lehi's family crosses the sea to the promised land",
+      "chapters": ["1-nephi-18"],
+      "verse": "1-nephi-18:23",
+      "summary": "The family finishes the ship and sails. Laman and Lemuel make merry and tie Nephi up. The compass stops working, and a great storm drives them back. After four days they untie Nephi. He prays, and the storm stops. They reach the promised land and plant their seeds."
+    },
+    {
+      "id": "nephites-and-lamanites-separate",
+      "volume": "bom",
+      "title": "Nephi's people separate from Laman's",
+      "chapters": ["2-nephi-5"],
+      "place": "bom:nephi",
+      "verse": "2-nephi-5:27",
+      "summary": "After Lehi dies, Laman and Lemuel seek to kill Nephi. The Lord warns Nephi to flee with those who will go with him. They settle in a land they call Nephi. They build a temple like Solomon's, but less costly. They work the land and keep the law of Moses. Nephi says they live in happiness. The people who stay with Laman are called Lamanites."
+    },
+    {
+      "id": "the-people-of-zarahemla",
+      "volume": "bom",
+      "title": "Mosiah finds the people of Zarahemla",
+      "chapters": ["omni-1"],
+      "place": "bom:zarahemla",
+      "verse": "omni-1:15",
+      "summary": "Five of Jacob's descendants keep the small plates in turn. Amaleki, the last, tells how the Lord warns Mosiah to leave the land of Nephi. Mosiah leads the faithful north and finds the city of Zarahemla. Its people left Jerusalem when Zedekiah was taken to Babylon. Their language has changed, and they have no records. Mosiah becomes king of both peoples. Amaleki gives the plates to King Benjamin.",
+      "alsoRead": [{ "ref": "2 Kings 25:7", "note": "Zedekiah is taken in chains to Babylon." }]
+    },
+    {
+      "id": "mormon-joins-the-records",
+      "volume": "bom",
+      "title": "Mormon joins the small plates to his record",
+      "chapters": ["words-of-mormon-1"],
+      "verse": "words-of-mormon-1:7",
+      "summary": "Mormon, writing centuries later, makes a shorter record from many Nephite records. He finds Nephi's small plates, which hold prophecies of Christ. He adds them to his own record for a wise purpose. He does not know all of it. He recalls King Benjamin's wars against the Lamanites. Holy prophets help Benjamin bring peace to the land."
+    },
+    {
+      "id": "the-brother-of-jared-prays",
+      "volume": "bom",
+      "title": "The brother of Jared prays at the great tower",
+      "chapters": ["ether-1"],
+      "verse": "ether-1:34",
+      "summary": "Moroni begins a short version of the Jaredite record, written by the prophet Ether. The Jaredites come from the time of the great tower. Jared asks his brother to pray that their language not be confused. The Lord spares their language and their friends' language. Then the Lord promises to lead them to a choice land. He says he will raise up a great nation from them.",
+      "alsoRead": [{ "ref": "Genesis 11:9", "note": "The LORD confuses the language of all the earth at Babel." }]
+    },
+    {
+      "id": "jaredite-kings-and-prophets",
+      "volume": "bom",
+      "title": "Jaredite kings fight, and prophets call for repentance",
+      "chapters": ["ether-7", "ether-9", "ether-10", "ether-11"],
+      "verse": "ether-9:35",
+      "summary": "Jaredite kings rise and fall as sons rebel against their fathers. Prophets warn that the people will be destroyed if they do not repent. In King Shule's day, the people repent and are blessed. Later, secret bands seek power through murder. A great famine comes, and the people humble themselves. The Lord sends rain, and the land grows fruit again. Prophets keep warning, and many reject them."
+    },
+    {
+      "id": "the-jaredites-are-destroyed",
+      "volume": "bom",
+      "title": "The Jaredites destroy themselves in war",
+      "chapters": ["ether-14", "ether-15"],
+      "place": "bom:cumorah",
+      "verse": "ether-15:2",
+      "summary": "King Coriantumr fights battle after battle against rival leaders. Shiz takes command after his brother dies. Whole cities and families are destroyed. Coriantumr sees that two million of his people have died, and he grieves. He offers peace, but Shiz refuses. The last armies gather near the hill Ramah. Coriantumr kills Shiz, and he is left alone. Ether finishes his record and hides it.",
+      "alsoRead": [{ "ref": "Omni 1:21", "note": "Coriantumr is later found by the people of Zarahemla." }]
+    }
+  ]
+}

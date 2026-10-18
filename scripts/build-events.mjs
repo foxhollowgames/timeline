@@ -447,14 +447,16 @@ function readRef(ref) {
 function chapterRefs(list) {
   const books = [];
   for (const e of list) {
+    // An Official Declaration has no chapter number, so it stands as its own reference.
+    if (typeof e.chapter !== 'number') { books.push({ name: e.ref, runs: [] }); continue; }
     const name = e.ref.replace(/ \d+$/, '');
-    let book = books.find(b => b.name === name);
+    let book = books.find(b => b.name === name && b.runs.length);
     if (!book) books.push(book = { name, runs: [] });
     const last = book.runs[book.runs.length - 1];
     if (last && e.chapter === last.to + 1) last.to = e.chapter;
     else book.runs.push({ from: e.chapter, to: e.chapter });
   }
-  return books.map(b => `${b.name} ${b.runs.map(r => `${r.from}${r.to > r.from ? `–${r.to}` : ''}`).join(', ')}`).join('; ');
+  return books.map(b => (b.runs.length ? `${b.name} ${b.runs.map(r => `${r.from}${r.to > r.from ? `–${r.to}` : ''}`).join(', ')}` : b.name)).join('; ');
 }
 
 const VOLUMES_SCRIPTURE = ['ot', 'nt', 'bom', 'dc'];
@@ -498,6 +500,8 @@ for (const file of (await readdir(scriptureDir)).filter(f => /^batch-\d+\.json$/
       };
     }
     // The pin sits at the event's place, or the lead chapter's. Other places come from all the chapters.
+    // One event lives on one map: the globe, or the Book of Mormon panel.
+    if (linked.some(e => e.map !== linked[0].map)) problems.push(`${where}: its chapters are on different maps`);
     const placeKey = item.place ?? linked[0].place;
     if (!places[placeKey]) problems.push(`${where}: place ${placeKey} not found`);
     const placeKeys = [...new Set([placeKey, ...(item.places ?? linked.flatMap(e => e.places))])];
@@ -506,9 +510,14 @@ for (const file of (await readdir(scriptureDir)).filter(f => /^batch-\d+\.json$/
     if (item.verse) {
       const [chapterId, number] = item.verse.split(':');
       const chapter = linked.find(e => e.id === chapterId);
-      const text = chapter && ['ot', 'nt'].includes(chapter.volume) ? bibleText.get(chapter.book)?.chapters[String(chapter.chapter)]?.find(v => v.verse === Number(number))?.text : undefined;
-      if (!text) problems.push(`${where}: verse ${item.verse} not found in its chapters`);
-      else verse = { ref: `${chapter.ref}:${number}`, text, translation: bibleText.get(chapter.book).translation, book: chapter.book };
+      const find = list => (Array.isArray(list) ? list.find(v => v.verse === Number(number))?.text : undefined);
+      let text, translation;
+      if (!chapter) text = undefined;
+      else if (['ot', 'nt'].includes(chapter.volume)) [text, translation] = [find(bibleText.get(chapter.book)?.chapters[String(chapter.chapter)]), bibleText.get(chapter.book).translation];
+      else if (chapter.volume === 'bom') [text, translation] = [find(verseLookup.get(chapter.id)), bomText.edition ?? bomText.translation];
+      else if (typeof chapter.chapter === 'number') [text, translation] = [find(dcVerses.get(chapter.chapter)), 'Doctrine and Covenants'];
+      if (typeof text !== 'string') problems.push(`${where}: verse ${item.verse} not found in its chapters`);
+      else verse = { ref: `${chapter.ref}:${number}`, text, translation, book: chapter.book, ...(chapter.volume === 'bom' && { chapterId: chapter.id }) };
     }
     const alsoRead = (item.alsoRead ?? []).map(({ ref, note }) => {
       const found = readRef(ref);
@@ -518,7 +527,7 @@ for (const file of (await readdir(scriptureDir)).filter(f => /^batch-\d+\.json$/
     const routes = [...new Map(linked.flatMap(e => chapterDetail(e).routes ?? []).map(r => [r.id, r])).values()];
     const record = {
       id: item.id, volume: item.volume, book: verse?.book ?? linked[0].book, chapter: null, ref: chapterRefs(linked), title: item.title,
-      map: 'globe', place: placeKey, places: placeKeys, curated: true, kind: 'event', chapters: item.chapters,
+      map: linked[0].map, place: placeKey, places: placeKeys, curated: true, kind: 'event', chapters: item.chapters,
     };
     const { book: _, ...verseRecord } = verse ?? {};
     pushEvent(record, { summary: item.summary, batch: batch.batch, ...(item.placeNote && { placeNote: item.placeNote }), ...(verse && { verse: verseRecord }), ...(alsoRead.length && { alsoRead }), ...(routes.length && { routes }) }, date);

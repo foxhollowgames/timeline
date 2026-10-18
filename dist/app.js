@@ -152,7 +152,7 @@ async function start() {
     $('bom-band-note').textContent = jaredite ? `Jaredite record: years not given. ${data.bands.jaredite.note}` : '';
     const empty = $('bom-empty');
     if (!split.open || onMap.length || hidden.has('bom')) { empty.hidden = true; return; }
-    const dated = shown().filter(e => e.map === 'bom' && e.start != null);
+    const dated = shown().filter(e => e.map === 'bom' && !e.covered && e.start != null);
     const before = dated.filter(e => e.end < window.start).sort((a, b) => b.end - a.end)[0];
     const after = dated.filter(e => e.start > window.end).sort((a, b) => a.start - b.start)[0];
     const button = (e, dir) => `<button data-jump="${escapeHTML(e.id)}">${dir === 'before' ? '‹ ' : ''}${escapeHTML(e.ref)} · ${escapeHTML(formatYear(dir === 'before' ? e.end : e.start))}${dir === 'after' ? ' ›' : ''}</button>`;

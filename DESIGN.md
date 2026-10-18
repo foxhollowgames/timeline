@@ -69,6 +69,7 @@ A pin is a scripture event, such as the scattering of the ten tribes. It is not 
 | 7 | The flood and the patriarchs | Genesis | 31 events |
 | 8 | The life of Jesus | Matthew, Mark, Luke, John | 36 events |
 | 9 | The apostles | Acts, Paul's letters, and Revelation 1–3 | 25 events |
+| 10 | Lehi's journey, the small plates, and the Jaredites | 1 Nephi through Words of Mormon, and Ether | 17 events |
 
 - **Fields.** Each event has `id`, `volume`, `title`, `chapters`, and `summary`. It may add these:
   - `dateFrom`: the chapters that set its years.
@@ -79,6 +80,7 @@ A pin is a scripture event, such as the scattering of the ten tribes. It is not 
 - **Dates and places.** By default the years span the linked chapters' dates. The pin sits at the first chapter's place. An event may write its own years, with a `dateLabel` and `sourceIds`.
 - **Years not given.** An event drawn from order-only chapters, such as Genesis 8–11, joins their band and has no years. Its `dateFrom` chapters must all share one band.
 - **Place notes.** `placeNote` adds a line about the pin's place, such as Babel's traditional site.
+- **Maps.** An event goes on the map of its chapters: the globe, or the Book of Mormon panel. All its chapters must share one map. Its verse may come from any volume's text.
 - **Chapters lose their pins.** A chapter linked by an event, or inside a batch's `covers` range, gets no pin. It also leaves the density bar, the event buttons, and "Also at this time."
 - **Chapters stay findable.** Search still finds each chapter. Its card lists the events it is part of under "Part of." Place and person lists show the event instead of its chapters.
 - **Event card.** It leads with the title. "In scripture" lists its chapters, and each opens that chapter's card. "Also read" links other volumes, such as D&C 110:11 for the ten tribes. These links never change the event's years.

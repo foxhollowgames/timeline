@@ -181,7 +181,7 @@ export async function checkData(test, warn) {
         if (!bibleCache.has(e.book)) bibleCache.set(e.book, await readJSON(join(src, 'bible', `${e.book}-native-scripture.json`)));
         expected = bibleCache.get(e.book).chapters[chapter]?.find(v => v.verse === Number(number))?.text;
       } else if (e.volume === 'bom') {
-        expected = bom.chapters[e.id]?.verses.find(v => v.verse === Number(number))?.text;
+        expected = bom.chapters[verse.chapterId ?? e.id]?.verses.find(v => v.verse === Number(number))?.text;
       } else {
         const section = Number(verse.ref.match(/D&C (\d+):/)?.[1]);
         expected = dcText.get(section)?.find(v => v.verse === Number(number))?.text;
