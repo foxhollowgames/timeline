@@ -3,6 +3,7 @@
 
 import { VOLUMES, shapeSVG } from './volumes.js';
 import { formatRange } from './time-scale.js';
+import { CONFERENCE_GLOBE } from './config.js';
 
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const BASIS = {
@@ -13,7 +14,10 @@ const BASIS = {
   section: 'D&C section heading',
   'not-given': 'Order only',
   history: 'Date from the cited source',
+  'church-history': 'Date from the cited source',
 };
+// Hand-sourced events (world and Church history) lead with their title, not a reference.
+const titleFirst = e => e.volume === 'history' || e.basis === 'church-history';
 const ALSO_COUNT = 4;
 const ALSO_MAX_GAP = 150; // years between two events' ranges
 const VERSE_WORDS = 40;
@@ -53,7 +57,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
   const loadPeople = () => (searchIndex ??= fetch('data/search.json').then(r => r.json()).catch(() => ({ people: {}, eventPeople: {} })));
 
   // One event as a list row. History rows lead with the title, scripture rows with the reference.
-  const row = e => e.volume === 'history'
+  const row = e => titleFirst(e)
     ? `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.title)}</strong><small class="row-date">${escapeHTML(e.ref)} · ${escapeHTML(e.region ?? '')}</small></span></button>`
     : `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.ref)}</strong><small>${escapeHTML(e.title)}</small><small class="row-date">${escapeHTML(eventDate(e))}</small></span></button>`;
 
@@ -101,6 +105,8 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     const otherPlaces = event.places.filter(k => k !== event.place).map(k => data.places[k]?.name).filter(Boolean);
     const names = (people.eventPeople[event.id] ?? []).map(k => people.people[k]).filter(Boolean);
     const isHistory = event.volume === 'history';
+    const conference = CONFERENCE_GLOBE.url && event.volume === 'dc' && event.start >= CONFERENCE_GLOBE.firstYear
+      ? `${CONFERENCE_GLOBE.url}#year=${event.start}` : null;
     const also = alsoAtThisTime(event, data.events);
     const sources = (d.dateSourceIds ?? []).map(id => data.sources[id]).filter(Boolean);
     const dateLines = [
@@ -116,7 +122,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     content.innerHTML = `${backButton()}
       <p class="card-volume">${shapeSVG(event.volume, 16)}<span>${escapeHTML(VOLUMES[event.volume].label)}</span></p>
       <h2>${escapeHTML(event.title)}</h2>
-      ${event.volume === 'history' ? '' : `<p class="card-ref">${escapeHTML(event.ref)}</p>`}
+      ${titleFirst(event) ? '' : `<p class="card-ref">${escapeHTML(event.ref)}</p>`}
       <div class="card-date">
         <p><strong>${escapeHTML(d.dateLabel)}</strong> <span>${escapeHTML(d.dateKept ? 'Scholarly date, inside the prophet’s lifetime' : BASIS[event.basis] ?? '')}</span></p>
         ${dateLines.map(line => `<p class="card-date-note">${escapeHTML(line)}</p>`).join('')}
@@ -124,7 +130,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
       ${d.setting ? `<p class="card-setting">${escapeHTML(d.setting)}</p>` : ''}
       <p class="card-summary">${escapeHTML(d.summary)}</p>
       ${d.verse?.text ? `<blockquote class="card-verse"><p>${escapeHTML(shortVerse(d.verse.text))}</p><cite>${escapeHTML(d.verse.ref)}</cite></blockquote>` : ''}
-      <p class="card-links">${d.readerUrl ? `<a href="${escapeHTML(d.readerUrl)}" target="_blank" rel="noopener">Read the chapter</a>` : ''}</p>
+      <p class="card-links">${d.readerUrl ? `<a href="${escapeHTML(d.readerUrl)}" target="_blank" rel="noopener">Read the chapter</a>` : ''}${conference ? `<a href="${escapeHTML(conference)}" target="_blank" rel="noopener">General conference in ${event.start}</a>` : ''}</p>
       ${notes.map(n => `<p class="card-note">${escapeHTML(n)}</p>`).join('')}
       <dl class="card-facts">
         <dt>Place</dt><dd>${escapeHTML(place?.name ?? '')}${otherPlaces.length ? `<span> · also ${escapeHTML(otherPlaces.join(', '))}</span>` : ''}</dd>
@@ -133,7 +139,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
         ${d.citations ? `<dt>In scripture</dt><dd>${escapeHTML(d.citations.join('; '))}</dd>` : ''}
       </dl>
       ${also.length ? `<div class="card-also"><h3>Also at this time</h3><div class="event-rows">${also.map(e => row(e)).join('')}</div></div>` : ''}
-      ${sources.length ? `<div class="card-sources"><h3>${isHistory ? 'Source' : 'Date sources'}</h3>${sources.map(s => `${s.quote ? `<blockquote class="source-quote">“${escapeHTML(s.quote.join(' … '))}”</blockquote>` : ''}<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a>`).join('')}</div>` : ''}`;
+      ${sources.length ? `<div class="card-sources"><h3>${titleFirst(event) ? 'Source' : 'Date sources'}</h3>${sources.map(s => `${s.quote ? `<blockquote class="source-quote">“${escapeHTML(s.quote.join(' … '))}”</blockquote>` : ''}<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a>`).join('')}</div>` : ''}`;
     content.scrollTop = 0;
     bind();
     onShow?.({ type: 'event', event, details: d });

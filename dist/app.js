@@ -115,8 +115,11 @@ async function start() {
     bomPins?.setItems(split.open ? [...onMap.map(e => item(e, 'active')), ...events.filter(e => e.map === 'bom' && inTrail(e)).map(e => item(e, 'trail'))] : []);
 
     const parts = [];
-    const scriptureOnGlobe = onGlobe.filter(isScripture).length, historyOnGlobe = onGlobe.length - scriptureOnGlobe;
+    const churchOnGlobe = onGlobe.filter(e => e.basis === 'church-history').length;
+    const scriptureOnGlobe = onGlobe.filter(isScripture).length - churchOnGlobe;
+    const historyOnGlobe = onGlobe.length - scriptureOnGlobe - churchOnGlobe;
     if (scriptureOnGlobe) parts.push(`${plural(scriptureOnGlobe, 'scripture event')} on the globe.`);
+    if (churchOnGlobe) parts.push(`${plural(churchOnGlobe, 'Church history event')}.`);
     if (historyOnGlobe) parts.push(`${plural(historyOnGlobe, 'world history event')}.`);
     const hiddenTier = active.filter(e => !tierShown(e)).length;
     if (hiddenTier) parts.push(`Zoom the strip in to see ${plural(hiddenTier, 'more history event')}.`);

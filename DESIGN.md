@@ -111,9 +111,16 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - `npm run check` fails when a Wikipedia-sourced event has not passed that verification. Britannica blocks scripted reading, so a Britannica source would be checked by hand.
   - The card shows the quote and links to the source.
 - **Church history after 1847 (Q36).**
-  - One curated batch of about 60 events from 1847 to 2026, with the same sourcing rules.
-  - Examples: the arrival in the Salt Lake Valley, the first missions abroad, and temple dedications.
-  - From 1851 onward, the card also links to the conference globe for that year.
+  - One curated batch of 45 events from 1847 to 2026, with the same sourcing rules. The plan said about 60. Each added event needed a quotable date in its source, and 45 cleared that bar.
+  - It covers the arrival in the Salt Lake Valley, the auxiliaries, the Utah War and Mountain Meadows, statehood, temples as they reach each inhabited continent, the proclamations, and the presidents since 2018.
+  - The batch file sets `"volume": "dc"`. Its events join the D&C volume, so they use the gold triangle pin and the D&C toggle. They need no tier or region.
+  - Their date basis is `church-history`. The card reads "Date from the cited source", leads with the title, and shows the source quote as world history does.
+  - The status line counts them as Church history events, apart from scripture.
+- **Conference globe link (Q36).**
+  - From 1851 onward, a D&C or Church history card can link to the conference globe at `#year=YYYY`.
+  - The link is built but off. `dist/config.js` holds `CONFERENCE_GLOBE.url`, which is `null`.
+  - It stays off for two reasons. The live conference globe needs a sign-in and returns 401 to visitors. It also does not read a year from its address yet.
+  - Setting the url turns the link on with no other change.
 - **Batches (Q22, Q36).** World history comes in six era batches, and Church history is batch 7. Each batch is one pull request, and the user reviews each one.
 
 | Batch | Era | Status |
@@ -124,9 +131,9 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 | 4 | 1000–1500 CE | 44 events |
 | 5 | 1500–1800 CE | 43 events |
 | 6 | 1800–2026 | 49 events |
-| 7 | Church history, 1847–2026 | planned |
+| 7 | Church history, 1847–2026 | 45 events |
 
-- **Data file.** `scripts/history/batch-N.json`. Each event has `id`, `title`, `start`, `end`, `dateLabel`, `tier`, `region`, `place`, `lat`, `lng`, `summary`, and `source`. A source is `{ wiki, quote }` for Wikipedia, or `{ title, publisher, url, quote }` otherwise. `quote` may be a list when the start and end need separate quotes.
+- **Data file.** `scripts/history/batch-N.json`. Each event has `id`, `title`, `start`, `end`, `dateLabel`, `tier`, `region`, `place`, `lat`, `lng`, `summary`, and `source`. A source is `{ wiki, quote }` for Wikipedia, or `{ title, publisher, url, quote }` otherwise. `quote` may be a list when the start and end need separate quotes. Batch 7 adds a top-level `"volume": "dc"`, and its events leave out `tier` and `region`.
 - **Display.** History pins are hollow grey hexagons, smaller than scripture pins, so shape and fill set them apart without color. In a group a scripture event always leads. History has its own legend toggle. The event buttons and the density bar follow scripture only.
 - **Also at this time.** A card lists up to four events of the other kind whose dates fall within 150 years. Closer dates rank first, and short events rank above centuries-long eras. Order-only events get none (Q28).
 

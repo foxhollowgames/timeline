@@ -102,3 +102,4 @@
 .card-also { margin: 4px 0 16px; }
 .card-also h3 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 500; margin: 0 0 6px; }
 .source-quote { margin: 0 0 4px; font-size: 13px; color: var(--muted); font-style: italic; line-height: 1.5; }
+.card-links a + a { margin-left: 16px; }

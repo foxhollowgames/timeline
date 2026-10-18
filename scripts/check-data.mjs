@@ -80,6 +80,7 @@ export async function checkData(test, warn) {
       ...Object.values(overrides.sources).map(s => s.note),
       ...curated.events.map(e => e.summary), ...Object.values(curated.annotations).map(a => a.placeNote),
       ...Object.values(details.history).map(d => d.summary),
+      ...events.filter(e => e.basis === 'church-history').map(e => details.dc[e.id]?.summary),
     ].filter(Boolean);
     for (const text of texts) {
       for (const sentence of text.split(/(?<=[.!?])\s+(?=[A-Z0-9“"])/)) {
@@ -105,22 +106,22 @@ export async function checkData(test, warn) {
   });
 
   test('every world history event is sourced, placed, and verified against its source', async () => {
-    const history = events.filter(e => e.volume === 'history');
+    const history = events.filter(e => e.volume === 'history' || e.basis === 'church-history');
     const verified = await readJSON(join(here, 'history', 'verified.json')).catch(() => null);
     if (!verified) throw new Error('scripts/history/verified.json is missing. Run npm run verify:sources.');
-    const result = new Map(verified.results.map(r => [`h-${r.id}`, r]));
+    const result = new Map(verified.results.map(r => [r.church ? `ch-${r.id}` : `h-${r.id}`, r]));
     for (const e of history) {
-      const d = details.history[e.id];
+      const d = details[e.volume][e.id];
       const source = index.sources[d.dateSourceIds?.[0]];
       if (!source?.url || !source.quote?.length) throw new Error(`${e.id}: needs a source with a URL and a quote`);
-      if (![1, 2].includes(e.tier)) throw new Error(`${e.id}: tier must be 1 or 2`);
+      if (e.volume === 'history' && ![1, 2].includes(e.tier)) throw new Error(`${e.id}: tier must be 1 or 2`);
       if (e.map !== 'globe') throw new Error(`${e.id}: history never goes on the Book of Mormon map`);
       if (!d.summary) throw new Error(`${e.id}: no summary`);
       if (source.author === 'Wikipedia' && !result.get(e.id)?.ok) throw new Error(`${e.id}: its quote has not passed npm run verify:sources`);
     }
     // Region coverage is reported, not enforced (DESIGN.md Q13).
     const counts = {};
-    for (const e of history) counts[e.region] = (counts[e.region] ?? 0) + 1;
+    for (const e of history.filter(x => x.volume === 'history')) counts[e.region] = (counts[e.region] ?? 0) + 1;
     warn('world history by region: ' + Object.entries(counts).sort().map(([r, n]) => `${r} ${n}`).join(', '));
   });
 

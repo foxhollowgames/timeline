@@ -370,16 +370,28 @@ const historySources = {};
 const historyDir = join(here, 'history');
 for (const file of (await readdir(historyDir)).filter(f => /^batch-\d+\.json$/.test(f)).sort()) {
   const batch = await readJSON(join(historyDir, file));
+  // A Church history batch (batch.volume "dc") shares the D&C volume, hue, and shape (DESIGN.md Q30, Q36).
+  // Its events need no region or tier. They follow the same sourcing rules as world history.
+  const church = batch.volume === 'dc';
   for (const item of batch.events) {
-    const where = `history ${item.id}`;
-    if (!REGIONS.includes(item.region)) problems.push(`${where}: unknown region ${item.region}`);
-    if (![1, 2].includes(item.tier)) problems.push(`${where}: tier must be 1 or 2`);
+    const where = `${church ? 'church history' : 'history'} ${item.id}`;
+    if (!church && !REGIONS.includes(item.region)) problems.push(`${where}: unknown region ${item.region}`);
+    if (!church && ![1, 2].includes(item.tier)) problems.push(`${where}: tier must be 1 or 2`);
     if (!item.source?.wiki && !item.source?.url) { problems.push(`${where}: no source`); continue; }
-    const sourceId = `h-${item.id}`;
+    const prefix = church ? 'ch' : 'h';
+    const sourceId = `${prefix}-${item.id}`;
     historySources[sourceId] = item.source.wiki
       ? { title: `${item.source.wiki} (Wikipedia)`, author: 'Wikipedia', url: `https://en.wikipedia.org/wiki/${encodeURIComponent(item.source.wiki.replace(/ /g, '_'))}`, quote: [item.source.quote].flat() }
       : { title: item.source.title, author: item.source.publisher, url: item.source.url, quote: [item.source.quote].flat() };
-    const key = addPlace(`h:${item.id}`, { name: item.place, lat: item.lat, lng: item.lng }, where);
+    const key = addPlace(`${prefix}:${item.id}`, { name: item.place, lat: item.lat, lng: item.lng }, where);
+    if (church) {
+      pushEvent(
+        { id: sourceId, volume: 'dc', book: 'church-history', chapter: null, ref: item.dateLabel, title: item.title, map: 'globe', place: key, places: [key], curated: true },
+        { summary: item.summary, batch: batch.batch },
+        { basis: 'church-history', start: item.start, end: item.end, label: item.dateLabel, sourceIds: [sourceId] },
+      );
+      continue;
+    }
     pushEvent(
       { id: `h-${item.id}`, volume: 'history', book: `batch-${batch.batch}`, chapter: null, ref: item.dateLabel, title: item.title, map: 'globe', place: key, places: [key], tier: item.tier, region: item.region },
       { summary: item.summary, region: item.region, batch: batch.batch },
