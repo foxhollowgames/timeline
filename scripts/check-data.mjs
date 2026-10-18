@@ -98,6 +98,20 @@ export async function checkData(test, warn) {
     }
   });
 
+  test('every scripture event links chapters, and those chapters have no pin', () => {
+    const byId = new Map(events.map(e => [e.id, e]));
+    for (const e of events.filter(x => x.kind === 'event')) {
+      if (!e.chapters?.length) throw new Error(`${e.id}: links no chapters`);
+      if (!details[e.volume][e.id]?.summary) throw new Error(`${e.id}: no summary`);
+      for (const id of e.chapters) {
+        const chapter = byId.get(id);
+        if (!chapter || chapter.kind === 'event') throw new Error(`${e.id}: ${id} is not a chapter`);
+        if (!chapter.covered || !chapter.partOf?.includes(e.id)) throw new Error(`${e.id}: ${id} does not point back to it`);
+      }
+    }
+    for (const e of events.filter(x => x.partOf)) for (const id of e.partOf) if (byId.get(id)?.kind !== 'event') throw new Error(`${e.id}: part of unknown event ${id}`);
+  });
+
   test('new text keeps sentences to 15 words or fewer', () => {
     const texts = [
       ...Object.values(overrides.notes), ...Object.values(overrides.bases),
@@ -106,6 +120,7 @@ export async function checkData(test, warn) {
       ...curated.events.map(e => e.summary), ...Object.values(curated.annotations).flatMap(a => [a.placeNote, a.relatedNote]),
       ...Object.values(details.history).map(d => d.summary),
       ...events.filter(e => e.basis === 'church-history').map(e => details.dc[e.id]?.summary),
+      ...events.filter(e => e.kind === 'event').flatMap(e => { const d = details[e.volume][e.id]; return [d.summary, d.relatedNote, d.dateDetail, ...(d.alsoRead ?? []).map(a => a.note)]; }),
     ].filter(Boolean);
     for (const text of texts) {
       for (const sentence of text.split(/(?<=[.!?])\s+(?=[A-Z0-9“"])/)) {

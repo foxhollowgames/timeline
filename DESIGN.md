@@ -53,6 +53,29 @@ The decisions below were settled in a design interview on 2026-10-18. The questi
 - **Shared place ids.** Books sometimes use one id for different spots, such as Succoth in Egypt and Succoth by the Jordan. When a later book's point is more than 25 km away, that book gets its own place key.
 - **Curated events.** `scripts/curated-events.json` holds scripture events that no chapter supplies, such as Adam-ondi-Ahman (Q15). It also adds notes, such as Babel's traditional site.
 - **Pin placement (Q19).** The pin sits at the chapter's first focus place. When the event is selected, its other places show as small dots and its routes are drawn.
+
+### Events, not chapters (2026-10-18)
+
+A pin is a scripture event, such as the scattering of the ten tribes. It is not a chapter. The event's card links the chapters that tell it. This replaces chapter pins era by era.
+
+- **Batches.** Events are written by hand in `scripts/scripture/batch-N.json`, one era per batch. Each batch is one pull request, as with world history.
+
+| Batch | Era | Covers | Status |
+| --- | --- | --- | --- |
+| 1 | The divided kingdom to the exile | 1 Kings 12–22, 2 Kings, 2 Chronicles 10–36 | 31 events |
+
+- **Fields.** Each event has `id`, `volume`, `title`, `chapters`, and `summary`. It may add these:
+  - `dateFrom`: the chapters that set its years.
+  - `place`: the pin's place key.
+  - `verse`: written as `<chapter id>:<verse>`.
+  - `alsoRead`: references in other volumes, each with a short note.
+  - `related` and `relatedNote`: hand-picked world history, as in section 4.
+- **Dates and places.** By default the years span the linked chapters' dates. The pin sits at the first chapter's place. An event may write its own years, with a `dateLabel` and `sourceIds`.
+- **Chapters lose their pins.** A chapter linked by an event, or inside a batch's `covers` range, gets no pin. It also leaves the density bar, the event buttons, and "Also at this time."
+- **Chapters stay findable.** Search still finds each chapter. Its card lists the events it is part of under "Part of." Place and person lists show the event instead of its chapters.
+- **Event card.** It leads with the title. "In scripture" lists its chapters, and each opens that chapter's card. "Also read" links other volumes, such as D&C 110:11 for the ten tribes. These links never change the event's years.
+- **Readers.** `chapters.json` still lists chapter ids, so "See on timeline" opens the chapter's card. That card links to its event.
+- **Not yet events.** Chapters outside every batch keep their own pins until their era's batch lands.
 - **Pearl of Great Price (Q23).** Left out of version 1. It will be added later as its own batch of about 20 events.
 
 ### Dates

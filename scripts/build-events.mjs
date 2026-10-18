@@ -188,11 +188,14 @@ function pushEvent(event, detail, date) {
 // ---------- Bible ----------
 
 const ntStart = config.bibleBooks.indexOf(config.newTestamentStartsAt);
+// Book name -> id, and id -> verse text, for the scripture event batches below.
+const bibleBookIds = new Map(), bibleText = new Map();
 for (const [index, id] of config.bibleBooks.entries()) {
   const volume = index < ntStart ? 'ot' : 'nt';
   const content = await readJSON(join(src, 'bible', `${id}-native-content.json`));
   const scripture = await readJSON(join(src, 'bible', `${id}-native-scripture.json`));
   const name = content.book.name;
+  bibleBookIds.set(name, id); bibleText.set(id, scripture);
   const placeById = new Map(content.places.map(p => [p.id, p]));
   const bookPeople = (await readJSON(join(src, 'bible', `${id}-people.json`))).people ?? {};
   const routeById = new Map([...(content.textRoutes ?? []), ...(content.campaigns ?? [])].map(r => [r.id, r]));
@@ -417,6 +420,125 @@ for (const [id, { related, relatedNote }] of Object.entries(curated.annotations)
   details[event.volume][id].related = ids;
 }
 
+// ---------- Scripture events (DESIGN.md section 3, "Events, not chapters") ----------
+// Hand-written batches in scripts/scripture/batch-N.json. An event such as the scattering of
+// the ten tribes is the pin. Its card links the chapters that tell it. A chapter inside a
+// batch's `covers` range, or linked by an event, keeps its card and search entry but loses its pin.
+
+// A reference such as "2 Kings 17:6", "1 Nephi 22:4", or "D&C 110:11" -> reader link and chapter event id.
+const bomBookIds = new Map([...bomBookNames].map(([id, name]) => [name, id]));
+function readRef(ref) {
+  let m = ref.match(/^D&C (\d+)(?::(\d+))?/);
+  if (m) return { url: `../doctrine-and-covenants/doctrine-and-covenants.html#chapter=${m[1]}&verse=${m[2] ?? 1}`, eventId: `dc-${m[1]}` };
+  m = ref.match(/^(.+?) (\d+)(?::(\d+))?/);
+  if (!m) return null;
+  const [, name, chapter, verse] = m;
+  if (bibleBookIds.has(name)) {
+    const id = bibleBookIds.get(name);
+    return { url: `../bible/${id}.html#chapter=${chapter}&verse=${verse ?? 1}`, eventId: `${id}-${chapter}` };
+  }
+  if (bomBookIds.has(name)) {
+    const id = bomBookIds.get(name);
+    return { url: `../book-of-mormon/book.html#chapter=${id}-${chapter}`, eventId: `${id}-${chapter}` };
+  }
+  return null;
+}
+// "2 Kings 18–19; 2 Chronicles 13, 16" from a list of chapter events.
+function chapterRefs(list) {
+  const books = [];
+  for (const e of list) {
+    const name = e.ref.replace(/ \d+$/, '');
+    let book = books.find(b => b.name === name);
+    if (!book) books.push(book = { name, runs: [] });
+    const last = book.runs[book.runs.length - 1];
+    if (last && e.chapter === last.to + 1) last.to = e.chapter;
+    else book.runs.push({ from: e.chapter, to: e.chapter });
+  }
+  return books.map(b => `${b.name} ${b.runs.map(r => `${r.from}${r.to > r.from ? `–${r.to}` : ''}`).join(', ')}`).join('; ');
+}
+
+const VOLUMES_SCRIPTURE = ['ot', 'nt', 'bom', 'dc'];
+const scriptureDir = join(here, 'scripture');
+const scriptureEvents = [];
+const partOf = new Map(); // chapter id -> event ids
+const coveredIds = new Set();
+for (const file of (await readdir(scriptureDir)).filter(f => /^batch-\d+\.json$/.test(f)).sort()) {
+  const batch = await readJSON(join(scriptureDir, file));
+  for (const { book, chapters: [from, to] } of batch.covers) {
+    for (const e of events) if (e.book === book && e.chapter >= from && e.chapter <= to) coveredIds.add(e.id);
+  }
+  for (const item of batch.events) {
+    const where = `scripture event ${item.id}`;
+    if (events.some(e => e.id === item.id)) { problems.push(`${where}: the id is already used`); continue; }
+    const linked = item.chapters.map(id => events.find(e => e.id === id && !e.curated));
+    item.chapters.forEach((id, i) => { if (!linked[i]) problems.push(`${where}: no chapter event ${id}`); });
+    if (!linked.every(Boolean) || !linked.length) continue;
+    if (!VOLUMES_SCRIPTURE.includes(item.volume)) problems.push(`${where}: unknown volume ${item.volume}`);
+    // Dates come from the chapters in `dateFrom` (default: all of them), unless the event sets its own.
+    const dating = (item.dateFrom ?? item.chapters).map(id => linked[item.chapters.indexOf(id)]);
+    if (!dating.every(Boolean)) { problems.push(`${where}: dateFrom must list some of its chapters`); continue; }
+    const chapterDetail = e => details[e.volume][e.id];
+    let date;
+    if (item.start != null) {
+      if (!item.sourceIds?.length || !item.dateLabel) problems.push(`${where}: a written date needs a dateLabel and sourceIds`);
+      date = { basis: item.basis ?? 'church', start: item.start, end: item.end ?? item.start, label: item.dateLabel, sourceIds: item.sourceIds ?? [] };
+    } else {
+      const start = Math.min(...dating.map(e => e.start)), end = Math.max(...dating.map(e => e.end));
+      const basis = dating[0].basis;
+      date = {
+        basis, start, end,
+        label: (basis === 'scholarly' ? 'c. ' : '') + formatRange(start, end),
+        sourceIds: [...new Set(dating.flatMap(e => chapterDetail(e).dateSourceIds ?? []))],
+        dateNote: `Years from ${chapterRefs(dating)}.`,
+      };
+    }
+    // The pin sits at the event's place, or the lead chapter's. Other places come from all the chapters.
+    const placeKey = item.place ?? linked[0].place;
+    if (!places[placeKey]) problems.push(`${where}: place ${placeKey} not found`);
+    const placeKeys = [...new Set([placeKey, ...(item.places ?? linked.flatMap(e => e.places))])];
+    // The verse is given as "<chapter id>:<verse>" and must come from one of its chapters.
+    let verse;
+    if (item.verse) {
+      const [chapterId, number] = item.verse.split(':');
+      const chapter = linked.find(e => e.id === chapterId);
+      const text = chapter && ['ot', 'nt'].includes(chapter.volume) ? bibleText.get(chapter.book)?.chapters[String(chapter.chapter)]?.find(v => v.verse === Number(number))?.text : undefined;
+      if (!text) problems.push(`${where}: verse ${item.verse} not found in its chapters`);
+      else verse = { ref: `${chapter.ref}:${number}`, text, translation: bibleText.get(chapter.book).translation, book: chapter.book };
+    }
+    const alsoRead = (item.alsoRead ?? []).map(({ ref, note }) => {
+      const found = readRef(ref);
+      if (!found) { problems.push(`${where}: reference not understood: ${ref}`); return null; }
+      return { ref, note, url: found.url, ...(events.some(e => e.id === found.eventId) && { eventId: found.eventId }) };
+    }).filter(Boolean);
+    const routes = [...new Map(linked.flatMap(e => chapterDetail(e).routes ?? []).map(r => [r.id, r])).values()];
+    const record = {
+      id: item.id, volume: item.volume, book: verse?.book ?? linked[0].book, chapter: null, ref: chapterRefs(linked), title: item.title,
+      map: 'globe', place: placeKey, places: placeKeys, curated: true, kind: 'event', chapters: item.chapters,
+    };
+    const { book: _, ...verseRecord } = verse ?? {};
+    pushEvent(record, { summary: item.summary, batch: batch.batch, ...(verse && { verse: verseRecord }), ...(alsoRead.length && { alsoRead }), ...(routes.length && { routes }) }, date);
+    // Hand-picked related history, as for annotations above.
+    if (item.related) {
+      if (!item.relatedNote) problems.push(`${where}: no relatedNote`);
+      const ids = item.related.map(r => `h-${r}`);
+      ids.forEach((full, i) => { if (!events.some(e => e.id === full && e.volume === 'history')) problems.push(`${where}: no history event ${item.related[i]}`); });
+      Object.assign(details[item.volume][item.id], { related: ids, relatedNote: item.relatedNote });
+    }
+    scriptureEvents.push(record);
+    const names = [...new Set(linked.flatMap(e => eventPeople[e.id] ?? []))];
+    if (names.length) eventPeople[item.id] = names;
+    for (const e of linked) { coveredIds.add(e.id); partOf.set(e.id, [...(partOf.get(e.id) ?? []), item.id]); }
+  }
+}
+for (const e of events) {
+  if (!coveredIds.has(e.id)) continue;
+  e.covered = true;
+  if (partOf.has(e.id)) e.partOf = partOf.get(e.id);
+}
+stats.scriptureEvents = scriptureEvents.length;
+stats.chaptersCovered = coveredIds.size;
+stats.chaptersInNoEvent = [...coveredIds].filter(id => !partOf.has(id));
+
 // A count per region, so coverage stays global. A warning, not a quota.
 const regionCounts = Object.fromEntries(REGIONS.map(r => [r, events.filter(e => e.region === r).length]));
 stats.historyRegions = regionCounts;
@@ -484,4 +606,5 @@ const count = volume => events.filter(e => e.volume === volume).length;
 console.log(`${stats.chapters} chapters read. ${stats.events} events written. ${stats.noPlace} chapters have no places. ${stats.skipped.length} skipped by rule.`);
 console.log(`Old Testament ${count('ot')} · New Testament ${count('nt')} · Book of Mormon ${count('bom')} · D&C ${count('dc')} · World history ${count('history')}`);
 console.log('World history by region: ' + Object.entries(regionCounts).map(([r, n]) => `${r} ${n}`).join(', '));
+console.log(`${stats.scriptureEvents} scripture events cover ${stats.chaptersCovered} chapters. ${stats.chaptersInNoEvent.length} covered chapter(s) are in no event: ${stats.chaptersInNoEvent.join(', ') || 'none'}.`);
 console.log(`${Object.keys(places).length} places. ${warnings.length} warning(s) in scripts/build-report.json.`);

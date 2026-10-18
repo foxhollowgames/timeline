@@ -1,0 +1,514 @@
+{
+  "about": "Scripture events, batch 1: the divided kingdom to the exile (DESIGN.md section 3). Each event is one pin. `chapters` lists the chapter events that tell it; they set its years and lose their own pins. `dateFrom` narrows the years to some of those chapters. `place` moves the pin. `verse` is <chapter id>:<verse>. `alsoRead` links other volumes and does not change the years. Every chapter in `covers` loses its pin, even when no event links it yet.",
+  "batch": 1,
+  "era": "The divided kingdom to the exile",
+  "covers": [
+    {
+      "book": "1-kings",
+      "chapters": [
+        12,
+        22
+      ]
+    },
+    {
+      "book": "2-kings",
+      "chapters": [
+        1,
+        25
+      ]
+    },
+    {
+      "book": "2-chronicles",
+      "chapters": [
+        10,
+        36
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "kingdom-divides",
+      "volume": "ot",
+      "title": "The kingdom divides at Shechem",
+      "chapters": [
+        "1-kings-12",
+        "2-chronicles-10",
+        "2-chronicles-11"
+      ],
+      "place": "b:shechem",
+      "verse": "1-kings-12:16",
+      "summary": "The people of Israel gather at Shechem to make Rehoboam king. They ask him to lighten the heavy work his father Solomon laid on them. The older advisers tell him to agree. Rehoboam follows the young men and answers harshly. Israel makes Jeroboam king, and only Judah stays with David's house. Chronicles adds that priests and Levites move to Judah. Jeroboam sets up two gold calves at Bethel and Dan."
+    },
+    {
+      "id": "bethel-altar-condemned",
+      "volume": "ot",
+      "title": "A man of God speaks against the altar at Bethel",
+      "chapters": [
+        "1-kings-13"
+      ],
+      "verse": "1-kings-13:2",
+      "summary": "A man of God comes from Judah to Jeroboam's altar at Bethel. He says a king named Josiah will one day burn bones on it. The altar splits apart as a sign. Jeroboam's hand withers when he points at the man, then it is healed. An old prophet lies to the man and brings him home to eat. On his way back, a lion kills him.",
+      "alsoRead": [
+        {
+          "ref": "2 Kings 23:15",
+          "note": "Josiah breaks down the altar at Bethel."
+        }
+      ]
+    },
+    {
+      "id": "shishak-invades",
+      "volume": "ot",
+      "title": "Shishak of Egypt takes Jerusalem's treasures",
+      "chapters": [
+        "1-kings-14",
+        "2-chronicles-12"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-chronicles-12:9",
+      "summary": "Jeroboam's son falls sick, and his wife goes to the prophet Ahijah. Ahijah says the child will die and Jeroboam's family will end. In Judah, the people build hilltop shrines and idols. In Rehoboam's fifth year, Shishak king of Egypt attacks Jerusalem. He carries off the treasures of the temple and the palace. He takes the gold shields that Solomon made."
+    },
+    {
+      "id": "judah-israel-border-war",
+      "volume": "ot",
+      "title": "Judah and Israel fight over their border",
+      "chapters": [
+        "1-kings-15",
+        "2-chronicles-13",
+        "2-chronicles-16"
+      ],
+      "place": "b:ramah",
+      "verse": "2-chronicles-16:7",
+      "summary": "Kings tells of war between Judah and Israel all through these years. Chronicles adds that Abijah of Judah defeats Jeroboam in battle. Later Baasha of Israel builds walls at Ramah to close Judah's border. Asa of Judah sends temple silver and gold to Ben-hadad of Damascus. Ben-hadad attacks Israel, and Baasha stops building. Chronicles adds that Hanani the seer rebukes Asa for relying on Syria."
+    },
+    {
+      "id": "asa-renews-covenant",
+      "volume": "ot",
+      "title": "Asa removes idols and renews the covenant",
+      "chapters": [
+        "2-chronicles-14",
+        "2-chronicles-15"
+      ],
+      "verse": "2-chronicles-15:12",
+      "summary": "Chronicles tells how Asa tears down foreign altars and idols in Judah. He tells the people to seek the LORD and keep his law. Zerah the Ethiopian attacks with a huge army at Mareshah. Asa prays, and Judah wins the battle. The prophet Azariah tells Asa the LORD is with him while he seeks him. The people make a covenant to seek the LORD with all their heart."
+    },
+    {
+      "id": "omri-builds-samaria",
+      "volume": "ot",
+      "title": "Omri takes the throne and builds Samaria",
+      "chapters": [
+        "1-kings-16"
+      ],
+      "place": "b:samaria",
+      "verse": "1-kings-16:24",
+      "summary": "In Israel, one king after another is killed by a rival. Zimri kills King Elah and rules for seven days. The army makes its commander Omri king instead. Omri buys a hill from Shemer and builds the city of Samaria there. Samaria becomes Israel's capital. Omri's son Ahab marries Jezebel of Sidon and worships Baal."
+    },
+    {
+      "id": "elijah-drought",
+      "volume": "ot",
+      "title": "Elijah announces a drought and is fed at Zarephath",
+      "chapters": [
+        "1-kings-17"
+      ],
+      "place": "b:zarephath",
+      "verse": "1-kings-17:16",
+      "summary": "Elijah tells King Ahab no rain will fall except at his word. The LORD sends Elijah to hide by the brook Cherith. Ravens bring him bread and meat there. When the brook dries up, he goes to a widow at Zarephath. She makes him bread with her last flour and oil. Her flour and oil do not run out. Her son dies, and Elijah prays, and the boy lives again."
+    },
+    {
+      "id": "elijah-mount-carmel",
+      "volume": "ot",
+      "title": "Elijah and the prophets of Baal on Mount Carmel",
+      "chapters": [
+        "1-kings-18"
+      ],
+      "place": "b:carmel",
+      "verse": "1-kings-18:39",
+      "summary": "In the third year of drought, Elijah meets Ahab. Elijah calls Israel and Baal's 450 prophets to Mount Carmel. He asks the people how long they will waver between two sides. Baal's prophets call on Baal all day, and no answer comes. Elijah repairs the LORD's altar and soaks the offering with water. He prays, and fire from the LORD burns it up. The people cry that the LORD is God, and the rain comes."
+    },
+    {
+      "id": "elijah-at-horeb",
+      "volume": "ot",
+      "title": "Elijah hears a still small voice at Horeb",
+      "chapters": [
+        "1-kings-19"
+      ],
+      "place": "b:horeb",
+      "verse": "1-kings-19:12",
+      "summary": "Jezebel swears to kill Elijah, and he runs into the wilderness. He asks to die, but an angel gives him food and water. He walks forty days to Horeb, the mountain of God. A wind, an earthquake, and a fire pass, and the LORD is not in them. Then Elijah hears a still small voice. The LORD sends him to anoint new kings and Elisha. Elijah throws his cloak on Elisha, and Elisha follows him."
+    },
+    {
+      "id": "naboths-vineyard",
+      "volume": "ot",
+      "title": "Jezebel has Naboth killed for his vineyard",
+      "chapters": [
+        "1-kings-21"
+      ],
+      "place": "b:jezreel",
+      "verse": "1-kings-21:19",
+      "summary": "Naboth has a vineyard beside Ahab's palace in Jezreel. Ahab asks to buy it, but Naboth will not sell his family's land. Jezebel writes letters in Ahab's name to the town leaders. Two false witnesses accuse Naboth, and the people stone him. Ahab goes to take the vineyard, and Elijah meets him there. Elijah says disaster will come on Ahab's family. Ahab humbles himself, so the LORD delays the disaster until his son's time."
+    },
+    {
+      "id": "ahab-dies-at-ramoth-gilead",
+      "volume": "ot",
+      "title": "Ahab fights Syria and dies at Ramoth-gilead",
+      "chapters": [
+        "1-kings-20",
+        "1-kings-22",
+        "2-chronicles-18"
+      ],
+      "dateFrom": [
+        "1-kings-22"
+      ],
+      "place": "b:ramoth-gilead",
+      "verse": "1-kings-22:17",
+      "summary": "Ben-hadad of Syria besieges Samaria, and Ahab defeats him. The next year Ahab defeats him again at Aphek. Ahab lets Ben-hadad go, and a prophet condemns him for it. Later Ahab asks Jehoshaphat of Judah to fight with him for Ramoth-gilead. Ahab's 400 prophets promise victory. Micaiah says he saw Israel scattered like sheep with no shepherd. Ahab goes into battle in disguise. An arrow shot at random hits him, and he dies."
+    },
+    {
+      "id": "jehoshaphat-reforms",
+      "volume": "ot",
+      "title": "Jehoshaphat teaches the law and Judah is delivered",
+      "chapters": [
+        "2-chronicles-17",
+        "2-chronicles-19",
+        "2-chronicles-20"
+      ],
+      "verse": "2-chronicles-20:15",
+      "summary": "Chronicles tells of King Jehoshaphat's work in Judah. He sends officials and Levites through the towns to teach the book of the law. He sets judges in the walled cities. He tells them they judge for the LORD, not for people. Moab, Ammon, and others march against Judah. Jehoshaphat prays, and Jahaziel says the battle is God's. Judah goes out singing, and the enemy armies destroy each other."
+    },
+    {
+      "id": "elijah-taken-up",
+      "volume": "ot",
+      "title": "Elijah is taken up and Elisha receives his cloak",
+      "chapters": [
+        "2-kings-1",
+        "2-kings-2"
+      ],
+      "dateFrom": [
+        "2-kings-2"
+      ],
+      "place": "b:jordan",
+      "verse": "2-kings-2:11",
+      "summary": "King Ahaziah of Israel is hurt and sends to ask Baal-zebub, a Philistine god. Elijah says Ahaziah will die because he did not ask Israel's God. Later Elijah and Elisha walk to the Jordan. Elijah strikes the water with his cloak, and they cross on dry ground. A chariot of fire separates them, and Elijah goes up in a whirlwind. Elisha takes up Elijah's cloak and strikes the water. The water divides again.",
+      "alsoRead": [
+        {
+          "ref": "Malachi 4:5",
+          "note": "The LORD says he will send Elijah the prophet."
+        },
+        {
+          "ref": "D&C 110:13",
+          "note": "Elijah appears in the Kirtland Temple in 1836."
+        }
+      ]
+    },
+    {
+      "id": "war-against-moab",
+      "volume": "ot",
+      "title": "Israel, Judah, and Edom march against Moab",
+      "chapters": [
+        "2-kings-3"
+      ],
+      "place": "b:kir-hareseth",
+      "verse": "2-kings-3:27",
+      "summary": "King Mesha of Moab stops sending Israel his yearly payment of lambs and wool. Jehoram of Israel, Jehoshaphat of Judah, and the king of Edom march against him. They go the long way through Edom, and their water runs out. Elisha says the LORD will fill the valley with water. The water comes, and the allies defeat Moab. At Kir-hareseth, Mesha offers his oldest son on the wall. The armies then leave Moab."
+    },
+    {
+      "id": "elisha-miracles",
+      "volume": "ot",
+      "title": "Elisha's miracles of oil, bread, and life",
+      "chapters": [
+        "2-kings-4",
+        "2-kings-8"
+      ],
+      "dateFrom": [
+        "2-kings-4"
+      ],
+      "place": "b:shunem",
+      "verse": "2-kings-4:6",
+      "summary": "A prophet's widow is about to lose her sons to a lender. Elisha tells her to pour her little oil into borrowed jars. The oil fills every jar, and she pays her debt. A woman of Shunem gives Elisha a room, and she has a son. The boy dies, and Elisha brings him back to life. Elisha feeds a hundred men with twenty loaves. Later the Shunammite gets her land back, and Hazael takes the throne of Damascus."
+    },
+    {
+      "id": "naaman-healed",
+      "volume": "ot",
+      "title": "Naaman is healed in the Jordan",
+      "chapters": [
+        "2-kings-5"
+      ],
+      "place": "b:jordan",
+      "verse": "2-kings-5:14",
+      "summary": "Naaman commands the army of Syria, and he has leprosy, a skin disease. A young girl taken from Israel tells his wife about Elisha. Elisha sends word for Naaman to wash seven times in the Jordan. Naaman is angry at first, but his servants persuade him. He washes, and his skin becomes like a child's. Elisha refuses his gifts. Elisha's servant Gehazi takes silver in secret, and Gehazi gets Naaman's leprosy."
+    },
+    {
+      "id": "siege-of-samaria",
+      "volume": "ot",
+      "title": "Syria besieges Samaria and flees in the night",
+      "chapters": [
+        "2-kings-6",
+        "2-kings-7"
+      ],
+      "place": "b:samaria",
+      "verse": "2-kings-6:17",
+      "summary": "The king of Syria sends an army to Dothan to capture Elisha. Elisha's servant is afraid, and Elisha prays for his eyes to open. The servant sees the hills full of horses and chariots of fire. Later Ben-hadad besieges Samaria, and the city starves. Elisha says food will be cheap in the gate the next day. Four men with leprosy find the Syrian camp empty. The LORD had made the Syrians hear an army, and they fled."
+    },
+    {
+      "id": "jehu-revolt",
+      "volume": "ot",
+      "title": "Jehu's revolt ends the house of Ahab",
+      "chapters": [
+        "2-kings-9",
+        "2-kings-10",
+        "2-chronicles-22"
+      ],
+      "dateFrom": [
+        "2-kings-9",
+        "2-kings-10"
+      ],
+      "place": "b:jezreel",
+      "verse": "2-kings-9:6",
+      "summary": "Elisha sends a young prophet to Ramoth-gilead. He pours oil on Jehu's head to make him king of Israel. Jehu drives to Jezreel and kills King Joram of Israel. He also kills King Ahaziah of Judah. Jezebel is thrown from a window at Jezreel. Jehu has Ahab's seventy sons killed in Samaria. He gathers Baal's worshipers into Baal's temple and kills them."
+    },
+    {
+      "id": "joash-crowned",
+      "volume": "ot",
+      "title": "Athaliah falls and the boy Joash is crowned",
+      "chapters": [
+        "2-kings-11",
+        "2-chronicles-21",
+        "2-chronicles-23"
+      ],
+      "dateFrom": [
+        "2-kings-11"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-kings-11:12",
+      "summary": "Chronicles tells how King Jehoram of Judah kills his brothers. Edom and Libnah break away from Judah in his reign. After his son Ahaziah dies, Ahaziah's mother Athaliah kills the royal family. Ahaziah's sister hides the baby Joash in the temple. Six years later the priest Jehoiada brings Joash out and crowns him. The people shout, “Long live the king!” Athaliah is put to death."
+    },
+    {
+      "id": "joash-repairs-temple",
+      "volume": "ot",
+      "title": "Joash repairs the temple",
+      "chapters": [
+        "2-kings-12",
+        "2-chronicles-24"
+      ],
+      "dateFrom": [
+        "2-kings-12"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-kings-12:4",
+      "summary": "King Joash tells the priests to repair the temple with the people's gifts. The repairs stall, so Jehoiada puts a chest by the altar for the money. Workers repair the temple with what the people give. Chronicles adds that after Jehoiada dies, Judah's leaders turn to idols. Jehoiada's son Zechariah warns them, and they stone him in the temple court. Hazael of Syria then attacks, and Joash sends him the temple treasures."
+    },
+    {
+      "id": "elisha-dies",
+      "volume": "ot",
+      "title": "Elisha dies as Israel fights Syria",
+      "chapters": [
+        "2-kings-13"
+      ],
+      "place": "b:samaria",
+      "verse": "2-kings-13:14",
+      "summary": "Syria's kings Hazael and Ben-hadad oppress Israel for years. Elisha falls sick, and King Joash of Israel weeps over him. Elisha tells Joash to strike the ground with arrows. Joash strikes only three times, and Elisha is angry. He says Israel will defeat Syria only three times. Elisha dies and is buried. A dead man thrown into his grave touches his bones and lives."
+    },
+    {
+      "id": "amaziah-and-uzziah",
+      "volume": "ot",
+      "title": "Amaziah's defeat and Uzziah's pride",
+      "chapters": [
+        "2-kings-14",
+        "2-chronicles-25",
+        "2-chronicles-26"
+      ],
+      "dateFrom": [
+        "2-chronicles-25",
+        "2-chronicles-26"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-chronicles-26:16",
+      "summary": "King Amaziah of Judah defeats Edom. Then he challenges King Jehoash of Israel to battle. Jehoash captures Amaziah and breaks down part of Jerusalem's wall. Amaziah's son Uzziah, also called Azariah, rules Judah for many years. Chronicles says Uzziah builds towers, wins wars, and grows strong. Then he grows proud and burns incense in the temple, a priest's task. The LORD strikes him with leprosy, a skin disease, until he dies.",
+      "alsoRead": [
+        {
+          "ref": "Isaiah 6:1",
+          "note": "Isaiah sees the Lord in the year Uzziah died."
+        }
+      ]
+    },
+    {
+      "id": "ahaz-turns-to-assyria",
+      "volume": "ot",
+      "title": "Ahaz turns to Assyria for help",
+      "chapters": [
+        "2-kings-15",
+        "2-kings-16",
+        "2-chronicles-27",
+        "2-chronicles-28"
+      ],
+      "dateFrom": [
+        "2-kings-16",
+        "2-chronicles-28"
+      ],
+      "place": "b:damascus",
+      "verse": "2-kings-16:7",
+      "summary": "In Israel, one king after another is killed by a rival. Tiglath-pileser of Assyria takes northern towns and carries their people away. The kings of Syria and Israel attack King Ahaz of Judah. Ahaz sends temple silver and gold to Tiglath-pileser and asks for help. Assyria captures Damascus. Ahaz copies an altar he sees in Damascus for the temple. Chronicles adds that Ahaz shuts the temple doors.",
+      "alsoRead": [
+        {
+          "ref": "Isaiah 7:14",
+          "note": "Isaiah gives Ahaz the sign of Immanuel."
+        }
+      ]
+    },
+    {
+      "id": "scattering-of-the-ten-tribes",
+      "volume": "ot",
+      "title": "Assyria carries the ten tribes away",
+      "chapters": [
+        "2-kings-17"
+      ],
+      "place": "b:samaria",
+      "verse": "2-kings-17:6",
+      "summary": "King Hoshea of Israel stops paying the yearly tax Assyria demands. He asks So, king of Egypt, for help. The king of Assyria besieges Samaria for three years and takes it. He carries Israel away to Assyria and the cities of the Medes. The writer says Israel worshiped other gods and ignored the prophets. Only the tribe of Judah is left in the land. Assyria brings people from other lands to live in Samaria's towns.",
+      "alsoRead": [
+        {
+          "ref": "1 Chronicles 5:26",
+          "note": "Assyria carries away Reuben, Gad, and half of Manasseh."
+        },
+        {
+          "ref": "1 Nephi 22:4",
+          "note": "Nephi says most of the tribes have been led away."
+        },
+        {
+          "ref": "3 Nephi 17:4",
+          "note": "Jesus says he will show himself to the lost tribes."
+        },
+        {
+          "ref": "D&C 110:11",
+          "note": "Moses gives the keys to lead the ten tribes back."
+        }
+      ]
+    },
+    {
+      "id": "hezekiahs-passover",
+      "volume": "ot",
+      "title": "Hezekiah cleanses the temple and keeps the Passover",
+      "chapters": [
+        "2-chronicles-29",
+        "2-chronicles-30",
+        "2-chronicles-31"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-chronicles-30:1",
+      "summary": "Chronicles tells how King Hezekiah opens the temple doors his father Ahaz shut. The priests and Levites carry the unclean things out of the temple. Hezekiah sends letters to all Israel and Judah to come keep the Passover. Many in the north laugh at his messengers, but some come. The people keep the feast for fourteen days. Then they break down idols and bring gifts to the temple in heaps."
+    },
+    {
+      "id": "sennacherib-besieges-jerusalem",
+      "volume": "ot",
+      "title": "Sennacherib besieges Jerusalem",
+      "chapters": [
+        "2-kings-18",
+        "2-kings-19",
+        "2-chronicles-32",
+        "isaiah-36",
+        "isaiah-37"
+      ],
+      "dateFrom": [
+        "isaiah-36",
+        "isaiah-37"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-kings-19:35",
+      "summary": "Sennacherib king of Assyria captures Judah's walled cities. Hezekiah sends him silver and gold, but Assyria still sends an army. The Assyrian officer shouts at Jerusalem's wall in the people's language. He mocks their trust in the LORD. Hezekiah takes the king's letter and spreads it before the LORD. Isaiah sends word that the city will not fall. That night the LORD's angel strikes the Assyrian camp. Sennacherib goes home to Nineveh."
+    },
+    {
+      "id": "hezekiah-healed",
+      "volume": "ot",
+      "title": "Hezekiah is healed and shows Babylon his treasures",
+      "chapters": [
+        "2-kings-20",
+        "isaiah-38",
+        "isaiah-39"
+      ],
+      "dateFrom": [
+        "isaiah-38",
+        "isaiah-39"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-kings-20:5",
+      "summary": "Hezekiah falls sick, and Isaiah tells him he will die. Hezekiah prays and weeps. The LORD sends Isaiah back to say he will live fifteen more years. As a sign, the shadow goes back ten steps. Messengers come from the king of Babylon, and Hezekiah shows them everything. Isaiah says Babylon will one day carry it all away."
+    },
+    {
+      "id": "manasseh-reigns",
+      "volume": "ot",
+      "title": "Manasseh's long reign and his repentance",
+      "chapters": [
+        "2-kings-21",
+        "2-chronicles-33"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-chronicles-33:12",
+      "summary": "Manasseh rules Judah for fifty-five years. He rebuilds the hilltop shrines his father Hezekiah tore down. He sets up idols in the temple. He makes his son pass through the fire. He kills many innocent people in Jerusalem. Chronicles adds that Assyria takes him in chains to Babylon. There he humbles himself and prays. The LORD brings him back to Jerusalem, and he removes the idols."
+    },
+    {
+      "id": "josiah-finds-the-law",
+      "volume": "ot",
+      "title": "Josiah finds the book of the law and renews the covenant",
+      "chapters": [
+        "2-kings-22",
+        "2-kings-23",
+        "2-chronicles-34",
+        "2-chronicles-35"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-kings-23:3",
+      "summary": "Workers repair the temple, and the high priest Hilkiah finds the book of the law. King Josiah hears it read and tears his clothes. The prophetess Huldah says its warnings will come, but not in his days. Josiah reads the book to the people, and they make a covenant. He destroys idols and hilltop shrines, even the altar at Bethel. He keeps a great Passover. Pharaoh Necho of Egypt kills him at Megiddo.",
+      "related": [
+        "fall-of-nineveh"
+      ],
+      "relatedNote": "Necho was marching north to help Assyria. Nineveh, its capital, had fallen in 612 BCE."
+    },
+    {
+      "id": "jehoiachin-taken-to-babylon",
+      "volume": "ot",
+      "title": "Nebuchadnezzar takes Jehoiachin to Babylon",
+      "chapters": [
+        "2-kings-24"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-kings-24:14",
+      "summary": "King Jehoiakim of Judah serves Babylon for three years, then rebels. Raiders attack Judah. His son Jehoiachin is king when Nebuchadnezzar besieges Jerusalem. Jehoiachin gives himself up and is taken to Babylon. Nebuchadnezzar takes the temple treasures and ten thousand captives. The captives include leaders, soldiers, and craftsmen. Nebuchadnezzar makes Zedekiah king in Jerusalem.",
+      "alsoRead": [
+        {
+          "ref": "1 Nephi 1:4",
+          "note": "Lehi lives in Jerusalem in Zedekiah's first year."
+        }
+      ]
+    },
+    {
+      "id": "jerusalem-destroyed",
+      "volume": "ot",
+      "title": "Babylon destroys Jerusalem and the temple",
+      "chapters": [
+        "2-kings-25",
+        "2-chronicles-36",
+        "jeremiah-39",
+        "jeremiah-52"
+      ],
+      "dateFrom": [
+        "2-kings-25"
+      ],
+      "place": "b:jerusalem",
+      "verse": "2-kings-25:9",
+      "summary": "Zedekiah rebels against Babylon. Nebuchadnezzar's army besieges Jerusalem from Zedekiah's ninth year to his eleventh. Famine fills the city, and the soldiers break through the wall. Zedekiah runs, and the army catches him near Jericho. They kill his sons and blind him. The Babylonians burn the temple, the palace, and every great house. They carry most of the people away to Babylon.",
+      "alsoRead": [
+        {
+          "ref": "Lamentations 1:1",
+          "note": "A poet mourns the empty city."
+        },
+        {
+          "ref": "Omni 1:15",
+          "note": "The people of Zarahemla left Jerusalem when Zedekiah was taken."
+        },
+        {
+          "ref": "Helaman 8:21",
+          "note": "Nephi says Zedekiah's sons were killed, all except Mulek."
+        }
+      ]
+    }
+  ]
+}

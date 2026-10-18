@@ -114,11 +114,12 @@ async function start() {
     const year = scrubber.year, window = scrubber.window();
     const events = shown();
     const active = events.filter(e => isActive(e, window, year, data.bands));
-    const onGlobe = active.filter(e => e.map === 'globe' && !e.broad && tierShown(e));
-    const onMap = active.filter(e => e.map === 'bom');
+    // A chapter told by an event has no pin of its own (DESIGN.md section 3).
+    const onGlobe = active.filter(e => e.map === 'globe' && !e.broad && !e.covered && tierShown(e));
+    const onMap = active.filter(e => e.map === 'bom' && !e.covered);
     const broad = active.filter(e => e.broad);
     const trailSpan = (window.end - window.start + 1) * TRAIL_WINDOWS;
-    const inTrail = e => !e.broad && e.end != null && e.end < window.start && e.end >= window.start - trailSpan;
+    const inTrail = e => !e.broad && !e.covered && e.end != null && e.end < window.start && e.end >= window.start - trailSpan;
     pins?.setItems([...onGlobe.map(e => item(e, 'active')), ...events.filter(e => e.map === 'globe' && inTrail(e) && tierShown(e)).map(e => item(e, 'trail'))]);
     bomPins?.setItems(split.open ? [...onMap.map(e => item(e, 'active')), ...events.filter(e => e.map === 'bom' && inTrail(e)).map(e => item(e, 'trail'))] : []);
 
@@ -168,8 +169,8 @@ async function start() {
   function applyFilters() {
     const events = shown();
     // The event buttons and the density bar follow scripture only (DESIGN.md Q12).
-    stops = eventStops({ ...data, events: events.filter(e => !e.broad && isScripture(e)) });
-    scrubber.setEvents(events.filter(isScripture), stripBands(data, { bom: split.open && !hidden.has('bom') }));
+    stops = eventStops({ ...data, events: events.filter(e => !e.broad && !e.covered && isScripture(e)) });
+    scrubber.setEvents(events.filter(e => isScripture(e) && !e.covered), stripBands(data, { bom: split.open && !hidden.has('bom') }));
     for (const button of $('legend').querySelectorAll('[data-volume]')) button.setAttribute('aria-pressed', String(!hidden.has(button.dataset.volume)));
     refresh();
   }
