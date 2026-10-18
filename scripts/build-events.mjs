@@ -365,7 +365,7 @@ for (const [id, note] of Object.entries(curated.annotations)) {
 // Hand-written batches in scripts/history/batch-N.json. Each event quotes its source.
 // npm run verify:sources checks every quote against the live article.
 
-export const REGIONS = ['Africa', 'Americas', 'Central Asia', 'East Asia', 'Europe', 'Middle East', 'Oceania', 'South Asia'];
+export const REGIONS = ['Africa', 'Americas', 'Central Asia', 'East Asia', 'Europe', 'Middle East', 'Oceania', 'South Asia', 'Southeast Asia'];
 const historySources = {};
 const historyDir = join(here, 'history');
 for (const file of (await readdir(historyDir)).filter(f => /^batch-\d+\.json$/.test(f)).sort()) {
