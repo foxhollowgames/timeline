@@ -47,7 +47,7 @@
 .relief-tiles { filter: saturate(.85) brightness(.9); }
 
 @media (max-width: 650px) {
-  .bom-chip { top: auto; bottom: 64px; font-size: 12px; }
+  .bom-chip { top: 128px; bottom: auto; font-size: 12px; }
   .bom-toggle .bom-toggle-label { display: none; }
   .bom-toggle { padding: 0 11px; }
   .bom-heading { left: 10px; bottom: 10px; padding: 6px 10px; }

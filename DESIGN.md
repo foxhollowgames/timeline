@@ -101,18 +101,34 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 - **New writing (Q22).** The repositories have no world-history data except Isaiah's 12 events. These events are written from scratch.
 - **Scope (Q5).** Global history, as broad as responsible sources allow, including Mesoamerica (Olmec and Preclassic Maya).
   - Tier 1 (about 60 events) always shows, for example the Giza pyramids, Hammurabi, Alexander, the Han dynasty, and the printing press.
-  - Tier 2 (about 200 events) shows as the user zooms the timeline in.
+  - Tier 2 (about 200 events) shows once the strip shows 1,500 years or fewer. The count line says how many are waiting. Opening a tier 2 event from search or a list zooms the strip in.
 - **Sourcing (Q13).**
   - Every event cites at least one reputable reference: Britannica, a museum or university page, or a Wikipedia article that cites the date.
   - An uncertain date uses "c." and a range.
   - The check script fails on an event with no source.
-  - The check script prints a count per region: Africa, the Americas, East Asia, South Asia, Middle East, Europe, and Oceania. This is a warning, not a quota.
+  - The check script prints a count per region: Africa, the Americas, Central Asia, East Asia, South Asia, Middle East, Europe, and Oceania. This is a warning, not a quota.
+  - Each event quotes the words in its source that carry the date. `npm run verify:sources` fetches each Wikipedia article and confirms every quote is in it. It records the article revision in `scripts/history/verified.json`.
+  - `npm run check` fails when a Wikipedia-sourced event has not passed that verification. Britannica blocks scripted reading, so a Britannica source would be checked by hand.
+  - The card shows the quote and links to the source.
 - **Church history after 1847 (Q36).**
   - One curated batch of about 60 events from 1847 to 2026, with the same sourcing rules.
   - Examples: the arrival in the Salt Lake Valley, the first missions abroad, and temple dedications.
   - From 1851 onward, the card also links to the conference globe for that year.
 - **Batches (Q22, Q36).** World history comes in six era batches, and Church history is batch 7. Each batch is one pull request, and the user reviews each one.
-- **Data file.** `scripts/history/<batch>.json`. Each event has `id`, `title`, `start`, `end`, `dateLabel`, `tier`, `region`, `placeId` or `lat` and `lng`, `summary`, and `sourceIds`.
+
+| Batch | Era | Status |
+| --- | --- | --- |
+| 1 | 4000–1000 BCE | 38 events |
+| 2 | 1000 BCE–1 CE | planned |
+| 3 | 1–1000 CE | planned |
+| 4 | 1000–1500 CE | planned |
+| 5 | 1500–1800 CE | planned |
+| 6 | 1800–2026 | planned |
+| 7 | Church history, 1847–2026 | planned |
+
+- **Data file.** `scripts/history/batch-N.json`. Each event has `id`, `title`, `start`, `end`, `dateLabel`, `tier`, `region`, `place`, `lat`, `lng`, `summary`, and `source`. A source is `{ wiki, quote }` for Wikipedia, or `{ title, publisher, url, quote }` otherwise. `quote` may be a list when the start and end need separate quotes.
+- **Display.** History pins are hollow grey hexagons, smaller than scripture pins, so shape and fill set them apart without color. In a group a scripture event always leads. History has its own legend toggle. The event buttons and the density bar follow scripture only.
+- **Also at this time.** A card lists up to four events of the other kind whose dates fall within 150 years. Order-only events get none (Q28).
 
 ## 5. Globe and pins
 

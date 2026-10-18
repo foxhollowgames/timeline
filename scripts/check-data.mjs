@@ -15,7 +15,7 @@ export async function checkData(test, warn) {
   if (!(await exists(dataPath))) { test('dist/data/events.json exists', () => { throw new Error('Run npm run build.'); }); return; }
   const index = await readJSON(dataPath);
   const details = {};
-  for (const volume of ['ot', 'nt', 'bom', 'dc']) details[volume] = await readJSON(join(here, '..', 'dist', 'data', 'details', `${volume}.json`));
+  for (const volume of ['ot', 'nt', 'bom', 'dc', 'history']) details[volume] = await readJSON(join(here, '..', 'dist', 'data', 'details', `${volume}.json`));
   const overrides = await readJSON(join(here, 'date-overrides.json'));
   const curated = await readJSON(join(here, 'curated-events.json'));
   const report = await readJSON(join(here, 'build-report.json'));
@@ -24,7 +24,7 @@ export async function checkData(test, warn) {
   const { events, places } = index;
 
   test('every chapter with places became an event or has a skip rule', () => {
-    const imported = events.filter(e => !e.curated).length;
+    const imported = events.filter(e => !e.curated && e.volume !== 'history').length;
     const expected = report.stats.chapters - report.stats.noPlace;
     if (imported + report.stats.skipped.length !== expected) throw new Error(`${imported} events + ${report.stats.skipped.length} skipped ≠ ${expected} chapters with places`);
     for (const skip of report.stats.skipped) if (!skip.reason) throw new Error(`${skip.ref} is skipped with no reason`);
@@ -35,7 +35,7 @@ export async function checkData(test, warn) {
     for (const e of events) {
       if (seen.has(e.id)) throw new Error(`duplicate id ${e.id}`);
       seen.add(e.id);
-      if (!['ot', 'nt', 'bom', 'dc'].includes(e.volume)) throw new Error(`${e.id}: unknown volume ${e.volume}`);
+      if (!['ot', 'nt', 'bom', 'dc', 'history'].includes(e.volume)) throw new Error(`${e.id}: unknown volume ${e.volume}`);
     }
   });
 
@@ -79,6 +79,7 @@ export async function checkData(test, warn) {
       ...overrides.rules.flatMap(r => [r.dateNote, r.fix, overrides.notes[r.reason] ? null : r.reason]),
       ...Object.values(overrides.sources).map(s => s.note),
       ...curated.events.map(e => e.summary), ...Object.values(curated.annotations).map(a => a.placeNote),
+      ...Object.values(details.history).map(d => d.summary),
     ].filter(Boolean);
     for (const text of texts) {
       for (const sentence of text.split(/(?<=[.!?])\s+(?=[A-Z0-9“"])/)) {
@@ -101,6 +102,26 @@ export async function checkData(test, warn) {
       const p = places[key];
       if (p.y < south || p.y > north || p.x < west || p.x > east) throw new Error(`${e.id}: ${key} is outside the map`);
     }
+  });
+
+  test('every world history event is sourced, placed, and verified against its source', async () => {
+    const history = events.filter(e => e.volume === 'history');
+    const verified = await readJSON(join(here, 'history', 'verified.json')).catch(() => null);
+    if (!verified) throw new Error('scripts/history/verified.json is missing. Run npm run verify:sources.');
+    const result = new Map(verified.results.map(r => [`h-${r.id}`, r]));
+    for (const e of history) {
+      const d = details.history[e.id];
+      const source = index.sources[d.dateSourceIds?.[0]];
+      if (!source?.url || !source.quote?.length) throw new Error(`${e.id}: needs a source with a URL and a quote`);
+      if (![1, 2].includes(e.tier)) throw new Error(`${e.id}: tier must be 1 or 2`);
+      if (e.map !== 'globe') throw new Error(`${e.id}: history never goes on the Book of Mormon map`);
+      if (!d.summary) throw new Error(`${e.id}: no summary`);
+      if (source.author === 'Wikipedia' && !result.get(e.id)?.ok) throw new Error(`${e.id}: its quote has not passed npm run verify:sources`);
+    }
+    // Region coverage is reported, not enforced (DESIGN.md Q13).
+    const counts = {};
+    for (const e of history) counts[e.region] = (counts[e.region] ?? 0) + 1;
+    warn('world history by region: ' + Object.entries(counts).sort().map(([r, n]) => `${r} ${n}`).join(', '));
   });
 
   if (!haveSources) { warn('scripts/source is missing. Run npm run import to check verses, Church rows, and land.'); return; }

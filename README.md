@@ -2,7 +2,7 @@
 
 Wayfinder Timeline is a globe with a timeline. It will place the events of the scriptures beside world history. The full plan is in [DESIGN.md](DESIGN.md).
 
-This is milestone 4 of 6. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map opens beside the globe and follows the same timeline. World history comes in milestone 5.
+This is milestone 5 of 6, batch 1 of 7. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map opens beside the globe and follows the same timeline. World history now covers 4000–1000 BCE, with 38 sourced events. More eras follow in batches.
 
 ## Run locally
 
@@ -30,7 +30,8 @@ The Bible and D&C volumes use port 4173. The Book of Mormon uses 4174. All four 
 - Each volume has its own color and shape: Old Testament circle, New Testament square, Book of Mormon diamond, D&C triangle.
 - A pin with a number holds several events. Select it to see the list.
 - Select an event to open its card. Its other places and its routes show in gold.
-- Select a volume in the header to hide or show it.
+- Select a volume in the header to hide or show it. **History** hides or shows world history.
+- World history pins are hollow grey hexagons. Zoom the strip in to see the smaller events. A card's **Also at this time** lists events of the other kind from the same years.
 - Search finds events, places, and people. Choose a result to go to it.
 - The address keeps the year, the open event, hidden volumes, the strip zoom, and the open panel. Copy it to share the view.
 
@@ -57,12 +58,18 @@ The scripture events come from the three Wayfinder repositories. `scripts/source
 ```text
 npm run import
 npm run build
+npm run verify:sources
 npm run check
 ```
 
 - `npm run import` downloads the pinned files into `scripts/source/`. That folder is not committed.
 - `npm run build` writes `dist/data/events.json`, `dist/data/details/<volume>.json`, and `dist/data/search.json`. It stops when a chapter has no date rule.
+- `npm run verify:sources` confirms each world-history quote is in its live source. Run it after you change a batch.
 - `npm run check` tests the scripts, the time scale, and the data.
+
+### World history
+
+World history lives in `scripts/history/batch-N.json`, one file per era. DESIGN.md section 4 gives the format and the sourcing rules. Each event quotes the words in its source that carry the date.
 
 To take in a fix from a Wayfinder repository, change its commit in `scripts/sources.json`. Then run all three commands.
 

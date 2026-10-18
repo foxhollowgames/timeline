@@ -3,12 +3,12 @@
 
 import { createGlobe } from './globe.js';
 import { createScrubber } from './scrubber.js';
-import { formatYear, formatRange } from './time-scale.js';
+import { formatYear, formatRange, yearsPerU, yearToU, zoomView } from './time-scale.js';
 import { loadEvents, stripBands, isActive, eventStops, nextStop, previousStop } from './events.js';
 import { createPins, globeView } from './pins.js';
 import { createCard } from './card.js';
 import { createSearch } from './search.js';
-import { VOLUMES, VOLUME_ORDER, shapeSVG } from './volumes.js';
+import { VOLUMES, VOLUME_ORDER, SCRIPTURE, shapeSVG } from './volumes.js';
 import { readHash, writeHash } from './address.js';
 import { createSplit } from './split.js';
 import { createBomMap } from './bom-map.js';
@@ -16,6 +16,8 @@ import { createBomMap } from './bom-map.js';
 const $ = id => document.getElementById(id);
 const START_YEAR = -600;
 const TRAIL_WINDOWS = 3; // the trail covers three window widths before the window
+// Tier 2 history shows once the strip shows this many years or fewer (DESIGN.md Q5).
+const TIER_2_YEARS = 1500;
 
 function setStatus(message, id = 'status') {
   $(id).textContent = message;
@@ -94,6 +96,9 @@ async function start() {
 
   // ---------- What is shown ----------
   const shown = () => data.events.filter(e => !hidden.has(e.volume));
+  const isScripture = e => e.volume !== 'history';
+  const visibleYears = () => { const v = scrubber.view; return (v.u1 - v.u0) * yearsPerU(yearToU(scrubber.year)); };
+  const tierShown = e => isScripture(e) || e.tier === 1 || visibleYears() <= TIER_2_YEARS;
   const item = (event, state) => ({ event, placeKey: event.place, place: data.places[event.place], state });
 
   function refresh() {
@@ -101,16 +106,20 @@ async function start() {
     const year = scrubber.year, window = scrubber.window();
     const events = shown();
     const active = events.filter(e => isActive(e, window, year, data.bands));
-    const onGlobe = active.filter(e => e.map === 'globe' && !e.broad);
+    const onGlobe = active.filter(e => e.map === 'globe' && !e.broad && tierShown(e));
     const onMap = active.filter(e => e.map === 'bom');
     const broad = active.filter(e => e.broad);
     const trailSpan = (window.end - window.start + 1) * TRAIL_WINDOWS;
     const inTrail = e => !e.broad && e.end != null && e.end < window.start && e.end >= window.start - trailSpan;
-    pins?.setItems([...onGlobe.map(e => item(e, 'active')), ...events.filter(e => e.map === 'globe' && inTrail(e)).map(e => item(e, 'trail'))]);
+    pins?.setItems([...onGlobe.map(e => item(e, 'active')), ...events.filter(e => e.map === 'globe' && inTrail(e) && tierShown(e)).map(e => item(e, 'trail'))]);
     bomPins?.setItems(split.open ? [...onMap.map(e => item(e, 'active')), ...events.filter(e => e.map === 'bom' && inTrail(e)).map(e => item(e, 'trail'))] : []);
 
     const parts = [];
-    if (onGlobe.length) parts.push(`${plural(onGlobe.length, 'event')} on the globe.`);
+    const scriptureOnGlobe = onGlobe.filter(isScripture).length, historyOnGlobe = onGlobe.length - scriptureOnGlobe;
+    if (scriptureOnGlobe) parts.push(`${plural(scriptureOnGlobe, 'scripture event')} on the globe.`);
+    if (historyOnGlobe) parts.push(`${plural(historyOnGlobe, 'world history event')}.`);
+    const hiddenTier = active.filter(e => !tierShown(e)).length;
+    if (hiddenTier) parts.push(`Zoom the strip in to see ${plural(hiddenTier, 'more history event')}.`);
     if (onMap.length) parts.push(split.open ? `${onMap.length} on the Book of Mormon map.` : `${onMap.length} more for the Book of Mormon map.`);
     if (broad.length) parts.push(`${plural(broad.length, 'psalm')} with wide dates are not pinned.`);
     if ([...onGlobe, ...(split.open ? onMap : [])].some(e => e.start == null)) parts.push('Years are not given for some.');
@@ -149,8 +158,9 @@ async function start() {
 
   function applyFilters() {
     const events = shown();
-    stops = eventStops({ ...data, events: events.filter(e => !e.broad) });
-    scrubber.setEvents(events, stripBands(data, { bom: split.open && !hidden.has('bom') }));
+    // The event buttons and the density bar follow scripture only (DESIGN.md Q12).
+    stops = eventStops({ ...data, events: events.filter(e => !e.broad && isScripture(e)) });
+    scrubber.setEvents(events.filter(isScripture), stripBands(data, { bom: split.open && !hidden.has('bom') }));
     for (const button of $('legend').querySelectorAll('[data-volume]')) button.setAttribute('aria-pressed', String(!hidden.has(button.dataset.volume)));
     refresh();
   }
@@ -168,6 +178,11 @@ async function start() {
   // ---------- Selecting events ----------
   const bandYear = band => Math.round((band.start + band.end) / 2);
   function moveTo(event) {
+    // A second-tier history event needs the strip zoomed in far enough to show it.
+    if (event.volume === 'history' && event.tier === 2) {
+      const years = (scrubber.view.u1 - scrubber.view.u0) * yearsPerU(yearToU(event.start));
+      if (years > TIER_2_YEARS) scrubber.setView(zoomView(scrubber.view, (TIER_2_YEARS * 0.8) / years, yearToU(event.start)));
+    }
     const window = scrubber.window();
     if (isActive(event, window, scrubber.year, data.bands)) return;
     if (event.start == null) scrubber.setYear(bandYear(data.bands[event.band] ?? data.bands.primeval));

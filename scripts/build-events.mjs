@@ -172,13 +172,14 @@ const tagPeople = (eventId, entries) => {
   for (const [key, name] of entries) { if (!name) continue; people[key] ??= name; keys.push(key); }
   if (keys.length) eventPeople[eventId] = [...new Set(keys)];
 };
-const details = { ot: {}, nt: {}, bom: {}, dc: {} };
+const details = { ot: {}, nt: {}, bom: {}, dc: {}, history: {} };
 
 function pushEvent(event, detail, date) {
   if (date.basis === 'skip') { stats.skipped.push({ id: event.id, ref: event.ref, reason: date.reason }); return; }
   const { label, sourceIds, note, dateNote, scholarly, fix, biblical, kept, ...core } = date;
   const record = { ...event, ...core };
-  if (core.start != null && core.end != null && core.end - core.start > 300) record.broad = true;
+  // Scripture texts spanning more than 300 years get no pin. History eras keep their ranges.
+  if (event.volume !== 'history' && core.start != null && core.end != null && core.end - core.start > 300) record.broad = true;
   events.push(record);
   details[event.volume][event.id] = { ...detail, dateLabel: label, dateSourceIds: sourceIds, ...(note && { dateNote: note }), ...(dateNote && { dateDetail: dateNote }), ...(scholarly && { scholarly }), ...(fix && { dateFix: fix }), ...(biblical && { biblical }), ...(kept && { dateKept: true }) };
   stats.events++;
@@ -360,6 +361,36 @@ for (const [id, note] of Object.entries(curated.annotations)) {
   Object.assign(details[event.volume][id], note);
 }
 
+// ---------- World history (DESIGN.md section 4) ----------
+// Hand-written batches in scripts/history/batch-N.json. Each event quotes its source.
+// npm run verify:sources checks every quote against the live article.
+
+export const REGIONS = ['Africa', 'Americas', 'Central Asia', 'East Asia', 'Europe', 'Middle East', 'Oceania', 'South Asia'];
+const historySources = {};
+const historyDir = join(here, 'history');
+for (const file of (await readdir(historyDir)).filter(f => /^batch-\d+\.json$/.test(f)).sort()) {
+  const batch = await readJSON(join(historyDir, file));
+  for (const item of batch.events) {
+    const where = `history ${item.id}`;
+    if (!REGIONS.includes(item.region)) problems.push(`${where}: unknown region ${item.region}`);
+    if (![1, 2].includes(item.tier)) problems.push(`${where}: tier must be 1 or 2`);
+    if (!item.source?.wiki && !item.source?.url) { problems.push(`${where}: no source`); continue; }
+    const sourceId = `h-${item.id}`;
+    historySources[sourceId] = item.source.wiki
+      ? { title: `${item.source.wiki} (Wikipedia)`, author: 'Wikipedia', url: `https://en.wikipedia.org/wiki/${encodeURIComponent(item.source.wiki.replace(/ /g, '_'))}`, quote: [item.source.quote].flat() }
+      : { title: item.source.title, author: item.source.publisher, url: item.source.url, quote: [item.source.quote].flat() };
+    const key = addPlace(`h:${item.id}`, { name: item.place, lat: item.lat, lng: item.lng }, where);
+    pushEvent(
+      { id: `h-${item.id}`, volume: 'history', book: `batch-${batch.batch}`, chapter: null, ref: item.dateLabel, title: item.title, map: 'globe', place: key, places: [key], tier: item.tier, region: item.region },
+      { summary: item.summary, region: item.region, batch: batch.batch },
+      { basis: 'history', start: item.start, end: item.end, label: item.dateLabel, sourceIds: [sourceId] },
+    );
+  }
+}
+// A count per region, so coverage stays global. A warning, not a quota.
+const regionCounts = Object.fromEntries(REGIONS.map(r => [r, events.filter(e => e.region === r).length]));
+stats.historyRegions = regionCounts;
+
 // ---------- Bands ----------
 
 const dated = events.filter(e => e.start != null);
@@ -373,7 +404,7 @@ const bands = {
 
 // ---------- Write ----------
 
-const volumeOrder = { ot: 0, nt: 1, bom: 2, dc: 3 };
+const volumeOrder = { ot: 0, nt: 1, bom: 2, dc: 3, history: 4 };
 events.sort((a, b) => (a.start ?? -1e9) - (b.start ?? -1e9) || volumeOrder[a.volume] - volumeOrder[b.volume] || String(a.id).localeCompare(String(b.id), 'en', { numeric: true }));
 
 const usedSources = new Set(Object.values(details).flatMap(v => Object.values(v).flatMap(d => d.dateSourceIds ?? [])));
@@ -381,7 +412,7 @@ const index = {
   generated: new Date().toISOString().slice(0, 10),
   inputs: Object.fromEntries(Object.entries(config.repos).map(([key, r]) => [key, `${r.repo}@${r.commit}`])),
   bands,
-  sources: Object.fromEntries(Object.entries(overrides.sources).filter(([id]) => usedSources.has(id))),
+  sources: { ...Object.fromEntries(Object.entries(overrides.sources).filter(([id]) => usedSources.has(id))), ...historySources },
   places,
   events,
 };
@@ -418,5 +449,6 @@ await writeFile(join(here, 'build-report.json'), JSON.stringify({ stats, warning
 
 const count = volume => events.filter(e => e.volume === volume).length;
 console.log(`${stats.chapters} chapters read. ${stats.events} events written. ${stats.noPlace} chapters have no places. ${stats.skipped.length} skipped by rule.`);
-console.log(`Old Testament ${count('ot')} · New Testament ${count('nt')} · Book of Mormon ${count('bom')} · D&C ${count('dc')}`);
+console.log(`Old Testament ${count('ot')} · New Testament ${count('nt')} · Book of Mormon ${count('bom')} · D&C ${count('dc')} · World history ${count('history')}`);
+console.log('World history by region: ' + Object.entries(regionCounts).map(([r, n]) => `${r} ${n}`).join(', '));
 console.log(`${Object.keys(places).length} places. ${warnings.length} warning(s) in scripts/build-report.json.`);

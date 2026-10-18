@@ -74,7 +74,8 @@ export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
     // A group shows the lead volume's shape. A second, smaller shape marks a mixed group.
     const second = volumes.find(v => v !== lead.volume);
     const caption = g.items.length > 1 ? `${g.items.length} events · ${g.items[0].place.name}` : `${lead.ref} · ${lead.title}`;
-    return shapeSVG(lead.volume, g.items.length > 1 ? 20 : 17, { className: 'pin-shape' })
+    const size = lead.volume === 'history' ? (g.items.length > 1 ? 16 : 14) : (g.items.length > 1 ? 20 : 17);
+    return shapeSVG(lead.volume, size, { className: 'pin-shape' })
       + (second ? shapeSVG(second, 11, { className: 'pin-second' }) : '')
       + (g.items.length > 1 ? `<span class="count" aria-hidden="true">${g.items.length}</span>` : '')
       + `<span class="pin-caption" aria-hidden="true">${escapeHTML(caption)}</span>`;
@@ -98,6 +99,7 @@ export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
       button.setAttribute('aria-label', label(g));
       button.classList.toggle('trail', !g.active);
       button.classList.toggle('undated', g.items.every(i => i.event.start == null));
+      button.classList.toggle('secondary', g.items.every(i => i.event.volume === 'history'));
       button.classList.toggle('selected', Boolean(selectedId) && g.items.some(i => i.event.id === selectedId));
       button.style.transform = `translate(${g.x}px, ${g.y}px) translate(-50%, -50%)`;
     }

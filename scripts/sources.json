@@ -2,7 +2,7 @@
   "note": "Pinned inputs for npm run import. Move a pin forward to take in fixes from that repository, then run npm run import and npm run build.",
   "repos": {
     "bible": { "repo": "foxhollowgames/bible", "commit": "89526c45311b3ea88100335700fb82660d0c0c90" },
-    "book-of-mormon": { "repo": "foxhollowgames/book-of-mormon", "commit": "f3ae21007827ae3e4ee339177318048b5fbf16c1" },
+    "book-of-mormon": { "repo": "foxhollowgames/book-of-mormon", "commit": "07bed6ae93f6a75756122a403b12af5b19994ec2" },
     "doctrine-and-covenants": { "repo": "foxhollowgames/doctrine-and-covenants", "commit": "688d30901ef8374770b2aa39f6d0f2569c95c661" },
     "natural-earth": { "repo": "nvkelso/natural-earth-vector", "commit": "v5.1.2" }
   },
