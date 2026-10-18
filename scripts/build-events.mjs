@@ -93,7 +93,7 @@ function resolveDate(rule, repoLabel, where) {
   if (note) date.note = note;
   if (rule.dateNote) date.dateNote = rule.dateNote;
   const biblical = biblicalYears(rule);
-  if (biblical) date.biblical = `Biblical numbers in the same table: ${biblical}.`;
+  const addBiblical = () => { if (biblical) date.biblical = `Biblical numbers in the same table: ${biblical}.`; };
   const scholarlyLine = () => {
     if (!repo || repo.start == null || repo.end == null) return;
     const gap = Math.max(Math.abs(repo.start - date.start), Math.abs(repo.end - date.end));
@@ -109,6 +109,7 @@ function resolveDate(rule, repoLabel, where) {
     }
     case 'church': {
       Object.assign(date, { start: rule.start, end: rule.end, label: rule.label ?? formatRange(rule.start, rule.end) });
+      addBiblical();
       scholarlyLine();
       return date;
     }
@@ -119,8 +120,9 @@ function resolveDate(rule, repoLabel, where) {
       const start = known ? Math.max(repo.start, rule.start) : null, end = known ? Math.min(repo.end, rule.end) : null;
       if (known && start <= end) {
         const unchanged = start === repo.start && end === repo.end;
-        Object.assign(date, { start, end, label: unchanged ? tidyLabel(repoLabel) : rangeLabel(start, end, true) });
-      } else Object.assign(date, { start: rule.start, end: rule.end, label: rule.label ?? formatRange(rule.start, rule.end) });
+        // The repo's own date is kept, so the card names it as a scholarly date.
+        Object.assign(date, { start, end, kept: true, sourceIds: ['bible-repo', ...date.sourceIds], label: unchanged ? tidyLabel(repoLabel) : rangeLabel(start, end, true) });
+      } else { Object.assign(date, { start: rule.start, end: rule.end, label: rule.label ?? formatRange(rule.start, rule.end) }); addBiblical(); }
       scholarlyLine();
       return date;
     }
@@ -163,15 +165,22 @@ function distanceKm(a, b) {
 }
 
 const events = [];
+// Search: person key -> name, and event id -> person keys.
+const people = {}, eventPeople = {};
+const tagPeople = (eventId, entries) => {
+  const keys = [];
+  for (const [key, name] of entries) { if (!name) continue; people[key] ??= name; keys.push(key); }
+  if (keys.length) eventPeople[eventId] = [...new Set(keys)];
+};
 const details = { ot: {}, nt: {}, bom: {}, dc: {} };
 
 function pushEvent(event, detail, date) {
   if (date.basis === 'skip') { stats.skipped.push({ id: event.id, ref: event.ref, reason: date.reason }); return; }
-  const { label, sourceIds, note, dateNote, scholarly, fix, biblical, ...core } = date;
+  const { label, sourceIds, note, dateNote, scholarly, fix, biblical, kept, ...core } = date;
   const record = { ...event, ...core };
   if (core.start != null && core.end != null && core.end - core.start > 300) record.broad = true;
   events.push(record);
-  details[event.volume][event.id] = { ...detail, dateLabel: label, dateSourceIds: sourceIds, ...(note && { dateNote: note }), ...(dateNote && { dateDetail: dateNote }), ...(scholarly && { scholarly }), ...(fix && { dateFix: fix }), ...(biblical && { biblical }) };
+  details[event.volume][event.id] = { ...detail, dateLabel: label, dateSourceIds: sourceIds, ...(note && { dateNote: note }), ...(dateNote && { dateDetail: dateNote }), ...(scholarly && { scholarly }), ...(fix && { dateFix: fix }), ...(biblical && { biblical }), ...(kept && { dateKept: true }) };
   stats.events++;
 }
 
@@ -184,6 +193,7 @@ for (const [index, id] of config.bibleBooks.entries()) {
   const scripture = await readJSON(join(src, 'bible', `${id}-native-scripture.json`));
   const name = content.book.name;
   const placeById = new Map(content.places.map(p => [p.id, p]));
+  const bookPeople = (await readJSON(join(src, 'bible', `${id}-people.json`))).people ?? {};
   const routeById = new Map([...(content.textRoutes ?? []), ...(content.campaigns ?? [])].map(r => [r.id, r]));
   const bands = content.chapterDateBands ?? [];
   for (const map of content.chapterMaps) {
@@ -197,6 +207,7 @@ for (const [index, id] of config.bibleBooks.entries()) {
     const date = resolveDate(rule, band?.label, where);
     if (!date) continue;
     const keys = placeIds.map(pid => { const p = placeById.get(pid); return addPlace(`b:${pid}`, { name: p.name, lat: p.lat, lng: p.lng }, where, id); });
+    tagPeople(`${id}-${n}`, Object.entries(bookPeople).filter(([, person]) => person.chapterIds?.includes(n)).map(([pid, person]) => [`b:${pid}`, person.name]));
     const passage = (content.passages ?? []).filter(p => p.chapter === n).sort((a, b) => a.start - b.start)[0];
     const event = (content.events ?? []).find(e => e.chapter === n && !('year' in e));
     const study = (content.chapterStudies ?? []).find(s => s.chapter === n);
@@ -231,6 +242,7 @@ const st = oldWorld.stage;
 // Old World places are stored in the stage's miles. Undo the stage projection to get latitude and longitude.
 const toLatLng = ([x, y]) => ({ lat: Math.round((st.lat0 + y / st.milesPerLat) * 1e4) / 1e4, lng: Math.round((st.lng0 + (x - st.origin[0]) / st.milesPerLng) * 1e4) / 1e4 });
 const bomPlaces = new Map(bom.places.map(p => [p.id, p]));
+const bomPeople = new Map(bom.people.filter(p => p.kind === 'person').map(p => [p.id, p.name]));
 const bomRoutes = new Map(bom.routes.map(r => [r.id, r]));
 const bomBookNames = new Map(bomText.books.map(b => [b.chapters[0].replace(/-1$/, ''), b.book]));
 // scripture.json keeps each chapter under chapters[<id>].verses as [{verse, text}].
@@ -255,6 +267,7 @@ for (const map of bom.chapterMaps) {
   if (!onStage.length) { warnings.push(`${ref}: no place on the ${stage} stage`); continue; }
   const keys = onStage.map(pid => bomPlaceKey(bomPlaces.get(pid)));
   const focus = onStage[0];
+  tagPeople(map.chapter, Object.keys(map.personMentions ?? {}).filter(pid => bomPeople.has(pid)).map(pid => [`bom:${pid}`, bomPeople.get(pid)]));
   const verseNumber = map.placeMentions?.[focus]?.[0] ?? 1;
   const verses = verseLookup.get(map.chapter);
   const verseText = Array.isArray(verses) ? verses.find(v => v.verse === verseNumber)?.text : undefined;
@@ -290,6 +303,7 @@ for (const [id, value] of Object.entries(dcRoutesFile.waypoints ?? {})) {
 }
 const dcRaw = await readJSON(join(dcDir, 'doctrine-and-covenants.json'));
 const dcVerses = new Map(dcRaw.sections.map(s => [s.section, s.verses]));
+const dcPeople = new Map((await readJSON(join(dcDir, 'people-ids.json'))).map(p => [p.id, p.name]));
 const sectionFiles = (await readdir(join(dcDir, 'sections'))).sort();
 for (const file of sectionFiles) {
   stats.chapters++;
@@ -305,6 +319,7 @@ for (const file of sectionFiles) {
   if (!year) { problems.push(`${ref}: no month`); continue; }
   const date = { basis: 'section', start: year, end: year, month: section.month, label: section.dateLabel, sourceIds: rule.sourceIds };
   const keys = placeIds.map(pid => { const p = dcPlaces.get(pid); return addPlace(`dc:${pid}`, { name: p.name, lat: p.lat, lng: p.lng }, ref); });
+  tagPeople(isDeclaration ? section.id : `dc-${n}`, (section.personIds ?? []).filter(pid => dcPeople.has(pid)).map(pid => [`dc:${pid}`, dcPeople.get(pid)]));
   const verseNumber = section.studyVerse;
   const verseText = typeof n === 'number' && verseNumber ? dcVerses.get(n)?.find(v => v.verse === verseNumber)?.text : undefined;
   const routes = (dcRoutesFile.routes ?? []).filter(r => typeof n === 'number' && (r.sections ?? []).includes(n)).map(r => {
@@ -376,6 +391,9 @@ if (problems.length) {
 }
 await mkdir(join(out, 'details'), { recursive: true });
 await writeFile(join(out, 'events.json'), JSON.stringify(index));
+// Loaded when the search box is first used.
+for (const id of Object.keys(eventPeople)) if (!events.some(e => e.id === id)) delete eventPeople[id];
+await writeFile(join(out, 'search.json'), JSON.stringify({ people, eventPeople }));
 for (const [volume, records] of Object.entries(details)) await writeFile(join(out, 'details', `${volume}.json`), JSON.stringify(records));
 await writeFile(join(here, 'build-report.json'), JSON.stringify({ stats, warnings }, null, 1) + '\n');
 

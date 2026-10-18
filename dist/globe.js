@@ -22,6 +22,46 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
   let stageWidth = 1, stageHeight = 1, lastFrame = 0, lastInteraction = performance.now();
   let spinning = !reducedMotion, dragging = false, pinchDistance = 0;
   let zoomMotion = null, zoomTarget = null, focusMotion = null;
+  let viewShift = { x: 0, y: 0 }, slideMotion = null;
+  const overlay = new THREE.Group();
+
+  // Move the sphere sideways so an open card does not cover it (from the conference globe).
+  function slideTo(x, y) { slideMotion = { from: { ...viewShift }, to: { x, y }, start: performance.now(), duration: reducedMotion ? 0 : 850 }; }
+  function updateSlide(time) {
+    if (!slideMotion) return;
+    const m = slideMotion, t = m.duration ? Math.min(1, (time - m.start) / m.duration) : 1;
+    viewShift.x = THREE.MathUtils.lerp(m.from.x, m.to.x, ease(t));
+    viewShift.y = THREE.MathUtils.lerp(m.from.y, m.to.y, ease(t));
+    camera.setViewOffset(stageWidth, stageHeight, viewShift.x, viewShift.y, stageWidth, stageHeight);
+    if (t === 1) slideMotion = null;
+  }
+
+  // Routes drawn as great-circle arcs just above the surface.
+  function arc(a, b) {
+    const va = vector(a, 1.004), vb = vector(b, 1.004);
+    const angle = va.angleTo(vb), steps = Math.max(2, Math.ceil(angle / 0.01));
+    const points = [];
+    for (let i = 0; i <= steps; i++) points.push(new THREE.Vector3().copy(va).lerp(vb, i / steps).setLength(1.004));
+    return points;
+  }
+  function setRoutes(routes = []) {
+    for (const child of [...overlay.children]) { overlay.remove(child); child.geometry.dispose(); child.material.dispose(); }
+    for (const route of routes) {
+      const points = [];
+      for (let i = 1; i < route.points.length; i++) points.push(...arc({ lat: route.points[i - 1][0], lng: route.points[i - 1][1] }, { lat: route.points[i][0], lng: route.points[i][1] }));
+      if (points.length < 2) continue;
+      const material = new THREE.LineBasicMaterial({ color: route.color ?? 0xefcc88, transparent: true, opacity: 0.9, depthTest: true });
+      overlay.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material));
+    }
+  }
+
+  // Screen position of a point on the globe, or null when it is behind the Earth.
+  const scratch = new THREE.Vector3();
+  function project(position) {
+    if (position.dot(camera.position) - position.lengthSq() < 0.035) return null;
+    scratch.copy(position).project(camera);
+    return { x: (scratch.x + 1) * stageWidth / 2, y: (1 - scratch.y) * stageHeight / 2 };
+  }
 
   const setSpin = value => { spinning = value; controls.autoRotate = value; };
   const activity = () => { lastInteraction = performance.now(); setSpin(false); };
@@ -67,7 +107,9 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
     const rect = stage.getBoundingClientRect();
     stageWidth = Math.max(1, rect.width); stageHeight = Math.max(1, rect.height);
     renderer.setSize(stageWidth, stageHeight);
-    camera.aspect = stageWidth / stageHeight; camera.updateProjectionMatrix();
+    camera.aspect = stageWidth / stageHeight;
+    if (viewShift.x || viewShift.y) camera.setViewOffset(stageWidth, stageHeight, viewShift.x, viewShift.y, stageWidth, stageHeight);
+    camera.updateProjectionMatrix();
   }
 
   function renderFrame(time) {
@@ -78,6 +120,7 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
     updateMotion(time, delta);
     controls.rotateSpeed = THREE.MathUtils.clamp(0.24 * (camera.position.length() - 1) / 2.83, 0.015, 0.3);
     controls.update(delta);
+    updateSlide(time);
     camera.updateMatrixWorld();
     updateEarthDetail(camera, time, delta);
     renderer.render(scene, camera);
@@ -157,6 +200,8 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
     scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), gridMaterial));
   }
 
+  scene.add(overlay);
+
   const starPositions = []; let seed = 41;
   const random = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
   for (let i = 0; i < 1800; i++) {
@@ -176,6 +221,9 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
   return {
     vector,
     focusOn,
+    slideTo,
+    setRoutes,
+    project,
     zoomIn: () => zoomTo((zoomTarget ?? camera.position.length()) * 0.8),
     zoomOut: () => zoomTo((zoomTarget ?? camera.position.length()) * 1.25),
     reset() { zoomMotion = null; zoomTarget = null; focusMotion = null; resetCamera(); controls.target.set(0, 0, 0); controls.update(); activity(); },

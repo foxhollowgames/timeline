@@ -145,6 +145,27 @@ test('event stops include the band start and skip duplicates', () => {
   assert.equal(ev.nextStop(stops, -4000).year, -2000);
 });
 
+// 2c. The address.
+const address = await import(new URL('../dist/address.js', import.meta.url));
+test('the address round-trips and rejects bad values', () => {
+  const state = { year: -701, event: 'isaiah-36', hide: ['nt', 'dc'], view: { u0: 0.21, u1: 0.26 } };
+  const hash = address.writeHash(state);
+  assert.equal(hash, '#year=-701&event=isaiah-36&hide=dc,nt&view=0.21,0.26');
+  assert.deepEqual(address.readHash(hash), { ...state, hide: ['dc', 'nt'] });
+  assert.equal(address.writeHash({ year: 1830, view: { u0: 0, u1: 1 } }), '#year=1830');
+  assert.deepEqual(address.readHash('#year=0&event=<script>&hide=xx&view=0.5,0.2'), {});
+  assert.deepEqual(address.readHash('#year=-9000'), {});
+});
+
+// 2d. Volume identity: every volume has its own hue and its own shape.
+const volumes = await import(new URL('../dist/volumes.js', import.meta.url));
+test('each volume has a distinct hue and a distinct shape', () => {
+  const list = Object.values(volumes.VOLUMES);
+  assert.equal(new Set(list.map(v => v.color)).size, list.length);
+  assert.equal(new Set(list.map(v => v.shape)).size, list.length);
+  for (const id of volumes.VOLUME_ORDER) assert.match(volumes.shapeSVG(id), /<svg[\s\S]*<\/svg>/);
+});
+
 // 3. The built data.
 const { checkData } = await import(new URL('./check-data.mjs', import.meta.url));
 const pending = [];

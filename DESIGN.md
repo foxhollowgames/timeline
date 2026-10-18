@@ -117,14 +117,26 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 ## 5. Globe and pins
 
 - **Base map (Q16).** The conference globe's Earth texture, with no political borders in version 1. Ancient empire areas come in a later version. They may reuse the Bible repository's `regions`.
-- **Scripture pins (Q30).** Solid fill, with one hue per volume: Old Testament, New Testament, Book of Mormon, and D&C with Church history. The hues are chosen with the dataviz palette method and checked for contrast on the dark globe.
-- **History pins (Q5).** Smaller, hollow, and grey. They are secondary to scripture pins.
-- **Legend.** A small corner legend shows both pin styles and the four volume hues.
-- **Clustering.** Clustering uses the conference globe's method. Scripture pins rank above history pins in a group.
-- **Filters and search (Q31).**
-  - Toggles turn each volume and world history on or off.
-  - A search box finds events, places, and people.
-  - Choosing a result moves the scrubber and focuses the globe.
+- **Scripture pins (Q30).** Each volume has its own hue and its own shape, so color is never the only cue. This covers color blindness. `dist/volumes.js` holds the values.
+
+| Volume | Hue | Shape |
+| --- | --- | --- |
+| Old Testament | blue `#3987e5` | circle |
+| New Testament | aqua `#199e70` | square |
+| Book of Mormon | orange `#d95926` | diamond |
+| D&C and Church history | olive `#b9b04a` | triangle |
+
+  - The hues were checked with the dataviz validator on the globe surface `#060b16`, comparing every pair. The worst color-blind ΔE is 9.4, the worst normal-vision ΔE is 17.5, and every hue clears 3:1 contrast.
+  - No four hues inside the validator's lightness band pass every pair. The olive sits above the band on purpose, because a lighter mark reads better on the dark globe.
+  - Each shape has a 2px ring in the surface color.
+- **History pins (Q5).** Smaller, hollow, and grey. They are secondary to scripture pins. They arrive in milestone 5 and will need a fifth shape.
+- **Groups.** Events at one place, or within one pin width on screen, form one group. A group shows the lead volume's shape and a count. A mixed group adds a small second shape. Selecting a group opens a list.
+- **Trail (Q6).** Events that ended in the three window widths before the window show as faded, smaller pins.
+- **Wide dates.** An event whose range spans more than 300 years, which today means the 48 placed Psalms, gets no pin. The count line names them, and search and place lists still find them.
+- **Book of Mormon map events** are counted but not pinned on the globe. They wait for the panel in milestone 4.
+- **Selection.** The selected event's group gets a gold ring. Its other places show as small gold dots, labeled where labels do not overlap. Its routes are drawn as gold arcs.
+- **Legend and filters (Q30, Q31).** The legend in the header shows each volume's shape and name. Each entry is also a toggle that hides or shows that volume. Hidden volumes leave the pins, the counts, the density bar, and the event buttons. A world history toggle joins in milestone 5.
+- **Search (Q31).** One box finds events by reference or title, places, and people. Choosing an event moves the scrubber, turns the globe, and opens its card. Choosing a place or a person opens a list of its events. People come from each repository's people data.
 
 ## 6. Event card (Q8, Q24)
 
@@ -135,8 +147,10 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - Book of Mormon: the first verse that names the focus place.
 - **In scripture.** Citation links into the Wayfinder readers, plus a "Read the chapter" link.
 - **Sources.** The source list for the event.
-- **Also at this time.** The nearest events of the other kind, history for a scripture event and scripture for a history event.
+- **Also at this time.** The nearest events of the other kind, history for a scripture event and scripture for a history event. This section waits for the history events in milestone 5.
 - **Map details.** The event's other places and its routes, drawn on the globe.
+- **Date lines.** The card names the date's basis. It adds the scholarly estimate, the Church table's biblical-number years, and any correction where they apply. A prophet chapter that keeps the repository's own date says so.
+- **Lists.** A pin group, a place, or a person opens a list. Choosing an event in the list moves time to it, and a back link returns to the list.
 
 ## 7. Book of Mormon panel (Q7, Q11, Q32)
 

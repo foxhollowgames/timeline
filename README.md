@@ -2,7 +2,7 @@
 
 Wayfinder Timeline is a globe with a timeline. It will place the events of the scriptures beside world history. The full plan is in [DESIGN.md](DESIGN.md).
 
-This is milestone 2 of 6. The globe and the timeline strip work. The scripture events are imported and dated. The strip shows where they fall, and the event buttons step through them. Pins and cards come in milestone 3.
+This is milestone 3 of 6. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map comes in milestone 4, and world history in milestone 5.
 
 ## Run locally
 
@@ -23,6 +23,17 @@ The Bible and D&C volumes use port 4173. The Book of Mormon uses 4174. All four 
 - Press plus or minus to zoom. Press 0 or select **All years** to see the whole span.
 - Select **Previous event** or **Next event** to jump to the nearest scripture event.
 
+## Use the globe
+
+- Drag the globe to turn it. Scroll, pinch, or use the plus and minus buttons to zoom.
+- Pins show the events in the active window. Faded pins ended a little earlier.
+- Each volume has its own color and shape: Old Testament circle, New Testament square, Book of Mormon diamond, D&C triangle.
+- A pin with a number holds several events. Select it to see the list.
+- Select an event to open its card. Its other places and its routes show in gold.
+- Select a volume in the header to hide or show it.
+- Search finds events, places, and people. Choose a result to go to it.
+- The address keeps the year, the open event, hidden volumes, and the strip zoom. Copy it to share the view.
+
 The strip is not drawn to one scale. It gives more space to 2000 BCE–100 CE and to 1800–2026. The striped spans, 4000–2000 BCE and 100–1800 CE, are compressed.
 
 The bars show how many events fall at each point. The gold band around the selected year is the active window. The window is about 2% of the visible strip, so it narrows when you zoom in.
@@ -40,7 +51,7 @@ npm run check
 ```
 
 - `npm run import` downloads the pinned files into `scripts/source/`. That folder is not committed.
-- `npm run build` writes `dist/data/events.json` and `dist/data/details/<volume>.json`. It stops when a chapter has no date rule.
+- `npm run build` writes `dist/data/events.json`, `dist/data/details/<volume>.json`, and `dist/data/search.json`. It stops when a chapter has no date rule.
 - `npm run check` tests the scripts, the time scale, and the data.
 
 To take in a fix from a Wayfinder repository, change its commit in `scripts/sources.json`. Then run all three commands.
@@ -80,6 +91,11 @@ To take in a fix from a Wayfinder repository, change its commit in `scripts/sour
 | `dist/scrubber.js` | The timeline strip |
 | `dist/time-scale.js` | Year math: the warped scale, zoom, ticks, and BCE/CE dates |
 | `dist/events.js` | Which events fall in the window, and the event-button stops |
+| `dist/pins.js` | Pins, groups, the trail, and place markers on the globe |
+| `dist/card.js` | The event card and the event lists |
+| `dist/search.js` | The search box |
+| `dist/volumes.js` | Each volume's hue and shape |
+| `dist/address.js` | Reading and writing the address |
 | `dist/data/` | Built event data. Do not edit by hand |
 | `scripts/import.mjs` | Downloads the pinned inputs |
 | `scripts/build-events.mjs` | Builds `dist/data` |

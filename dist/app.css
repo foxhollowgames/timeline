@@ -1,0 +1,96 @@
+/* Milestone 3: header search, volume legend, pins, place markers, and the card. */
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.site-header { gap: 20px; justify-content: space-between; }
+.site-header > * { pointer-events: auto; }
+.search { position: relative; flex: 0 1 380px; }
+.search input { width: 100%; height: 38px; border-radius: 20px; border: 1px solid #c7e1ff2a; background: #0d1626d9; backdrop-filter: blur(14px); padding: 0 16px; font-size: 14px; }
+.search input::placeholder { color: var(--faint); }
+.search input:disabled { opacity: .5; }
+.search-results { position: absolute; top: 44px; left: 0; right: 0; max-height: min(60vh, 460px); overflow: auto; background: var(--panel); backdrop-filter: blur(24px); border: 1px solid #c5e2fc24; border-radius: 14px; padding: 6px; box-shadow: 0 18px 50px #0007; z-index: 30; }
+.search-group { margin: 8px 10px 4px; font-size: 11px; letter-spacing: .12em; color: var(--faint); text-transform: uppercase; }
+.search-option { display: flex; gap: 10px; align-items: flex-start; padding: 8px 10px; border-radius: 9px; cursor: pointer; }
+.search-option[aria-selected="true"], .search-option:hover { background: #c4e5ff14; }
+.search-option .shape, .search-kind { flex-shrink: 0; margin-top: 2px; }
+.search-kind { width: 14px; text-align: center; color: var(--blue); font-size: 13px; line-height: 1.2; }
+.search-option strong { display: block; font-size: 14px; font-weight: 500; }
+.search-option small { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+.search-empty { margin: 10px; font-size: 13px; color: var(--muted); }
+
+.legend { display: flex; gap: 4px; flex-shrink: 0; }
+.legend-item { display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 10px; border-radius: 18px; background: #0d1626b3; border-color: #c7e1ff1f; font-size: 12px; color: var(--ink); }
+.legend-item[aria-pressed="false"] { color: var(--faint); background: transparent; }
+.legend-item[aria-pressed="false"] .shape { opacity: .3; }
+.legend-item[aria-pressed="false"] .legend-short { text-decoration: line-through; }
+
+.pins, .place-markers { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.pin { position: absolute; left: 0; top: 0; width: 30px; height: 30px; padding: 0; border: 0; background: transparent; display: grid; place-items: center; pointer-events: auto; opacity: 0; transition: opacity .25s; z-index: 2; }
+.pin.shown { opacity: 1; }
+.pin.shown.trail { opacity: .42; z-index: 1; }
+.pin.trail .pin-shape { transform: scale(.82); }
+.pin .pin-shape { filter: drop-shadow(0 1px 3px #000a); }
+.pin .pin-second { position: absolute; left: 1px; bottom: 1px; }
+.pin .count { position: absolute; right: -6px; top: -4px; min-width: 18px; padding: 1px 4px; border-radius: 9px; background: #e9f2f7; color: #0b1626; font-size: 11px; font-weight: 700; line-height: 1.3; border: 2px solid var(--bg); }
+.pin:hover, .pin:focus-visible { z-index: 8; }
+.pin.selected::before { content: ""; position: absolute; inset: 1px; border-radius: 50%; border: 2px solid var(--gold); box-shadow: 0 0 14px #efcc8877; }
+.pin .pin-caption { position: absolute; bottom: 32px; white-space: nowrap; max-width: 280px; overflow: hidden; text-overflow: ellipsis; background: #101b2dec; padding: 6px 9px; border-radius: 7px; font-size: 12px; display: none; }
+.pin:hover .pin-caption, .pin:focus-visible .pin-caption { display: block; }
+.place-marker { position: absolute; left: 0; top: 0; display: flex; align-items: center; gap: 5px; pointer-events: none; }
+.place-marker i { width: 7px; height: 7px; margin: -3.5px 0 0 -3.5px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 2px var(--bg); }
+.place-marker b { font-weight: 500; font-size: 11px; color: #f3e6c4; text-shadow: 0 1px 3px #000; transform: translateY(-1px); }
+
+.card { position: absolute; right: 24px; top: 84px; bottom: calc(var(--timeline-height) + 20px); width: 370px; background: var(--panel); backdrop-filter: blur(28px); border: 1px solid #c5e2fc24; border-radius: 18px; box-shadow: 0 20px 70px #0006; z-index: 14; display: flex; flex-direction: column; overflow: hidden; }
+.card-bar { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px 11px; border-bottom: 1px solid var(--line); font-size: 11px; letter-spacing: .12em; color: var(--muted); flex-shrink: 0; }
+.card-bar button { border: 0; font-size: 24px; line-height: 1; padding: 0 2px; color: var(--muted); }
+.card-content { overflow: auto; padding: 18px 22px 22px; scrollbar-width: thin; scrollbar-color: #36536a transparent; }
+.card-content h2 { font-family: 'Libre Caslon Display', Georgia, serif; font-weight: 400; font-size: 27px; line-height: 1.15; margin: 6px 0; }
+.card-volume { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 12px; color: var(--muted); }
+.card-ref { margin: 0 0 14px; color: var(--blue); font-size: 14px; }
+.card-date { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 11px 0; margin-bottom: 14px; }
+.card-date p { margin: 0; font-size: 14px; }
+.card-date strong { font-weight: 600; }
+.card-date span { color: var(--muted); font-size: 12px; margin-left: 6px; }
+.card-date .card-date-note { color: var(--muted); font-size: 13px; line-height: 1.5; margin-top: 5px; }
+.card-setting, .card-summary { font-size: 14px; line-height: 1.65; color: #d7e1ea; margin: 0 0 14px; }
+.card-setting { color: var(--muted); }
+.card-verse { margin: 0 0 14px; padding: 12px 14px; border-left: 2px solid var(--gold); background: #efcc880c; border-radius: 0 10px 10px 0; }
+.card-verse p { margin: 0 0 6px; font-family: 'Libre Caslon Display', Georgia, serif; font-size: 17px; line-height: 1.45; }
+.card-verse cite { font-style: normal; font-size: 12px; color: var(--muted); }
+.card-links { margin: 0 0 14px; }
+.card-links a { display: inline-block; font-size: 14px; color: var(--gold); }
+.card-note { font-size: 13px; color: var(--muted); line-height: 1.5; margin: 0 0 12px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 9px; }
+.card-facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13px; margin: 0 0 14px; }
+.card-facts dt { color: var(--faint); letter-spacing: .06em; font-size: 11px; text-transform: uppercase; padding-top: 2px; }
+.card-facts dd { margin: 0; line-height: 1.5; }
+.card-facts dd span { color: var(--muted); }
+.card-sources h3 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 500; margin: 0 0 6px; }
+.card-sources a { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.card-back { border: 0; padding: 0; margin-bottom: 12px; color: var(--muted); font-size: 13px; text-decoration: underline; text-underline-offset: 4px; }
+.card-loading { color: var(--muted); font-size: 14px; }
+.card-content .list-title { margin-top: 0; }
+.list-note { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
+.event-rows { display: flex; flex-direction: column; gap: 4px; }
+.event-row { display: flex; gap: 10px; align-items: flex-start; text-align: left; border: 0; border-radius: 10px; padding: 9px 10px; background: #c4e5ff08; }
+.event-row:hover { background: #c4e5ff14; }
+.event-row .shape { flex-shrink: 0; margin-top: 2px; }
+.event-row strong { display: block; font-size: 14px; font-weight: 500; }
+.event-row small { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; line-height: 1.4; }
+.event-row .row-date { color: var(--faint); }
+
+@media (max-width: 1000px) {
+  .search { flex-basis: 260px; }
+  .legend-item { padding: 0 8px; }
+  .card { right: 16px; width: 330px; }
+}
+@media (max-width: 650px) {
+  .site-header { height: auto; flex-wrap: wrap; padding: 10px 12px; gap: 8px; }
+  .brand { order: 1; }
+  .legend { order: 2; margin-left: auto; gap: 2px; }
+  .legend-item { height: 30px; padding: 0 6px; gap: 4px; font-size: 11px; }
+  .search { order: 3; flex: 1 0 100%; }
+  .search input { height: 36px; }
+  .card { top: auto; left: 10px; right: 10px; width: auto; bottom: calc(var(--timeline-height) + 8px); max-height: 40dvh; border-radius: 16px; }
+  .card-content h2 + .card-ref { margin-bottom: 10px; }
+  .card-content { padding: 14px 16px 18px; }
+  .card-content h2 { font-size: 23px; }
+}
+@media (prefers-reduced-motion: reduce) { .pin { transition: none; } }
