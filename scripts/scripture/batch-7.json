@@ -1,0 +1,298 @@
+{
+  "about": "Scripture events, batch 7: Genesis, from the flood to Joseph (DESIGN.md section 3). Same fields as batch-1.json. `placeNote` adds a note about the pin's place.",
+  "batch": 7,
+  "era": "The flood and the patriarchs",
+  "covers": [
+    { "book": "genesis", "chapters": [1, 50] }
+  ],
+  "events": [
+    {
+      "id": "the-flood-ends",
+      "volume": "ot",
+      "title": "The flood ends, and Noah leaves the ark",
+      "chapters": ["genesis-8"],
+      "place": "b:ararat",
+      "verse": "genesis-8:22",
+      "summary": "God remembers Noah and the animals and sends a wind. The water goes down, and the ark rests on the mountains of Ararat. Noah sends out a raven and then a dove. The dove comes back with an olive leaf, then does not return. God tells Noah to leave the ark with his family and the animals. Noah builds an altar and offers burnt offerings. The LORD says seedtime and harvest, day and night will not stop."
+    },
+    {
+      "id": "the-nations-spread",
+      "volume": "ot",
+      "title": "The families of Noah's sons spread over the earth",
+      "chapters": ["genesis-10"],
+      "place": "b:babel",
+      "verse": "genesis-10:32",
+      "placeNote": "Babel is shown at Babylon, the traditional site.",
+      "summary": "This is the family record of Noah's sons after the flood. Japheth's line spreads to the coasts and islands. Ham's line includes Cush, Egypt, and Canaan. Cush's son Nimrod is a mighty hunter, and his kingdom begins at Babel. Shem's line includes Eber, Peleg, and Joktan. Each list ends with families, languages, lands, and nations."
+    },
+    {
+      "id": "tower-of-babel",
+      "volume": "ot",
+      "title": "The tower of Babel",
+      "chapters": ["genesis-11"],
+      "place": "b:babel",
+      "verse": "genesis-11:9",
+      "placeNote": "Babel is shown at Babylon, the traditional site.",
+      "summary": "All people speak one language and settle on a plain in Shinar. They bake bricks and plan a city with a tower to the sky. They want a name for themselves and fear being scattered. The LORD confuses their language and scatters them. The city is called Babel. The record then runs from Shem to Terah. Terah leaves Ur with his son Abram and settles in Haran.",
+      "alsoRead": [{ "ref": "Ether 1:33", "note": "Jared and his people come from the great tower." }]
+    },
+    {
+      "id": "abram-is-called",
+      "volume": "ot",
+      "title": "The LORD calls Abram to leave his country",
+      "chapters": ["genesis-12"],
+      "place": "b:haran",
+      "verse": "genesis-12:2",
+      "summary": "The LORD tells Abram to leave his country and his father's house. He promises a great nation and a blessing for all families through Abram. Abram goes at seventy-five with his wife Sarai and his nephew Lot. In Canaan the LORD promises the land to his children, and Abram builds altars. A famine sends him to Egypt. He asks Sarai to say she is his sister. Pharaoh takes her, the LORD sends plagues, and Pharaoh sends them away."
+    },
+    {
+      "id": "abram-and-lot-part",
+      "volume": "ot",
+      "title": "Abram and Lot part ways",
+      "chapters": ["genesis-13"],
+      "place": "b:bethel",
+      "verse": "genesis-13:8",
+      "summary": "Abram returns from Egypt rich in livestock, silver, and gold. Lot also has flocks, and the land cannot hold both. Their herdsmen quarrel. Abram offers Lot his choice of land. Lot chooses the well-watered Jordan plain and camps near Sodom. The LORD tells Abram to look all around, for the land will be his. Abram moves to Hebron and builds an altar."
+    },
+    {
+      "id": "melchizedek-blesses-abram",
+      "volume": "ot",
+      "title": "Abram rescues Lot, and Melchizedek blesses him",
+      "chapters": ["genesis-14"],
+      "place": "b:salem",
+      "verse": "genesis-14:18",
+      "summary": "Four kings make war on five kings near the Salt Sea. The winners take goods and people from Sodom, and Lot is among them. Abram leads 318 trained men, attacks by night, and brings everyone back. Melchizedek, king of Salem and priest of God Most High, brings bread and wine. He blesses Abram, and Abram gives him a tenth. Abram refuses the king of Sodom's goods.",
+      "alsoRead": [
+        { "ref": "Alma 13:14", "note": "Alma calls Melchizedek a high priest after the holy order." },
+        { "ref": "D&C 107:2", "note": "The higher priesthood is called after Melchizedek." }
+      ]
+    },
+    {
+      "id": "covenant-with-abraham",
+      "volume": "ot",
+      "title": "God makes a covenant with Abraham",
+      "chapters": ["genesis-15", "genesis-17"],
+      "place": "b:hebron",
+      "verse": "genesis-15:6",
+      "summary": "Abram says he has no child, and a servant will be his heir. The LORD shows him the stars and says his children will be as many. Abram believes, and the LORD counts it as righteousness. The LORD makes a covenant over animals cut in half. Years later God appears to Abram at ninety-nine. He changes Abram's name to Abraham and Sarai's to Sarah. Every male in his house must be circumcised as the sign of the covenant."
+    },
+    {
+      "id": "hagar-and-ishmael",
+      "volume": "ot",
+      "title": "Hagar meets the God who sees her",
+      "chapters": ["genesis-16"],
+      "place": "b:beer-lahai-roi",
+      "verse": "genesis-16:13",
+      "summary": "Sarai has no children and gives her Egyptian servant Hagar to Abram as a wife. Hagar conceives and looks down on Sarai. Sarai treats her harshly, and Hagar runs away. The LORD's angel finds her by a spring and tells her to return. He promises her a son named Ishmael, because the LORD heard her. Hagar names the LORD the God who sees. She bears Ishmael when Abram is eighty-six."
+    },
+    {
+      "id": "sodom-and-gomorrah",
+      "volume": "ot",
+      "title": "Abraham pleads for Sodom, and the city is destroyed",
+      "chapters": ["genesis-18", "genesis-19"],
+      "place": "b:sodom",
+      "verse": "genesis-18:14",
+      "summary": "Three men visit Abraham at Mamre, and he serves them a meal. One says Sarah will have a son next year, and Sarah laughs. The LORD tells Abraham that the outcry against Sodom is great. Abraham pleads, and the LORD will spare the city for ten righteous people. Two angels come to Sodom, and the men of the city surround Lot's house. At dawn the angels lead Lot and his family out. Fire falls on the city. Lot's wife looks back and becomes a pillar of salt."
+    },
+    {
+      "id": "abraham-and-abimelech",
+      "volume": "ot",
+      "title": "Abraham, Sarah, and King Abimelech",
+      "chapters": ["genesis-20"],
+      "place": "b:gerar",
+      "verse": "genesis-20:6",
+      "summary": "Abraham moves to Gerar and again says Sarah is his sister. King Abimelech takes her. God warns Abimelech in a dream that she is a man's wife. Abimelech says he acted with a clean heart, and God agrees. Abraham says he thought no one there feared God. Abimelech gives back Sarah with animals, servants, and silver. Abraham prays for Abimelech's house."
+    },
+    {
+      "id": "isaac-is-born",
+      "volume": "ot",
+      "title": "Isaac is born, and Hagar and Ishmael are sent away",
+      "chapters": ["genesis-21"],
+      "place": "b:beersheba",
+      "verse": "genesis-21:2",
+      "summary": "Sarah bears Isaac when Abraham is one hundred. Sarah says God has made her laugh. At Isaac's weaning feast, Sarah sees Ishmael mocking. She tells Abraham to send Hagar and the boy away. God tells Abraham to listen and promises a nation from Ishmael. In the wilderness the water runs out, and God shows Hagar a well. Abraham and Abimelech swear an oath at Beersheba."
+    },
+    {
+      "id": "binding-of-isaac",
+      "volume": "ot",
+      "title": "Abraham is told to offer Isaac",
+      "chapters": ["genesis-22"],
+      "place": "b:moriah",
+      "verse": "genesis-22:8",
+      "summary": "God tests Abraham and tells him to offer his son Isaac in Moriah. Abraham travels three days with Isaac and two servants. Isaac carries the wood and asks where the lamb is. Abraham says God will provide the lamb. He binds Isaac on the altar and takes the knife. The LORD's angel stops him. Abraham offers a ram caught in a thicket. The LORD swears to bless all nations through Abraham's children.",
+      "alsoRead": [{ "ref": "Jacob 4:5", "note": "Jacob calls this a likeness of God and his Only Begotten Son." }]
+    },
+    {
+      "id": "sarah-is-buried",
+      "volume": "ot",
+      "title": "Abraham buys a cave to bury Sarah",
+      "chapters": ["genesis-23"],
+      "place": "b:hebron",
+      "verse": "genesis-23:19",
+      "summary": "Sarah dies at Hebron at 127, and Abraham mourns her. He tells the Hittites he is a foreigner and asks for a burial place. He asks to buy the cave of Machpelah from Ephron. Ephron offers it as a gift, then names a price of four hundred shekels. Abraham weighs out the silver before the people at the city gate. He buries Sarah in the cave."
+    },
+    {
+      "id": "rebekah-marries-isaac",
+      "volume": "ot",
+      "title": "Abraham's servant finds Rebekah for Isaac",
+      "chapters": ["genesis-24"],
+      "place": "b:haran",
+      "verse": "genesis-24:58",
+      "summary": "Abraham sends his servant to find Isaac a wife among his relatives. At a well the servant prays for a woman who will also water his camels. Rebekah comes and does just that. She is from Abraham's family. Her brother Laban and her family agree to the marriage. They ask Rebekah, and she says she will go. Isaac marries her and loves her."
+    },
+    {
+      "id": "esau-sells-his-birthright",
+      "volume": "ot",
+      "title": "Jacob and Esau are born, and Esau sells his birthright",
+      "chapters": ["genesis-25"],
+      "verse": "genesis-25:23",
+      "summary": "Abraham dies at 175, and Isaac and Ishmael bury him beside Sarah. Isaac prays for Rebekah, who has no child, and she conceives twins. The LORD tells her the older will serve the younger. Esau is born first, and Jacob follows holding his heel. One day Esau comes in from the field starving. He asks for Jacob's stew. Jacob asks for his birthright, the rights of the firstborn, and Esau swears it away."
+    },
+    {
+      "id": "isaacs-wells",
+      "volume": "ot",
+      "title": "Isaac digs wells in Gerar",
+      "chapters": ["genesis-26"],
+      "place": "b:gerar",
+      "verse": "genesis-26:22",
+      "summary": "In a famine the LORD tells Isaac to stay and not go to Egypt. He repeats the promise he made to Abraham. In Gerar, Isaac says Rebekah is his sister, and Abimelech rebukes him. Isaac's crops grow a hundredfold, and the Philistines envy him. They fill his father's wells with earth. Isaac's men dig new wells, and the herdsmen of Gerar claim two of them. Abimelech then comes to make peace at Beersheba."
+    },
+    {
+      "id": "jacob-takes-the-blessing",
+      "volume": "ot",
+      "title": "Jacob takes Esau's blessing",
+      "chapters": ["genesis-27"],
+      "place": "b:beersheba",
+      "verse": "genesis-27:34",
+      "summary": "Isaac is old and blind and sends Esau to hunt before he blesses him. Rebekah dresses Jacob in Esau's clothes and covers his hands with goat skins. Jacob tells his father he is Esau. Isaac doubts the voice, feels the hands, and blesses him. Esau returns and weeps for a blessing. Esau plans to kill Jacob. Rebekah tells Jacob to flee to her brother Laban in Haran."
+    },
+    {
+      "id": "jacobs-ladder",
+      "volume": "ot",
+      "title": "Jacob dreams of a stairway to heaven",
+      "chapters": ["genesis-28"],
+      "place": "b:bethel",
+      "verse": "genesis-28:12",
+      "summary": "Isaac blesses Jacob and sends him to marry a daughter of Laban. On the way Jacob sleeps with a stone under his head. He dreams of a stairway to heaven with angels going up and down. The LORD promises him the land, many children, and his presence everywhere. Jacob wakes and says the LORD is in this place. He sets up the stone and names the place Bethel, meaning house of God. He vows to give God a tenth."
+    },
+    {
+      "id": "jacob-and-laban",
+      "volume": "ot",
+      "title": "Jacob serves Laban for Rachel and Leah",
+      "chapters": ["genesis-29", "genesis-30", "genesis-31"],
+      "place": "b:haran",
+      "verse": "genesis-29:20",
+      "summary": "Jacob meets Rachel at a well near Haran. He loves her and works seven years for her. On the wedding night Laban gives him Leah instead. Jacob marries Rachel a week later and works seven more years. Leah, Rachel, and their servants bear eleven sons and a daughter. Jacob's flocks grow large, and Laban's sons grow angry. The LORD tells Jacob to go home. Laban chases him, and they make a covenant with a pile of stones."
+    },
+    {
+      "id": "jacob-wrestles-and-meets-esau",
+      "volume": "ot",
+      "title": "Jacob wrestles until dawn and meets Esau",
+      "chapters": ["genesis-32", "genesis-33"],
+      "place": "b:penuel",
+      "verse": "genesis-32:28",
+      "summary": "Jacob hears that Esau is coming with four hundred men, and he is afraid. He prays and sends herds ahead as a gift. That night a man wrestles with him until dawn and strains his hip. The man names him Israel. Jacob calls the place Peniel, for he has seen God face to face. Esau runs to meet Jacob and hugs him, and they weep. Esau returns to Seir, and Jacob settles near Shechem."
+    },
+    {
+      "id": "dinah-and-shechem",
+      "volume": "ot",
+      "title": "Dinah is wronged, and her brothers take revenge",
+      "chapters": ["genesis-34"],
+      "place": "b:shechem",
+      "verse": "genesis-34:30",
+      "summary": "Dinah, Leah's daughter, goes out to visit the women of the land. Shechem, the prince's son, takes her and shames her. He then wants to marry her. Jacob's sons answer with a trick: every man in the city must be circumcised. On the third day Simeon and Levi kill all the men and take Dinah back. Jacob says they have put the family in danger. They ask if their sister should be treated like a prostitute."
+    },
+    {
+      "id": "jacob-returns-to-bethel",
+      "volume": "ot",
+      "title": "Jacob returns to Bethel",
+      "chapters": ["genesis-35", "genesis-36"],
+      "place": "b:bethel",
+      "verse": "genesis-35:10",
+      "summary": "God tells Jacob to go up to Bethel. Jacob's household puts away their foreign gods. At Bethel God blesses Jacob, repeats the name Israel, and promises the land. On the road Rachel dies giving birth to Benjamin. She is buried near Bethlehem. Jacob and Esau bury their father Isaac. The book then lists Esau's descendants, the people of Edom."
+    },
+    {
+      "id": "joseph-sold-into-egypt",
+      "volume": "ot",
+      "title": "Joseph's brothers sell him into Egypt",
+      "chapters": ["genesis-37"],
+      "place": "b:dothan",
+      "verse": "genesis-37:28",
+      "summary": "Israel loves Joseph most and gives him a coat of many colors. His brothers hate him more when he dreams that they bow to him. Near Dothan they plan to kill him. Reuben persuades them to throw him in a pit instead. Judah proposes selling him, and they sell him for twenty pieces of silver. They dip his coat in goat's blood and show it to their father. In Egypt, Joseph is sold to Potiphar, the captain of Pharaoh's guard."
+    },
+    {
+      "id": "judah-and-tamar",
+      "volume": "ot",
+      "title": "Judah and Tamar",
+      "chapters": ["genesis-38"],
+      "place": "b:adullam",
+      "verse": "genesis-38:26",
+      "summary": "Judah's sons Er and Onan marry Tamar and die. Judah keeps his last son, Shelah, from her. Later Tamar veils herself by the road, and Judah takes her for a prostitute. He leaves his seal, cord, and staff as a pledge, and she conceives. When Judah hears she is pregnant, he orders her burned. She sends him his pledge. Judah says she is more righteous than he is."
+    },
+    {
+      "id": "joseph-in-prison",
+      "volume": "ot",
+      "title": "Joseph refuses Potiphar's wife and is put in prison",
+      "chapters": ["genesis-39", "genesis-40"],
+      "place": "b:egypt",
+      "verse": "genesis-39:9",
+      "summary": "The LORD is with Joseph, and Potiphar puts him over his whole house. Potiphar's wife asks Joseph to lie with her, and he refuses. He says it would be a sin against God. She grabs his coat, and he runs out and leaves it. She accuses him, and Potiphar puts him in prison. There Joseph explains the dreams of Pharaoh's cupbearer and baker. Both dreams come true, but the cupbearer forgets Joseph."
+    },
+    {
+      "id": "joseph-explains-pharaohs-dreams",
+      "volume": "ot",
+      "title": "Joseph explains Pharaoh's dreams and rules Egypt",
+      "chapters": ["genesis-41"],
+      "place": "b:egypt",
+      "verse": "genesis-41:16",
+      "summary": "Two years later Pharaoh dreams of seven fat cows eaten by seven thin ones. No wise man can explain it, and the cupbearer remembers Joseph. Joseph says the answer comes from God, not from him. The dreams mean seven years of plenty and then seven of famine. He advises storing grain in the good years. Pharaoh sets Joseph over all Egypt. Joseph stores grain and sells it when the famine comes."
+    },
+    {
+      "id": "the-brothers-come-to-egypt",
+      "volume": "ot",
+      "title": "Joseph's brothers come to Egypt for grain",
+      "chapters": ["genesis-42", "genesis-43", "genesis-44"],
+      "place": "b:egypt",
+      "verse": "genesis-44:33",
+      "summary": "Jacob sends ten sons to Egypt for grain but keeps Benjamin home. They bow before Joseph and do not know him. Joseph calls them spies, keeps Simeon, and demands Benjamin. When they return with Benjamin, Joseph leaves the room to weep. He hides his silver cup in Benjamin's sack. His steward finds it, and the brothers return in fear. Judah offers to stay as a slave in Benjamin's place."
+    },
+    {
+      "id": "joseph-reveals-himself",
+      "volume": "ot",
+      "title": "Joseph tells his brothers who he is",
+      "chapters": ["genesis-45"],
+      "place": "b:egypt",
+      "verse": "genesis-45:5",
+      "summary": "Joseph can no longer hold back, and he sends everyone else out. He weeps aloud and tells his brothers he is Joseph. They are too afraid to answer. He says God sent him ahead to save lives. Five years of famine remain, so they must bring their father to Egypt. Pharaoh sends wagons and promises the best of the land. Jacob's heart revives when he hears that Joseph lives.",
+      "alsoRead": [{ "ref": "2 Nephi 3:5", "note": "Lehi says Joseph saw a righteous branch raised from his family." }]
+    },
+    {
+      "id": "jacob-goes-to-egypt",
+      "volume": "ot",
+      "title": "Jacob's family moves to Egypt",
+      "chapters": ["genesis-46", "genesis-47"],
+      "place": "b:goshen",
+      "verse": "genesis-46:3",
+      "summary": "God tells Jacob in a night vision not to fear going to Egypt. God will make him a great nation there and bring him back. Seventy people of Jacob's family go to Egypt. Joseph meets his father and weeps on his neck for a long time. Pharaoh gives them the land of Goshen. The famine grows worse, and the Egyptians sell their land to Pharaoh for grain. Jacob makes Joseph swear to bury him in Canaan."
+    },
+    {
+      "id": "jacob-blesses-his-sons",
+      "volume": "ot",
+      "title": "Jacob blesses Ephraim, Manasseh, and his sons",
+      "chapters": ["genesis-48", "genesis-49"],
+      "place": "b:goshen",
+      "verse": "genesis-49:22",
+      "summary": "Jacob is sick, and Joseph brings his sons Manasseh and Ephraim. Jacob claims the two boys as his own sons. He crosses his hands and puts his right hand on Ephraim, the younger. Then Jacob gathers his sons to say what will come to each. He says the ruler's staff will stay with Judah. He calls Joseph a fruitful branch whose branches run over the wall. Jacob asks to be buried at Machpelah and dies.",
+      "alsoRead": [{ "ref": "Jacob 2:25", "note": "The Lord says he led Lehi's people out to raise a branch of Joseph." }]
+    },
+    {
+      "id": "joseph-forgives-his-brothers",
+      "volume": "ot",
+      "title": "Jacob is buried, and Joseph forgives his brothers",
+      "chapters": ["genesis-50"],
+      "place": "b:egypt",
+      "verse": "genesis-50:20",
+      "summary": "Joseph weeps over his father, and Egypt mourns seventy days. Joseph and a great company bury Jacob in the cave of Machpelah. Back in Egypt the brothers fear that Joseph will now punish them. They ask forgiveness and bow before him. Joseph weeps and tells them not to fear. He says they meant evil, but God meant it for good. Dying at 110, Joseph makes Israel promise to carry his bones out of Egypt."
+    }
+  ]
+}
