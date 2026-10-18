@@ -136,6 +136,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 - **Data file.** `scripts/history/batch-N.json`. Each event has `id`, `title`, `start`, `end`, `dateLabel`, `tier`, `region`, `place`, `lat`, `lng`, `summary`, and `source`. A source is `{ wiki, quote }` for Wikipedia, or `{ title, publisher, url, quote }` otherwise. `quote` may be a list when the start and end need separate quotes. Batch 7 adds a top-level `"volume": "dc"`, and its events leave out `tier` and `region`.
 - **Display.** History pins are hollow grey hexagons, smaller than scripture pins, so shape and fill set them apart without color. In a group a scripture event always leads. History has its own legend toggle. The event buttons and the density bar follow scripture only.
 - **Also at this time.** A card lists up to four events of the other kind whose dates fall within 150 years. Closer dates rank first, and short events rank above centuries-long eras. Order-only events get none (Q28).
+- **Related history.** Ranking by years misses some clear links, such as D&C 87 and the Civil War. These are hand-picked in `scripts/curated-events.json`. An annotation's `related` lists history ids without the `h-` prefix. Its `relatedNote` gives the reason in one line. The build stops when an id is not a history event. Section 6 shows how the card uses them.
 
 ## 5. Globe and pins
 
@@ -170,7 +171,9 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - Book of Mormon: the first verse that names the focus place.
 - **In scripture.** Citation links into the Wayfinder readers, plus a "Read the chapter" link.
 - **Sources.** The source list for the event.
-- **Also at this time.** The nearest events of the other kind, history for a scripture event and scripture for a history event. This section waits for the history events in milestone 5.
+- **Also at this time.** The nearest events of the other kind, history for a scripture event and scripture for a history event.
+  - Hand-picked related history comes first, marked "Linked", with its reason below the list. These links ignore the 150-year window.
+  - The nearest events fill the rest, up to four in all. An event already linked is not listed twice.
 - **Map details.** The event's other places and its routes, drawn on the globe.
 - **Date lines.** The card names the date's basis. It adds the scholarly estimate, the Church table's biblical-number years, and any correction where they apply. A prophet chapter that keeps the repository's own date says so.
 - **Lists.** A pin group, a place, or a person opens a list. Choosing an event in the list moves time to it, and a back link returns to the list.
