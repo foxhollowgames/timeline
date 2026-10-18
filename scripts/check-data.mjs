@@ -30,6 +30,17 @@ export async function checkData(test, warn) {
     for (const skip of report.stats.skipped) if (!skip.reason) throw new Error(`${skip.ref} is skipped with no reason`);
   });
 
+  const chapterList = await readJSON(join(here, '..', 'dist', 'data', 'chapters.json')).catch(() => ({ events: [] }));
+  test('the chapter list for the readers matches the chapter events', () => {
+    const list = chapterList.events;
+    const expected = events.filter(e => !e.curated && e.volume !== 'history');
+    if (list.length !== expected.length || expected.some((e, i) => list[i] !== e.id)) throw new Error('dist/data/chapters.json is stale. Run npm run build.');
+    for (const e of expected) {
+      const want = e.volume === 'dc' ? (/^od[0-9]$/.test(String(e.chapter)) ? e.chapter : `dc-${e.chapter}`) : `${e.book}-${e.chapter}`;
+      if (e.id !== want) throw new Error(`${e.id} does not follow the reader rule (${want})`);
+    }
+  });
+
   test('event ids are unique and volumes are known', () => {
     const seen = new Set();
     for (const e of events) {
