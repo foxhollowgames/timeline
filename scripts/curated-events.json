@@ -1,5 +1,5 @@
 {
-  "about": "Scripture events that no Wayfinder chapter supplies, and notes added to imported events (DESIGN.md section 3, Q15).",
+  "about": "Scripture events that no Wayfinder chapter supplies, and notes added to imported events (DESIGN.md section 3, Q15). An annotation's `related` lists world-history ids as written in scripts/history/batch-N.json, without the h- prefix. Its `relatedNote` gives the reason (DESIGN.md section 6).",
   "events": [
     {
       "id": "adam-ondi-ahman",
@@ -17,6 +17,14 @@
   ],
   "annotations": {
     "genesis-10": { "placeNote": "Babel is shown at Babylon, the traditional site." },
-    "genesis-11": { "placeNote": "Babel is shown at Babylon, the traditional site." }
+    "genesis-11": { "placeNote": "Babel is shown at Babylon, the traditional site." },
+    "isaiah-45": { "related": ["achaemenid-empire"], "relatedNote": "Isaiah 45:1 names Cyrus, the Persian king who later let the exiles return." },
+    "nahum-3": { "related": ["fall-of-nineveh"], "relatedNote": "Nahum foretells the fall of Nineveh. It fell to the Babylonians and Medes in 612 BCE." },
+    "daniel-5": { "related": ["achaemenid-empire"], "relatedNote": "Daniel 5:28 gives Babylon's kingdom to the Medes and Persians. Cyrus founded their empire." },
+    "ezra-1": { "related": ["achaemenid-empire"], "relatedNote": "Ezra 1 opens with the decree of Cyrus, king of Persia, ending the exile." },
+    "luke-2": { "related": ["augustus"], "relatedNote": "Luke 2:1 names the decree of Caesar Augustus that sent Joseph to Bethlehem." },
+    "matthew-24": { "related": ["siege-of-jerusalem-70"], "relatedNote": "Jesus foretells the temple's fall in Matthew 24:2. Rome destroyed it in 70 CE." },
+    "dc-101": { "related": ["us-constitution"], "relatedNote": "In D&C 101:80 the Lord says he established the Constitution of this land." },
+    "dc-87": { "related": ["american-civil-war"], "relatedNote": "D&C 87 foretells war beginning with the rebellion of South Carolina. The Civil War began there in 1861." }
   }
 }

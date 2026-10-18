@@ -355,7 +355,7 @@ for (const item of curated.events) {
     { basis: 'not-given', band: item.band, start: null, end: null, label: 'Years not given', sourceIds: item.sourceIds, note: overrides.notes.orderOnly },
   );
 }
-for (const [id, note] of Object.entries(curated.annotations)) {
+for (const [id, { related, ...note }] of Object.entries(curated.annotations)) {
   const event = events.find(e => e.id === id);
   if (!event) { problems.push(`annotation for ${id}: no such event`); continue; }
   Object.assign(details[event.volume][id], note);
@@ -399,6 +399,24 @@ for (const file of (await readdir(historyDir)).filter(f => /^batch-\d+\.json$/.t
     );
   }
 }
+// Hand-picked related history for scripture events (DESIGN.md section 6).
+// Ids are written as in the batch files; the details file stores full event ids.
+for (const [id, { related, relatedNote }] of Object.entries(curated.annotations)) {
+  if (related == null) continue;
+  const event = events.find(e => e.id === id);
+  if (!event) continue; // reported above
+  const where = `related history for ${id}`;
+  if (event.volume === 'history') { problems.push(`${where}: only scripture events take related links`); continue; }
+  if (!Array.isArray(related) || !related.length) { problems.push(`${where}: related must be a list of ids`); continue; }
+  if (!relatedNote) problems.push(`${where}: no relatedNote`);
+  const ids = related.map(r => `h-${r}`);
+  for (const [i, full] of ids.entries()) {
+    if (!events.some(e => e.id === full && e.volume === 'history')) problems.push(`${where}: no history event ${related[i]}${related[i].startsWith('h-') ? ' (write ids without the h- prefix)' : ''}`);
+  }
+  if (new Set(ids).size !== ids.length) problems.push(`${where}: an id is listed twice`);
+  details[event.volume][id].related = ids;
+}
+
 // A count per region, so coverage stays global. A warning, not a quota.
 const regionCounts = Object.fromEntries(REGIONS.map(r => [r, events.filter(e => e.region === r).length]));
 stats.historyRegions = regionCounts;

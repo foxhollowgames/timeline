@@ -163,6 +163,25 @@ test('also at this time links the other kind of event, nearest first', () => {
   assert.deepEqual(card.alsoAtThisTime(pool[1], pool).map(e => e.id), ['s1', 's2']);
   assert.deepEqual(card.alsoAtThisTime(pool[5], pool), []);
 });
+test('hand-picked related events come first, without duplicates, then the nearest fill to four', () => {
+  const pool = [
+    { id: 's1', volume: 'dc', start: 1832, end: 1832 },
+    ...[1831, 1829, 1836, 1840, 1845].map((year, i) => ({ id: `h${i + 1}`, volume: 'history', start: year, end: year })),
+    { id: 'h-far', volume: 'history', start: 1861, end: 1865 },
+    { id: 'h-old', volume: 'history', start: 1500, end: 1500 },
+    { id: 's2', volume: 'ot', start: null, end: null, band: 'primeval' },
+  ];
+  const ids = (event, related) => card.alsoAtThisTime(event, pool, related).map(e => e.id);
+  assert.deepEqual(ids(pool[0], []), ['h1', 'h2', 'h3', 'h4']);
+  assert.deepEqual(ids(pool[0], ['h-far']), ['h-far', 'h1', 'h2', 'h3']);
+  // A linked event that also ranks nearest is listed once.
+  assert.deepEqual(ids(pool[0], ['h-far', 'h2', 'h2']), ['h-far', 'h2', 'h1', 'h3']);
+  // Links ignore the 150-year window, and an unknown id is skipped.
+  assert.deepEqual(ids(pool[0], ['h-old', 'missing']), ['h-old', 'h1', 'h2', 'h3']);
+  // Order-only events still show their links.
+  assert.deepEqual(ids(pool[8], ['h-far']), ['h-far']);
+  assert.deepEqual(ids(pool[0], ['h1', 'h2', 'h3', 'h4', 'h5']), ['h1', 'h2', 'h3', 'h4', 'h5']);
+});
 
 // 2c. The address.
 const address = await import(new URL('../dist/address.js', import.meta.url));

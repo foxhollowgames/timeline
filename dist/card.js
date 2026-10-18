@@ -25,19 +25,22 @@ const VERSE_WORDS = 40;
 export const eventDate = e => (e.start == null ? 'Years not given' : formatRange(e.start, e.end));
 
 // The nearest events of the other kind: history for scripture, scripture for history (DESIGN.md Q8).
-// Order-only events have no years, so they get no links (Q28).
-export function alsoAtThisTime(event, events) {
-  if (event.start == null) return [];
+// Hand-picked related ids (scripts/curated-events.json) come first, then the nearest fill up to four.
+// Order-only events have no years, so they get no nearest links (Q28).
+export function alsoAtThisTime(event, events, related = []) {
+  const linked = [...new Set(related)].map(id => events.find(e => e.id === id)).filter(Boolean);
+  if (event.start == null) return linked;
   const wantHistory = event.volume !== 'history';
   const gap = e => Math.max(0, e.start - event.end, event.start - e.end);
   const mid = e => (e.start + e.end) / 2, center = mid(event);
-  return events
-    .filter(e => e.start != null && !e.broad && (e.volume === 'history') === wantHistory && gap(e) <= ALSO_MAX_GAP)
+  const nearest = events
+    .filter(e => e.start != null && !e.broad && (e.volume === 'history') === wantHistory && gap(e) <= ALSO_MAX_GAP && !linked.includes(e))
     // Rank by closeness, then prefer specific events over centuries-long eras.
     .map(e => ({ e, score: gap(e) + Math.abs(mid(e) - center) * 0.5 + (e.end - e.start) * 0.25 }))
     .sort((a, b) => a.score - b.score)
     .map(({ e }) => e)
-    .slice(0, ALSO_COUNT);
+    .slice(0, Math.max(0, ALSO_COUNT - linked.length));
+  return [...linked, ...nearest];
 }
 
 // One verse, cut to about 40 words (DESIGN.md Q24). A cut ends with an ellipsis.
@@ -57,8 +60,9 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
   const loadPeople = () => (searchIndex ??= fetch('data/search.json').then(r => r.json()).catch(() => ({ people: {}, eventPeople: {} })));
 
   // One event as a list row. History rows lead with the title, scripture rows with the reference.
-  const row = e => titleFirst(e)
-    ? `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.title)}</strong><small class="row-date">${escapeHTML(e.ref)} · ${escapeHTML(e.region ?? '')}</small></span></button>`
+  // A hand-picked link adds "Linked" to its date line.
+  const row = (e, linked = false) => titleFirst(e)
+    ? `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.title)}</strong><small class="row-date">${escapeHTML(e.ref)} · ${escapeHTML(e.region ?? '')}${linked ? ' · <span class="row-linked">Linked</span>' : ''}</small></span></button>`
     : `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.ref)}</strong><small>${escapeHTML(e.title)}</small><small class="row-date">${escapeHTML(eventDate(e))}</small></span></button>`;
 
   function open() { panel.hidden = false; }
@@ -107,7 +111,8 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     const isHistory = event.volume === 'history';
     const conference = CONFERENCE_GLOBE.url && event.volume === 'dc' && event.start >= CONFERENCE_GLOBE.firstYear
       ? `${CONFERENCE_GLOBE.url}#year=${event.start}` : null;
-    const also = alsoAtThisTime(event, data.events);
+    const related = d.related ?? [];
+    const also = alsoAtThisTime(event, data.events, related);
     const sources = (d.dateSourceIds ?? []).map(id => data.sources[id]).filter(Boolean);
     const dateLines = [
       d.dateNote, d.dateDetail, d.biblical,
@@ -138,7 +143,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
         ${names.length ? `<dt>People</dt><dd>${escapeHTML(names.join(', '))}</dd>` : ''}
         ${d.citations ? `<dt>In scripture</dt><dd>${escapeHTML(d.citations.join('; '))}</dd>` : ''}
       </dl>
-      ${also.length ? `<div class="card-also"><h3>Also at this time</h3><div class="event-rows">${also.map(e => row(e)).join('')}</div></div>` : ''}
+      ${also.length ? `<div class="card-also"><h3>Also at this time</h3><div class="event-rows">${also.map(e => row(e, related.includes(e.id))).join('')}</div>${d.relatedNote && also.some(e => related.includes(e.id)) ? `<p class="card-also-note">Linked: ${escapeHTML(d.relatedNote)}</p>` : ''}</div>` : ''}
       ${sources.length ? `<div class="card-sources"><h3>${titleFirst(event) ? 'Source' : 'Date sources'}</h3>${sources.map(s => `${s.quote ? `<blockquote class="source-quote">“${escapeHTML(s.quote.join(' … '))}”</blockquote>` : ''}<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a>`).join('')}</div>` : ''}`;
     content.scrollTop = 0;
     bind();

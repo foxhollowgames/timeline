@@ -73,12 +73,26 @@ export async function checkData(test, warn) {
     }
   });
 
+  test('every related link is a history event and every annotated link was built', () => {
+    const history = new Set(events.filter(e => e.volume === 'history').map(e => e.id));
+    for (const [volume, records] of Object.entries(details)) {
+      for (const [id, d] of Object.entries(records)) {
+        for (const r of d.related ?? []) if (volume === 'history' || !history.has(r)) throw new Error(`${id}: bad related link ${r}`);
+      }
+    }
+    for (const [id, a] of Object.entries(curated.annotations)) {
+      if (!a.related) continue;
+      const volume = events.find(e => e.id === id)?.volume;
+      if (!details[volume]?.[id]?.related?.length) throw new Error(`${id}: related links missing from the details file`);
+    }
+  });
+
   test('new text keeps sentences to 15 words or fewer', () => {
     const texts = [
       ...Object.values(overrides.notes), ...Object.values(overrides.bases),
       ...overrides.rules.flatMap(r => [r.dateNote, r.fix, overrides.notes[r.reason] ? null : r.reason]),
       ...Object.values(overrides.sources).map(s => s.note),
-      ...curated.events.map(e => e.summary), ...Object.values(curated.annotations).map(a => a.placeNote),
+      ...curated.events.map(e => e.summary), ...Object.values(curated.annotations).flatMap(a => [a.placeNote, a.relatedNote]),
       ...Object.values(details.history).map(d => d.summary),
       ...events.filter(e => e.basis === 'church-history').map(e => details.dc[e.id]?.summary),
     ].filter(Boolean);
