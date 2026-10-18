@@ -1640,6 +1640,398 @@
    "checked": "2026-08-12T08:43:30Z",
    "ok": true,
    "missing": []
+  },
+  {
+   "id": "slave-trade-act-1807",
+   "article": "Slave Trade Act 1807",
+   "revision": 1377941859,
+   "checked": "2026-10-02T02:04:09Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "waterloo",
+   "article": "Battle of Waterloo",
+   "revision": 1380652941,
+   "checked": "2026-10-17T02:09:14Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "origin-of-species",
+   "article": "On the Origin of Species",
+   "revision": 1373644354,
+   "checked": "2026-09-07T02:28:50Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "german-empire",
+   "article": "Unification of Germany",
+   "revision": 1375330501,
+   "checked": "2026-09-17T04:07:30Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "world-war-i",
+   "article": "World War I",
+   "revision": 1379529706,
+   "checked": "2026-10-10T14:37:01Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "russian-revolution",
+   "article": "Russian Revolution",
+   "revision": 1379985248,
+   "checked": "2026-10-13T02:26:38Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "world-war-ii",
+   "article": "World War II",
+   "revision": 1380829136,
+   "checked": "2026-10-18T05:12:18Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "world-wide-web",
+   "article": "World Wide Web",
+   "revision": 1379635447,
+   "checked": "2026-10-11T02:19:18Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "berlin-wall",
+   "article": "Fall of the Berlin Wall",
+   "revision": 1379933097,
+   "checked": "2026-10-12T19:41:48Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "soviet-dissolution",
+   "article": "Dissolution of the Soviet Union",
+   "revision": 1380420733,
+   "checked": "2026-10-15T16:42:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "ottoman-sultanate-abolished",
+   "article": "Abolition of the Ottoman sultanate",
+   "revision": 1378462213,
+   "checked": "2026-10-04T16:45:39Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "israel-1948",
+   "article": "Israeli Declaration of Independence",
+   "revision": 1377979323,
+   "checked": "2026-10-02T06:17:37Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "iranian-revolution",
+   "article": "Iranian revolution",
+   "revision": 1379794348,
+   "checked": "2026-10-12T00:16:01Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sokoto-caliphate",
+   "article": "Sokoto Caliphate",
+   "revision": 1378665182,
+   "checked": "2026-10-05T15:21:20Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "liberia-1847",
+   "article": "Liberian Declaration of Independence",
+   "revision": 1375042153,
+   "checked": "2026-09-15T14:37:00Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "suez-canal",
+   "article": "Suez Canal",
+   "revision": 1380827727,
+   "checked": "2026-10-18T04:51:34Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "adwa",
+   "article": "Battle of Adwa",
+   "revision": 1380005476,
+   "checked": "2026-10-13T05:49:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "year-of-africa",
+   "article": "Year of Africa",
+   "revision": 1371377236,
+   "checked": "2026-08-26T03:36:20Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "south-africa-1994",
+   "article": "1994 South African general election",
+   "revision": 1375901580,
+   "checked": "2026-09-20T19:34:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "rwandan-genocide",
+   "article": "Rwandan genocide",
+   "revision": 1378621476,
+   "checked": "2026-10-05T07:43:04Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "indian-rebellion-1857",
+   "article": "Indian Rebellion of 1857",
+   "revision": 1380604538,
+   "checked": "2026-10-16T19:42:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "partition-of-india",
+   "article": "Partition of India",
+   "revision": 1376809023,
+   "checked": "2026-09-26T09:51:05Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "bangladesh-1971",
+   "article": "Bangladesh Liberation War",
+   "revision": 1376667314,
+   "checked": "2026-09-25T15:19:04Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "first-opium-war",
+   "article": "First Opium War",
+   "revision": 1379278395,
+   "checked": "2026-10-09T00:47:52Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "meiji-restoration",
+   "article": "Meiji Restoration",
+   "revision": 1377201892,
+   "checked": "2026-09-28T07:48:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "xinhai-revolution",
+   "article": "1911 Revolution",
+   "revision": 1380289987,
+   "checked": "2026-10-14T22:04:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hiroshima-nagasaki",
+   "article": "Atomic bombings of Hiroshima and Nagasaki",
+   "revision": 1380059296,
+   "checked": "2026-10-13T14:49:18Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "prc-1949",
+   "article": "Proclamation of the People's Republic of China",
+   "revision": 1374683436,
+   "checked": "2026-09-13T14:20:17Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "korean-war",
+   "article": "Korean War",
+   "revision": 1379651424,
+   "checked": "2026-10-11T04:03:50Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "covid-19",
+   "article": "COVID-19 pandemic",
+   "revision": 1380137455,
+   "checked": "2026-10-14T00:51:47Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "indonesia-1945",
+   "article": "Proclamation of Indonesian Independence",
+   "revision": 1377046708,
+   "checked": "2026-09-27T17:14:16Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "fall-of-saigon",
+   "article": "Fall of Saigon",
+   "revision": 1380780458,
+   "checked": "2026-10-17T21:02:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "indian-ocean-tsunami",
+   "article": "2004 Indian Ocean earthquake and tsunami",
+   "revision": 1377590205,
+   "checked": "2026-09-30T02:42:08Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tashkent-1865",
+   "article": "Russian conquest of Central Asia",
+   "revision": 1379522071,
+   "checked": "2026-10-10T13:27:01Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sputnik",
+   "article": "Sputnik 1",
+   "revision": 1378867201,
+   "checked": "2026-10-06T16:28:50Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "louisiana-purchase",
+   "article": "Louisiana Purchase",
+   "revision": 1379333599,
+   "checked": "2026-10-09T08:55:06Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mexican-independence",
+   "article": "Mexican War of Independence",
+   "revision": 1380261153,
+   "checked": "2026-10-14T19:00:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "ayacucho",
+   "article": "Battle of Ayacucho",
+   "revision": 1379061010,
+   "checked": "2026-10-07T18:11:20Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "american-civil-war",
+   "article": "American Civil War",
+   "revision": 1380907423,
+   "checked": "2026-10-18T18:08:22Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "transcontinental-railroad",
+   "article": "First transcontinental railroad",
+   "revision": 1378191060,
+   "checked": "2026-10-03T11:26:34Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "lei-aurea",
+   "article": "Lei Áurea",
+   "revision": 1368931269,
+   "checked": "2026-08-11T22:54:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "panama-canal",
+   "article": "Panama Canal",
+   "revision": 1380576550,
+   "checked": "2026-10-16T16:12:19Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "wall-street-crash",
+   "article": "Wall Street crash of 1929",
+   "revision": 1380169742,
+   "checked": "2026-10-14T04:59:30Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "united-nations",
+   "article": "Charter of the United Nations",
+   "revision": 1377819198,
+   "checked": "2026-10-01T08:17:24Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "apollo-11",
+   "article": "Apollo 11",
+   "revision": 1380902925,
+   "checked": "2026-10-18T17:27:34Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "september-11",
+   "article": "September 11 attacks",
+   "revision": 1380570163,
+   "checked": "2026-10-16T15:17:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "treaty-of-waitangi",
+   "article": "Treaty of Waitangi",
+   "revision": 1374858569,
+   "checked": "2026-09-14T13:24:30Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "nz-womens-suffrage",
+   "article": "Women's suffrage in New Zealand",
+   "revision": 1374094914,
+   "checked": "2026-09-09T20:28:25Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "australia-federation",
+   "article": "Federation of Australia",
+   "revision": 1379323691,
+   "checked": "2026-10-09T06:45:10Z",
+   "ok": true,
+   "missing": []
   }
  ]
 }
