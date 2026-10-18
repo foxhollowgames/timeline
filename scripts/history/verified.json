@@ -2032,6 +2032,411 @@
    "checked": "2026-10-09T06:45:10Z",
    "ok": true,
    "missing": []
+  },
+  {
+   "id": "pioneers-arrive",
+   "church": true,
+   "article": "Mormon pioneers",
+   "revision": 1365868105,
+   "checked": "2026-07-24T22:28:21Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sunday-school",
+   "church": true,
+   "article": "Sunday School (LDS Church)",
+   "revision": 1360926925,
+   "checked": "2026-06-24T14:34:57Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "deseret-news",
+   "church": true,
+   "article": "Deseret News",
+   "revision": 1380355389,
+   "checked": "2026-10-15T06:11:30Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "utah-territory",
+   "church": true,
+   "article": "Utah Territory",
+   "revision": 1372979996,
+   "checked": "2026-09-03T08:51:54Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "pearl-of-great-price-1851",
+   "church": true,
+   "article": "Pearl of Great Price (Mormonism)",
+   "revision": 1379988222,
+   "checked": "2026-10-13T02:51:34Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "pearl-canonized",
+   "church": true,
+   "article": "Pearl of Great Price (Mormonism)",
+   "revision": 1379988222,
+   "checked": "2026-10-13T02:51:34Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "plural-marriage-1852",
+   "church": true,
+   "article": "Mormonism and polygamy",
+   "revision": 1380444170,
+   "checked": "2026-10-15T19:14:05Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hong-kong-mission-1853",
+   "church": true,
+   "article": "Hong Kong China Temple",
+   "revision": 1373113365,
+   "checked": "2026-09-04T03:33:27Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hong-kong-temple",
+   "church": true,
+   "article": "Hong Kong China Temple",
+   "revision": 1373113365,
+   "checked": "2026-09-04T03:33:27Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "handcarts",
+   "church": true,
+   "article": "Mormon handcart pioneers",
+   "revision": 1380746998,
+   "checked": "2026-10-17T16:27:27Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "utah-war",
+   "church": true,
+   "article": "Utah War",
+   "revision": 1375877876,
+   "checked": "2026-09-20T16:50:46Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mountain-meadows",
+   "church": true,
+   "article": "Mountain Meadows Massacre",
+   "revision": 1376494957,
+   "checked": "2026-09-24T13:56:59Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tabernacle",
+   "church": true,
+   "article": "Salt Lake Tabernacle",
+   "revision": 1372227889,
+   "checked": "2026-08-30T23:10:03Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "young-women",
+   "church": true,
+   "article": "Young Women (organization)",
+   "revision": 1364288495,
+   "checked": "2026-07-15T18:10:17Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "byu",
+   "church": true,
+   "article": "Brigham Young University",
+   "revision": 1380437439,
+   "checked": "2026-10-15T18:31:39Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "st-george-temple",
+   "church": true,
+   "article": "St. George Utah Temple",
+   "revision": 1378550555,
+   "checked": "2026-10-05T00:02:13Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "brigham-young-dies",
+   "church": true,
+   "article": "Brigham Young",
+   "revision": 1379365828,
+   "checked": "2026-10-09T14:53:07Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "primary",
+   "church": true,
+   "article": "Primary (LDS Church)",
+   "revision": 1374971215,
+   "checked": "2026-09-15T02:56:52Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "salt-lake-temple",
+   "church": true,
+   "article": "Salt Lake Temple",
+   "revision": 1380619044,
+   "checked": "2026-10-16T21:47:09Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "utah-statehood",
+   "church": true,
+   "article": "Utah",
+   "revision": 1380512024,
+   "checked": "2026-10-16T04:53:05Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "laie-temple",
+   "church": true,
+   "article": "Laie Hawaii Temple",
+   "revision": 1378441895,
+   "checked": "2026-10-04T14:18:36Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "cardston-temple",
+   "church": true,
+   "article": "Cardston Alberta Temple",
+   "revision": 1375595760,
+   "checked": "2026-09-18T19:27:33Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "bern-temple",
+   "church": true,
+   "article": "Bern Switzerland Temple",
+   "revision": 1373110834,
+   "checked": "2026-09-04T03:17:53Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hamilton-temple",
+   "church": true,
+   "article": "Hamilton New Zealand Temple",
+   "revision": 1374383736,
+   "checked": "2026-09-11T18:41:27Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "washington-temple",
+   "church": true,
+   "article": "Washington D.C. Temple",
+   "revision": 1372949316,
+   "checked": "2026-09-03T03:35:54Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sao-paulo-temple",
+   "church": true,
+   "article": "São Paulo Brazil Temple",
+   "revision": 1372949274,
+   "checked": "2026-09-03T03:35:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tokyo-temple",
+   "church": true,
+   "article": "Tokyo Japan Temple",
+   "revision": 1373114118,
+   "checked": "2026-09-04T03:37:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "book-of-mormon-subtitle",
+   "church": true,
+   "article": "Book of Mormon",
+   "revision": 1380411869,
+   "checked": "2026-10-15T15:40:56Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mexico-city-temple",
+   "church": true,
+   "article": "Mexico City Mexico Temple",
+   "revision": 1373113552,
+   "checked": "2026-09-04T03:34:38Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "manila-temple",
+   "church": true,
+   "article": "Manila Philippines Temple",
+   "revision": 1373113501,
+   "checked": "2026-09-04T03:34:20Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "johannesburg-temple",
+   "church": true,
+   "article": "Johannesburg South Africa Temple",
+   "revision": 1373113382,
+   "checked": "2026-09-04T03:33:34Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "freiberg-temple",
+   "church": true,
+   "article": "Freiberg Germany Temple",
+   "revision": 1373111114,
+   "checked": "2026-09-04T03:19:13Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "seoul-temple",
+   "church": true,
+   "article": "Seoul Korea Temple",
+   "revision": 1373114002,
+   "checked": "2026-09-04T03:37:22Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "family-proclamation",
+   "church": true,
+   "article": "The Family: A Proclamation to the World",
+   "revision": 1376916994,
+   "checked": "2026-09-27T00:07:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "living-christ",
+   "church": true,
+   "article": "The Living Christ: The Testimony of the Apostles",
+   "revision": 1331494145,
+   "checked": "2026-01-06T16:04:39Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "conference-center",
+   "church": true,
+   "article": "Conference Center (LDS Church)",
+   "revision": 1372211967,
+   "checked": "2026-08-30T22:00:09Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "perpetual-education-fund",
+   "church": true,
+   "article": "Perpetual Education Fund",
+   "revision": 1365868378,
+   "checked": "2026-07-24T22:30:41Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "nauvoo-temple",
+   "church": true,
+   "article": "Nauvoo Illinois Temple",
+   "revision": 1373397675,
+   "checked": "2026-09-05T19:14:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "accra-temple",
+   "church": true,
+   "article": "Accra Ghana Temple",
+   "revision": 1373110611,
+   "checked": "2026-09-04T03:16:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kyiv-temple",
+   "church": true,
+   "article": "Kyiv Ukraine Temple",
+   "revision": 1373113409,
+   "checked": "2026-09-04T03:33:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "missionary-age-2012",
+   "church": true,
+   "article": "Missionary (LDS Church)",
+   "revision": 1380169516,
+   "checked": "2026-10-14T04:57:17Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "nelson-president",
+   "church": true,
+   "article": "Russell M. Nelson",
+   "revision": 1380796891,
+   "checked": "2026-10-17T23:37:47Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kinshasa-temple",
+   "church": true,
+   "article": "Kinshasa Democratic Republic of the Congo Temple",
+   "revision": 1372766293,
+   "checked": "2026-09-02T04:38:41Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "rome-temple",
+   "church": true,
+   "article": "Rome Italy Temple",
+   "revision": 1375625458,
+   "checked": "2026-09-19T00:08:56Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "oaks-president",
+   "church": true,
+   "article": "Dallin H. Oaks",
+   "revision": 1374750649,
+   "checked": "2026-09-13T22:50:45Z",
+   "ok": true,
+   "missing": []
   }
  ]
 }

@@ -2,7 +2,7 @@
 
 Wayfinder Timeline is a globe with a timeline. It will place the events of the scriptures beside world history. The full plan is in [DESIGN.md](DESIGN.md).
 
-This is milestone 5 of 6, batch 6 of 7. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map opens beside the globe and follows the same timeline. World history now covers 4000 BCE to 2026, with 254 sourced events. Church history after 1847 follows in the last batch.
+This is milestone 5 of 6, with all 7 history batches done. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map opens beside the globe and follows the same timeline. World history covers 4000 BCE to 2026, with 254 sourced events. Church history adds 45 sourced events from 1847 to 2026. They show with the D&C pins.
 
 ## Run locally
 
@@ -69,7 +69,7 @@ npm run check
 
 ### World history
 
-World history lives in `scripts/history/batch-N.json`, one file per era. DESIGN.md section 4 gives the format and the sourcing rules. Each event quotes the words in its source that carry the date.
+World history lives in `scripts/history/batch-N.json`, one file per era. Batch 7 holds Church history after 1847. DESIGN.md section 4 gives the format and the sourcing rules. Each event quotes the words in its source that carry the date.
 
 To take in a fix from a Wayfinder repository, change its commit in `scripts/sources.json`. Then run all three commands.
 
@@ -84,6 +84,7 @@ To take in a fix from a Wayfinder repository, change its commit in `scripts/sour
 | `scholarly` | The Church chronology gives no year, so a scholarly range is used. |
 | `not-given` | No year. The event goes in an order-only band. |
 | `edition`, `section` | Book of Mormon and D&C dates. |
+| `history`, `church-history` | Dates from the quoted source of a history batch. |
 | `skip` | No pin. `reason` says why. |
 
 `scripts/curated-events.json` adds events that no chapter supplies, such as Adam-ondi-Ahman.
@@ -113,6 +114,7 @@ To take in a fix from a Wayfinder repository, change its commit in `scripts/sour
 | `dist/search.js` | The search box |
 | `dist/volumes.js` | Each volume's hue and shape |
 | `dist/address.js` | Reading and writing the address |
+| `dist/config.js` | The conference globe link. It is off until its url is set |
 | `dist/split.js` | The split between the globe and the panel |
 | `dist/bom-map.js` | The Book of Mormon map |
 | `dist/data/` | Built event data. Do not edit by hand |

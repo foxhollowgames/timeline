@@ -21,7 +21,7 @@ for (const file of files) {
     const quotes = [event.source.quote].flat();
     if (!event.source.wiki) { console.log(`skip ${event.id}: not a Wikipedia source. Check it by hand.`); continue; }
     if (!byArticle.has(event.source.wiki)) byArticle.set(event.source.wiki, []);
-    byArticle.get(event.source.wiki).push({ id: event.id, quotes });
+    byArticle.get(event.source.wiki).push({ id: event.id, quotes, church: batch.volume === 'dc' });
   }
 }
 
@@ -42,7 +42,7 @@ for (const [title, uses] of byArticle) {
     const missing = use.quotes.filter(q => !text.includes(normalize(q)));
     const ok = text && !missing.length;
     if (!ok) failures++;
-    results.push({ id: use.id, article: title, revision: page?.revisions?.[0]?.revid ?? null, checked: page?.revisions?.[0]?.timestamp ?? null, ok, missing });
+    results.push({ id: use.id, ...(use.church && { church: true }), article: title, revision: page?.revisions?.[0]?.revid ?? null, checked: page?.revisions?.[0]?.timestamp ?? null, ok, missing });
     console.log(`${ok ? 'ok  ' : 'FAIL'} ${use.id} · ${title}${ok ? '' : ` · missing: ${missing.map(q => `"${q}"`).join(', ') || 'article not found'}`}`);
   }
   await new Promise(r => setTimeout(r, 1500));
