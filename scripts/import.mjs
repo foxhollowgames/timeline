@@ -47,6 +47,7 @@ const add = (url, path) => jobs.push(() => fetchTo(url, join(cache, path)));
 for (const id of config.bibleBooks) {
   add(raw('bible', `dist/data/books/${id}-native-content.json`), `bible/${id}-native-content.json`);
   add(raw('bible', `dist/data/books/${id}-native-scripture.json`), `bible/${id}-native-scripture.json`);
+  add(raw('bible', `dist/data/books/${id}-people.json`), `bible/${id}-people.json`);
 }
 
 add(raw('book-of-mormon', 'dist/data/content.json'), 'book-of-mormon/content.json');
@@ -54,7 +55,7 @@ add(raw('book-of-mormon', 'dist/data/scripture.json'), 'book-of-mormon/scripture
 add(raw('book-of-mormon', 'scripts/old-world.mjs'), 'book-of-mormon/old-world.mjs');
 
 const dc = 'doctrine-and-covenants';
-for (const file of ['places-base.json', 'places-extra.json', 'routes.json', 'raw/doctrine-and-covenants.json']) {
+for (const file of ['places-base.json', 'places-extra.json', 'routes.json', 'people-ids.json', 'raw/doctrine-and-covenants.json']) {
   add(raw(dc, `content/${file}`), `${dc}/${file.replace('raw/', '')}`);
 }
 for (let n = 1; n <= 138; n++) {
