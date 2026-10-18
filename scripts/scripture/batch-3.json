@@ -1,0 +1,241 @@
+{
+  "about": "Scripture events, batch 3: the return from exile (DESIGN.md section 3). Same fields as batch-1.json.",
+  "batch": 3,
+  "era": "The return from exile",
+  "covers": [
+    { "book": "ezra", "chapters": [1, 10] },
+    { "book": "nehemiah", "chapters": [1, 13] },
+    { "book": "esther", "chapters": [1, 10] },
+    { "book": "haggai", "chapters": [1, 2] },
+    { "book": "zechariah", "chapters": [1, 14] },
+    { "book": "malachi", "chapters": [1, 4] }
+  ],
+  "events": [
+    {
+      "id": "cyrus-lets-the-exiles-return",
+      "volume": "ot",
+      "title": "Cyrus lets the exiles return",
+      "chapters": ["ezra-1", "ezra-2"],
+      "place": "b:babylon",
+      "verse": "ezra-1:3",
+      "summary": "In his first year, Cyrus king of Persia sends a written order through his kingdom. He says the God of heaven told him to build a house in Jerusalem. Any of God's people may go up and build it. Their neighbors are to give silver, gold, goods, and animals. Cyrus gives back the temple vessels that Nebuchadnezzar took. Zerubbabel and Jeshua lead the people home. The book counts 42,360 people in the company.",
+      "alsoRead": [
+        { "ref": "2 Chronicles 36:23", "note": "Chronicles ends with the same order from Cyrus." },
+        { "ref": "Isaiah 44:28", "note": "Isaiah names Cyrus as the one who will say Jerusalem will be built." }
+      ],
+      "related": ["achaemenid-empire"],
+      "relatedNote": "Cyrus founded the Persian Empire and took Babylon in 539 BCE."
+    },
+    {
+      "id": "temple-foundation-laid",
+      "volume": "ot",
+      "title": "The returned exiles lay the temple's foundation",
+      "chapters": ["ezra-3"],
+      "place": "b:jerusalem",
+      "verse": "ezra-3:11",
+      "summary": "In the seventh month the people gather in Jerusalem. Jeshua and Zerubbabel build the altar on its old base. They keep the Feast of Booths, a week of living in shelters. They pay workers and order cedar wood from Lebanon. In the second year the builders lay the temple's foundation. The priests blow trumpets, and the Levites sing that the LORD is good. Old men who saw the first temple weep, while others shout for joy."
+    },
+    {
+      "id": "temple-work-stopped",
+      "volume": "ot",
+      "title": "Neighbors stop the work on the temple",
+      "chapters": ["ezra-4"],
+      "place": "b:jerusalem",
+      "verse": "ezra-4:24",
+      "summary": "Neighbors of Judah and Benjamin offer to help build the temple. Zerubbabel and the leaders refuse. The neighbors then frighten the builders and pay advisers to work against them. Later, officials write to King Artaxerxes about Jerusalem's walls. They call it a rebel city that will stop paying taxes. The king orders the building to stop. Work on God's house stops until the second year of Darius."
+    },
+    {
+      "id": "haggai-and-zechariah-urge-building",
+      "volume": "ot",
+      "title": "Haggai and Zechariah urge the people to build",
+      "chapters": ["haggai-1", "haggai-2", "ezra-5"],
+      "dateFrom": ["haggai-1", "haggai-2"],
+      "place": "b:jerusalem",
+      "verse": "haggai-1:4",
+      "summary": "In the second year of Darius, Haggai speaks to two leaders. They are the governor Zerubbabel and the high priest Joshua. The people say it is not yet time to rebuild. God asks why they live in fine houses while his house lies in ruins. The leaders and the people obey and start work. Haggai says the new temple's glory will be greater than the old one's. Ezra adds that the governor Tattenai asks who allowed the work. He writes to Darius while the building goes on."
+    },
+    {
+      "id": "second-temple-finished",
+      "volume": "ot",
+      "title": "The second temple is finished",
+      "chapters": ["ezra-6"],
+      "place": "b:jerusalem",
+      "verse": "ezra-6:15",
+      "summary": "King Darius orders a search of the royal records. A scroll found in the fortress of Achmetha holds Cyrus's order. Darius tells Tattenai to leave the work alone. He orders the costs paid from the region's taxes. He also sends animals, wheat, salt, wine, and oil for the offerings. The elders finish the temple in the sixth year of Darius. They dedicate it with joy and keep the Passover."
+    },
+    {
+      "id": "zechariahs-night-visions",
+      "volume": "ot",
+      "title": "Zechariah's night visions",
+      "chapters": ["zechariah-1", "zechariah-2", "zechariah-3", "zechariah-6"],
+      "place": "b:jerusalem",
+      "verse": "zechariah-3:4",
+      "summary": "In the second year of Darius, Zechariah calls the people to return to the LORD. At night he sees a rider on a red horse among myrtle trees. A man goes to measure Jerusalem. The LORD says he will be a wall of fire around it. Zechariah sees the high priest Joshua in filthy clothes before the LORD's angel. The angel takes the clothes away and says Joshua's guilt is gone. Zechariah is told to set a crown on Joshua. A man called the Branch will build the LORD's temple."
+    },
+    {
+      "id": "bethel-asks-about-fasting",
+      "volume": "ot",
+      "title": "Men from Bethel ask about fasting",
+      "chapters": ["zechariah-7", "zechariah-8"],
+      "place": "b:jerusalem",
+      "verse": "zechariah-7:9",
+      "summary": "Men come from Bethel to ask the priests a question. For years they have fasted in the fifth month. They ask if they should go on. God asks if their fasting was really for him. He repeats the earlier prophets: judge fairly, and show kindness and mercy to one another. Do not oppress widows, orphans, foreigners, or the poor. The LORD says old people and children will fill Jerusalem's streets again. The fasts will become glad feasts."
+    },
+    {
+      "id": "zechariah-foresees-a-humble-king",
+      "volume": "ot",
+      "title": "Zechariah foresees a king riding on a donkey",
+      "chapters": ["zechariah-9", "zechariah-10"],
+      "place": "b:jerusalem",
+      "verse": "zechariah-9:9",
+      "summary": "A message of judgment falls on Syria, Tyre, and the Philistine cities. Zion is told to rejoice, for her king is coming. He is righteous and humble and rides on a donkey. He will take away chariots, war horses, and bows. He will speak peace to the nations. The people wander like sheep with no shepherd. The LORD says he will care for his flock himself and bring them home.",
+      "alsoRead": [{ "ref": "Matthew 21:5", "note": "Matthew quotes this verse as Jesus rides into Jerusalem." }]
+    },
+    {
+      "id": "thirty-pieces-of-silver",
+      "volume": "ot",
+      "title": "The shepherd is paid thirty pieces of silver",
+      "chapters": ["zechariah-11"],
+      "place": "b:jerusalem",
+      "verse": "zechariah-11:12",
+      "summary": "Zechariah is told to be shepherd of a flock marked for killing. Its buyers kill the sheep, and its sellers thank God that they are rich. He takes two staffs, named Favor and Union. The flock hates him, and he breaks the staff Favor. He asks for his wages, and they weigh out thirty pieces of silver. He throws the silver to the potter in the LORD's house. He breaks the second staff, and a worthless shepherd follows.",
+      "alsoRead": [{ "ref": "Matthew 27:9", "note": "Matthew links the thirty pieces of silver to Judas." }]
+    },
+    {
+      "id": "zechariah-foresees-the-lords-day",
+      "volume": "ot",
+      "title": "Zechariah foresees the LORD's day at Jerusalem",
+      "chapters": ["zechariah-12", "zechariah-13", "zechariah-14"],
+      "place": "b:olives",
+      "verse": "zechariah-14:4",
+      "summary": "The LORD says the nations will attack Jerusalem and hurt themselves. He will pour out a spirit of grace and prayer on the city. They will look on the one they pierced and mourn. The shepherd is struck, and the sheep scatter. The LORD's feet will stand on the Mount of Olives. The mountain will split in two. Living water will flow from Jerusalem. The LORD will be king over all the earth.",
+      "alsoRead": [
+        { "ref": "John 19:37", "note": "John quotes the verse about the pierced one at the cross." },
+        { "ref": "D&C 45:48", "note": "The Lord says the mount will split when he sets his foot on it." },
+        { "ref": "D&C 45:51", "note": "The Jews ask about the wounds in his hands and feet." }
+      ]
+    },
+    {
+      "id": "esther-becomes-queen",
+      "volume": "ot",
+      "title": "Esther becomes queen of Persia",
+      "chapters": ["esther-1", "esther-2"],
+      "place": "b:susa",
+      "verse": "esther-2:17",
+      "summary": "King Ahasuerus of Persia gives a great feast in the city of Susa. He sends for Queen Vashti, and she refuses to come. His advisers have her removed as queen. Young women are brought to the palace for the king to choose. Mordecai, a Jew, has raised his orphaned cousin Esther. Esther does not tell anyone she is a Jew. The king loves her and makes her queen. Mordecai finds a plot to kill the king, and it is written in the records."
+    },
+    {
+      "id": "haman-plots-against-the-jews",
+      "volume": "ot",
+      "title": "Haman plots to destroy the Jews",
+      "chapters": ["esther-3", "esther-4"],
+      "place": "b:susa",
+      "verse": "esther-4:14",
+      "summary": "The king raises Haman above all his officials. Mordecai will not bow to Haman. Haman decides to destroy all the Jews and casts lots to pick a day. The king gives him his ring, and letters go out to every province. Mordecai mourns in sackcloth, rough cloth worn in grief, at the king's gate. He asks Esther to plead with the king. Anyone who goes to the king without being called may die. Esther asks the Jews to fast three days and says, “If I perish, I perish.”"
+    },
+    {
+      "id": "esther-names-haman",
+      "volume": "ot",
+      "title": "Esther goes to the king and names Haman",
+      "chapters": ["esther-5", "esther-6", "esther-7"],
+      "place": "b:susa",
+      "verse": "esther-7:6",
+      "summary": "Esther stands in the king's court, and he holds out his gold scepter to her. She invites the king and Haman to a feast. Haman builds a gallows, a frame for hanging, for Mordecai. That night the king cannot sleep and hears the records read. He learns that Mordecai saved his life and got no reward. The king has Haman lead Mordecai through the city in a royal robe. At Esther's second feast, she asks for her life and her people's lives. She names Haman as the enemy, and Haman is hanged on his own gallows."
+    },
+    {
+      "id": "purim",
+      "volume": "ot",
+      "title": "The Jews defend themselves, and Purim begins",
+      "chapters": ["esther-8", "esther-9", "esther-10"],
+      "place": "b:susa",
+      "verse": "esther-9:28",
+      "summary": "The king gives Haman's ring to Mordecai. A sealed royal order cannot be taken back. So the king lets them write a new one. It lets the Jews in every city gather and defend their lives. On the thirteenth day of Adar, the Jews strike those who attack them. They take no goods from their enemies. Mordecai and Esther send letters that make the feast of Purim yearly. Mordecai becomes second to the king and seeks the good of his people."
+    },
+    {
+      "id": "ezra-comes-to-jerusalem",
+      "volume": "ot",
+      "title": "Ezra brings the law to Jerusalem",
+      "chapters": ["ezra-7", "ezra-8"],
+      "place": "b:babylon",
+      "verse": "ezra-7:10",
+      "summary": "Years later Ezra comes up from Babylon. He is a priest and a scribe, a teacher skilled in the law of Moses. King Artaxerxes gives him a letter and gifts of silver and gold for the temple. The letter tells Ezra to appoint judges and teach God's laws. At the river Ahava, Ezra calls a fast and asks God for a safe journey. He is ashamed to ask the king for soldiers. The travelers reach Jerusalem safely after about four months."
+    },
+    {
+      "id": "ezra-and-the-mixed-marriages",
+      "volume": "ot",
+      "title": "Ezra confronts the marriages to neighboring peoples",
+      "chapters": ["ezra-9", "ezra-10"],
+      "place": "b:jerusalem",
+      "verse": "ezra-10:11",
+      "summary": "Leaders tell Ezra that many have married among the neighboring peoples. Priests, Levites, and officials are among them. Ezra tears his clothes and prays. He says the people's guilt has grown up to the heavens. A large crowd gathers and weeps with him. Shecaniah proposes a covenant to send away the foreign wives and their children. The men meet in the square in heavy rain. Family heads take three months to examine each case."
+    },
+    {
+      "id": "nehemiah-sent-to-rebuild",
+      "volume": "ot",
+      "title": "Nehemiah asks the king to send him to Jerusalem",
+      "chapters": ["nehemiah-1", "nehemiah-2"],
+      "place": "b:susa",
+      "verse": "nehemiah-2:5",
+      "summary": "Nehemiah serves the Persian king as his cupbearer, the one who serves his wine. Men from Judah tell him Jerusalem's wall is broken and its gates are burned. Nehemiah weeps, fasts, and prays for days. Four months later the king asks why he looks sad. Nehemiah prays quickly and asks to be sent to rebuild the city. The king gives him letters and timber. In Jerusalem, Nehemiah looks at the walls by night. The leaders agree to build."
+    },
+    {
+      "id": "jerusalems-wall-rebuilt",
+      "volume": "ot",
+      "title": "Jerusalem's wall is rebuilt in 52 days",
+      "chapters": ["nehemiah-3", "nehemiah-4", "nehemiah-6"],
+      "place": "b:jerusalem",
+      "verse": "nehemiah-4:17",
+      "summary": "Priests, merchants, and families each repair a part of the wall. Sanballat and Tobiah mock the builders and plan an attack. The people pray and post guards day and night. Half of Nehemiah's men work while half hold weapons. The enemies try four times to draw Nehemiah out to harm him. A paid prophet urges him to hide in the temple, and he refuses. The wall is finished in fifty-two days."
+    },
+    {
+      "id": "nehemiah-ends-the-debts",
+      "volume": "ot",
+      "title": "Nehemiah stops the nobles' unfair loans",
+      "chapters": ["nehemiah-5"],
+      "place": "b:jerusalem",
+      "verse": "nehemiah-5:9",
+      "summary": "Poor families cry out against their fellow Jews. Some have given their fields as pledges to buy grain in the famine. Some borrowed money to pay the king's tax. Their children are being sold as servants. Nehemiah is angry and accuses the nobles of charging interest. The nobles promise to give everything back. As governor, Nehemiah refuses the food he is owed. He feeds many at his own cost."
+    },
+    {
+      "id": "ezra-reads-the-law",
+      "volume": "ot",
+      "title": "Ezra reads the law, and the people make a covenant",
+      "chapters": ["nehemiah-8", "nehemiah-9", "nehemiah-10"],
+      "place": "b:jerusalem",
+      "verse": "nehemiah-8:8",
+      "summary": "In the seventh month the people gather at the Water Gate. Ezra reads the law of Moses from morning until noon. Levites explain the reading, and the people weep. The leaders tell them not to grieve, because the day is holy. They keep the Feast of Booths in shelters of branches. Later the people fast and confess their sins. The Levites pray through Israel's history of failure and God's mercy. The leaders seal a written promise to keep the law and support the temple."
+    },
+    {
+      "id": "jerusalem-resettled-and-wall-dedicated",
+      "volume": "ot",
+      "title": "Jerusalem is resettled, and the wall is dedicated",
+      "chapters": ["nehemiah-7", "nehemiah-11", "nehemiah-12"],
+      "place": "b:jerusalem",
+      "verse": "nehemiah-12:43",
+      "summary": "The gates are hung, and guards are set in Jerusalem. The city is wide, but few people live in it. Nehemiah finds the record of the first families who came back. The people cast lots to bring one family in ten into the city. They bless those who choose to move there. At the wall's dedication, two large choirs walk on the wall in opposite directions. They meet at the temple and sing. The joy of Jerusalem is heard far away."
+    },
+    {
+      "id": "nehemiahs-second-visit",
+      "volume": "ot",
+      "title": "Nehemiah returns and corrects the people",
+      "chapters": ["nehemiah-13"],
+      "place": "b:jerusalem",
+      "verse": "nehemiah-13:14",
+      "summary": "Nehemiah has been away at the king's court. When he returns, he finds Tobiah living in a temple storeroom. He throws out Tobiah's goods. The Levites have not been paid and have gone back to their fields. Traders sell goods on the Sabbath, so Nehemiah shuts the gates. Some Jews have married women of Ashdod, Ammon, and Moab, and he rebukes them. He asks God to remember him for good."
+    },
+    {
+      "id": "malachi-rebukes-the-priests",
+      "volume": "ot",
+      "title": "Malachi rebukes the priests and promises a messenger",
+      "chapters": ["malachi-1", "malachi-2", "malachi-3"],
+      "place": "b:jerusalem",
+      "verse": "malachi-3:1",
+      "summary": "The LORD tells Israel that he has loved them, and they ask how. The priests offer blind, lame, and sick animals on his altar. God says a priest's lips should guard knowledge, but these priests make many stumble. The people are also unfaithful to their wives. God says he will send his messenger to prepare the way. The Lord will come suddenly to his temple, like a refiner's fire. He calls the people to return and stop robbing him of tithes. Those who fear the LORD are written in a book of remembrance.",
+      "alsoRead": [
+        { "ref": "3 Nephi 24:1", "note": "Jesus gives Malachi's words to the Nephites." },
+        { "ref": "D&C 13:1", "note": "The Aaronic Priesthood is given until the sons of Levi offer again." },
+        { "ref": "D&C 110:14", "note": "The revelation says the time Malachi spoke of has fully come." }
+      ]
+    }
+  ]
+}
