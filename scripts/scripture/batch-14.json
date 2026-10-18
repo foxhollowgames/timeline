@@ -1,0 +1,315 @@
+{
+  "about": "Scripture events, batch 14: the Doctrine and Covenants, 1832–1978 (DESIGN.md section 3). Same fields as batch-1.json. The covers range finishes the volume.",
+  "batch": 14,
+  "era": "Kirtland, Missouri, Nauvoo, and after, 1832–1978",
+  "covers": [
+    { "book": "dc", "chapters": [1, 138] }
+  ],
+  "events": [
+    {
+      "id": "missionaries-sent-from-amherst",
+      "volume": "dc",
+      "title": "Missionaries are paired and sent out",
+      "chapters": ["dc-73", "dc-75"],
+      "place": "dc:amherst",
+      "verse": "dc-75:3",
+      "summary": "In January 1832, Joseph Smith and Sidney Rigdon are told to preach until conference. Then they are to finish the Bible translation. A general conference meets at Amherst, Ohio, on 25 January. A revelation pairs the elders and sends them out. They are to labor with all their might. Members must support the families of those who go."
+    },
+    {
+      "id": "the-vision-of-the-glories",
+      "volume": "dc",
+      "title": "The vision of the three degrees of glory",
+      "chapters": ["dc-76", "dc-77"],
+      "place": "dc:hiram",
+      "verse": "dc-76:22",
+      "summary": "In February 1832, Joseph Smith and Sidney Rigdon are revising the Bible. They work at the John Johnson home in Hiram, Ohio. They read John 5:29 about the resurrection. They see the Son at the right hand of God and testify that he lives. They see that nearly all will inherit a kingdom of glory through Christ. There are three kingdoms: celestial, terrestrial, and telestial. Later, Joseph explains symbols in the book of Revelation.",
+      "alsoRead": [{ "ref": "1 Corinthians 15:40", "note": "Paul speaks of celestial and terrestrial bodies." }]
+    },
+    {
+      "id": "the-united-firm",
+      "volume": "dc",
+      "title": "The United Firm and the storehouse",
+      "chapters": ["dc-78", "dc-82", "dc-83"],
+      "place": "dc:independence",
+      "verse": "dc-82:3",
+      "summary": "In March 1832, a revelation joins church leaders in a firm. It will run the church's stores and printing. They are to be equal in earthly things. In April, Joseph Smith travels to Independence, Missouri. A council there binds the firm by covenant. To whom much is given, much is required. Widows and orphans have a claim on the Lord's storehouse."
+    },
+    {
+      "id": "missionary-calls-1832",
+      "volume": "dc",
+      "title": "Calls to preach and to serve in the presidency",
+      "chapters": ["dc-79", "dc-80", "dc-81", "dc-99"],
+      "place": "dc:hiram",
+      "verse": "dc-81:5",
+      "summary": "In March 1832, Jared Carter is sent east again with the Comforter as his guide. Stephen Burnett is told that where he preaches matters less than what he knows. Jesse Gause is called as a counselor to Joseph Smith. A counselor is to strengthen the weak and lift up the hands that hang down. John Murdock, whose wife has died, is called to preach in the East. He must first see that his children are cared for."
+    },
+    {
+      "id": "revelation-on-priesthood",
+      "volume": "dc",
+      "title": "A revelation on the priesthood",
+      "chapters": ["dc-84"],
+      "place": "dc:kirtland",
+      "verse": "dc-84:20",
+      "summary": "In September 1832, elders return to Kirtland from missions in the East. Joseph Smith receives a revelation about priesthood. It traces the priesthood from Adam to Moses. In its ordinances the power of godliness is shown. Those who are faithful to the priesthood receive all that the Father has. The elders are sent to warn the world."
+    },
+    {
+      "id": "the-wheat-and-the-tares",
+      "volume": "dc",
+      "title": "The records of Zion, and the wheat and the tares",
+      "chapters": ["dc-85", "dc-86"],
+      "place": "dc:kirtland",
+      "verse": "dc-86:11",
+      "summary": "In November 1832, Joseph Smith writes to William W. Phelps in Missouri. He says Zion's records should list only those who keep consecration. In December, Joseph is revising the Bible at Kirtland. A revelation explains Jesus' parable of the wheat and the tares. The wheat is gathered before the tares are burned. The priesthood has continued through the lineage of the fathers.",
+      "alsoRead": [{ "ref": "Matthew 13:30", "note": "Jesus tells the parable of the wheat and the tares." }]
+    },
+    {
+      "id": "prophecy-on-war",
+      "volume": "dc",
+      "title": "A prophecy of war beginning in South Carolina",
+      "chapters": ["dc-87"],
+      "place": "dc:kirtland",
+      "verse": "dc-87:1",
+      "summary": "On 25 December 1832, Joseph Smith dictates a revelation at or near Kirtland. That autumn South Carolina had threatened to leave the Union over tariffs. The revelation foretells war beginning with the rebellion of South Carolina. The southern states will call on Great Britain for help. War will be poured out on all nations. The Saints are told to stand in holy places.",
+      "related": ["american-civil-war"],
+      "relatedNote": "D&C 87 foretells war beginning with the rebellion of South Carolina. The Civil War began there in 1861."
+    },
+    {
+      "id": "the-olive-leaf",
+      "volume": "dc",
+      "title": "The olive leaf",
+      "chapters": ["dc-88"],
+      "place": "dc:kirtland",
+      "verse": "dc-88:118",
+      "summary": "On 27 December 1832, high priests meet in conference at Kirtland. They pray one by one to learn God's will about building Zion. Joseph Smith calls the revelation an olive leaf. It speaks of the light of Christ in all things. It tells the elders to seek learning by study and also by faith. It commands a house of God and a school for the prophets."
+    },
+    {
+      "id": "the-word-of-wisdom",
+      "volume": "dc",
+      "title": "The Word of Wisdom",
+      "chapters": ["dc-89"],
+      "place": "dc:kirtland",
+      "verse": "dc-89:18",
+      "summary": "Joseph Smith dictates this revelation at Kirtland on 27 February 1833. Later accounts tie it to the school of the prophets. It counsels against wine, strong drink, tobacco, and hot drinks. It calls herbs, fruit, and grain good for people. Meat is to be eaten sparingly. Those who keep it are promised health, wisdom, and knowledge."
+    },
+    {
+      "id": "the-first-presidency",
+      "volume": "dc",
+      "title": "Two counselors share the work of the First Presidency",
+      "chapters": ["dc-90", "dc-91", "dc-92"],
+      "place": "dc:kirtland",
+      "verse": "dc-90:24",
+      "summary": "Jesse Gause, one of Joseph Smith's counselors, has left the church. In March 1833 a revelation says Sidney Rigdon and Frederick G. Williams share the keys with Joseph. They are to preside together and set the church in order. Joseph asks whether to revise the Apocrypha, books found in some Bibles. The Lord says it holds much truth, but the Spirit must guide the reader. Frederick G. Williams joins the United Firm."
+    },
+    {
+      "id": "grace-for-grace",
+      "volume": "dc",
+      "title": "Christ received grace for grace",
+      "chapters": ["dc-93"],
+      "place": "dc:kirtland",
+      "verse": "dc-93:36",
+      "summary": "Joseph Smith dictates this revelation in Kirtland on 6 May 1833. It quotes a record of John that tells of Christ. Christ did not receive the fulness at first but grew from grace to grace. His followers may also receive grace for grace. The glory of God is intelligence, which is light and truth. Joseph and his counselors are told to set their families in order."
+    },
+    {
+      "id": "build-the-house-of-the-lord",
+      "volume": "dc",
+      "title": "The Lord rebukes the delay in building his house",
+      "chapters": ["dc-94", "dc-95", "dc-96"],
+      "place": "dc:kirtland",
+      "verse": "dc-95:8",
+      "summary": "Earlier revelations had commanded a house of the Lord in Kirtland. By June 1833 work has not begun. The Lord rebukes the delay. He says he will endow his chosen ones with power in that house. He gives its size and plan. The church's new French farm is set aside to strengthen Kirtland. Lots near the temple are set apart for other church buildings."
+    },
+    {
+      "id": "zion-is-driven-out",
+      "volume": "dc",
+      "title": "Mobs drive the Saints from Jackson County",
+      "chapters": ["dc-97", "dc-98", "dc-101"],
+      "place": "dc:independence",
+      "verse": "dc-97:21",
+      "summary": "In summer 1833, a revelation says Zion is the pure in heart. Then a mob in Independence destroys the church's printing office. Joseph Smith, far away in Kirtland, receives a revelation about bearing persecution. The Saints are to be patient, forgive, and renounce war. In November 1833, armed residents drive the Saints out of Jackson County. The Lord says Zion is chastened but will not be moved. He says he established the Constitution by wise men.",
+      "related": ["us-constitution"],
+      "relatedNote": "In D&C 101:80 the Lord says he established the Constitution of this land."
+    },
+    {
+      "id": "mission-to-upper-canada",
+      "volume": "dc",
+      "title": "Joseph Smith preaches in Upper Canada",
+      "chapters": ["dc-100"],
+      "place": "dc:perrysburg",
+      "verse": "dc-100:5",
+      "summary": "In October 1833, Joseph Smith and Sidney Rigdon go to preach in Upper Canada. Freeman Nickerson asked them to teach his family there. They worry about their own families at home. A revelation at Perrysburg, New York, says their families are well. They are to lift up their voices, and God will give them the words."
+    },
+    {
+      "id": "zions-camp",
+      "volume": "dc",
+      "title": "Zion's Camp marches to Missouri",
+      "chapters": ["dc-103", "dc-104", "dc-105"],
+      "place": "dc:fishing-river",
+      "verse": "dc-105:6",
+      "summary": "In February 1834, two Missouri leaders report on the exiled Saints in Kirtland. A revelation calls for volunteers to march to Zion. The church's United Firm is deep in debt and is divided. The Lord says all things are his, and the owners are stewards. In May and June, Joseph Smith leads an armed group to Missouri. It is later called Zion's Camp. At Fishing River a revelation says Zion's redemption must wait. The people must first be prepared and endowed."
+    },
+    {
+      "id": "priesthood-councils",
+      "volume": "dc",
+      "title": "Priesthood councils and quorums are organized",
+      "chapters": ["dc-102", "dc-107"],
+      "place": "dc:kirtland",
+      "verse": "dc-107:99",
+      "summary": "In February 1834, high priests meet at Joseph Smith's house in Kirtland. They organize a standing high council to hear serious disputes. In 1835 the church organizes the Quorum of the Twelve Apostles and the first Seventy. A revelation explains the order of the priesthood and its councils. It recalls Adam blessing his posterity at Adam-ondi-Ahman. Every man is to learn his duty.",
+      "alsoRead": [{ "ref": "Genesis 5:1", "note": "The book of the generations of Adam begins here." }]
+    },
+    {
+      "id": "warren-cowdery-and-lyman-sherman",
+      "volume": "dc",
+      "title": "Calls to Warren Cowdery and Lyman Sherman",
+      "chapters": ["dc-106", "dc-108"],
+      "place": "dc:freedom",
+      "verse": "dc-108:7",
+      "summary": "Warren A. Cowdery, Oliver Cowdery's older brother, lives in Freedom, New York. In November 1834 he is called to preside over the church there. In December 1835, Lyman Sherman asks Joseph Smith for a revelation. Sherman is one of the presidents of the Seventy. He is told his sins are forgiven and to rest and wait. He is to strengthen his brethren in all he does."
+    },
+    {
+      "id": "declaration-on-government",
+      "volume": "dc",
+      "title": "A declaration on government and laws",
+      "chapters": ["dc-134"],
+      "place": "dc:kirtland",
+      "verse": "dc-134:2",
+      "summary": "On 17 August 1835, a general assembly meets in Kirtland. It accepts the first edition of the Doctrine and Covenants. It also approves this declaration of belief about governments. Governments are to protect freedom of conscience, property, and life. They must not control religion. Religious groups may discipline members but not take life or property."
+    },
+    {
+      "id": "the-kirtland-temple",
+      "volume": "dc",
+      "title": "The Kirtland Temple is dedicated, and keys are restored",
+      "chapters": ["dc-137", "dc-109", "dc-110"],
+      "place": "dc:kirtland",
+      "verse": "dc-110:7",
+      "summary": "In January 1836, Joseph Smith sees the celestial kingdom in a vision. He is in the unfinished temple. He sees his brother Alvin, who died before baptism. The Lord judges all by the desires of their hearts. On 27 March, Joseph offers a dedicatory prayer for the Kirtland Temple. A week later, he and Oliver Cowdery see Christ in the temple. Christ accepts the house. Moses, Elias, and Elijah then give them priesthood keys.",
+      "alsoRead": [{ "ref": "Malachi 4:5", "note": "The LORD says he will send Elijah the prophet." }]
+    },
+    {
+      "id": "errand-to-salem",
+      "volume": "dc",
+      "title": "An errand to Salem, Massachusetts",
+      "chapters": ["dc-111"],
+      "place": "dc:salem",
+      "verse": "dc-111:2",
+      "summary": "The church carries heavy debts from building the Kirtland Temple. In July 1836, Joseph Smith and three other leaders travel to Salem, Massachusetts. They had heard of money there. The errand does not succeed. A revelation tells them not to worry about their debts. The Lord has much treasure in the city, meaning people to gather."
+    },
+    {
+      "id": "the-twelve-are-sent",
+      "volume": "dc",
+      "title": "The Twelve are humbled and sent across the sea",
+      "chapters": ["dc-112", "dc-114", "dc-118"],
+      "place": "dc:far-west",
+      "verse": "dc-112:10",
+      "summary": "In 1837 many members in Kirtland, including some apostles, turn against Joseph Smith. Thomas B. Marsh, president of the Twelve, is told to be humble. The Twelve must follow the First Presidency. In April 1838, David W. Patten is told to prepare for a mission. In July 1838, the Twelve are refilled after dissent. They are told to cross the great waters the next spring."
+    },
+    {
+      "id": "far-west",
+      "volume": "dc",
+      "title": "The church is named and gathers to Far West",
+      "chapters": ["dc-113", "dc-115", "dc-116", "dc-117"],
+      "place": "dc:far-west",
+      "verse": "dc-115:4",
+      "summary": "Joseph Smith moves from Kirtland to Far West, Missouri, in March 1838. He answers questions about Isaiah 11. On 26 April a revelation gives the church its name. It is The Church of Jesus Christ of Latter-day Saints. The Saints are to gather and build a temple at Far West. In May, Spring Hill is named Adam-ondi-Ahman. Leaders are told to leave Kirtland's property behind."
+    },
+    {
+      "id": "the-law-of-tithing",
+      "volume": "dc",
+      "title": "The law of tithing",
+      "chapters": ["dc-119", "dc-120"],
+      "place": "dc:far-west",
+      "verse": "dc-119:4",
+      "summary": "On 8 July 1838, Joseph Smith asks how much property the Lord requires as tithing. The answer says members first give their surplus property. After that they pay one tenth of their interest each year. This is to be a standing law. A second revelation that day says a council will handle the tithed funds. No one leader is to control them."
+    },
+    {
+      "id": "liberty-jail",
+      "volume": "dc",
+      "title": "Joseph Smith writes from Liberty Jail",
+      "chapters": ["dc-121", "dc-122", "dc-123"],
+      "place": "dc:liberty",
+      "verse": "dc-121:7",
+      "summary": "In late 1838 the Saints are driven from Missouri. Joseph Smith and others are held in the jail at Liberty through the winter. In March 1839 Joseph writes letters to the church. He cries out asking how long God will wait. The answer says his trials will be but a small moment. Priesthood power works only by persuasion and love. All these things will give him experience. He asks the Saints to record the wrongs done to them."
+    },
+    {
+      "id": "nauvoo-and-its-temple",
+      "volume": "dc",
+      "title": "The Saints are told to build a temple at Nauvoo",
+      "chapters": ["dc-124", "dc-125", "dc-126"],
+      "place": "dc:nauvoo",
+      "verse": "dc-124:40",
+      "summary": "The Saints settle at Nauvoo, Illinois, after leaving Missouri. On 19 January 1841 a revelation calls for a temple and a boarding house there. The temple is needed for sacred ordinances, including baptism for the dead. Scattered Saints in Iowa are told to gather and build a city called Zarahemla. Brigham Young returns from England. He is told to stay and care for his family."
+    },
+    {
+      "id": "baptism-for-the-dead",
+      "volume": "dc",
+      "title": "Letters on baptism for the dead",
+      "chapters": ["dc-127", "dc-128"],
+      "place": "dc:nauvoo",
+      "verse": "dc-128:15",
+      "summary": "In August 1842 Joseph Smith is in hiding to avoid arrest. He writes two letters to the Saints in Nauvoo. He tells them to have witnesses record each baptism for the dead. Without the dead, the living cannot be made perfect. He quotes Malachi on turning the hearts of the fathers and children. He ends with a list of glad tidings from the Restoration.",
+      "alsoRead": [{ "ref": "1 Corinthians 15:29", "note": "Paul asks why some are baptized for the dead." }]
+    },
+    {
+      "id": "teachings-at-ramus",
+      "volume": "dc",
+      "title": "Joseph Smith teaches at Nauvoo and Ramus",
+      "chapters": ["dc-129", "dc-130", "dc-131"],
+      "place": "dc:ramus",
+      "verse": "dc-130:22",
+      "summary": "In February 1843, Joseph Smith explains how to tell true messengers from false ones. In April he teaches at Ramus, Illinois. He says the Father and the Son have bodies of flesh and bones. The Holy Ghost is a personage of Spirit. Knowledge gained in this life rises with people in the resurrection. In May he teaches that the highest celestial degree requires the covenant of marriage."
+    },
+    {
+      "id": "revelation-on-marriage",
+      "volume": "dc",
+      "title": "The revelation on eternal and plural marriage",
+      "chapters": ["dc-132"],
+      "place": "dc:nauvoo",
+      "verse": "dc-132:7",
+      "summary": "On 12 July 1843, Joseph Smith dictates this revelation in Nauvoo. William Clayton writes it down. The heading says Joseph likely knew some of its teachings as early as 1831. Covenants sealed by proper authority last beyond death. Marriage sealed this way continues in eternity. The revelation also justifies plural marriage by command. It speaks to Emma Smith directly."
+    },
+    {
+      "id": "the-martyrdom",
+      "volume": "dc",
+      "title": "Joseph and Hyrum Smith are killed at Carthage",
+      "chapters": ["dc-135"],
+      "place": "dc:carthage",
+      "verse": "dc-135:3",
+      "summary": "On 27 June 1844, a mob shoots Joseph Smith and his brother Hyrum. They are held in the jail at Carthage, Illinois. John Taylor is wounded, and Willard Richards escapes. Section 135 is a statement about their deaths. It calls their deaths a sealing witness of their work. It says Joseph did more for the salvation of people than any but Jesus."
+    },
+    {
+      "id": "the-camp-of-israel",
+      "volume": "dc",
+      "title": "Brigham Young's revelation at Winter Quarters",
+      "chapters": ["dc-136"],
+      "place": "dc:winter-quarters",
+      "verse": "dc-136:4",
+      "summary": "The Saints leave Nauvoo in 1846 and spend the winter on the Missouri River. On 14 January 1847, Brigham Young gives this revelation at Winter Quarters. It organizes the camp for the journey west into companies. Each company is to care for the poor, the widows, and the fatherless. The people covenant to walk in the Lord's ordinances."
+    },
+    {
+      "id": "official-declaration-1",
+      "volume": "dc",
+      "title": "The Church ends the public practice of plural marriage",
+      "chapters": ["od1"],
+      "place": "dc:salt-lake-city",
+      "summary": "In the 1880s, federal laws make plural marriage a crime and target the Church's property. In September 1890, President Wilford Woodruff issues a Manifesto. He says the Church is not teaching plural marriage. He advises members to obey the law of the land. A general conference in October accepts it."
+    },
+    {
+      "id": "vision-of-the-redemption-of-the-dead",
+      "volume": "dc",
+      "title": "Joseph F. Smith's vision of the redemption of the dead",
+      "chapters": ["dc-138"],
+      "place": "dc:salt-lake-city",
+      "verse": "dc-138:11",
+      "summary": "On 3 October 1918, President Joseph F. Smith ponders Peter's words about Christ preaching to the dead. He sees the spirits of the righteous dead waiting for Christ. Christ does not go himself to the wicked. He organizes righteous messengers to teach all the spirits. The faithful in this life continue that work after death.",
+      "alsoRead": [{ "ref": "1 Peter 3:19", "note": "Peter says Christ preached to the spirits in prison." }]
+    },
+    {
+      "id": "official-declaration-2",
+      "volume": "dc",
+      "title": "Priesthood and temple blessings are extended to all worthy members",
+      "chapters": ["od2"],
+      "place": "dc:salt-lake-city",
+      "summary": "A few Black men were ordained to the priesthood in the Church's early years. Elijah Abel was one of them. In 1852 Brigham Young announced a restriction on men of Black African descent. In June 1978, the First Presidency announces a revelation. All worthy men may receive the priesthood. All worthy members may receive temple blessings."
+    }
+  ]
+}
