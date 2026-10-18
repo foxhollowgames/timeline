@@ -65,6 +65,7 @@ A pin is a scripture event, such as the scattering of the ten tribes. It is not 
 | 3 | The return from exile | Ezra, Nehemiah, Esther, Haggai, Zechariah, Malachi | 23 events |
 | 4 | Samuel and the united kingdom | 1–2 Samuel, 1 Kings 1–11, 1 Chronicles 10–29, 2 Chronicles 1–9, Ecclesiastes, Song of Solomon | 39 events |
 | 5 | The conquest and the judges | Joshua, Judges, Ruth | 25 events |
+| 6 | The Exodus and the wilderness | Exodus, Leviticus, Numbers, Deuteronomy | 45 events |
 
 - **Fields.** Each event has `id`, `volume`, `title`, `chapters`, and `summary`. It may add these:
   - `dateFrom`: the chapters that set its years.

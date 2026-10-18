@@ -1,0 +1,429 @@
+{
+  "about": "Scripture events, batch 6: the Exodus and the wilderness (DESIGN.md section 3). Same fields as batch-1.json.",
+  "batch": 6,
+  "era": "The Exodus and the wilderness",
+  "covers": [
+    { "book": "exodus", "chapters": [1, 40] },
+    { "book": "leviticus", "chapters": [1, 27] },
+    { "book": "numbers", "chapters": [1, 36] },
+    { "book": "deuteronomy", "chapters": [1, 34] }
+  ],
+  "events": [
+    {
+      "id": "israel-enslaved-in-egypt",
+      "volume": "ot",
+      "title": "Israel is enslaved in Egypt",
+      "chapters": ["exodus-1"],
+      "verse": "exodus-1:17",
+      "summary": "Jacob's descendants in Egypt grow into a great people after Joseph dies. A new king who did not know Joseph fears their numbers. He sets slave masters over them, and they build the cities Pithom and Raamses. The harder Egypt presses them, the more they grow. The king tells the Hebrew midwives, Shiphrah and Puah, to kill newborn boys. The midwives fear God and let the boys live. Pharaoh then orders the Hebrew baby boys thrown into the river."
+    },
+    {
+      "id": "moses-born-and-flees",
+      "volume": "ot",
+      "title": "Moses is saved from the river and flees to Midian",
+      "chapters": ["exodus-2"],
+      "verse": "exodus-2:10",
+      "summary": "A Levite woman hides her baby son for three months. She puts him in a basket among the river reeds, and his sister watches. Pharaoh's daughter finds him and pities him. His sister brings the boy's own mother to nurse him. Pharaoh's daughter adopts him and names him Moses. Grown up, Moses kills an Egyptian who was beating a Hebrew. He flees to Midian and marries Zipporah. God hears Israel groan and remembers his covenant."
+    },
+    {
+      "id": "the-burning-bush",
+      "volume": "ot",
+      "title": "God calls Moses from the burning bush",
+      "chapters": ["exodus-3", "exodus-4"],
+      "place": "b:horeb",
+      "verse": "exodus-3:14",
+      "summary": "Moses keeps his father-in-law's flock near Horeb, the mountain of God. He sees a bush on fire that does not burn up. God calls him by name and tells him to take off his sandals. God says he has seen his people's suffering and has come to rescue them. He sends Moses to Pharaoh and gives his name as I AM WHO I AM. Moses says he is slow of speech. God names his brother Aaron to speak for him. Moses returns to Egypt, and the people believe."
+    },
+    {
+      "id": "let-my-people-go",
+      "volume": "ot",
+      "title": "Moses tells Pharaoh to let Israel go",
+      "chapters": ["exodus-5", "exodus-6"],
+      "verse": "exodus-5:1",
+      "summary": "Moses and Aaron tell Pharaoh the LORD's word: let my people go. Pharaoh says he does not know the LORD. He orders that the slaves get no straw but make as many bricks as before. The Israelite officers are beaten, and they blame Moses and Aaron. Moses asks the LORD why he sent him. The LORD renews his promise to free Israel and give them the land. The people do not listen, because their spirits are crushed."
+    },
+    {
+      "id": "the-plagues-of-egypt",
+      "volume": "ot",
+      "title": "The LORD sends plagues on Egypt",
+      "chapters": ["exodus-7", "exodus-8", "exodus-9", "exodus-10", "exodus-11"],
+      "verse": "exodus-7:17",
+      "summary": "Aaron's rod becomes a serpent before Pharaoh, but Pharaoh's heart stays hard. Aaron strikes the Nile, and its water turns to blood. Frogs, lice, and flies fill the land. Disease kills Egypt's livestock, and boils break out on people and animals. Hail, locusts, and three days of darkness follow, but Israel's land of Goshen is spared. Each time Pharaoh promises to let Israel go, then refuses. Moses warns that every firstborn in Egypt will die."
+    },
+    {
+      "id": "the-passover",
+      "volume": "ot",
+      "title": "The first Passover and the departure from Egypt",
+      "chapters": ["exodus-12", "exodus-13"],
+      "place": "b:rameses",
+      "verse": "exodus-12:13",
+      "summary": "Each household kills a lamb without defect and puts its blood on the doorposts. They eat it roasted, dressed and ready to leave. At midnight the LORD strikes the firstborn of Egypt. He passes over the houses marked with blood. Pharaoh tells Israel to go, and they leave in haste with unrisen dough. Israel must keep this feast every year and tell their children why. The LORD goes ahead of them in a pillar of cloud by day. At night it is a pillar of fire.",
+      "alsoRead": [{ "ref": "1 Corinthians 5:7", "note": "Paul calls Christ our Passover lamb." }]
+    },
+    {
+      "id": "crossing-the-red-sea",
+      "volume": "ot",
+      "title": "Israel crosses the Red Sea",
+      "chapters": ["exodus-14", "exodus-15"],
+      "place": "b:sea-region",
+      "verse": "exodus-14:21",
+      "summary": "Pharaoh regrets freeing his slaves and chases them with six hundred chariots. The people see the army and cry out in fear. Moses tells them to stand still and see the LORD's rescue. Moses stretches out his hand, and an east wind divides the sea all night. Israel crosses on dry ground with walls of water on each side. The water returns over the Egyptians. Moses and Miriam lead Israel in songs of praise. At Marah the LORD makes bitter water sweet.",
+      "alsoRead": [{ "ref": "1 Nephi 17:26", "note": "Nephi reminds his brothers how the Red Sea was divided." }]
+    },
+    {
+      "id": "manna-and-water-from-the-rock",
+      "volume": "ot",
+      "title": "Manna from heaven and water from the rock",
+      "chapters": ["exodus-16", "exodus-17"],
+      "place": "b:wilderness-sin",
+      "verse": "exodus-16:4",
+      "summary": "In the wilderness of Sin the people complain of hunger. The LORD sends quail at evening and a fine flake on the ground each morning. They call it manna and gather enough each day. On the sixth day they gather double, and on the Sabbath there is none. At Rephidim there is no water, and the people quarrel with Moses. Moses strikes a rock, and water comes out. Israel defeats Amalek while Aaron and Hur hold up Moses' hands.",
+      "alsoRead": [{ "ref": "John 6:31", "note": "The crowd reminds Jesus that their fathers ate manna." }]
+    },
+    {
+      "id": "jethros-advice",
+      "volume": "ot",
+      "title": "Jethro advises Moses to share the work of judging",
+      "chapters": ["exodus-18"],
+      "place": "b:sinai",
+      "verse": "exodus-18:21",
+      "summary": "Jethro, Moses' father-in-law and a priest of Midian, comes to the camp. He brings Moses' wife Zipporah and their two sons. Jethro blesses the LORD for rescuing Israel. The next day he sees Moses judging the people alone from morning to evening. He says this will wear Moses out. He advises choosing honest, able men to judge the small cases. Moses does as he says."
+    },
+    {
+      "id": "the-ten-commandments",
+      "volume": "ot",
+      "title": "The LORD gives the Ten Commandments at Sinai",
+      "chapters": ["exodus-19", "exodus-20"],
+      "place": "b:sinai",
+      "verse": "exodus-20:3",
+      "summary": "In the third month Israel camps before Mount Sinai. The LORD says they will be his own people if they keep his covenant. On the third day there is thunder, lightning, cloud, and a loud trumpet. The mountain smokes and shakes as the LORD comes down in fire. God speaks the commandments: no other gods, no idols, and no misuse of his name. Keep the Sabbath and honor father and mother. Do not murder, commit adultery, steal, lie, or covet. The people tremble and ask Moses to speak for God.",
+      "alsoRead": [{ "ref": "Mosiah 12:34", "note": "Abinadi recites the commandments to King Noah's priests." }]
+    },
+    {
+      "id": "the-book-of-the-covenant",
+      "volume": "ot",
+      "title": "Israel accepts the book of the covenant",
+      "chapters": ["exodus-21", "exodus-22", "exodus-23", "exodus-24"],
+      "place": "b:sinai",
+      "verse": "exodus-24:7",
+      "summary": "The LORD gives Moses laws about servants, injuries, and property. Israel must not wrong a foreigner, a widow, or a fatherless child. Judges must refuse bribes and must not favor the rich or the poor. The land rests every seventh year so the poor may eat. Moses reads the book of the covenant to the people. They promise to do all that the LORD has said. Moses goes up into the cloud on the mountain for forty days."
+    },
+    {
+      "id": "plans-for-the-tabernacle",
+      "volume": "ot",
+      "title": "The LORD shows Moses the plan for the tabernacle",
+      "chapters": ["exodus-25", "exodus-26", "exodus-27", "exodus-28", "exodus-29", "exodus-30", "exodus-31"],
+      "place": "b:sinai",
+      "verse": "exodus-25:8",
+      "summary": "The LORD asks for gifts from everyone with a willing heart. Israel is to build a sanctuary, so God may live among them. The tabernacle is a holy tent with an ark, a table, and a gold lampstand. A veil hangs before the ark in the most holy place. Aaron and his sons will be priests in holy clothing. God fills Bezalel with skill to make all of it. The Sabbath is a sign between God and Israel. God gives Moses two stone tablets written with his finger."
+    },
+    {
+      "id": "the-golden-calf",
+      "volume": "ot",
+      "title": "The golden calf and the covenant renewed",
+      "chapters": ["exodus-32", "exodus-33", "exodus-34"],
+      "place": "b:sinai",
+      "verse": "exodus-34:6",
+      "summary": "Moses stays long on the mountain, and the people ask Aaron to make gods. Aaron makes a calf from their gold earrings, and they feast. Moses pleads with the LORD not to destroy them. He comes down, sees the calf, and breaks the tablets. The LORD speaks with Moses face to face, as with a friend. Moses cuts new tablets. The LORD declares that he is merciful and slow to anger. Moses comes down with a shining face."
+    },
+    {
+      "id": "the-tabernacle-built",
+      "volume": "ot",
+      "title": "Israel builds the tabernacle, and God's glory fills it",
+      "chapters": ["exodus-35", "exodus-36", "exodus-37", "exodus-38", "exodus-39", "exodus-40"],
+      "place": "b:sinai",
+      "verse": "exodus-40:34",
+      "summary": "Moses asks for an offering from everyone with a willing heart. The people bring so much that Moses tells them to stop. Bezalel, Oholiab, and other skilled workers make the tent, the ark, and the furnishings. They make Aaron's holy clothing. Moses inspects the work and blesses the people. On the first day of the year Moses sets up the tabernacle. A cloud covers the tent, and the LORD's glory fills it."
+    },
+    {
+      "id": "laws-of-the-offerings",
+      "volume": "ot",
+      "title": "The LORD gives the laws of the offerings",
+      "chapters": ["leviticus-1", "leviticus-2", "leviticus-3", "leviticus-4", "leviticus-5", "leviticus-6", "leviticus-7"],
+      "place": "b:sinai",
+      "verse": "leviticus-1:4",
+      "summary": "The LORD speaks to Moses from the Tent of Meeting about offerings. A burnt offering is an animal without defect, burned whole on the altar. A grain offering is fine flour with oil and frankincense, seasoned with salt. A peace offering is shared, and its fat belongs to the LORD. Sin offerings are for sins done without meaning to. A person who cheats a neighbor must repay the loss and add a fifth. In each case the priest makes atonement, and the person is forgiven."
+    },
+    {
+      "id": "priests-ordained",
+      "volume": "ot",
+      "title": "Aaron and his sons become priests",
+      "chapters": ["leviticus-8", "leviticus-9", "leviticus-10"],
+      "place": "b:sinai",
+      "verse": "leviticus-9:24",
+      "summary": "Moses washes Aaron and his sons and dresses Aaron in the holy clothing. He anoints the tabernacle and Aaron with oil. They stay at the tent door for seven days. On the eighth day Aaron offers sacrifices and blesses the people. The LORD's glory appears, and fire burns up the offering. Then Aaron's sons Nadab and Abihu offer fire the LORD did not command. Fire comes from the LORD and kills them."
+    },
+    {
+      "id": "clean-and-unclean",
+      "volume": "ot",
+      "title": "Laws of clean and unclean",
+      "chapters": ["leviticus-11", "leviticus-12", "leviticus-13", "leviticus-14", "leviticus-15"],
+      "place": "b:sinai",
+      "verse": "leviticus-11:44",
+      "summary": "The LORD tells Israel which animals they may eat. Land animals must have a split hoof and chew the cud, so pigs are unclean. Water creatures must have fins and scales. A mother brings an offering after childbirth. A priest examines skin diseases and decides whether a person is clean. A person with leprosy, a skin disease, lives outside the camp until healed. Israel must be holy, because the LORD is holy."
+    },
+    {
+      "id": "day-of-atonement",
+      "volume": "ot",
+      "title": "The Day of Atonement",
+      "chapters": ["leviticus-16", "leviticus-17"],
+      "place": "b:sinai",
+      "verse": "leviticus-16:30",
+      "summary": "Once a year Aaron may enter the most holy place behind the veil. He dresses in plain linen and offers a bull for himself and his house. He casts lots over two goats, one for the LORD and one as the scapegoat. He sprinkles blood on the mercy seat to make atonement. He confesses Israel's sins over the live goat and sends it into the wilderness. All Israel rests on that day. The life is in the blood, so no one may eat blood."
+    },
+    {
+      "id": "be-holy",
+      "volume": "ot",
+      "title": "Be holy, and love your neighbor as yourself",
+      "chapters": ["leviticus-18", "leviticus-19", "leviticus-20", "leviticus-21", "leviticus-22"],
+      "place": "b:sinai",
+      "verse": "leviticus-19:18",
+      "summary": "The LORD tells Israel not to follow the practices of Egypt or Canaan. He forbids marriage to close relatives and the offering of children to the god Molech. He tells all Israel to be holy, because he is holy. Farmers must leave the corners of their fields for the poor and the foreigner. No one may steal, lie, or hold back a worker's pay overnight. Israel must love their neighbor as themselves. Priests must keep themselves holy in their families and their offerings.",
+      "alsoRead": [{ "ref": "Matthew 22:39", "note": "Jesus names this as the second great commandment." }]
+    },
+    {
+      "id": "feasts-and-jubilee",
+      "volume": "ot",
+      "title": "The feasts, the Sabbath year, and the Jubilee",
+      "chapters": ["leviticus-23", "leviticus-24", "leviticus-25"],
+      "place": "b:sinai",
+      "verse": "leviticus-25:10",
+      "summary": "The LORD gives Israel the feasts of the year. They include Passover, the feast of weeks, and the feast of booths. A man who curses the LORD's name is stoned. The rule of eye for eye applies to both Israelite and foreigner. Every seventh year the land must rest. Every fiftieth year is the Jubilee, a year of freedom. Each family gets back its land, because the land belongs to the LORD."
+    },
+    {
+      "id": "covenant-promises-and-warnings",
+      "volume": "ot",
+      "title": "The LORD's promises and warnings",
+      "chapters": ["leviticus-26", "leviticus-27"],
+      "place": "b:sinai",
+      "verse": "leviticus-26:12",
+      "summary": "If Israel obeys, God will send rain, harvests, and peace. He will walk among them and be their God. If they refuse, he will send sickness, defeat, and drought. In the end they will be scattered among the nations. If they confess, God will remember his covenant with Abraham, Isaac, and Jacob. The book ends with rules for vows and gifts to the LORD. A tenth of crops and herds is holy to the LORD."
+    },
+    {
+      "id": "the-camp-is-counted",
+      "volume": "ot",
+      "title": "Moses counts the tribes and orders the camp",
+      "chapters": ["numbers-1", "numbers-2", "numbers-3", "numbers-4"],
+      "place": "b:sinai",
+      "verse": "numbers-1:2",
+      "summary": "In the second year after Egypt, the LORD tells Moses to count Israel. The men twenty and older who can fight number 603,550. The Levites are not counted with them. Each tribe camps under its own banner around the Tent of Meeting. The LORD takes the Levites in place of Israel's firstborn sons. Each Levite clan has its duty in carrying the tabernacle."
+    },
+    {
+      "id": "the-priestly-blessing",
+      "volume": "ot",
+      "title": "Nazirite vows and the priestly blessing",
+      "chapters": ["numbers-5", "numbers-6", "numbers-7", "numbers-8", "numbers-9"],
+      "place": "b:sinai",
+      "verse": "numbers-6:24",
+      "summary": "A person who wrongs another must confess and repay with a fifth more. A man or woman may vow to be a Nazirite for a time. They drink no wine and let their hair grow. The LORD gives Aaron words to bless Israel. The tribal leaders bring gifts for the altar, one tribe each day. The Levites are set apart for their work. Israel keeps the Passover at Sinai. The cloud over the tabernacle tells them when to camp and when to travel."
+    },
+    {
+      "id": "israel-leaves-sinai",
+      "volume": "ot",
+      "title": "Israel leaves Sinai",
+      "chapters": ["numbers-10"],
+      "place": "b:sinai",
+      "verse": "numbers-10:35",
+      "summary": "The LORD tells Moses to make two silver trumpets. The priests blow them to gather the people and to start the march. On the twentieth day of the second month, the cloud lifts. Israel leaves Sinai in order, tribe by tribe. Moses asks Hobab the Midianite to guide them in the wilderness. The ark goes ahead to find a resting place. Moses prays each time the ark sets out and stops."
+    },
+    {
+      "id": "the-twelve-spies",
+      "volume": "ot",
+      "title": "The spies return, and Israel refuses to enter",
+      "chapters": ["numbers-13", "numbers-14"],
+      "place": "b:kadesh",
+      "verse": "numbers-14:9",
+      "summary": "Moses sends one leader from each tribe to explore Canaan. They return after forty days with a huge cluster of grapes. They say the land flows with milk and honey, but its cities are walled. Caleb says Israel can take it. The other spies say the people are too strong. The people weep and want to go back to Egypt. The LORD says that generation will die in the wilderness over forty years. Only Caleb and Joshua will enter."
+    },
+    {
+      "id": "waters-of-meribah",
+      "volume": "ot",
+      "title": "Moses strikes the rock at Kadesh",
+      "chapters": ["numbers-20"],
+      "place": "b:kadesh",
+      "verse": "numbers-20:11",
+      "summary": "Miriam dies at Kadesh. There is no water, and the people quarrel with Moses and Aaron. The LORD tells Moses to speak to the rock. Moses calls the people rebels and strikes the rock twice, and water pours out. The LORD says Moses and Aaron did not trust him. They will not bring Israel into the land. Edom will not let Israel pass through. Aaron dies on Mount Hor."
+    },
+    {
+      "id": "the-bronze-serpent",
+      "volume": "ot",
+      "title": "Moses lifts up the bronze serpent",
+      "chapters": ["numbers-21"],
+      "place": "b:edom",
+      "verse": "numbers-21:9",
+      "summary": "On the road around Edom, the people speak against God and Moses. They call the manna disgusting food. The LORD sends poisonous snakes, and many die. The people confess, and Moses prays. Moses sets a bronze snake on a pole. Whoever looks at it lives. Israel then defeats the kings Sihon and Og and takes their land.",
+      "alsoRead": [
+        { "ref": "John 3:14", "note": "Jesus says the Son of Man must be lifted up the same way." },
+        { "ref": "Alma 33:19", "note": "Alma says the serpent was a type of Christ." }
+      ]
+    },
+    {
+      "id": "balaam",
+      "volume": "ot",
+      "title": "Balaam blesses Israel instead of cursing it",
+      "chapters": ["numbers-22", "numbers-23", "numbers-24"],
+      "place": "b:moab",
+      "verse": "numbers-24:17",
+      "summary": "Israel camps in the plains of Moab, and King Balak is afraid. He sends for Balaam to curse Israel. On the way, Balaam's donkey sees the LORD's angel and turns aside three times. The LORD opens the donkey's mouth, and then Balaam sees the angel. Balak builds seven altars at three different places. Each time, the LORD puts a blessing in Balaam's mouth. Balaam says a star will come out of Jacob."
+    },
+    {
+      "id": "sin-at-peor",
+      "volume": "ot",
+      "title": "Israel sins at Peor and goes to war with Midian",
+      "chapters": ["numbers-25", "numbers-31"],
+      "place": "b:moab",
+      "verse": "numbers-25:12",
+      "summary": "At Shittim, Israelite men join Moabite women in worshiping Baal of Peor. The LORD's anger burns, and a plague begins. Phinehas, Aaron's grandson, kills an Israelite man and a Midianite woman with a spear. The plague stops after twenty-four thousand have died. The LORD gives Phinehas a covenant of peace. Later twelve thousand Israelites go to war against Midian. They kill Midian's kings and Balaam."
+    },
+    {
+      "id": "zelophehads-daughters",
+      "volume": "ot",
+      "title": "The second census, Zelophehad's daughters, and Joshua",
+      "chapters": ["numbers-26", "numbers-27", "numbers-36"],
+      "place": "b:moab",
+      "verse": "numbers-27:7",
+      "summary": "Moses counts Israel again in the plains of Moab. No one from the first count is left except Caleb and Joshua. Zelophehad died with no son, and his five daughters ask for his land. The LORD says the daughters are right. With no son, the land will go to a daughter. Later the daughters marry within their father's tribe, so the land stays in Manasseh. Moses lays his hands on Joshua as the next leader."
+    },
+    {
+      "id": "offerings-and-vows",
+      "volume": "ot",
+      "title": "The calendar of offerings and the law of vows",
+      "chapters": ["numbers-28", "numbers-29", "numbers-30"],
+      "place": "b:moab",
+      "verse": "numbers-28:2",
+      "summary": "The LORD tells Israel to bring his offerings at their set times. Two lambs are offered every day, morning and evening. More are offered each Sabbath and new month. Passover and the feast of weeks have their own offerings. The seventh month has a day of trumpets, a day of atonement, and a feast. A person who makes a vow must keep it. A father or husband may cancel a vow on the day he hears it."
+    },
+    {
+      "id": "reuben-and-gad-settle-east",
+      "volume": "ot",
+      "title": "Reuben and Gad ask for land east of the Jordan",
+      "chapters": ["numbers-32"],
+      "place": "b:gilead",
+      "verse": "numbers-32:23",
+      "summary": "Reuben and Gad have large herds and want the grazing land east of the Jordan. Moses asks if their brothers should go to war while they sit there. He says they are acting like the spies who discouraged Israel. They promise to fight ahead of Israel until every tribe has its land. Moses agrees and warns that their sin will find them out if they fail. He gives them and half of Manasseh the lands of Sihon and Og."
+    },
+    {
+      "id": "the-journey-and-the-borders",
+      "volume": "ot",
+      "title": "The journey recorded and the borders of the land",
+      "chapters": ["numbers-33", "numbers-34", "numbers-35"],
+      "place": "b:moab",
+      "verse": "numbers-33:2",
+      "summary": "Moses writes down each stage of Israel's journey. The list runs from Rameses to the Red Sea, to Sinai, and to Kadesh. It ends in the plains of Moab by the Jordan. The LORD gives the borders of the land of Canaan. Eleazar the priest and Joshua will divide it. The Levites receive forty-eight towns. Six of them are cities of refuge for anyone who kills by accident."
+    },
+    {
+      "id": "moses-recalls-the-journey",
+      "volume": "ot",
+      "title": "Moses recalls the forty years",
+      "chapters": ["deuteronomy-1", "deuteronomy-2", "deuteronomy-3"],
+      "place": "b:moab",
+      "verse": "deuteronomy-1:8",
+      "summary": "In the fortieth year, Moses speaks to all Israel east of the Jordan. He recalls how the people refused to enter the land at Kadesh. The LORD swore that generation would not see the land, except Caleb and Joshua. Israel wandered until the fighting men of that generation died. Then Israel defeated the kings Sihon and Og. Moses begged to cross the Jordan, and the LORD refused. Moses must strengthen Joshua to lead the people."
+    },
+    {
+      "id": "remember-the-covenant",
+      "volume": "ot",
+      "title": "Moses tells Israel to remember Horeb",
+      "chapters": ["deuteronomy-4", "deuteronomy-5"],
+      "place": "b:moab",
+      "verse": "deuteronomy-4:29",
+      "summary": "Moses tells Israel to keep the law without adding to it. At Horeb they heard God's voice from the fire but saw no form. So they must make no image of any creature. If they make idols, they will be scattered among the nations. If they seek the LORD there with all their heart, they will find him. Moses repeats the ten commandments. The Sabbath gives rest to servants, because Israel was once a servant in Egypt."
+    },
+    {
+      "id": "love-the-lord-with-all-your-heart",
+      "volume": "ot",
+      "title": "Love the LORD with all your heart",
+      "chapters": ["deuteronomy-6", "deuteronomy-7", "deuteronomy-8"],
+      "place": "b:moab",
+      "verse": "deuteronomy-6:5",
+      "summary": "Moses says the LORD is one. Israel must love him with all their heart, soul, and might. They must teach these words to their children at home and on the road. The LORD chose Israel because he loves them, not because they were many. In the wilderness he fed them with manna. He taught them that people do not live by bread alone. When they are rich in the land, they must not forget the LORD.",
+      "alsoRead": [{ "ref": "Mark 12:30", "note": "Jesus calls this the first commandment." }]
+    },
+    {
+      "id": "what-the-lord-asks-of-israel",
+      "volume": "ot",
+      "title": "What the LORD requires of Israel",
+      "chapters": ["deuteronomy-9", "deuteronomy-10", "deuteronomy-11"],
+      "place": "b:moab",
+      "verse": "deuteronomy-10:12",
+      "summary": "Moses says Israel must not think the land is a reward for its goodness. He recalls the golden calf and his forty days of prayer for the people. The LORD wrote the commandments again on new tablets. Now the LORD asks Israel to fear him, love him, and keep his commands. He gives justice to the fatherless and the widow. He loves the foreigner, so Israel must love the foreigner too. Moses sets a blessing and a curse before them."
+    },
+    {
+      "id": "one-place-of-worship",
+      "volume": "ot",
+      "title": "Worship at the place the LORD chooses",
+      "chapters": ["deuteronomy-12", "deuteronomy-13", "deuteronomy-14", "deuteronomy-16"],
+      "place": "b:moab",
+      "verse": "deuteronomy-12:7",
+      "summary": "Israel must destroy the places where the nations served their gods. They must bring offerings and tithes to the one place the LORD will choose. There they eat and rejoice with their families and the Levites. They must not listen to a prophet who urges them to serve other gods. Every third year the tithe feeds the Levite, the foreigner, the fatherless, and the widow. Three times a year the men come before the LORD for the feasts. Judges must judge fairly and take no bribe."
+    },
+    {
+      "id": "a-prophet-like-moses",
+      "volume": "ot",
+      "title": "Laws for judges, kings, and a prophet like Moses",
+      "chapters": ["deuteronomy-17", "deuteronomy-18", "deuteronomy-19", "deuteronomy-20"],
+      "place": "b:moab",
+      "verse": "deuteronomy-18:15",
+      "summary": "Hard cases go to the priests and the judge at the chosen place. A future king must not gather many horses, wives, or much gold. He must write his own copy of the law and read it all his life. Israel must not tell fortunes or ask the dead for guidance. The LORD will raise up a prophet like Moses. A charge needs two or three witnesses. In war, Israel must not cut down fruit trees.",
+      "alsoRead": [
+        { "ref": "Acts 3:22", "note": "Peter says Jesus is the prophet Moses promised." },
+        { "ref": "1 Nephi 22:20", "note": "Nephi quotes Moses' promise of a prophet like him." }
+      ]
+    },
+    {
+      "id": "care-for-the-poor-and-the-neighbor",
+      "volume": "ot",
+      "title": "Laws to protect the poor and the neighbor",
+      "chapters": ["deuteronomy-15", "deuteronomy-21", "deuteronomy-22", "deuteronomy-23", "deuteronomy-24", "deuteronomy-25"],
+      "place": "b:moab",
+      "verse": "deuteronomy-15:11",
+      "summary": "Every seven years a lender must cancel what a fellow Israelite owes. Israel must open their hand to the poor. A Hebrew servant goes free in the seventh year with gifts. Anyone who finds a neighbor's lost animal must return it. A worker must be paid the same day. Forgotten grain and grapes are left for the foreigner, the fatherless, and the widow. Weights and measures must be full and fair."
+    },
+    {
+      "id": "the-first-fruits",
+      "volume": "ot",
+      "title": "The offering of first fruits",
+      "chapters": ["deuteronomy-26"],
+      "place": "b:moab",
+      "verse": "deuteronomy-26:8",
+      "summary": "In the land, each Israelite brings a basket of first fruits to the priest. He says his father was a wandering Syrian who went down to Egypt. Egypt made them slaves, and the LORD heard their cry and brought them out. Now he brings the first of what the LORD gave. He rejoices with the Levite and the foreigner. Israel declares the LORD is its God. The LORD declares Israel his own people."
+    },
+    {
+      "id": "blessings-and-curses",
+      "volume": "ot",
+      "title": "Blessings and curses at Ebal and Gerizim",
+      "chapters": ["deuteronomy-27", "deuteronomy-28"],
+      "place": "b:moab",
+      "verse": "deuteronomy-28:2",
+      "summary": "After crossing the Jordan, Israel must write the law on stones at Mount Ebal. Six tribes stand on Mount Gerizim to bless and six on Ebal for the curse. The Levites call out twelve curses, and the people agree to each one. If Israel listens to the LORD, blessings will overtake them. They will be blessed in city and field, in children and crops. If they do not listen, curses will overtake them. They will be scattered among the nations."
+    },
+    {
+      "id": "choose-life",
+      "volume": "ot",
+      "title": "Moses tells Israel to choose life",
+      "chapters": ["deuteronomy-29", "deuteronomy-30"],
+      "place": "b:moab",
+      "verse": "deuteronomy-30:19",
+      "summary": "Moses gathers all Israel in Moab to make a covenant. Leaders, children, wives, and foreigners all stand before the LORD. The covenant is also made with those not there that day. When scattered Israel returns to the LORD, he will gather them. He will change their hearts so they love him. The command is not too far away, but in their mouth and heart. Moses sets life and death before them and tells them to choose life."
+    },
+    {
+      "id": "moses-last-words",
+      "volume": "ot",
+      "title": "Moses' last song and blessing",
+      "chapters": ["deuteronomy-31", "deuteronomy-32", "deuteronomy-33"],
+      "place": "b:moab",
+      "verse": "deuteronomy-31:6",
+      "summary": "Moses is 120 years old and will not cross the Jordan. He tells Israel and Joshua to be strong, for the LORD goes with them. He writes the law and gives it to the priests to read every seven years. He sings a song that calls God the Rock, whose ways are just. The song says Israel will grow fat and leave the God who made it. Moses blesses each tribe of Israel. He says no one is like God."
+    },
+    {
+      "id": "death-of-moses",
+      "volume": "ot",
+      "title": "Moses dies on Mount Nebo",
+      "chapters": ["deuteronomy-34"],
+      "place": "b:nebo",
+      "verse": "deuteronomy-34:10",
+      "summary": "Moses climbs Mount Nebo, and the LORD shows him the whole land. The LORD says this is the land promised to Abraham, Isaac, and Jacob. Moses may see it but not cross over. Moses dies there in Moab, and no one knows where his grave is. Israel weeps for him thirty days. Joshua is full of wisdom, because Moses laid his hands on him. No prophet like Moses has risen since.",
+      "alsoRead": [{ "ref": "Alma 45:19", "note": "The record says the Lord took Moses to himself." }]
+    }
+  ]
+}
