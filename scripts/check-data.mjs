@@ -88,6 +88,21 @@ export async function checkData(test, warn) {
     }
   });
 
+  test('the Book of Mormon map data is complete and every map place is inside it', async () => {
+    const dist = join(here, '..', 'dist');
+    const map = await readJSON(join(dist, 'data', 'bom-map.json'));
+    const [[south, west], [north, east]] = map.bounds;
+    for (const key of ['land', 'sidon', 'waters', 'labels', 'rivers']) if (!map[key]?.length) throw new Error(`bom-map.json has no ${key}`);
+    for (let z = map.tiles.minZoom; z <= map.tiles.maxZoom; z++) {
+      if (!(await exists(join(dist, 'assets', 'bom-relief', String(z))))) throw new Error(`relief zoom ${z} is missing`);
+    }
+    for (const file of ['leaflet.js', 'leaflet.css', 'leaflet-LICENSE.txt']) if (!(await exists(join(dist, 'vendor', file)))) throw new Error(`vendor/${file} is missing`);
+    for (const e of events.filter(e => e.map === 'bom')) for (const key of e.places) {
+      const p = places[key];
+      if (p.y < south || p.y > north || p.x < west || p.x > east) throw new Error(`${e.id}: ${key} is outside the map`);
+    }
+  });
+
   if (!haveSources) { warn('scripts/source is missing. Run npm run import to check verses, Church rows, and land.'); return; }
 
   test('quoted verses match the source text', async () => {

@@ -69,6 +69,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     try { [d, people] = await Promise.all([loadDetails(event.volume).then(all => all[event.id]), loadPeople()]); }
     catch { content.innerHTML = `${backButton()}<p class="card-loading">This event's details could not load. Reload the page to try again.</p>`; bind(); return; }
     if (current?.event !== event) return;
+    current.details = d;
     const place = data.places[event.place];
     const otherPlaces = event.places.filter(k => k !== event.place).map(k => data.places[k]?.name).filter(Boolean);
     const names = (people.eventPeople[event.id] ?? []).map(k => people.people[k]).filter(Boolean);
@@ -80,7 +81,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     ].filter(Boolean);
     const notes = [
       d.placeNote,
-      event.map === 'bom' && 'This event belongs on the Book of Mormon map. That map is not built yet.',
+      event.band === 'jaredite' && data.bands.jaredite?.note,
       event.broad && 'This text spans more than 300 years, so it has no pin on the globe.',
     ].filter(Boolean);
     content.innerHTML = `${backButton()}

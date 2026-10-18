@@ -7,7 +7,7 @@
 //
 // One chapter (or D&C section) is one event. A chapter with no places is skipped (DESIGN.md section 3).
 
-import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, readdir, cp } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { formatYear, formatRange } from '../dist/time-scale.js';
@@ -367,7 +367,8 @@ const firstScripture = Math.min(...dated.filter(e => e.volume === 'ot').map(e =>
 const omni = events.find(e => e.id === 'omni-1');
 const bands = {
   primeval: { label: 'Years not given', start: -4000, end: firstScripture - 1, note: overrides.notes.orderOnly },
-  jaredite: { label: 'Jaredite record, years not given', endsWith: 'omni-1', end: omni?.end ?? null, note: 'The band ends where Coriantumr is found, in Omni 1:21.' },
+  // The Jaredite record runs from the Tower of Babel, inside the primeval band, until Coriantumr is found.
+  jaredite: { label: 'Jaredite record, years not given', start: -4000, endsWith: 'omni-1', end: omni?.end ?? null, note: 'The band runs from the Tower of Babel until Coriantumr is found, in Omni 1:21.' },
 };
 
 // ---------- Write ----------
@@ -395,6 +396,24 @@ await writeFile(join(out, 'events.json'), JSON.stringify(index));
 for (const id of Object.keys(eventPeople)) if (!events.some(e => e.id === id)) delete eventPeople[id];
 await writeFile(join(out, 'search.json'), JSON.stringify({ people, eventPeople }));
 for (const [volume, records] of Object.entries(details)) await writeFile(join(out, 'details', `${volume}.json`), JSON.stringify(records));
+// ---------- Book of Mormon panel map ----------
+// Relief tiles and map shapes from Book of Mormon Wayfinder. One map unit is one of Sorenson's miles.
+const relief = await readJSON(join(src, 'book-of-mormon', 'relief.json'));
+await cp(join(src, 'book-of-mormon', 'relief'), join(here, '..', 'dist', 'assets', 'bom-relief'), { recursive: true });
+for (const file of ['leaflet.js', 'leaflet.css', 'leaflet-LICENSE.txt']) await cp(join(src, 'book-of-mormon', 'vendor', file), join(here, '..', 'dist', 'vendor', file));
+const round = points => points.map(([x, y]) => [Math.round(x * 10) / 10, Math.round(y * 10) / 10]);
+await writeFile(join(out, 'bom-map.json'), JSON.stringify({
+  bounds: relief.bounds,
+  tiles: { ...relief.tiles, url: 'assets/bom-relief/{z}/{x}_{y}.jpg' },
+  note: relief.note,
+  credit: 'Relative map after J. L. Sorenson, Mormon’s Map (2000), drawn by Book of Mormon Wayfinder. Not a real-world location.',
+  land: round(bom.geography.land),
+  sidon: round(bom.geography.sidon),
+  waters: bom.geography.waters.map(w => ({ name: w.name, points: round(w.points) })),
+  labels: bom.geography.labels,
+  rivers: (relief.rivers ?? []).map(r => ({ size: r.size, points: round(r.points) })),
+}));
+
 await writeFile(join(here, 'build-report.json'), JSON.stringify({ stats, warnings }, null, 1) + '\n');
 
 const count = volume => events.filter(e => e.volume === volume).length;

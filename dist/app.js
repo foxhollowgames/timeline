@@ -1,29 +1,34 @@
-// Wayfinder Timeline: start-up. Joins the globe, the strip, the pins, the card, search, and the address.
+// Wayfinder Timeline: start-up. Joins the globe, the Book of Mormon panel, the strip, the pins,
+// the card, search, and the address.
 
 import { createGlobe } from './globe.js';
 import { createScrubber } from './scrubber.js';
 import { formatYear, formatRange } from './time-scale.js';
 import { loadEvents, stripBands, isActive, eventStops, nextStop, previousStop } from './events.js';
-import { createPins } from './pins.js';
+import { createPins, globeView } from './pins.js';
 import { createCard } from './card.js';
 import { createSearch } from './search.js';
 import { VOLUMES, VOLUME_ORDER, shapeSVG } from './volumes.js';
 import { readHash, writeHash } from './address.js';
+import { createSplit } from './split.js';
+import { createBomMap } from './bom-map.js';
 
 const $ = id => document.getElementById(id);
 const START_YEAR = -600;
 const TRAIL_WINDOWS = 3; // the trail covers three window widths before the window
 
-function setStatus(message) {
-  $('status').textContent = message;
-  $('status').hidden = !message;
+function setStatus(message, id = 'status') {
+  $(id).textContent = message;
+  $(id).hidden = !message;
 }
 const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
+const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 async function start() {
   const initial = readHash(location.hash);
   const hidden = new Set(initial.hide ?? []);
   let data = null, stops = [], card = null, pins = null, selected = null;
+  let bom = null, bomPins = null, bomLoading = null, layoutInfo = null;
 
   // ---------- Globe ----------
   let globe;
@@ -44,6 +49,38 @@ async function start() {
     });
   }
 
+  // ---------- Split and Book of Mormon panel ----------
+  const split = createSplit({
+    main: document.querySelector('main'), globeStage: $('globe-stage'), panel: $('bom-stage'), divider: $('split-divider'), timeline: document.querySelector('.timeline'),
+    onLayout(info) { layoutInfo = info; bom?.resize(); placeCard(); if (card?.isOpen) slideForCard(); },
+  });
+
+  function ensureBom() {
+    bomLoading ??= createBomMap({ container: $('bom-map') }).then(map => {
+      bom = map;
+      bomPins = createPins({ view: map.view, layer: $('bom-pins'), onOpen: openGroup });
+      refresh();
+      if (selected?.map === 'bom') showSelection(selected, card.current?.details);
+      return map;
+    }).catch(error => {
+      console.error(error);
+      setStatus('The Book of Mormon map could not load. Reload the page to try again.', 'bom-status');
+      bomLoading = null;
+      return null;
+    });
+    return bomLoading;
+  }
+  function setBomOpen(open) {
+    if (open === split.open) return;
+    split.setOpen(open);
+    $('bom-toggle').setAttribute('aria-pressed', String(open));
+    if (open) ensureBom();
+    applyFilters();
+  }
+  $('bom-toggle').addEventListener('click', () => setBomOpen(!split.open));
+  $('bom-chip').addEventListener('click', () => setBomOpen(true));
+  $('bom-close').addEventListener('click', () => { setBomOpen(false); $('bom-toggle').focus(); });
+
   // ---------- Strip ----------
   const scrubber = createScrubber({
     strip: $('strip'), overview: $('strip-overview'), input: $('year-input'),
@@ -57,6 +94,7 @@ async function start() {
 
   // ---------- What is shown ----------
   const shown = () => data.events.filter(e => !hidden.has(e.volume));
+  const item = (event, state) => ({ event, placeKey: event.place, place: data.places[event.place], state });
 
   function refresh() {
     if (!data) return;
@@ -67,18 +105,20 @@ async function start() {
     const onMap = active.filter(e => e.map === 'bom');
     const broad = active.filter(e => e.broad);
     const trailSpan = (window.end - window.start + 1) * TRAIL_WINDOWS;
-    const trail = events.filter(e => e.map === 'globe' && !e.broad && e.end != null && e.end < window.start && e.end >= window.start - trailSpan);
-    pins?.setItems([
-      ...onGlobe.map(event => ({ event, placeKey: event.place, place: data.places[event.place], state: 'active' })),
-      ...trail.map(event => ({ event, placeKey: event.place, place: data.places[event.place], state: 'trail' })),
-    ]);
+    const inTrail = e => !e.broad && e.end != null && e.end < window.start && e.end >= window.start - trailSpan;
+    pins?.setItems([...onGlobe.map(e => item(e, 'active')), ...events.filter(e => e.map === 'globe' && inTrail(e)).map(e => item(e, 'trail'))]);
+    bomPins?.setItems(split.open ? [...onMap.map(e => item(e, 'active')), ...events.filter(e => e.map === 'bom' && inTrail(e)).map(e => item(e, 'trail'))] : []);
 
     const parts = [];
     if (onGlobe.length) parts.push(`${plural(onGlobe.length, 'event')} on the globe.`);
-    if (onMap.length) parts.push(`${onMap.length} more for the Book of Mormon map.`);
+    if (onMap.length) parts.push(split.open ? `${onMap.length} on the Book of Mormon map.` : `${onMap.length} more for the Book of Mormon map.`);
     if (broad.length) parts.push(`${plural(broad.length, 'psalm')} with wide dates are not pinned.`);
-    if (onGlobe.some(e => e.start == null)) parts.push('Years are not given for some.');
+    if ([...onGlobe, ...(split.open ? onMap : [])].some(e => e.start == null)) parts.push('Years are not given for some.');
     $('overview-count').textContent = parts.length ? parts.join(' ') : 'No scripture events in this window.';
+
+    // The chip offers the panel when the window has Book of Mormon map events (DESIGN.md Q32).
+    $('bom-chip').hidden = split.open || hidden.has('bom') || !onMap.length;
+    updatePanelNotes(onMap, window);
 
     const previous = previousStop(stops, year), next = nextStop(stops, year);
     $('previous-event').disabled = !previous;
@@ -88,10 +128,29 @@ async function start() {
     saveAddress();
   }
 
+  // With no events in the window, the panel offers the nearest one in each direction.
+  function updatePanelNotes(onMap, window) {
+    const jaredite = onMap.some(e => e.band === 'jaredite');
+    $('bom-band-note').hidden = !split.open || !jaredite;
+    $('bom-band-note').textContent = jaredite ? `Jaredite record: years not given. ${data.bands.jaredite.note}` : '';
+    const empty = $('bom-empty');
+    if (!split.open || onMap.length || hidden.has('bom')) { empty.hidden = true; return; }
+    const dated = shown().filter(e => e.map === 'bom' && e.start != null);
+    const before = dated.filter(e => e.end < window.start).sort((a, b) => b.end - a.end)[0];
+    const after = dated.filter(e => e.start > window.end).sort((a, b) => a.start - b.start)[0];
+    const button = (e, dir) => `<button data-jump="${escapeHTML(e.id)}">${dir === 'before' ? '‹ ' : ''}${escapeHTML(e.ref)} · ${escapeHTML(formatYear(dir === 'before' ? e.end : e.start))}${dir === 'after' ? ' ›' : ''}</button>`;
+    empty.innerHTML = `<p>No Book of Mormon events in this window.</p><div>${before ? button(before, 'before') : ''}${after ? button(after, 'after') : ''}</div>`;
+    empty.hidden = false;
+    for (const b of empty.querySelectorAll('[data-jump]')) b.addEventListener('click', () => {
+      const e = data.events.find(x => x.id === b.dataset.jump);
+      if (e) scrubber.setYear(e.start > window.end ? e.start : e.end);
+    });
+  }
+
   function applyFilters() {
     const events = shown();
     stops = eventStops({ ...data, events: events.filter(e => !e.broad) });
-    scrubber.setEvents(events, stripBands(data));
+    scrubber.setEvents(events, stripBands(data, { bom: split.open && !hidden.has('bom') }));
     for (const button of $('legend').querySelectorAll('[data-volume]')) button.setAttribute('aria-pressed', String(!hidden.has(button.dataset.volume)));
     refresh();
   }
@@ -101,7 +160,7 @@ async function start() {
   function saveAddress() {
     clearTimeout(saveTimer);
     saveTimer = setTimeout(() => {
-      const hash = writeHash({ year: scrubber.year, event: selected?.id, hide: [...hidden], view: scrubber.view });
+      const hash = writeHash({ year: scrubber.year, event: selected?.id, hide: [...hidden], view: scrubber.view, bom: split.open });
       if (hash !== location.hash) history.replaceState(null, '', hash || location.pathname + location.search);
     }, 250);
   }
@@ -111,13 +170,18 @@ async function start() {
   function moveTo(event) {
     const window = scrubber.window();
     if (isActive(event, window, scrubber.year, data.bands)) return;
-    if (event.start == null) scrubber.setYear(event.band === 'primeval' ? bandYear(data.bands.primeval) : scrubber.year);
+    if (event.start == null) scrubber.setYear(bandYear(data.bands[event.band] ?? data.bands.primeval));
     else scrubber.setYear(event.start);
   }
+  const pointsOf = event => event.places.map(k => data.places[k]).filter(p => p?.x != null).map(p => [p.x, p.y]);
   function focusPlace(event) {
-    if (!globe || event.map !== 'globe') return;
+    if (event.map === 'bom') {
+      if (!split.open) setBomOpen(true);
+      ensureBom().then(map => map?.focus(pointsOf(event)));
+      return;
+    }
     const place = data.places[event.place];
-    if (place) globe.focusOn(globe.vector(place, 1));
+    if (globe && place) globe.focusOn(globe.vector(place, 1));
   }
   function openEvent(event, { move = true } = {}) {
     if (hidden.has(event.volume)) { hidden.delete(event.volume); applyFilters(); }
@@ -125,25 +189,59 @@ async function start() {
     card.showEvent(event, { resetHistory: true });
     focusPlace(event);
   }
-  function openList(title, events, { note, label } = {}) {
-    card.showList(title, events, { note, label });
+  function openGroup(events, group) {
+    if (events.length === 1) { card.showEvent(events[0], { resetHistory: true }); focusPlace(events[0]); return; }
+    const place = group.items[0].place.name;
+    card.showList(`Near ${place}`, events, { note: `${plural(events.length, 'event')} in this window. Select one to read more.` });
+    if (events[0].map === 'globe') focusPlace(events[0]);
+  }
+
+  // The card sits beside the panel on desktop. On a phone it covers the half that does not hold the event.
+  function placeCard() {
+    const el = $('card');
+    el.style.removeProperty('right'); el.style.removeProperty('top'); el.style.removeProperty('bottom'); el.style.removeProperty('max-height');
+    if (!layoutInfo?.open) return;
+    if (!layoutInfo.stacked) { el.style.right = `${layoutInfo.panel.width + 24}px`; return; }
+    const header = document.querySelector('.site-header').offsetHeight;
+    if (selected?.map === 'bom') {
+      el.style.top = `${header + 6}px`; el.style.bottom = 'auto';
+      el.style.maxHeight = `${Math.max(160, layoutInfo.globe.height - header - 12)}px`;
+    } else {
+      el.style.maxHeight = `${Math.max(160, layoutInfo.panel.height - 12)}px`;
+    }
   }
   function slideForCard() {
     if (!globe) return;
     requestAnimationFrame(() => {
       const panel = $('card').getBoundingClientRect(), stage = $('globe-stage').getBoundingClientRect();
-      if (innerWidth > 650) globe.slideTo((stage.width - panel.left + stage.left) / 2, 0);
+      const overGlobe = panel.left < stage.right && panel.right > stage.left && panel.top < stage.bottom && panel.bottom > stage.top;
+      if (!overGlobe || $('card').hidden) { globe.slideTo(0, 0); return; }
+      if (!layoutInfo?.stacked && innerWidth > 650) globe.slideTo(Math.max(0, (stage.right - panel.left) / 2), 0);
       else {
-        // On a phone, center the globe in the gap between the header and the card.
-        const top = document.querySelector('.site-header').getBoundingClientRect().bottom - stage.top;
-        const gapCenter = (top + panel.top - stage.top) / 2;
-        globe.slideTo(0, Math.max(0, stage.height / 2 - gapCenter));
+        // Center the globe in the space the card leaves open.
+        const top = Math.max(document.querySelector('.site-header').getBoundingClientRect().bottom, stage.top);
+        const freeTop = panel.top > stage.top + 40 ? top : panel.bottom, freeBottom = panel.top > stage.top + 40 ? panel.top : stage.bottom;
+        globe.slideTo(0, stage.top + stage.height / 2 - (freeTop + freeBottom) / 2);
       }
     });
+  }
+  function showSelection(event, details) {
+    const others = event.places.filter(k => k !== event.place).map(k => ({ key: k, ...data.places[k] }));
+    const routes = (details?.routes ?? []).map(r => ({ points: r.points, color: 0xefcc88 }));
+    const onBom = event.map === 'bom';
+    pins?.setSelected(event.id); bomPins?.setSelected(event.id);
+    pins?.setMarkers(onBom ? [] : others); bomPins?.setMarkers(onBom ? others : []);
+    if (details) { globe?.setRoutes(onBom ? [] : routes); bom?.setRoutes(onBom ? routes : []); }
+  }
+  function clearSelection() {
+    selected = null;
+    pins?.setSelected(null); pins?.setMarkers([]); globe?.setRoutes([]);
+    bomPins?.setSelected(null); bomPins?.setMarkers([]); bom?.setRoutes([]);
   }
 
   // ---------- Volume legend and filters ----------
   $('legend').innerHTML = VOLUME_ORDER.map(v => `<button class="legend-item" data-volume="${v}" aria-pressed="true" title="Show or hide ${VOLUMES[v].label}">${shapeSVG(v, 15)}<span class="legend-short">${VOLUMES[v].short}</span><span class="visually-hidden"> ${VOLUMES[v].label}</span></button>`).join('');
+  $('bom-toggle').querySelector('.bom-toggle-shape').innerHTML = shapeSVG('bom', 14);
   for (const button of $('legend').querySelectorAll('[data-volume]')) {
     button.addEventListener('click', () => {
       const v = button.dataset.volume;
@@ -159,7 +257,7 @@ async function start() {
     if (event.key === 'Escape' && card?.isOpen && !event.target.closest?.('.search')) { card.close(); return; }
     const target = event.target;
     if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
-    if (target.closest?.('input, textarea, select, button, [role="slider"]')) return;
+    if (target.closest?.('input, textarea, select, button, [role="slider"], [role="separator"], .bom-map')) return;
     if (['ArrowLeft', 'ArrowRight'].includes(event.key)) scrubber.handleKey(event);
   });
   $('previous-event').addEventListener('click', () => { const stop = previousStop(stops, scrubber.year); if (stop) scrubber.setYear(stop.year); });
@@ -180,61 +278,47 @@ async function start() {
   card = createCard({
     panel: $('card'), content: $('card-content'), labelEl: $('card-label'), closeButton: $('card-close'), data,
     onShow({ type, event, details }) {
-      if (type === 'event') {
-        selected = event;
-        pins?.setSelected(event.id);
-        const others = event.map === 'globe' ? event.places.filter(k => k !== event.place).map(k => ({ key: k, ...data.places[k] })) : [];
-        pins?.setMarkers(others);
-        if (details) globe?.setRoutes(event.map === 'globe' ? (details.routes ?? []).map(r => ({ points: r.points, color: 0xefcc88 })) : []);
-      } else {
-        selected = null;
-        pins?.setSelected(null); pins?.setMarkers([]); globe?.setRoutes([]);
-      }
+      if (type === 'event') { selected = event; showSelection(event, details); }
+      else clearSelection();
+      placeCard();
       slideForCard();
       saveAddress();
     },
-    // Choosing an event from a list moves time to it and turns the globe toward it.
+    // Choosing an event from a list moves time to it and turns the map toward it.
     onPick(event) {
       if (hidden.has(event.volume)) { hidden.delete(event.volume); applyFilters(); }
       moveTo(event);
       focusPlace(event);
     },
     onClose() {
-      selected = null;
-      pins?.setSelected(null); pins?.setMarkers([]); globe?.setRoutes([]);
+      // After a Book of Mormon event, show the whole land again.
+      if (selected?.map === 'bom') bom?.focus([]);
+      clearSelection();
+      placeCard();
       globe?.slideTo(0, 0);
       saveAddress();
     },
   });
 
-  if (globe) {
-    pins = createPins({
-      globe, layer: $('pins'), topInset: () => document.querySelector('.site-header').offsetHeight + 6,
-      onOpen(events, group) {
-        if (events.length === 1) { card.showEvent(events[0], { resetHistory: true }); focusPlace(events[0]); return; }
-        const place = group.items[0].place.name;
-        openList(`Near ${place}`, events, { note: `${plural(events.length, 'event')} in this window. Select one to read more.` });
-        focusPlace(events[0]);
-      },
-    });
-  }
+  if (globe) pins = createPins({ view: globeView(globe), layer: $('pins'), topInset: () => document.querySelector('.site-header').offsetHeight + 6, onOpen: openGroup });
 
   createSearch({
     input: $('search-input'), list: $('search-results'), data, loadPeople: card.loadPeople,
     onEvent: event => openEvent(event),
     onPlace: (name, events) => {
-      openList(`Events at ${name}`, events, { label: 'PLACE' });
+      card.showList(`Events at ${name}`, events, { label: 'PLACE' });
       const nearest = [...events].filter(e => e.start != null).sort((a, b) => Math.abs(a.start - scrubber.year) - Math.abs(b.start - scrubber.year))[0];
       if (nearest) { moveTo(nearest); focusPlace(nearest); }
     },
     onPerson: (name, events) => {
-      openList(name, events, { label: 'PERSON' });
+      card.showList(name, events, { label: 'PERSON' });
       const first = [...events].sort((a, b) => (a.start ?? -1e9) - (b.start ?? -1e9))[0];
       if (first) { moveTo(first); focusPlace(first); }
     },
   });
   $('search-input').disabled = false;
 
+  if (initial.bom) setBomOpen(true);
   applyFilters();
 
   // Open the event named in the address, if any.
@@ -246,6 +330,7 @@ async function start() {
     hidden.clear(); for (const v of next.hide ?? []) hidden.add(v);
     if (next.view) scrubber.setView(next.view);
     if (next.year != null) scrubber.setYear(next.year);
+    setBomOpen(Boolean(next.bom));
     applyFilters();
     const event = next.event && data.events.find(e => e.id === next.event);
     if (event && event !== selected) openEvent(event, { move: next.year == null });

@@ -2,7 +2,7 @@
 
 Wayfinder Timeline is a globe with a timeline. It will place the events of the scriptures beside world history. The full plan is in [DESIGN.md](DESIGN.md).
 
-This is milestone 3 of 6. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map comes in milestone 4, and world history in milestone 5.
+This is milestone 4 of 6. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map opens beside the globe and follows the same timeline. World history comes in milestone 5.
 
 ## Run locally
 
@@ -32,7 +32,17 @@ The Bible and D&C volumes use port 4173. The Book of Mormon uses 4174. All four 
 - Select an event to open its card. Its other places and its routes show in gold.
 - Select a volume in the header to hide or show it.
 - Search finds events, places, and people. Choose a result to go to it.
-- The address keeps the year, the open event, hidden volumes, and the strip zoom. Copy it to share the view.
+- The address keeps the year, the open event, hidden volumes, the strip zoom, and the open panel. Copy it to share the view.
+
+## Use the Book of Mormon map
+
+The Book of Mormon map is relative. It is not placed on real land. One unit is one of John L. Sorenson's estimated miles.
+
+- Select **Book of Mormon map** beside the globe controls to open or close it. When the window holds Book of Mormon events, a chip also offers it.
+- Drag the divider to resize the two views. You can also focus the divider and use the arrow keys.
+- The map follows the same timeline. With no events in the window, it offers the nearest event before and after.
+- Ether's events have no years. They show from the Tower of Babel until Coriantumr is found in Omni 1, with a dashed ring.
+- 1 Nephi 1–17 happens in the Old World, so those events stay on the globe.
 
 The strip is not drawn to one scale. It gives more space to 2000 BCE–100 CE and to 1800–2026. The striped spans, 4000–2000 BCE and 100–1800 CE, are compressed.
 
@@ -96,6 +106,8 @@ To take in a fix from a Wayfinder repository, change its commit in `scripts/sour
 | `dist/search.js` | The search box |
 | `dist/volumes.js` | Each volume's hue and shape |
 | `dist/address.js` | Reading and writing the address |
+| `dist/split.js` | The split between the globe and the panel |
+| `dist/bom-map.js` | The Book of Mormon map |
 | `dist/data/` | Built event data. Do not edit by hand |
 | `scripts/import.mjs` | Downloads the pinned inputs |
 | `scripts/build-events.mjs` | Builds `dist/data` |
@@ -106,4 +118,4 @@ Data years use negative numbers for BCE, as the Bible volume does. The year 701 
 
 ## Credits
 
-Earth imagery is NASA's Blue Marble: Next Generation. The 3D graphics use three.js under the MIT license. Land outlines for the checks come from Natural Earth. See `dist/assets/CREDITS.txt`.
+Earth imagery is NASA's Blue Marble: Next Generation. The 3D graphics use three.js under the MIT license. The Book of Mormon relief and shapes come from Book of Mormon Wayfinder, after Sorenson's *Mormon's Map* (2000). The flat map uses Leaflet under the BSD 2-Clause license. Land outlines for the checks come from Natural Earth. See `dist/assets/CREDITS.txt`.

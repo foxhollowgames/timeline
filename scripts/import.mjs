@@ -53,6 +53,23 @@ for (const id of config.bibleBooks) {
 add(raw('book-of-mormon', 'dist/data/content.json'), 'book-of-mormon/content.json');
 add(raw('book-of-mormon', 'dist/data/scripture.json'), 'book-of-mormon/scripture.json');
 add(raw('book-of-mormon', 'scripts/old-world.mjs'), 'book-of-mormon/old-world.mjs');
+add(raw('book-of-mormon', 'dist/data/relief.json'), 'book-of-mormon/relief.json');
+for (const file of ['leaflet.js', 'leaflet.css', 'leaflet-LICENSE.txt']) add(raw('book-of-mormon', `dist/vendor/${file}`), `book-of-mormon/vendor/${file}`);
+
+// The relief tiles for the Book of Mormon panel. The file list comes from the repository tree at the pinned commit.
+{
+  const treePath = join(cache, 'book-of-mormon', 'tree.json');
+  if (refresh || !(await exists(treePath))) {
+    const { repo, commit } = config.repos['book-of-mormon'];
+    const response = await fetch(`https://api.github.com/repos/${repo}/git/trees/${commit}?recursive=1`, { headers: { 'User-Agent': 'wayfinder-timeline-import', Accept: 'application/vnd.github+json' } });
+    if (!response.ok) throw new Error(`GitHub tree for ${repo}: HTTP ${response.status}`);
+    await mkdir(dirname(treePath), { recursive: true });
+    await writeFile(treePath, JSON.stringify((await response.json()).tree.map(entry => entry.path)));
+  }
+  const paths = JSON.parse(await readFile(treePath, 'utf8')).filter(path => /^dist\/assets\/relief\/\d+\/-?\d+_-?\d+\.jpg$/.test(path));
+  if (!paths.length) throw new Error('No relief tiles found in the Book of Mormon tree.');
+  for (const path of paths) add(raw('book-of-mormon', path), `book-of-mormon/${path.replace('dist/assets/', '')}`);
+}
 
 const dc = 'doctrine-and-covenants';
 for (const file of ['places-base.json', 'places-extra.json', 'routes.json', 'people-ids.json', 'raw/doctrine-and-covenants.json']) {

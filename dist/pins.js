@@ -1,4 +1,5 @@
-// Pins on the globe. Each pin is a button drawn over the 3D scene, as in the conference globe.
+// Pins on the globe or the Book of Mormon map. Each pin is a button drawn over the map, as in the conference globe.
+// A view supplies project(key, place) -> {x, y} or null, and onFrame(callback) for redraws.
 // Events at the same place, or within one pin width on screen, join one group with a count.
 // Active events are full strength. Recent past events show as a faded trail (DESIGN.md Q6).
 
@@ -7,24 +8,32 @@ import { formatYear } from './time-scale.js';
 
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-export function createPins({ globe, layer, onOpen, topInset = () => 64 }) {
-  const positions = new Map(), buttons = new Map();
+// The globe as a view: places become 3D points once, then project each frame.
+export function globeView(globe) {
+  const positions = new Map();
+  return {
+    project(key, place) {
+      if (!positions.has(key)) positions.set(key, globe.vector(place));
+      return globe.project(positions.get(key));
+    },
+    onFrame: callback => globe.onFrame(callback),
+  };
+}
+
+export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
+  const buttons = new Map();
   let items = [], markers = [], selectedId = null;
   const markerLayer = document.createElement('div');
   markerLayer.className = 'place-markers';
   layer.before(markerLayer);
 
-  const positionOf = (key, place) => {
-    if (!positions.has(key)) positions.set(key, globe.vector(place));
-    return positions.get(key);
-  };
   const pinSize = () => (innerWidth <= 650 ? 26 : 30);
 
   function group(width, height) {
     const visible = [];
     const byPlace = new Map();
     for (const item of items) {
-      const screen = globe.project(positionOf(item.placeKey, item.place));
+      const screen = view.project(item.placeKey, item.place);
       if (!screen || screen.x < 8 || screen.x > width - 8 || screen.y < topInset() || screen.y > height - 8) continue;
       if (!byPlace.has(item.placeKey)) { byPlace.set(item.placeKey, { ...screen, items: [] }); visible.push(byPlace.get(item.placeKey)); }
       byPlace.get(item.placeKey).items.push(item);
@@ -71,7 +80,7 @@ export function createPins({ globe, layer, onOpen, topInset = () => 64 }) {
       + `<span class="pin-caption" aria-hidden="true">${escapeHTML(caption)}</span>`;
   }
 
-  globe.onFrame(({ width, height }) => {
+  view.onFrame(({ width, height }) => {
     const groups = group(width, height), used = new Set();
     for (const g of groups) {
       used.add(g.key);
@@ -88,6 +97,7 @@ export function createPins({ globe, layer, onOpen, topInset = () => 64 }) {
       button.group = g;
       button.setAttribute('aria-label', label(g));
       button.classList.toggle('trail', !g.active);
+      button.classList.toggle('undated', g.items.every(i => i.event.start == null));
       button.classList.toggle('selected', Boolean(selectedId) && g.items.some(i => i.event.id === selectedId));
       button.style.transform = `translate(${g.x}px, ${g.y}px) translate(-50%, -50%)`;
     }
@@ -96,7 +106,7 @@ export function createPins({ globe, layer, onOpen, topInset = () => 64 }) {
     // Every other place gets a dot. A label shows only where it does not overlap one already placed.
     const boxes = [];
     markerLayer.innerHTML = markers.map(m => {
-      const screen = globe.project(positionOf(m.key, m));
+      const screen = view.project(m.key, m);
       if (!screen) return '';
       const box = { x0: screen.x + 4, x1: screen.x + 10 + m.name.length * 6.2, y0: screen.y - 8, y1: screen.y + 8 };
       const fits = !boxes.some(b => box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0);
@@ -107,10 +117,10 @@ export function createPins({ globe, layer, onOpen, topInset = () => 64 }) {
 
   return {
     // items: [{event, placeKey, place, state: 'active' | 'trail'}]
-    setItems(next) { items = next; },
-    setSelected(id) { selectedId = id; },
+    setItems(next) { items = next; view.request?.(); },
+    setSelected(id) { selectedId = id; view.request?.(); },
     // Small labeled dots for the selected event's other places.
-    setMarkers(next) { markers = next; },
+    setMarkers(next) { markers = next; view.request?.(); },
     describe: event => `${event.ref}, ${event.start == null ? 'years not given' : formatYear(event.start)}`,
   };
 }

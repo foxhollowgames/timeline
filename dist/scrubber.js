@@ -57,7 +57,7 @@ export function createScrubber({ strip, overview, input, zoomIn, zoomOut, fit, o
     orderLayer.innerHTML = orderBands.map(band => {
       const left = Math.max(0, uToX(yearToU(band.start))), right = Math.min(w, uToX(yearToU(band.end)));
       if (right <= 0 || left >= w) return '';
-      return `<i style="left:${left}px;width:${right - left}px" title="${band.label}"><span>${right - left > 110 ? band.label : ''}</span></i>`;
+      return `<i class="lane-${band.lane ?? 0}" style="left:${left}px;width:${right - left}px" title="${band.label}"><span>${right - left > 110 ? band.label : ''}</span></i>`;
     }).join('');
     renderDensity(w);
     // Labels near an edge align inward so they are not cut off.

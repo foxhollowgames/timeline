@@ -1,0 +1,73 @@
+/* Milestone 4: the Book of Mormon panel, the split divider, the chip, and the Jaredite band. */
+.globe-stage, .bom-stage, .split-divider { position: absolute; }
+.bom-stage { background: #0a1322; overflow: hidden; z-index: 3; }
+.bom-map { position: absolute; inset: 0; background: #0b1626; }
+.bom-stage .pins { z-index: 450; }
+.bom-stage .place-markers { z-index: 449; }
+.bom-heading { position: absolute; left: 16px; bottom: 14px; z-index: 460; pointer-events: none; display: flex; flex-direction: column; gap: 2px; background: #0b1424cc; padding: 8px 12px; border-radius: 10px; backdrop-filter: blur(8px); }
+.bom-heading strong { font-weight: 500; font-size: 13px; }
+.bom-heading span { font-size: 11px; color: var(--muted); }
+.split-open .bom-heading { top: auto; }
+.bom-close { position: absolute; top: 12px; right: 12px; z-index: 470; width: 34px; height: 34px; border-radius: 50%; background: var(--control); border-color: #c7e1ff22; font-size: 20px; line-height: 1; }
+.split-open:not(.split-stacked) .bom-close { top: 84px; }
+.bom-band-note { position: absolute; left: 16px; right: 60px; top: 12px; z-index: 460; margin: 0; padding: 9px 12px; font-size: 12px; line-height: 1.5; color: #f3dcc9; background: #2a1810d9; border: 1px dashed #d9592699; border-radius: 10px; }
+.split-open:not(.split-stacked) .bom-band-note { top: 84px; }
+.bom-empty { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 460; width: min(86%, 340px); text-align: center; padding: 18px; background: #0c1629ec; border: 1px solid var(--line); border-radius: 16px; }
+.bom-empty p { margin: 0 0 12px; font-size: 14px; color: var(--muted); }
+.bom-empty div { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.bom-empty button { height: 34px; padding: 0 12px; border-radius: 18px; font-size: 13px; background: #c4e5ff0d; }
+
+.split-divider { z-index: 13; background: #0a1220; cursor: col-resize; touch-action: none; }
+.split-divider::after { content: ""; position: absolute; left: 50%; top: 50%; width: 4px; height: 44px; margin: -22px 0 0 -2px; border-radius: 2px; background: #8aa9c466; }
+.split-divider:hover::after, .split-divider.dragging::after, .split-divider:focus-visible::after { background: var(--gold); }
+.split-divider[aria-orientation="horizontal"] { cursor: row-resize; }
+.split-divider[aria-orientation="horizontal"]::after { width: 44px; height: 4px; margin: -2px 0 0 -22px; }
+
+.bom-chip { position: absolute; left: 50%; transform: translateX(-50%); top: 84px; z-index: 6; height: 36px; padding: 0 16px; border-radius: 18px; font-size: 13px; color: #fbe3d6; background: #2a1810e6; border-color: #d9592688; box-shadow: 0 6px 24px #0006; white-space: nowrap; }
+.bom-chip:hover { border-color: #d95926; }
+.bom-toggle { display: flex; align-items: center; gap: 8px; padding: 0 14px; border-radius: 22px !important; width: auto !important; font-size: 13px !important; }
+.bom-toggle[aria-pressed="true"] { border-color: #d9592699 !important; color: #fbe3d6; }
+.globe-controls { align-items: center; }
+
+/* Pins with no years (the order-only bands) get a dashed ring. */
+.pin.undated::after { content: ""; position: absolute; inset: 2px; border-radius: 50%; border: 1.5px dashed #f3dcc9aa; }
+
+/* The strip's second lane: the Jaredite band, a thin stripe at the top. */
+.strip-order-bands i.lane-1 { top: 0; bottom: auto; height: 14px; background: #d959261f; border-color: #d9592666; }
+.strip-order-bands i.lane-1 span { top: 0; color: #f3c8b2; font-size: 10px; }
+
+/* Leaflet in the dark theme. */
+.bom-map .leaflet-container, .bom-map.leaflet-container { background: #0b1626; font: inherit; }
+.bom-map .leaflet-control-zoom a { background: var(--control); color: var(--ink); border-color: #c7e1ff22; }
+.bom-map .leaflet-control-zoom { border: 1px solid #c7e1ff22; margin: 0 14px 14px 0; }
+.bom-map .leaflet-control-attribution { background: #0b1424b3; color: var(--faint); font-size: 10px; max-width: 70%; }
+.bom-map .leaflet-control-attribution a { color: var(--muted); }
+.bom-label span { display: block; transform: translate(-50%, -50%); white-space: nowrap; font-size: 11px; letter-spacing: .14em; color: #cfe3eecc; text-shadow: 0 1px 3px #000; pointer-events: none; }
+.bom-label-sea span { color: #9fd4e8b3; font-style: italic; }
+.relief-tiles { filter: saturate(.85) brightness(.9); }
+
+@media (max-width: 650px) {
+  .bom-chip { top: auto; bottom: 64px; font-size: 12px; }
+  .bom-toggle .bom-toggle-label { display: none; }
+  .bom-toggle { padding: 0 11px; }
+  .bom-heading { left: 10px; bottom: 10px; padding: 6px 10px; }
+}
+
+/* When the Jaredite lane shows, the primeval label moves below it. */
+.strip-order-bands i.lane-0 span { transition: top .2s; }
+.split-open .strip-order-bands i.lane-0 span { top: 17px; }
+.bom-map .leaflet-control-attribution { max-width: calc(100% - 260px); }
+@media (max-width: 650px) {
+  .bom-map .leaflet-control-attribution { max-width: 100%; }
+  .bom-heading { top: 10px; bottom: auto; }
+  .bom-band-note { top: 64px; left: 10px; right: 10px; }
+}
+
+/* Stacked phone split: keep the globe half readable. */
+.split-stacked .year-overview { bottom: 10px; left: 12px; }
+.split-stacked .year-overview > strong { font-size: 26px; }
+.split-stacked #overview-window { display: none; }
+.split-stacked .year-overview > .overview-count { font-size: 11px; max-width: 220px; }
+.split-stacked .globe-controls { bottom: 10px; right: 10px; gap: 4px; }
+.split-stacked .globe-controls button { width: 32px; height: 32px; font-size: 16px; }
+.split-stacked .bom-toggle { padding: 0 9px; }
