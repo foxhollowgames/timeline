@@ -7,3 +7,6 @@ Thumbs.db
 # Local caches and scratch
 scripts/terrain-*/
 .cache/
+
+# Pinned inputs fetched by npm run import
+scripts/source/

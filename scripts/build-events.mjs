@@ -1,0 +1,385 @@
+// Build dist/data from the pinned sources in scripts/source and the rules in scripts/date-overrides.json.
+// Run `npm run import` first. Then `npm run build`, then `npm run check`.
+//
+// Output
+//   dist/data/events.json          compact index: every event, its date, and its place (loaded at start-up)
+//   dist/data/details/<volume>.json  summaries, key verses, routes, and date notes (loaded when a card opens)
+//
+// One chapter (or D&C section) is one event. A chapter with no places is skipped (DESIGN.md section 3).
+
+import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { formatYear, formatRange } from '../dist/time-scale.js';
+
+const here = dirname(fileURLToPath(import.meta.url));
+const src = join(here, 'source');
+const out = join(here, '..', 'dist', 'data');
+const readJSON = async path => JSON.parse(await readFile(path, 'utf8'));
+
+const config = await readJSON(join(here, 'sources.json'));
+const overrides = await readJSON(join(here, 'date-overrides.json'));
+const problems = [], warnings = [];
+const stats = { chapters: 0, events: 0, noPlace: 0, skipped: [] };
+
+// ---------- Dates ----------
+
+// Read a date-band label such as "~970 - 930 BCE", "~7 BCE - 8 CE", "~853 BCE",
+// "After ~516 BCE (disputed)", or "~60s CE or 2nd century (disputed)".
+// Returns {start, end, disputed} with null for an open end, or null when undated.
+export function parseLabel(label) {
+  if (!label) return null;
+  const disputed = /\(disputed\)/i.test(label);
+  const text = label.replace(/\([^)]*\)/g, '').replace(/~/g, '').replace(/[–—]/g, '-').trim();
+  if (/^(undated|date unknown|jaredite era)/i.test(text) || /date not given/i.test(label)) return null;
+  const year = (n, era) => (era === 'BCE' ? -Number(n) : Number(n));
+  let m;
+  if ((m = text.match(/^(\d+)\s*(BCE|CE)?\s*-\s*(\d+)\s*(BCE|CE)$/))) {
+    return { start: year(m[1], m[2] ?? m[4]), end: year(m[3], m[4]), disputed };
+  }
+  if ((m = text.match(/^After\s+(\d+)\s*(BCE|CE)$/i))) return { start: year(m[1], m[2]), end: null, disputed };
+  if ((m = text.match(/^Before\s+(\d+)\s*(BCE|CE)$/i))) return { start: null, end: year(m[1], m[2]), disputed };
+  if ((m = text.match(/^(\d+)0s\s*(BCE|CE)\b/))) {
+    const decade = year(m[1] + '0', m[2]);
+    return /2nd century/.test(text) ? { start: decade, end: 199, disputed } : { start: decade, end: decade + 9, disputed };
+  }
+  if ((m = text.match(/^(\d+)\s*(BCE|CE)\s+or later$/i))) return { start: year(m[1], m[2]), end: null, disputed };
+  if ((m = text.match(/^(\d+)\s*(BCE|CE)$/))) return { start: year(m[1], m[2]), end: year(m[1], m[2]), disputed };
+  return undefined; // not understood
+}
+
+const tidyLabel = label => label.replace(/~/g, 'c. ').replace(/(\d)\s*-\s*(\d|c\.)/g, '$1–$2').replace(/c\. (\d+)\s*–\s*c\. /, 'c. $1–').replace(/\s+/g, ' ').trim();
+const rangeLabel = (start, end, approx) => (approx ? 'c. ' : '') + formatRange(start, end);
+
+function ruleFor(volume, book, chapter) {
+  return overrides.rules.find(rule => {
+    const ruleVolume = rule.volume ?? 'bible';
+    if (ruleVolume === 'bible' ? !['ot', 'nt'].includes(volume) : ruleVolume !== volume) return false;
+    if (rule.book && rule.book !== book) return false;
+    if (rule.chapters && (chapter < rule.chapters[0] || chapter > rule.chapters[1])) return false;
+    return true;
+  });
+}
+const noteText = key => (key ? overrides.notes[key] ?? key : undefined);
+
+// For a rule that uses the revised column, find the same rows' biblical-number years (Q26).
+// A king's row reads "B.C. 918 | ... Ahab | Rev. Chr. 875 | ...".
+const chronology = await readJSON(join(src, 'church-chronology', 'tables.json'));
+const biblicalCache = new Map();
+function biblicalYears(rule) {
+  if (biblicalCache.has(rule)) return biblicalCache.get(rule);
+  let result = null;
+  if (rule.basis === 'church' || rule.basis === 'ministry') {
+    const rows = chronology['church-ot'].flat().map(row => row.join(' | '));
+    const found = (rule.evidence ?? []).map(([text, year]) => {
+      const row = rows.find(r => r.includes(text) && new RegExp(`Rev\\. Chr\\. ${year}(\\D|$)`).test(r));
+      return row?.match(/^B\.C\. (\d+)/)?.[1];
+    });
+    if (found.length && found.every(Boolean) && found.some((b, i) => b !== rule.evidence[i][1])) {
+      const [first, last] = [found[0], found[found.length - 1]];
+      result = first === last ? `${first} BC` : `${first}–${last} BC`;
+    }
+  }
+  biblicalCache.set(rule, result);
+  return result;
+}
+
+// Turn a rule and the repo's own label into the event's date fields.
+function resolveDate(rule, repoLabel, where) {
+  const repo = repoLabel ? parseLabel(repoLabel) : null;
+  if (repoLabel && repo === undefined) problems.push(`${where}: date label not understood: "${repoLabel}"`);
+  const date = { basis: rule.basis, sourceIds: rule.sourceIds ?? [] };
+  const note = noteText(rule.note);
+  if (note) date.note = note;
+  if (rule.dateNote) date.dateNote = rule.dateNote;
+  const biblical = biblicalYears(rule);
+  if (biblical) date.biblical = `Biblical numbers in the same table: ${biblical}.`;
+  const scholarlyLine = () => {
+    if (!repo || repo.start == null || repo.end == null) return;
+    const gap = Math.max(Math.abs(repo.start - date.start), Math.abs(repo.end - date.end));
+    if (gap >= overrides.materialDifference) date.scholarly = { label: tidyLabel(repoLabel), start: repo.start, end: repo.end };
+  };
+  switch (rule.basis) {
+    case 'not-given':
+      return { ...date, start: null, end: null, band: rule.band, label: 'Years not given' };
+    case 'scholarly': {
+      const start = rule.start ?? repo?.start, end = rule.end ?? repo?.end;
+      if (start == null || end == null) { problems.push(`${where}: scholarly rule needs a start and end ("${repoLabel}")`); return null; }
+      return { ...date, start, end, label: rule.label ?? (rule.start != null ? rangeLabel(start, end, true) : tidyLabel(repoLabel)) };
+    }
+    case 'church': {
+      Object.assign(date, { start: rule.start, end: rule.end, label: rule.label ?? formatRange(rule.start, rule.end) });
+      scholarlyLine();
+      return date;
+    }
+    case 'ministry': {
+      // Keep the part of the repo's range that falls inside the prophet's lifetime.
+      // With no overlap (a later composition date), use the whole lifetime.
+      const known = repo && repo.start != null && repo.end != null;
+      const start = known ? Math.max(repo.start, rule.start) : null, end = known ? Math.min(repo.end, rule.end) : null;
+      if (known && start <= end) {
+        const unchanged = start === repo.start && end === repo.end;
+        Object.assign(date, { start, end, label: unchanged ? tidyLabel(repoLabel) : rangeLabel(start, end, true) });
+      } else Object.assign(date, { start: rule.start, end: rule.end, label: rule.label ?? formatRange(rule.start, rule.end) });
+      scholarlyLine();
+      return date;
+    }
+    case 'edition': {
+      if (rule.start != null) return { ...date, start: rule.start, end: rule.end, label: rule.label ?? rangeLabel(rule.start, rule.end, true), fix: rule.fix };
+      if (!repo || repo.start == null || repo.end == null) { problems.push(`${where}: no edition date ("${repoLabel}")`); return null; }
+      if (repo.end < repo.start) problems.push(`${where}: date runs backward ("${repoLabel}"). Add a corrected rule.`);
+      return { ...date, start: repo.start, end: repo.end, label: tidyLabel(repoLabel) };
+    }
+    case 'skip':
+      return { basis: 'skip', reason: noteText(rule.reason) };
+    default:
+      problems.push(`${where}: unknown basis ${rule.basis}`);
+      return null;
+  }
+}
+
+// ---------- Places ----------
+
+// Books can use one id for different spots: Succoth in Egypt and Succoth by the Jordan,
+// or a region such as Moab drawn at a different point. When a second book's point is
+// more than 25 km from the first, that book gets its own key (`b:<book>/<id>`).
+const places = {};
+function addPlace(key, place, where, scope) {
+  const existing = places[key];
+  if (!existing) { places[key] = place; return key; }
+  if (place.lat != null && existing.lat != null && distanceKm(existing, place) > 25) {
+    if (!scope) { warnings.push(`${where}: place ${key} differs between sources. Kept the first.`); return key; }
+    const scoped = key.replace(/^(\w+):/, `$1:${scope}/`);
+    places[scoped] ??= place;
+    stats.scopedPlaces = (stats.scopedPlaces ?? 0) + (places[scoped] === place ? 1 : 0);
+    return scoped;
+  }
+  return key;
+}
+function distanceKm(a, b) {
+  const rad = Math.PI / 180, dLat = (b.lat - a.lat) * rad, dLng = (b.lng - a.lng) * rad;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(dLng / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(h));
+}
+
+const events = [];
+const details = { ot: {}, nt: {}, bom: {}, dc: {} };
+
+function pushEvent(event, detail, date) {
+  if (date.basis === 'skip') { stats.skipped.push({ id: event.id, ref: event.ref, reason: date.reason }); return; }
+  const { label, sourceIds, note, dateNote, scholarly, fix, biblical, ...core } = date;
+  const record = { ...event, ...core };
+  if (core.start != null && core.end != null && core.end - core.start > 300) record.broad = true;
+  events.push(record);
+  details[event.volume][event.id] = { ...detail, dateLabel: label, dateSourceIds: sourceIds, ...(note && { dateNote: note }), ...(dateNote && { dateDetail: dateNote }), ...(scholarly && { scholarly }), ...(fix && { dateFix: fix }), ...(biblical && { biblical }) };
+  stats.events++;
+}
+
+// ---------- Bible ----------
+
+const ntStart = config.bibleBooks.indexOf(config.newTestamentStartsAt);
+for (const [index, id] of config.bibleBooks.entries()) {
+  const volume = index < ntStart ? 'ot' : 'nt';
+  const content = await readJSON(join(src, 'bible', `${id}-native-content.json`));
+  const scripture = await readJSON(join(src, 'bible', `${id}-native-scripture.json`));
+  const name = content.book.name;
+  const placeById = new Map(content.places.map(p => [p.id, p]));
+  const routeById = new Map([...(content.textRoutes ?? []), ...(content.campaigns ?? [])].map(r => [r.id, r]));
+  const bands = content.chapterDateBands ?? [];
+  for (const map of content.chapterMaps) {
+    stats.chapters++;
+    const n = map.chapter, ref = `${name} ${n}`, where = ref;
+    const placeIds = [...new Set([...(map.focusPlaceIds ?? []), ...(map.placeIds ?? [])])].filter(pid => placeById.has(pid));
+    if (!placeIds.length) { stats.noPlace++; continue; }
+    const rule = ruleFor(volume, id, n);
+    if (!rule) { problems.push(`${where}: no date rule`); continue; }
+    const band = bands.find(b => n >= b.from && n <= b.to);
+    const date = resolveDate(rule, band?.label, where);
+    if (!date) continue;
+    const keys = placeIds.map(pid => { const p = placeById.get(pid); return addPlace(`b:${pid}`, { name: p.name, lat: p.lat, lng: p.lng }, where, id); });
+    const passage = (content.passages ?? []).filter(p => p.chapter === n).sort((a, b) => a.start - b.start)[0];
+    const event = (content.events ?? []).find(e => e.chapter === n && !('year' in e));
+    const study = (content.chapterStudies ?? []).find(s => s.chapter === n);
+    const verseNumber = study?.verse ?? 1;
+    const verseText = scripture.chapters[String(n)]?.find(v => v.verse === verseNumber)?.text;
+    if (!verseText) warnings.push(`${where}: key verse ${verseNumber} not found`);
+    const routes = [...(map.routes ?? []), ...(map.contextRoutes ?? [])].map(r => {
+      const source = routeById.get(r.id);
+      if (!source?.points) return null;
+      const points = source.points.slice(r.from ?? 0, (r.to ?? source.points.length - 1) + 1);
+      return points.length > 1 ? { id: r.id, title: source.title, kind: source.kind, points } : null;
+    }).filter(Boolean);
+    pushEvent(
+      { id: `${id}-${n}`, volume, book: id, chapter: n, ref, title: passage?.title ?? event?.title ?? ref, map: 'globe', place: keys[0], places: keys },
+      {
+        summary: passage?.summary ?? event?.summary ?? map.narrative ?? '',
+        verse: verseText ? { ref: `${name} ${n}:${verseNumber}`, text: verseText, translation: scripture.translation } : undefined,
+        readerUrl: `../bible/${id}.html#chapter=${n}&verse=${verseNumber}`,
+        ...(routes.length && { routes }),
+      },
+      date,
+    );
+  }
+}
+
+// ---------- Book of Mormon ----------
+
+const bom = await readJSON(join(src, 'book-of-mormon', 'content.json'));
+const bomText = await readJSON(join(src, 'book-of-mormon', 'scripture.json'));
+const oldWorld = await import(new URL('./source/book-of-mormon/old-world.mjs', import.meta.url));
+const st = oldWorld.stage;
+// Old World places are stored in the stage's miles. Undo the stage projection to get latitude and longitude.
+const toLatLng = ([x, y]) => ({ lat: Math.round((st.lat0 + y / st.milesPerLat) * 1e4) / 1e4, lng: Math.round((st.lng0 + (x - st.origin[0]) / st.milesPerLng) * 1e4) / 1e4 });
+const bomPlaces = new Map(bom.places.map(p => [p.id, p]));
+const bomRoutes = new Map(bom.routes.map(r => [r.id, r]));
+const bomBookNames = new Map(bomText.books.map(b => [b.chapters[0].replace(/-1$/, ''), b.book]));
+// scripture.json keeps each chapter under chapters[<id>].verses as [{verse, text}].
+const verseLookup = new Map(Object.entries(bomText.chapters ?? {}).map(([chapter, value]) => [chapter, value.verses ?? value]));
+const bomPlaceKey = p => (p.stage === 'old'
+  ? addPlace(`bom-old:${p.id}`, { name: p.name, ...toLatLng(p.at) }, p.id)
+  : addPlace(`bom:${p.id}`, { name: p.name, x: p.at[0], y: p.at[1] }, p.id));
+
+for (const map of bom.chapterMaps) {
+  stats.chapters++;
+  const [, book, num] = map.chapter.match(/^(.*)-(\d+)$/);
+  const n = Number(num), name = bomBookNames.get(book) ?? book, ref = `${name} ${n}`;
+  const mentioned = Object.entries(map.placeMentions ?? {}).sort((a, b) => Math.min(...a[1]) - Math.min(...b[1])).map(([pid]) => pid);
+  const placeIds = [...new Set([...(map.focusPlaceIds ?? []), ...mentioned])].filter(pid => bomPlaces.has(pid));
+  if (!placeIds.length) { stats.noPlace++; continue; }
+  const rule = ruleFor('bom', book, n);
+  if (!rule) { problems.push(`${ref}: no date rule`); continue; }
+  const date = resolveDate(rule, map.dateLabel, ref);
+  if (!date) continue;
+  const stage = map.oldWorld ? 'old' : 'new';
+  const onStage = placeIds.filter(pid => (bomPlaces.get(pid).stage ?? 'new') === stage);
+  if (!onStage.length) { warnings.push(`${ref}: no place on the ${stage} stage`); continue; }
+  const keys = onStage.map(pid => bomPlaceKey(bomPlaces.get(pid)));
+  const focus = onStage[0];
+  const verseNumber = map.placeMentions?.[focus]?.[0] ?? 1;
+  const verses = verseLookup.get(map.chapter);
+  const verseText = Array.isArray(verses) ? verses.find(v => v.verse === verseNumber)?.text : undefined;
+  const routes = (map.routes ?? []).map(rid => {
+    const route = bomRoutes.get(typeof rid === 'string' ? rid : rid.id);
+    if (!route) return null;
+    const points = route.points.map(p => {
+      const at = typeof p === 'string' ? bomPlaces.get(p)?.at : p;
+      if (!at) return null;
+      return stage === 'old' ? Object.values(toLatLng(at)) : at;
+    }).filter(Boolean);
+    return points.length > 1 ? { id: route.id, title: route.title, kind: route.kind, points } : null;
+  }).filter(Boolean);
+  pushEvent(
+    { id: map.chapter, volume: 'bom', book, chapter: n, ref, title: map.title, map: stage === 'old' ? 'globe' : 'bom', place: keys[0], places: keys },
+    {
+      summary: map.summary ?? '',
+      verse: typeof verseText === 'string' ? { ref: `${ref}:${verseNumber}`, text: verseText, translation: bomText.edition ?? bomText.translation } : undefined,
+      readerUrl: `../book-of-mormon/book.html#chapter=${map.chapter}`,
+      ...(routes.length && { routes }),
+    },
+    date,
+  );
+}
+
+// ---------- Doctrine and Covenants ----------
+
+const dcDir = join(src, 'doctrine-and-covenants');
+const dcPlaces = new Map([...(await readJSON(join(dcDir, 'places-base.json'))), ...(await readJSON(join(dcDir, 'places-extra.json')))].map(p => [p.id, p]));
+const dcRoutesFile = await readJSON(join(dcDir, 'routes.json'));
+for (const [id, value] of Object.entries(dcRoutesFile.waypoints ?? {})) {
+  if (!dcPlaces.has(id) && Array.isArray(value)) dcPlaces.set(id, { id, name: value[0], lat: value[1], lng: value[2] });
+}
+const dcRaw = await readJSON(join(dcDir, 'doctrine-and-covenants.json'));
+const dcVerses = new Map(dcRaw.sections.map(s => [s.section, s.verses]));
+const sectionFiles = (await readdir(join(dcDir, 'sections'))).sort();
+for (const file of sectionFiles) {
+  stats.chapters++;
+  const section = await readJSON(join(dcDir, 'sections', file));
+  const isDeclaration = Boolean(section.id && /^od/.test(section.id));
+  const n = isDeclaration ? section.id : section.section;
+  const ref = isDeclaration ? `Official Declaration ${section.id.slice(2)}` : `D&C ${n}`;
+  const placeIds = [...new Set([section.receivedAt, ...(section.placeIds ?? [])])].filter(pid => pid && dcPlaces.has(pid));
+  if (!placeIds.length) { stats.noPlace++; continue; }
+  const rule = ruleFor('dc', 'dc', typeof n === 'number' ? n : 0);
+  if (!rule) { problems.push(`${ref}: no date rule`); continue; }
+  const year = Number(String(section.month).slice(0, 4));
+  if (!year) { problems.push(`${ref}: no month`); continue; }
+  const date = { basis: 'section', start: year, end: year, month: section.month, label: section.dateLabel, sourceIds: rule.sourceIds };
+  const keys = placeIds.map(pid => { const p = dcPlaces.get(pid); return addPlace(`dc:${pid}`, { name: p.name, lat: p.lat, lng: p.lng }, ref); });
+  const verseNumber = section.studyVerse;
+  const verseText = typeof n === 'number' && verseNumber ? dcVerses.get(n)?.find(v => v.verse === verseNumber)?.text : undefined;
+  const routes = (dcRoutesFile.routes ?? []).filter(r => typeof n === 'number' && (r.sections ?? []).includes(n)).map(r => {
+    const points = r.points.map(pid => dcPlaces.get(pid)).filter(Boolean).map(p => [p.lat, p.lng]);
+    return points.length > 1 ? { id: r.id, title: r.title, kind: r.kind, points } : null;
+  }).filter(Boolean);
+  pushEvent(
+    { id: isDeclaration ? section.id : `dc-${n}`, volume: 'dc', book: 'dc', chapter: n, ref, title: section.title, map: 'globe', place: keys[0], places: keys },
+    {
+      summary: section.summary ?? '',
+      setting: section.setting,
+      verse: verseText ? { ref: `${ref}:${verseNumber}`, text: verseText, translation: 'Doctrine and Covenants' } : undefined,
+      readerUrl: isDeclaration ? section.sources?.officialUrl ?? section.url : `../doctrine-and-covenants/doctrine-and-covenants.html#chapter=${n}&verse=${verseNumber ?? 1}`,
+      ...(routes.length && { routes }),
+    },
+    date,
+  );
+}
+
+// ---------- Curated events and notes ----------
+
+const curated = await readJSON(join(here, 'curated-events.json'));
+for (const item of curated.events) {
+  const place = dcPlaces.get(item.placeId);
+  if (!place) { problems.push(`${item.id}: place ${item.placeId} not found`); continue; }
+  const key = addPlace(`dc:${item.placeId}`, { name: place.name, lat: place.lat, lng: place.lng }, item.id);
+  const verseText = dcVerses.get(item.verse.section)?.find(v => v.verse === item.verse.verse)?.text;
+  if (!verseText) problems.push(`${item.id}: verse D&C ${item.verse.section}:${item.verse.verse} not found`);
+  pushEvent(
+    { id: item.id, volume: item.volume, book: 'dc', chapter: null, ref: item.ref, title: item.title, map: 'globe', place: key, places: [key], curated: true },
+    { summary: item.summary, citations: item.citations, verse: { ref: `D&C ${item.verse.section}:${item.verse.verse}`, text: verseText, translation: 'Doctrine and Covenants' }, readerUrl: item.readerUrl },
+    { basis: 'not-given', band: item.band, start: null, end: null, label: 'Years not given', sourceIds: item.sourceIds, note: overrides.notes.orderOnly },
+  );
+}
+for (const [id, note] of Object.entries(curated.annotations)) {
+  const event = events.find(e => e.id === id);
+  if (!event) { problems.push(`annotation for ${id}: no such event`); continue; }
+  Object.assign(details[event.volume][id], note);
+}
+
+// ---------- Bands ----------
+
+const dated = events.filter(e => e.start != null);
+const firstScripture = Math.min(...dated.filter(e => e.volume === 'ot').map(e => e.start));
+const omni = events.find(e => e.id === 'omni-1');
+const bands = {
+  primeval: { label: 'Years not given', start: -4000, end: firstScripture - 1, note: overrides.notes.orderOnly },
+  jaredite: { label: 'Jaredite record, years not given', endsWith: 'omni-1', end: omni?.end ?? null, note: 'The band ends where Coriantumr is found, in Omni 1:21.' },
+};
+
+// ---------- Write ----------
+
+const volumeOrder = { ot: 0, nt: 1, bom: 2, dc: 3 };
+events.sort((a, b) => (a.start ?? -1e9) - (b.start ?? -1e9) || volumeOrder[a.volume] - volumeOrder[b.volume] || String(a.id).localeCompare(String(b.id), 'en', { numeric: true }));
+
+const usedSources = new Set(Object.values(details).flatMap(v => Object.values(v).flatMap(d => d.dateSourceIds ?? [])));
+const index = {
+  generated: new Date().toISOString().slice(0, 10),
+  inputs: Object.fromEntries(Object.entries(config.repos).map(([key, r]) => [key, `${r.repo}@${r.commit}`])),
+  bands,
+  sources: Object.fromEntries(Object.entries(overrides.sources).filter(([id]) => usedSources.has(id))),
+  places,
+  events,
+};
+
+if (problems.length) {
+  console.error(`Build stopped. ${problems.length} problem(s):\n  ` + problems.join('\n  '));
+  process.exit(1);
+}
+await mkdir(join(out, 'details'), { recursive: true });
+await writeFile(join(out, 'events.json'), JSON.stringify(index));
+for (const [volume, records] of Object.entries(details)) await writeFile(join(out, 'details', `${volume}.json`), JSON.stringify(records));
+await writeFile(join(here, 'build-report.json'), JSON.stringify({ stats, warnings }, null, 1) + '\n');
+
+const count = volume => events.filter(e => e.volume === volume).length;
+console.log(`${stats.chapters} chapters read. ${stats.events} events written. ${stats.noPlace} chapters have no places. ${stats.skipped.length} skipped by rule.`);
+console.log(`Old Testament ${count('ot')} · New Testament ${count('nt')} · Book of Mormon ${count('bom')} · D&C ${count('dc')}`);
+console.log(`${Object.keys(places).length} places. ${warnings.length} warning(s) in scripts/build-report.json.`);

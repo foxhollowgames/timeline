@@ -44,10 +44,14 @@ The decisions below were settled in a design interview on 2026-10-18. The questi
 | Book of Mormon | `book-of-mormon` | 239 | most | Sorenson miles, or latitude and longitude for the Old World stage |
 | D&C | `doctrine-and-covenants` | 140 | 140 | latitude and longitude |
 
-- **Sync (Q21).** `scripts/import.mjs` fetches each volume's `dist/data` files from GitHub at a pinned commit. It saves the files to `scripts/source/<volume>/` and converts them to `dist/data/events.json`. To take in fixes from a sibling repository, move its pinned commit forward and rebuild.
-  - Bible: `dist/data/books/<id>-native-content.json`, which supplies `events`, `chapterMaps`, `places`, `textRoutes`, `campaigns`, `chapterStudies`, and `chapterDateBands`.
-  - Book of Mormon: `dist/data/content.json`, which supplies `chapterMaps`, `places`, `routes`, and `dateLabel`. The Old World places come from `scripts/old-world.mjs`, which stores latitude and longitude.
-  - D&C: `dist/data/sections.json` and the section study files, which supply the date, month, and place received.
+- **Sync (Q21).** `npm run import` fetches the inputs pinned in `scripts/sources.json` into `scripts/source/`. That folder is git-ignored. `npm run build` converts it to `dist/data/events.json` and `dist/data/details/<volume>.json`. To take in fixes from a sibling repository, move its pin forward, then import and build again.
+  - Bible: `dist/data/books/<id>-native-content.json` and `<id>-native-scripture.json`. They supply passages, chapter maps, places, routes, key verses, and date bands.
+  - Book of Mormon: `dist/data/content.json` and `scripture.json`. Chapters with no focus place fall back to the places they mention. Old World places are converted back to latitude and longitude with the stage settings in `scripts/old-world.mjs`.
+  - D&C: `content/sections/*.json`, the place files, `routes.json`, and the verse text.
+  - The Church Bible Chronology pages, parsed into table rows, so the checks can confirm every cited year.
+  - Natural Earth land, for the check that places are on land.
+- **Shared place ids.** Books sometimes use one id for different spots, such as Succoth in Egypt and Succoth by the Jordan. When a later book's point is more than 25 km away, that book gets its own place key.
+- **Curated events.** `scripts/curated-events.json` holds scripture events that no chapter supplies, such as Adam-ondi-Ahman (Q15). It also adds notes, such as Babel's traditional site.
 - **Pin placement (Q19).** The pin sits at the chapter's first focus place. When the event is selected, its other places show as small dots and its routes are drawn.
 - **Pearl of Great Price (Q23).** Left out of version 1. It will be added later as its own batch of about 20 events.
 
@@ -60,16 +64,26 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 | Era | Primary date | Source |
 | --- | --- | --- |
 | Genesis 1–11 | No year. The event goes in the "Years not given" band (Q25) | Church chronology gives the order only |
-| Abraham to Joshua | Scholarly range, shown as a range bar. The card states that the Church chronology gives the order only (Q25) | Bible repo `chapterDateBands` |
-| Judges | Scholarly range | Bible repo. The Church chronology calls these dates "very uncertain" |
-| Saul to the exile | The Church chronology's revised column, which is built from Assyrian inscriptions. The biblical-number year goes on the card as a note (Q26) | Church Bible Chronology appendix |
-| Prophetic books | The prophet's lifetime (setting), not the composition theory. For example, Isaiah 40–66 is about 740–700 BCE and Daniel 7–12 is in the 500s BCE (Q27) | Church chronology. The repo's composition date becomes the scholarly line |
-| Exile to the New Testament | Church chronology, which is close to the scholarly dates | Church Bible Chronology appendix |
-| Book of Mormon | Church-edition chapter dates | `book-of-mormon/scripts/chapter-dates.tsv` |
+| Genesis 12–50 | Early 2nd millennium BCE (2000–1700 BCE). The card states that the Church chronology gives the order only (Q25) | Britannica, "Abraham". The Bible repo leaves these chapters undated |
+| Exodus to Joshua | Scholarly range, shown as a range bar. The card states that the Church chronology gives the order only (Q25) | Bible repo `chapterDateBands` |
+| Judges, Ruth, 1 Samuel 1–7 | Scholarly range | Bible repo. The Church chronology calls these dates "very uncertain" and gives no year before Saul |
+| Saul to Solomon | The Church chronology's only column: Saul 1095, David 1055 and 1047, Solomon 1015–975 BC | Church Bible Chronology appendix |
+| Divided kingdom to the exile | The revised column, which is built from Assyrian inscriptions (Q26). It starts at Rehoboam, 953 BC | Church Bible Chronology appendix |
+| Prophetic books | The prophet's lifetime (setting), not the composition theory. For example, Isaiah 40–66 is 740–697 BCE and Daniel is 606–536 BCE (Q27). A repo date inside that lifetime is kept | Church chronology. The repo's composition date becomes the scholarly line |
+| Ecclesiastes, Song of Solomon | Solomon's reign, following each book's first verse (Q27) | Church chronology |
+| Psalms | Scholarly range, 1000–300 BCE. Marked `broad` because it spans more than 300 years | Bible repo |
+| Exile to Malachi | Church chronology, which is close to the scholarly dates | Church Bible Chronology appendix |
+| Gospels and Acts 1–7 | Scholarly range. The Church's New Testament table gives the order only: it lists the birth, ministry, and Crucifixion with no years | Bible repo |
+| Acts 8–28 and Paul's letters | Church chronology, such as Paul's conversion in AD 35 and Romans in AD 55 | Church New Testament chronology |
+| Book of Mormon | Church-edition chapter dates. Mosiah 27 and Helaman 11 are corrected here because the repo has typos | `book-of-mormon/scripts/chapter-dates.tsv`, checked against all 239 Church headings |
 | Ether (Jaredites) | No year. The event goes in its own order-only band in the Book of Mormon panel. The band ends where Coriantumr is found by the people of Zarahemla in Omni 1:21 (Q29) | Ether has no dates in the Church edition |
 | D&C | Exact dates of the sections | D&C repository |
 
-- **Override file.** These rules live in `scripts/date-overrides.json`, keyed by volume, book, and chapter range. Each row names its source. The build stops when an imported chapter matches no rule.
+- **Override file.** These rules live in `scripts/date-overrides.json`, keyed by volume, book, and chapter range. Each row names its source. The build stops when an imported chapter matches no rule. A Church rule lists the table rows it uses, and the check confirms each one.
+- **Skipped chapters.** A skip rule removes a chapter that would mislead. Each one states its reason:
+  - 1 Chronicles 1–9: the genealogies span many eras.
+  - Job 40, Proverbs 7, Hebrews 11, 2 Peter 2, and Jude: each names its only place in a comparison or a retold story.
+  - The rest of Proverbs and James: neither source gives a date.
 - **Uncertainty.** A range shows as a bar on the strip. A circa date shows "c." on the card.
 
 ### The "years not given" band (Q28)

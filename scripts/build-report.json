@@ -1,0 +1,81 @@
+{
+ "stats": {
+  "chapters": 1568,
+  "events": 1067,
+  "noPlace": 488,
+  "skipped": [
+   {
+    "id": "1-chronicles-1",
+    "ref": "1 Chronicles 1",
+    "reason": "These genealogies span many eras. They have no single date."
+   },
+   {
+    "id": "1-chronicles-2",
+    "ref": "1 Chronicles 2",
+    "reason": "These genealogies span many eras. They have no single date."
+   },
+   {
+    "id": "1-chronicles-3",
+    "ref": "1 Chronicles 3",
+    "reason": "These genealogies span many eras. They have no single date."
+   },
+   {
+    "id": "1-chronicles-4",
+    "ref": "1 Chronicles 4",
+    "reason": "These genealogies span many eras. They have no single date."
+   },
+   {
+    "id": "1-chronicles-5",
+    "ref": "1 Chronicles 5",
+    "reason": "These genealogies span many eras. They have no single date."
+   },
+   {
+    "id": "1-chronicles-6",
+    "ref": "1 Chronicles 6",
+    "reason": "These genealogies span many eras. They have no single date."
+   },
+   {
+    "id": "1-chronicles-7",
+    "ref": "1 Chronicles 7",
+    "reason": "These genealogies span many eras. They have no single date."
+   },
+   {
+    "id": "1-chronicles-8",
+    "ref": "1 Chronicles 8",
+    "reason": "These genealogies span many eras. They have no single date."
+   },
+   {
+    "id": "1-chronicles-9",
+    "ref": "1 Chronicles 9",
+    "reason": "These genealogies span many eras. They have no single date."
+   },
+   {
+    "id": "job-40",
+    "ref": "Job 40",
+    "reason": "The chapter names this place only in a comparison or a retold story."
+   },
+   {
+    "id": "proverbs-7",
+    "ref": "Proverbs 7",
+    "reason": "The chapter names this place only in a comparison or a retold story."
+   },
+   {
+    "id": "hebrews-11",
+    "ref": "Hebrews 11",
+    "reason": "The chapter names this place only in a comparison or a retold story."
+   },
+   {
+    "id": "2-peter-2",
+    "ref": "2 Peter 2",
+    "reason": "The chapter names this place only in a comparison or a retold story."
+   },
+   {
+    "id": "jude-1",
+    "ref": "Jude 1",
+    "reason": "The chapter names this place only in a comparison or a retold story."
+   }
+  ],
+  "scopedPlaces": 21
+ },
+ "warnings": []
+}
