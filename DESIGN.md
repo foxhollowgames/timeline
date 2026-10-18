@@ -21,7 +21,7 @@ The decisions below were settled in a design interview on 2026-10-18. The questi
 - **Span (Q3).** From 4000 BCE (the Fall of Adam in the Church Bible Chronology) to 2026 CE.
 - **Scale (Q3).** The scale is non-linear, and users can zoom with the wheel or a pinch on the strip. The default view compresses 4000–2000 BCE and 100–1800 CE. It expands 2000 BCE–100 CE and 1800–2026 CE.
 - **Notation (Q14).** BCE and CE. BCE years are negative integers in data, as in the Bible repository.
-- **Active window (Q6).** The scrubber selects one year. An event is active when its date or range overlaps a window around that year. The window is about 2% of the visible timeline width, so it narrows as the user zooms in.
+- **Active window (Q6).** The scrubber selects one year. An event is active when its date or range overlaps a window around that year. The window is about 2% of the visible timeline width, so it narrows as the user zooms in, but it never reaches more than 10 years either side of the selected year.
   - Active pins show at full strength.
   - Pins just behind the scrubber fade as a trail.
   - Future pins are hidden.

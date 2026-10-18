@@ -18,8 +18,8 @@ const START_YEAR = -600;
 const TRAIL_WINDOWS = 3; // the trail covers three window widths before the window
 // Tier 2 history shows once the strip shows this many years or fewer (DESIGN.md Q5).
 const TIER_2_YEARS = 1500;
-// Jumping to an event zooms the strip until the window spans at most this many years,
-// so it shows only events within about a decade of the one chosen.
+// Jumping to an event zooms the strip until the 2% window spans at most this many years,
+// so the gold band stays visible on the strip.
 const JUMP_WINDOW_YEARS = 20;
 
 function setStatus(message, id = 'status') {
