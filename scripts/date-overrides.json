@@ -44,16 +44,6 @@
       "author": "D&C Wayfinder",
       "url": "https://github.com/foxhollowgames/doctrine-and-covenants/tree/main/content/sections",
       "note": "Dates come from the official section headings and the Joseph Smith Papers."
-    },
-    "church-bom-mosiah-27": {
-      "title": "Mosiah 27 chapter heading",
-      "author": "The Church of Jesus Christ of Latter-day Saints",
-      "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/27?lang=eng"
-    },
-    "church-bom-helaman-11": {
-      "title": "Helaman 11 chapter heading",
-      "author": "The Church of Jesus Christ of Latter-day Saints",
-      "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/11?lang=eng"
     }
   },
   "notes": {
@@ -180,8 +170,6 @@
     { "book": "3-john", "basis": "scholarly", "sourceIds": ["bible-repo"], "note": "orderOnly" },
     { "book": "jude", "basis": "skip", "reason": "comparison" },
     { "book": "revelation", "basis": "scholarly", "sourceIds": ["bible-repo"], "note": "orderOnly" },
-    { "volume": "bom", "book": "mosiah", "chapters": [27, 27], "basis": "edition", "start": -100, "end": -92, "label": "c. 100–92 BCE", "sourceIds": ["church-bom-mosiah-27"], "fix": "Book of Mormon Wayfinder reads ~100 - 192 BCE. The Church edition reads about 100–92 B.C." },
-    { "volume": "bom", "book": "helaman", "chapters": [11, 11], "basis": "edition", "start": -20, "end": -6, "label": "c. 20–6 BCE", "sourceIds": ["church-bom-helaman-11"], "fix": "Book of Mormon Wayfinder reads ~20 - 26 BCE. The Church edition reads about 20–6 B.C." },
     { "volume": "bom", "book": "ether", "basis": "not-given", "band": "jaredite", "sourceIds": ["bom-edition"], "dateNote": "The Church edition gives no dates for the Jaredite record." },
     { "volume": "bom", "basis": "edition", "sourceIds": ["bom-edition"] },
     { "volume": "dc", "basis": "section", "sourceIds": ["dc-sections"] }
