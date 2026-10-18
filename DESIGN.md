@@ -106,7 +106,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - Every event cites at least one reputable reference: Britannica, a museum or university page, or a Wikipedia article that cites the date.
   - An uncertain date uses "c." and a range.
   - The check script fails on an event with no source.
-  - The check script prints a count per region: Africa, the Americas, Central Asia, East Asia, South Asia, Middle East, Europe, and Oceania. This is a warning, not a quota.
+  - The check script prints a count per region: Africa, the Americas, Central Asia, East Asia, South Asia, Southeast Asia, Middle East, Europe, and Oceania. This is a warning, not a quota.
   - Each event quotes the words in its source that carry the date. `npm run verify:sources` fetches each Wikipedia article and confirms every quote is in it. It records the article revision in `scripts/history/verified.json`.
   - `npm run check` fails when a Wikipedia-sourced event has not passed that verification. Britannica blocks scripted reading, so a Britannica source would be checked by hand.
   - The card shows the quote and links to the source.
@@ -120,7 +120,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 | --- | --- | --- |
 | 1 | 4000–1000 BCE | 38 events |
 | 2 | 1000 BCE–1 CE | 40 events |
-| 3 | 1–1000 CE | planned |
+| 3 | 1–1000 CE | 40 events |
 | 4 | 1000–1500 CE | planned |
 | 5 | 1500–1800 CE | planned |
 | 6 | 1800–2026 | planned |
