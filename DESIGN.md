@@ -123,7 +123,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 | 3 | 1–1000 CE | 40 events |
 | 4 | 1000–1500 CE | 44 events |
 | 5 | 1500–1800 CE | 43 events |
-| 6 | 1800–2026 | planned |
+| 6 | 1800–2026 | 49 events |
 | 7 | Church history, 1847–2026 | planned |
 
 - **Data file.** `scripts/history/batch-N.json`. Each event has `id`, `title`, `start`, `end`, `dateLabel`, `tier`, `region`, `place`, `lat`, `lng`, `summary`, and `source`. A source is `{ wiki, quote }` for Wikipedia, or `{ title, publisher, url, quote }` otherwise. `quote` may be a list when the start and end need separate quotes.
