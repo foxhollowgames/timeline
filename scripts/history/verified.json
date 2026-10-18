@@ -304,6 +304,326 @@
    "checked": "2026-09-10T13:38:10Z",
    "ok": true,
    "missing": []
+  },
+  {
+   "id": "ashurbanipal-library",
+   "article": "Library of Ashurbanipal",
+   "revision": 1368194875,
+   "checked": "2026-08-07T16:11:26Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "fall-of-nineveh",
+   "article": "Fall of Nineveh",
+   "revision": 1379442153,
+   "checked": "2026-10-10T01:01:09Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "achaemenid-empire",
+   "article": "Achaemenid Empire",
+   "revision": 1380865574,
+   "checked": "2026-10-18T12:36:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "persepolis",
+   "article": "Persepolis",
+   "revision": 1376731595,
+   "checked": "2026-09-25T23:05:20Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "alexander-invades-persia",
+   "article": "Alexander the Great",
+   "revision": 1380762500,
+   "checked": "2026-10-17T18:39:54Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "seleucid-empire",
+   "article": "Seleucid Empire",
+   "revision": 1380578981,
+   "checked": "2026-10-16T16:29:19Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "parthian-empire",
+   "article": "Parthian Empire",
+   "revision": 1380314542,
+   "checked": "2026-10-15T00:55:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "olympic-games",
+   "article": "Ancient Olympic Games",
+   "revision": 1378430802,
+   "checked": "2026-10-04T12:43:47Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "founding-of-rome",
+   "article": "Founding of Rome",
+   "revision": 1379103779,
+   "checked": "2026-10-08T00:19:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "athenian-democracy",
+   "article": "Athenian democracy",
+   "revision": 1380321604,
+   "checked": "2026-10-15T01:41:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-marathon",
+   "article": "Battle of Marathon",
+   "revision": 1380768828,
+   "checked": "2026-10-17T19:31:36Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "parthenon",
+   "article": "Parthenon",
+   "revision": 1379960772,
+   "checked": "2026-10-12T23:27:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "la-tene",
+   "article": "La Tène culture",
+   "revision": 1380776868,
+   "checked": "2026-10-17T20:31:39Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hannibal-alps",
+   "article": "Hannibal's crossing of the Alps",
+   "revision": 1376987499,
+   "checked": "2026-09-27T07:35:56Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "caesar-assassinated",
+   "article": "Assassination of Julius Caesar",
+   "revision": 1379005208,
+   "checked": "2026-10-07T09:26:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "augustus",
+   "article": "Augustus",
+   "revision": 1376715022,
+   "checked": "2026-09-25T20:52:52Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "scythians",
+   "article": "Scythians",
+   "revision": 1378147148,
+   "checked": "2026-10-03T04:18:44Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "carthage",
+   "article": "Ancient Carthage",
+   "revision": 1379894614,
+   "checked": "2026-10-12T14:27:43Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kushite-pharaohs",
+   "article": "Twenty-fifth Dynasty of Egypt",
+   "revision": 1376340191,
+   "checked": "2026-09-23T15:21:24Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "meroe",
+   "article": "Meroë",
+   "revision": 1380753731,
+   "checked": "2026-10-17T17:27:46Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "library-of-alexandria",
+   "article": "Library of Alexandria",
+   "revision": 1380419606,
+   "checked": "2026-10-15T16:35:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "djenne-djenno",
+   "article": "Djenné-Djenno",
+   "revision": 1365085259,
+   "checked": "2026-07-20T04:43:09Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "the-buddha",
+   "article": "The Buddha",
+   "revision": 1379365637,
+   "checked": "2026-10-09T14:50:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "maurya-empire",
+   "article": "Maurya Empire",
+   "revision": 1380719714,
+   "checked": "2026-10-17T12:33:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "edicts-of-ashoka",
+   "article": "Edicts of Ashoka",
+   "revision": 1370762019,
+   "checked": "2026-08-22T23:42:33Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "eastern-zhou",
+   "article": "Spring and Autumn period",
+   "revision": 1372796156,
+   "checked": "2026-09-02T08:50:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "confucius",
+   "article": "Confucius",
+   "revision": 1380175775,
+   "checked": "2026-10-14T06:00:43Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "qin-unification",
+   "article": "Qin dynasty",
+   "revision": 1378075465,
+   "checked": "2026-10-02T20:52:29Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "terracotta-army",
+   "article": "Terracotta Army",
+   "revision": 1380487280,
+   "checked": "2026-10-16T00:55:14Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "han-dynasty",
+   "article": "Han dynasty",
+   "revision": 1380428857,
+   "checked": "2026-10-15T17:39:03Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "xiongnu",
+   "article": "Xiongnu",
+   "revision": 1379323938,
+   "checked": "2026-10-09T06:48:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "silk-road",
+   "article": "Zhang Qian",
+   "revision": 1364153704,
+   "checked": "2026-07-14T21:03:50Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "yayoi",
+   "article": "Yayoi period",
+   "revision": 1379321741,
+   "checked": "2026-10-09T06:20:05Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "la-venta",
+   "article": "La Venta",
+   "revision": 1365247924,
+   "checked": "2026-07-21T05:15:46Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "chavin",
+   "article": "Chavín de Huántar",
+   "revision": 1364711956,
+   "checked": "2026-07-18T02:29:20Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "paracas",
+   "article": "Paracas culture",
+   "revision": 1360716169,
+   "checked": "2026-06-23T04:09:06Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "el-mirador",
+   "article": "El Mirador",
+   "revision": 1379318269,
+   "checked": "2026-10-09T05:35:27Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "monte-alban",
+   "article": "Monte Albán",
+   "revision": 1366767720,
+   "checked": "2026-07-30T02:27:24Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "adena",
+   "article": "Adena culture",
+   "revision": 1380086080,
+   "checked": "2026-10-13T18:17:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tonga-settled",
+   "article": "History of Tonga",
+   "revision": 1364367149,
+   "checked": "2026-07-16T03:29:37Z",
+   "ok": true,
+   "missing": []
   }
  ]
 }

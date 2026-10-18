@@ -29,7 +29,10 @@ export function alsoAtThisTime(event, events) {
   const mid = e => (e.start + e.end) / 2, center = mid(event);
   return events
     .filter(e => e.start != null && !e.broad && (e.volume === 'history') === wantHistory && gap(e) <= ALSO_MAX_GAP)
-    .sort((a, b) => gap(a) - gap(b) || Math.abs(mid(a) - center) - Math.abs(mid(b) - center))
+    // Rank by closeness, then prefer specific events over centuries-long eras.
+    .map(e => ({ e, score: gap(e) + Math.abs(mid(e) - center) * 0.5 + (e.end - e.start) * 0.25 }))
+    .sort((a, b) => a.score - b.score)
+    .map(({ e }) => e)
     .slice(0, ALSO_COUNT);
 }
 
