@@ -94,3 +94,11 @@
   .card-content h2 { font-size: 23px; }
 }
 @media (prefers-reduced-motion: reduce) { .pin { transition: none; } }
+
+/* Milestone 5: world history pins and card parts. */
+.pin.secondary { width: 26px; height: 26px; z-index: 1; }
+.pin.secondary .pin-shape { filter: drop-shadow(0 1px 2px #0009); }
+.pin.secondary .count { background: #c9d2db; font-size: 10px; min-width: 16px; }
+.card-also { margin: 4px 0 16px; }
+.card-also h3 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 500; margin: 0 0 6px; }
+.source-quote { margin: 0 0 4px; font-size: 13px; color: var(--muted); font-style: italic; line-height: 1.5; }

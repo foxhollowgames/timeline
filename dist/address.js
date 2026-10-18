@@ -5,7 +5,7 @@
 
 import { FIRST_YEAR, LAST_YEAR } from './time-scale.js';
 
-const VOLUMES = new Set(['ot', 'nt', 'bom', 'dc']);
+const VOLUMES = new Set(['ot', 'nt', 'bom', 'dc', 'history']);
 
 export function readHash(hash) {
   const params = new URLSearchParams(String(hash ?? '').replace(/^#/, ''));

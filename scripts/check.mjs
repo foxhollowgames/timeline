@@ -148,6 +148,22 @@ test('event stops include the band start and skip duplicates', () => {
   assert.equal(ev.nextStop(stops, -4000).year, -2000);
 });
 
+// 2b2. "Also at this time": the other kind, nearest first, within 150 years, never for order-only events.
+const card = await import(new URL('../dist/card.js', import.meta.url));
+test('also at this time links the other kind of event, nearest first', () => {
+  const pool = [
+    { id: 's1', volume: 'ot', start: -1300, end: -1200 },
+    { id: 'h1', volume: 'history', start: -1274, end: -1274 },
+    { id: 'h2', volume: 'history', start: -1600, end: -1600 },
+    { id: 'h3', volume: 'history', start: -1150, end: -1150 },
+    { id: 's2', volume: 'ot', start: -1150, end: -1100 },
+    { id: 's3', volume: 'ot', start: null, end: null, band: 'primeval' },
+  ];
+  assert.deepEqual(card.alsoAtThisTime(pool[0], pool).map(e => e.id), ['h1', 'h3']);
+  assert.deepEqual(card.alsoAtThisTime(pool[1], pool).map(e => e.id), ['s1', 's2']);
+  assert.deepEqual(card.alsoAtThisTime(pool[5], pool), []);
+});
+
 // 2c. The address.
 const address = await import(new URL('../dist/address.js', import.meta.url));
 test('the address round-trips and rejects bad values', () => {

@@ -1,0 +1,309 @@
+{
+ "checked": "2026-10-18",
+ "results": [
+  {
+   "id": "uruk-period",
+   "article": "Uruk period",
+   "revision": 1380803494,
+   "checked": "2026-10-18T00:41:20Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "cuneiform",
+   "article": "Cuneiform",
+   "revision": 1380661225,
+   "checked": "2026-10-17T03:23:48Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "ziggurat-of-ur",
+   "article": "Ziggurat of Ur",
+   "revision": 1378614776,
+   "checked": "2026-10-05T06:28:34Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "akkadian-empire",
+   "article": "Akkadian Empire",
+   "revision": 1380716987,
+   "checked": "2026-10-17T12:06:37Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "gilgamesh",
+   "article": "Epic of Gilgamesh",
+   "revision": 1377304124,
+   "checked": "2026-09-28T20:19:16Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "code-of-hammurabi",
+   "article": "Code of Hammurabi",
+   "revision": 1379098230,
+   "checked": "2026-10-07T23:27:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-kadesh",
+   "article": "Battle of Kadesh",
+   "revision": 1379654106,
+   "checked": "2026-10-11T04:19:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "bronze-age-collapse",
+   "article": "Late Bronze Age collapse",
+   "revision": 1380532683,
+   "checked": "2026-10-16T08:22:27Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "narmer",
+   "article": "Narmer",
+   "revision": 1378275264,
+   "checked": "2026-10-03T19:55:08Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "pyramid-of-djoser",
+   "article": "Pyramid of Djoser",
+   "revision": 1377051855,
+   "checked": "2026-09-27T17:48:26Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "great-pyramid",
+   "article": "Great Pyramid of Giza",
+   "revision": 1378503482,
+   "checked": "2026-10-04T20:17:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kerma",
+   "article": "Kerma culture",
+   "revision": 1378981508,
+   "checked": "2026-10-07T05:13:49Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hyksos",
+   "article": "Hyksos",
+   "revision": 1374864596,
+   "checked": "2026-09-14T14:11:10Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "nok",
+   "article": "Nok culture",
+   "revision": 1368847651,
+   "checked": "2026-08-11T11:52:32Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "bantu-expansion",
+   "article": "Bantu expansion",
+   "revision": 1380028392,
+   "checked": "2026-10-13T10:22:08Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "amarna",
+   "article": "Amarna Period",
+   "revision": 1374109675,
+   "checked": "2026-09-09T22:27:21Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tutankhamun",
+   "article": "Tutankhamun",
+   "revision": 1380907534,
+   "checked": "2026-10-18T18:09:15Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "newgrange",
+   "article": "Newgrange",
+   "revision": 1379955680,
+   "checked": "2026-10-12T22:44:06Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "otzi",
+   "article": "Ötzi",
+   "revision": 1379788239,
+   "checked": "2026-10-11T23:25:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "stonehenge",
+   "article": "Stonehenge",
+   "revision": 1377824638,
+   "checked": "2026-10-01T09:27:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "knossos",
+   "article": "Knossos",
+   "revision": 1374770779,
+   "checked": "2026-09-14T00:53:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "thera-eruption",
+   "article": "Minoan eruption",
+   "revision": 1371472615,
+   "checked": "2026-08-26T17:15:43Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mycenae",
+   "article": "Mycenae",
+   "revision": 1375201530,
+   "checked": "2026-09-16T11:53:57Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sintashta",
+   "article": "Sintashta culture",
+   "revision": 1375603158,
+   "checked": "2026-09-18T20:34:31Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "indus-valley",
+   "article": "Indus Valley Civilisation",
+   "revision": 1375705806,
+   "checked": "2026-09-19T14:12:15Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "rigveda",
+   "article": "Rigveda",
+   "revision": 1379167949,
+   "checked": "2026-10-08T09:16:12Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "liangzhu",
+   "article": "Liangzhu culture",
+   "revision": 1375049632,
+   "checked": "2026-09-15T15:19:36Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sannai-maruyama",
+   "article": "Sannai-Maruyama Site",
+   "revision": 1365079404,
+   "checked": "2026-07-20T04:04:03Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "erlitou",
+   "article": "Erlitou culture",
+   "revision": 1373076296,
+   "checked": "2026-09-03T23:01:03Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "shang-dynasty",
+   "article": "Shang dynasty",
+   "revision": 1379221198,
+   "checked": "2026-10-08T17:33:33Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-muye",
+   "article": "Battle of Muye",
+   "revision": 1374831768,
+   "checked": "2026-09-14T09:38:53Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "caral",
+   "article": "Caral–Supe civilization",
+   "revision": 1375529882,
+   "checked": "2026-09-18T10:10:08Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "valdivia",
+   "article": "Valdivia culture",
+   "revision": 1343001907,
+   "checked": "2026-03-11T18:21:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "poverty-point",
+   "article": "Poverty Point",
+   "revision": 1370195393,
+   "checked": "2026-08-19T17:45:41Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "paso-de-la-amada",
+   "article": "Paso de la Amada",
+   "revision": 1354357876,
+   "checked": "2026-05-15T22:44:31Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "olmec-san-lorenzo",
+   "article": "San Lorenzo Tenochtitlán",
+   "revision": 1353658986,
+   "checked": "2026-05-11T16:16:24Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "austronesian-expansion",
+   "article": "Austronesian peoples",
+   "revision": 1378868574,
+   "checked": "2026-10-06T16:40:21Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "lapita",
+   "article": "Lapita culture",
+   "revision": 1374201618,
+   "checked": "2026-09-10T13:38:10Z",
+   "ok": true,
+   "missing": []
+  }
+ ]
+}
