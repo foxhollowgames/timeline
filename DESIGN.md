@@ -121,7 +121,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 | 1 | 4000–1000 BCE | 38 events |
 | 2 | 1000 BCE–1 CE | 40 events |
 | 3 | 1–1000 CE | 40 events |
-| 4 | 1000–1500 CE | planned |
+| 4 | 1000–1500 CE | 44 events |
 | 5 | 1500–1800 CE | planned |
 | 6 | 1800–2026 | planned |
 | 7 | Church history, 1847–2026 | planned |

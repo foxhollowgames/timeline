@@ -944,6 +944,358 @@
    "checked": "2026-10-14T23:02:50Z",
    "ok": true,
    "missing": []
+  },
+  {
+   "id": "great-schism",
+   "article": "East–West Schism",
+   "revision": 1379715932,
+   "checked": "2026-10-11T14:43:22Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "norman-conquest",
+   "article": "Norman Conquest",
+   "revision": 1376237996,
+   "checked": "2026-09-22T23:50:05Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "university-of-bologna",
+   "article": "University of Bologna",
+   "revision": 1380796972,
+   "checked": "2026-10-17T23:38:44Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "magna-carta",
+   "article": "Magna Carta",
+   "revision": 1379714334,
+   "checked": "2026-10-11T14:30:57Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hundred-years-war",
+   "article": "Hundred Years' War",
+   "revision": 1380855710,
+   "checked": "2026-10-18T10:41:38Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "black-death",
+   "article": "Black Death",
+   "revision": 1377102371,
+   "checked": "2026-09-27T22:20:21Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "gutenberg",
+   "article": "Johannes Gutenberg",
+   "revision": 1380795574,
+   "checked": "2026-10-17T23:21:29Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "fall-of-constantinople",
+   "article": "Fall of Constantinople",
+   "revision": 1380471388,
+   "checked": "2026-10-15T22:26:38Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "granada-1492",
+   "article": "Granada War",
+   "revision": 1379436545,
+   "checked": "2026-10-10T00:19:54Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "first-crusade-jerusalem",
+   "article": "Siege of Jerusalem (1099)",
+   "revision": 1380213720,
+   "checked": "2026-10-14T13:00:41Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "saladin-jerusalem",
+   "article": "Siege of Jerusalem (1187)",
+   "revision": 1380559918,
+   "checked": "2026-10-16T13:59:06Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sack-of-baghdad",
+   "article": "Siege of Baghdad (1258)",
+   "revision": 1378473365,
+   "checked": "2026-10-04T17:49:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "ain-jalut",
+   "article": "Battle of Ain Jalut",
+   "revision": 1380893739,
+   "checked": "2026-10-18T16:04:02Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "ottoman-empire",
+   "article": "Ottoman Empire",
+   "revision": 1380557792,
+   "checked": "2026-10-16T13:37:37Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tale-of-genji",
+   "article": "The Tale of Genji",
+   "revision": 1374928970,
+   "checked": "2026-09-14T22:15:53Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "bi-sheng",
+   "article": "Bi Sheng",
+   "revision": 1362877187,
+   "checked": "2026-07-06T19:46:47Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kamakura",
+   "article": "Kamakura shogunate",
+   "revision": 1372326609,
+   "checked": "2026-08-31T07:38:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mongol-empire",
+   "article": "Mongol Empire",
+   "revision": 1379969987,
+   "checked": "2026-10-13T00:34:03Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "yuan-dynasty",
+   "article": "Yuan dynasty",
+   "revision": 1379512616,
+   "checked": "2026-10-10T12:08:25Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "ming-dynasty",
+   "article": "Ming dynasty",
+   "revision": 1377790576,
+   "checked": "2026-10-01T03:33:48Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "zheng-he",
+   "article": "Zheng He",
+   "revision": 1380488200,
+   "checked": "2026-10-16T01:02:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "forbidden-city",
+   "article": "Forbidden City",
+   "revision": 1380600836,
+   "checked": "2026-10-16T19:15:14Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "timur",
+   "article": "Timurid Empire",
+   "revision": 1380924992,
+   "checked": "2026-10-18T20:34:25Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "brihadisvara",
+   "article": "Brihadisvara Temple, Thanjavur",
+   "revision": 1380661158,
+   "checked": "2026-10-17T03:23:12Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "delhi-sultanate",
+   "article": "Delhi Sultanate",
+   "revision": 1380501959,
+   "checked": "2026-10-16T03:12:04Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "vijayanagara",
+   "article": "Vijayanagara Empire",
+   "revision": 1380759545,
+   "checked": "2026-10-17T18:16:21Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "angkor-wat",
+   "article": "Angkor Wat",
+   "revision": 1379964727,
+   "checked": "2026-10-12T23:57:39Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "majapahit",
+   "article": "Majapahit",
+   "revision": 1379545208,
+   "checked": "2026-10-10T16:33:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "ayutthaya",
+   "article": "Ayutthaya Kingdom",
+   "revision": 1380653870,
+   "checked": "2026-10-17T02:15:53Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "great-zimbabwe",
+   "article": "Great Zimbabwe",
+   "revision": 1380348187,
+   "checked": "2026-10-15T04:45:30Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "lalibela",
+   "article": "Lalibela",
+   "revision": 1376595937,
+   "checked": "2026-09-25T03:14:36Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mansa-musa",
+   "article": "Mansa Musa",
+   "revision": 1380333093,
+   "checked": "2026-10-15T02:52:49Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kilwa",
+   "article": "Kilwa Sultanate",
+   "revision": 1376448338,
+   "checked": "2026-09-24T05:17:22Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kongo",
+   "article": "Kingdom of Kongo",
+   "revision": 1380219064,
+   "checked": "2026-10-14T13:49:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "songhai",
+   "article": "Songhai Empire",
+   "revision": 1380150616,
+   "checked": "2026-10-14T02:17:04Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "lanse-aux-meadows",
+   "article": "L'Anse aux Meadows",
+   "revision": 1380499184,
+   "checked": "2026-10-16T02:40:15Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "cahokia",
+   "article": "Cahokia",
+   "revision": 1380096105,
+   "checked": "2026-10-13T19:29:16Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "inca-rise",
+   "article": "Inca Empire",
+   "revision": 1378979879,
+   "checked": "2026-10-07T04:59:12Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tenochtitlan",
+   "article": "Tenochtitlan",
+   "revision": 1377746652,
+   "checked": "2026-09-30T23:27:50Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "chan-chan",
+   "article": "Chan Chan",
+   "revision": 1380421844,
+   "checked": "2026-10-15T16:50:07Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "columbus-1492",
+   "article": "Voyages of Christopher Columbus",
+   "revision": 1380766963,
+   "checked": "2026-10-17T19:18:37Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hawaii-settled",
+   "article": "History of Hawaii",
+   "revision": 1380552219,
+   "checked": "2026-10-16T12:39:17Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "rapa-nui-settled",
+   "article": "Easter Island",
+   "revision": 1379969271,
+   "checked": "2026-10-13T00:28:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "aotearoa-settled",
+   "article": "History of New Zealand",
+   "revision": 1376928231,
+   "checked": "2026-09-27T01:15:15Z",
+   "ok": true,
+   "missing": []
   }
  ]
 }
