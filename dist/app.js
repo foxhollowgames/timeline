@@ -3,7 +3,7 @@
 
 import { createGlobe } from './globe.js';
 import { createScrubber } from './scrubber.js';
-import { formatYear, formatRange, yearsPerU, yearToU, zoomView } from './time-scale.js';
+import { formatYear, formatRange, yearsPerU, yearToU, zoomView, WINDOW_SHARE } from './time-scale.js';
 import { loadEvents, stripBands, isActive, eventStops, nextStop, previousStop } from './events.js';
 import { createPins, globeView } from './pins.js';
 import { createCard } from './card.js';
@@ -18,6 +18,9 @@ const START_YEAR = -600;
 const TRAIL_WINDOWS = 3; // the trail covers three window widths before the window
 // Tier 2 history shows once the strip shows this many years or fewer (DESIGN.md Q5).
 const TIER_2_YEARS = 1500;
+// Jumping to an event zooms the strip until the window spans at most this many years,
+// so it shows only events within about a decade of the one chosen.
+const JUMP_WINDOW_YEARS = 20;
 
 function setStatus(message, id = 'status') {
   $(id).textContent = message;
@@ -184,10 +187,11 @@ async function start() {
   // ---------- Selecting events ----------
   const bandYear = band => Math.round((band.start + band.end) / 2);
   function moveTo(event) {
-    // A second-tier history event needs the strip zoomed in far enough to show it.
-    if (event.volume === 'history' && event.tier === 2) {
-      const years = (scrubber.view.u1 - scrubber.view.u0) * yearsPerU(yearToU(event.start));
-      if (years > TIER_2_YEARS) scrubber.setView(zoomView(scrubber.view, (TIER_2_YEARS * 0.8) / years, yearToU(event.start)));
+    // Zoom in so the window stays near the event. This also shows second-tier history.
+    if (event.start != null) {
+      const u = yearToU(event.start), most = JUMP_WINDOW_YEARS / WINDOW_SHARE;
+      const years = (scrubber.view.u1 - scrubber.view.u0) * yearsPerU(u);
+      if (years > most) scrubber.setView(zoomView(scrubber.view, most / years, u));
     }
     const window = scrubber.window();
     if (isActive(event, window, scrubber.year, data.bands)) return;
