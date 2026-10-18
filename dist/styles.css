@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap');
+
+/* Colors and the globe scene follow the conference globe. */
+:root {
+  color-scheme: dark;
+  --bg: #060b16;
+  --ink: #f0f5f8;
+  --muted: #a7b6c8;
+  --faint: #7f93a8;
+  --line: #b4d4e822;
+  --blue: #9eddeb;
+  --gold: #efcc88;
+  --panel: #101827ed;
+  --control: #111b2dd9;
+  --timeline-height: 184px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px 'DM Sans', system-ui, sans-serif; overflow: hidden; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; border: 1px solid var(--line); background: transparent; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+button:disabled { opacity: .35; cursor: default; }
+a { color: inherit; text-underline-offset: 4px; }
+button:focus-visible, a:focus-visible, input:focus-visible, .strip:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+[hidden] { display: none !important; }
+
+/* Header */
+.site-header { height: 72px; position: absolute; top: 0; left: 0; right: 0; z-index: 20; display: flex; align-items: center; padding: 0 40px; background: linear-gradient(var(--bg), #060b1600); pointer-events: none; }
+.brand { pointer-events: auto; text-decoration: none; font-size: 14px; letter-spacing: .16em; font-weight: 600; color: var(--blue); display: flex; gap: 10px; align-items: baseline; }
+.brand span { color: var(--ink); font-weight: 500; }
+
+main { height: 100dvh; min-height: 480px; position: relative; }
+
+/* Globe */
+.globe-stage { position: absolute; inset: 0 0 var(--timeline-height); overflow: hidden; background: radial-gradient(ellipse at 52% 52%, #0f264737 0, transparent 63%); }
+#scene { position: absolute; inset: 0; }
+#scene canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.year-overview { position: absolute; left: 42px; bottom: 32px; max-width: 320px; pointer-events: none; }
+.year-label { font-size: 12px; letter-spacing: .13em; color: var(--muted); }
+.year-overview > strong { font-family: 'Libre Caslon Display', Georgia, serif; font-weight: 400; font-size: 64px; display: block; line-height: 1.15; letter-spacing: -.02em; }
+.year-overview > p { font-size: 14px; color: var(--muted); margin: 6px 0 0; line-height: 1.5; }
+.year-overview > .overview-empty { color: var(--faint); font-size: 13px; }
+.globe-controls { position: absolute; right: 38px; bottom: 32px; display: flex; gap: 6px; z-index: 4; }
+.globe-controls button { width: 43px; height: 43px; border-radius: 50%; background: var(--control); backdrop-filter: blur(16px); border-color: #c7e1ff22; font-size: 22px; line-height: 1; box-shadow: 0 5px 24px #0002; }
+.status { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); padding: 13px 18px; border-radius: 24px; background: #0a142de8; font-size: 14px; max-width: 80%; text-align: center; z-index: 7; margin: 0; }
+
+/* Timeline */
+.timeline { height: var(--timeline-height); position: absolute; left: 0; right: 0; bottom: 0; border-top: 1px solid #a3c4e51c; background: linear-gradient(180deg, #0c1422f2, #080f1e); padding: 14px 42px 14px; z-index: 12; display: flex; flex-direction: column; }
+.timeline-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 40px; flex-shrink: 0; }
+.year-stepper { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.year-stepper input { width: 150px; font-size: 22px; font-weight: 500; background: none; text-align: center; border: 1px solid transparent; border-radius: 10px; padding: 3px 6px; }
+.year-stepper input:hover { border-color: var(--line); }
+.year-stepper input[aria-invalid="true"] { border-color: #e98b7a88; }
+.event-step { display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 12px; border-radius: 20px; font-size: 13px; color: var(--muted); white-space: nowrap; }
+.event-step [aria-hidden] { font-size: 20px; line-height: 1; }
+.strip-zoom { display: flex; gap: 6px; flex-shrink: 0; }
+.strip-zoom button { height: 34px; min-width: 34px; border-radius: 20px; font-size: 18px; color: var(--muted); line-height: 1; }
+.strip-zoom .fit { font-size: 13px; padding: 0 12px; }
+
+.strip { position: relative; flex: 1; min-height: 70px; margin-top: 8px; overflow-x: clip; cursor: ew-resize; touch-action: none; user-select: none; -webkit-user-select: none; border-radius: 8px; }
+.strip-bands, .strip-density, .strip-ticks { position: absolute; inset: 0; pointer-events: none; }
+.strip-bands i { position: absolute; top: 0; bottom: 22px; background: repeating-linear-gradient(135deg, #8aa9c40b 0 6px, transparent 6px 12px); border-left: 1px dashed #8aa9c41f; border-right: 1px dashed #8aa9c41f; }
+.strip-axis { position: absolute; left: 0; right: 0; bottom: 22px; height: 2px; background: #8aa9c44a; pointer-events: none; }
+.strip-window { position: absolute; top: 4px; bottom: 22px; background: #efcc8818; border-left: 1px solid #efcc8855; border-right: 1px solid #efcc8855; pointer-events: none; transform: translateX(0); }
+.strip-thumb { position: absolute; bottom: 14px; width: 18px; height: 18px; margin-left: -9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 5px #efcc8812, 0 0 15px #efcc8840; pointer-events: none; }
+.strip-thumb::before { content: ''; position: absolute; left: 8px; bottom: 16px; width: 2px; height: 40px; background: linear-gradient(#efcc8800, #efcc88aa); }
+.strip-ticks span { position: absolute; bottom: 0; transform: translateX(-50%); font-size: 12px; color: #91a3b8; white-space: nowrap; }
+.strip-ticks span::before { content: ''; position: absolute; left: 50%; bottom: 18px; width: 1px; height: 6px; background: #8aa9c466; }
+.strip-ticks span.major { color: var(--muted); }
+.strip-ticks span.edge-start { transform: none; }
+.strip-ticks span.edge-start::before { left: 0; }
+.strip-ticks span.edge-end { transform: translateX(-100%); }
+.strip-ticks span.edge-end::before { left: auto; right: 0; }
+.strip-ticks span.major::before { height: 10px; background: #8aa9c4aa; }
+
+.strip-overview { position: relative; height: 10px; margin-top: 8px; border-radius: 5px; background: #8aa9c414; cursor: grab; touch-action: none; flex-shrink: 0; }
+.strip-overview:active { cursor: grabbing; }
+.overview-bands i { position: absolute; top: 0; bottom: 0; }
+.overview-bands i.compressed { background: repeating-linear-gradient(135deg, #8aa9c41a 0 3px, transparent 3px 6px); }
+.overview-view { position: absolute; top: -2px; bottom: -2px; min-width: 6px; border: 1px solid #9eddeb88; border-radius: 6px; background: #9eddeb1c; }
+.overview-year { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--gold); border-radius: 1px; }
+
+@media (min-width: 1500px) {
+  .year-overview { left: 55px; }
+  .timeline { padding-left: 55px; padding-right: 55px; }
+}
+@media (max-width: 1000px) {
+  .site-header { padding: 0 26px; }
+  .year-overview { left: 26px; bottom: 22px; }
+  .year-overview > strong { font-size: 50px; }
+  .globe-controls { right: 24px; bottom: 22px; }
+  .timeline { padding-left: 26px; padding-right: 26px; }
+}
+@media (max-width: 650px) {
+  :root { --timeline-height: 176px; }
+  .site-header { height: 60px; padding: 0 16px; }
+  .brand { font-size: 12px; }
+  .year-overview { left: 16px; bottom: 16px; max-width: 210px; }
+  .year-label { display: none; }
+  .year-overview > strong { font-size: 34px; }
+  .year-overview > p { font-size: 12px; margin-top: 2px; }
+  .year-overview > .overview-empty { display: none; }
+  .globe-controls { right: 16px; bottom: 16px; flex-direction: column; }
+  .globe-controls button { width: 38px; height: 38px; font-size: 19px; }
+  .timeline { padding: 12px 16px; }
+  .timeline-heading { gap: 6px; }
+  .year-stepper { gap: 4px; }
+  .year-stepper input { width: 108px; font-size: 18px; padding: 3px 2px; }
+  .event-step { padding: 0 9px; height: 32px; }
+  .event-step .step-label { display: none; }
+  .strip-zoom { gap: 4px; }
+  .strip-zoom button { height: 32px; min-width: 32px; }
+  .strip-zoom .fit { padding: 0 9px; font-size: 12px; }
+  .strip-ticks span { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}

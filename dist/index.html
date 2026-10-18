@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#060b16">
+  <meta name="description" content="Explore the events of the scriptures beside world history on a globe with a timeline.">
+  <title>Wayfinder Timeline</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23efcc88' stroke-width='2'/%3E%3Cellipse cx='16' cy='16' rx='5' ry='12' fill='none' stroke='%23efcc88'/%3E%3Cpath d='M4 16h24' stroke='%23efcc88'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=1">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script>
+  <script type="module" src="app.js?v=1"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../">WAYFINDER <span>TIMELINE</span></a>
+  </header>
+  <main>
+    <section id="globe-stage" class="globe-stage" aria-label="Globe">
+      <div id="scene"></div>
+      <div class="year-overview">
+        <span class="year-label">SELECTED YEAR</span>
+        <strong id="overview-year">600 BCE</strong>
+        <p id="overview-window">Showing events from 650–550 BCE</p>
+        <p class="overview-empty">No events are on the globe yet.</p>
+      </div>
+      <div class="globe-controls" aria-label="Globe controls">
+        <button id="globe-zoom-in" aria-label="Zoom in on the globe">+</button>
+        <button id="globe-zoom-out" aria-label="Zoom out from the globe">−</button>
+        <button id="globe-reset" aria-label="Reset the globe view">⟲</button>
+      </div>
+      <p id="status" class="status" role="status" hidden></p>
+    </section>
+    <section class="timeline" aria-label="Timeline">
+      <div class="timeline-heading">
+        <div class="year-stepper">
+          <button id="previous-event" class="event-step" disabled title="No events are loaded yet"><span aria-hidden="true">‹</span><span class="step-label">Previous event</span></button>
+          <input id="year-input" type="text" autocomplete="off" spellcheck="false" aria-label="Selected year. Type a year such as 701 BCE or 33 CE." value="600 BCE">
+          <button id="next-event" class="event-step" disabled title="No events are loaded yet"><span class="step-label">Next event</span><span aria-hidden="true">›</span></button>
+        </div>
+        <div class="strip-zoom" aria-label="Timeline zoom">
+          <button id="strip-zoom-out" aria-label="Show more years">−</button>
+          <button id="strip-zoom-in" aria-label="Show fewer years">+</button>
+          <button id="strip-fit" class="fit">All years</button>
+        </div>
+      </div>
+      <div id="strip" class="strip" aria-label="Year. Use the arrow keys to move through time. Use plus and minus to zoom."></div>
+      <div id="strip-overview" class="strip-overview" title="Drag to move along the timeline"></div>
+    </section>
+  </main>
+</body>
+</html>
