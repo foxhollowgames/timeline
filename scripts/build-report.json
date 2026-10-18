@@ -1,7 +1,7 @@
 {
  "stats": {
   "chapters": 1568,
-  "events": 1769,
+  "events": 1785,
   "noPlace": 488,
   "skipped": [
    {
@@ -76,8 +76,8 @@
    }
   ],
   "scopedPlaces": 21,
-  "scriptureEvents": 403,
-  "chaptersCovered": 854,
+  "scriptureEvents": 419,
+  "chaptersCovered": 878,
   "chaptersInNoEvent": [],
   "historyRegions": {
    "Africa": 37,
