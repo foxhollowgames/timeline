@@ -1296,6 +1296,350 @@
    "checked": "2026-09-27T01:15:15Z",
    "ok": true,
    "missing": []
+  },
+  {
+   "id": "ninety-five-theses",
+   "article": "Ninety-five Theses",
+   "revision": 1378374690,
+   "checked": "2026-10-04T04:57:26Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "magellan-expedition",
+   "article": "Magellan expedition",
+   "revision": 1380849730,
+   "checked": "2026-10-18T09:39:00Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "copernicus",
+   "article": "Nicolaus Copernicus",
+   "revision": 1375851478,
+   "checked": "2026-09-20T13:32:36Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "spanish-armada",
+   "article": "Spanish Armada",
+   "revision": 1379401009,
+   "checked": "2026-10-09T19:54:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "king-james-bible",
+   "article": "King James Version",
+   "revision": 1378211987,
+   "checked": "2026-10-03T14:22:00Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "thirty-years-war",
+   "article": "Thirty Years' War",
+   "revision": 1380801822,
+   "checked": "2026-10-18T00:25:53Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "galileo-dialogue",
+   "article": "Galileo Galilei",
+   "revision": 1380533313,
+   "checked": "2026-10-16T08:31:31Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "peace-of-westphalia",
+   "article": "Peace of Westphalia",
+   "revision": 1379627002,
+   "checked": "2026-10-11T01:28:21Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-vienna",
+   "article": "Battle of Vienna",
+   "revision": 1380250541,
+   "checked": "2026-10-14T17:47:02Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "newton-principia",
+   "article": "Philosophiæ Naturalis Principia Mathematica",
+   "revision": 1379860684,
+   "checked": "2026-10-12T08:40:10Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "saint-petersburg",
+   "article": "Saint Petersburg",
+   "revision": 1380823768,
+   "checked": "2026-10-18T03:58:54Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "storming-of-the-bastille",
+   "article": "Storming of the Bastille",
+   "revision": 1380044615,
+   "checked": "2026-10-13T12:52:27Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "safavid-iran",
+   "article": "Safavid Iran",
+   "revision": 1380402246,
+   "checked": "2026-10-15T14:36:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "suleiman",
+   "article": "Suleiman the Magnificent",
+   "revision": 1379574711,
+   "checked": "2026-10-10T20:24:05Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "atlantic-slave-trade",
+   "article": "Atlantic slave trade",
+   "revision": 1380332797,
+   "checked": "2026-10-15T02:50:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tondibi",
+   "article": "Battle of Tondibi",
+   "revision": 1370591218,
+   "checked": "2026-08-22T00:41:12Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "nzinga",
+   "article": "Nzinga of Ndongo and Matamba",
+   "revision": 1379301327,
+   "checked": "2026-10-09T03:09:30Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "gondar",
+   "article": "Gondar",
+   "revision": 1375905154,
+   "checked": "2026-09-20T19:59:06Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "cape-colony",
+   "article": "Dutch Cape Colony",
+   "revision": 1380778000,
+   "checked": "2026-10-17T20:41:22Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "asante-empire",
+   "article": "Ashanti Empire",
+   "revision": 1375035207,
+   "checked": "2026-09-15T13:53:54Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "panipat-1526",
+   "article": "First Battle of Panipat",
+   "revision": 1370618857,
+   "checked": "2026-08-22T03:18:52Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "taj-mahal",
+   "article": "Taj Mahal",
+   "revision": 1378868244,
+   "checked": "2026-10-06T16:37:17Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "plassey",
+   "article": "Battle of Plassey",
+   "revision": 1370586228,
+   "checked": "2026-08-22T00:08:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "macau",
+   "article": "Portuguese Macau",
+   "revision": 1379972966,
+   "checked": "2026-10-13T00:56:55Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "imjin-war",
+   "article": "Imjin War",
+   "revision": 1380439430,
+   "checked": "2026-10-15T18:44:41Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sekigahara",
+   "article": "Battle of Sekigahara",
+   "revision": 1380043536,
+   "checked": "2026-10-13T12:42:53Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tokugawa-shogunate",
+   "article": "Tokugawa shogunate",
+   "revision": 1378886313,
+   "checked": "2026-10-06T18:48:02Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "qing-beijing",
+   "article": "Qing dynasty",
+   "revision": 1378236005,
+   "checked": "2026-10-03T16:48:33Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "malacca-1511",
+   "article": "Capture of Malacca (1511)",
+   "revision": 1378377591,
+   "checked": "2026-10-04T05:20:59Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "manila-1571",
+   "article": "Manila",
+   "revision": 1377448756,
+   "checked": "2026-09-29T12:42:19Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "batavia",
+   "article": "Batavia, Dutch East Indies",
+   "revision": 1380592418,
+   "checked": "2026-10-16T18:10:36Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "dzungars",
+   "article": "Dzungar Khanate",
+   "revision": 1380901273,
+   "checked": "2026-10-18T17:11:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "fall-of-tenochtitlan",
+   "article": "Fall of Tenochtitlan",
+   "revision": 1371683304,
+   "checked": "2026-08-27T21:23:32Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "cajamarca",
+   "article": "Spanish conquest of the Inca Empire",
+   "revision": 1379022111,
+   "checked": "2026-10-07T12:33:24Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "potosi",
+   "article": "Potosí",
+   "revision": 1379332472,
+   "checked": "2026-10-09T08:39:18Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "jamestown",
+   "article": "Jamestown, Virginia",
+   "revision": 1380238160,
+   "checked": "2026-10-14T16:21:44Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "plymouth-colony",
+   "article": "Plymouth Colony",
+   "revision": 1374288680,
+   "checked": "2026-09-11T02:00:59Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "declaration-of-independence",
+   "article": "United States Declaration of Independence",
+   "revision": 1379685614,
+   "checked": "2026-10-11T09:20:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "us-constitution",
+   "article": "Constitution of the United States",
+   "revision": 1378575308,
+   "checked": "2026-10-05T02:06:22Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "haitian-revolution",
+   "article": "Haitian Revolution",
+   "revision": 1380372849,
+   "checked": "2026-10-15T10:16:16Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tasman-1642",
+   "article": "Abel Tasman",
+   "revision": 1374112601,
+   "checked": "2026-09-09T22:59:38Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "cook-first-voyage",
+   "article": "First voyage of James Cook",
+   "revision": 1369795522,
+   "checked": "2026-08-17T05:52:54Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "first-fleet",
+   "article": "First Fleet",
+   "revision": 1369005293,
+   "checked": "2026-08-12T08:43:30Z",
+   "ok": true,
+   "missing": []
   }
  ]
 }
