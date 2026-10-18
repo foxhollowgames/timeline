@@ -2,7 +2,7 @@
 
 Wayfinder Timeline is a globe with a timeline. It will place the events of the scriptures beside world history. The full plan is in [DESIGN.md](DESIGN.md).
 
-This is milestone 5 of 6, batch 1 of 7. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map opens beside the globe and follows the same timeline. World history now covers 4000–1000 BCE, with 38 sourced events. More eras follow in batches.
+This is milestone 5 of 6, batch 2 of 7. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map opens beside the globe and follows the same timeline. World history now covers 4000 BCE–1 CE, with 78 sourced events. More eras follow in batches.
 
 ## Run locally
 

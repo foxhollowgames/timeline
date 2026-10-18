@@ -119,7 +119,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 | Batch | Era | Status |
 | --- | --- | --- |
 | 1 | 4000–1000 BCE | 38 events |
-| 2 | 1000 BCE–1 CE | planned |
+| 2 | 1000 BCE–1 CE | 40 events |
 | 3 | 1–1000 CE | planned |
 | 4 | 1000–1500 CE | planned |
 | 5 | 1500–1800 CE | planned |
@@ -128,7 +128,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 
 - **Data file.** `scripts/history/batch-N.json`. Each event has `id`, `title`, `start`, `end`, `dateLabel`, `tier`, `region`, `place`, `lat`, `lng`, `summary`, and `source`. A source is `{ wiki, quote }` for Wikipedia, or `{ title, publisher, url, quote }` otherwise. `quote` may be a list when the start and end need separate quotes.
 - **Display.** History pins are hollow grey hexagons, smaller than scripture pins, so shape and fill set them apart without color. In a group a scripture event always leads. History has its own legend toggle. The event buttons and the density bar follow scripture only.
-- **Also at this time.** A card lists up to four events of the other kind whose dates fall within 150 years. Order-only events get none (Q28).
+- **Also at this time.** A card lists up to four events of the other kind whose dates fall within 150 years. Closer dates rank first, and short events rank above centuries-long eras. Order-only events get none (Q28).
 
 ## 5. Globe and pins
 
