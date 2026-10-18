@@ -1,0 +1,264 @@
+{
+  "about": "Scripture events, batch 13: the Doctrine and Covenants, 1823–1831 (DESIGN.md section 3). Same fields as batch-1.json. Covered sections are listed in `chapters`; this batch has no `covers` range, because batch 14 finishes the volume.",
+  "batch": 13,
+  "era": "The Restoration in New York and Ohio, 1823–1831",
+  "covers": [],
+  "events": [
+    {
+      "id": "moroni-visits-joseph-smith",
+      "volume": "dc",
+      "title": "Moroni tells Joseph Smith that Elijah will come",
+      "chapters": ["dc-2"],
+      "verse": "dc-2:1",
+      "summary": "In September 1823, a heavenly messenger visits Joseph Smith near Palmyra, New York. Joseph later names him Moroni. Section 2 comes from Joseph's history, not a separate revelation text. The messenger quotes Malachi with changes. He says the Lord will reveal the priesthood by the hand of Elijah. The hearts of the children will turn to their fathers.",
+      "alsoRead": [{ "ref": "Malachi 4:5", "note": "The LORD says he will send Elijah the prophet." }]
+    },
+    {
+      "id": "the-lost-manuscript",
+      "volume": "dc",
+      "title": "The lost manuscript pages",
+      "chapters": ["dc-3", "dc-10"],
+      "place": "dc:harmony",
+      "verse": "dc-3:1",
+      "summary": "In 1828, Joseph Smith dictates the first part of the Book of Mormon. He is at Harmony, Pennsylvania. Martin Harris is his scribe and takes the 116 pages home to show his family. The pages are lost. The Lord says his work cannot be frustrated, but Joseph can still fall. Joseph loses his gift for a time. In 1829 a revelation says men plan to alter the lost pages. Joseph must not translate that part again."
+    },
+    {
+      "id": "early-helpers-are-called",
+      "volume": "dc",
+      "title": "Revelations call the first helpers in the work",
+      "chapters": ["dc-4", "dc-11", "dc-12", "dc-14", "dc-15", "dc-16"],
+      "place": "dc:harmony",
+      "verse": "dc-4:3",
+      "summary": "In 1829 several people come to Joseph Smith to learn their part in the work. Joseph Smith Sr. visits his son at Harmony. The revelation says that those who desire to serve God are called. Hyrum Smith is told to obtain the word before he declares it. Joseph Knight Sr. and the Whitmer brothers also receive revelations. John and Peter Whitmer Jr. are told that bringing souls to Christ matters most."
+    },
+    {
+      "id": "three-witnesses-promised",
+      "volume": "dc",
+      "title": "Three witnesses are promised a view of the plates",
+      "chapters": ["dc-5", "dc-17"],
+      "place": "dc:fayette",
+      "verse": "dc-17:1",
+      "summary": "In March 1829, Martin Harris asks to see the plates. The Lord says three witnesses will be shown them, but Harris must be humble first. In June, Joseph Smith finishes the translation at Fayette, New York. Oliver Cowdery, David Whitmer, and Martin Harris may see the plates by faith. They will also see the Urim and Thummim and the sword of Laban. They must then testify of what they see.",
+      "alsoRead": [{ "ref": "2 Nephi 27:12", "note": "Nephi foretells three witnesses to the book." }]
+    },
+    {
+      "id": "oliver-cowdery-as-scribe",
+      "volume": "dc",
+      "title": "Oliver Cowdery becomes the scribe and tries to translate",
+      "chapters": ["dc-6", "dc-8", "dc-9"],
+      "place": "dc:harmony",
+      "verse": "dc-8:2",
+      "summary": "Oliver Cowdery boards with Joseph Smith's parents and prays about the plates. In April 1829 he comes to Harmony and begins writing for Joseph. A revelation reminds him that God already gave him peace about the work. He is promised a gift to translate. The Lord says revelation comes to the mind and heart by the Holy Ghost. Oliver tries and does not succeed. He is told he must study it out in his mind before asking."
+    },
+    {
+      "id": "john-the-beloved-tarries",
+      "volume": "dc",
+      "title": "John the Beloved will stay until Christ returns",
+      "chapters": ["dc-7"],
+      "place": "dc:harmony",
+      "verse": "dc-7:3",
+      "summary": "In April 1829, Joseph Smith and Oliver Cowdery are translating at Harmony. They disagree about whether the apostle John died. They ask through the Urim and Thummim. The revelation says John asked for power over death. He wanted to bring souls to Christ. Christ granted that he would stay until the Second Coming. Peter's wish was to come to Christ in his kingdom.",
+      "alsoRead": [{ "ref": "John 21:22", "note": "Jesus asks Peter what it is to him if John remains." }]
+    },
+    {
+      "id": "aaronic-priesthood-restored",
+      "volume": "dc",
+      "title": "John the Baptist restores the Aaronic Priesthood",
+      "chapters": ["dc-13"],
+      "place": "dc:harmony",
+      "verse": "dc-13:1",
+      "summary": "In May 1829, Joseph Smith and Oliver Cowdery are translating at Harmony, Pennsylvania. The text raises a question about baptism. They go to pray near the Susquehanna River. Joseph's later history says John the Baptist appears to them. He lays his hands on them and confers the Priesthood of Aaron. It holds the keys of the ministering of angels, repentance, and baptism.",
+      "alsoRead": [{ "ref": "Matthew 3:16", "note": "John baptizes Jesus in the Jordan." }]
+    },
+    {
+      "id": "the-worth-of-souls",
+      "volume": "dc",
+      "title": "The worth of souls is great in the sight of God",
+      "chapters": ["dc-18"],
+      "place": "dc:fayette",
+      "verse": "dc-18:10",
+      "summary": "In June 1829, Joseph Smith receives a revelation at Fayette, New York. It tells Oliver Cowdery to build up the church on the written word. The worth of souls is great in God's sight. The Lord suffered death for all, so all may repent. Great is the joy of bringing even one soul to him. Twelve apostles will be called, and the three witnesses will search them out."
+    },
+    {
+      "id": "martin-harris-and-the-printing",
+      "volume": "dc",
+      "title": "Martin Harris is told to pay for printing the book",
+      "chapters": ["dc-19"],
+      "place": "dc:palmyra",
+      "verse": "dc-19:16",
+      "summary": "Martin Harris, a farmer near Palmyra, has agreed to pay for printing the book. The printer Egbert Grandin wants security. The revelation says Christ suffered for all, so the repentant need not suffer. Christ describes his own suffering, which made him bleed at every pore. Harris is told not to covet his property. He must pay the printer."
+    },
+    {
+      "id": "the-church-is-organized",
+      "volume": "dc",
+      "title": "The Church of Christ is organized",
+      "chapters": ["dc-20", "dc-21", "dc-22", "dc-23"],
+      "place": "dc:fayette",
+      "verse": "dc-21:1",
+      "summary": "On 6 April 1830, Joseph Smith and others meet in Fayette, New York. They gather at the home of Peter Whitmer Sr. They organize the Church of Christ. The Articles and Covenants set out its beliefs, offices, and ordinances. The group votes to accept Joseph and Oliver Cowdery as leaders. A revelation tells the church to receive Joseph's words as from the Lord. Earlier baptisms will not do, so new members must be baptized. Five early believers each learn their own duties."
+    },
+    {
+      "id": "emma-smith-an-elect-lady",
+      "volume": "dc",
+      "title": "Emma Smith is called an elect lady",
+      "chapters": ["dc-25"],
+      "place": "dc:harmony",
+      "verse": "dc-25:3",
+      "summary": "In July 1830, Joseph Smith dictates a revelation for his wife, Emma, at Harmony. Emma had been baptized at Colesville, New York, the month before. The revelation calls her an elect lady. She will comfort her husband and serve as his scribe. She is to expound scripture and exhort the church. She is to choose hymns for the church."
+    },
+    {
+      "id": "revelations-at-harmony",
+      "volume": "dc",
+      "title": "Common consent and the sacrament",
+      "chapters": ["dc-24", "dc-26", "dc-27"],
+      "place": "dc:harmony",
+      "verse": "dc-26:2",
+      "summary": "The church is a few months old. Joseph Smith has faced arrests and trials in Colesville. At Harmony, a revelation tells him that his strength lies in his calling. Another says the church must decide all things by common consent. In August 1830, Newel and Sally Knight visit. Joseph goes to get wine for the sacrament. A messenger meets him. What is eaten or drunk does not matter, if done for God's glory."
+    },
+    {
+      "id": "only-joseph-receives-revelation",
+      "volume": "dc",
+      "title": "Hiram Page's stone, and a mission to the Lamanites",
+      "chapters": ["dc-28", "dc-30", "dc-32"],
+      "place": "dc:fayette",
+      "verse": "dc-28:2",
+      "summary": "In September 1830, Hiram Page claims revelations through a stone. Joseph Smith has just moved to Fayette, New York. A revelation says only Joseph receives revelations that command the church. Oliver Cowdery is sent to preach to the Lamanites, meaning the American Indians. Peter Whitmer Jr. and others go with him. David Whitmer is rebuked for being persuaded by others."
+    },
+    {
+      "id": "the-gathering-of-the-elect",
+      "volume": "dc",
+      "title": "Christ will gather his elect",
+      "chapters": ["dc-29"],
+      "place": "dc:fayette",
+      "verse": "dc-29:7",
+      "summary": "A few days before the September 1830 conference, six elders meet at Fayette. The revelation says Christ will gather his elect, who hear his voice. Signs and judgments will come before he returns. The dead will rise, and all will be judged. The Lord explains that Adam's fall made choice real. Little children are redeemed through Christ."
+    },
+    {
+      "id": "new-converts-called-to-preach",
+      "volume": "dc",
+      "title": "New converts are called to preach",
+      "chapters": ["dc-31", "dc-33", "dc-34", "dc-35", "dc-36"],
+      "place": "dc:fayette",
+      "verse": "dc-33:8",
+      "summary": "In fall 1830, many new converts come to Fayette. Thomas B. Marsh is called to preach, and the Lord will care for his family. Ezra Thayre and Northrop Sweet are told to open their mouths. Young Orson Pratt is called to cry repentance. Sidney Rigdon, a former preacher from Ohio, becomes Joseph Smith's scribe. Edward Partridge, a hatter, is called to preach."
+    },
+    {
+      "id": "little-children-are-holy",
+      "volume": "dc",
+      "title": "Little children are holy through Christ",
+      "chapters": ["dc-74"],
+      "verse": "dc-74:7",
+      "summary": "Section 74 explains a passage in Paul's first letter to the Corinthians. It comes from Wayne County, New York, in 1830. In Paul's day some believers held to the law of Moses. They taught that children must be circumcised to be holy. The explanation says little children are holy through the atonement of Jesus Christ.",
+      "alsoRead": [{ "ref": "1 Corinthians 7:14", "note": "Paul says the children of believers are holy." }]
+    },
+    {
+      "id": "gather-to-ohio",
+      "volume": "dc",
+      "title": "The church is told to gather in Ohio",
+      "chapters": ["dc-37", "dc-38", "dc-39", "dc-40"],
+      "place": "dc:fayette",
+      "verse": "dc-38:27",
+      "summary": "In December 1830, a revelation tells the church to gather in Ohio. At the January 1831 conference in Fayette, members ask why. The Lord says to be one, or they are not his. In Ohio they will receive his law. A minister named James Covel promises to be baptized. He leaves within a day. A revelation says fear and worldly cares led him away."
+    },
+    {
+      "id": "the-law-of-the-church",
+      "volume": "dc",
+      "title": "Joseph Smith arrives in Kirtland and receives the law",
+      "chapters": ["dc-41", "dc-42", "dc-43", "dc-44"],
+      "place": "dc:kirtland",
+      "verse": "dc-42:61",
+      "summary": "Joseph Smith reaches Kirtland, Ohio, on 4 February 1831. Many new converts there are waiting for direction. Edward Partridge is called as the first bishop. The law of the church covers missions, morals, and care for the poor. Members are to consecrate their property, giving it to the bishop for all. A woman claims revelations for the church. The Lord says only one man is appointed to receive them."
+    },
+    {
+      "id": "signs-of-the-second-coming",
+      "volume": "dc",
+      "title": "The signs of Christ's coming",
+      "chapters": ["dc-45"],
+      "place": "dc:kirtland",
+      "verse": "dc-45:57",
+      "summary": "In March 1831, false newspaper reports trouble the members in Kirtland. A revelation repeats what Christ taught on the Mount of Olives. The Jews will be scattered and gathered. Signs will come before the Lord returns. He will stand on the Mount of Olives and show his wounds. The wise who take the Spirit as their guide will abide that day.",
+      "alsoRead": [{ "ref": "Matthew 24:3", "note": "The disciples ask on the Mount of Olives about his coming." }]
+    },
+    {
+      "id": "gifts-of-the-spirit",
+      "volume": "dc",
+      "title": "Gifts of the Spirit and the call to keep a history",
+      "chapters": ["dc-46", "dc-47", "dc-48"],
+      "place": "dc:kirtland",
+      "verse": "dc-46:8",
+      "summary": "Members in Kirtland ask who may attend their meetings. The revelation says meetings must not shut out those who seek. Members are to seek the best gifts of the Spirit. Each person receives a gift, so that all may benefit. John Whitmer is called to keep the church's history. The members must save money. The place for the city of Zion is not yet known."
+    },
+    {
+      "id": "shakers-and-false-spirits",
+      "volume": "dc",
+      "title": "A mission to the Shakers, and how to know true spirits",
+      "chapters": ["dc-49", "dc-50"],
+      "place": "dc:kirtland",
+      "verse": "dc-50:24",
+      "summary": "Leman Copley, a recent convert, once belonged to the Shakers. A revelation sends him with Sidney Rigdon and Parley Pratt to preach to them. It answers Shaker beliefs about baptism, marriage, and Christ's return. Ohio branches have seen fainting and strange claims of visions in their meetings. The Lord says what is of God brings light. Preacher and hearer are both built up when the Spirit teaches."
+    },
+    {
+      "id": "consecration-at-thompson",
+      "volume": "dc",
+      "title": "The Colesville Saints try consecration at Thompson",
+      "chapters": ["dc-51", "dc-54"],
+      "place": "dc:thompson",
+      "verse": "dc-51:9",
+      "summary": "About sixty members from Colesville, New York, arrive in Ohio under Newel Knight. They settle on Leman Copley's farm at Thompson. A revelation tells the bishop to give each family a portion by its needs. Copley then breaks his promise and makes them leave. The Lord tells the Colesville Saints to go on to Missouri."
+    },
+    {
+      "id": "elders-sent-to-missouri",
+      "volume": "dc",
+      "title": "Elders are sent to Missouri two by two",
+      "chapters": ["dc-52", "dc-53", "dc-55", "dc-56"],
+      "place": "dc:kirtland",
+      "verse": "dc-52:14",
+      "summary": "A church conference in Kirtland in June 1831 ordains the first high priests. The next day a revelation sends elders to Missouri two by two. They are to preach on the way. The Lord gives them a pattern so they will not be deceived. Sidney Gilbert is called as an agent for the church. William W. Phelps, a printer, is called to the church's work."
+    },
+    {
+      "id": "zion-in-missouri",
+      "volume": "dc",
+      "title": "Independence, Missouri, is named the center place of Zion",
+      "chapters": ["dc-57", "dc-58", "dc-59"],
+      "place": "dc:independence",
+      "verse": "dc-58:27",
+      "summary": "Joseph Smith reaches Independence, Jackson County, Missouri, in July 1831. A revelation names it the center place of Zion. A spot near the courthouse is chosen for a temple. The members are to buy land and settle there. The Lord tells them to do much good of their own free will. They are to keep the Sabbath day holy with thanks."
+    },
+    {
+      "id": "return-from-missouri",
+      "volume": "dc",
+      "title": "Danger on the river on the way back from Missouri",
+      "chapters": ["dc-60", "dc-61", "dc-62"],
+      "place": "dc:mcilwaines-bend",
+      "verse": "dc-62:3",
+      "summary": "In August 1831, Joseph Smith and about ten elders leave Independence by canoe. The Lord warns elders who hide their talent through fear. On the third day they meet danger on the Missouri River. A revelation warns of danger on the waters and gives them a new route. At Chariton they meet elders still on the way to Zion. Their testimony is recorded in heaven."
+    },
+    {
+      "id": "forgive-all-men",
+      "volume": "dc",
+      "title": "The Lord requires his people to forgive",
+      "chapters": ["dc-63", "dc-64"],
+      "place": "dc:kirtland",
+      "verse": "dc-64:10",
+      "summary": "Joseph Smith returns to Kirtland in August 1831. Many have left the church while he was away. A revelation says Zion must be bought with money, not taken by force. The members must gather to it slowly. They must speak of sacred things with care. In September the Lord says he will forgive whom he will. His people are required to forgive all."
+    },
+    {
+      "id": "the-book-of-commandments",
+      "volume": "dc",
+      "title": "The elders plan to publish the revelations",
+      "chapters": ["dc-1", "dc-65", "dc-66", "dc-67", "dc-68", "dc-69", "dc-70", "dc-133"],
+      "place": "dc:hiram",
+      "verse": "dc-1:38",
+      "summary": "In November 1831, elders meet at Hiram, Ohio. They plan a book of Joseph Smith's revelations. The Lord gives a preface that warns the world. His word will be fulfilled by his own voice or his servants'. Some elders question the wording, and the Lord challenges them to write one. They sign a statement that the revelations are true. Oliver Cowdery is to carry them to Missouri for printing. An appendix tells the Saints to leave Babylon and prepare for Christ."
+    },
+    {
+      "id": "answer-the-critics",
+      "volume": "dc",
+      "title": "Answer the critics, and a second bishop is called",
+      "chapters": ["dc-71", "dc-72"],
+      "place": "dc:hiram",
+      "verse": "dc-71:9",
+      "summary": "Ezra Booth, a former member, publishes letters against the church in an Ohio newspaper. A revelation tells Joseph Smith and Sidney Rigdon to stop translating for a time. They are to answer the critics openly. No weapon formed against them will prosper. In December, Newel K. Whitney is called as a bishop in Kirtland."
+    }
+  ]
+}
