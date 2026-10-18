@@ -1,0 +1,379 @@
+{
+  "about": "Scripture events, batch 4: Samuel and the united kingdom (DESIGN.md section 3). Same fields as batch-1.json.",
+  "batch": 4,
+  "era": "Samuel and the united kingdom",
+  "covers": [
+    { "book": "1-samuel", "chapters": [1, 31] },
+    { "book": "2-samuel", "chapters": [1, 24] },
+    { "book": "1-kings", "chapters": [1, 11] },
+    { "book": "1-chronicles", "chapters": [10, 29] },
+    { "book": "2-chronicles", "chapters": [1, 9] },
+    { "book": "ecclesiastes", "chapters": [1, 12] },
+    { "book": "song-of-solomon", "chapters": [1, 8] }
+  ],
+  "events": [
+    {
+      "id": "hannah-gives-samuel-to-the-lord",
+      "volume": "ot",
+      "title": "Hannah prays for a son and gives Samuel to the LORD",
+      "chapters": ["1-samuel-1", "1-samuel-2"],
+      "place": "b:shiloh",
+      "verse": "1-samuel-1:27",
+      "summary": "Hannah has no children, and each year at Shiloh she weeps. She prays and vows to give a son to the LORD. Eli the priest thinks she is drunk, then blesses her. She bears Samuel and brings him to Eli when he is weaned. Hannah sings that the LORD lifts up the poor. Eli's sons, Hophni and Phinehas, abuse their work as priests. A man of God says both sons will die on one day."
+    },
+    {
+      "id": "the-lord-calls-samuel",
+      "volume": "ot",
+      "title": "The LORD calls the boy Samuel",
+      "chapters": ["1-samuel-3"],
+      "place": "b:shiloh",
+      "verse": "1-samuel-3:10",
+      "summary": "The boy Samuel serves under Eli at Shiloh. One night a voice calls Samuel, and he runs to Eli. This happens three times before Eli understands. Eli tells Samuel to answer that the LORD's servant is listening. The LORD says he will judge Eli's house for his sons' sin. Eli makes Samuel tell him everything. All Israel learns that Samuel is a prophet."
+    },
+    {
+      "id": "the-ark-is-captured",
+      "volume": "ot",
+      "title": "The Philistines capture the ark of the covenant",
+      "chapters": ["1-samuel-4", "1-samuel-5", "1-samuel-6"],
+      "place": "b:aphek",
+      "verse": "1-samuel-4:11",
+      "summary": "Israel brings the ark of the covenant, the sacred chest, into battle. The Philistines win, take the ark, and kill Eli's sons. Eli hears the news, falls from his seat, and dies. In Ashdod the statue of the god Dagon falls before the ark. The LORD strikes the Philistine towns with tumors. After seven months they send the ark back on a cart pulled by two cows. The cows walk straight to Beth-shemesh."
+    },
+    {
+      "id": "samuel-at-mizpah",
+      "volume": "ot",
+      "title": "Samuel leads Israel back to the LORD at Mizpah",
+      "chapters": ["1-samuel-7"],
+      "place": "b:mizpah",
+      "verse": "1-samuel-7:12",
+      "summary": "The ark stays at Kiriath-jearim for twenty years. Samuel tells Israel to put away foreign gods and serve the LORD alone. The people gather at Mizpah to fast and confess. The Philistines attack, and the people beg Samuel to keep praying. The LORD thunders against the Philistines, and Israel chases them. Samuel sets up a stone and names it Ebenezer. The name means stone of help. He judges Israel from his home in Ramah."
+    },
+    {
+      "id": "israel-asks-for-a-king",
+      "volume": "ot",
+      "title": "Israel asks Samuel for a king",
+      "chapters": ["1-samuel-8"],
+      "place": "b:ramah",
+      "verse": "1-samuel-8:7",
+      "summary": "Samuel grows old, and his sons take bribes as judges. The elders ask for a king like the other nations have. Samuel is displeased and prays. The LORD says the people have rejected him as king, not Samuel. Samuel warns that a king will take their sons, fields, and flocks. The people still insist. The LORD tells Samuel to give them a king."
+    },
+    {
+      "id": "saul-anointed-king",
+      "volume": "ot",
+      "title": "Samuel anoints Saul as king",
+      "chapters": ["1-samuel-9", "1-samuel-10"],
+      "place": "b:ramah",
+      "verse": "1-samuel-10:1",
+      "summary": "Saul, a tall young man of Benjamin, searches for his father's lost donkeys. His servant takes him to Samuel. The LORD has told Samuel that this man will lead Israel. Samuel pours oil on Saul's head to anoint him. God gives Saul a new heart, and he prophesies with a group of prophets. At Mizpah the lot falls on Saul, who is hiding among the baggage. The people shout, “Long live the king!”"
+    },
+    {
+      "id": "saul-rescues-jabesh-gilead",
+      "volume": "ot",
+      "title": "Saul rescues Jabesh-gilead, and Samuel speaks to Israel",
+      "chapters": ["1-samuel-11", "1-samuel-12"],
+      "place": "b:jabesh-gilead",
+      "verse": "1-samuel-12:24",
+      "summary": "Nahash the Ammonite surrounds the town of Jabesh-gilead. He offers peace only if he may put out every right eye. God's Spirit comes on Saul, and he calls Israel to battle. Saul breaks the Ammonite camp at dawn. The people renew the kingdom at Gilgal. Samuel asks if he has ever cheated anyone, and they say no. He says it will go well if the people and their king obey."
+    },
+    {
+      "id": "saul-rejected-as-king",
+      "volume": "ot",
+      "title": "Saul disobeys, and the LORD rejects him as king",
+      "chapters": ["1-samuel-13", "1-samuel-14", "1-samuel-15"],
+      "place": "b:gilgal",
+      "verse": "1-samuel-15:22",
+      "summary": "The Philistines gather a huge army at Michmash. Saul waits seven days for Samuel, then offers the sacrifice himself. Samuel says Saul's kingdom will not last. Jonathan and his armor bearer attack a Philistine post alone, and panic spreads. Later Saul defeats Amalek but spares King Agag and the best animals. Samuel says obeying is better than sacrifice. The LORD rejects Saul as king."
+    },
+    {
+      "id": "david-anointed",
+      "volume": "ot",
+      "title": "Samuel anoints David",
+      "chapters": ["1-samuel-16"],
+      "place": "b:bethlehem",
+      "verse": "1-samuel-16:7",
+      "summary": "The LORD sends Samuel to Bethlehem to anoint a son of Jesse. Samuel admires the oldest son, but the LORD looks at the heart. Seven sons pass by, and none is chosen. The youngest, David, is brought in from the sheep. Samuel anoints him, and the LORD's Spirit comes on David. A troubling spirit torments Saul. David plays the harp for Saul, and the king finds relief."
+    },
+    {
+      "id": "david-and-goliath",
+      "volume": "ot",
+      "title": "David fights Goliath",
+      "chapters": ["1-samuel-17"],
+      "place": "b:elah",
+      "verse": "1-samuel-17:45",
+      "summary": "The Philistine champion Goliath challenges Israel for forty days. Saul and his army are afraid. David brings food to his brothers and hears the challenge. He tells Saul the LORD saved him from a lion and a bear. He takes off Saul's armor and chooses five smooth stones and his sling. He tells Goliath the battle is the LORD's. His stone strikes Goliath's forehead, and the giant falls."
+    },
+    {
+      "id": "jonathan-and-david",
+      "volume": "ot",
+      "title": "Jonathan protects David from Saul",
+      "chapters": ["1-samuel-18", "1-samuel-19", "1-samuel-20"],
+      "place": "b:gibeah",
+      "verse": "1-samuel-20:42",
+      "summary": "Saul's son Jonathan loves David and makes a covenant with him. Women sing that David has killed more than Saul. Saul grows jealous and throws his spear at David. Saul's daughter Michal marries David and lowers him from a window to escape. Jonathan tests his father at the new moon feast. Saul throws a spear at Jonathan too. Jonathan warns David with arrows in a field, and the friends part in tears."
+    },
+    {
+      "id": "saul-kills-the-priests-of-nob",
+      "volume": "ot",
+      "title": "Saul has the priests of Nob killed",
+      "chapters": ["1-samuel-21", "1-samuel-22"],
+      "place": "b:nob",
+      "verse": "1-samuel-22:23",
+      "summary": "David flees to the priests at Nob. The priest Ahimelech gives him the holy bread and Goliath's sword. Doeg the Edomite, Saul's herdsman, sees it. David escapes to Gath by pretending to be mad. He hides in the cave of Adullam, and about four hundred men join him. Doeg tells Saul about Ahimelech. On Saul's order, Doeg kills eighty-five priests. Ahimelech's son Abiathar escapes to David.",
+      "alsoRead": [{ "ref": "Mark 2:26", "note": "Jesus recalls David eating the holy bread." }]
+    },
+    {
+      "id": "david-spares-saul",
+      "volume": "ot",
+      "title": "David spares Saul's life",
+      "chapters": ["1-samuel-23", "1-samuel-24", "1-samuel-26"],
+      "place": "b:en-gedi",
+      "verse": "1-samuel-24:6",
+      "summary": "David rescues the town of Keilah from the Philistines. Saul hunts him through the wilderness with three thousand men. At En-gedi, Saul goes alone into the cave where David hides. David cuts off a corner of Saul's robe but will not harm the LORD's anointed. Saul weeps and says David will be king. Later David takes Saul's spear and water jar while he sleeps. Again David spares him."
+    },
+    {
+      "id": "abigail-stops-david",
+      "volume": "ot",
+      "title": "Abigail stops David's revenge",
+      "chapters": ["1-samuel-25"],
+      "place": "b:carmel-judah",
+      "verse": "1-samuel-25:32",
+      "summary": "Samuel dies, and Israel mourns him. David's men have guarded the flocks of Nabal, a rich and harsh man. David asks Nabal for food, and Nabal insults him. David arms four hundred men to kill every male in Nabal's house. Nabal's wife Abigail meets David on the road with food. She asks him not to shed blood he will regret. David blesses her and turns back. Nabal dies ten days later, and David marries Abigail."
+    },
+    {
+      "id": "david-among-the-philistines",
+      "volume": "ot",
+      "title": "David lives among the Philistines at Ziklag",
+      "chapters": ["1-samuel-27", "1-samuel-29", "1-samuel-30"],
+      "place": "b:ziklag",
+      "verse": "1-samuel-30:6",
+      "summary": "David crosses to the Philistines with six hundred men. King Achish of Gath gives him the town of Ziklag. David raids the peoples to the south and tells Achish he raided Judah. The Philistine commanders will not let David march with them to war. He returns to find Ziklag burned and the families taken. David finds strength in the LORD and chases the Amalekite raiders. He gets back every person and rules that all his men share the goods."
+    },
+    {
+      "id": "saul-at-endor",
+      "volume": "ot",
+      "title": "Saul consults the medium at Endor",
+      "chapters": ["1-samuel-28"],
+      "place": "b:endor",
+      "verse": "1-samuel-28:17",
+      "summary": "The Philistines gather for war, and Saul is afraid. The LORD gives him no answer. Samuel is dead, and Saul has driven mediums from the land. Saul puts on a disguise and visits a medium at Endor by night. He asks her to bring up Samuel. Samuel says the LORD has given the kingdom to David. He says Saul and his sons will die the next day."
+    },
+    {
+      "id": "saul-dies-at-gilboa",
+      "volume": "ot",
+      "title": "Saul and Jonathan die on Mount Gilboa",
+      "chapters": ["1-samuel-31", "1-chronicles-10", "2-samuel-1"],
+      "dateFrom": ["1-chronicles-10"],
+      "place": "b:gilboa",
+      "verse": "2-samuel-1:19",
+      "summary": "The Philistines defeat Israel on Mount Gilboa. Jonathan and two of his brothers are killed. Archers wound Saul, and he falls on his own sword. The men of Jabesh-gilead march all night and bury the bodies. Chronicles says Saul died because he did not keep the LORD's word. An Amalekite brings Saul's crown to David. David sings a lament: “How the mighty have fallen!”"
+    },
+    {
+      "id": "david-king-at-hebron",
+      "volume": "ot",
+      "title": "David rules at Hebron while Saul's house fights him",
+      "chapters": ["2-samuel-2", "2-samuel-3", "2-samuel-4", "1-chronicles-12"],
+      "place": "b:hebron",
+      "verse": "2-samuel-2:4",
+      "summary": "The men of Judah anoint David king at Hebron. Saul's general Abner makes Saul's son Ishbosheth king over the other tribes. The two armies fight at the pool of Gibeon. Abner later offers to bring all Israel to David. David's commander Joab stabs Abner at the gate, and David mourns him. Two captains murder Ishbosheth, and David has them put to death. Chronicles lists the fighting men who come over to David."
+    },
+    {
+      "id": "david-takes-jerusalem",
+      "volume": "ot",
+      "title": "David becomes king of all Israel and takes Jerusalem",
+      "chapters": ["2-samuel-5", "1-chronicles-11", "1-chronicles-14"],
+      "dateFrom": ["2-samuel-5"],
+      "place": "b:jerusalem",
+      "verse": "2-samuel-5:7",
+      "summary": "All the tribes come to Hebron and anoint David king over Israel. He is thirty years old and rules forty years in all. He captures the stronghold of Zion from the Jebusites. Jerusalem becomes the City of David. Hiram king of Tyre sends cedar and builders for David's house. The Philistines attack twice, and each time David asks the LORD and wins. Chronicles lists David's mighty men."
+    },
+    {
+      "id": "ark-comes-to-jerusalem",
+      "volume": "ot",
+      "title": "David brings the ark to Jerusalem",
+      "chapters": ["2-samuel-6", "1-chronicles-13", "1-chronicles-15", "1-chronicles-16"],
+      "dateFrom": ["2-samuel-6"],
+      "place": "b:jerusalem",
+      "verse": "2-samuel-6:14",
+      "summary": "David sets out to bring the ark to Jerusalem on a new cart. Uzzah reaches out to steady the ark, and he dies. David leaves the ark at the house of Obed-edom for three months. Chronicles says only Levites may carry the ark, on poles on their shoulders. David brings it up with sacrifices, dancing before the LORD. His wife Michal watches and despises him. Chronicles adds a psalm of thanks sung by Asaph."
+    },
+    {
+      "id": "the-lord-promises-david-a-house",
+      "volume": "ot",
+      "title": "The LORD promises David a lasting house",
+      "chapters": ["2-samuel-7", "1-chronicles-17"],
+      "dateFrom": ["2-samuel-7"],
+      "place": "b:jerusalem",
+      "verse": "2-samuel-7:16",
+      "summary": "David wants to build a house of cedar for the ark. The prophet Nathan first tells him to go ahead. That night the LORD sends Nathan back with a different word. David will not build the temple. Instead the LORD will make David a house, a family line of kings. David's son will build the temple, and his throne will last forever. David sits before the LORD and asks, “Who am I?”",
+      "alsoRead": [{ "ref": "Luke 1:32", "note": "Gabriel says Jesus will receive the throne of David." }]
+    },
+    {
+      "id": "davids-wars",
+      "volume": "ot",
+      "title": "David defeats the nations around Israel",
+      "chapters": ["2-samuel-8", "2-samuel-10", "1-chronicles-18", "1-chronicles-19", "1-chronicles-20"],
+      "dateFrom": ["2-samuel-8", "2-samuel-10"],
+      "place": "b:rabbah",
+      "verse": "2-samuel-8:6",
+      "summary": "David defeats the Philistines, Moab, and the Syrian king Hadadezer. He places troops in Syria and Edom. He gives the captured silver, gold, and bronze to the LORD. The new king of Ammon shames David's messengers by cutting their beards and clothes. Ammon hires Syrian armies, and Joab defeats them. Joab later captures Rabbah, the Ammonite capital. Chronicles adds that David's men kill three giants."
+    },
+    {
+      "id": "david-shows-kindness-to-mephibosheth",
+      "volume": "ot",
+      "title": "David shows kindness to Jonathan's son",
+      "chapters": ["2-samuel-9"],
+      "place": "b:jerusalem",
+      "verse": "2-samuel-9:7",
+      "summary": "David asks if anyone is left from Saul's house. He wants to show kindness for Jonathan's sake. Ziba names Jonathan's son Mephibosheth, who cannot walk. David sends for him from Lo-debar. Mephibosheth falls on his face before the king. David gives him all of Saul's land. Mephibosheth will eat at the king's table like one of his sons."
+    },
+    {
+      "id": "david-and-bathsheba",
+      "volume": "ot",
+      "title": "David takes Bathsheba, and Nathan confronts him",
+      "chapters": ["2-samuel-11", "2-samuel-12"],
+      "place": "b:jerusalem",
+      "verse": "2-samuel-12:7",
+      "summary": "David stays in Jerusalem while his army fights at Rabbah. He sees Bathsheba, wife of Uriah the Hittite, and sends for her. David has Joab put Uriah where he will be killed. The LORD sends the prophet Nathan to David. Nathan tells of a rich man who stole a poor man's lamb. Nathan tells David, “You are the man!” David confesses, and the child dies. Bathsheba later bears Solomon.",
+      "alsoRead": [{ "ref": "D&C 132:39", "note": "The Lord says David sinned in the case of Uriah." }]
+    },
+    {
+      "id": "amnon-and-absalom",
+      "volume": "ot",
+      "title": "Amnon wrongs Tamar, and Absalom takes revenge",
+      "chapters": ["2-samuel-13", "2-samuel-14"],
+      "place": "b:jerusalem",
+      "verse": "2-samuel-14:14",
+      "summary": "David's son Amnon rapes his half sister Tamar, then throws her out. Her brother Absalom takes her into his house. David is very angry but does nothing. Two years later Absalom has Amnon killed and flees to Geshur. Joab sends a wise woman from Tekoa to speak to the king. She asks why David does not bring his banished son home. David lets Absalom return but will not see him for two years."
+    },
+    {
+      "id": "absaloms-revolt",
+      "volume": "ot",
+      "title": "Absalom rebels, and David flees Jerusalem",
+      "chapters": ["2-samuel-15", "2-samuel-16", "2-samuel-17", "2-samuel-18"],
+      "place": "b:mahanaim",
+      "verse": "2-samuel-18:33",
+      "summary": "Absalom wins the hearts of Israel and has himself declared king at Hebron. David flees Jerusalem and climbs the Mount of Olives weeping. Shimei, of Saul's family, curses David and throws stones. David's friend Hushai gives Absalom bad advice on purpose. David crosses the Jordan and gathers his army at Mahanaim. In the forest, Absalom's head catches in an oak tree. Joab kills him against David's order. David weeps, “My son, my son!”"
+    },
+    {
+      "id": "david-returns-and-sheba-rebels",
+      "volume": "ot",
+      "title": "David returns, and Sheba leads a revolt",
+      "chapters": ["2-samuel-19", "2-samuel-20"],
+      "place": "b:abel",
+      "verse": "2-samuel-20:22",
+      "summary": "Joab tells David that his weeping shames the men who saved him. David crosses back over the Jordan. Shimei begs forgiveness, and David spares him. Israel and Judah quarrel over who has more claim to the king. Sheba of Benjamin calls Israel to leave David, and the northern tribes follow. Joab kills Amasa and besieges Sheba in the town of Abel. A wise woman persuades the town to give up Sheba's head."
+    },
+    {
+      "id": "rizpah-guards-her-sons",
+      "volume": "ot",
+      "title": "Famine, the Gibeonites, and Rizpah's watch",
+      "chapters": ["2-samuel-21"],
+      "place": "b:gibeah",
+      "verse": "2-samuel-21:10",
+      "summary": "A famine lasts three years, and David asks the LORD why. Saul had killed Gibeonites and broken Israel's old oath to them. The Gibeonites ask for seven of Saul's descendants, and they are hanged. Rizpah, mother of two of them, guards the bodies until the rain comes. David hears of it and buries the bones with Saul's and Jonathan's. Four giants later fall to David's men."
+    },
+    {
+      "id": "davids-song-and-last-words",
+      "volume": "ot",
+      "title": "David's song of rescue and last words",
+      "chapters": ["2-samuel-22", "2-samuel-23"],
+      "place": "b:jerusalem",
+      "verse": "2-samuel-22:2",
+      "summary": "David sings after the LORD rescues him from Saul and all his enemies. He calls the LORD his rock, fortress, and shield. The LORD came down in storm and fire. He drew David out of deep waters. David's last words say a ruler must be just and fear God. God has made a lasting covenant with his house. The chapter lists David's mighty men and their deeds. The list ends with Uriah the Hittite."
+    },
+    {
+      "id": "census-and-threshing-floor",
+      "volume": "ot",
+      "title": "David's census, the plague, and the threshing floor",
+      "chapters": ["2-samuel-24", "1-chronicles-21", "1-chronicles-22"],
+      "dateFrom": ["2-samuel-24"],
+      "place": "b:jerusalem",
+      "verse": "2-samuel-24:24",
+      "summary": "David orders a count of Israel's fighting men, and Joab objects. Afterward David's heart troubles him, and he confesses. The prophet Gad offers three punishments, and David chooses the LORD's hand. A plague kills seventy thousand people. The angel stops at the threshing floor of Araunah, a field for separating grain. David buys the floor and builds an altar, and the plague ends. Chronicles says this floor becomes the place for the temple. David gathers stone, iron, bronze, and cedar for Solomon to build it."
+    },
+    {
+      "id": "david-organizes-temple-service",
+      "volume": "ot",
+      "title": "David organizes the priests, Levites, and singers",
+      "chapters": ["1-chronicles-23", "1-chronicles-24", "1-chronicles-25", "1-chronicles-26", "1-chronicles-27"],
+      "place": "b:jerusalem",
+      "verse": "1-chronicles-23:30",
+      "summary": "Chronicles tells how the old King David organizes the temple service. He counts thirty-eight thousand Levites. Most will oversee the work of the LORD's house. The priests are divided by lot into twenty-four groups. Singers from the families of Asaph, Heman, and Jeduthun prophesy with harps and cymbals. Gatekeepers guard each gate, and others keep the treasuries. Twelve army divisions each serve one month a year."
+    },
+    {
+      "id": "solomon-made-king",
+      "volume": "ot",
+      "title": "Solomon is made king",
+      "chapters": ["1-kings-1", "1-kings-2", "1-chronicles-28", "1-chronicles-29"],
+      "dateFrom": ["1-kings-1", "1-kings-2"],
+      "place": "b:gihon",
+      "verse": "1-kings-1:39",
+      "summary": "King David is old and weak. His son Adonijah declares himself king. Nathan and Bathsheba remind David of his promise about Solomon. David orders Solomon anointed at the spring of Gihon, and the city shouts. Chronicles adds that David gives Solomon the plans for the temple. The people give freely for its building. David dies, and Solomon puts his rivals to death."
+    },
+    {
+      "id": "solomon-asks-for-wisdom",
+      "volume": "ot",
+      "title": "Solomon asks for wisdom",
+      "chapters": ["1-kings-3", "1-kings-4", "2-chronicles-1"],
+      "place": "b:gibeon",
+      "verse": "1-kings-3:9",
+      "summary": "Solomon offers sacrifices at Gibeon, and the LORD appears to him in a dream. God tells him to ask for what he wants. Solomon asks for an understanding heart to judge the people. God is pleased and adds riches and honor. Two women come to him, each claiming the same living baby. Solomon calls for a sword to divide the child. The true mother gives up her claim, and he gives the child to her. Solomon speaks three thousand proverbs."
+    },
+    {
+      "id": "solomon-builds-the-temple",
+      "volume": "ot",
+      "title": "Solomon builds the temple",
+      "chapters": ["1-kings-5", "1-kings-6", "1-kings-7", "2-chronicles-2", "2-chronicles-3", "2-chronicles-4"],
+      "place": "b:jerusalem",
+      "verse": "1-kings-6:7",
+      "summary": "King Hiram of Tyre sends cedar from Lebanon. Solomon pays him in wheat and oil. Solomon begins the temple in the fourth year of his reign. Chronicles says it stands on Mount Moriah, at the threshing floor David bought. The stones are shaped at the quarry. No iron tool is heard at the site. A bronze worker named Hiram casts two great pillars and a huge basin. The work takes seven years."
+    },
+    {
+      "id": "temple-dedicated",
+      "volume": "ot",
+      "title": "Solomon dedicates the temple",
+      "chapters": ["1-kings-8", "1-kings-9", "2-chronicles-5", "2-chronicles-6", "2-chronicles-7", "2-chronicles-8"],
+      "place": "b:jerusalem",
+      "verse": "2-chronicles-7:14",
+      "summary": "The priests bring the ark into the temple, and a cloud fills the house. Solomon kneels and spreads his hands toward heaven. He says heaven itself cannot hold God, much less this house. He asks God to hear prayers made toward it, even a foreigner's prayer. Chronicles adds that fire from heaven burns up the offerings. The LORD appears to Solomon and promises to hear his people when they pray. If they turn to other gods, he will uproot them. Solomon uses forced labor to build cities, and his ships bring gold."
+    },
+    {
+      "id": "queen-of-sheba",
+      "volume": "ot",
+      "title": "The queen of Sheba visits Solomon",
+      "chapters": ["1-kings-10", "2-chronicles-9"],
+      "dateFrom": ["1-kings-10"],
+      "place": "b:jerusalem",
+      "verse": "1-kings-10:7",
+      "summary": "The queen of Sheba hears of Solomon and comes to test him with hard questions. He answers them all. She sees his house, his servants, and his offerings. She says the report was not even half the truth. She blesses the LORD, who made him king to do justice. They exchange rich gifts, and she goes home. Solomon's gold, ivory throne, and horses from Egypt are described."
+    },
+    {
+      "id": "solomon-turns-away",
+      "volume": "ot",
+      "title": "Solomon turns to other gods",
+      "chapters": ["1-kings-11"],
+      "place": "b:jerusalem",
+      "verse": "1-kings-11:4",
+      "summary": "Solomon loves many foreign women and has a thousand wives and concubines. In his old age they turn his heart to other gods. He builds hilltop shrines for the gods of Moab and Ammon. The LORD says the kingdom will be torn from Solomon's son. One tribe will remain for David's sake. The prophet Ahijah tears a new cloak and gives ten pieces to Jeroboam. Solomon tries to kill Jeroboam, who flees to Egypt.",
+      "alsoRead": [{ "ref": "Jacob 2:24", "note": "Jacob quotes the Lord calling their many wives abominable." }]
+    },
+    {
+      "id": "the-preacher-asks-what-work-gains",
+      "volume": "ot",
+      "title": "The Preacher asks what all our work gains",
+      "chapters": ["ecclesiastes-1", "ecclesiastes-2"],
+      "place": "b:jerusalem",
+      "verse": "ecclesiastes-1:9",
+      "summary": "These are the words of the Preacher, a son of David and king in Jerusalem. He says everything is vapor, gone like a breath. He asks what people gain from all their work under the sun. Nothing is new, and earlier people are forgotten. He tests pleasure, builds houses, and gathers silver and gold. Then he finds it all empty, since the wise and the fool both die. He concludes that enjoying food and work is a gift from God."
+    },
+    {
+      "id": "song-of-songs",
+      "volume": "ot",
+      "title": "The Song of Songs",
+      "chapters": ["song-of-solomon-1", "song-of-solomon-2", "song-of-solomon-3", "song-of-solomon-4", "song-of-solomon-5", "song-of-solomon-6", "song-of-solomon-7", "song-of-solomon-8"],
+      "place": "b:jerusalem",
+      "verse": "song-of-solomon-8:6",
+      "summary": "This book is a set of love poems between a woman and a man. The woman longs for her lover and says his love is better than wine. He calls her to come away, for winter is past. At night she searches the city streets for him and finds him. He praises her beauty and calls her a locked garden. Once she opens the door too late, and he is gone. She asks him to set her as a seal on his heart. Love is as strong as death."
+    }
+  ]
+}
