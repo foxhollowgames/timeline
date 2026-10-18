@@ -1,0 +1,353 @@
+{
+  "about": "Scripture events, batch 8: the life of Jesus in the four Gospels (DESIGN.md section 3). Same fields as batch-1.json. An event told by more than one Gospel links each telling.",
+  "batch": 8,
+  "era": "The life of Jesus",
+  "covers": [
+    { "book": "matthew", "chapters": [1, 28] },
+    { "book": "mark", "chapters": [1, 16] },
+    { "book": "luke", "chapters": [1, 24] },
+    { "book": "john", "chapters": [1, 21] }
+  ],
+  "events": [
+    {
+      "id": "gabriel-comes-to-mary",
+      "volume": "nt",
+      "title": "Gabriel announces the births of John and Jesus",
+      "chapters": ["luke-1"],
+      "place": "b:nazareth",
+      "verse": "luke-1:31",
+      "summary": "An angel tells the old priest Zacharias that his wife Elizabeth will bear a son. Zacharias doubts and cannot speak. The angel Gabriel comes to Mary. Her son will be called the Son of the Most High. Mary visits Elizabeth, who blesses her. Mary sings that God has looked on her low position. John is born, and Zacharias speaks again and praises God.",
+      "alsoRead": [
+        { "ref": "1 Nephi 11:18", "note": "Nephi sees the virgin who will be the mother of the Son of God." },
+        { "ref": "Alma 7:10", "note": "Alma says the Son of God will be born of Mary." }
+      ]
+    },
+    {
+      "id": "jesus-is-born",
+      "volume": "nt",
+      "title": "Jesus is born in Bethlehem",
+      "chapters": ["luke-2", "matthew-1"],
+      "dateFrom": ["matthew-1"],
+      "place": "b:bethlehem",
+      "verse": "luke-2:11",
+      "summary": "In Matthew, an angel tells Joseph in a dream to marry Mary. Caesar Augustus orders a count of the people, and Joseph and Mary go to Bethlehem. Mary gives birth and lays her son in a manger, a feeding trough. Angels announce the birth to shepherds in the fields. In the temple, old Simeon calls the child a light for the nations. The prophetess Anna gives thanks. At twelve, Jesus stays behind in the temple among the teachers.",
+      "alsoRead": [{ "ref": "3 Nephi 1:13", "note": "The Lord tells Nephi he will come into the world the next day." }]
+    },
+    {
+      "id": "the-wise-men",
+      "volume": "nt",
+      "title": "The wise men come, and Joseph flees to Egypt",
+      "chapters": ["matthew-2"],
+      "place": "b:bethlehem",
+      "verse": "matthew-2:11",
+      "summary": "Wise men from the east come to Jerusalem seeking the newborn king of the Jews. King Herod is troubled. The star leads the wise men to the child, and they worship him with gifts. A dream warns them not to return to Herod. An angel tells Joseph to flee to Egypt with the child and his mother. Herod kills the young boys of Bethlehem. After Herod dies, the family settles in Nazareth."
+    },
+    {
+      "id": "jesus-is-baptized",
+      "volume": "nt",
+      "title": "John the Baptist baptizes Jesus",
+      "chapters": ["matthew-3", "luke-3"],
+      "place": "b:jordan",
+      "verse": "matthew-3:17",
+      "summary": "John the Baptist preaches in the wilderness of Judea. He tells people to repent, for the kingdom of heaven is near. Crowds come and are baptized in the Jordan. Luke adds that John tells them to share their coats and food. John says one mightier than he is coming. Jesus comes to be baptized. The Spirit comes down like a dove, and a voice calls him God's beloved Son.",
+      "alsoRead": [{ "ref": "2 Nephi 31:5", "note": "Nephi asks how much more we need baptism, if the Lamb was baptized." }]
+    },
+    {
+      "id": "jesus-begins-in-galilee",
+      "volume": "nt",
+      "title": "Jesus is tempted and begins his work in Galilee",
+      "chapters": ["matthew-4", "mark-1", "luke-4", "luke-5"],
+      "place": "b:capernaum",
+      "verse": "matthew-4:19",
+      "summary": "The Spirit leads Jesus into the wilderness, where he fasts forty days. He answers each temptation of the devil from Scripture. In Nazareth he reads from Isaiah and says it is fulfilled that day. His hometown tries to throw him off a cliff. He calls the fishermen Simon, Andrew, James, and John, and they leave their nets. He teaches in Capernaum and heals many. He calls Levi, a tax collector, to follow him."
+    },
+    {
+      "id": "sermon-on-the-mount",
+      "volume": "nt",
+      "title": "The Sermon on the Mount",
+      "chapters": ["matthew-5", "luke-6"],
+      "place": "b:galilee",
+      "verse": "matthew-5:16",
+      "summary": "Jesus goes up a mountain and teaches his disciples. He calls the poor in spirit, the mourners, and the merciful blessed. His followers are salt and light. He has come to fulfill the law, not to destroy it. He tells them to love their enemies and pray for those who hurt them. Luke tells a similar sermon on a level place. There Jesus also chooses twelve apostles.",
+      "alsoRead": [{ "ref": "3 Nephi 12:1", "note": "The risen Jesus gives a like sermon to the Nephites." }]
+    },
+    {
+      "id": "faith-in-capernaum",
+      "volume": "nt",
+      "title": "Jesus heals and forgives in Capernaum",
+      "chapters": ["matthew-8", "mark-2", "luke-7"],
+      "place": "b:capernaum",
+      "verse": "matthew-8:10",
+      "summary": "A Roman officer asks Jesus to heal his servant. He says Jesus need only speak the word, and Jesus marvels at his faith. Four men lower a paralyzed man through a roof, and Jesus forgives and heals him. Jesus eats with tax collectors and sinners. He says the Sabbath was made for people. Luke adds that Jesus raises a widow's son at Nain. A woman weeps over his feet, and he forgives her sins."
+    },
+    {
+      "id": "the-twelve-are-chosen",
+      "volume": "nt",
+      "title": "Jesus heals on the Sabbath and appoints the Twelve",
+      "chapters": ["mark-3"],
+      "place": "b:galilee",
+      "verse": "mark-3:4",
+      "summary": "In a synagogue, Jesus sees a man with a withered hand. His opponents watch to see if he will heal on the Sabbath. He asks if the Sabbath is for saving life or killing. They say nothing, and he heals the man. The Pharisees begin to plot his death. Jesus appoints twelve to be with him and to preach. He says those who do God's will are his family."
+    },
+    {
+      "id": "parables-and-the-storm",
+      "volume": "nt",
+      "title": "Parables by the sea, and Jesus calms the storm",
+      "chapters": ["mark-4", "luke-8"],
+      "place": "b:sea-galilee",
+      "verse": "mark-4:39",
+      "summary": "Jesus teaches a large crowd from a boat. A farmer sows seed on the path, on rock, among thorns, and on good soil. The kingdom is like a tiny mustard seed that grows large. Luke adds that women travel with Jesus and support him from their own goods. That evening a storm fills the boat while Jesus sleeps. He rebukes the wind, and the sea is calm. The disciples ask who this is."
+    },
+    {
+      "id": "jairus-daughter",
+      "volume": "nt",
+      "title": "Jesus frees a man from demons and raises Jairus' daughter",
+      "chapters": ["mark-5"],
+      "place": "b:sea-galilee",
+      "verse": "mark-5:34",
+      "summary": "Jesus crosses the lake and frees a man held by many demons. The townspeople beg Jesus to leave. Jairus, a synagogue leader, begs him to come to his dying daughter. On the way a woman who has bled for twelve years touches his cloak. She is healed, and Jesus stops to find her. Word comes that the girl has died. Jesus takes her hand, and she gets up."
+    },
+    {
+      "id": "feeding-the-five-thousand",
+      "volume": "nt",
+      "title": "Jesus feeds five thousand and walks on the sea",
+      "chapters": ["mark-6", "john-6"],
+      "place": "b:bethsaida",
+      "verse": "john-6:35",
+      "summary": "Herod has John the Baptist beheaded. A crowd follows Jesus to a quiet place. He feeds five thousand with five loaves and two fish. That night he walks on the sea toward the disciples' boat. John adds that the crowd wants to make him king. Jesus says he is the bread of life that came down from heaven. Many disciples call this hard and leave. Peter says there is no one else to go to."
+    },
+    {
+      "id": "johns-question",
+      "volume": "nt",
+      "title": "John asks from prison if Jesus is the one to come",
+      "chapters": ["matthew-11"],
+      "place": "b:capernaum",
+      "verse": "matthew-11:28",
+      "summary": "John the Baptist is in prison and hears what Jesus is doing. He sends disciples to ask if Jesus is the one to come. Jesus tells them to report what they see and hear. He praises John as more than a prophet. He rebukes towns that saw his works and did not repent. He invites the weary to come to him and find rest."
+    },
+    {
+      "id": "the-canaanite-womans-faith",
+      "volume": "nt",
+      "title": "Clean hearts and a Canaanite woman's faith",
+      "chapters": ["matthew-15", "mark-7"],
+      "place": "b:tyre",
+      "verse": "matthew-15:28",
+      "summary": "Pharisees ask why the disciples do not wash their hands before eating. Jesus says they set aside God's command for their own tradition. What comes out of the mouth defiles a person, not what goes in. He travels to the region of Tyre and Sidon. A Canaanite woman begs him to heal her daughter. She keeps asking, and he praises her faith and heals the girl. Mark adds that he heals a deaf man."
+    },
+    {
+      "id": "peters-confession",
+      "volume": "nt",
+      "title": "Peter says Jesus is the Christ",
+      "chapters": ["matthew-16", "mark-8", "luke-9"],
+      "place": "b:caesarea-philippi",
+      "verse": "matthew-16:16",
+      "summary": "Jesus asks his disciples who they say he is. Peter answers that he is the Christ, the Son of the living God. Jesus blesses him and speaks of building his church. Then he says he must suffer, be killed, and rise. Peter rebukes him, and Jesus rebukes Peter. Anyone who follows him must take up a cross. Luke adds that Jesus sets his face to go to Jerusalem."
+    },
+    {
+      "id": "the-transfiguration",
+      "volume": "nt",
+      "title": "Jesus is transfigured on the mountain",
+      "chapters": ["matthew-17", "mark-9"],
+      "place": "b:galilee",
+      "verse": "matthew-17:5",
+      "summary": "Jesus takes Peter, James, and John up a high mountain. His face shines like the sun, and Moses and Elijah appear with him. A bright cloud covers them, and a voice calls Jesus the beloved Son. Below, a father asks Jesus to heal his son. The father cries that he believes and asks help for his unbelief. Jesus heals the boy. He again says he will be killed and raised.",
+      "alsoRead": [{ "ref": "D&C 63:21", "note": "The Lord speaks of what the three saw on the mount." }]
+    },
+    {
+      "id": "the-good-samaritan",
+      "volume": "nt",
+      "title": "The seventy are sent, and the good Samaritan",
+      "chapters": ["luke-10"],
+      "place": "b:jericho",
+      "verse": "luke-10:37",
+      "summary": "Jesus sends seventy others ahead of him in pairs. A lawyer asks what he must do to inherit eternal life. He agrees that the law says to love God and neighbor. Then he asks who his neighbor is. Jesus tells of a man beaten by robbers on the road to Jericho. A priest and a Levite pass by. A Samaritan stops and cares for him. Jesus then visits Martha and Mary."
+    },
+    {
+      "id": "a-bent-woman-healed",
+      "volume": "nt",
+      "title": "Jesus heals a woman bent for eighteen years",
+      "chapters": ["luke-13"],
+      "place": "b:jerusalem",
+      "verse": "luke-13:12",
+      "summary": "People tell Jesus about Galileans whom Pilate killed. He asks if they were worse sinners than others, and says no. He says everyone must repent. He tells of a fig tree given one more year to bear fruit. On a Sabbath he heals a woman bent over for eighteen years. The synagogue ruler objects. Jesus grieves over Jerusalem, which kills the prophets."
+    },
+    {
+      "id": "ten-lepers",
+      "volume": "nt",
+      "title": "Ten men are healed, and one returns to give thanks",
+      "chapters": ["luke-17"],
+      "place": "b:galilee",
+      "verse": "luke-17:15",
+      "summary": "Jesus tells his disciples to forgive. Between Samaria and Galilee, ten men with leprosy, a skin disease, cry out for mercy. Jesus tells them to show themselves to the priests. They are healed as they go. One returns, praises God, and thanks Jesus. He is a Samaritan. The Pharisees ask when God's kingdom will come."
+    },
+    {
+      "id": "the-pharisee-and-the-tax-collector",
+      "volume": "nt",
+      "title": "The Pharisee and the tax collector",
+      "chapters": ["luke-18"],
+      "place": "b:jerusalem",
+      "verse": "luke-18:13",
+      "summary": "Jesus tells of a widow who keeps asking an unjust judge for justice. He tells of two men who pray in the temple. A Pharisee thanks God that he is not like other people. A tax collector asks only for mercy. Jesus welcomes infants brought to him. A rich ruler asks about eternal life and leaves sad. Near Jericho, Jesus gives sight to a blind beggar."
+    },
+    {
+      "id": "the-rich-young-man",
+      "volume": "nt",
+      "title": "The rich young man, and the first who will be last",
+      "chapters": ["matthew-19", "matthew-20", "mark-10"],
+      "place": "b:jericho",
+      "verse": "matthew-19:21",
+      "summary": "Jesus teaches about marriage and blesses the children. A rich young man asks what he must do for eternal life. Jesus tells him to sell what he has and give to the poor. The young man goes away sad. Jesus tells of workers who all get the same wage, however long they worked. James and John ask for the best seats in his kingdom. Jesus says the great must be servants. At Jericho, the blind Bartimaeus receives his sight."
+    },
+    {
+      "id": "first-disciples",
+      "volume": "nt",
+      "title": "The Word becomes flesh, and the first disciples follow",
+      "chapters": ["john-1"],
+      "place": "b:jordan",
+      "verse": "john-1:14",
+      "summary": "John's Gospel opens with the Word, who was with God and was God. The Word became flesh and lived among us. John the Baptist says he is not the Christ. He points to Jesus as the Lamb of God. Two of John's disciples follow Jesus. Andrew brings his brother Simon. Philip brings Nathanael."
+    },
+    {
+      "id": "wedding-at-cana",
+      "volume": "nt",
+      "title": "Water becomes wine at Cana",
+      "chapters": ["john-2"],
+      "place": "b:cana",
+      "verse": "john-2:11",
+      "summary": "Jesus and his disciples go to a wedding at Cana. The wine runs out, and his mother tells him. He has six stone jars filled with water. The water becomes fine wine, and his disciples believe in him. At Passover he drives the sellers and money changers out of the temple. He says he will raise this temple in three days. He was speaking of his body."
+    },
+    {
+      "id": "nicodemus",
+      "volume": "nt",
+      "title": "Jesus teaches Nicodemus at night",
+      "chapters": ["john-3"],
+      "place": "b:jerusalem",
+      "verse": "john-3:16",
+      "summary": "Nicodemus, a Pharisee and ruler, comes to Jesus at night. Jesus says no one can see God's kingdom without being born again. Nicodemus asks how that can be. Jesus says God so loved the world that he gave his only Son. Light has come, and people loved darkness. John the Baptist says Jesus must increase and he must decrease."
+    },
+    {
+      "id": "woman-at-the-well",
+      "volume": "nt",
+      "title": "The Samaritan woman at the well",
+      "chapters": ["john-4"],
+      "place": "b:sychar",
+      "verse": "john-4:14",
+      "summary": "Jesus travels through Samaria and rests at Jacob's well. He asks a Samaritan woman for a drink. He offers her living water and tells her about her life. She asks where people ought to worship. He says true worshipers worship in spirit and truth. She tells her town to come and see. Many Samaritans believe. In Galilee he heals an official's son with a word."
+    },
+    {
+      "id": "pool-of-bethesda",
+      "volume": "nt",
+      "title": "Jesus heals a man at the pool",
+      "chapters": ["john-5"],
+      "place": "b:jerusalem",
+      "verse": "john-5:8",
+      "summary": "In Jerusalem many sick people lie beside a pool. One man has been ill for thirty-eight years. Jesus asks if he wants to be well. The man says he has no one to put him in the water. Jesus tells him to take up his mat and walk. It is the Sabbath, and the leaders object. Jesus says his Father is working, and so is he."
+    },
+    {
+      "id": "light-of-the-world",
+      "volume": "nt",
+      "title": "Jesus teaches at the Feast of Booths",
+      "chapters": ["john-7", "john-8"],
+      "place": "b:jerusalem",
+      "verse": "john-8:12",
+      "summary": "Jesus goes up to the Feast of Booths and teaches in the temple. The crowd is divided over him. On the last day he invites the thirsty to come and drink. Officers sent to arrest him return and say no one ever spoke like this. He says he is the light of the world. He tells them the truth will set them free. He says that before Abraham was, he is."
+    },
+    {
+      "id": "man-born-blind",
+      "volume": "nt",
+      "title": "Jesus heals a man born blind",
+      "chapters": ["john-9"],
+      "place": "b:jerusalem",
+      "verse": "john-9:25",
+      "summary": "Jesus sees a man blind from birth. The disciples ask whose sin caused it. Jesus says neither, and he heals the man with mud and washing. The Pharisees question the man again and again. His parents are afraid and say he can speak for himself. He says he was blind and now sees. They throw him out, and Jesus finds him."
+    },
+    {
+      "id": "the-good-shepherd",
+      "volume": "nt",
+      "title": "Jesus calls himself the good shepherd",
+      "chapters": ["john-10"],
+      "place": "b:jerusalem",
+      "verse": "john-10:11",
+      "summary": "Jesus says the sheep know the shepherd's voice. A thief comes only to steal and kill. Jesus says he is the door and the good shepherd. The good shepherd lays down his life for the sheep. He has other sheep that are not of this fold. He says he and the Father are one, and some pick up stones.",
+      "alsoRead": [{ "ref": "3 Nephi 15:21", "note": "Jesus tells the Nephites they are the other sheep." }]
+    },
+    {
+      "id": "lazarus-raised",
+      "volume": "nt",
+      "title": "Jesus raises Lazarus",
+      "chapters": ["john-11"],
+      "place": "b:bethany",
+      "verse": "john-11:25",
+      "summary": "Lazarus of Bethany falls ill, and his sisters send for Jesus. Jesus arrives after Lazarus has been dead four days. Martha says she believes he is the Christ. Jesus weeps at the tomb. He calls Lazarus out, and the dead man comes out wrapped in cloths. The council fears what Rome will do. The high priest says one man should die for the people."
+    },
+    {
+      "id": "jesus-enters-jerusalem",
+      "volume": "nt",
+      "title": "Jesus rides into Jerusalem",
+      "chapters": ["matthew-21", "mark-11", "luke-19", "john-12"],
+      "place": "b:jerusalem",
+      "verse": "matthew-21:9",
+      "summary": "In Jericho, Zacchaeus the tax collector climbs a tree to see Jesus. He promises to repay those he cheated. At Bethany, Mary anoints Jesus' feet with costly perfume. Jesus rides into Jerusalem on a donkey, and crowds praise him. Luke says he weeps over the city. He drives the traders out of the temple. The leaders want to arrest him but fear the crowds."
+    },
+    {
+      "id": "teaching-in-the-temple",
+      "volume": "nt",
+      "title": "Jesus answers his questioners in the temple",
+      "chapters": ["mark-12", "luke-20", "matthew-23"],
+      "place": "b:jerusalem",
+      "verse": "mark-12:43",
+      "summary": "Jesus tells of tenants who kill a vineyard owner's son. He is asked about paying taxes to Caesar and about the resurrection. A scribe asks which commandment is first. Jesus names love of God and love of neighbor. Matthew adds his woes on the scribes and Pharisees, who neglect justice and mercy. He watches people give at the temple treasury. A poor widow gives two small coins, all she has."
+    },
+    {
+      "id": "signs-of-his-coming",
+      "volume": "nt",
+      "title": "Jesus teaches on the Mount of Olives about the last days",
+      "chapters": ["matthew-24", "mark-13", "luke-21"],
+      "place": "b:olives",
+      "verse": "matthew-24:36",
+      "summary": "Jesus says the temple's stones will all be thrown down. On the Mount of Olives his disciples ask when this will happen. He warns of false christs, wars, famines, and persecution. Jerusalem will be surrounded by armies. The Son of Man will come in the clouds. No one knows the day or the hour. So they must watch and be ready."
+    },
+    {
+      "id": "last-supper-and-gethsemane",
+      "volume": "nt",
+      "title": "The Last Supper, Gethsemane, and the arrest",
+      "chapters": ["matthew-26", "mark-14", "luke-22", "john-18"],
+      "place": "b:olives",
+      "verse": "luke-22:42",
+      "summary": "Judas agrees to hand Jesus over for thirty pieces of silver. Jesus eats the Passover with the Twelve and gives them the bread and the cup. In Gethsemane he prays in anguish while the disciples sleep. Judas comes with an armed crowd, and Jesus is arrested. The council condemns him. Peter denies him three times. John adds that Pilate asks if Jesus is a king.",
+      "alsoRead": [
+        { "ref": "Mosiah 3:7", "note": "King Benjamin says blood will come from every pore." },
+        { "ref": "D&C 19:18", "note": "The Lord describes his suffering in his own words." }
+      ]
+    },
+    {
+      "id": "the-crucifixion",
+      "volume": "nt",
+      "title": "Jesus is crucified",
+      "chapters": ["matthew-27", "mark-15", "luke-23", "john-19"],
+      "place": "b:jerusalem",
+      "verse": "john-19:30",
+      "summary": "Pilate says he finds no guilt in Jesus. The crowd asks for Barabbas instead. Pilate hands Jesus over to be crucified. Soldiers mock him with a crown of thorns. He is crucified between two robbers. Luke says he prays for those who crucify him. He says, “It is finished,” and dies. Joseph of Arimathea buries him in a tomb.",
+      "alsoRead": [{ "ref": "3 Nephi 8:5", "note": "In the Americas a great storm arises." }]
+    },
+    {
+      "id": "the-resurrection",
+      "volume": "nt",
+      "title": "Jesus rises from the dead",
+      "chapters": ["matthew-28", "mark-16", "luke-24", "john-20"],
+      "place": "b:jerusalem",
+      "verse": "luke-24:6",
+      "summary": "At dawn after the Sabbath, women come to the tomb and find it empty. Angels say Jesus has risen. Mary Magdalene meets Jesus and knows him when he says her name. Two disciples walk with him to Emmaus and know him when he breaks bread. He appears to the disciples behind locked doors. Thomas touches his wounds and believes. Jesus sends them to teach all nations.",
+      "alsoRead": [{ "ref": "3 Nephi 11:10", "note": "The risen Jesus shows himself to the Nephites." }]
+    },
+    {
+      "id": "feed-my-sheep",
+      "volume": "nt",
+      "title": "Jesus tells Peter to feed his sheep",
+      "chapters": ["john-21"],
+      "place": "b:sea-galilee",
+      "verse": "john-21:17",
+      "summary": "Seven disciples fish all night on the Sea of Galilee and catch nothing. At dawn a man on the shore tells them to cast on the right side. The net fills, and they know it is the Lord. He gives them bread and fish beside a fire. He asks Peter three times if he loves him. Each time he tells Peter to feed his sheep."
+    }
+  ]
+}

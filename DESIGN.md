@@ -67,6 +67,7 @@ A pin is a scripture event, such as the scattering of the ten tribes. It is not 
 | 5 | The conquest and the judges | Joshua, Judges, Ruth | 25 events |
 | 6 | The Exodus and the wilderness | Exodus, Leviticus, Numbers, Deuteronomy | 45 events |
 | 7 | The flood and the patriarchs | Genesis | 31 events |
+| 8 | The life of Jesus | Matthew, Mark, Luke, John | 36 events |
 
 - **Fields.** Each event has `id`, `volume`, `title`, `chapters`, and `summary`. It may add these:
   - `dateFrom`: the chapters that set its years.
