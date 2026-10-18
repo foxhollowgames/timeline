@@ -1,0 +1,22 @@
+{
+  "about": "Scripture events that no Wayfinder chapter supplies, and notes added to imported events (DESIGN.md section 3, Q15).",
+  "events": [
+    {
+      "id": "adam-ondi-ahman",
+      "volume": "dc",
+      "ref": "D&C 107:53–56",
+      "title": "Adam blesses his posterity at Adam-ondi-Ahman",
+      "band": "primeval",
+      "placeId": "adam-ondi-ahman",
+      "summary": "Three years before he died, Adam gathered his righteous descendants in the valley of Adam-ondi-Ahman. He gave them his last blessing. D&C 116 names Spring Hill, Missouri, as Adam-ondi-Ahman.",
+      "verse": { "section": 107, "verse": 53 },
+      "citations": ["D&C 107:53–56", "D&C 116:1"],
+      "readerUrl": "../doctrine-and-covenants/doctrine-and-covenants.html#chapter=107&verse=53",
+      "sourceIds": ["dc-sections"]
+    }
+  ],
+  "annotations": {
+    "genesis-10": { "placeNote": "Babel is shown at Babylon, the traditional site." },
+    "genesis-11": { "placeNote": "Babel is shown at Babylon, the traditional site." }
+  }
+}

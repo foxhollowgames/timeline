@@ -1,5 +1,5 @@
 // Checks for Wayfinder Timeline. Run with `npm run check`.
-// Milestone 1 checks script syntax and the time scale. Later milestones add data checks.
+// 1. Script syntax. 2. The time scale. 3. The built data in dist/data (scripts/check-data.mjs).
 
 import { readdir } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
@@ -8,10 +8,11 @@ import assert from 'node:assert/strict';
 
 const dist = fileURLToPath(new URL('../dist/', import.meta.url));
 let failures = 0;
-const test = (name, fn) => {
-  try { fn(); console.log(`ok   ${name}`); }
+const test = async (name, fn) => {
+  try { await fn(); console.log(`ok   ${name}`); }
   catch (error) { failures++; console.log(`FAIL ${name}\n     ${error.message}`); }
 };
+const warn = message => console.log(`warn ${message}`);
 
 // 1. Every app script parses.
 for (const file of (await readdir(dist)).filter(f => f.endsWith('.js'))) {
@@ -117,6 +118,38 @@ test('arrow-key steps scale with zoom', () => {
   const deep = t.keyStep(-600, t.zoomView(t.FULL_VIEW, 0.001, t.yearToU(-600)));
   assert.ok(full >= 10 && deep === 1, `steps ${full} and ${deep}`);
 });
+
+// 2b. Event window logic.
+const ev = await import(new URL('../dist/events.js', import.meta.url));
+const sample = {
+  bands: { primeval: { start: -4000, end: -2001, label: 'Years not given' } },
+  events: [
+    { id: 'a', ref: 'A 1', start: -2000, end: -1700 },
+    { id: 'b', ref: 'B 1', start: -600, end: -600 },
+    { id: 'c', ref: 'C 1', start: null, end: null, band: 'primeval' },
+    { id: 'd', ref: 'D 1', start: null, end: null, band: 'jaredite' },
+  ],
+};
+test('events overlap the window; band events follow their band', () => {
+  const ids = (window, year) => ev.activeEvents(sample, window, year).map(e => e.id).join(',');
+  assert.equal(ids({ start: -620, end: -580 }, -600), 'b');
+  assert.equal(ids({ start: -1800, end: -1750 }, -1775), 'a');
+  assert.equal(ids({ start: -3020, end: -2980 }, -3000), 'c');
+  assert.equal(ids({ start: -2030, end: -1990 }, -2010), 'a,c');
+});
+test('event stops include the band start and skip duplicates', () => {
+  const stops = ev.eventStops(sample);
+  assert.deepEqual(stops.map(s => s.year), [-4000, -2000, -600]);
+  assert.equal(ev.nextStop(stops, -600), null);
+  assert.equal(ev.previousStop(stops, -600).year, -2000);
+  assert.equal(ev.nextStop(stops, -4000).year, -2000);
+});
+
+// 3. The built data.
+const { checkData } = await import(new URL('./check-data.mjs', import.meta.url));
+const pending = [];
+await checkData((name, fn) => pending.push(test(name, fn)), warn);
+await Promise.all(pending);
 
 if (failures) { console.log(`\n${failures} check(s) failed.`); process.exit(1); }
 console.log('\nAll checks passed.');

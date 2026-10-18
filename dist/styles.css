@@ -38,6 +38,7 @@ main { height: 100dvh; min-height: 480px; position: relative; }
 .year-label { font-size: 12px; letter-spacing: .13em; color: var(--muted); }
 .year-overview > strong { font-family: 'Libre Caslon Display', Georgia, serif; font-weight: 400; font-size: 64px; display: block; line-height: 1.15; letter-spacing: -.02em; }
 .year-overview > p { font-size: 14px; color: var(--muted); margin: 6px 0 0; line-height: 1.5; }
+.year-overview > .overview-count { color: var(--ink); }
 .year-overview > .overview-empty { color: var(--faint); font-size: 13px; }
 .globe-controls { position: absolute; right: 38px; bottom: 32px; display: flex; gap: 6px; z-index: 4; }
 .globe-controls button { width: 43px; height: 43px; border-radius: 50%; background: var(--control); backdrop-filter: blur(16px); border-color: #c7e1ff22; font-size: 22px; line-height: 1; box-shadow: 0 5px 24px #0002; }
@@ -57,7 +58,10 @@ main { height: 100dvh; min-height: 480px; position: relative; }
 .strip-zoom .fit { font-size: 13px; padding: 0 12px; }
 
 .strip { position: relative; flex: 1; min-height: 70px; margin-top: 8px; overflow-x: clip; cursor: ew-resize; touch-action: none; user-select: none; -webkit-user-select: none; border-radius: 8px; }
-.strip-bands, .strip-density, .strip-ticks { position: absolute; inset: 0; pointer-events: none; }
+.strip-bands, .strip-order-bands, .strip-ticks { position: absolute; inset: 0; pointer-events: none; }
+.strip-density { position: absolute; left: 0; bottom: 24px; pointer-events: none; }
+.strip-order-bands i { position: absolute; top: 0; bottom: 22px; background: #c9b27a14; border-left: 1px solid #efcc8840; border-right: 1px solid #efcc8840; overflow: hidden; }
+.strip-order-bands span { position: absolute; top: 3px; left: 8px; font-size: 11px; letter-spacing: .04em; color: #d8c493; white-space: nowrap; }
 .strip-bands i { position: absolute; top: 0; bottom: 22px; background: repeating-linear-gradient(135deg, #8aa9c40b 0 6px, transparent 6px 12px); border-left: 1px dashed #8aa9c41f; border-right: 1px dashed #8aa9c41f; }
 .strip-axis { position: absolute; left: 0; right: 0; bottom: 22px; height: 2px; background: #8aa9c44a; pointer-events: none; }
 .strip-window { position: absolute; top: 4px; bottom: 22px; background: #efcc8818; border-left: 1px solid #efcc8855; border-right: 1px solid #efcc8855; pointer-events: none; transform: translateX(0); }

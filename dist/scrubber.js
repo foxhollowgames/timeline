@@ -16,12 +16,16 @@ export function createScrubber({ strip, overview, input, zoomIn, zoomOut, fit, o
   // Build the fixed layers once.
   strip.innerHTML = `
     <div class="strip-bands" aria-hidden="true"></div>
-    <div class="strip-density" aria-hidden="true"></div>
+    <div class="strip-order-bands" aria-hidden="true"></div>
+    <canvas class="strip-density" aria-hidden="true"></canvas>
     <div class="strip-axis" aria-hidden="true"></div>
     <div class="strip-window" aria-hidden="true"></div>
     <div class="strip-thumb" aria-hidden="true"></div>
     <div class="strip-ticks" aria-hidden="true"></div>`;
   const bandsLayer = strip.querySelector('.strip-bands');
+  const orderLayer = strip.querySelector('.strip-order-bands');
+  const density = strip.querySelector('.strip-density');
+  let densityEvents = [], orderBands = [];
   const windowLayer = strip.querySelector('.strip-window');
   const thumb = strip.querySelector('.strip-thumb');
   const ticksLayer = strip.querySelector('.strip-ticks');
@@ -50,6 +54,12 @@ export function createScrubber({ strip, overview, input, zoomIn, zoomOut, fit, o
       const left = Math.max(0, uToX(s.u0)), right = Math.min(w, uToX(s.u1));
       return `<i style="left:${left}px;width:${right - left}px" title="Compressed span"></i>`;
     }).join('');
+    orderLayer.innerHTML = orderBands.map(band => {
+      const left = Math.max(0, uToX(yearToU(band.start))), right = Math.min(w, uToX(yearToU(band.end)));
+      if (right <= 0 || left >= w) return '';
+      return `<i style="left:${left}px;width:${right - left}px" title="${band.label}"><span>${right - left > 110 ? band.label : ''}</span></i>`;
+    }).join('');
+    renderDensity(w);
     // Labels near an edge align inward so they are not cut off.
     ticksLayer.innerHTML = ticks(view, w).map(t => {
       const edge = t.x < 34 ? ' edge-start' : t.x > w - 34 ? ' edge-end' : '';
@@ -71,6 +81,34 @@ export function createScrubber({ strip, overview, input, zoomIn, zoomOut, fit, o
     if (document.activeElement !== input) input.value = formatYear(year);
     zoomIn.disabled = span <= minSpanAt(u) + 1e-9;
     zoomOut.disabled = fit.disabled = span >= 1 - 1e-9;
+  }
+
+  // Event density: each event spreads one unit over the columns its date range covers.
+  // Bars use a square-root scale against the busiest column in view.
+  function renderDensity(w) {
+    const column = 3, ratio = Math.min(devicePixelRatio || 1, 2), height = 40;
+    const columns = Math.ceil(w / column), counts = new Float32Array(columns);
+    for (const e of densityEvents) {
+      const x0 = uToX(yearToU(e.start)), x1 = uToX(yearToU(e.end));
+      if (x1 < 0 || x0 > w) continue;
+      const c0 = Math.max(0, Math.floor(x0 / column)), c1 = Math.min(columns - 1, Math.floor(x1 / column));
+      const share = 1 / (c1 - c0 + 1);
+      for (let c = c0; c <= c1; c++) counts[c] += share;
+    }
+    if (density.width !== Math.round(w * ratio)) { density.width = Math.round(w * ratio); density.height = height * ratio; density.style.width = `${w}px`; density.style.height = `${height}px`; }
+    const ctx = density.getContext('2d');
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    ctx.clearRect(0, 0, w, height);
+    const max = Math.max(...counts, 0);
+    if (!max) return;
+    const range = activeWindow(year, view);
+    const windowStart = uToX(yearToU(range.start)), windowEnd = uToX(yearToU(range.end));
+    for (let c = 0; c < columns; c++) {
+      if (!counts[c]) continue;
+      const x = c * column, h = Math.max(2, Math.sqrt(counts[c] / max) * (height - 4));
+      ctx.fillStyle = x + column >= windowStart && x <= windowEnd ? '#efcc88cc' : '#6f9bb88c';
+      ctx.fillRect(x, height - h, column - 1, h);
+    }
   }
 
   function emit() { render(); onChange?.({ year, view: { ...view }, window: activeWindow(year, view) }); }
@@ -196,6 +234,8 @@ export function createScrubber({ strip, overview, input, zoomIn, zoomOut, fit, o
     get view() { return { ...view }; },
     setYear,
     setView,
+    // Dated events [{start, end}] for the density bar. Order-only bands [{start, end, label}].
+    setEvents(events, bands = []) { densityEvents = events.filter(e => e.start != null && e.end != null); orderBands = bands; render(); },
     handleKey,
     window: () => activeWindow(year, view),
     describe: () => formatRange(activeWindow(year, view).start, activeWindow(year, view).end),
