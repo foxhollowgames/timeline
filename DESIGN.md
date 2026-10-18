@@ -164,6 +164,16 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 - **Default state.** The panel starts off. When the window contains Book of Mormon events, a chip reads "Book of Mormon events in this period: show map."
 - **Empty state.** When the panel is open and the window has no Book of Mormon events, the panel shows the nearest event in each direction as jump buttons.
 - **No history pins.** History pins never show on the Book of Mormon map.
+- **How it is built.**
+  - `npm run import` fetches the relief tiles, `relief.json`, and Leaflet 1.9.4 from `book-of-mormon` at the pinned commit.
+  - `npm run build` copies the tiles to `dist/assets/bom-relief/` and writes `dist/data/bom-map.json`. That file holds the land outline, the Sidon, the named waters, the traced rivers, and the sea labels.
+  - `dist/bom-map.js` loads Leaflet the first time the panel opens. Leaflet uses its flat CRS, with one unit per mile.
+  - The panel reuses the globe's pin code. `dist/pins.js` draws on any view that can project a place to the screen.
+- **Toggle and address.** The **Book of Mormon map** button beside the globe controls opens and closes the panel, and so does the chip. The address adds `bom=1` while the panel is open.
+- **Divider.** Drag it, or focus it and use the arrow keys. Double-click resets it to 55/45. Each browser remembers its own split. Portrait screens stack the two views.
+- **Card placement.** On desktop the card sits beside the panel, over the globe. On a stacked phone layout it covers the half that does not hold the selected event.
+- **Selecting an event.** The panel opens if it is closed, and the map flies to the event's places. Closing the card zooms the map back out to the whole land.
+- **The Jaredite band (Q29).** Ether's events have no years. They are active from the Tower of Babel, at the start of the primeval band, until Omni 1, where Coriantumr is found (130 BCE). Their pins have a dashed ring, and a note in the panel explains the band. While the panel is open, the strip shows the band as a thin top lane.
 
 ## 8. Links (Q34)
 

@@ -122,7 +122,7 @@ test('arrow-key steps scale with zoom', () => {
 // 2b. Event window logic.
 const ev = await import(new URL('../dist/events.js', import.meta.url));
 const sample = {
-  bands: { primeval: { start: -4000, end: -2001, label: 'Years not given' } },
+  bands: { primeval: { start: -4000, end: -2001, label: 'Years not given' }, jaredite: { start: -4000, end: -130, label: 'Jaredite record' } },
   events: [
     { id: 'a', ref: 'A 1', start: -2000, end: -1700 },
     { id: 'b', ref: 'B 1', start: -600, end: -600 },
@@ -132,10 +132,13 @@ const sample = {
 };
 test('events overlap the window; band events follow their band', () => {
   const ids = (window, year) => ev.activeEvents(sample, window, year).map(e => e.id).join(',');
-  assert.equal(ids({ start: -620, end: -580 }, -600), 'b');
-  assert.equal(ids({ start: -1800, end: -1750 }, -1775), 'a');
-  assert.equal(ids({ start: -3020, end: -2980 }, -3000), 'c');
-  assert.equal(ids({ start: -2030, end: -1990 }, -2010), 'a,c');
+  assert.equal(ids({ start: -620, end: -580 }, -600), 'b,d');
+  assert.equal(ids({ start: -1800, end: -1750 }, -1775), 'a,d');
+  assert.equal(ids({ start: -3020, end: -2980 }, -3000), 'c,d');
+  assert.equal(ids({ start: -2030, end: -1990 }, -2010), 'a,c,d');
+  assert.equal(ids({ start: -110, end: -90 }, -100), '', 'the Jaredite band ends at -130');
+  assert.deepEqual(ev.stripBands(sample).map(b => b.lane), [0]);
+  assert.deepEqual(ev.stripBands(sample, { bom: true }).map(b => b.lane), [0, 1]);
 });
 test('event stops include the band start and skip duplicates', () => {
   const stops = ev.eventStops(sample);
@@ -148,9 +151,9 @@ test('event stops include the band start and skip duplicates', () => {
 // 2c. The address.
 const address = await import(new URL('../dist/address.js', import.meta.url));
 test('the address round-trips and rejects bad values', () => {
-  const state = { year: -701, event: 'isaiah-36', hide: ['nt', 'dc'], view: { u0: 0.21, u1: 0.26 } };
+  const state = { year: -701, event: 'isaiah-36', hide: ['nt', 'dc'], view: { u0: 0.21, u1: 0.26 }, bom: true };
   const hash = address.writeHash(state);
-  assert.equal(hash, '#year=-701&event=isaiah-36&hide=dc,nt&view=0.21,0.26');
+  assert.equal(hash, '#year=-701&event=isaiah-36&hide=dc,nt&view=0.21,0.26&bom=1');
   assert.deepEqual(address.readHash(hash), { ...state, hide: ['dc', 'nt'] });
   assert.equal(address.writeHash({ year: 1830, view: { u0: 0, u1: 1 } }), '#year=1830');
   assert.deepEqual(address.readHash('#year=0&event=<script>&hide=xx&view=0.5,0.2'), {});

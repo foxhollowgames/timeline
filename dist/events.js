@@ -7,16 +7,19 @@ export async function loadEvents(url = 'data/events.json') {
   return response.json();
 }
 
-// The order-only band on the main strip (DESIGN.md Q28). The Jaredite band belongs
-// to the Book of Mormon panel and is placed there in milestone 4.
-export const stripBands = data => [data.bands.primeval].filter(Boolean);
+// Order-only bands on the strip (DESIGN.md Q28, Q29). The Jaredite band shows while the
+// Book of Mormon panel is open, as a thin second lane.
+export const stripBands = (data, { bom = false } = {}) => [
+  data.bands.primeval && { ...data.bands.primeval, lane: 0 },
+  bom && data.bands.jaredite && { ...data.bands.jaredite, lane: 1 },
+].filter(Boolean);
 
 // An event is active when its years overlap the window. An order-only event is
 // active while the selected year is anywhere inside its band.
 export function isActive(event, window, year, bands) {
   if (event.start == null) {
     const band = bands[event.band];
-    return event.band === 'primeval' && band && year >= band.start && year <= band.end;
+    return Boolean(band) && band.start != null && band.end != null && year >= band.start && year <= band.end;
   }
   return event.start <= window.end && event.end >= window.start;
 }
