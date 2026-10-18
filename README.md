@@ -117,7 +117,7 @@ To take in a fix from a Wayfinder repository, change its commit in `scripts/sour
 | `dist/scrubber.js` | The timeline strip |
 | `dist/time-scale.js` | Year math: the warped scale, zoom, ticks, and BCE/CE dates |
 | `dist/events.js` | Which events fall in the window, and the event-button stops |
-| `dist/pins.js` | Pins, groups, the trail, and place markers on the globe |
+| `dist/pins.js` | Pins, groups, and place markers on the globe |
 | `dist/card.js` | The event card and the event lists |
 | `dist/search.js` | The search box |
 | `dist/volumes.js` | Each volume's hue and shape |

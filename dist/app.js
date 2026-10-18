@@ -15,7 +15,6 @@ import { createBomMap } from './bom-map.js';
 
 const $ = id => document.getElementById(id);
 const START_YEAR = -600;
-const TRAIL_WINDOWS = 3; // the trail covers three window widths before the window
 // Tier 2 history shows once the strip shows this many years or fewer (DESIGN.md Q5).
 const TIER_2_YEARS = 1500;
 // Jumping to an event zooms the strip until the 2% window spans at most this many years,
@@ -107,7 +106,7 @@ async function start() {
   const isScripture = e => e.volume !== 'history';
   const visibleYears = () => { const v = scrubber.view; return (v.u1 - v.u0) * yearsPerU(yearToU(scrubber.year)); };
   const tierShown = e => isScripture(e) || e.tier === 1 || visibleYears() <= TIER_2_YEARS;
-  const item = (event, state) => ({ event, placeKey: event.place, place: data.places[event.place], state });
+  const item = event => ({ event, placeKey: event.place, place: data.places[event.place] });
 
   function refresh() {
     if (!data) return;
@@ -117,10 +116,9 @@ async function start() {
     const onGlobe = active.filter(e => e.map === 'globe' && !e.broad && tierShown(e));
     const onMap = active.filter(e => e.map === 'bom');
     const broad = active.filter(e => e.broad);
-    const trailSpan = (window.end - window.start + 1) * TRAIL_WINDOWS;
-    const inTrail = e => !e.broad && e.end != null && e.end < window.start && e.end >= window.start - trailSpan;
-    pins?.setItems([...onGlobe.map(e => item(e, 'active')), ...events.filter(e => e.map === 'globe' && inTrail(e) && tierShown(e)).map(e => item(e, 'trail'))]);
-    bomPins?.setItems(split.open ? [...onMap.map(e => item(e, 'active')), ...events.filter(e => e.map === 'bom' && inTrail(e)).map(e => item(e, 'trail'))] : []);
+    // Only events in the window get pins (DESIGN.md Q6).
+    pins?.setItems(onGlobe.map(item));
+    bomPins?.setItems(split.open ? onMap.map(item) : []);
 
     const parts = [];
     const churchOnGlobe = onGlobe.filter(e => e.basis === 'church-history').length;
