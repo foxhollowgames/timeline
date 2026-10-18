@@ -202,6 +202,11 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 
 - The address holds the state, for example `#year=-701&event=isaiah-36`. Any view can be shared.
 - After launch, each Wayfinder reader gets a "See on timeline" link for each chapter. That is one small pull request per sibling repository.
+  - The build writes `dist/data/chapters.json`, the ids of the events that come from a chapter.
+  - A reader fetches `../timeline/data/chapters.json`. It shows the link only on a listed chapter, under the chapter heading.
+  - The Bible and the D&C share one reader, so the link is written once in the hub's `viewer/`. The Book of Mormon reader has its own copy.
+  - The D&C sections page links each Official Declaration from its dialog.
+  - The link opens `../timeline/#event=<id>`. With no year in the address, the timeline moves to the event.
 
 ## 9. Build order (Q37)
 
@@ -212,7 +217,7 @@ Each milestone is one pull request.
 3. Pins, clustering, cards, filters, search, and links in the address. After this step the timeline is usable with scripture only.
 4. The Book of Mormon split panel, including the Ether band.
 5. World-history batches 1–6, then Church-history batch 7.
-6. Deploy to `/timeline/`, add the hub card, then add the "See on timeline" links in the sibling repositories.
+6. Deploy to `/timeline/`, add the hub card, then add the "See on timeline" links in the sibling repositories. The hub card is a crop of the Earth texture centered on the Bible lands.
 
 ## 10. Checks
 

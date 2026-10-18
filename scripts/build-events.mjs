@@ -435,6 +435,9 @@ if (problems.length) {
 }
 await mkdir(join(out, 'details'), { recursive: true });
 await writeFile(join(out, 'events.json'), JSON.stringify(index));
+// The Wayfinder readers fetch this list to show "See on timeline" only on chapters that have an event (DESIGN.md section 8).
+const chapterIds = events.filter(e => !e.curated && e.volume !== 'history').map(e => e.id);
+await writeFile(join(out, 'chapters.json'), JSON.stringify({ note: 'Event ids that come from one chapter. Bible and Book of Mormon ids are book-chapter. D&C ids are dc-N, od1, and od2.', events: chapterIds }));
 // Loaded when the search box is first used.
 for (const id of Object.keys(eventPeople)) if (!events.some(e => e.id === id)) delete eventPeople[id];
 await writeFile(join(out, 'search.json'), JSON.stringify({ people, eventPeople }));

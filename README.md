@@ -1,8 +1,8 @@
 # Wayfinder Timeline
 
-Wayfinder Timeline is a globe with a timeline. It will place the events of the scriptures beside world history. The full plan is in [DESIGN.md](DESIGN.md).
+Wayfinder Timeline is a globe with a timeline. It places the events of the scriptures beside world history. It is live at <https://wayfinder.josephnewelldesign.com/timeline/>. The full plan is in [DESIGN.md](DESIGN.md).
 
-This is milestone 5 of 6, with all 7 history batches done. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map opens beside the globe and follows the same timeline. World history covers 4000 BCE to 2026, with 254 sourced events. Church history adds 45 sourced events from 1847 to 2026. They show with the D&C pins.
+All 6 milestones are done. The scripture events are on the globe as pins. Each pin opens a card with the event's date, summary, and key verse. Search, volume filters, and shareable links work. The Book of Mormon map opens beside the globe and follows the same timeline. World history covers 4000 BCE to 2026, with 254 sourced events. Church history adds 45 sourced events from 1847 to 2026. They show with the D&C pins.
 
 ## Run locally
 
@@ -12,6 +12,14 @@ Node.js is the only requirement. Nothing needs installing.
 2. Open <http://127.0.0.1:4175>.
 
 The Bible and D&C volumes use port 4173. The Book of Mormon uses 4174. All four can run at once.
+
+## Deploy
+
+GitHub Pages publishes `dist/` after each push to `main`. The workflow is `.github/workflows/deploy-pages.yml`, the same as the other volumes. The site appears at `/timeline/` on the Wayfinder domain because the repository is named `timeline`.
+
+- Every path in `dist/` is relative, so the site works in a subfolder.
+- The Wayfinder hub card uses `dist/assets/hub-card.jpg`.
+- `npm run build` also writes `dist/data/chapters.json`. The Wayfinder readers fetch it and show "See on timeline" on each listed chapter. Bible and Book of Mormon ids are `book-chapter`, such as `isaiah-36`. D&C ids are `dc-N`, `od1`, and `od2`. The check confirms every chapter event follows these rules.
 
 ## Use the timeline
 
@@ -114,6 +122,7 @@ To take in a fix from a Wayfinder repository, change its commit in `scripts/sour
 | `dist/search.js` | The search box |
 | `dist/volumes.js` | Each volume's hue and shape |
 | `dist/address.js` | Reading and writing the address |
+| `dist/data/chapters.json` | The chapter event ids the readers link to |
 | `dist/config.js` | The conference globe link. It is off until its url is set |
 | `dist/split.js` | The split between the globe and the panel |
 | `dist/bom-map.js` | The Book of Mormon map |
