@@ -72,13 +72,16 @@ test('zoom keeps the anchor in place and stays in bounds', () => {
   assert.equal(edge.u1, 1);
 });
 
-test('the active window is about 2% of the visible strip', () => {
+test('the active window is about 2% of the visible strip, at most 10 years either side', () => {
   const full = t.activeWindow(-600, t.FULL_VIEW);
-  assert.ok(full.start < -600 && full.end > -600);
-  const span = t.yearToU(full.end) - t.yearToU(full.start);
-  assert.ok(span > 0.018 && span < 0.024, `window share ${span}`);
-  const zoomed = t.activeWindow(-600, t.zoomView(t.FULL_VIEW, 0.05, t.yearToU(-600)));
-  assert.ok(zoomed.end - zoomed.start < full.end - full.start, 'window narrows when zoomed in');
+  assert.deepEqual(full, { start: -610, end: -590 }, 'zoomed out, the window is capped');
+  const later = t.activeWindow(780, t.FULL_VIEW);
+  assert.deepEqual(later, { start: 770, end: 790 }, 'the cap holds in the compressed centuries');
+  const view = t.zoomView(t.FULL_VIEW, 0.1, t.yearToU(-600)), zoomed = t.activeWindow(-600, view);
+  assert.ok(zoomed.start < -600 && zoomed.end > -600);
+  assert.ok(zoomed.end - zoomed.start < 20, 'window narrows below the cap when zoomed in');
+  const span = t.yearToU(zoomed.end) - t.yearToU(zoomed.start), share = span / (view.u1 - view.u0) / t.WINDOW_SHARE;
+  assert.ok(share > 0.8 && share < 1.6, `window share ${share}`);
 });
 
 test('typed years parse', () => {
