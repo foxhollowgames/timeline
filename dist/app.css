@@ -103,3 +103,12 @@
 .card-also h3 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 500; margin: 0 0 6px; }
 .source-quote { margin: 0 0 4px; font-size: 13px; color: var(--muted); font-style: italic; line-height: 1.5; }
 .card-links a + a { margin-left: 16px; }
+
+/* Scripture events: the event card lists its chapters; a chapter card names its events. */
+.card-chapters, .card-part-of { margin: 4px 0 16px; }
+.card-chapters h3, .card-part-of h3, .card-chapters h4 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 500; margin: 0 0 6px; }
+.card-chapters h4 { margin-top: 12px; }
+.card-part-note { font-size: 12px; color: var(--faint); line-height: 1.5; margin: 0 2px 6px; }
+.also-read { list-style: none; margin: 0; padding: 0; font-size: 13px; line-height: 1.5; }
+.also-read li { margin: 0 0 6px; }
+.also-read span { color: var(--muted); }

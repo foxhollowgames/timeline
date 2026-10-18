@@ -16,8 +16,8 @@ const BASIS = {
   history: 'Date from the cited source',
   'church-history': 'Date from the cited source',
 };
-// Hand-sourced events (world and Church history) lead with their title, not a reference.
-const titleFirst = e => e.volume === 'history' || e.basis === 'church-history';
+// Hand-sourced events (world and Church history) and scripture events lead with their title, not a reference.
+const titleFirst = e => e.volume === 'history' || e.basis === 'church-history' || e.kind === 'event';
 const ALSO_COUNT = 4;
 const ALSO_MAX_GAP = 150; // years between two events' ranges
 const VERSE_WORDS = 40;
@@ -34,7 +34,7 @@ export function alsoAtThisTime(event, events, related = []) {
   const gap = e => Math.max(0, e.start - event.end, event.start - e.end);
   const mid = e => (e.start + e.end) / 2, center = mid(event);
   const nearest = events
-    .filter(e => e.start != null && !e.broad && (e.volume === 'history') === wantHistory && gap(e) <= ALSO_MAX_GAP && !linked.includes(e))
+    .filter(e => e.start != null && !e.broad && !e.covered && (e.volume === 'history') === wantHistory && gap(e) <= ALSO_MAX_GAP && !linked.includes(e))
     // Rank by closeness, then prefer specific events over centuries-long eras.
     .map(e => ({ e, score: gap(e) + Math.abs(mid(e) - center) * 0.5 + (e.end - e.start) * 0.25 }))
     .sort((a, b) => a.score - b.score)
@@ -62,7 +62,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
   // One event as a list row. History rows lead with the title, scripture rows with the reference.
   // A hand-picked link adds "Linked" to its date line.
   const row = (e, linked = false) => titleFirst(e)
-    ? `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.title)}</strong><small class="row-date">${escapeHTML(e.ref)} · ${escapeHTML(e.region ?? '')}${linked ? ' · <span class="row-linked">Linked</span>' : ''}</small></span></button>`
+    ? `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.title)}</strong><small class="row-date">${escapeHTML([e.ref, e.region ?? (e.kind === 'event' ? eventDate(e) : '')].filter(Boolean).join(' · '))}${linked ? ' · <span class="row-linked">Linked</span>' : ''}</small></span></button>`
     : `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.ref)}</strong><small>${escapeHTML(e.title)}</small><small class="row-date">${escapeHTML(eventDate(e))}</small></span></button>`;
 
   function open() { panel.hidden = false; }
@@ -75,7 +75,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
   function backButton() {
     if (!history.length) return '';
     const previous = history[history.length - 1];
-    const name = previous.type === 'event' ? (previous.event.volume === 'history' ? previous.event.title : previous.event.ref) : previous.title;
+    const name = previous.type === 'event' ? (titleFirst(previous.event) ? previous.event.title : previous.event.ref) : previous.title;
     return `<button class="card-back" data-back>Back to ${escapeHTML(name)}</button>`;
   }
   function bind() {
@@ -123,7 +123,13 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
       d.placeNote,
       event.band === 'jaredite' && data.bands.jaredite?.note,
       event.broad && 'This text spans more than 300 years, so it has no pin on the globe.',
+      event.covered && !event.partOf && 'This era is shown as events. This chapter is in none yet, so it has no pin.',
     ].filter(Boolean);
+    // An event lists the chapters that tell it. A chapter lists the events it is part of.
+    const byId = id => data.events.find(e => e.id === id);
+    const chapters = (event.chapters ?? []).map(byId).filter(Boolean);
+    const partOf = (event.partOf ?? []).map(byId).filter(Boolean);
+    const alsoRead = d.alsoRead ?? [];
     content.innerHTML = `${backButton()}
       <p class="card-volume">${shapeSVG(event.volume, 16)}<span>${escapeHTML(VOLUMES[event.volume].label)}</span></p>
       <h2>${escapeHTML(event.title)}</h2>
@@ -135,6 +141,8 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
       ${d.setting ? `<p class="card-setting">${escapeHTML(d.setting)}</p>` : ''}
       <p class="card-summary">${escapeHTML(d.summary)}</p>
       ${d.verse?.text ? `<blockquote class="card-verse"><p>${escapeHTML(shortVerse(d.verse.text))}</p><cite>${escapeHTML(d.verse.ref)}</cite></blockquote>` : ''}
+      ${partOf.length ? `<div class="card-part-of"><h3>Part of</h3><p class="card-part-note">This chapter is pinned as ${partOf.length === 1 ? 'this event' : 'these events'}.</p><div class="event-rows">${partOf.map(e => row(e)).join('')}</div></div>` : ''}
+      ${chapters.length ? `<div class="card-chapters"><h3>In scripture</h3><div class="event-rows">${chapters.map(e => row(e)).join('')}</div>${alsoRead.length ? `<h4>Also read</h4><ul class="also-read">${alsoRead.map(a => `<li><a href="${escapeHTML(a.url)}" target="_blank" rel="noopener">${escapeHTML(a.ref)}</a>${a.note ? ` <span>${escapeHTML(a.note)}</span>` : ''}</li>`).join('')}</ul>` : ''}</div>` : ''}
       <p class="card-links">${d.readerUrl ? `<a href="${escapeHTML(d.readerUrl)}" target="_blank" rel="noopener">Read the chapter</a>` : ''}${conference ? `<a href="${escapeHTML(conference)}" target="_blank" rel="noopener">General conference in ${event.start}</a>` : ''}</p>
       ${notes.map(n => `<p class="card-note">${escapeHTML(n)}</p>`).join('')}
       <dl class="card-facts">

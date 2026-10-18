@@ -23,7 +23,9 @@ export function createSearch({ input, list, data, loadPeople, onEvent, onPlace, 
     if (!placeGroups.has(id)) placeGroups.set(id, { name: place.name, keys: new Set() });
     placeGroups.get(id).keys.add(key);
   }
-  const eventsAtPlace = keys => data.events.filter(e => e.places.some(k => keys.has(k)));
+  // A chapter that an event tells is listed through that event, not on its own.
+  const listed = e => !e.partOf;
+  const eventsAtPlace = keys => data.events.filter(e => listed(e) && e.places.some(k => keys.has(k)));
   const searchable = data.events.map(e => ({ event: e, text: fold(`${e.ref} · ${e.title}`) }));
 
   input.setAttribute('role', 'combobox');
@@ -62,7 +64,7 @@ export function createSearch({ input, list, data, loadPeople, onEvent, onPlace, 
     const events = rank(searchable, 'text', 6).map(r => ({ kind: 'event', event: r.event }));
     const places = rank([...placeGroups.values()].map(p => ({ ...p, text: fold(p.name) })), 'text', 4)
       .map(p => ({ kind: 'place', name: p.name, events: eventsAtPlace(p.keys) })).filter(p => p.events.length);
-    const persons = rank(people, 'text', 4).map(p => ({ kind: 'person', name: p.name, events: p.ids.map(id => data.events.find(e => e.id === id)).filter(Boolean) })).filter(p => p.events.length);
+    const persons = rank(people, 'text', 4).map(p => ({ kind: 'person', name: p.name, events: p.ids.map(id => data.events.find(e => e.id === id)).filter(e => e && listed(e)) })).filter(p => p.events.length);
     options = [...events, ...places, ...persons];
     if (!options.length) {
       list.innerHTML = '<p class="search-empty">No events, places, or people match.</p>';
@@ -75,7 +77,9 @@ export function createSearch({ input, list, data, loadPeople, onEvent, onPlace, 
       const head = o.kind !== last ? `<p class="search-group" role="presentation">${heading[o.kind]}</p>` : '';
       last = o.kind;
       const body = o.kind === 'event'
-        ? `${shapeSVG(o.event.volume, 14)}<span><strong>${escapeHTML(o.event.ref)}</strong><small>${escapeHTML(o.event.title)} · ${escapeHTML(eventDate(o.event))}</small></span>`
+        ? o.event.kind === 'event'
+          ? `${shapeSVG(o.event.volume, 14)}<span><strong>${escapeHTML(o.event.title)}</strong><small>${escapeHTML(o.event.ref)} · ${escapeHTML(eventDate(o.event))}</small></span>`
+          : `${shapeSVG(o.event.volume, 14)}<span><strong>${escapeHTML(o.event.ref)}</strong><small>${escapeHTML(o.event.title)} · ${escapeHTML(eventDate(o.event))}</small></span>`
         : `<span class="search-kind" aria-hidden="true">${o.kind === 'place' ? '◎' : '◉'}</span><span><strong>${escapeHTML(o.name)}</strong><small>${o.events.length} ${o.events.length === 1 ? 'event' : 'events'}</small></span>`;
       return `${head}<div class="search-option" role="option" id="search-option-${i}" data-index="${i}" aria-selected="false">${body}</div>`;
     }).join('');
