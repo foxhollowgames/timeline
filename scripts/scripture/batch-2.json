@@ -3,907 +3,1378 @@
   "batch": 2,
   "era": "The prophets of the divided kingdom and the exile",
   "covers": [
-    { "book": "isaiah", "chapters": [1, 66] },
-    { "book": "jeremiah", "chapters": [1, 52] },
-    { "book": "lamentations", "chapters": [1, 5] },
-    { "book": "ezekiel", "chapters": [1, 48] },
-    { "book": "daniel", "chapters": [1, 12] },
-    { "book": "hosea", "chapters": [1, 14] },
-    { "book": "joel", "chapters": [1, 3] },
-    { "book": "amos", "chapters": [1, 9] },
-    { "book": "obadiah", "chapters": [1, 1] },
-    { "book": "jonah", "chapters": [1, 4] },
-    { "book": "micah", "chapters": [1, 7] },
-    { "book": "nahum", "chapters": [1, 3] },
-    { "book": "habakkuk", "chapters": [1, 3] },
-    { "book": "zephaniah", "chapters": [1, 3] }
+    {
+      "book": "isaiah",
+      "chapters": [
+        1,
+        66
+      ]
+    },
+    {
+      "book": "jeremiah",
+      "chapters": [
+        1,
+        52
+      ]
+    },
+    {
+      "book": "lamentations",
+      "chapters": [
+        1,
+        5
+      ]
+    },
+    {
+      "book": "ezekiel",
+      "chapters": [
+        1,
+        48
+      ]
+    },
+    {
+      "book": "daniel",
+      "chapters": [
+        1,
+        12
+      ]
+    },
+    {
+      "book": "hosea",
+      "chapters": [
+        1,
+        14
+      ]
+    },
+    {
+      "book": "joel",
+      "chapters": [
+        1,
+        3
+      ]
+    },
+    {
+      "book": "amos",
+      "chapters": [
+        1,
+        9
+      ]
+    },
+    {
+      "book": "obadiah",
+      "chapters": [
+        1,
+        1
+      ]
+    },
+    {
+      "book": "jonah",
+      "chapters": [
+        1,
+        4
+      ]
+    },
+    {
+      "book": "micah",
+      "chapters": [
+        1,
+        7
+      ]
+    },
+    {
+      "book": "nahum",
+      "chapters": [
+        1,
+        3
+      ]
+    },
+    {
+      "book": "habakkuk",
+      "chapters": [
+        1,
+        3
+      ]
+    },
+    {
+      "book": "zephaniah",
+      "chapters": [
+        1,
+        3
+      ]
+    }
   ],
   "events": [
     {
       "id": "isaiah-calls-judah-to-repent",
       "volume": "ot",
       "title": "Isaiah calls Judah to repent",
-      "chapters": ["isaiah-1"],
+      "chapters": [
+        "isaiah-1"
+      ],
       "verse": "isaiah-1:18",
-      "summary": "Isaiah sees a vision about Judah and Jerusalem. The people have turned away from the LORD. Their land is burned, and strangers eat their fields. God says he is weary of their offerings and feasts. He tells them to wash, stop doing evil, and seek justice. Their sins may become white as snow."
+      "summary": "Isaiah son of Amoz sees a vision about Judah and Jerusalem. The LORD says his children have rebelled against him. Their cities are burned, and strangers eat their land. God is weary of their sacrifices, feasts, and prayers. Their hands are full of blood. He tells them to wash, seek justice, and defend the fatherless and the widow. Their scarlet sins can become white as snow. Obeying brings the good of the land, and rebelling brings the sword."
     },
     {
       "id": "mountain-of-the-lords-house",
       "volume": "ot",
       "title": "The mountain of the LORD's house in the last days",
-      "chapters": ["isaiah-2", "isaiah-3", "isaiah-4"],
+      "chapters": [
+        "isaiah-2",
+        "isaiah-3",
+        "isaiah-4"
+      ],
       "verse": "isaiah-2:3",
-      "summary": "Isaiah sees the LORD's house raised above the hills in the last days. Many nations go up to learn his ways. They beat their swords into plowshares. The proud will be brought low, and idols will be thrown away. Jerusalem's leaders and proud daughters face judgment. Afterward the LORD cleans Zion and covers it with cloud and fire.",
+      "summary": "Isaiah sees that in the last days the LORD's house will stand above the hills. Many nations go there to learn his ways, and they beat their swords into plowshares. Then the vision turns to judgment on a land full of idols. The proud will hide in the rocks. The LORD takes away Jerusalem's leaders, and children rule. The proud daughters of Zion lose their finery. Afterward the LORD washes Zion. He covers it with a cloud by day and fire by night.",
       "alsoRead": [
-        { "ref": "2 Nephi 12:2", "note": "Nephi copies Isaiah's words about the mountain of the LORD." },
-        { "ref": "Micah 4:1", "note": "Micah gives the same promise." }
+        {
+          "ref": "2 Nephi 12:2",
+          "note": "Nephi copies Isaiah's words about the mountain of the LORD."
+        },
+        {
+          "ref": "Micah 4:1",
+          "note": "Micah gives the same promise."
+        }
       ]
     },
     {
       "id": "song-of-the-vineyard",
       "volume": "ot",
       "title": "Isaiah's song of the vineyard",
-      "chapters": ["isaiah-5"],
+      "chapters": [
+        "isaiah-5"
+      ],
       "verse": "isaiah-5:7",
-      "summary": "Isaiah sings of a friend who plants a fine vineyard. He does everything for it, but it grows only wild grapes. So he will tear down its wall and let it be trampled. The vineyard is Israel, and the vines are the people of Judah. Woes follow for greed, drunkenness, and calling evil good. God will raise a banner and call a swift army from far away."
+      "summary": "Isaiah sings a song about his friend's vineyard. The owner clears it, plants choice vines, and builds a tower. It grows only wild grapes. So he will remove its hedge and let it be trampled. The song names the vineyard as Israel and the vines as the men of Judah. Woes follow for those who add house to house and who call evil good. The LORD raises a banner and calls a swift army from far away."
     },
     {
       "id": "isaiah-called",
       "volume": "ot",
       "title": "Isaiah sees the Lord and is called",
-      "chapters": ["isaiah-6"],
+      "chapters": [
+        "isaiah-6"
+      ],
       "verse": "isaiah-6:8",
-      "summary": "In the year King Uzziah dies, Isaiah sees the Lord on a high throne. Seraphim cry that the LORD of Armies is holy. Isaiah fears, for he has unclean lips. A seraph touches his mouth with a burning coal. The Lord asks whom he should send, and Isaiah offers himself. He is told the people will hear but not understand.",
+      "summary": "In the year King Uzziah dies, Isaiah sees the Lord on a high throne. Seraphim, heavenly beings with six wings, call out that the LORD of Armies is holy. Isaiah cries that he is a man of unclean lips. A seraph touches his mouth with a live coal from the altar. The Lord asks whom he should send, and Isaiah answers that he will go. He must tell a people who will hear but not understand. This lasts until the cities are empty, and a holy seed remains like a stump.",
       "alsoRead": [
-        { "ref": "2 Nephi 16:1", "note": "Nephi copies Isaiah's call." }
+        {
+          "ref": "2 Nephi 16:1",
+          "note": "Nephi copies Isaiah's call."
+        }
       ]
     },
     {
       "id": "sign-of-immanuel",
       "volume": "ot",
       "title": "Isaiah gives Ahaz the sign of Immanuel",
-      "chapters": ["isaiah-7", "isaiah-8"],
+      "chapters": [
+        "isaiah-7",
+        "isaiah-8"
+      ],
       "verse": "isaiah-7:14",
-      "summary": "Syria and Israel march against Jerusalem, and King Ahaz is afraid. Isaiah meets him and tells him not to fear these two kings. The LORD offers Ahaz a sign, and Ahaz refuses to ask. Isaiah says a virgin will bear a son named Immanuel. Before the child is grown, both enemy lands will be empty. Isaiah's own son is named for the coming plunder by Assyria.",
+      "summary": "Rezin king of Syria and Pekah king of Israel march against Jerusalem. King Ahaz and his people shake with fear. Isaiah meets Ahaz and tells him not to fear these two kings. Ahaz refuses to ask for a sign, so the Lord gives one. A virgin will bear a son and call him Immanuel, which means God with us. Assyria will sweep through Judah like a flood. Isaiah's son Maher-shalal-hash-baz is named for the coming plunder of Damascus and Samaria. Isaiah tells the people to seek the law and the testimony, not mediums.",
       "alsoRead": [
-        { "ref": "Matthew 1:23", "note": "Matthew applies the sign to the birth of Jesus." },
-        { "ref": "2 Nephi 17:14", "note": "Nephi copies the sign of Immanuel." }
+        {
+          "ref": "Matthew 1:23",
+          "note": "Matthew applies the sign to the birth of Jesus."
+        },
+        {
+          "ref": "2 Nephi 17:14",
+          "note": "Nephi copies the sign of Immanuel."
+        }
       ]
     },
     {
       "id": "unto-us-a-child-is-born",
       "volume": "ot",
       "title": "A child is born, and Assyria is the rod of God's anger",
-      "chapters": ["isaiah-9", "isaiah-10"],
+      "chapters": [
+        "isaiah-9",
+        "isaiah-10"
+      ],
       "verse": "isaiah-9:6",
-      "summary": "People in Galilee who walked in darkness see a great light. A child is born who will rule on David's throne. His peace and government will have no end. The LORD's hand is still stretched out against proud Israel. God calls Assyria the rod of his anger. When Assyria boasts, God will burn it like thorns and save a remnant.",
+      "summary": "The gloom over Zebulun and Naphtali in Galilee will end. People who walked in darkness see a great light. A child is born who will rule on David's throne with endless peace. The poem turns to Israel's pride, and the LORD's hand is still stretched out. Woe comes to judges who rob widows and the fatherless. God calls Assyria the rod of his anger. When Assyria boasts, God will burn it like thorns. A remnant of Israel will return to the mighty God.",
       "alsoRead": [
-        { "ref": "Matthew 4:16", "note": "Matthew applies the great light to Jesus in Galilee." },
-        { "ref": "2 Nephi 19:6", "note": "Nephi copies the promise of the child." }
+        {
+          "ref": "Matthew 4:16",
+          "note": "Matthew applies the great light to Jesus in Galilee."
+        },
+        {
+          "ref": "2 Nephi 19:6",
+          "note": "Nephi copies the promise of the child."
+        }
       ]
     },
     {
       "id": "rod-from-the-stem-of-jesse",
       "volume": "ot",
       "title": "A rod comes from the stem of Jesse",
-      "chapters": ["isaiah-11", "isaiah-12"],
+      "chapters": [
+        "isaiah-11",
+        "isaiah-12"
+      ],
       "verse": "isaiah-11:1",
-      "summary": "A shoot grows from the stump of Jesse. The LORD's Spirit rests on him, and he judges the poor with fairness. The wolf lives with the lamb, and a little child leads them. The LORD raises a banner for the nations. He gathers the scattered people of Israel and Judah. The people sing praise, for God is their salvation.",
+      "summary": "A shoot grows from the stump of Jesse, the father of King David. The LORD's Spirit rests on him with wisdom and might. He judges the poor with fairness. The wolf lives with the lamb, and a little child leads them. The LORD raises a banner for the nations. He gathers the outcasts of Israel and the scattered of Judah from many lands. Then the people sing that God is their salvation.",
       "alsoRead": [
-        { "ref": "D&C 113:1", "note": "The Lord explains who the stem of Jesse is." },
-        { "ref": "2 Nephi 21:1", "note": "Nephi copies this chapter." }
+        {
+          "ref": "D&C 113:1",
+          "note": "Joseph Smith asks who the stem of Jesse is."
+        },
+        {
+          "ref": "2 Nephi 21:1",
+          "note": "Nephi copies this chapter."
+        }
       ]
     },
     {
       "id": "burden-of-babylon",
       "volume": "ot",
       "title": "Isaiah foretells Babylon's fall",
-      "chapters": ["isaiah-13", "isaiah-14"],
+      "chapters": [
+        "isaiah-13",
+        "isaiah-14"
+      ],
       "verse": "isaiah-14:12",
-      "summary": "The LORD gathers an army from far lands against Babylon. The day of the LORD comes with cruel anger. The Medes will overthrow Babylon, and wild animals will live in its ruins. Israel will return to its land and taunt Babylon's king. The proud star of the morning has fallen from heaven. Messages against Assyria and Philistia close the chapter.",
+      "summary": "Isaiah gives a message about Babylon. The LORD gathers an army from far lands, and his day comes with cruel anger. He stirs up the Medes, and Babylon will never be lived in again. The LORD will have mercy on Jacob and settle Israel in its own land. Israel will then mock Babylon's king. The shining star, the son of the dawn, has fallen from heaven. Short messages follow against Assyria and Philistia.",
       "alsoRead": [
-        { "ref": "2 Nephi 24:12", "note": "Nephi copies the fall of Lucifer." }
+        {
+          "ref": "2 Nephi 24:12",
+          "note": "Nephi copies the fall of Lucifer."
+        }
       ]
     },
     {
       "id": "burden-of-moab",
       "volume": "ot",
       "title": "Isaiah weeps for Moab",
-      "chapters": ["isaiah-15", "isaiah-16"],
+      "chapters": [
+        "isaiah-15",
+        "isaiah-16"
+      ],
       "verse": "isaiah-16:5",
-      "summary": "Two Moabite cities fall in one night. Moab's people shave their heads and weep on the rooftops. Isaiah's own heart cries out for Moab. Moab is told to shelter Judah's refugees. A throne will be set up in mercy in David's tent. Within three years, Moab's glory will be brought low."
+      "summary": "Isaiah gives a message about Moab, east of the Dead Sea. Ar and Kir, two Moabite cities, fall in one night. Moab's people shave their heads and cry on the rooftops. Isaiah says his own heart cries out for Moab. Moab is told to hide Judah's outcasts. A throne will be set up in loving kindness in David's tent. Within three years, Moab's glory will be brought low."
     },
     {
       "id": "damascus-ethiopia-egypt",
       "volume": "ot",
       "title": "Messages to Damascus, Ethiopia, and Egypt",
-      "chapters": ["isaiah-17", "isaiah-18", "isaiah-19"],
+      "chapters": [
+        "isaiah-17",
+        "isaiah-18",
+        "isaiah-19"
+      ],
       "verse": "isaiah-19:25",
-      "summary": "Damascus will become a heap of ruins, and Ephraim will lose its strength. Ethiopia sends messengers in papyrus boats, and later brings gifts to Zion. The LORD rides a swift cloud to Egypt, and its idols tremble. Egyptians fight each other, and the Nile dries up. In that day Egypt and Assyria will worship with Israel. All three will be a blessing in the earth."
+      "summary": "Isaiah's message about Damascus says it will become a heap of ruins. Ephraim, the northern kingdom of Israel, will lose its strength. A land beyond the rivers of Ethiopia sends messengers in papyrus boats. It will later bring gifts to Mount Zion. The LORD rides a swift cloud to Egypt, and its idols shake. Egyptians fight one another, and the Nile dries up. Then Egypt will cry to the LORD, and he will heal it. Egypt, Assyria, and Israel will be a blessing in the earth."
     },
     {
       "id": "isaiah-walks-barefoot",
       "volume": "ot",
       "title": "Isaiah walks barefoot as a sign against Egypt",
-      "chapters": ["isaiah-20"],
+      "chapters": [
+        "isaiah-20"
+      ],
       "verse": "isaiah-20:3",
-      "summary": "Assyria's commander captures the Philistine city of Ashdod. The LORD tells Isaiah to take off his sackcloth and sandals. Isaiah walks stripped and barefoot for three years. This is a sign against Egypt and Ethiopia. Assyria will lead their captives away the same way. Those who trusted in Egypt will be ashamed."
+      "summary": "Sargon king of Assyria sends his commander to capture Ashdod, a Philistine city. The LORD tells Isaiah to take off his sackcloth and sandals. Isaiah walks naked and barefoot for three years. This is a sign against Egypt and Ethiopia. The king of Assyria will lead their captives away the same way. Those who looked to Ethiopia and Egypt for help will be ashamed."
     },
     {
       "id": "babylon-is-fallen",
       "volume": "ot",
       "title": "Isaiah sees Babylon and Tyre fall",
-      "chapters": ["isaiah-21", "isaiah-23"],
+      "chapters": [
+        "isaiah-21",
+        "isaiah-23"
+      ],
       "verse": "isaiah-21:9",
-      "summary": "Isaiah sees a hard vision and shakes with pain. A watchman sees riders come and cries that Babylon has fallen. Its idols lie broken on the ground. Short messages for Edom and Arabia follow. Ships of Tarshish are told to howl, for Tyre's harbor is destroyed. After seventy years Tyre will trade again, and its gain will go to the LORD."
+      "summary": "Isaiah sees a hard vision and shakes with pain. A watchman sees riders come and cries that Babylon has fallen. Its idols lie broken on the ground. Short messages follow for Dumah and Arabia. Then the message turns to Tyre, a trading city on the coast. Ships of Tarshish are told to howl, for Tyre is destroyed. Tyre will be forgotten for seventy years. Then it will trade again, and its gain will go to the LORD."
     },
     {
       "id": "key-of-the-house-of-david",
       "volume": "ot",
       "title": "Jerusalem feasts, and Eliakim receives the key of David",
-      "chapters": ["isaiah-22"],
+      "chapters": [
+        "isaiah-22"
+      ],
       "verse": "isaiah-22:22",
-      "summary": "Jerusalem shouts on its rooftops while an enemy gathers. The people store water and tear down houses to strengthen the wall. They do not look to the God who made it. They say, let us eat and drink, for tomorrow we die. The steward Shebna will be thrown out of his office. Eliakim will receive the key of David's house."
+      "summary": "Isaiah's message about the valley of vision speaks to Jerusalem. The people shout on the rooftops while an enemy gathers. They store water and tear down houses to strengthen the wall. They do not look to the God who made it. They say, let us eat and drink, for tomorrow we die. The steward Shebna has cut himself a fine tomb. The LORD will throw him out of office. Eliakim son of Hilkiah will receive the key of David's house."
     },
     {
       "id": "death-swallowed-up",
       "volume": "ot",
       "title": "The earth is judged and death is swallowed up",
-      "chapters": ["isaiah-24", "isaiah-25", "isaiah-26", "isaiah-27"],
+      "chapters": [
+        "isaiah-24",
+        "isaiah-25",
+        "isaiah-26",
+        "isaiah-27"
+      ],
       "verse": "isaiah-25:8",
-      "summary": "The LORD empties the earth, for its people have broken the everlasting covenant. The earth reels like a drunken man. The LORD reigns on Mount Zion. He makes a feast for all peoples and swallows up death forever. He wipes away tears from every face. The dead will live, and Israel will be gathered one by one."
+      "summary": "Isaiah sees the LORD empty the earth and scatter its people. The earth's people have broken the everlasting covenant. The LORD will reign on Mount Zion. Then a song praises him. He makes a feast for all peoples and swallows up death forever. He wipes away tears from every face. Judah sings of a strong city, and the dead will live. The LORD kills leviathan, the sea serpent, and gathers Israel one by one."
     },
     {
       "id": "woe-to-ephraim",
       "volume": "ot",
       "title": "Woe to Ephraim, and a cornerstone laid in Zion",
-      "chapters": ["isaiah-28"],
+      "chapters": [
+        "isaiah-28"
+      ],
       "verse": "isaiah-28:16",
-      "summary": "Isaiah cries woe to the proud crown of Ephraim's drunkards. Samaria will be eaten like the first ripe fig. Priests and prophets reel with wine. God teaches line upon line, precept upon precept. Jerusalem's rulers think they have a covenant with death. God lays a tested cornerstone in Zion, and their covenant will not stand."
+      "summary": "Isaiah cries woe to the proud crown of Ephraim's drunkards in Samaria. Its glory will be eaten like the first ripe fig. Priests and prophets in Judah also reel with wine. They mock God's teaching, line upon line and precept upon precept. Jerusalem's rulers say they have a covenant with death. The Lord GOD lays a tested cornerstone in Zion. Their covenant with death will not stand. A farmer's work shows that God plans his judgments with care."
     },
     {
       "id": "marvelous-work-and-a-wonder",
       "volume": "ot",
       "title": "A sealed book and a marvelous work",
-      "chapters": ["isaiah-29"],
+      "chapters": [
+        "isaiah-29"
+      ],
       "verse": "isaiah-29:14",
-      "summary": "Ariel, the city where David lived, will be besieged and brought low. She will speak low out of the dust. The people's vision is like a sealed book that no one can read. They honor God with their lips, but their hearts are far away. So God will do a marvelous work and a wonder. The deaf will hear the words of the book.",
+      "summary": "Isaiah cries woe to Ariel, a name for Jerusalem, the city where David camped. Enemies will besiege her, and her voice will rise low out of the dust. Then her enemies will vanish like a dream. The people's vision is like a sealed book that no one can read. They honor God with their lips, but their hearts are far away. So God will do a marvelous work and a wonder. On that day the deaf will hear the words of the book.",
       "alsoRead": [
-        { "ref": "2 Nephi 27:6", "note": "Nephi tells of the book in the last days." }
+        {
+          "ref": "2 Nephi 27:6",
+          "note": "Nephi tells of the book in the last days."
+        }
       ]
     },
     {
       "id": "trust-not-in-egypt",
       "volume": "ot",
       "title": "Isaiah warns Judah not to trust Egypt",
-      "chapters": ["isaiah-30", "isaiah-31"],
+      "chapters": [
+        "isaiah-30",
+        "isaiah-31"
+      ],
       "verse": "isaiah-30:15",
-      "summary": "Judah's leaders send envoys to Egypt for help against Assyria. Isaiah says Egypt's help is worthless and will bring shame. The people tell their prophets to speak only smooth things. God says their strength is in returning, rest, and quiet trust. The LORD waits to be gracious to them. He himself will defend Jerusalem, and Assyria will fall."
+      "summary": "Isaiah cries woe to rebels who go down to Egypt for help. Egypt's help is worthless and will bring shame. The people tell their prophets to speak only smooth things. The Lord GOD says they will be saved in returning and rest. They refuse, so they will flee. Yet the LORD waits to be gracious to them. The Egyptians are men and not God. The LORD will defend Jerusalem, and Assyria will fall by a sword not of man."
     },
     {
       "id": "king-reigns-in-righteousness",
       "volume": "ot",
       "title": "A king will reign in righteousness",
-      "chapters": ["isaiah-32", "isaiah-33"],
+      "chapters": [
+        "isaiah-32",
+        "isaiah-33"
+      ],
       "verse": "isaiah-33:22",
-      "summary": "A king will reign in righteousness, and princes will rule with justice. Women at ease are warned that the palace will be deserted. Then the Spirit is poured out, and the desert becomes a fruitful field. Woe comes to the destroyer who has not been destroyed. The LORD is judge, lawgiver, and king. No one in Zion will say they are sick."
+      "summary": "Isaiah says a king will reign in righteousness, and princes will rule with justice. Women at ease are warned that the palace will be deserted. Then the Spirit is poured out, and the desert becomes a fruitful field. The message turns to a destroyer who has not been destroyed. The LORD rises, and the sinners in Zion are afraid. The LORD is judge, lawgiver, and king. No one in Zion will say they are sick."
     },
     {
       "id": "desert-blossoms",
       "volume": "ot",
       "title": "Edom is judged and the desert blossoms",
-      "chapters": ["isaiah-34", "isaiah-35"],
+      "chapters": [
+        "isaiah-34",
+        "isaiah-35"
+      ],
       "verse": "isaiah-35:1",
-      "summary": "The LORD is angry with the nations and their armies. The sky rolls up like a scroll. His sword falls on Edom, and its land becomes a waste. Then the desert will rejoice and blossom like a rose. The blind will see, the deaf will hear, and the lame will leap. The redeemed will walk a highway of holiness to Zion."
+      "summary": "Isaiah calls all nations to listen. The LORD is angry with them, and the sky rolls up like a scroll. His sword falls on Edom, Judah's neighbor to the southeast. Edom's land becomes a home for wild birds and animals. Then the mood turns. The desert will rejoice and blossom like a rose. The blind will see, the deaf will hear, and the lame will leap. The redeemed will walk a holy highway to Zion with singing."
     },
     {
       "id": "comfort-my-people",
       "volume": "ot",
       "title": "Comfort my people: a voice in the wilderness",
-      "chapters": ["isaiah-40"],
+      "chapters": [
+        "isaiah-40"
+      ],
       "verse": "isaiah-40:3",
-      "summary": "God tells his prophet to comfort Jerusalem, for her hard service is over. A voice calls to prepare the LORD's way in the wilderness. All people are like grass, but God's word stands forever. He feeds his flock like a shepherd. No idol can compare with the Creator of the earth. Those who wait on the LORD will renew their strength.",
+      "summary": "God tells his prophets to comfort his people. Jerusalem's hard service is over, and her sin is pardoned. A voice calls to prepare the LORD's way in the wilderness. All people are like grass, but God's word stands forever. The Lord feeds his flock like a shepherd. No idol can compare with the Creator of the earth. Those who wait for the LORD will renew their strength.",
       "alsoRead": [
-        { "ref": "Matthew 3:3", "note": "Matthew applies the voice in the wilderness to John the Baptist." }
+        {
+          "ref": "Matthew 3:3",
+          "note": "Matthew applies the voice in the wilderness to John the Baptist."
+        }
       ]
     },
     {
       "id": "servant-and-witnesses",
       "volume": "ot",
       "title": "The LORD's servant, and Israel his witness",
-      "chapters": ["isaiah-41", "isaiah-42", "isaiah-43", "isaiah-44"],
+      "chapters": [
+        "isaiah-41",
+        "isaiah-42",
+        "isaiah-43",
+        "isaiah-44"
+      ],
       "verse": "isaiah-43:10",
-      "summary": "The LORD calls the nations to court and mocks their idols. He tells Israel not to fear, for he has chosen them. He presents his servant, who brings justice to the nations. The servant will be a light to the Gentiles. Israel is the LORD's witness that he alone is God. A man carves a god from the same log that warms his fire."
+      "summary": "The LORD calls the far coasts to court. He asks who raised up a conqueror from the east. He tells Israel, his servant, not to fear. He presents his chosen servant, who brings justice to the nations. That servant will be a light to the Gentiles. The LORD says Israel is his witness that he alone is God. A man carves a god from the same log that warms his fire. The LORD calls Cyrus his shepherd, who will say Jerusalem shall be built."
     },
     {
       "id": "cyrus-named",
       "volume": "ot",
       "title": "Cyrus is named, and Babylon's idols fall",
-      "chapters": ["isaiah-45", "isaiah-46", "isaiah-47"],
+      "chapters": [
+        "isaiah-45",
+        "isaiah-46",
+        "isaiah-47"
+      ],
       "place": "b:babylon",
       "verse": "isaiah-45:1",
-      "summary": "The LORD calls Cyrus his anointed and goes before him. He will open gates and give Cyrus hidden treasures. Cyrus will rebuild Jerusalem and free the exiles. Babylon's gods Bel and Nebo are carried off on tired animals. Babylon, the proud queen, will sit in the dust. Her magic and her stargazers cannot save her."
+      "summary": "The LORD calls Cyrus his anointed and goes before him. He will open gates and give Cyrus hidden treasures. Cyrus will build the LORD's city and free his exiles. The LORD says every knee will bow to him. Bel and Nebo, Babylon's gods, are carried off on tired animals. Then the LORD speaks to Babylon as a proud queen. She will sit in the dust. Her spells and her stargazers cannot save her."
     },
     {
       "id": "go-forth-from-babylon",
       "volume": "ot",
       "title": "Israel is called out of Babylon and not forgotten",
-      "chapters": ["isaiah-48", "isaiah-49"],
+      "chapters": [
+        "isaiah-48",
+        "isaiah-49"
+      ],
       "verse": "isaiah-49:16",
-      "summary": "The LORD has refined Israel in the furnace of affliction. He tells them to go out of Babylon with singing. The servant was called from the womb to bring Jacob back. He will also be a light to the Gentiles. Zion says the LORD has forgotten her. He answers that her walls are engraved on his palms. Kings will carry her children home.",
+      "summary": "The house of Jacob swears by the LORD's name, but not in truth. He has refined them in the furnace of affliction. He tells them to go out of Babylon with singing. Then the servant speaks, called from the womb to bring Jacob back. He will also be a light to the Gentiles. Zion says the LORD has forgotten her. He answers that he has engraved her on his palms. Kings and queens will care for her children.",
       "alsoRead": [
-        { "ref": "1 Nephi 20:1", "note": "Nephi reads this chapter to his brothers." },
-        { "ref": "1 Nephi 21:1", "note": "Nephi continues with the next chapter." }
+        {
+          "ref": "1 Nephi 20:1",
+          "note": "Nephi reads this chapter to his brothers."
+        },
+        {
+          "ref": "1 Nephi 21:1",
+          "note": "Nephi continues with the next chapter."
+        }
       ]
     },
     {
       "id": "awake-o-zion",
       "volume": "ot",
       "title": "Awake, O Zion: beautiful feet on the mountains",
-      "chapters": ["isaiah-50", "isaiah-51", "isaiah-52"],
+      "chapters": [
+        "isaiah-50",
+        "isaiah-51",
+        "isaiah-52"
+      ],
       "verse": "isaiah-52:7",
-      "summary": "The servant gives his back to those who strike him. He does not turn away. The LORD tells Zion to look to Abraham, the rock it was cut from. Zion is told to wake, put on strength, and shake off the dust. The feet of the one who brings good news are beautiful. The LORD will bare his holy arm before all nations.",
+      "summary": "The LORD asks where Zion's bill of divorce is. The servant gives his back to those who strike him and does not turn away. The LORD tells Zion to look to Abraham and Sarah, its rock. Zion is told to wake, put on strength, and shake off the dust. The feet of the one who brings good news are beautiful on the mountains. The LORD will bare his holy arm before all nations. His servant will be lifted up, and kings will be silent.",
       "alsoRead": [
-        { "ref": "2 Nephi 8:24", "note": "Jacob reads Isaiah's call for Zion to awake." },
-        { "ref": "Mosiah 15:18", "note": "Abinadi explains the beautiful feet." },
-        { "ref": "3 Nephi 20:36", "note": "Jesus quotes these words to the Nephites." }
+        {
+          "ref": "2 Nephi 8:24",
+          "note": "Jacob reads Isaiah's call for Zion to awake."
+        },
+        {
+          "ref": "Mosiah 15:18",
+          "note": "Abinadi explains the beautiful feet."
+        },
+        {
+          "ref": "3 Nephi 20:36",
+          "note": "Jesus quotes these words to the Nephites."
+        }
       ]
     },
     {
       "id": "suffering-servant",
       "volume": "ot",
       "title": "The servant who bears our griefs",
-      "chapters": ["isaiah-53"],
+      "chapters": [
+        "isaiah-53"
+      ],
       "verse": "isaiah-53:5",
-      "summary": "The servant grows up like a root out of dry ground. He is despised and rejected, a man of sorrows. He carries the griefs and sorrows of others. He is wounded for their sins, and by his stripes they are healed. He is led like a lamb to the slaughter. He bears the sin of many and prays for the rebels.",
+      "summary": "Isaiah asks who has believed the report. The servant grows up like a root out of dry ground. He is despised and rejected, a man of sorrows. He carries the griefs and sorrows of others. He is wounded for their sins, and by his wounds they are healed. He is led like a lamb to the slaughter and does not open his mouth. He is buried with the wicked and the rich. He bears the sin of many and prays for the rebels.",
       "alsoRead": [
-        { "ref": "Mosiah 14:5", "note": "Abinadi quotes this chapter to King Noah's priests." },
-        { "ref": "Acts 8:32", "note": "Philip teaches an Ethiopian from this chapter." }
+        {
+          "ref": "Mosiah 14:5",
+          "note": "Abinadi quotes this chapter to King Noah's priests."
+        },
+        {
+          "ref": "Acts 8:32",
+          "note": "An Ethiopian official reads this chapter, and Philip teaches him."
+        }
       ]
     },
     {
       "id": "enlarge-thy-tent",
       "volume": "ot",
       "title": "Enlarge your tent, and come to the waters",
-      "chapters": ["isaiah-54", "isaiah-55"],
+      "chapters": [
+        "isaiah-54",
+        "isaiah-55"
+      ],
       "verse": "isaiah-55:8",
-      "summary": "The barren woman is told to sing and enlarge her tent. The LORD left her for a moment but takes her back with mercy. His kindness will not leave her, though the mountains move. Everyone who thirsts is invited to come and buy without money. God's thoughts and ways are higher than ours. His word will not return to him empty.",
+      "summary": "The LORD tells the barren woman to sing and enlarge her tent. He left her for a moment but takes her back with great mercy. Mountains may move, but his kindness will not leave her. Her walls will be built of precious stones. Then the LORD invites everyone who thirsts to come to the waters. They may buy without money. His thoughts and ways are higher than theirs. His word will not return to him empty.",
       "alsoRead": [
-        { "ref": "3 Nephi 22:1", "note": "Jesus quotes the enlarged tent to the Nephites." }
+        {
+          "ref": "3 Nephi 22:1",
+          "note": "Jesus quotes the enlarged tent to the Nephites."
+        }
       ]
     },
     {
       "id": "the-fast-that-god-chooses",
       "volume": "ot",
       "title": "Keep the Sabbath and the true fast",
-      "chapters": ["isaiah-56", "isaiah-57", "isaiah-58", "isaiah-59"],
+      "chapters": [
+        "isaiah-56",
+        "isaiah-57",
+        "isaiah-58",
+        "isaiah-59"
+      ],
       "verse": "isaiah-58:6",
-      "summary": "Foreigners who keep the Sabbath will have a place in God's house. It will be called a house of prayer for all peoples. Israel's watchmen are blind, and idols are worshiped under green trees. The people fast but still quarrel and oppress their workers. The true fast frees the oppressed and feeds the hungry. Their sins have separated them from God."
+      "summary": "Foreigners and eunuchs who keep the Sabbath will have a place in the LORD's house. It will be called a house of prayer for all peoples. Israel's watchmen are blind dogs that cannot bark. The people worship idols under green trees. They fast but still quarrel and oppress their workers. The fast the LORD chooses frees the oppressed and feeds the hungry. Their sins have separated them from their God. The LORD puts on righteousness as armor and comes as Redeemer to Zion."
     },
     {
       "id": "arise-shine",
       "volume": "ot",
       "title": "Zion arises, and the Spirit anoints a messenger",
-      "chapters": ["isaiah-60", "isaiah-61", "isaiah-62"],
+      "chapters": [
+        "isaiah-60",
+        "isaiah-61",
+        "isaiah-62"
+      ],
       "verse": "isaiah-61:1",
-      "summary": "Zion is told to arise and shine, for her light has come. Nations come to her light, bringing her sons and daughters home. The LORD's Spirit anoints a messenger to bring good news to the meek. He will bind up the brokenhearted and free the captives. He gives beauty for ashes. Zion will have a new name.",
+      "summary": "The LORD tells Zion to arise and shine, for her light has come. Nations come to her light and bring her sons and daughters home. Then a speaker says the Lord GOD's Spirit is on him. The LORD has anointed him to bring good news to the humble. He will bind up the brokenhearted and free the captives. He gives beauty for ashes. Zion will have a new name, and the LORD will rejoice over her.",
       "alsoRead": [
-        { "ref": "Luke 4:18", "note": "Jesus reads this passage in the synagogue at Nazareth." }
+        {
+          "ref": "Luke 4:18",
+          "note": "Jesus reads this passage in the synagogue at Nazareth."
+        }
       ]
     },
     {
       "id": "new-heavens-and-new-earth",
       "volume": "ot",
       "title": "The LORD in red, and new heavens and a new earth",
-      "chapters": ["isaiah-63", "isaiah-64", "isaiah-65", "isaiah-66"],
+      "chapters": [
+        "isaiah-63",
+        "isaiah-64",
+        "isaiah-65",
+        "isaiah-66"
+      ],
       "place": "b:jerusalem",
       "verse": "isaiah-65:17",
-      "summary": "One comes from Edom in red garments, for he has trodden the winepress alone. The people pray for God to tear open the heavens and come down. They are the clay, and he is the potter. God promises new heavens and a new earth. The wolf and the lamb will feed together. All flesh will come to worship before him.",
+      "summary": "One comes from Edom and Bozrah in red garments. He has trodden the winepress alone. The people remember the LORD's mercy and pray for him to tear open the heavens. They are the clay, and he is the potter. The LORD answers that he was found by those who did not seek him. He will create new heavens and a new earth. The wolf and the lamb will feed together. All flesh will come to worship before him.",
       "alsoRead": [
-        { "ref": "D&C 133:46", "note": "The Lord will come in red at his Second Coming." }
+        {
+          "ref": "D&C 133:46",
+          "note": "The Lord comes from God in dyed garments."
+        }
       ]
     },
     {
       "id": "jeremiah-called",
       "volume": "ot",
       "title": "Jeremiah is called as a prophet",
-      "chapters": ["jeremiah-1"],
+      "chapters": [
+        "jeremiah-1"
+      ],
       "verse": "jeremiah-1:5",
-      "summary": "Jeremiah is a priest's son from Anathoth in the days of King Josiah. God says he knew Jeremiah before he was born. Jeremiah says he is only a child. The LORD touches his mouth and puts his words there. He sees an almond branch and a boiling pot facing north. Disaster will come from the north."
+      "summary": "Jeremiah is a priest's son from Anathoth. The LORD's word comes to him in the days of King Josiah. God says he knew Jeremiah before he formed him in the womb. Jeremiah says he is only a child. The LORD touches his mouth and puts his words there. Jeremiah sees an almond branch and a boiling pot facing from the north. Disaster will come from the north on Judah. God will make Jeremiah a strong city against the kings and priests."
     },
     {
       "id": "fountain-of-living-waters",
       "volume": "ot",
       "title": "Judah forsakes the fountain of living waters",
-      "chapters": ["jeremiah-2", "jeremiah-3"],
+      "chapters": [
+        "jeremiah-2",
+        "jeremiah-3"
+      ],
       "verse": "jeremiah-2:13",
-      "summary": "The LORD remembers how Israel once followed him in the wilderness. Now they have left him, the fountain of living waters. They dug broken cisterns that hold no water. Judah has been unfaithful like a wife who leaves her husband. Judah saw Israel sent away, yet did not turn back. God still calls them to return, and he will give them shepherds."
+      "summary": "The LORD remembers how Israel followed him in the wilderness like a bride. He asks what fault their fathers found in him. Priests, rulers, and prophets have turned to Baal. The people left him, the spring of living waters. They dug broken cisterns that hold no water. The LORD compares Judah to an unfaithful wife. Judah saw Israel sent away and still did not return. He calls them back and promises shepherds after his own heart."
     },
     {
       "id": "disaster-from-the-north",
       "volume": "ot",
       "title": "Jeremiah warns of disaster from the north",
-      "chapters": ["jeremiah-4", "jeremiah-5", "jeremiah-6"],
+      "chapters": [
+        "jeremiah-4",
+        "jeremiah-5",
+        "jeremiah-6"
+      ],
       "verse": "jeremiah-6:16",
-      "summary": "A trumpet warns of a lion coming from the north. Jeremiah feels anguish as he hears the alarm of war. God tells him to search Jerusalem for one person who does justice. Rich and poor alike refuse to turn back. Prophets and priests cry peace when there is no peace. The people will not walk in the old paths."
+      "summary": "The LORD says Israel may return if she puts away her idols. A trumpet warns of a lion coming from the north. Jeremiah feels anguish as he hears the alarm of war. God tells him to search Jerusalem for one person who does justice. Rich and poor alike refuse to turn back. Prophets and priests cry peace when there is no peace. The people will not walk in the old paths."
     },
     {
       "id": "temple-sermon",
       "volume": "ot",
       "title": "Jeremiah's temple sermon, and his trial",
-      "chapters": ["jeremiah-7", "jeremiah-26"],
-      "dateFrom": ["jeremiah-26"],
+      "chapters": [
+        "jeremiah-7",
+        "jeremiah-26"
+      ],
+      "dateFrom": [
+        "jeremiah-26"
+      ],
       "verse": "jeremiah-7:11",
-      "summary": "Early in Jehoiakim's reign, Jeremiah stands at the temple gate. They steal and worship Baal, yet trust in the temple to save them. God's house has become a den of robbers. It will be ruined like Shiloh. Priests and prophets say Jeremiah must die. Elders recall that Micah said the same, and Ahikam protects him."
+      "summary": "Jeremiah 7 records the sermon Jeremiah gives at the temple gate. The people steal and burn incense to Baal. Yet they trust the temple to keep them safe. God asks if his house has become a den of robbers. It will be ruined as Shiloh was. Jeremiah 26 says this happened early in Jehoiakim's reign. Priests and prophets say Jeremiah must die. Elders recall that Micah said the same, and Ahikam protects him."
     },
     {
       "id": "balm-in-gilead",
       "volume": "ot",
       "title": "Jeremiah weeps for his people",
-      "chapters": ["jeremiah-8", "jeremiah-9", "jeremiah-10"],
+      "chapters": [
+        "jeremiah-8",
+        "jeremiah-9",
+        "jeremiah-10"
+      ],
       "verse": "jeremiah-8:22",
-      "summary": "Even the stork knows its season, but the people do not know God's law. Jeremiah asks if there is no balm in Gilead. He wishes his head were a spring of tears. No one can trust a neighbor or a brother. Idols cannot speak and must be carried. The LORD is the true God, the living God, and everlasting King."
+      "summary": "The LORD says the stork knows its season. His people do not know his law. Jeremiah grieves for the wound of his people. He asks if there is no balm, a healing ointment, in Gilead. He wishes his head were a spring of tears. No one can trust a neighbor or a brother. Then the LORD warns against idols that cannot speak and must be carried. The LORD is the true God and the everlasting King."
     },
     {
       "id": "covenant-broken",
       "volume": "ot",
       "title": "The covenant is broken, and Anathoth plots against Jeremiah",
-      "chapters": ["jeremiah-11"],
+      "chapters": [
+        "jeremiah-11"
+      ],
       "verse": "jeremiah-11:19",
-      "summary": "The LORD tells Jeremiah to proclaim the words of the covenant. The fathers did not obey it, and their children have turned to other gods. Judah has as many gods as it has towns. God tells Jeremiah not to pray for them. Men of Anathoth plot to kill him. Jeremiah was like a gentle lamb led to the slaughter."
+      "summary": "The LORD tells Jeremiah to proclaim the words of the covenant. The fathers did not obey it when they left Egypt. Now Judah has as many gods as it has towns. God tells Jeremiah not to pray for this people. Then the LORD shows Jeremiah a plot against him. Jeremiah was like a gentle lamb led to the slaughter. The men of Anathoth tell him to stop prophesying or die. The LORD says they will be punished."
     },
     {
       "id": "ruined-linen-belt",
       "volume": "ot",
       "title": "Jeremiah's ruined linen belt",
-      "chapters": ["jeremiah-13"],
+      "chapters": [
+        "jeremiah-13"
+      ],
       "verse": "jeremiah-13:11",
-      "summary": "The LORD tells Jeremiah to buy a linen belt and wear it. Then he hides it in a rock by the Euphrates. Many days later he digs it up, and it is ruined. God says he will ruin the pride of Judah the same way. Israel once clung to him like a belt. Jars full of wine stand for a people filled with drunkenness."
+      "summary": "The LORD tells Jeremiah to buy a linen belt and wear it. Then he hides it in a rock by the Euphrates. Many days later he digs it up, and it is ruined. The LORD will ruin the pride of Judah and Jerusalem the same way. He had made Israel cling to him like a belt. Every wine jar will be filled, and the people will be filled with drunkenness. The king and queen mother must come down from their thrones."
     },
     {
       "id": "drought-in-judah",
       "volume": "ot",
       "title": "Drought, and Jeremiah's complaint",
-      "chapters": ["jeremiah-14", "jeremiah-15"],
+      "chapters": [
+        "jeremiah-14",
+        "jeremiah-15"
+      ],
       "verse": "jeremiah-15:16",
-      "summary": "A drought strikes Judah, and the cisterns are empty. Jeremiah pleads for the people. The LORD says false prophets promise peace he never sent. Even Moses and Samuel could not turn his heart toward this people. Jeremiah grieves that everyone curses him. God's words were his joy, and God promises to make him a bronze wall."
+      "summary": "A drought strikes Judah, and nobles find the cisterns empty. Jeremiah pleads for the people. The LORD says the prophets promise peace he never sent. Even Moses and Samuel could not turn his heart toward this people. Jeremiah grieves that everyone curses him. He says God's words were his joy when he found them. The LORD tells him to return. He will make Jeremiah a bronze wall."
     },
     {
       "id": "tree-planted-by-the-waters",
       "volume": "ot",
       "title": "The tree planted by the waters",
-      "chapters": ["jeremiah-17"],
+      "chapters": [
+        "jeremiah-17"
+      ],
       "verse": "jeremiah-17:7",
-      "summary": "Judah's sin is written on its heart with an iron pen. Whoever trusts in man is like a shrub in the desert. Whoever trusts the LORD is like a tree planted by water. The heart is deceitful above all things. Jeremiah asks God to heal him. The people must keep the Sabbath and carry no loads through the gates."
+      "summary": "Judah's sin is written with an iron pen on their hearts. The person who trusts in man is like a shrub in the desert. The person who trusts the LORD is like a tree planted by water. The heart is deceitful above all things. Jeremiah asks the LORD to heal him and to shame his persecutors. The LORD sends him to the gates of Jerusalem. The people must carry no loads on the Sabbath day."
     },
     {
       "id": "potter-and-the-broken-jar",
       "volume": "ot",
       "title": "The potter's clay and the broken jar",
-      "chapters": ["jeremiah-18", "jeremiah-19"],
+      "chapters": [
+        "jeremiah-18",
+        "jeremiah-19"
+      ],
       "verse": "jeremiah-18:6",
-      "summary": "The LORD sends Jeremiah to watch a potter at his wheel. The pot is spoiled, and the potter makes it again. Israel is like clay in God's hands. Later Jeremiah takes elders to the valley of Hinnom with a clay jar. He breaks it before them. God will break the city the same way."
+      "summary": "The LORD sends Jeremiah to a potter's house. The clay pot is spoiled on the wheel, and the potter makes it again. God says Israel is like clay in his hand. Then the LORD tells him to buy a clay jar. He takes elders and priests to the valley of Hinnom. There children were burned as offerings to Baal. He breaks the jar before them. God will break the people and the city the same way."
     },
     {
       "id": "jeremiah-in-the-stocks",
       "volume": "ot",
       "title": "Pashhur puts Jeremiah in the stocks",
-      "chapters": ["jeremiah-20"],
+      "chapters": [
+        "jeremiah-20"
+      ],
       "verse": "jeremiah-20:9",
-      "summary": "Pashhur, a chief officer of the temple, hears Jeremiah's words. He has Jeremiah beaten and put in the stocks. The next day Jeremiah says Pashhur will go captive to Babylon. Jeremiah complains that he has become a laughingstock. He tries to stop speaking God's word. It burns in his bones like fire, and he cannot hold it in."
+      "summary": "Pashhur son of Immer, a chief officer in the temple, hears Jeremiah's words. He has Jeremiah beaten and put in the stocks. The next day Jeremiah gives Pashhur a new name, Magor-missabib, meaning terror on every side. Pashhur and his household will go captive to Babylon. Then Jeremiah complains to the LORD. He has become a laughingstock. When he tries to stop speaking, God's word burns in his bones like fire. He curses the day he was born."
     },
     {
       "id": "word-to-the-kings-of-judah",
       "volume": "ot",
       "title": "Jeremiah warns the kings of Judah",
-      "chapters": ["jeremiah-21", "jeremiah-22"],
+      "chapters": [
+        "jeremiah-21",
+        "jeremiah-22"
+      ],
       "verse": "jeremiah-22:3",
-      "summary": "King Zedekiah asks Jeremiah if the LORD will save the city from Babylon. Jeremiah says God himself will fight against Jerusalem. Those who surrender to Babylon will live. The king must do justice and protect the orphan and widow. Shallum will die in exile. Jehoiakim will be buried like a donkey. Coniah will have no heir on the throne."
+      "summary": "King Zedekiah sends Pashhur son of Malchijah and the priest Zephaniah to Jeremiah. They hope the LORD will save the city from Nebuchadnezzar. Jeremiah says God himself will fight against Jerusalem. Those who surrender to the Babylonians will live. The king must do justice and protect the foreigner, the fatherless, and the widow. Shallum will die in exile. Jehoiakim will be buried like a donkey. No child of Coniah will sit on David's throne."
     },
     {
       "id": "righteous-branch",
       "volume": "ot",
       "title": "A righteous Branch for David, and false prophets",
-      "chapters": ["jeremiah-23"],
+      "chapters": [
+        "jeremiah-23"
+      ],
       "verse": "jeremiah-23:5",
-      "summary": "The LORD condemns the shepherds who scatter his flock. He will gather the remnant and give them good shepherds. He will raise a righteous Branch for David. That king will be called the LORD our Righteousness. God rebukes prophets who tell their own dreams. His word is like fire and like a hammer that breaks rock."
+      "summary": "The LORD condemns the shepherds who scatter his flock. He will gather the remnant and give them good shepherds. He will raise up a righteous Branch for David. That king will be called The LORD Our Righteousness. Then the LORD rebukes the prophets of Samaria and Jerusalem. They tell their own dreams and lead the people astray. His word is like fire and like a hammer that breaks rock."
     },
     {
       "id": "two-baskets-of-figs",
       "volume": "ot",
       "title": "Two baskets of figs",
-      "chapters": ["jeremiah-24"],
+      "chapters": [
+        "jeremiah-24"
+      ],
       "verse": "jeremiah-24:7",
-      "summary": "Nebuchadnezzar has carried King Jeconiah and Judah's craftsmen to Babylon. The LORD shows Jeremiah two baskets of figs before the temple. One basket holds good figs, and the other bad. The good figs are the exiles, whom God will bring back. He will give them a heart to know him. The bad figs are Zedekiah and those who stay."
+      "summary": "Nebuchadnezzar has carried away Jeconiah king of Judah, the officials, and the craftsmen. The LORD shows Jeremiah two baskets of figs before the temple. One holds very good figs, and the other very bad figs. The good figs are the exiles in Babylon. God will bring them back and give them a heart to know him. The bad figs are King Zedekiah, his officials, and those left in the land. They will be driven out among the nations."
     },
     {
       "id": "seventy-years",
       "volume": "ot",
       "title": "Seventy years under Babylon, and the cup of wrath",
-      "chapters": ["jeremiah-25"],
+      "chapters": [
+        "jeremiah-25"
+      ],
       "verse": "jeremiah-25:11",
-      "summary": "In Jehoiakim's fourth year, Jeremiah speaks to all Judah. For twenty-three years he has warned them, and they have not listened. So Nebuchadnezzar will come against the land. The nations will serve Babylon for seventy years. Then Babylon itself will be punished. The nations must drink the cup of the LORD's anger."
+      "summary": "In Jehoiakim's fourth year, Jeremiah speaks to all the people of Judah. For twenty-three years he has warned them, and they have not listened. So the LORD will bring Nebuchadnezzar, his servant, against the land. These nations will serve the king of Babylon seventy years. Then the LORD will punish Babylon. He gives Jeremiah a cup of the wine of his wrath. Jeremiah must make all the nations drink it."
     },
     {
       "id": "yoke-of-babylon",
       "volume": "ot",
       "title": "Jeremiah's yoke and Hananiah's false prophecy",
-      "chapters": ["jeremiah-27", "jeremiah-28"],
+      "chapters": [
+        "jeremiah-27",
+        "jeremiah-28"
+      ],
       "verse": "jeremiah-28:15",
-      "summary": "The LORD tells Jeremiah to wear a yoke on his neck. Judah and its neighbors must serve the king of Babylon to live. The prophet Hananiah says God has broken Babylon's yoke. He breaks Jeremiah's yoke in the temple. Jeremiah says God will put an iron yoke in its place. Hananiah dies that same year."
+      "summary": "The LORD tells Jeremiah to wear a yoke, the wooden bar oxen pull with. He sends word to the kings of Edom, Moab, Ammon, Tyre, and Sidon. They must serve Nebuchadnezzar to live. Zedekiah hears the same message. Then the prophet Hananiah says God has broken Babylon's yoke. He breaks the yoke off Jeremiah's neck in the temple. Jeremiah says God will put an iron yoke in its place. Hananiah dies that same year."
     },
     {
       "id": "letter-to-the-exiles",
       "volume": "ot",
       "title": "Jeremiah's letter to the exiles in Babylon",
-      "chapters": ["jeremiah-29"],
+      "chapters": [
+        "jeremiah-29"
+      ],
       "verse": "jeremiah-29:11",
-      "summary": "Jeremiah sends a letter from Jerusalem to the exiles in Babylon. They should build houses, plant gardens, and raise families. They must seek the peace of the city where they live. After seventy years God will bring them home. He has plans to give them hope. False prophets among the exiles will be punished."
+      "summary": "Jeremiah sends a letter from Jerusalem to the exiles in Babylon. The LORD tells them to build houses, plant gardens, and raise families. They must seek the peace of the city where they live. Prophets among them must not deceive them. After seventy years God will bring them home. His thoughts toward them are of peace and a future. Ahab and Zedekiah son of Maaseiah are false prophets and will die. Shemaiah wrote against Jeremiah and will have no descendant to see the good."
     },
     {
       "id": "new-covenant",
       "volume": "ot",
       "title": "God promises a new covenant",
-      "chapters": ["jeremiah-30", "jeremiah-31"],
+      "chapters": [
+        "jeremiah-30",
+        "jeremiah-31"
+      ],
       "verse": "jeremiah-31:33",
-      "summary": "The LORD tells Jeremiah to write his words in a book. He will bring Israel and Judah back to their land. He has loved Israel with an everlasting love. Rachel weeps for her children in Ramah, but they will return. God will make a new covenant with Israel and Judah. He will write his law on their hearts.",
+      "summary": "The LORD tells Jeremiah to write his words in a book. He will bring Israel and Judah back to their land. A day of terror comes, but Jacob will be saved out of it. The LORD has loved Israel with an everlasting love. Rachel weeps for her children in Ramah, but they will return. The LORD will make a new covenant with Israel and Judah. He will write his law on their hearts.",
       "alsoRead": [
-        { "ref": "Hebrews 8:8", "note": "Hebrews quotes the promise of a new covenant." },
-        { "ref": "Matthew 2:18", "note": "Matthew recalls Rachel weeping in Ramah." }
+        {
+          "ref": "Hebrews 8:8",
+          "note": "Hebrews quotes the promise of a new covenant."
+        },
+        {
+          "ref": "Matthew 2:18",
+          "note": "Matthew recalls Rachel weeping in Ramah."
+        }
       ]
     },
     {
       "id": "field-at-anathoth",
       "volume": "ot",
       "title": "Jeremiah buys a field at Anathoth",
-      "chapters": ["jeremiah-32", "jeremiah-33"],
+      "chapters": [
+        "jeremiah-32",
+        "jeremiah-33"
+      ],
       "verse": "jeremiah-32:15",
-      "summary": "Babylon besieges Jerusalem, and Jeremiah is held in the court of the guard. His cousin Hanamel asks him to buy a field in Anathoth. Jeremiah pays the silver and has Baruch store the deed in a clay jar. It is a sign that fields will be bought again in this land. Nothing is too hard for the LORD. A Branch will rise for David."
+      "summary": "In Zedekiah's tenth year, Babylon's army besieges Jerusalem. Jeremiah is held in the court of the guard. His cousin Hanamel asks him to buy a field in Anathoth. Jeremiah weighs the silver and gives the deed to Baruch. Baruch stores it in a clay jar. The LORD says fields will be bought again in this land. Jeremiah prays that nothing is too hard for the LORD. A second message promises a righteous Branch for David."
     },
     {
       "id": "freed-slaves-taken-back",
       "volume": "ot",
       "title": "Judah frees its slaves, then takes them back",
-      "chapters": ["jeremiah-34"],
+      "chapters": [
+        "jeremiah-34"
+      ],
       "verse": "jeremiah-34:17",
-      "summary": "Babylon's army attacks Jerusalem and Judah's last towns. Jeremiah tells Zedekiah the city will fall and he will see Babylon's king. The people make a covenant to free their Hebrew slaves. Then they take the slaves back. So God gives them freedom of another kind, to the sword and famine."
+      "summary": "Nebuchadnezzar's army attacks Jerusalem and Judah's last towns. Jeremiah tells Zedekiah he will see the king of Babylon face to face. Zedekiah and the people make a covenant to free their Hebrew slaves. Then they take the slaves back. The LORD says they did not proclaim liberty. So he proclaims a liberty for them to the sword, plague, and famine."
     },
     {
       "id": "faithful-rechabites",
       "volume": "ot",
       "title": "The faithful Rechabites",
-      "chapters": ["jeremiah-35"],
+      "chapters": [
+        "jeremiah-35"
+      ],
       "verse": "jeremiah-35:6",
-      "summary": "In Jehoiakim's days, Jeremiah brings the Rechabite family into a temple room. He sets wine before them. They refuse, for their ancestor Jonadab told them never to drink it. They have kept his command for generations. Judah has not kept God's words. So the Rechabites are blessed, and Judah will be punished."
+      "summary": "In Jehoiakim's days, the LORD sends Jeremiah to the Rechabites. They are a family that lives in tents. Jeremiah brings them into a temple room and sets wine before them. They refuse, for their ancestor Jonadab told them never to drink wine. They have obeyed his command for generations. The people of Judah have not obeyed the LORD. So disaster will come on Judah. Jonadab will always have a descendant to stand before the LORD."
     },
     {
       "id": "jehoiakim-burns-the-scroll",
       "volume": "ot",
       "title": "Jehoiakim burns Jeremiah's scroll",
-      "chapters": ["jeremiah-36"],
+      "chapters": [
+        "jeremiah-36"
+      ],
       "verse": "jeremiah-36:23",
-      "summary": "In Jehoiakim's fourth year, the LORD tells Jeremiah to write his words on a scroll. Baruch writes as Jeremiah speaks. Baruch reads the scroll in the temple, and the officials take it to the king. Jehoiakim cuts it apart and burns it in his fire. Jeremiah and Baruch hide. Jeremiah dictates the words again, with more added."
+      "summary": "In Jehoiakim's fourth year, the LORD tells Jeremiah to write his words on a scroll. Baruch writes as Jeremiah speaks. Baruch reads the scroll in the temple on a fast day. Micaiah tells the officials, and they hear it read. Jehudi reads it to the king by the fire. Jehoiakim cuts it apart and burns it. Jeremiah and Baruch hide, and Jeremiah dictates the words again with more added."
     },
     {
       "id": "jeremiah-in-the-cistern",
       "volume": "ot",
       "title": "Jeremiah is imprisoned and lowered into a cistern",
-      "chapters": ["jeremiah-37", "jeremiah-38"],
+      "chapters": [
+        "jeremiah-37",
+        "jeremiah-38"
+      ],
       "verse": "jeremiah-38:6",
-      "summary": "Egypt's army marches out, and Babylon pulls back from Jerusalem. Jeremiah says Babylon will return and burn the city. He is arrested as a deserter and put in a dungeon. Officials have him lowered into a muddy cistern to die. Ebed-melech the Ethiopian pulls him out with ropes. Zedekiah meets him in secret but will not surrender."
+      "summary": "Zedekiah reigns, and no one listens to Jeremiah. Egypt's army marches out, and the Babylonians withdraw from Jerusalem. Jeremiah says they will return and burn the city. He is arrested as a deserter and kept in a dungeon. Officials lower him into the muddy cistern of Malchijah to die. Ebed-melech the Ethiopian pulls him out with ropes and rags. Zedekiah meets Jeremiah in secret. Jeremiah tells him to surrender, but the king is afraid."
     },
     {
       "id": "gedaliah-murdered",
       "volume": "ot",
       "title": "Gedaliah is murdered at Mizpah",
-      "chapters": ["jeremiah-40", "jeremiah-41"],
+      "chapters": [
+        "jeremiah-40",
+        "jeremiah-41"
+      ],
       "place": "b:mizpah",
       "verse": "jeremiah-41:2",
-      "summary": "Babylon's captain frees Jeremiah from his chains at Ramah. Jeremiah chooses to stay with Gedaliah, the new governor at Mizpah. Scattered Jews return and gather the harvest. Johanan warns Gedaliah of a plot, but he does not believe it. Ishmael of the royal family kills Gedaliah at a meal. Johanan rescues the captives Ishmael took."
+      "summary": "Nebuzaradan, captain of Babylon's guard, frees Jeremiah from his chains at Ramah. Jeremiah chooses to stay with Gedaliah, the new governor at Mizpah. Scattered Jews return and gather the harvest. Johanan warns Gedaliah of a plot, but Gedaliah does not believe him. Ishmael of the royal family kills Gedaliah at a meal. Ishmael also murders pilgrims and takes the people captive. Johanan rescues the captives, but Ishmael escapes to Ammon."
     },
     {
       "id": "flight-to-egypt",
       "volume": "ot",
       "title": "The remnant of Judah flees to Egypt",
-      "chapters": ["jeremiah-42", "jeremiah-43", "jeremiah-44"],
+      "chapters": [
+        "jeremiah-42",
+        "jeremiah-43",
+        "jeremiah-44"
+      ],
       "place": "b:tahpanhes",
       "verse": "jeremiah-43:7",
-      "summary": "The people ask Jeremiah to pray for guidance and promise to obey. The LORD says to stay in Judah and not go to Egypt. The leaders call Jeremiah a liar. They take everyone to Tahpanhes in Egypt, with Jeremiah and Baruch. Jeremiah hides stones there for Nebuchadnezzar's throne. The Jews in Egypt keep burning incense to the queen of heaven."
+      "summary": "The people ask Jeremiah to pray for guidance and promise to obey. After ten days the LORD says to stay in Judah and not go to Egypt. Johanan and Azariah call Jeremiah a liar. They take everyone to Tahpanhes in Egypt, with Jeremiah and Baruch. Jeremiah hides stones there where Nebuchadnezzar will set his throne. The Jews in Egypt burn incense to the queen of heaven. Jeremiah says only a few will escape back to Judah."
     },
     {
       "id": "battle-of-carchemish",
       "volume": "ot",
       "title": "Babylon defeats Egypt at Carchemish",
-      "chapters": ["jeremiah-46"],
+      "chapters": [
+        "jeremiah-46"
+      ],
       "place": "b:carchemish",
       "verse": "jeremiah-46:2",
-      "summary": "Jeremiah's messages to the nations begin with Egypt. Pharaoh Necho's army is defeated by Nebuchadnezzar at Carchemish. Egypt rose like the Nile, but its soldiers flee in terror. Babylon will come and strike Egypt's own land. Jacob is told not to fear, for God will save him from far away."
+      "summary": "Jeremiah's messages to the nations begin with Egypt. Nebuchadnezzar defeats Pharaoh Necho's army at Carchemish, by the Euphrates. Egypt rose like the Nile, but its soldiers flee in terror. Babylon will come and strike Egypt's own land. Then the LORD tells Jacob not to fear. He will save Jacob from far away."
     },
     {
       "id": "messages-to-the-nations",
       "volume": "ot",
       "title": "Jeremiah's messages to Judah's neighbors",
-      "chapters": ["jeremiah-47", "jeremiah-48", "jeremiah-49"],
+      "chapters": [
+        "jeremiah-47",
+        "jeremiah-48",
+        "jeremiah-49"
+      ],
       "verse": "jeremiah-49:16",
-      "summary": "A flood from the north rises over the Philistines. Moab's towns fall one by one, and its god Chemosh goes into exile. Ammon trusted in its treasures and will be ruined. Edom lives in the rocks, but God will bring it down. Damascus, Kedar, and Elam will also fall. God promises to restore Moab, Ammon, and Elam in later days."
+      "summary": "Jeremiah's messages continue against Judah's neighbors. A flood from the north rises over the Philistines. Moab's towns fall one by one, and its god Chemosh goes into exile. Ammon trusted in its treasures and will be ruined. Edom lives in the clefts of the rock, but God will bring it down. Damascus, Kedar, and Elam will also fall. The LORD promises to restore Moab, Ammon, and Elam in later days."
     },
     {
       "id": "babylon-will-fall",
       "volume": "ot",
       "title": "Jeremiah foretells the fall of Babylon",
-      "chapters": ["jeremiah-50", "jeremiah-51"],
+      "chapters": [
+        "jeremiah-50",
+        "jeremiah-51"
+      ],
       "place": "b:babylon",
       "verse": "jeremiah-51:63",
-      "summary": "A nation from the north will attack Babylon, and its gods will be shamed. Israel and Judah will come weeping and seek the way to Zion. Babylon was a golden cup that made the earth drunk. Now it falls suddenly. Jeremiah writes these words on a scroll for Seraiah to take to Babylon. Seraiah reads it, ties a stone to it, and throws it into the Euphrates."
+      "summary": "Jeremiah gives a message about Babylon. A nation from the north attacks, and its gods Bel and Merodach are shamed. Israel and Judah come weeping and ask the way to Zion. Babylon was a golden cup that made the earth drunk. Now it falls suddenly. Jeremiah writes these words in a book for Seraiah to take to Babylon. Seraiah must read it, tie a stone to it, and throw it into the Euphrates."
     },
     {
       "id": "lamentations-for-jerusalem",
       "volume": "ot",
       "title": "Jerusalem is mourned in Lamentations",
-      "chapters": ["lamentations-1", "lamentations-2", "lamentations-3", "lamentations-4", "lamentations-5"],
+      "chapters": [
+        "lamentations-1",
+        "lamentations-2",
+        "lamentations-3",
+        "lamentations-4",
+        "lamentations-5"
+      ],
       "verse": "lamentations-3:22",
-      "summary": "Five poems mourn Jerusalem after Babylon destroys it. The city sits alone like a widow, and no one comforts her. The Lord has thrown down her walls and his own sanctuary. Children faint from hunger in the streets. One man still hopes, for the LORD's mercies are new every morning. The people ask God to remember them and restore them."
+      "summary": "Lamentations is five poems of grief for Jerusalem after its fall. The city sits alone like a widow, and no one comforts her. The Lord has thrown down her walls and his own sanctuary. Then one man speaks of his suffering under God's anger. He still hopes, for the LORD's mercies are new every morning. Children faint from hunger, and Zion's gold has grown dim. The people ask the LORD to remember them and restore them."
     },
     {
       "id": "ezekiel-acts-out-the-siege",
       "volume": "ot",
       "title": "Ezekiel acts out the siege of Jerusalem",
-      "chapters": ["ezekiel-4", "ezekiel-5"],
+      "chapters": [
+        "ezekiel-4",
+        "ezekiel-5"
+      ],
       "verse": "ezekiel-4:3",
-      "summary": "Ezekiel is among the exiles in Babylon. God tells him to draw Jerusalem on a brick and set a siege around it. He lies on his side for many days to bear the people's guilt. He eats rationed bread to show coming famine. He shaves his hair and divides it into three parts. A third will die by plague and famine, a third by sword. The rest are scattered."
+      "summary": "Ezekiel is a priest among the exiles in Babylon. God tells him to draw Jerusalem on a brick and set a siege around it. He lies on his left side 390 days and on his right side 40 days. He eats rationed bread and water to show the coming famine. He shaves his head and beard with a sword. He burns, strikes, and scatters the hair in thirds. A third will die by plague and famine, a third by sword. The rest are scattered."
     },
     {
       "id": "the-end-has-come",
       "volume": "ot",
       "title": "The end has come on the land",
-      "chapters": ["ezekiel-6", "ezekiel-7"],
+      "chapters": [
+        "ezekiel-6",
+        "ezekiel-7"
+      ],
       "verse": "ezekiel-7:2",
-      "summary": "Ezekiel speaks against the mountains of Israel. A sword will fall on the hilltop shrines, and the altars will be ruined. A remnant will remember the LORD in exile. The end has come on the four corners of the land. Silver and gold cannot save the people. They will seek a vision from the prophet in vain."
+      "summary": "God tells Ezekiel to speak against the mountains of Israel. A sword will fall on the hilltop shrines, and their altars will be ruined. A remnant will remember the LORD among the nations. Then God says the end has come on the four corners of the land. Silver and gold cannot save the people. They will seek a vision from the prophet in vain."
     },
     {
       "id": "glory-leaves-the-temple",
       "volume": "ot",
       "title": "Ezekiel sees the glory leave the temple",
-      "chapters": ["ezekiel-8", "ezekiel-9", "ezekiel-10", "ezekiel-11"],
+      "chapters": [
+        "ezekiel-8",
+        "ezekiel-9",
+        "ezekiel-10",
+        "ezekiel-11"
+      ],
       "verse": "ezekiel-10:18",
-      "summary": "Ezekiel sits with Judah's elders in his house in Babylon. In a vision he is carried to the temple in Jerusalem. He sees idols, women weeping for Tammuz, and men bowing to the sun. A man in linen marks those who mourn the city's sins. The glory of God rises from the temple and leaves the city. God promises the exiles a new heart and a new spirit."
+      "summary": "Ezekiel sits in his house with Judah's elders. The Spirit lifts him in a vision to the temple in Jerusalem. He sees women weeping for Tammuz, a foreign god. Men bow to the sun with their backs to the temple. A man in linen marks those who sigh over the city's sins. Then the LORD's glory leaves the temple. It stops on the mountain east of the city. God promises the exiles a new heart and a new spirit."
     },
     {
       "id": "ezekiel-packs-for-exile",
       "volume": "ot",
       "title": "Ezekiel packs his bags for exile",
-      "chapters": ["ezekiel-12"],
+      "chapters": [
+        "ezekiel-12"
+      ],
       "verse": "ezekiel-12:11",
-      "summary": "God tells Ezekiel to pack bags for exile while the people watch. In the evening he digs through the wall and carries his bag out. He covers his face so he cannot see the land. This is a sign that Jerusalem's prince and people will go into captivity. The people say visions fail. God says his word will not be delayed any longer."
+      "summary": "God tells Ezekiel to pack bags for exile while the people watch. In the evening he digs through the wall and carries his bag out. He covers his face so he cannot see the land. This is a sign that Jerusalem's prince and people will go into captivity. The prince will be brought to Babylon but will not see it. The people say visions fail. God says his word will not be delayed any longer."
     },
     {
       "id": "false-prophets-condemned",
       "volume": "ot",
       "title": "Ezekiel condemns false prophets and idols of the heart",
-      "chapters": ["ezekiel-13", "ezekiel-14"],
+      "chapters": [
+        "ezekiel-13",
+        "ezekiel-14"
+      ],
       "verse": "ezekiel-14:14",
-      "summary": "God speaks against prophets who follow their own spirit. They cry peace when there is no peace. They cover a weak wall with whitewash, and it will fall. Elders come to Ezekiel with idols in their hearts. God says even Noah, Daniel, and Job could save only themselves. A remnant will still survive."
+      "summary": "God speaks against prophets who follow their own spirit. They cry peace when there is no peace. They cover a weak wall with whitewash, and it will fall. Some elders of Israel come to Ezekiel with idols in their hearts. God says Noah, Daniel, and Job could save only themselves. Yet a remnant of sons and daughters will survive."
     },
     {
       "id": "vine-bride-and-eagles",
       "volume": "ot",
       "title": "Parables of the vine, the unfaithful bride, and the eagles",
-      "chapters": ["ezekiel-15", "ezekiel-16", "ezekiel-17"],
+      "chapters": [
+        "ezekiel-15",
+        "ezekiel-16",
+        "ezekiel-17"
+      ],
       "verse": "ezekiel-16:60",
-      "summary": "Jerusalem is like vine wood, good only for the fire. God found her as an abandoned baby and later married her. She trusted in her beauty and was unfaithful with the nations. Still God will remember his covenant with her. A riddle tells of two eagles and a vine. Judah's king broke his oath to Babylon and turned to Egypt."
+      "summary": "God asks what use vine wood is, and says it goes to the fire. Then he tells Jerusalem's history as an abandoned baby. God raised her and married her. She trusted in her beauty and was unfaithful with the nations. Still God will remember his covenant with her. A riddle follows about two eagles and a vine. Judah's king broke his oath to Babylon and turned to Egypt. God will plant a tender twig on a high mountain."
     },
     {
       "id": "the-soul-that-sinneth",
       "volume": "ot",
       "title": "Each person answers for their own sins",
-      "chapters": ["ezekiel-18"],
+      "chapters": [
+        "ezekiel-18"
+      ],
       "verse": "ezekiel-18:20",
-      "summary": "The people say the fathers ate sour grapes, and the children's teeth ache. God says they will not use this proverb any more. Each person will answer for their own sins. A righteous son will not die for a wicked father. If the wicked turn from their sins, they will live. God takes no pleasure in anyone's death."
+      "summary": "The people quote a proverb: the fathers ate sour grapes, and the children's teeth ache. God says they will not use it any more. The soul who sins will die. A righteous son will not die for his father's sin. If the wicked turn from their sins, they will live. If the righteous turn to sin, they will die. God takes no pleasure in anyone's death. He tells Israel to turn and live."
     },
     {
       "id": "israels-history-of-rebellion",
       "volume": "ot",
       "title": "Ezekiel recounts Israel's rebellion",
-      "chapters": ["ezekiel-19", "ezekiel-20"],
+      "chapters": [
+        "ezekiel-19",
+        "ezekiel-20"
+      ],
       "place": "b:babylon",
       "verse": "ezekiel-20:12",
-      "summary": "Ezekiel sings a lament for Israel's princes, who were caught like young lions. Elders come to ask of the LORD, but he will not answer them. He recounts their history from Egypt onward. God gave them his statutes and his Sabbaths. Again and again they rebelled. Still he will gather them and accept them on his holy mountain."
+      "summary": "Ezekiel sings a lament for Israel's princes. Their mother was a lioness, and her cubs were caught and taken away. Elders come to ask of the LORD, but he will not answer them. He recounts their history from Egypt onward. He gave them his statutes and his Sabbaths. Again and again they rebelled. Still he will gather them and accept them on his holy mountain."
     },
     {
       "id": "sword-of-babylon",
       "volume": "ot",
       "title": "The sword of Babylon and the city of bloodshed",
-      "chapters": ["ezekiel-21", "ezekiel-22"],
+      "chapters": [
+        "ezekiel-21",
+        "ezekiel-22"
+      ],
       "verse": "ezekiel-21:27",
-      "summary": "God's sword is sharpened and drawn against Jerusalem. Babylon's king stands at a fork in the road and casts lots. The lot points to Jerusalem. The crown will be overturned until the rightful one comes. Jerusalem is a city of bloodshed that wrongs the orphan and widow. God looked for someone to stand in the gap and found no one."
+      "summary": "God's sword is sharpened and drawn against Jerusalem. Ezekiel must groan aloud. The king of Babylon stands at a fork in the road and casts lots. The lot points to Jerusalem. The crown will be overturned until he comes whose right it is. Then God calls Jerusalem a city of bloodshed. It wrongs the foreigner, the fatherless, and the widow. God looked for someone to stand in the gap and found no one."
     },
     {
       "id": "two-sisters",
       "volume": "ot",
       "title": "The parable of two sisters",
-      "chapters": ["ezekiel-23"],
+      "chapters": [
+        "ezekiel-23"
+      ],
       "verse": "ezekiel-23:4",
-      "summary": "God tells a story of two sisters, Oholah and Oholibah. Oholah is Samaria, and Oholibah is Jerusalem. Samaria chased after Assyria and was destroyed by it. Jerusalem saw this and became even worse. She chased after Assyria, Babylon, and Egypt. She will drink her sister's cup."
+      "summary": "God tells a story of two sisters, Oholah and Oholibah. Oholah is Samaria, and Oholibah is Jerusalem. Both were unfaithful in their youth in Egypt. Samaria chased after the Assyrians and was destroyed by them. Jerusalem saw this and became even worse. She chased after Assyria, Babylon, and Egypt. She will drink her sister's cup."
     },
     {
       "id": "siege-begins-ezekiels-wife-dies",
       "volume": "ot",
       "title": "The siege begins, and Ezekiel's wife dies",
-      "chapters": ["ezekiel-24"],
+      "chapters": [
+        "ezekiel-24"
+      ],
       "verse": "ezekiel-24:2",
-      "summary": "God tells Ezekiel to write down the day Babylon's siege of Jerusalem begins. He gives a parable of a rusted pot set on the fire. Then God tells Ezekiel his wife will die. Ezekiel must not mourn her openly. She dies that evening. So the people will not mourn when the temple falls."
+      "summary": "God tells Ezekiel to write down this day. The king of Babylon has begun his siege of Jerusalem. Ezekiel gives a parable of a rusted pot set on the fire. Then God says Ezekiel's wife, the delight of his eyes, will die. Ezekiel must not mourn her openly. She dies that evening, and he obeys. So the people will not mourn when the temple falls."
     },
     {
       "id": "judahs-neighbors-judged",
       "volume": "ot",
       "title": "Ammon, Moab, Edom, and Philistia are judged",
-      "chapters": ["ezekiel-25"],
+      "chapters": [
+        "ezekiel-25"
+      ],
       "verse": "ezekiel-25:7",
-      "summary": "God speaks against four neighbors of Judah. Ammon clapped and rejoiced when the temple was profaned. Moab said Judah was like every other nation. Edom took revenge on Judah. The Philistines acted with old hatred. Each will know that God is the LORD."
+      "summary": "God speaks against four neighbors of Judah. Ammon clapped and rejoiced when the temple was profaned. Moab said Judah was like all the other nations. Edom took revenge on the house of Judah. The Philistines acted with old hatred. Each will know that he is the LORD."
     },
     {
       "id": "fall-of-tyre",
       "volume": "ot",
       "title": "Ezekiel foretells the fall of Tyre",
-      "chapters": ["ezekiel-26", "ezekiel-27", "ezekiel-28"],
+      "chapters": [
+        "ezekiel-26",
+        "ezekiel-27",
+        "ezekiel-28"
+      ],
       "verse": "ezekiel-28:2",
-      "summary": "Tyre rejoiced when Jerusalem fell. God will bring many nations against it like waves. Nebuchadnezzar will besiege it, and it will become a bare rock. Ezekiel laments Tyre as a beautiful ship sunk at sea. Tyre's ruler says he is a god, but he is only a man. Sidon is judged too, and Israel will be gathered in safety."
+      "summary": "Tyre, a rich trading city, gloated when Jerusalem fell. God will bring many nations against it like waves. Nebuchadnezzar will besiege it, and it will become a bare rock. Ezekiel laments Tyre as a beautiful ship sunk at sea. Tyre's prince says he is a god, but he is only a man. Then God speaks against Sidon. Israel will be gathered and live safely."
     },
     {
       "id": "pharaoh-and-egypt-judged",
       "volume": "ot",
       "title": "Ezekiel speaks against Pharaoh and Egypt",
-      "chapters": ["ezekiel-29", "ezekiel-30", "ezekiel-31", "ezekiel-32"],
+      "chapters": [
+        "ezekiel-29",
+        "ezekiel-30",
+        "ezekiel-31",
+        "ezekiel-32"
+      ],
       "verse": "ezekiel-29:3",
-      "summary": "Pharaoh is a great monster lying in the Nile. He says the river is his own. God will put hooks in his jaws and leave him in the desert. Nebuchadnezzar will take Egypt as wages for his work against Tyre. Egypt is a tall cedar that will be cut down like Assyria. Ezekiel sings a lament as Pharaoh goes down to the pit."
+      "summary": "God calls Pharaoh a great monster lying in the Nile. Pharaoh says the river is his own. God will put hooks in his jaws and leave him in the desert. Nebuchadnezzar will take Egypt as wages for his work against Tyre. Egypt is a tall cedar that will fall as Assyria fell. Ezekiel sings a lament as Pharaoh goes down to the pit."
     },
     {
       "id": "jerusalem-has-fallen",
       "volume": "ot",
       "title": "Ezekiel the watchman hears that Jerusalem has fallen",
-      "chapters": ["ezekiel-33"],
+      "chapters": [
+        "ezekiel-33"
+      ],
       "place": "b:babylon",
       "verse": "ezekiel-33:21",
-      "summary": "God makes Ezekiel a watchman for Israel. A watchman who does not warn the people shares their guilt. God takes no pleasure in the death of the wicked. A refugee arrives in Babylon and says the city has fallen. Then Ezekiel's mouth is opened. The people enjoy his words like a love song but do not obey them."
+      "summary": "God makes Ezekiel a watchman for Israel. A watchman who does not warn the people shares their guilt. God takes no pleasure in the death of the wicked. In the twelfth year of the exile, a refugee reaches Ezekiel. He says the city has fallen. Then Ezekiel's mouth is opened. The people enjoy his words like a love song, but they do not obey them."
     },
     {
       "id": "against-mount-seir",
       "volume": "ot",
       "title": "Ezekiel speaks against Mount Seir",
-      "chapters": ["ezekiel-35"],
+      "chapters": [
+        "ezekiel-35"
+      ],
       "place": "b:mount-seir",
       "verse": "ezekiel-35:15",
-      "summary": "God tells Ezekiel to speak against Mount Seir, the land of Edom. Edom kept an old hatred and gave Israel to the sword. It wanted to take the land of Israel and Judah. God heard its boasting. Mount Seir will become a waste."
+      "summary": "God tells Ezekiel to speak against Mount Seir, the land of Edom. Edom kept an old hatred and gave Israel to the sword in their disaster. It wanted to take the lands of Israel and Judah. God heard its boasting. Mount Seir will become a waste."
     },
     {
       "id": "river-from-the-temple",
       "volume": "ot",
       "title": "A river flows from the temple",
-      "chapters": ["ezekiel-47", "ezekiel-48"],
+      "chapters": [
+        "ezekiel-47",
+        "ezekiel-48"
+      ],
       "place": "b:jerusalem",
       "verse": "ezekiel-47:9",
-      "summary": "In his vision of a new temple, Ezekiel sees water flow from under the threshold. It grows from ankle-deep to a river too deep to cross. It heals the Dead Sea, and fish fill it. Trees on its banks bear fruit every month. The land is divided among the twelve tribes. The city's name will be The LORD Is There."
+      "summary": "Ezekiel's vision of a new temple ends with a river. Water flows east from under the temple threshold. It grows from ankle-deep to a river too deep to cross. It heals the waters of the sea, and fish fill it. Trees on its banks bear fruit every month. Then the land is divided among the twelve tribes. The city's name will be The LORD Is There."
     },
     {
       "id": "daniel-refuses-the-kings-food",
       "volume": "ot",
       "title": "Daniel and his friends refuse the king's food",
-      "chapters": ["daniel-1"],
+      "chapters": [
+        "daniel-1"
+      ],
       "verse": "daniel-1:8",
-      "summary": "Nebuchadnezzar takes Jerusalem and carries off temple vessels and young nobles. Daniel, Hananiah, Mishael, and Azariah are trained for the king's court. Daniel will not defile himself with the king's food and wine. They eat vegetables and drink water for ten days. They look healthier than the others. God gives them knowledge, and Daniel understands dreams."
+      "summary": "Nebuchadnezzar takes Jerusalem and carries off some temple vessels. Ashpenaz, his chief officer, trains young nobles for the court. Among them are Daniel, Hananiah, Mishael, and Azariah. Daniel will not defile himself with the king's food and wine. The four eat vegetables and drink water for ten days. They look healthier than the others. God gives them knowledge, and Daniel understands visions and dreams."
     },
     {
       "id": "nebuchadnezzars-dream",
       "volume": "ot",
       "title": "Daniel tells Nebuchadnezzar's dream of the great image",
-      "chapters": ["daniel-2"],
+      "chapters": [
+        "daniel-2"
+      ],
       "verse": "daniel-2:44",
-      "summary": "Nebuchadnezzar has a dream and orders his wise men to tell it. No one can, so he orders them all killed. Daniel and his friends pray, and God shows Daniel the dream. A great image has a gold head and feet of iron and clay. A stone cut without hands breaks it and fills the earth. God will set up a kingdom that never ends.",
+      "summary": "Nebuchadnezzar has a troubling dream and orders his wise men to tell it. No one can, so he orders them all killed. Daniel and his friends pray, and God shows Daniel the dream. A great image has a gold head and feet of iron and clay. A stone cut without hands breaks it and fills the earth. Daniel says God will set up a kingdom that never ends. The king makes Daniel ruler over the wise men.",
       "alsoRead": [
-        { "ref": "D&C 65:2", "note": "The stone cut without hands will fill the earth." }
+        {
+          "ref": "D&C 65:2",
+          "note": "The stone cut without hands will roll forth and fill the earth."
+        }
       ]
     },
     {
       "id": "fiery-furnace",
       "volume": "ot",
       "title": "Three friends in the fiery furnace",
-      "chapters": ["daniel-3"],
+      "chapters": [
+        "daniel-3"
+      ],
       "verse": "daniel-3:17",
-      "summary": "Nebuchadnezzar sets up a huge gold image and orders all to bow. Shadrach, Meshach, and Abednego refuse. They say God can save them, but even if not, they will not bow. They are thrown bound into a furnace heated seven times hotter. The king sees four men walking free in the fire. They come out unharmed, and the king praises their God."
+      "summary": "Nebuchadnezzar sets up a huge gold image and orders everyone to bow. Shadrach, Meshach, and Abednego refuse. They say God can save them, and even if not, they will not bow. They are thrown bound into a furnace heated seven times hotter. The king sees four men walking free in the fire. They come out unharmed, and the king praises their God."
     },
     {
       "id": "nebuchadnezzar-humbled",
       "volume": "ot",
       "title": "Nebuchadnezzar is humbled",
-      "chapters": ["daniel-4"],
+      "chapters": [
+        "daniel-4"
+      ],
       "verse": "daniel-4:37",
-      "summary": "Nebuchadnezzar tells this story himself in a letter to all peoples. He dreams of a great tree that is cut down. Daniel says the tree is the king. A year later the king boasts about the Babylon he built. He is driven out and eats grass like an ox until seven times pass. When he looks to heaven, his mind and his kingdom return."
+      "summary": "Nebuchadnezzar tells this story himself in a letter to all peoples. He dreams of a great tree that is cut down. Daniel, also called Belteshazzar, says the tree is the king. A year later the king boasts about the Babylon he built. He is driven out and eats grass like an ox until seven times pass. When he looks up to heaven, his mind returns. He praises the King of heaven."
     },
     {
       "id": "writing-on-the-wall",
       "volume": "ot",
       "title": "The writing on the wall at Belshazzar's feast",
-      "chapters": ["daniel-5"],
+      "chapters": [
+        "daniel-5"
+      ],
       "verse": "daniel-5:25",
-      "summary": "King Belshazzar drinks from the gold cups taken from Jerusalem's temple. A hand appears and writes on the palace wall. No wise man can read it. Daniel says God has numbered the kingdom and ended it. The king has been weighed and found wanting. That night Belshazzar is killed, and Darius the Mede takes the kingdom."
+      "summary": "King Belshazzar drinks from the gold vessels taken from Jerusalem's temple. A hand appears and writes on the palace wall. No wise man can read it. The queen tells him about Daniel. Daniel reads the words MENE, MENE, TEKEL, UPHARSIN. God has numbered the kingdom, weighed the king, and divided the kingdom. That night Belshazzar is killed, and Darius the Mede receives the kingdom."
     },
     {
       "id": "daniel-in-the-lions-den",
       "volume": "ot",
       "title": "Daniel in the lions' den",
-      "chapters": ["daniel-6"],
+      "chapters": [
+        "daniel-6"
+      ],
       "verse": "daniel-6:22",
-      "summary": "King Darius sets Daniel over his officials. Jealous rivals persuade the king to ban prayer to anyone but him for thirty days. Daniel still prays three times a day toward Jerusalem. He is thrown into a den of lions. God sends an angel to shut the lions' mouths. Darius praises Daniel's God, and the rivals are thrown to the lions."
+      "summary": "King Darius sets Daniel over his officials. His rivals persuade Darius to ban prayer to anyone but the king for thirty days. Daniel still prays three times a day toward Jerusalem. He is thrown into a den of lions. God sends his angel to shut the lions' mouths. Darius praises Daniel's God, and the rivals are thrown to the lions."
     },
     {
       "id": "seventy-weeks",
       "volume": "ot",
       "title": "Daniel's prayer and the seventy weeks",
-      "chapters": ["daniel-9"],
+      "chapters": [
+        "daniel-9"
+      ],
       "place": "b:babylon",
       "verse": "daniel-9:25",
-      "summary": "Daniel reads in Jeremiah that Jerusalem's ruin will last seventy years. He fasts and confesses the sins of his people. He asks God to forgive them and restore his city. Gabriel comes while Daniel is still praying. He says seventy weeks are set for the people and the holy city. An anointed one will come, and later be cut off."
+      "summary": "In the first year of Darius, Daniel reads Jeremiah's words. Jerusalem's ruin will last seventy years. He fasts and confesses the sins of his people. He asks God to forgive them and restore his city. The angel Gabriel comes while Daniel is still praying. Gabriel says seventy weeks are set for the people and the holy city. An anointed prince will come, and later an anointed one will be cut off."
     },
     {
       "id": "hoseas-marriage",
       "volume": "ot",
       "title": "Hosea's marriage and God's faithful love",
-      "chapters": ["hosea-2"],
+      "chapters": [
+        "hosea-2"
+      ],
       "place": "b:samaria",
       "verse": "hosea-2:19",
-      "summary": "God speaks of Israel as a wife who chased other lovers. She does not know that God gave her grain, wine, and oil. He will take back his gifts and end her feasts. Then he will lead her into the wilderness and speak tenderly to her. He will break the bow and sword, so his people lie down safely. He will betroth her to himself forever."
+      "summary": "The LORD speaks of Israel as a wife who chased other lovers. She does not know that he gave her grain, wine, and oil. He will take back his gifts and end her feasts. Then the mood turns. He will lead her into the wilderness and speak tenderly to her. He will break the bow and sword, so his people lie down safely. He will betroth her to himself forever."
     },
     {
       "id": "sow-the-wind",
       "volume": "ot",
       "title": "Israel sows the wind and reaps the whirlwind",
-      "chapters": ["hosea-7", "hosea-8", "hosea-9", "hosea-10"],
+      "chapters": [
+        "hosea-7",
+        "hosea-8",
+        "hosea-9",
+        "hosea-10"
+      ],
       "verse": "hosea-8:7",
-      "summary": "Israel is like a cake not turned, and like a silly dove. It calls to Egypt and goes to Assyria. The people make kings and idols without God. They sow the wind and will reap the whirlwind. The calf of Bethel will be carried to Assyria. It is time to seek the LORD and break up the unplowed ground."
+      "summary": "Hosea says Ephraim, the northern kingdom, is like a cake not turned. Israel is like a silly dove that calls to Egypt and goes to Assyria. The people make kings and idols without God. They sow the wind and will reap the whirlwind. They will not stay in the LORD's land. The calf of Bethel will be carried to Assyria. Hosea calls them to break up the unplowed ground and seek the LORD."
     },
     {
       "id": "out-of-egypt-i-called-my-son",
       "volume": "ot",
       "title": "Out of Egypt I called my son",
-      "chapters": ["hosea-11", "hosea-12", "hosea-13"],
+      "chapters": [
+        "hosea-11",
+        "hosea-12",
+        "hosea-13"
+      ],
       "place": "b:samaria",
       "verse": "hosea-11:1",
-      "summary": "God loved Israel as a child and called his son out of Egypt. He taught Ephraim to walk and led him with cords of love. His heart cannot give Israel up. Ephraim makes treaties with Assyria and Egypt and kisses calf idols. Israel will vanish like the morning mist. Yet God will ransom them from the grave.",
+      "summary": "God says he loved Israel as a child and called his son out of Egypt. He taught Ephraim to walk and led him with cords of love. His heart cannot give Israel up. Ephraim makes treaties with Assyria and Egypt. The LORD recalls Jacob, who wrestled with the angel. Now the people kiss calf idols. They will vanish like the morning mist. Yet God will ransom them from the grave.",
       "alsoRead": [
-        { "ref": "Matthew 2:15", "note": "Matthew applies these words to the child Jesus." }
+        {
+          "ref": "Matthew 2:15",
+          "note": "Matthew applies these words to the child Jesus."
+        }
       ]
     },
     {
       "id": "joel-day-of-the-lord",
       "volume": "ot",
       "title": "Joel foretells the day of the LORD and the outpoured Spirit",
-      "chapters": ["joel-2", "joel-3"],
+      "chapters": [
+        "joel-2",
+        "joel-3"
+      ],
       "verse": "joel-2:28",
-      "summary": "A trumpet sounds in Zion, for the day of the LORD is near. An army advances like fire. God calls the people to return with all their heart. Afterward he will pour out his Spirit on all flesh. Sons and daughters will prophesy. God will gather the nations to the valley of decision.",
+      "summary": "Joel says to blow the trumpet in Zion. The day of the LORD is near. An army advances like fire. The LORD calls them to return with all their heart. He will restore the years the locusts have eaten. Afterward he will pour out his Spirit on all flesh. Sons and daughters will prophesy. Then God will gather the nations in the valley of Jehoshaphat for judgment.",
       "alsoRead": [
-        { "ref": "Acts 2:17", "note": "Peter quotes Joel on the day of Pentecost." }
+        {
+          "ref": "Acts 2:17",
+          "note": "Peter quotes Joel on the day of Pentecost."
+        }
       ]
     },
     {
       "id": "amos-judges-the-nations",
       "volume": "ot",
       "title": "Amos speaks against the nations and Israel",
-      "chapters": ["amos-1", "amos-2"],
+      "chapters": [
+        "amos-1",
+        "amos-2"
+      ],
       "verse": "amos-1:2",
-      "summary": "Amos is a herdsman from Tekoa in the days of Jeroboam of Israel. The LORD roars from Zion. Amos names the sins of Damascus, Gaza, Tyre, Edom, Ammon, and Moab. Then he turns to Judah, which rejected the LORD's law. Last he turns to Israel. They sell the poor for a pair of sandals."
+      "summary": "Amos is a herdsman from Tekoa. He speaks when Uzziah rules Judah and Jeroboam rules Israel. He says the LORD roars from Zion. Amos names the crimes of Damascus, Gaza, Tyre, Edom, Ammon, and Moab. Then he turns to Judah, which rejected the LORD's law. Last he turns to Israel. They sell the poor for a pair of sandals."
     },
     {
       "id": "god-reveals-his-secret",
       "volume": "ot",
       "title": "God reveals his secret to the prophets",
-      "chapters": ["amos-3", "amos-4"],
+      "chapters": [
+        "amos-3",
+        "amos-4"
+      ],
       "verse": "amos-3:7",
-      "summary": "God chose Israel alone of all the families of the earth. So he will punish them for their sins. The Lord does nothing without revealing his secret to his prophets. The wealthy women of Samaria crush the poor. God sent famine, drought, and plague, yet Israel did not return. Israel must prepare to meet its God."
+      "summary": "Amos speaks to the family the LORD brought up from Egypt. God chose them alone of all the families of the earth. So he will punish them for their sins. The Lord GOD does nothing without revealing his secret to the prophets. Amos calls the rich women of Samaria cows of Bashan who crush the poor. God sent famine, drought, and plague, yet Israel did not return. Israel must prepare to meet its God."
     },
     {
       "id": "let-justice-roll-down",
       "volume": "ot",
       "title": "Seek the LORD and let justice roll down",
-      "chapters": ["amos-5", "amos-6"],
+      "chapters": [
+        "amos-5",
+        "amos-6"
+      ],
       "place": "b:samaria",
       "verse": "amos-5:24",
-      "summary": "Amos sings a funeral song for Israel. God tells the people to seek him and live. They hate anyone who speaks the truth. God rejects their feasts and offerings. He wants justice to roll down like waters. Those at ease in Zion and Samaria lie on ivory beds. They will be the first to go into exile."
+      "summary": "Amos sings a funeral song for Israel. The LORD tells the people to seek him and live. They hate anyone who speaks the truth in court. He rejects their feasts and offerings. He wants justice to roll on like rivers. Then Amos warns those at ease in Zion and Samaria. They lie on ivory beds. They will be the first to go into exile."
     },
     {
       "id": "famine-of-the-word",
       "volume": "ot",
       "title": "A famine of hearing the word, and David's tent restored",
-      "chapters": ["amos-8", "amos-9"],
+      "chapters": [
+        "amos-8",
+        "amos-9"
+      ],
       "verse": "amos-8:11",
-      "summary": "God shows Amos a basket of summer fruit, for Israel's end has come. Merchants cheat the poor with false scales. A famine is coming, not of bread, but of hearing the LORD's words. Amos sees the Lord beside the altar, and no one escapes. Israel will be sifted among the nations. Then God will raise up David's fallen tent."
+      "summary": "God shows Amos a basket of summer fruit, for Israel's end has come. Merchants cheat the poor with false scales. A famine is coming, not of bread, but of hearing the LORD's words. Then Amos sees the Lord standing beside the altar, and no one escapes. Israel will be sifted among the nations. Afterward God will raise up David's fallen tent. He will bring his people back to plant vineyards."
     },
     {
       "id": "obadiah-against-edom",
       "volume": "ot",
       "title": "Obadiah speaks against Edom",
-      "chapters": ["obadiah-1"],
+      "chapters": [
+        "obadiah-1"
+      ],
       "verse": "obadiah-1:4",
-      "summary": "Obadiah's vision concerns Edom, the people descended from Esau. Edom lives high in the rocks and thinks no one can bring it down. God will bring it down even from among the stars. Edom stood aside and rejoiced when Jerusalem fell. As Edom has done, it will be done to Edom. Saviors will come up on Mount Zion."
+      "summary": "Obadiah's vision concerns Edom, the nation descended from Esau. Edom lives high in the rocks and thinks no one can bring it down. The LORD will bring it down even from among the stars. Edom stood aside when strangers entered Jerusalem. As Edom has done, it will be done to Edom. Saviors will come up on Mount Zion."
     },
     {
       "id": "jonah-flees",
       "volume": "ot",
       "title": "Jonah flees and is swallowed by a fish",
-      "chapters": ["jonah-1"],
+      "chapters": [
+        "jonah-1"
+      ],
       "verse": "jonah-1:17",
-      "summary": "The LORD tells Jonah to preach against Nineveh. Jonah boards a ship at Joppa going the other way. A violent storm threatens to break the ship. The sailors cast lots, and the lot falls on Jonah. They throw him into the sea, and the storm stops. A great fish swallows Jonah.",
+      "summary": "The LORD tells Jonah son of Amittai to cry against Nineveh, the great Assyrian city. Jonah boards a ship at Joppa bound for Tarshish, the other way. The LORD sends a violent storm. The sailors cast lots, and the lot falls on Jonah. They throw him into the sea, and the storm stops. The LORD prepares a huge fish, and it swallows Jonah.",
       "alsoRead": [
-        { "ref": "Matthew 12:40", "note": "Jesus compares his burial to Jonah's three days in the fish." }
+        {
+          "ref": "Matthew 12:40",
+          "note": "Jesus compares his burial to Jonah's three days in the fish."
+        }
       ]
     },
     {
       "id": "nineveh-repents",
       "volume": "ot",
       "title": "Nineveh repents at Jonah's preaching",
-      "chapters": ["jonah-3", "jonah-4"],
+      "chapters": [
+        "jonah-3",
+        "jonah-4"
+      ],
       "verse": "jonah-3:10",
-      "summary": "The LORD calls Jonah a second time, and he goes to Nineveh. He says the city will be overthrown in forty days. The people believe God, and the king calls a fast. God sees them turn from evil and spares the city. Jonah is angry. God asks if he should not pity a great city full of people."
+      "summary": "The LORD calls Jonah a second time, and he goes to Nineveh. He says the city will be overthrown in forty days. The people believe God and fast, and the king calls everyone to turn from evil. God sees them turn and spares the city. Jonah is angry, for he knew God is merciful. The LORD grows a vine to shade Jonah, then sends a worm to kill it. God asks if he should not pity Nineveh's many people."
     },
     {
       "id": "zion-plowed-like-a-field",
       "volume": "ot",
       "title": "Micah warns Samaria and Jerusalem",
-      "chapters": ["micah-1", "micah-3"],
+      "chapters": [
+        "micah-1",
+        "micah-3"
+      ],
       "verse": "micah-3:12",
-      "summary": "Micah of Moresheth speaks about Samaria and Jerusalem. The LORD comes down, and the mountains melt under him. Samaria will become a heap of rubble. Judah's rulers hate good and devour the people. Its prophets speak for money. So Zion will be plowed like a field.",
+      "summary": "Micah of Moresheth sees a vision about Samaria and Jerusalem. The LORD comes down, and the mountains melt under him. Samaria will become a heap of rubble. Micah mourns as disaster reaches the gate of Jerusalem. Later Micah speaks to the rulers of Israel. They hate good and devour the people. Their priests and prophets work for money. So Zion will be plowed like a field.",
       "alsoRead": [
-        { "ref": "Jeremiah 26:18", "note": "Elders recall Micah's words at Jeremiah's trial." }
+        {
+          "ref": "Jeremiah 26:18",
+          "note": "Elders recall Micah's words at Jeremiah's trial."
+        }
       ]
     },
     {
       "id": "ruler-from-bethlehem",
       "volume": "ot",
       "title": "Micah sees peace in Zion and a ruler from Bethlehem",
-      "chapters": ["micah-4", "micah-5"],
+      "chapters": [
+        "micah-4",
+        "micah-5"
+      ],
       "place": "b:bethlehem",
       "verse": "micah-5:2",
-      "summary": "In the last days the mountain of the LORD's house will rise above the hills. Nations will beat their swords into plowshares. Each will sit under their own vine and fig tree. Jerusalem is besieged, and its ruler is struck on the cheek. A ruler will come from small Bethlehem. The remnant of Jacob will be like a lion among the nations.",
+      "summary": "Micah says the LORD's house will rise above the hills in the last days. Nations will beat their swords into plowshares. Each will sit under their own vine and fig tree. Then Jerusalem is besieged, and its ruler is struck on the cheek. A ruler will come from Bethlehem Ephrathah, small among Judah's clans. The remnant of Jacob will be like a lion among the nations.",
       "alsoRead": [
-        { "ref": "Matthew 2:6", "note": "The scribes tell Herod that the Christ will be born in Bethlehem." },
-        { "ref": "3 Nephi 20:16", "note": "Jesus quotes the lion among the nations." }
+        {
+          "ref": "Matthew 2:6",
+          "note": "The scribes tell Herod that the Christ will be born in Bethlehem."
+        },
+        {
+          "ref": "3 Nephi 20:16",
+          "note": "Jesus quotes the lion among the nations."
+        }
       ]
     },
     {
       "id": "what-the-lord-requires",
       "volume": "ot",
       "title": "What the LORD requires",
-      "chapters": ["micah-6", "micah-7"],
+      "chapters": [
+        "micah-6",
+        "micah-7"
+      ],
       "place": "b:jerusalem",
       "verse": "micah-6:8",
-      "summary": "The LORD brings a case against his people, with the mountains as witnesses. He brought them out of Egypt. He does not want thousands of rams or rivers of oil. He asks them to do justice, love mercy, and walk humbly with God. Micah grieves that the faithful have vanished. He will wait for God, who delights in mercy."
+      "summary": "The LORD brings a case against his people, with the mountains as witnesses. He reminds them that he brought them out of Egypt. He does not want thousands of rams or rivers of oil. He asks them to act justly, love mercy, and walk humbly with God. Then Micah grieves that the faithful have vanished. He will wait for the God who delights in mercy."
     },
     {
       "id": "fall-of-nineveh-foretold",
       "volume": "ot",
       "title": "Nahum foretells the fall of Nineveh",
-      "chapters": ["nahum-1", "nahum-2", "nahum-3"],
+      "chapters": [
+        "nahum-1",
+        "nahum-2",
+        "nahum-3"
+      ],
       "verse": "nahum-1:7",
-      "summary": "Nahum's message is about Nineveh, the capital of Assyria. The LORD is slow to anger, but he will not leave the guilty unpunished. He is a stronghold for those who trust him. Chariots race through Nineveh's streets, and the river gates open. Woe to the city of blood, full of lies and plunder. All who hear of its fall will clap their hands."
+      "summary": "Nahum's message is about Nineveh, the capital of Assyria. The LORD is slow to anger, but he will not leave the guilty unpunished. He is a stronghold for those who trust him. Then an attacker advances against Nineveh. Chariots race through the streets, and the river gates open. Nahum cries woe to the city of blood. All who hear of its fall will clap their hands."
     },
     {
       "id": "just-shall-live-by-faith",
       "volume": "ot",
       "title": "Habakkuk waits for the vision: the just shall live by faith",
-      "chapters": ["habakkuk-2", "habakkuk-3"],
+      "chapters": [
+        "habakkuk-2",
+        "habakkuk-3"
+      ],
       "place": "b:jerusalem",
       "verse": "habakkuk-2:4",
-      "summary": "Habakkuk stands at his watch post to hear what God will say. The LORD tells him to write the vision plainly on tablets. It will surely come, though it waits. The righteous will live by faith. Woes follow for the greedy, the violent, and those who trust in idols. Though the fields fail, Habakkuk will rejoice in the LORD.",
+      "summary": "Habakkuk stands at his watch post to hear what God will say. The LORD tells him to write the vision plainly on tablets. It will surely come, though it waits. The righteous will live by faith. Woes follow for the greedy, the violent, and those who trust idols. Then Habakkuk prays and recalls God coming in power from Teman. Though the fields fail, he will rejoice in the LORD.",
       "alsoRead": [
-        { "ref": "Romans 1:17", "note": "Paul quotes the just living by faith." }
+        {
+          "ref": "Romans 1:17",
+          "note": "Paul quotes the just living by faith."
+        }
       ]
     },
     {
       "id": "zephaniah-day-of-wrath",
       "volume": "ot",
       "title": "Zephaniah warns of the day of the LORD",
-      "chapters": ["zephaniah-1", "zephaniah-2", "zephaniah-3"],
+      "chapters": [
+        "zephaniah-1",
+        "zephaniah-2",
+        "zephaniah-3"
+      ],
       "verse": "zephaniah-3:17",
-      "summary": "Zephaniah speaks in the days of King Josiah. The great day of the LORD is near, a day of wrath. The humble are told to seek righteousness and humility. Philistia, Moab, Ammon, Ethiopia, and Assyria will be judged. Jerusalem's leaders are like roaring lions. Yet God will gather a humble remnant and rejoice over them with singing."
+      "summary": "Zephaniah speaks in the days of King Josiah. The great day of the LORD is near, a day of wrath. The humble are told to seek righteousness and humility. Philistia, Moab, Ammon, Ethiopia, and Assyria will be judged. Then Zephaniah cries woe to Jerusalem, whose officials are roaring lions. Yet God will gather a humble remnant. He will rejoice over them with singing."
     }
   ]
 }
