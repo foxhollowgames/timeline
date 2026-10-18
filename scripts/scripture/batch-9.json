@@ -1,0 +1,257 @@
+{
+  "about": "Scripture events, batch 9: the apostles, Acts to Revelation (DESIGN.md section 3). Same fields as batch-1.json.",
+  "batch": 9,
+  "era": "The apostles",
+  "covers": [
+    { "book": "acts", "chapters": [1, 28] },
+    { "book": "romans", "chapters": [1, 16] },
+    { "book": "1-corinthians", "chapters": [1, 16] },
+    { "book": "2-corinthians", "chapters": [1, 13] },
+    { "book": "galatians", "chapters": [1, 6] },
+    { "book": "ephesians", "chapters": [1, 6] },
+    { "book": "philippians", "chapters": [1, 4] },
+    { "book": "colossians", "chapters": [1, 4] },
+    { "book": "1-thessalonians", "chapters": [1, 5] },
+    { "book": "2-thessalonians", "chapters": [1, 3] },
+    { "book": "1-timothy", "chapters": [1, 6] },
+    { "book": "2-timothy", "chapters": [1, 4] },
+    { "book": "titus", "chapters": [1, 3] },
+    { "book": "philemon", "chapters": [1, 1] },
+    { "book": "hebrews", "chapters": [1, 13] },
+    { "book": "1-peter", "chapters": [1, 5] },
+    { "book": "2-peter", "chapters": [1, 3] },
+    { "book": "1-john", "chapters": [1, 5] },
+    { "book": "2-john", "chapters": [1, 1] },
+    { "book": "3-john", "chapters": [1, 1] },
+    { "book": "revelation", "chapters": [1, 22] }
+  ],
+  "events": [
+    {
+      "id": "jesus-ascends",
+      "volume": "nt",
+      "title": "Jesus ascends, and Matthias is chosen",
+      "chapters": ["acts-1"],
+      "place": "b:olives",
+      "verse": "acts-1:8",
+      "summary": "The risen Jesus teaches the apostles for forty days. He tells them to wait in Jerusalem for the Holy Spirit. They will be his witnesses to the ends of the earth. He is taken up, and two men in white speak to them. About 120 believers pray together. They cast lots to choose a witness in place of Judas. The lot falls on Matthias."
+    },
+    {
+      "id": "pentecost",
+      "volume": "nt",
+      "title": "The Holy Spirit comes at Pentecost",
+      "chapters": ["acts-2"],
+      "place": "b:jerusalem",
+      "verse": "acts-2:38",
+      "summary": "On the day of Pentecost, a sound like wind fills the house. Tongues like fire rest on the believers, and they speak in other languages. Jews from many nations hear them in their own languages. Peter says God raised Jesus from the dead. The hearers ask what they should do. Peter tells them to repent and be baptized. About three thousand join and share their goods."
+    },
+    {
+      "id": "peter-heals-a-lame-man",
+      "volume": "nt",
+      "title": "Peter heals a lame man, and the council warns the apostles",
+      "chapters": ["acts-3", "acts-4"],
+      "place": "b:jerusalem",
+      "verse": "acts-3:6",
+      "summary": "A man lame from birth asks Peter and John for money at the temple gate. Peter says he has no silver or gold. He tells the man to walk in the name of Jesus Christ. The man leaps and praises God. The council arrests Peter and John and orders them not to speak of Jesus. They say they cannot stop telling what they saw. The believers pray for courage and share what they own."
+    },
+    {
+      "id": "ananias-and-sapphira",
+      "volume": "nt",
+      "title": "Ananias and Sapphira, and the apostles before the council",
+      "chapters": ["acts-5"],
+      "place": "b:jerusalem",
+      "verse": "acts-5:29",
+      "summary": "Ananias and Sapphira sell land and keep part of the price. They bring the rest as if it were all of it. Peter says Ananias lied to God, and Ananias falls dead. Sapphira tells the same lie and also dies. An angel opens the jail where the apostles are held. Before the council Peter says they must obey God rather than men. The teacher Gamaliel advises caution, and the apostles are beaten and released."
+    },
+    {
+      "id": "stephen-is-stoned",
+      "volume": "nt",
+      "title": "Stephen is chosen to serve and is stoned",
+      "chapters": ["acts-6", "acts-7"],
+      "place": "b:jerusalem",
+      "verse": "acts-7:60",
+      "summary": "Greek-speaking widows are being missed in the daily food. The apostles ask the believers to choose seven men for this work. One of them is Stephen. Men from a synagogue bring false witnesses against him. Stephen answers with Israel's history. He says his hearers resist the Holy Spirit as their fathers did. They stone him, and he prays that the sin not be held against them."
+    },
+    {
+      "id": "philip-and-the-ethiopian",
+      "volume": "nt",
+      "title": "Philip preaches in Samaria and baptizes an Ethiopian",
+      "chapters": ["acts-8"],
+      "place": "b:samaria",
+      "verse": "acts-8:35",
+      "summary": "Saul approves of Stephen's death, and persecution scatters the believers. Philip teaches in Samaria, and many are baptized. Peter and John lay hands on them, and they receive the Holy Spirit. Simon, a sorcerer, offers money for that power, and Peter rebukes him. An angel sends Philip to a desert road. An Ethiopian official is reading Isaiah in his chariot. Philip tells him about Jesus and baptizes him."
+    },
+    {
+      "id": "saul-on-the-damascus-road",
+      "volume": "nt",
+      "title": "Saul sees the Lord on the road to Damascus",
+      "chapters": ["acts-9"],
+      "place": "b:damascus",
+      "verse": "acts-9:15",
+      "summary": "Saul travels to Damascus to arrest followers of Jesus. A light from the sky stops him, and a voice says it is Jesus. He is blind for three days. The Lord sends a disciple named Ananias to him. Ananias lays hands on Saul, and Saul sees and is baptized. Saul preaches Jesus, and some plot to kill him. Peter heals Aeneas and raises Tabitha in Joppa.",
+      "alsoRead": [{ "ref": "Mosiah 27:11", "note": "An angel also stops Alma and the sons of Mosiah." }]
+    },
+    {
+      "id": "peter-and-cornelius",
+      "volume": "nt",
+      "title": "Peter baptizes Cornelius, a Gentile",
+      "chapters": ["acts-10", "acts-11"],
+      "place": "b:caesarea",
+      "verse": "acts-10:34",
+      "summary": "Cornelius is a Roman officer in Caesarea who fears God. An angel tells him to send for Peter. In Joppa, Peter sees a vision of a sheet full of animals. A voice tells him not to call unclean what God has made clean. In Cornelius' house the Holy Spirit falls on the Gentile hearers. Peter baptizes them. In Antioch the disciples are first called Christians."
+    },
+    {
+      "id": "peter-freed-from-prison",
+      "volume": "nt",
+      "title": "An angel frees Peter from prison",
+      "chapters": ["acts-12"],
+      "place": "b:jerusalem",
+      "verse": "acts-12:7",
+      "summary": "King Herod kills James, the brother of John, with the sword. He arrests Peter, and the believers pray for him. At night an angel wakes Peter, and his chains fall off. The iron gate opens by itself. Peter goes to the house of Mary, mother of John Mark. A servant named Rhoda hears his voice and runs in without opening the gate. Later Herod accepts praise as a god, and an angel strikes him."
+    },
+    {
+      "id": "pauls-first-mission",
+      "volume": "nt",
+      "title": "Paul and Barnabas travel to Cyprus and Galatia",
+      "chapters": ["acts-13", "acts-14"],
+      "place": "b:antioch-pisidia",
+      "verse": "acts-13:2",
+      "summary": "The Holy Spirit tells the believers at Antioch to set apart Barnabas and Saul. Saul is also called Paul. On Cyprus the governor believes. In Antioch of Pisidia, Paul preaches in the synagogue. When some oppose him, he turns to the Gentiles. In Lystra, Paul heals a man who had never walked. The crowd calls them gods, and they say they are only men. Opponents stir up the crowd, and Paul is stoned but gets up."
+    },
+    {
+      "id": "jerusalem-council",
+      "volume": "nt",
+      "title": "The council at Jerusalem",
+      "chapters": ["acts-15"],
+      "place": "b:jerusalem",
+      "verse": "acts-15:11",
+      "summary": "Some teach that Gentile believers must be circumcised to be saved. Paul and Barnabas go to Jerusalem about it. Peter says God gave the Gentiles the Spirit and made no distinction. James proposes four things for Gentile believers to avoid. The apostles and elders send a letter, and Antioch rejoices. Paul and Barnabas disagree over John Mark and part ways."
+    },
+    {
+      "id": "paul-in-philippi",
+      "volume": "nt",
+      "title": "Paul and Silas in Philippi",
+      "chapters": ["acts-16"],
+      "place": "b:philippi",
+      "verse": "acts-16:31",
+      "summary": "A vision of a man from Macedonia calls Paul across the sea. In Philippi, Lydia, a seller of purple cloth, believes and hosts them. Paul orders a spirit out of a slave girl who told fortunes. Her owners lose their income and accuse Paul and Silas. The two are beaten and jailed. At midnight an earthquake opens the doors. The jailer and his household are baptized."
+    },
+    {
+      "id": "paul-in-athens",
+      "volume": "nt",
+      "title": "Paul preaches in Thessalonica, Berea, and Athens",
+      "chapters": ["acts-17"],
+      "place": "b:athens",
+      "verse": "acts-17:24",
+      "summary": "In Thessalonica, Paul reasons from the Scriptures for three Sabbaths. Some believe, and others start a riot. In Berea the hearers study the Scriptures every day. In Athens, Paul is troubled by the city's idols. Philosophers bring him to the hill called the Areopagus. He speaks of the God who made the world and needs nothing. Some mock, some want to hear more, and a few believe."
+    },
+    {
+      "id": "letters-to-the-thessalonians",
+      "volume": "nt",
+      "title": "Paul writes to the Thessalonians",
+      "chapters": ["1-thessalonians-1", "1-thessalonians-2", "1-thessalonians-3", "2-thessalonians-1"],
+      "place": "b:thessalonica",
+      "verse": "1-thessalonians-1:9",
+      "summary": "Paul, Silvanus, and Timothy write to the believers at Thessalonica. They thank God for the readers' faith, love, and hope. The readers turned from idols to serve the living God. Paul recalls working night and day so he would not be a burden. He sent Timothy from Athens to strengthen them. Timothy has brought back good news of their faith. A second letter praises their endurance in persecution."
+    },
+    {
+      "id": "paul-in-corinth",
+      "volume": "nt",
+      "title": "Paul works and teaches in Corinth",
+      "chapters": ["acts-18"],
+      "place": "b:corinth",
+      "verse": "acts-18:9",
+      "summary": "In Corinth, Paul lives and works with Aquila and Priscilla, who make tents. He teaches in the synagogue each Sabbath. When opposed, he moves next door. Crispus, the synagogue ruler, believes. The Lord tells Paul in a vision not to be afraid. The governor Gallio refuses to judge a dispute about Jewish law. In Ephesus, Priscilla and Aquila teach Apollos more fully."
+    },
+    {
+      "id": "paul-in-ephesus",
+      "volume": "nt",
+      "title": "Paul in Ephesus, and his farewell to its elders",
+      "chapters": ["acts-19", "acts-20"],
+      "place": "b:ephesus",
+      "verse": "acts-20:35",
+      "summary": "In Ephesus, Paul baptizes twelve disciples, and they receive the Holy Spirit. He teaches there for two years. Many burn their books of magic. Demetrius, who makes silver shrines of the goddess Artemis, starts a riot. In Troas, young Eutychus falls from a window and is brought in alive. At Miletus, Paul calls the elders of Ephesus. He warns them to guard the flock, and they kneel and weep."
+    },
+    {
+      "id": "letters-to-the-corinthians",
+      "volume": "nt",
+      "title": "Paul writes to the Corinthians",
+      "chapters": ["1-corinthians-1", "1-corinthians-15", "1-corinthians-16", "2-corinthians-1", "2-corinthians-11"],
+      "place": "b:corinth",
+      "verse": "1-corinthians-15:20",
+      "summary": "Paul writes to the believers at Corinth, who are quarreling. Some follow Paul, and others Apollos or Peter. He says he preaches Christ crucified. Christ died for sins, was buried, and was raised on the third day. Some say there is no resurrection, and Paul answers them. The body is sown like a seed and raised imperishable. In a second letter he lists his beatings, shipwrecks, and dangers.",
+      "alsoRead": [{ "ref": "D&C 128:16", "note": "Joseph Smith cites Paul on baptism for the dead." }]
+    },
+    {
+      "id": "letter-to-the-galatians",
+      "volume": "nt",
+      "title": "Paul writes to the Galatians",
+      "chapters": ["galatians-1", "galatians-2", "galatians-4"],
+      "place": "b:antioch-syria",
+      "verse": "galatians-2:20",
+      "summary": "Paul writes to the believers of Galatia, who are turning to a different message. He says his message came from Jesus Christ, not from people. He once persecuted the church. In Jerusalem, James, Peter, and John give him the right hand of fellowship. In Antioch, Paul rebukes Peter for drawing back from Gentile believers. He says a person is made right with God by faith in Christ. Believers are God's children and heirs."
+    },
+    {
+      "id": "letter-to-the-romans",
+      "volume": "nt",
+      "title": "Paul writes to the Romans",
+      "chapters": ["romans-1", "romans-15"],
+      "place": "b:rome",
+      "verse": "romans-1:16",
+      "summary": "Paul writes to the believers in Rome before he has visited them. He says he is not ashamed of the good news. It is God's power to save everyone who believes. He tells them to accept one another as Christ accepted them. He plans to visit Rome on his way to Spain. First he will carry a gift to the poor in Jerusalem."
+    },
+    {
+      "id": "paul-arrested-in-jerusalem",
+      "volume": "nt",
+      "title": "Paul is arrested in Jerusalem",
+      "chapters": ["acts-21", "acts-22", "acts-23"],
+      "place": "b:jerusalem",
+      "verse": "acts-23:11",
+      "summary": "The prophet Agabus binds his own hands and feet with Paul's belt. He says Paul will be bound in Jerusalem. In the temple, men from Asia stir up the crowd, and Roman soldiers take Paul. Paul tells the crowd how he saw Jesus near Damascus. He says he is a Roman citizen, and they do not flog him. The Lord tells him he must testify in Rome. Soldiers take him by night to Caesarea."
+    },
+    {
+      "id": "paul-before-agrippa",
+      "volume": "nt",
+      "title": "Paul before Felix, Festus, and King Agrippa",
+      "chapters": ["acts-24", "acts-25", "acts-26"],
+      "place": "b:caesarea",
+      "verse": "acts-26:28",
+      "summary": "The high priest brings charges against Paul before the governor Felix. Paul says he worships the God of his fathers and hopes for a resurrection. Felix keeps him in prison for two years. When Festus becomes governor, Paul appeals to Caesar. Paul tells King Agrippa how he saw the light on the Damascus road. Festus says learning has made him mad. Agrippa says Paul could have gone free."
+    },
+    {
+      "id": "shipwreck-and-rome",
+      "volume": "nt",
+      "title": "Paul is shipwrecked and reaches Rome",
+      "chapters": ["acts-27", "acts-28"],
+      "place": "b:malta",
+      "verse": "acts-27:22",
+      "summary": "Paul sails for Italy as a prisoner. A violent storm drives the ship for many days. Paul says an angel told him no one will die. The ship breaks up, and all 276 people reach land on Malta. A viper bites Paul, and he is not harmed. In Rome he lives under guard for two years. He teaches all who come to him."
+    },
+    {
+      "id": "letters-from-prison",
+      "volume": "nt",
+      "title": "Paul writes from prison to Colossae, Ephesus, and Philippi",
+      "chapters": ["colossians-1", "colossians-2", "colossians-4", "ephesians-1", "philippians-1"],
+      "place": "b:colossae",
+      "verse": "philippians-1:21",
+      "summary": "Paul writes letters while he is in chains. To the Colossians he says all things were created through the Son. He warns them against empty philosophy and human rules. To the Ephesians he blesses God for choosing them in Christ. He tells the Philippians that his chains have helped the good news spread. He does not know if he will live or die. To live is Christ, and to die is gain."
+    },
+    {
+      "id": "letters-to-timothy-and-titus",
+      "volume": "nt",
+      "title": "Paul writes to Timothy and Titus",
+      "chapters": ["1-timothy-1", "2-timothy-1", "2-timothy-4", "titus-1"],
+      "place": "b:ephesus",
+      "verse": "2-timothy-4:7",
+      "summary": "Paul writes to Timothy, who leads the believers at Ephesus. He tells Timothy to stop false teaching. He calls himself the chief of sinners whom Christ came to save. He writes to Titus, whom he left in Crete to appoint elders. In a last letter Paul says God gave a spirit of power, not fear. He says he has fought the good fight and kept the faith. He asks Timothy to come soon."
+    },
+    {
+      "id": "letters-to-the-seven-churches",
+      "volume": "nt",
+      "title": "John writes to the seven churches",
+      "chapters": ["revelation-1", "revelation-2", "revelation-3"],
+      "place": "b:patmos",
+      "verse": "revelation-3:20",
+      "summary": "John is on the island of Patmos. On the Lord's day he sees one like a son of man among seven lampstands. The lampstands are seven churches in Asia. Christ sends a message to each one. Ephesus has left its first love, and Smyrna will suffer. Laodicea is neither cold nor hot. Christ stands at the door and knocks."
+    }
+  ]
+}
