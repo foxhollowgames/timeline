@@ -163,13 +163,13 @@
   },
   "antonius-felix": {
    "file": "antonius-felix.jpg",
-   "title": "Antonius Felix medal.svg",
-   "width": 330,
-   "height": 330,
-   "page": "https://commons.wikimedia.org/wiki/File:Antonius_Felix_medal.svg",
-   "artist": "Georges Reverdy",
-   "license": "Public domain",
-   "licenseUrl": null
+   "title": "Coin Antonius Felix.jpg",
+   "width": 440,
+   "height": 226,
+   "page": "https://commons.wikimedia.org/wiki/File:Coin_Antonius_Felix.jpg",
+   "artist": "Yevlem",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
   },
   "aotearoa-settled": {
    "file": "aotearoa-settled.jpg",
@@ -313,13 +313,13 @@
   },
   "ayutthaya": {
    "file": "ayutthaya.jpg",
-   "title": "Flag of Thailand (Ayutthaya period).svg",
-   "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Thailand_(Ayutthaya_period).svg",
-   "artist": "Xiengyod",
-   "license": "Public domain",
-   "licenseUrl": null
+   "title": "Buddha Head in Tree Roots, Wat Mahathat, Ayutthaya.jpg",
+   "width": 249,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Buddha_Head_in_Tree_Roots,_Wat_Mahathat,_Ayutthaya.jpg",
+   "artist": "Brian Chun (Funwithbchun)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   },
   "babylonian-chronicle-597": {
    "file": "babylonian-chronicle-597.jpg",
@@ -603,11 +603,11 @@
   },
   "byu": {
    "file": "byu.jpg",
-   "title": "Brigham Young University medallion.svg",
-   "width": 329,
+   "title": "Brigham Young Academy.jpg",
+   "width": 412,
    "height": 330,
-   "page": "https://commons.wikimedia.org/wiki/File:Brigham_Young_University_medallion.svg",
-   "artist": "Brigham Young University",
+   "page": "https://commons.wikimedia.org/wiki/File:Brigham_Young_Academy.jpg",
+   "artist": "Charles Roscoe Savage",
    "license": "Public domain",
    "licenseUrl": null
   },
@@ -683,11 +683,11 @@
   },
   "cape-colony": {
    "file": "cape-colony.jpg",
-   "title": "Flag of the Dutch East India Company.svg",
+   "title": "Aernout Smit Table Bay, 1683 William Fehr Collection Cape Town.jpg",
    "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Dutch_East_India_Company.svg",
-   "artist": "Himasaram",
+   "height": 310,
+   "page": "https://commons.wikimedia.org/wiki/File:Aernout_Smit_Table_Bay,_1683_William_Fehr_Collection_Cape_Town.jpg",
+   "artist": "Aernout Smit",
    "license": "Public domain",
    "licenseUrl": null
   },
@@ -1343,13 +1343,13 @@
   },
   "gran-colombia": {
    "file": "gran-colombia.jpg",
-   "title": "Flag of Gran Colombia (1819–1820).svg",
-   "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Gran_Colombia_(1819%E2%80%931820).svg",
-   "artist": "HansenBCN",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   "title": "Simón Bolívar by José Gil de Castro.jpg",
+   "width": 251,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Sim%C3%B3n_Bol%C3%ADvar_by_Jos%C3%A9_Gil_de_Castro.jpg",
+   "artist": "José Gil de Castro",
+   "license": "Public domain",
+   "licenseUrl": null
   },
   "granada-1492": {
    "file": "granada-1492.jpg",
@@ -1553,21 +1553,21 @@
   },
   "herod-antipas": {
    "file": "herod-antipas.jpg",
-   "title": "Herod Antipas medal.svg",
-   "width": 330,
+   "title": "Monnaie - Bronze, Incertain, Judée, Hérode Antipas - btv1b84985015 (1 of 2).jpg",
+   "width": 326,
    "height": 330,
-   "page": "https://commons.wikimedia.org/wiki/File:Herod_Antipas_medal.svg",
-   "artist": "Georges Reverdy",
+   "page": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Bronze,_Incertain,_Jud%C3%A9e,_H%C3%A9rode_Antipas_-_btv1b84985015_(1_of_2).jpg",
+   "artist": "Hérode Antipas (0022? av. J-C.-0039 ; tétrarque de Galilée et de Pérée). Autorité émettrice de monnaie Hérodes, Les (dynastie). Autorité émettrice de monnaie",
    "license": "Public domain",
    "licenseUrl": null
   },
   "herod-archelaus": {
    "file": "herod-archelaus.jpg",
-   "title": "Archelaus medal.svg",
-   "width": 330,
+   "title": "Monnaie - Bronze, Incertain, Judée, Hérode Archelaos - btv1b8498504d (1 of 2).jpg",
+   "width": 350,
    "height": 330,
-   "page": "https://commons.wikimedia.org/wiki/File:Archelaus_medal.svg",
-   "artist": "Georges Reverdy",
+   "page": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Bronze,_Incertain,_Jud%C3%A9e,_H%C3%A9rode_Archelaos_-_btv1b8498504d_(1_of_2).jpg",
+   "artist": "Hérode Archelaos (éthnarque de Judée, Samarie et Idumée). Autorité émettrice de monnaie Hérodes, Les (dynastie). Autorité émettrice de monnaie",
    "license": "Public domain",
    "licenseUrl": null
   },
@@ -1713,13 +1713,13 @@
   },
   "inca-rise": {
    "file": "inca-rise.jpg",
-   "title": "Banner of the Inca Empire.svg",
-   "width": 330,
-   "height": 330,
-   "page": "https://commons.wikimedia.org/wiki/File:Banner_of_the_Inca_Empire.svg",
-   "artist": "Made and uploaded by Huhsunqu .",
-   "license": "CC BY-SA 2.5",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+   "title": "Sacsayhuaman-Inca wall.jpg",
+   "width": 440,
+   "height": 275,
+   "page": "https://commons.wikimedia.org/wiki/File:Sacsayhuaman-Inca_wall.jpg",
+   "artist": "Sharonkuei",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   },
   "indian-ocean-tsunami": {
    "file": "indian-ocean-tsunami.jpg",
@@ -1923,11 +1923,11 @@
   },
   "kilwa": {
    "file": "kilwa.jpg",
-   "title": "Flag used in the east coast of Tanzania according to a Portuguese 1576 map.svg",
+   "title": "Husuni Kubwa - pool for bathing.jpg",
    "width": 440,
-   "height": 242,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_used_in_the_east_coast_of_Tanzania_according_to_a_Portuguese_1576_map.svg",
-   "artist": "Dekodrak",
+   "height": 237,
+   "page": "https://commons.wikimedia.org/wiki/File:Husuni_Kubwa_-_pool_for_bathing.jpg",
+   "artist": "Veronika Berdnikova",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   },
@@ -1963,13 +1963,13 @@
   },
   "kongo": {
    "file": "kongo.jpg",
-   "title": "Flag of the Kingdom of Kongo according to Giovanni Cavazzi da Montecuccolo.svg",
-   "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Kingdom_of_Kongo_according_to_Giovanni_Cavazzi_da_Montecuccolo.svg",
-   "artist": "Oren neu dag",
-   "license": "Public domain",
-   "licenseUrl": null
+   "title": "Brooklyn Museum 2011.74 Crucifix Nkangi Kiditu.jpg",
+   "width": 236,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_2011.74_Crucifix_Nkangi_Kiditu.jpg",
+   "artist": "Photo: Online Collection of Brooklyn Museum ; Photo: Brooklyn Museum, 2011.74_edited_PS6.jpg",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
   },
   "korean-war": {
    "file": "korean-war.jpg",
@@ -2133,11 +2133,11 @@
   },
   "liberia-1847": {
    "file": "liberia-1847.jpg",
-   "title": "Flag of Liberia.svg",
-   "width": 440,
-   "height": 232,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Liberia.svg",
-   "artist": "Government of Liberia",
+   "title": "Joseph Jenkins Roberts (ca. 1851).jpg",
+   "width": 273,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Joseph_Jenkins_Roberts_(ca._1851).jpg",
+   "artist": "Augustus Washington",
    "license": "Public domain",
    "licenseUrl": null
   },
@@ -2203,13 +2203,13 @@
   },
   "macau": {
    "file": "macau.jpg",
-   "title": "Flag of Portuguese Macau Unofficial.svg",
-   "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Portuguese_Macau_Unofficial.svg",
-   "artist": "tkl_darkspider",
-   "license": "Public domain",
-   "licenseUrl": null
+   "title": "Ruins of St Paul's, Macau (30843847251).jpg",
+   "width": 220,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ruins_of_St_Paul%27s,_Macau_(30843847251).jpg",
+   "artist": "Joybot",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
   },
   "maccabean-revolt": {
    "file": "maccabean-revolt.jpg",
@@ -2243,13 +2243,13 @@
   },
   "majapahit": {
    "file": "majapahit.jpg",
-   "title": "Naval flag of Majapahit Kingdom.svg",
-   "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Naval_flag_of_Majapahit_Kingdom.svg",
-   "artist": "source: BP47Dhorifah , svg: Puck04",
-   "license": "Public domain",
-   "licenseUrl": null
+   "title": "TC 182 Majapahit terracotta head.JPG",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:TC_182_Majapahit_terracotta_head.JPG",
+   "artist": "Chris Hazzard",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
   },
   "malacca-1511": {
    "file": "malacca-1511.jpg",
@@ -2743,13 +2743,13 @@
   },
   "ottoman-empire": {
    "file": "ottoman-empire.jpg",
-   "title": "Flag of the Ottoman Empire (1844–1922).svg",
-   "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Ottoman_Empire_(1844%E2%80%931922).svg",
-   "artist": "User:Orwellianist",
-   "license": "Public domain",
-   "licenseUrl": null
+   "title": "Osman I miniature by Nakkaş Osman.jpg",
+   "width": 199,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Osman_I_miniature_by_Nakka%C5%9F_Osman.jpg",
+   "artist": "Nakkaş Osman",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   },
   "ottoman-sultanate-abolished": {
    "file": "ottoman-sultanate-abolished.jpg",
@@ -3103,11 +3103,11 @@
   },
   "qing-beijing": {
    "file": "qing-beijing.jpg",
-   "title": "Flag of China (1889–1912).svg",
-   "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_China_(1889%E2%80%931912).svg",
-   "artist": "Original: zh:清朝政府 Vector: Sodacan",
+   "title": "Shunzhi Court portrait.jpg",
+   "width": 208,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Shunzhi_Court_portrait.jpg",
+   "artist": "Photo: en.wikipedia.org",
    "license": "Public domain",
    "licenseUrl": null
   },
@@ -3223,11 +3223,11 @@
   },
   "safavid-iran": {
    "file": "safavid-iran.jpg",
-   "title": "Safavid Flag.svg",
-   "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Safavid_Flag.svg",
-   "artist": "Safavid_Flag.png : Orange Tuesday ( talk ) The original uploader was Orange Tuesday at English Wikipedia . derivative work: Himasaram ( talk )",
+   "title": "Shah Ismail I portrait, Chehel Sotoun, painted circa 1647.jpg",
+   "width": 265,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Shah_Ismail_I_portrait,_Chehel_Sotoun,_painted_circa_1647.jpg",
+   "artist": "ca. 1647 artist",
    "license": "Public domain",
    "licenseUrl": null
   },
@@ -3513,33 +3513,33 @@
   },
   "slave-trade-act-1807": {
    "file": "slave-trade-act-1807.jpg",
-   "title": "Coat of Arms of the United Kingdom (1801-1816).svg",
-   "width": 330,
+   "title": "Am I not a Man and a Brother, medallion modelled by William H. Hackwood, Wedgwood, Etruria, England, c. 1786, tinted stoneware - Brooklyn Museum - DSC09289 (cropped).JPG",
+   "width": 304,
    "height": 330,
-   "page": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_the_United_Kingdom_(1801-1816).svg",
-   "artist": "Sodacan",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   "page": "https://commons.wikimedia.org/wiki/File:Am_I_not_a_Man_and_a_Brother,_medallion_modelled_by_William_H._Hackwood,_Wedgwood,_Etruria,_England,_c._1786,_tinted_stoneware_-_Brooklyn_Museum_-_DSC09289_(cropped).JPG",
+   "artist": "Daderot",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
   },
   "slavery-abolition-act": {
    "file": "slavery-abolition-act.jpg",
-   "title": "Coat of Arms of the United Kingdom (1816-1837).svg",
-   "width": 330,
+   "title": "The Anti-Slavery Society Convention, 1840 by Benjamin Robert Haydon.jpg",
+   "width": 424,
    "height": 330,
-   "page": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_the_United_Kingdom_(1816-1837).svg",
-   "artist": "Sodacan",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   "page": "https://commons.wikimedia.org/wiki/File:The_Anti-Slavery_Society_Convention,_1840_by_Benjamin_Robert_Haydon.jpg",
+   "artist": "Benjamin Haydon",
+   "license": "Public domain",
+   "licenseUrl": null
   },
   "sokoto-caliphate": {
    "file": "sokoto-caliphate.jpg",
-   "title": "Flag of the Sokoto Caliphate.svg",
+   "title": "Travels and discoveries in North and Central Africa. From the journal of an expedition undertaken under the auspices of H.B.M.'s government, in the years 1849-1855 (1859) (14781116835).jpg",
    "width": 440,
-   "height": 294,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Sokoto_Caliphate.svg",
-   "artist": "Orange Tuesday ( talk )",
-   "license": "Public domain",
-   "licenseUrl": null
+   "height": 259,
+   "page": "https://commons.wikimedia.org/wiki/File:Travels_and_discoveries_in_North_and_Central_Africa._From_the_journal_of_an_expedition_undertaken_under_the_auspices_of_H.B.M.%27s_government,_in_the_years_1849-1855_(1859)_(14781116835).jpg",
+   "artist": "Barth, Heinrich, 1821-1865",
+   "license": "No restrictions",
+   "licenseUrl": "https://www.flickr.com/commons/usage/"
   },
   "songhai": {
    "file": "songhai.jpg",
@@ -4003,11 +4003,11 @@
   },
   "university-of-bologna": {
    "file": "university-of-bologna.jpg",
-   "title": "Seal of the University of Bologna.svg",
-   "width": 330,
+   "title": "Laurentius de Voltolina 001.jpg",
+   "width": 408,
    "height": 330,
-   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_the_University_of_Bologna.svg",
-   "artist": "Vectorized by User:Nandhp",
+   "page": "https://commons.wikimedia.org/wiki/File:Laurentius_de_Voltolina_001.jpg",
+   "artist": "Laurentius de Voltolina",
    "license": "Public domain",
    "licenseUrl": null
   },
@@ -4043,11 +4043,11 @@
   },
   "utah-statehood": {
    "file": "utah-statehood.jpg",
-   "title": "Flag of Utah.svg",
-   "width": 440,
-   "height": 264,
-   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Utah.svg",
-   "artist": "The State of Utah",
+   "title": "\"Welcome Utah,\" Utah Gains Statehood. (50718308417).jpg",
+   "width": 204,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:%22Welcome_Utah,%22_Utah_Gains_Statehood._(50718308417).jpg",
+   "artist": "Familypapers",
    "license": "Public domain",
    "licenseUrl": null
   },
