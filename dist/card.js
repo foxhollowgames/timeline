@@ -209,6 +209,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
       <p class="card-volume">${shapeSVG(event.volume, 16)}<span style="color:${routeStyle(event.volume, route).color}">${escapeHTML(routeStyle(event.volume, route).label)}</span></p>
       <h2>${escapeHTML(route.title)}</h2>
       ${route.ref ? `<p class="card-ref">${escapeHTML(route.ref)}</p>` : ''}
+      ${route.intro ? `<p class="card-setting">${escapeHTML(route.intro)}</p>` : ''}
       ${route.text ? `<p class="card-summary">${escapeHTML(route.text)}</p>` : ''}
       ${route.stops?.length ? `<div class="card-stops"><h3>Named stops</h3><p>${route.stops.map(escapeHTML).join(' → ')}</p></div>` : ''}
       ${route.note ? `<p class="card-note">${escapeHTML(route.note)}</p>` : ''}
