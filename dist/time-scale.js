@@ -98,6 +98,14 @@ export function revealInView(view, u, margin = 0.08) {
 // but never reaches more than 10 years either side of it.
 export const WINDOW_SHARE = 0.02;
 export const MAX_WINDOW_HALF_YEARS = 10;
+// History counts as contemporary within a generation of the selected year, so a reader sees
+// what else was happening around a scripture event. Scripture keeps the narrow window.
+export const HISTORY_HALF_YEARS = 25;
+export function historyWindow(window, year) {
+  const a = toAstro(year), start = fromAstro(Math.min(toAstro(window.start), a - HISTORY_HALF_YEARS)), end = fromAstro(Math.max(toAstro(window.end), a + HISTORY_HALF_YEARS));
+  return { start, end };
+}
+
 export function activeWindow(year, view) {
   const u = yearToU(year), half = ((view.u1 - view.u0) * WINDOW_SHARE) / 2, astro = toAstro(year);
   const startAstro = Math.max(Math.floor(uToAstro(Math.max(0, u - half))), astro - MAX_WINDOW_HALF_YEARS);
