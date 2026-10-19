@@ -134,7 +134,7 @@ export async function checkData(test, warn) {
     const dist = join(here, '..', 'dist');
     const map = await readJSON(join(dist, 'data', 'bom-map.json'));
     const [[south, west], [north, east]] = map.bounds;
-    for (const key of ['land', 'sidon', 'waters', 'labels', 'rivers']) if (!map[key]?.length) throw new Error(`bom-map.json has no ${key}`);
+    for (const key of ['land', 'sidon', 'waters', 'labels', 'cities', 'rivers']) if (!map[key]?.length) throw new Error(`bom-map.json has no ${key}`);
     for (let z = map.tiles.minZoom; z <= map.tiles.maxZoom; z++) {
       if (!(await exists(join(dist, 'assets', 'bom-relief', String(z))))) throw new Error(`relief zoom ${z} is missing`);
     }

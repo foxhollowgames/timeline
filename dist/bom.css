@@ -39,6 +39,11 @@
 .bom-map .leaflet-control-attribution a { color: var(--muted); }
 .bom-label span { display: block; transform: translate(-50%, -50%); white-space: nowrap; font-size: 11px; letter-spacing: .14em; color: #cfe3eecc; text-shadow: 0 1px 3px #000; pointer-events: none; }
 .bom-label-sea span { color: #9fd4e8b3; font-style: italic; }
+.bom-city { position: relative; pointer-events: none; }
+.bom-city i { position: absolute; width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%; background: #e8dcc0; box-shadow: 0 0 0 1.5px #0b1626cc; }
+.bom-city-inferred i { background: transparent; border: 1.5px solid #e8dcc0; width: 7px; height: 7px; margin: -3.5px 0 0 -3.5px; box-sizing: border-box; }
+.bom-city span { position: absolute; left: 6px; top: 0; transform: translateY(-50%); white-space: nowrap; font-size: 11px; color: #ece3cde6; text-shadow: 0 1px 3px #000, 0 0 2px #000; }
+.bom-city span[hidden] { display: none; }
 .relief-tiles { filter: saturate(.85) brightness(.9); }
 
 @media (max-width: 650px) {

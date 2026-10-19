@@ -645,6 +645,8 @@ await writeFile(join(out, 'bom-map.json'), JSON.stringify({
   sidon: round(bom.geography.sidon),
   waters: bom.geography.waters.map(w => ({ name: w.name, points: round(w.points) })),
   labels: bom.geography.labels,
+  // Cities of note, as the reader labels them. Rough-guess placeholders stay off the map.
+  cities: bom.places.filter(p => p.kind === 'city' && p.conf !== 'guess').map(p => ({ name: p.name, at: p.at, conf: p.conf })),
   rivers: (relief.rivers ?? []).map(r => ({ size: r.size, points: round(r.points) })),
 }));
 
