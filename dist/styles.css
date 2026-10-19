@@ -35,7 +35,6 @@ main { height: 100dvh; min-height: 480px; position: relative; }
 #scene { position: absolute; inset: 0; }
 #scene canvas { display: block; width: 100%; height: 100%; touch-action: none; }
 .year-overview { position: absolute; left: 42px; bottom: 32px; max-width: 320px; pointer-events: none; }
-.year-label { font-size: 12px; letter-spacing: .13em; color: var(--muted); }
 .year-overview > strong { font-family: 'Libre Caslon Display', Georgia, serif; font-weight: 400; font-size: 64px; display: block; line-height: 1.15; letter-spacing: -.02em; }
 .year-overview > p { font-size: 14px; color: var(--muted); margin: 6px 0 0; line-height: 1.5; }
 .year-overview > .overview-count { color: var(--ink); }
@@ -99,7 +98,6 @@ main { height: 100dvh; min-height: 480px; position: relative; }
   .site-header { height: 60px; padding: 0 16px; }
   .brand { font-size: 12px; }
   .year-overview { left: 16px; bottom: 16px; max-width: 210px; }
-  .year-label { display: none; }
   .year-overview > strong { font-size: 34px; }
   .year-overview > p { font-size: 12px; margin-top: 2px; }
   .year-overview > .overview-empty { display: none; }
