@@ -40,9 +40,15 @@
 .city-marker i { width: 5px; height: 5px; margin: -2.5px 0 0 -2.5px; border-radius: 50%; background: #e8dcc0; box-shadow: 0 0 0 1.5px #0b1626cc; }
 .city-marker b { font-weight: 400; font-size: 10.5px; color: #ece3cdd9; text-shadow: 0 1px 3px #000, 0 0 2px #000; transform: translateY(-1px); white-space: nowrap; }
 
-.card { position: absolute; right: 24px; top: 84px; bottom: calc(var(--timeline-height) + 20px); width: 370px; background: var(--panel); backdrop-filter: blur(28px); border: 1px solid #c5e2fc24; border-radius: 18px; box-shadow: 0 20px 70px #0006; z-index: 14; display: flex; flex-direction: column; overflow: hidden; }
-.card-bar { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px 11px; border-bottom: 1px solid var(--line); font-size: 11px; letter-spacing: .12em; color: var(--muted); flex-shrink: 0; }
-.card-bar button { border: 0; font-size: 24px; line-height: 1; padding: 0 2px; color: var(--muted); }
+/* The card stops short of the globe zoom controls so they stay usable while it is open. */
+.card { --card-right: 96px; position: absolute; right: var(--card-right); top: 84px; bottom: calc(var(--timeline-height) + 20px); width: 370px; background: var(--panel); backdrop-filter: blur(28px); border: 1px solid #c5e2fc24; border-radius: 18px; box-shadow: 0 20px 70px #0006; z-index: 14; display: flex; flex-direction: column; overflow: hidden; }
+.card-bar { display: flex; align-items: center; gap: 10px; padding: 14px 20px 11px; cursor: grab; touch-action: none; user-select: none; border-bottom: 1px solid var(--line); font-size: 11px; letter-spacing: .12em; color: var(--muted); flex-shrink: 0; }
+.card-bar #card-label { flex: 1; }
+.card-grip { display: grid; grid-template-columns: repeat(2, 3px); gap: 3px; padding: 2px 0; opacity: .7; }
+.card-grip i { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
+.card-bar:hover .card-grip { opacity: 1; }
+.card-dragging, .card-dragging .card-bar { cursor: grabbing; }
+.card-bar button { border: 0; cursor: pointer; font-size: 24px; line-height: 1; padding: 0 2px; color: var(--muted); }
 .card-content { overflow: auto; padding: 18px 22px 22px; scrollbar-width: thin; scrollbar-color: #36536a transparent; }
 .card-content h2 { font-family: 'Libre Caslon Display', Georgia, serif; font-weight: 400; font-size: 27px; line-height: 1.15; margin: 6px 0; }
 .card-volume { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 12px; color: var(--muted); }
@@ -81,7 +87,7 @@
 @media (max-width: 1000px) {
   .search { flex-basis: 260px; }
   .legend-item { padding: 0 8px; }
-  .card { right: 16px; width: 330px; }
+  .card { --card-right: 80px; width: 330px; }
 }
 @media (max-width: 650px) {
   .site-header { height: auto; flex-wrap: wrap; padding: 10px 12px; gap: 8px; }
@@ -90,7 +96,7 @@
   .legend-item { height: 30px; padding: 0 6px; gap: 4px; font-size: 11px; }
   .search { order: 3; flex: 1 0 100%; }
   .search input { height: 36px; }
-  .card { top: auto; left: 10px; right: 10px; width: auto; bottom: calc(var(--timeline-height) + 8px); max-height: 40dvh; border-radius: 16px; }
+  .card { --card-right: 62px; top: auto; left: 10px; width: auto; bottom: calc(var(--timeline-height) + 8px); max-height: 40dvh; border-radius: 16px; }
   .card-content h2 + .card-ref { margin-bottom: 10px; }
   .card-content { padding: 14px 16px 18px; }
   .card-content h2 { font-size: 23px; }

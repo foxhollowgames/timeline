@@ -229,7 +229,7 @@ async function start() {
     const el = $('card');
     el.style.removeProperty('right'); el.style.removeProperty('top'); el.style.removeProperty('bottom'); el.style.removeProperty('max-height');
     if (!layoutInfo?.open) return;
-    if (!layoutInfo.stacked) { el.style.right = `${layoutInfo.panel.width + 24}px`; return; }
+    if (!layoutInfo.stacked) { el.style.right = `calc(${layoutInfo.panel.width}px + var(--card-right))`; return; }
     const header = document.querySelector('.site-header').offsetHeight;
     if (selected?.map === 'bom') {
       el.style.top = `${header + 6}px`; el.style.bottom = 'auto';
@@ -244,7 +244,12 @@ async function start() {
       const panel = $('card').getBoundingClientRect(), stage = $('globe-stage').getBoundingClientRect();
       const overGlobe = panel.left < stage.right && panel.right > stage.left && panel.top < stage.bottom && panel.bottom > stage.top;
       if (!overGlobe || $('card').hidden) { globe.slideTo(0, 0); return; }
-      if (!layoutInfo?.stacked && innerWidth > 650) globe.slideTo(Math.max(0, (stage.right - panel.left) / 2), 0);
+      if (!layoutInfo?.stacked && innerWidth > 650) {
+        // Center the globe in the wider space beside the card (the card can be dragged to either side).
+        const leftGap = panel.left - stage.left, rightGap = stage.right - panel.right;
+        const freeCenter = leftGap >= rightGap ? (stage.left + Math.max(stage.left, panel.left)) / 2 : (Math.min(stage.right, panel.right) + stage.right) / 2;
+        globe.slideTo((stage.left + stage.right) / 2 - freeCenter, 0);
+      }
       else {
         // Center the globe in the space the card leaves open.
         const top = Math.max(document.querySelector('.site-header').getBoundingClientRect().bottom, stage.top);
@@ -308,6 +313,7 @@ async function start() {
 
   card = createCard({
     panel: $('card'), content: $('card-content'), labelEl: $('card-label'), closeButton: $('card-close'), data,
+    onMove: slideForCard,
     onShow({ type, event, details, route }) {
       if (type === 'event') { selected = event; showSelection(event, details); }
       else if (type === 'route') { selected = event; showSelection(event, { routes: [route] }); }
