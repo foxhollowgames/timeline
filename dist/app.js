@@ -196,8 +196,10 @@ async function start() {
       const years = (scrubber.view.u1 - scrubber.view.u0) * yearsPerU(u);
       if (years > most) scrubber.setView(zoomView(scrubber.view, most / years, u));
     }
+    // Navigation keeps the narrow window for every kind, so opening a history event from search
+    // or a list moves the scrubber to it even when the wider history window already shows its pin.
     const window = scrubber.window();
-    if (isActive(event, windowFor(event, window, scrubber.year), scrubber.year, data.bands)) return;
+    if (isActive(event, window, scrubber.year, data.bands)) return;
     if (event.start == null) scrubber.setYear(bandYear(data.bands[event.band] ?? data.bands.primeval));
     else scrubber.setYear(event.start);
   }
