@@ -74,7 +74,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
   // A hand-picked link adds "Linked" to its date line.
   const row = (e, linked = false) => titleFirst(e)
     ? `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.title)}</strong><small class="row-date">${escapeHTML([e.ref, e.region ?? (e.kind === 'event' ? eventDate(e) : '')].filter(Boolean).join(' · '))}${linked ? ' · <span class="row-linked">Linked</span>' : ''}</small></span></button>`
-    : `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.ref)}</strong><small>${escapeHTML(e.title)}</small><small class="row-date">${escapeHTML(eventDate(e))}</small></span></button>`;
+    : `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.ref)}</strong><small>${escapeHTML(e.title)}</small><small class="row-date">${escapeHTML(eventDate(e))}${linked ? ' · <span class="row-linked">Linked</span>' : ''}</small></span></button>`;
 
   // Drag the card by its top bar. The offset is a transform, so the layout code's placement stays as is.
   // It keeps a strip of the bar on screen and resets when the card closes.
