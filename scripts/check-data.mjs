@@ -120,7 +120,7 @@ export async function checkData(test, warn) {
       ...curated.events.map(e => e.summary), ...Object.values(curated.annotations).flatMap(a => [a.placeNote, a.relatedNote]),
       ...Object.values(details.history).map(d => d.summary),
       ...events.filter(e => e.basis === 'church-history').map(e => details.dc[e.id]?.summary),
-      ...events.filter(e => e.kind === 'event').flatMap(e => { const d = details[e.volume][e.id]; return [d.summary, d.relatedNote, d.dateDetail, ...(d.alsoRead ?? []).map(a => a.note)]; }),
+      ...events.filter(e => e.kind === 'event').flatMap(e => { const d = details[e.volume][e.id]; return [d.summary, d.relatedNote, d.dateDetail, d.placeNote, ...(d.alsoRead ?? []).map(a => a.note)]; }),
     ].filter(Boolean);
     for (const text of texts) {
       for (const sentence of text.split(/(?<=[.!?])\s+(?=[A-Z0-9“"])/)) {

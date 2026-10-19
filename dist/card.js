@@ -152,7 +152,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
         ${d.citations ? `<dt>In scripture</dt><dd>${escapeHTML(d.citations.join('; '))}</dd>` : ''}
       </dl>
       ${also.length ? `<div class="card-also"><h3>Also at this time</h3><div class="event-rows">${also.map(e => row(e, related.includes(e.id))).join('')}</div>${d.relatedNote && also.some(e => related.includes(e.id)) ? `<p class="card-also-note">Linked: ${escapeHTML(d.relatedNote)}</p>` : ''}</div>` : ''}
-      ${sources.length ? `<div class="card-sources"><h3>${titleFirst(event) ? 'Source' : 'Date sources'}</h3>${sources.map(s => `${s.quote ? `<blockquote class="source-quote">“${escapeHTML(s.quote.join(' … '))}”</blockquote>` : ''}<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a>`).join('')}</div>` : ''}`;
+      ${sources.length ? `<div class="card-sources"><h3>${titleFirst(event) && event.kind !== 'event' ? 'Source' : 'Date sources'}</h3>${sources.map(s => `${s.quote ? `<blockquote class="source-quote">“${escapeHTML(s.quote.join(' … '))}”</blockquote>` : ''}<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a>`).join('')}</div>` : ''}`;
     content.scrollTop = 0;
     bind();
     onShow?.({ type: 'event', event, details: d });

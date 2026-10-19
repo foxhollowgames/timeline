@@ -482,6 +482,11 @@ for (const file of (await readdir(scriptureDir)).filter(f => /^batch-\d+\.json$/
     if (item.start != null) {
       if (!item.sourceIds?.length || !item.dateLabel) problems.push(`${where}: a written date needs a dateLabel and sourceIds`);
       date = { basis: item.basis ?? 'church', start: item.start, end: item.end ?? item.start, label: item.dateLabel, sourceIds: item.sourceIds ?? [] };
+    } else if (dating[0].start == null) {
+      // Order-only chapters (Q25, Q29): the event joins the same band and has no years.
+      if (dating.some(e => e.start != null || e.band !== dating[0].band)) problems.push(`${where}: dateFrom mixes dated and order-only chapters`);
+      const lead = chapterDetail(dating[0]);
+      date = { basis: 'not-given', band: dating[0].band, start: null, end: null, label: lead.dateLabel, sourceIds: lead.dateSourceIds ?? [], ...(lead.dateNote && { note: lead.dateNote }) };
     } else {
       const start = Math.min(...dating.map(e => e.start)), end = Math.max(...dating.map(e => e.end));
       const basis = dating[0].basis;
@@ -516,7 +521,7 @@ for (const file of (await readdir(scriptureDir)).filter(f => /^batch-\d+\.json$/
       map: 'globe', place: placeKey, places: placeKeys, curated: true, kind: 'event', chapters: item.chapters,
     };
     const { book: _, ...verseRecord } = verse ?? {};
-    pushEvent(record, { summary: item.summary, batch: batch.batch, ...(verse && { verse: verseRecord }), ...(alsoRead.length && { alsoRead }), ...(routes.length && { routes }) }, date);
+    pushEvent(record, { summary: item.summary, batch: batch.batch, ...(item.placeNote && { placeNote: item.placeNote }), ...(verse && { verse: verseRecord }), ...(alsoRead.length && { alsoRead }), ...(routes.length && { routes }) }, date);
     // Hand-picked related history, as for annotations above.
     if (item.related) {
       if (!item.relatedNote) problems.push(`${where}: no relatedNote`);
