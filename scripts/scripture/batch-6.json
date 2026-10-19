@@ -15,7 +15,9 @@
       "title": "Israel is enslaved in Egypt",
       "chapters": ["exodus-1"],
       "verse": "exodus-1:17",
-      "summary": "Jacob's descendants in Egypt grow into a great people after Joseph dies. A new king who did not know Joseph fears their numbers. He sets slave masters over them, and they build the cities Pithom and Raamses. The harder Egypt presses them, the more they grow. The king tells the Hebrew midwives, Shiphrah and Puah, to kill newborn boys. The midwives fear God and let the boys live. Pharaoh then orders the Hebrew baby boys thrown into the river."
+      "summary": "Jacob's descendants in Egypt grow into a great people after Joseph dies. A new king who did not know Joseph fears their numbers. He sets slave masters over them, and they build the cities Pithom and Raamses. The harder Egypt presses them, the more they grow. The king tells the Hebrew midwives, Shiphrah and Puah, to kill newborn boys. The midwives fear God and let the boys live. Pharaoh then orders the Hebrew baby boys thrown into the river.",
+      "related": ["ramesses-ii"],
+      "relatedNote": "Exodus 1:11 says Israel built the store city Raamses."
     },
     {
       "id": "moses-born-and-flees",
@@ -48,7 +50,9 @@
       "title": "The LORD sends plagues on Egypt",
       "chapters": ["exodus-7", "exodus-8", "exodus-9", "exodus-10", "exodus-11"],
       "verse": "exodus-7:17",
-      "summary": "Aaron's rod becomes a serpent before Pharaoh, but Pharaoh's heart stays hard. Aaron strikes the Nile, and its water turns to blood. Frogs, lice, and flies fill the land. Disease kills Egypt's livestock, and boils break out on people and animals. Hail, locusts, and three days of darkness follow, but Israel's land of Goshen is spared. Each time Pharaoh promises to let Israel go, then refuses. Moses warns that every firstborn in Egypt will die."
+      "summary": "Aaron's rod becomes a serpent before Pharaoh, but Pharaoh's heart stays hard. Aaron strikes the Nile, and its water turns to blood. Frogs, lice, and flies fill the land. Disease kills Egypt's livestock, and boils break out on people and animals. Hail, locusts, and three days of darkness follow, but Israel's land of Goshen is spared. Each time Pharaoh promises to let Israel go, then refuses. Moses warns that every firstborn in Egypt will die.",
+      "related": ["ramesses-ii"],
+      "relatedNote": "Many scholars set the Exodus in the reign of Ramesses II."
     },
     {
       "id": "the-passover",
@@ -68,7 +72,9 @@
       "place": "b:sea-region",
       "verse": "exodus-14:21",
       "summary": "Pharaoh regrets freeing his slaves and chases them with six hundred chariots. The people see the army and cry out in fear. Moses tells them to stand still and see the LORD's rescue. Moses stretches out his hand, and an east wind divides the sea all night. Israel crosses on dry ground with walls of water on each side. The water returns over the Egyptians. Moses and Miriam lead Israel in songs of praise. At Marah the LORD makes bitter water sweet.",
-      "alsoRead": [{ "ref": "1 Nephi 17:26", "note": "Nephi reminds his brothers how the Red Sea was divided." }]
+      "alsoRead": [{ "ref": "1 Nephi 17:26", "note": "Nephi reminds his brothers how the Red Sea was divided." }],
+      "related": ["ramesses-ii", "merneptah-stele"],
+      "relatedNote": "By about 1208 BCE an Egyptian stele already names Israel as a people in Canaan."
     },
     {
       "id": "manna-and-water-from-the-rock",
@@ -215,7 +221,9 @@
       "chapters": ["numbers-5", "numbers-6", "numbers-7", "numbers-8", "numbers-9"],
       "place": "b:sinai",
       "verse": "numbers-6:24",
-      "summary": "A person who wrongs another must confess and repay with a fifth more. A man or woman may vow to be a Nazirite for a time. They drink no wine and let their hair grow. The LORD gives Aaron words to bless Israel. The tribal leaders bring gifts for the altar, one tribe each day. The Levites are set apart for their work. Israel keeps the Passover at Sinai. The cloud over the tabernacle tells them when to camp and when to travel."
+      "summary": "A person who wrongs another must confess and repay with a fifth more. A man or woman may vow to be a Nazirite for a time. They drink no wine and let their hair grow. The LORD gives Aaron words to bless Israel. The tribal leaders bring gifts for the altar, one tribe each day. The Levites are set apart for their work. Israel keeps the Passover at Sinai. The cloud over the tabernacle tells them when to camp and when to travel.",
+      "related": ["ketef-hinnom"],
+      "relatedNote": "The oldest known copy of this blessing is on silver amulets from about 600 BCE."
     },
     {
       "id": "israel-leaves-sinai",

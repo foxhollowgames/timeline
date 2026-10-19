@@ -8,6 +8,7 @@
     "import": "node scripts/import.mjs",
     "build": "node scripts/build-events.mjs",
     "check": "node scripts/check.mjs",
-    "verify:sources": "node scripts/verify-sources.mjs"
+    "verify:sources": "node scripts/verify-sources.mjs",
+    "images": "node scripts/fetch-images.mjs"
   }
 }

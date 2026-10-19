@@ -4,3 +4,4 @@ Close-up Earth imagery (500 m): the same Blue Marble: Next Generation, served by
 Book of Mormon relief and shapes: Book of Mormon Wayfinder (https://github.com/foxhollowgames/book-of-mormon), after J. L. Sorenson, Mormon's Map (FARMS, 2000). Illustrative relief, not real elevation.
 Flat map: Leaflet 1.9.4 (BSD 2-Clause). See vendor/leaflet-LICENSE.txt.
 Hub card image (assets/hub-card.jpg): cropped from the same NASA Blue Marble base map.
+History pictures (assets/history/): Wikimedia Commons, each under its own free license. The card shows each picture's author, license, and Commons page. scripts/history/images.json lists them all.

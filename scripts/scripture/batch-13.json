@@ -11,7 +11,9 @@
       "chapters": ["dc-2"],
       "verse": "dc-2:1",
       "summary": "In September 1823, a heavenly messenger visits Joseph Smith near Palmyra, New York. Joseph later names him Moroni. Section 2 comes from Joseph's history, not a separate revelation text. The messenger quotes Malachi with changes. He says the Lord will reveal the priesthood by the hand of Elijah. The hearts of the children will turn to their fathers.",
-      "alsoRead": [{ "ref": "Malachi 4:5", "note": "The LORD says he will send Elijah the prophet." }]
+      "alsoRead": [{ "ref": "Malachi 4:5", "note": "The LORD says he will send Elijah the prophet." }],
+      "related": ["second-great-awakening", "erie-canal"],
+      "relatedNote": "Revivals and the new Erie Canal shaped the Palmyra area in these years."
     },
     {
       "id": "the-lost-manuscript",
@@ -86,7 +88,9 @@
       "chapters": ["dc-19"],
       "place": "dc:palmyra",
       "verse": "dc-19:16",
-      "summary": "Martin Harris, a farmer near Palmyra, has agreed to pay for printing the book. The printer Egbert Grandin wants security. The revelation says Christ suffered for all, so the repentant need not suffer. Christ describes his own suffering, which made him bleed at every pore. Harris is told not to covet his property. He must pay the printer."
+      "summary": "Martin Harris, a farmer near Palmyra, has agreed to pay for printing the book. The printer Egbert Grandin wants security. The revelation says Christ suffered for all, so the repentant need not suffer. Christ describes his own suffering, which made him bleed at every pore. Harris is told not to covet his property. He must pay the printer.",
+      "related": ["erie-canal"],
+      "relatedNote": "The Book of Mormon was printed in Palmyra, a town on the new Erie Canal."
     },
     {
       "id": "the-church-is-organized",
@@ -95,7 +99,9 @@
       "chapters": ["dc-20", "dc-21", "dc-22", "dc-23"],
       "place": "dc:fayette",
       "verse": "dc-21:1",
-      "summary": "On 6 April 1830, Joseph Smith and others meet in Fayette, New York. They gather at the home of Peter Whitmer Sr. They organize the Church of Christ. The Articles and Covenants set out its beliefs, offices, and ordinances. The group votes to accept Joseph and Oliver Cowdery as leaders. A revelation tells the church to receive Joseph's words as from the Lord. Earlier baptisms will not do, so new members must be baptized. Five early believers each learn their own duties."
+      "summary": "On 6 April 1830, Joseph Smith and others meet in Fayette, New York. They gather at the home of Peter Whitmer Sr. They organize the Church of Christ. The Articles and Covenants set out its beliefs, offices, and ordinances. The group votes to accept Joseph and Oliver Cowdery as leaders. A revelation tells the church to receive Joseph's words as from the Lord. Earlier baptisms will not do, so new members must be baptized. Five early believers each learn their own duties.",
+      "related": ["second-great-awakening", "finney-rochester"],
+      "relatedNote": "The Church is organized amid the revivals of western New York."
     },
     {
       "id": "emma-smith-an-elect-lady",
@@ -122,7 +128,9 @@
       "chapters": ["dc-28", "dc-30", "dc-32"],
       "place": "dc:fayette",
       "verse": "dc-28:2",
-      "summary": "In September 1830, Hiram Page claims revelations through a stone. Joseph Smith has just moved to Fayette, New York. A revelation says only Joseph receives revelations that command the church. Oliver Cowdery is sent to preach to the Lamanites, meaning the American Indians. Peter Whitmer Jr. and others go with him. David Whitmer is rebuked for being persuaded by others."
+      "summary": "In September 1830, Hiram Page claims revelations through a stone. Joseph Smith has just moved to Fayette, New York. A revelation says only Joseph receives revelations that command the church. Oliver Cowdery is sent to preach to the Lamanites, meaning the American Indians. Peter Whitmer Jr. and others go with him. David Whitmer is rebuked for being persuaded by others.",
+      "related": ["indian-removal-act"],
+      "relatedNote": "D&C 28 sends Oliver Cowdery to the Lamanites. Congress had just ordered the tribes moved west."
     },
     {
       "id": "the-gathering-of-the-elect",
@@ -158,7 +166,9 @@
       "chapters": ["dc-37", "dc-38", "dc-39", "dc-40"],
       "place": "dc:fayette",
       "verse": "dc-38:27",
-      "summary": "In December 1830, a revelation tells the church to gather in Ohio. At the January 1831 conference in Fayette, members ask why. The Lord says to be one, or they are not his. In Ohio they will receive his law. A minister named James Covel promises to be baptized. He leaves within a day. A revelation says fear and worldly cares led him away."
+      "summary": "In December 1830, a revelation tells the church to gather in Ohio. At the January 1831 conference in Fayette, members ask why. The Lord says to be one, or they are not his. In Ohio they will receive his law. A minister named James Covel promises to be baptized. He leaves within a day. A revelation says fear and worldly cares led him away.",
+      "related": ["restoration-movement"],
+      "relatedNote": "Sidney Rigdon and many Ohio converts came from the Restoration Movement."
     },
     {
       "id": "the-law-of-the-church",

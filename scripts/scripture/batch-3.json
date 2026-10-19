@@ -23,8 +23,8 @@
         { "ref": "2 Chronicles 36:23", "note": "Chronicles ends with the same order from Cyrus." },
         { "ref": "Isaiah 44:28", "note": "Isaiah names Cyrus as the one who will say Jerusalem will be built." }
       ],
-      "related": ["achaemenid-empire"],
-      "relatedNote": "Cyrus founded the Persian Empire and took Babylon in 539 BCE."
+      "related": ["achaemenid-empire", "fall-of-babylon", "cyrus-cylinder"],
+      "relatedNote": "Cyrus founded the Persian Empire and took Babylon in 539 BCE. His cylinder tells of returning captive peoples."
     },
     {
       "id": "temple-foundation-laid",
@@ -52,7 +52,9 @@
       "dateFrom": ["haggai-1", "haggai-2"],
       "place": "b:jerusalem",
       "verse": "haggai-1:4",
-      "summary": "In the second year of Darius, Haggai speaks to two leaders. They are the governor Zerubbabel and the high priest Joshua. The people say it is not yet time to rebuild. God asks why they live in fine houses while his house lies in ruins. The leaders and the people obey and start work. Haggai says the new temple's glory will be greater than the old one's. Ezra adds that the governor Tattenai asks who allowed the work. He writes to Darius while the building goes on."
+      "summary": "In the second year of Darius, Haggai speaks to two leaders. They are the governor Zerubbabel and the high priest Joshua. The people say it is not yet time to rebuild. God asks why they live in fine houses while his house lies in ruins. The leaders and the people obey and start work. Haggai says the new temple's glory will be greater than the old one's. Ezra adds that the governor Tattenai asks who allowed the work. He writes to Darius while the building goes on.",
+      "related": ["darius-the-great", "behistun-inscription"],
+      "relatedNote": "Haggai and Zechariah date their words to the second year of Darius."
     },
     {
       "id": "second-temple-finished",
@@ -61,7 +63,9 @@
       "chapters": ["ezra-6"],
       "place": "b:jerusalem",
       "verse": "ezra-6:15",
-      "summary": "King Darius orders a search of the royal records. A scroll found in the fortress of Achmetha holds Cyrus's order. Darius tells Tattenai to leave the work alone. He orders the costs paid from the region's taxes. He also sends animals, wheat, salt, wine, and oil for the offerings. The elders finish the temple in the sixth year of Darius. They dedicate it with joy and keep the Passover."
+      "summary": "King Darius orders a search of the royal records. A scroll found in the fortress of Achmetha holds Cyrus's order. Darius tells Tattenai to leave the work alone. He orders the costs paid from the region's taxes. He also sends animals, wheat, salt, wine, and oil for the offerings. The elders finish the temple in the sixth year of Darius. They dedicate it with joy and keep the Passover.",
+      "related": ["darius-the-great"],
+      "relatedNote": "Ezra 6:15 dates the finished temple to the sixth year of Darius."
     },
     {
       "id": "zechariahs-night-visions",
@@ -122,7 +126,9 @@
       "chapters": ["esther-1", "esther-2"],
       "place": "b:susa",
       "verse": "esther-2:17",
-      "summary": "King Ahasuerus of Persia gives a great feast in the city of Susa. He sends for Queen Vashti, and she refuses to come. His advisers have her removed as queen. Young women are brought to the palace for the king to choose. Mordecai, a Jew, has raised his orphaned cousin Esther. Esther does not tell anyone she is a Jew. The king loves her and makes her queen. Mordecai finds a plot to kill the king, and it is written in the records."
+      "summary": "King Ahasuerus of Persia gives a great feast in the city of Susa. He sends for Queen Vashti, and she refuses to come. His advisers have her removed as queen. Young women are brought to the palace for the king to choose. Mordecai, a Jew, has raised his orphaned cousin Esther. Esther does not tell anyone she is a Jew. The king loves her and makes her queen. Mordecai finds a plot to kill the king, and it is written in the records.",
+      "related": ["xerxes-i", "persepolis"],
+      "relatedNote": "Ahasuerus is usually identified with Xerxes I, who ruled from Susa."
     },
     {
       "id": "haman-plots-against-the-jews",
@@ -149,7 +155,9 @@
       "chapters": ["esther-8", "esther-9", "esther-10"],
       "place": "b:susa",
       "verse": "esther-9:28",
-      "summary": "The king gives Haman's ring to Mordecai. A sealed royal order cannot be taken back. So the king lets them write a new one. It lets the Jews in every city gather and defend their lives. On the thirteenth day of Adar, the Jews strike those who attack them. They take no goods from their enemies. Mordecai and Esther send letters that make the feast of Purim yearly. Mordecai becomes second to the king and seeks the good of his people."
+      "summary": "The king gives Haman's ring to Mordecai. A sealed royal order cannot be taken back. So the king lets them write a new one. It lets the Jews in every city gather and defend their lives. On the thirteenth day of Adar, the Jews strike those who attack them. They take no goods from their enemies. Mordecai and Esther send letters that make the feast of Purim yearly. Mordecai becomes second to the king and seeks the good of his people.",
+      "related": ["xerxes-i"],
+      "relatedNote": "The story is set at the court of Ahasuerus, usually identified with Xerxes I."
     },
     {
       "id": "ezra-comes-to-jerusalem",
@@ -158,7 +166,9 @@
       "chapters": ["ezra-7", "ezra-8"],
       "place": "b:babylon",
       "verse": "ezra-7:10",
-      "summary": "Years later Ezra comes up from Babylon. He is a priest and a scribe, a teacher skilled in the law of Moses. King Artaxerxes gives him a letter and gifts of silver and gold for the temple. The letter tells Ezra to appoint judges and teach God's laws. At the river Ahava, Ezra calls a fast and asks God for a safe journey. He is ashamed to ask the king for soldiers. The travelers reach Jerusalem safely after about four months."
+      "summary": "Years later Ezra comes up from Babylon. He is a priest and a scribe, a teacher skilled in the law of Moses. King Artaxerxes gives him a letter and gifts of silver and gold for the temple. The letter tells Ezra to appoint judges and teach God's laws. At the river Ahava, Ezra calls a fast and asks God for a safe journey. He is ashamed to ask the king for soldiers. The travelers reach Jerusalem safely after about four months.",
+      "related": ["artaxerxes-i"],
+      "relatedNote": "Ezra 7 dates his journey to the seventh year of Artaxerxes."
     },
     {
       "id": "ezra-and-the-mixed-marriages",
@@ -176,7 +186,9 @@
       "chapters": ["nehemiah-1", "nehemiah-2"],
       "place": "b:susa",
       "verse": "nehemiah-2:5",
-      "summary": "Nehemiah serves the Persian king as his cupbearer, the one who serves his wine. Men from Judah tell him Jerusalem's wall is broken and its gates are burned. Nehemiah weeps, fasts, and prays for days. Four months later the king asks why he looks sad. Nehemiah prays quickly and asks to be sent to rebuild the city. The king gives him letters and timber. In Jerusalem, Nehemiah looks at the walls by night. The leaders agree to build."
+      "summary": "Nehemiah serves the Persian king as his cupbearer, the one who serves his wine. Men from Judah tell him Jerusalem's wall is broken and its gates are burned. Nehemiah weeps, fasts, and prays for days. Four months later the king asks why he looks sad. Nehemiah prays quickly and asks to be sent to rebuild the city. The king gives him letters and timber. In Jerusalem, Nehemiah looks at the walls by night. The leaders agree to build.",
+      "related": ["artaxerxes-i", "elephantine-papyri"],
+      "relatedNote": "Nehemiah served Artaxerxes I. Letters from Elephantine name his rival Sanballat."
     },
     {
       "id": "jerusalems-wall-rebuilt",

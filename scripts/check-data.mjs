@@ -159,6 +159,16 @@ export async function checkData(test, warn) {
       if (!d.summary) throw new Error(`${e.id}: no summary`);
       if (source.author === 'Wikipedia' && !result.get(e.id)?.ok) throw new Error(`${e.id}: its quote has not passed npm run verify:sources`);
     }
+    // Pictures: each one named in the details must be saved, with a credit. Gaps are reported.
+    let pictured = 0;
+    for (const e of history) {
+      const image = details[e.volume][e.id].image;
+      if (!image) continue;
+      if (!(await exists(join(here, '..', 'dist', image.src)))) throw new Error(`${e.id}: picture ${image.src} is missing. Run npm run images.`);
+      if (!image.artist || !image.license || !image.page) throw new Error(`${e.id}: picture has no credit`);
+      pictured++;
+    }
+    warn(`${pictured} of ${history.length} history events have a picture`);
     // Region coverage is reported, not enforced (DESIGN.md Q13).
     const counts = {};
     for (const e of history.filter(x => x.volume === 'history')) counts[e.region] = (counts[e.region] ?? 0) + 1;
