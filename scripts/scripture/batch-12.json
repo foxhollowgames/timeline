@@ -1,0 +1,163 @@
+{
+  "about": "Scripture events, batch 12: Helaman to Moroni (DESIGN.md section 3). Same fields as batch-1.json. These events go on the Book of Mormon map.",
+  "batch": 12,
+  "era": "From Helaman to the end of the Nephites",
+  "covers": [
+    { "book": "helaman", "chapters": [1, 16] },
+    { "book": "3-nephi", "chapters": [1, 30] },
+    { "book": "4-nephi", "chapters": [1, 1] },
+    { "book": "mormon", "chapters": [1, 9] },
+    { "book": "moroni", "chapters": [1, 10] }
+  ],
+  "events": [
+    {
+      "id": "kishkumen-and-coriantumr",
+      "volume": "bom",
+      "title": "Pahoran is murdered, and Coriantumr takes Zarahemla",
+      "chapters": ["helaman-1"],
+      "place": "bom:zarahemla",
+      "verse": "helaman-1:9",
+      "summary": "Three sons of Pahoran compete for the judgment seat after his death. The voice of the people chooses Pahoran, his son. A hired killer named Kishkumen murders him on the judgment seat. Kishkumen's band swears to keep his secret. Coriantumr, a Nephite who joined the Lamanites, marches into Zarahemla and takes it. Moronihah and Lehi surround his army, and the Nephites retake the city."
+    },
+    {
+      "id": "the-church-grows-in-peace",
+      "volume": "bom",
+      "title": "People move north, and the church grows",
+      "chapters": ["helaman-3"],
+      "place": "bom:zarahemla",
+      "verse": "helaman-3:35",
+      "summary": "Many people move into the land northward. Where trees are few, they build houses of cement. Tens of thousands join the church in a time of peace. The humble fast and pray often and grow firmer in their faith. Others grow proud. Helaman dies, and his son Nephi becomes chief judge."
+    },
+    {
+      "id": "nephites-lose-the-south",
+      "volume": "bom",
+      "title": "The Nephites lose the land southward",
+      "chapters": ["helaman-4"],
+      "place": "bom:bountiful",
+      "verse": "helaman-4:13",
+      "summary": "Nephite dissenters join the Lamanites in war. The Nephites are driven back to the land of Bountiful. Moronihah wins back about half the land. The Nephites see that their pride and wickedness have made them weak. They had boasted in their own strength. So they were left to their own strength and lost almost all their lands."
+    },
+    {
+      "id": "nephi-and-lehi-in-prison",
+      "volume": "bom",
+      "title": "Nephi and Lehi are encircled by fire in prison",
+      "chapters": ["helaman-5"],
+      "place": "bom:nephi",
+      "verse": "helaman-5:30",
+      "summary": "Nephi gives up the judgment seat to preach with his brother Lehi. They remember their father's words to build on the rock of Christ. They preach from Bountiful to Zarahemla and on to the land of Nephi. Lamanites put them in prison. A pillar of fire surrounds them, and the walls shake. A still, quiet voice calls the people to repent. About three hundred people see this and believe."
+    },
+    {
+      "id": "the-gadianton-robbers-spread",
+      "volume": "bom",
+      "title": "Peace with the Lamanites, and the robbers spread",
+      "chapters": ["helaman-6"],
+      "place": "bom:zarahemla",
+      "verse": "helaman-6:38",
+      "summary": "The Lamanites become more righteous than the Nephites. Many Lamanites come to teach the Nephites. The two peoples trade and travel freely. Then murders and secret bands spread among the Nephites. Those bands are the robbers of Gadianton. The Lamanites hunt down the robbers in their land. The Nephites support them until the robbers fill the land."
+    },
+    {
+      "id": "nephi-on-his-garden-tower",
+      "volume": "bom",
+      "title": "Nephi mourns on his garden tower",
+      "chapters": ["helaman-7"],
+      "place": "bom:zarahemla",
+      "verse": "helaman-7:11",
+      "summary": "Nephi returns from the north and finds the robbers ruling in Zarahemla. He prays on the tower in his garden near the highway. Men passing by hear him and call others. A crowd gathers to learn why he mourns. Nephi calls them to repent. He warns that they will be destroyed if they do not."
+    },
+    {
+      "id": "samuel-the-lamanite",
+      "volume": "bom",
+      "title": "Samuel the Lamanite prophesies from the wall",
+      "chapters": ["helaman-13"],
+      "place": "bom:zarahemla",
+      "verse": "helaman-13:4",
+      "summary": "Samuel, a Lamanite prophet, preaches in Zarahemla, and the people cast him out. The Lord tells him to return. They will not let him into the city, so he climbs the wall. He warns of destruction within four hundred years unless they repent. He says they reject prophets and love their riches. He says they have sought happiness in doing wrong.",
+      "alsoRead": [{ "ref": "Helaman 14:3", "note": "Samuel foretells a night without darkness at Christ's birth." }]
+    },
+    {
+      "id": "the-sign-of-christs-birth",
+      "volume": "bom",
+      "title": "A night without darkness signals Christ's birth",
+      "chapters": ["3-nephi-1"],
+      "place": "bom:zarahemla",
+      "verse": "3-nephi-1:15",
+      "summary": "Unbelievers set a day to kill those who wait for Samuel's sign. Nephi, the son of Nephi, prays all day for his people. The Lord tells him the sign will come that night. At sunset there is no darkness. The night stays light as day, and a new star appears. Many believe and are baptized.",
+      "alsoRead": [{ "ref": "Luke 2:11", "note": "Angels announce the Savior's birth in Bethlehem." }]
+    },
+    {
+      "id": "lachoneus-gathers-the-people",
+      "volume": "bom",
+      "title": "Lachoneus gathers the people against the robbers",
+      "chapters": ["3-nephi-2", "3-nephi-3", "3-nephi-4", "3-nephi-5"],
+      "place": "bom:refuge",
+      "verse": "3-nephi-3:12",
+      "summary": "The people begin to forget the signs. Robber bands grow strong and attack Nephites and Lamanites alike. The robbers' leader Giddianhi writes to demand that Lachoneus surrender. Lachoneus, the governor, refuses and has the people pray for strength. He gathers them in one place with their flocks and seven years of food. The robbers find nothing to eat and attack. Giddianhi dies, and his army is defeated. The people give thanks for their deliverance."
+    },
+    {
+      "id": "pride-breaks-the-church",
+      "volume": "bom",
+      "title": "Pride divides the people, and the government falls",
+      "chapters": ["3-nephi-6"],
+      "place": "bom:zarahemla",
+      "verse": "3-nephi-6:14",
+      "summary": "The people return to their lands and grow rich. Some grow proud, and the people split into ranks. The church is broken up except among a few Lamanites. Some judges secretly put to death prophets who testify of Christ. Their friends plan to destroy the governor and set up a king."
+    },
+    {
+      "id": "storm-at-christs-death",
+      "volume": "bom",
+      "title": "Storms and darkness at the time of Christ's death",
+      "chapters": ["3-nephi-8", "3-nephi-9"],
+      "place": "bom:zarahemla",
+      "verse": "3-nephi-9:20",
+      "summary": "In the thirty-fourth year, a great storm arises. Zarahemla burns, and the city of Moroni sinks into the sea. Earth covers the city of Moronihah. Thick darkness lies on the land for three days. The survivors hear a voice name the cities that were destroyed. The speaker says he is Jesus Christ. He asks for a broken heart and a contrite spirit.",
+      "alsoRead": [{ "ref": "Matthew 27:45", "note": "Darkness covers the land at the crucifixion." }]
+    },
+    {
+      "id": "jesus-appears-at-bountiful",
+      "volume": "bom",
+      "title": "The risen Jesus appears at Bountiful",
+      "chapters": ["3-nephi-11"],
+      "place": "bom:bountiful",
+      "verse": "3-nephi-11:14",
+      "summary": "About 2,500 people gather near the temple in Bountiful. They hear a voice, and the Father introduces his beloved Son. Jesus comes down from heaven in a white robe. He invites them to feel the wounds in his hands, feet, and side. They fall down and worship him. He gives Nephi and others power to baptize. He teaches them to baptize without disputes.",
+      "alsoRead": [{ "ref": "John 20:27", "note": "Jesus invites Thomas to touch his wounds." }]
+    },
+    {
+      "id": "two-centuries-of-peace",
+      "volume": "bom",
+      "title": "The people live in peace for two hundred years",
+      "chapters": ["4-nephi-1"],
+      "place": "bom:zarahemla",
+      "verse": "4-nephi-1:15",
+      "summary": "After Christ's visit, all the people join the church. They share their goods and have no rich or poor. There are no Lamanites or other divisions. There is no contention, because the love of God is in their hearts. After about two hundred years, pride returns. People build separate churches and form classes again. The record keeper Ammaron hides the sacred records."
+    },
+    {
+      "id": "mormon-as-a-young-man",
+      "volume": "bom",
+      "title": "Mormon receives the records and leads the army",
+      "chapters": ["mormon-1", "mormon-2"],
+      "place": "bom:zarahemla",
+      "verse": "mormon-1:15",
+      "summary": "Ammaron tells Mormon, about ten years old, where the records are hidden. At fifteen, Mormon is visited by the Lord. War begins near the river Sidon. At sixteen, Mormon leads the Nephite armies. The Nephites lose city after city. Their sorrow does not lead them to repent. A treaty gives them the land northward."
+    },
+    {
+      "id": "mormon-refuses-revenge",
+      "volume": "bom",
+      "title": "Mormon refuses to lead a war of revenge",
+      "chapters": ["mormon-3", "mormon-4", "mormon-5"],
+      "place": "bom:desolation",
+      "verse": "mormon-3:12",
+      "summary": "Mormon fortifies the land of Desolation. The Nephites win battles, then boast and swear to take revenge. Mormon refuses to lead them for that purpose. The Nephites attack and are driven back. Both peoples grow more cruel. Mormon takes the records from the hill Shim. He agrees to lead the army again, without hope."
+    },
+    {
+      "id": "the-last-battle-at-cumorah",
+      "volume": "bom",
+      "title": "The last Nephite battle at Cumorah",
+      "chapters": ["mormon-6", "mormon-8"],
+      "place": "bom:cumorah",
+      "verse": "mormon-6:17",
+      "summary": "Mormon gathers the Nephites in the land of Cumorah. He hides the records in the hill but gives some plates to his son Moroni. The Lamanites attack, and the Nephite armies are destroyed. Mormon mourns for the people who would not repent. Moroni later writes that his father was killed. He is left alone to finish the record. He writes that it will come forth in a later day.",
+      "alsoRead": [{ "ref": "D&C 128:20", "note": "Joseph Smith speaks of glad tidings from Cumorah." }]
+    }
+  ]
+}
