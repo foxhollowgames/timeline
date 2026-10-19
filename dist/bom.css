@@ -23,8 +23,6 @@
 .split-divider[aria-orientation="horizontal"] { cursor: row-resize; }
 .split-divider[aria-orientation="horizontal"]::after { width: 44px; height: 4px; margin: -2px 0 0 -22px; }
 
-.bom-toggle { display: flex; align-items: center; gap: 8px; padding: 0 14px; border-radius: 22px !important; width: auto !important; font-size: 13px !important; }
-.bom-toggle[aria-pressed="true"] { border-color: #d9592699 !important; color: #fbe3d6; }
 .globe-controls { align-items: center; }
 
 /* Pins with no years (the order-only bands) get a dashed ring. */
@@ -45,8 +43,6 @@
 .relief-tiles { filter: saturate(.85) brightness(.9); }
 
 @media (max-width: 650px) {
-    .bom-toggle .bom-toggle-label { display: none; }
-  .bom-toggle { padding: 0 11px; }
   .bom-heading { left: 10px; bottom: 10px; padding: 6px 10px; }
 }
 
@@ -67,4 +63,3 @@
 .split-stacked .year-overview > .overview-count { font-size: 11px; max-width: 220px; }
 .split-stacked .globe-controls { bottom: 10px; right: 10px; gap: 4px; }
 .split-stacked .globe-controls button { width: 32px; height: 32px; font-size: 16px; }
-.split-stacked .bom-toggle { padding: 0 9px; }

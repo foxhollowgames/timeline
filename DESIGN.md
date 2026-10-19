@@ -231,7 +231,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - `npm run build` copies the tiles to `dist/assets/bom-relief/` and writes `dist/data/bom-map.json`. That file holds the land outline, the Sidon, the named waters, the traced rivers, and the sea labels.
   - `dist/bom-map.js` loads Leaflet the first time the panel opens. Leaflet uses its flat CRS, with one unit per mile.
   - The panel reuses the globe's pin code. `dist/pins.js` draws on any view that can project a place to the screen.
-- **Toggle and address.** The Book of Mormon pill in the volume legend opens and closes the panel: the pill is on exactly while the panel is open. The **Book of Mormon map** button beside the globe controls does the same. The address adds `bom=1` while the panel is open.
+- **Toggle and address.** The Book of Mormon pill in the volume legend opens and closes the panel: the pill is on exactly while the panel is open. The address adds `bom=1` while the panel is open.
 - **Divider.** Drag it, or focus it and use the arrow keys. Double-click resets it to 55/45. Each browser remembers its own split. Portrait screens stack the two views.
 - **Card placement.** On desktop the card sits beside the panel, over the globe. On a stacked phone layout it covers the half that does not hold the selected event.
 - **Selecting an event.** The panel opens if it is closed, and the map flies to the event's places. Closing the card zooms the map back out to the whole land.
