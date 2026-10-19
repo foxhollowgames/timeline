@@ -4,10 +4,12 @@
 // Clicks are read from the globe canvas, so a drag that starts on a path still turns the globe.
 
 import { routeStyle, ARROW_PATH, ARROW_EDGE } from './volumes.js';
+import { assignLanes, shiftLeg } from './route-lanes.js';
 
 const SVG = 'http://www.w3.org/2000/svg';
 const PICK_PIXELS = 11; // half the readers' 22px hit line
 const DIMMED = 0.35;
+const SAME_PLACE = 0.5; // degrees: endpoints this close share a lane group
 
 export function createRouteLayer({ globe, layer }) {
   const svg = document.createElementNS(SVG, 'svg');
@@ -43,6 +45,9 @@ export function createRouteLayer({ globe, layer }) {
       }
       return { route, style, g, shadow, line, arrows, legs, runs: [] };
     });
+    // Paths sharing a leg run side by side, in both groups together.
+    const all = [...drawn.paths, ...drawn.selected];
+    assignLanes(all.map(item => item.route), SAME_PLACE).forEach((lanes, i) => { all[i].lanes = lanes; });
     if (hovered && !drawn.paths.includes(hovered) && !drawn.selected.includes(hovered)) setHovered(null);
     draw();
   }
@@ -52,8 +57,8 @@ export function createRouteLayer({ globe, layer }) {
     for (const item of [...drawn.paths, ...drawn.selected]) {
       const runs = [];
       let run = null, arrows = '';
-      for (const leg of item.legs) {
-        const screen = leg.map(p => globe.project(p));
+      for (const [i, leg] of item.legs.entries()) {
+        const screen = shiftLeg(leg.map(p => globe.project(p)), item.lanes?.[i]);
         for (const p of screen) {
           if (!p) { run = null; continue; }
           if (!run) { run = []; runs.push(run); }
