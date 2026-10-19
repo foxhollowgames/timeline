@@ -171,7 +171,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     let d;
     try { d = (await loadDetails(event.volume))[event.id]; }
     catch { content.innerHTML = `${backButton()}<p class="card-loading">This path's details could not load. Reload the page to try again.</p>`; bind(); return; }
-    if (current?.route.id !== routeId) return;
+    if (current?.type !== 'route' || current.event !== event || current.route.id !== routeId) return;
     const route = d?.routes?.find(r => r.id === routeId);
     if (!route) { close(); return; }
     current.route = route;
