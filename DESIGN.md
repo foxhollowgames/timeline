@@ -62,6 +62,7 @@ A pin is a scripture event, such as the scattering of the ten tribes. It is not 
 | --- | --- | --- | --- |
 | 1 | The divided kingdom to the exile | 1 Kings 12–22, 2 Kings, 2 Chronicles 10–36 | 31 events |
 | 2 | The prophets of the divided kingdom and the exile | Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah | 99 events |
+| 3 | The return from exile | Ezra, Nehemiah, Esther, Haggai, Zechariah, Malachi | 23 events |
 
 - **Fields.** Each event has `id`, `volume`, `title`, `chapters`, and `summary`. It may add these:
   - `dateFrom`: the chapters that set its years.
