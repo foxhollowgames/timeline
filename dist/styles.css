@@ -45,6 +45,12 @@ main { height: 100dvh; min-height: 480px; position: relative; }
 .globe-controls #globe-zoom-in, .globe-controls #globe-zoom-out { display: none; }
 .globe-zoom-slider { display: flex; align-items: center; gap: 10px; height: 43px; padding: 0 16px; border-radius: 22px; background: var(--control); backdrop-filter: blur(16px); border: 1px solid #c7e1ff22; box-shadow: 0 5px 24px #0002; color: var(--muted); font-size: 18px; line-height: 1; }
 .globe-zoom-slider input { width: 140px; margin: 0; accent-color: var(--gold); cursor: pointer; }
+/* A narrow split globe has no room for the slider, so it falls back to the buttons. */
+.globe-stage { container-type: inline-size; }
+@container (max-width: 360px) {
+  .globe-controls #globe-zoom-in, .globe-controls #globe-zoom-out { display: block; }
+  .globe-zoom-slider { display: none; }
+}
 .status { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); padding: 13px 18px; border-radius: 24px; background: #0a142de8; font-size: 14px; max-width: 80%; text-align: center; z-index: 7; margin: 0; }
 
 /* Timeline */
