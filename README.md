@@ -47,7 +47,7 @@ GitHub Pages publishes `dist/` after each push to `main`. The workflow is `.gith
 
 The Book of Mormon map is relative. It is not placed on real land. One unit is one of John L. Sorenson's estimated miles.
 
-- Select the Book of Mormon pill in the volume legend (or **Book of Mormon map** beside the globe controls) to open or close it.
+- Select the Book of Mormon pill in the volume legend to open or close it.
 - Drag the divider to resize the two views. You can also focus the divider and use the arrow keys.
 - The map follows the same timeline. With no events in the window, it offers the nearest event before and after.
 - Ether's events have no years. They show from the Tower of Babel until Coriantumr is found in Omni 1, with a dashed ring.

@@ -81,14 +81,12 @@ async function start() {
     else hidden.add('bom');
     if (open !== split.open) {
       split.setOpen(open);
-      $('bom-toggle').setAttribute('aria-pressed', String(open));
       if (open) ensureBom();
     }
     if (!open && selected?.volume === 'bom') card?.close();
     applyFilters();
   }
-  $('bom-toggle').addEventListener('click', () => setBomOpen(!split.open));
-  $('bom-close').addEventListener('click', () => { setBomOpen(false); $('bom-toggle').focus(); });
+  $('bom-close').addEventListener('click', () => { setBomOpen(false); $('legend').querySelector('[data-volume="bom"]')?.focus(); });
 
   // ---------- Strip ----------
   const scrubber = createScrubber({
@@ -265,7 +263,6 @@ async function start() {
 
   // ---------- Volume legend and filters ----------
   $('legend').innerHTML = VOLUME_ORDER.map(v => `<button class="legend-item" data-volume="${v}" aria-pressed="true" title="Show or hide ${VOLUMES[v].label}">${shapeSVG(v, 15)}<span class="legend-short">${VOLUMES[v].short}</span><span class="visually-hidden"> ${VOLUMES[v].label}</span></button>`).join('');
-  $('bom-toggle').querySelector('.bom-toggle-shape').innerHTML = shapeSVG('bom', 14);
   for (const button of $('legend').querySelectorAll('[data-volume]')) {
     button.addEventListener('click', () => {
       const v = button.dataset.volume;
