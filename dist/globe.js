@@ -71,10 +71,48 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
       }
       if (points.length < 2) continue;
       const material = new THREE.LineBasicMaterial({ color: route.color ?? 0xefcc88, transparent: true, opacity: route.opacity ?? 0.9, depthTest: true });
-      group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material));
+      const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material);
+      // A route with a key can be selected. pickRoute finds it by its sampled points.
+      line.userData = { key: route.key, points, opacity: material.opacity };
+      group.add(line);
       if (legAngle > 0) group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(arrowhead(points, legAngle, lift)), material.clone()));
     }
+    if (hovered) { hovered = null; canvas.style.cursor = ''; }
   }
+
+  // The route nearest a screen point, within a finger's reach. The selected layer wins ties.
+  const PICK_PIXELS = 10;
+  function pickRoute(x, y) {
+    let best = null, bestDistance = PICK_PIXELS;
+    for (const group of [layers.selected, layers.paths]) {
+      for (const line of group.children) {
+        if (!line.userData.key) continue;
+        let previous = null;
+        for (const point of line.userData.points) {
+          const p = project(point);
+          if (p && previous) {
+            const dx = p.x - previous.x, dy = p.y - previous.y, lengthSq = dx * dx + dy * dy;
+            const t = lengthSq ? THREE.MathUtils.clamp(((x - previous.x) * dx + (y - previous.y) * dy) / lengthSq, 0, 1) : 0;
+            const distance = Math.hypot(previous.x + t * dx - x, previous.y + t * dy - y);
+            if (distance < bestDistance) { bestDistance = distance; best = line; }
+          }
+          previous = p;
+        }
+      }
+      if (best) return best;
+    }
+    return best;
+  }
+  // Hovering a route brightens it and shows a pointer, as in the Wayfinder readers.
+  let hovered = null, routeClick = null, pressed = null;
+  function setHovered(line) {
+    if (line === hovered) return;
+    if (hovered) hovered.material.opacity = hovered.userData.opacity;
+    hovered = line;
+    if (line) line.material.opacity = 1;
+    canvas.style.cursor = line ? 'pointer' : '';
+  }
+  const stagePoint = event => { const rect = canvas.getBoundingClientRect(); return { x: event.clientX - rect.left, y: event.clientY - rect.top }; };
 
   // Screen position of a point on the globe, or null when it is behind the Earth.
   const scratch = new THREE.Vector3();
@@ -189,6 +227,22 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
   const releaseTouch = event => { touchPoints.delete(event.pointerId); pinchDistance = 0; };
   canvas.addEventListener('pointerup', releaseTouch);
   canvas.addEventListener('pointercancel', releaseTouch);
+  // A click is a press and release that barely moves. A drag turns the globe instead.
+  canvas.addEventListener('pointerdown', event => { pressed = { ...stagePoint(event), time: performance.now() }; });
+  canvas.addEventListener('pointermove', event => {
+    if (event.pointerType === 'touch' || event.buttons) return;
+    const { x, y } = stagePoint(event);
+    setHovered(routeClick ? pickRoute(x, y) : null);
+  });
+  canvas.addEventListener('pointerleave', () => setHovered(null));
+  canvas.addEventListener('pointerup', event => {
+    const start = pressed; pressed = null;
+    if (!start || !routeClick || touchPoints.size) return;
+    const { x, y } = stagePoint(event);
+    if (Math.hypot(x - start.x, y - start.y) > 6 || performance.now() - start.time > 600) return;
+    const line = pickRoute(x, y);
+    if (line) routeClick(line.userData.key);
+  });
   canvas.addEventListener('webglcontextlost', event => { event.preventDefault(); onStatus('The globe paused. Reload this page to restore it.'); });
 
   scene.add(new THREE.AmbientLight(0xabcde2, 2));
@@ -244,6 +298,7 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
     focusOn,
     slideTo,
     setRoutes,
+    onRouteClick(callback) { routeClick = callback; },
     project,
     zoomIn: () => zoomTo((zoomTarget ?? camera.position.length()) * 0.8),
     zoomOut: () => zoomTo((zoomTarget ?? camera.position.length()) * 1.25),

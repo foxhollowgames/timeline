@@ -53,6 +53,7 @@ export async function createBomMap({ container }) {
   const landBounds = L.latLngBounds(shapes.land.map(ll));
   map.fitBounds(landBounds, { padding: [16, 16] });
 
+  let routeClick = null;
   const layers = { paths: L.layerGroup().addTo(map), selected: L.layerGroup().addTo(map) };
   // An arrowhead at the end of a path, in miles. Its size follows the last leg.
   const arrowhead = points => {
@@ -95,11 +96,19 @@ export async function createBomMap({ container }) {
       group.clearLayers();
       for (const route of list) {
         const style = { pane: layer === 'selected' ? 'routes' : 'paths', color: route.color ?? '#efcc88', weight: layer === 'selected' ? 2.4 : 1.8, opacity: route.opacity ?? 0.95, interactive: false };
-        L.polyline(route.points.map(ll), { ...style, dashArray: route.dashed ? '6 6' : null }).addTo(group);
+        const line = L.polyline(route.points.map(ll), { ...style, dashArray: route.dashed ? '6 6' : null }).addTo(group);
         const head = arrowhead(route.points);
         if (head) L.polyline(head.map(ll), style).addTo(group);
+        // A wide, invisible line takes the click, as in the Book of Mormon reader.
+        if (route.key && routeClick) {
+          const hit = L.polyline(route.points.map(ll), { pane: style.pane, color: '#000', weight: 18, opacity: 0, className: 'route-hit' }).addTo(group);
+          hit.on('click', event => { L.DomEvent.stopPropagation(event); routeClick(route.key); });
+          hit.on('mouseover', () => line.setStyle({ opacity: 1, weight: style.weight + 1 }));
+          hit.on('mouseout', () => line.setStyle({ opacity: style.opacity, weight: style.weight }));
+        }
       }
     },
+    onRouteClick(callback) { routeClick = callback; },
     // Fit the map to a set of [x, y] points, or to the whole land.
     focus(points, { animate = true } = {}) {
       map.invalidateSize({ pan: false });

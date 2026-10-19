@@ -185,6 +185,12 @@ function pushEvent(event, detail, date) {
   stats.events++;
 }
 
+// A route as the card shows it: what the text says, where it says it, and its named stops (DESIGN.md section 5).
+function routeRecord(id, source, points, { ref, text, note, stops = [] }) {
+  const named = [...new Set(stops.filter(Boolean))];
+  return { id, title: source.title, kind: source.kind, points, ...(ref && { ref }), ...(text && { text }), ...(note && note !== text && { note }), ...(named.length && { stops: named }) };
+}
+
 // ---------- Bible ----------
 
 const ntStart = config.bibleBooks.indexOf(config.newTestamentStartsAt);
@@ -222,7 +228,12 @@ for (const [index, id] of config.bibleBooks.entries()) {
       const source = routeById.get(r.id);
       if (!source?.points) return null;
       const points = source.points.slice(r.from ?? 0, (r.to ?? source.points.length - 1) + 1);
-      return points.length > 1 ? { id: r.id, title: source.title, kind: source.kind, points } : null;
+      if (points.length < 2) return null;
+      const chapter = source.chapter ?? n, verses = source.verse ? `:${source.verse}${source.endVerse && source.endVerse !== source.verse ? `–${source.endVerse}` : ''}` : '';
+      return routeRecord(r.id, source, points, {
+        ref: `${name} ${chapter}${verses}`, text: source.summary, note: source.detail ?? source.uncertainty,
+        stops: (source.placeIds ?? []).map(pid => placeById.get(pid)?.name),
+      });
     }).filter(Boolean);
     pushEvent(
       { id: `${id}-${n}`, volume, book: id, chapter: n, ref, title: passage?.title ?? event?.title ?? ref, map: 'globe', place: keys[0], places: keys },
@@ -283,7 +294,11 @@ for (const map of bom.chapterMaps) {
       if (!at) return null;
       return stage === 'old' ? Object.values(toLatLng(at)) : at;
     }).filter(Boolean);
-    return points.length > 1 ? { id: route.id, title: route.title, kind: route.kind, points } : null;
+    if (points.length < 2) return null;
+    return routeRecord(route.id, route, points, {
+      ref: route.refs, text: route.text, note: route.research?.text,
+      stops: route.points.filter(p => typeof p === 'string').map(pid => bomPlaces.get(pid)?.name),
+    });
   }).filter(Boolean);
   pushEvent(
     { id: map.chapter, volume: 'bom', book, chapter: n, ref, title: map.title, map: stage === 'old' ? 'globe' : 'bom', place: keys[0], places: keys },
@@ -327,8 +342,13 @@ for (const file of sectionFiles) {
   const verseNumber = section.studyVerse;
   const verseText = typeof n === 'number' && verseNumber ? dcVerses.get(n)?.find(v => v.verse === verseNumber)?.text : undefined;
   const routes = (dcRoutesFile.routes ?? []).filter(r => typeof n === 'number' && (r.sections ?? []).includes(n)).map(r => {
-    const points = r.points.map(pid => dcPlaces.get(pid)).filter(Boolean).map(p => [p.lat, p.lng]);
-    return points.length > 1 ? { id: r.id, title: r.title, kind: r.kind, points } : null;
+    const stops = r.points.map(pid => dcPlaces.get(pid)).filter(Boolean);
+    if (stops.length < 2) return null;
+    const sections = r.sections ?? [];
+    return routeRecord(r.id, r, stops.map(p => [p.lat, p.lng]), {
+      ref: sections.length ? `D&C ${sections.length > 2 && sections.at(-1) - sections[0] === sections.length - 1 ? `${sections[0]}–${sections.at(-1)}` : sections.join(', ')}` : undefined,
+      text: r.summary, note: r.evidence, stops: stops.map(p => p.name),
+    });
   }).filter(Boolean);
   pushEvent(
     { id: isDeclaration ? section.id : `dc-${n}`, volume: 'dc', book: 'dc', chapter: n, ref, title: section.title, map: 'globe', place: keys[0], places: keys },
@@ -555,7 +575,7 @@ for (const e of events) {
   if (e.covered || e.broad || e.volume === 'history') continue;
   const routes = details[e.volume][e.id]?.routes ?? [];
   const digits = e.map === 'bom' ? 10 : 1000;
-  if (routes.length) e.paths = routes.map(r => r.points.map(p => p.map(v => Math.round(v * digits) / digits)));
+  if (routes.length) e.paths = routes.map(r => ({ id: r.id, points: r.points.map(p => p.map(v => Math.round(v * digits) / digits)) }));
   pathCount += routes.length;
 }
 stats.paths = pathCount;

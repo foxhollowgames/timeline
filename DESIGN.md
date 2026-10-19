@@ -199,6 +199,9 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - Each path uses its volume's hue and ends in an arrowhead that shows its direction.
   - While an event is selected, the other paths dim. Its own routes are drawn in gold, a little above the rest.
   - The Book of Mormon panel draws its paths the same way. The build copies each pinned event's routes into `events.json` as `paths`.
+  - A path can be selected, as in the Wayfinder readers. Hovering brightens it and shows a pointer. A click opens a path card.
+  - The path card shows the kind of movement, the title, the reference, and what the text says. It lists the named stops and links to the path's event.
+  - Its route turns gold, and the event's other paths stay dimmed.
 - **Legend and filters (Q30, Q31).** The legend in the header shows each volume's shape and name. Each entry is also a toggle that hides or shows that volume. Hidden volumes leave the pins, the counts, the density bar, and the event buttons. A world history toggle joins in milestone 5.
 - **Search (Q31).** One box finds events by reference or title, places, and people. Choosing an event moves the scrubber, turns the globe, and opens its card. Choosing a place or a person opens a list of its events. People come from each repository's people data.
 
