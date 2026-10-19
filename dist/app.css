@@ -95,13 +95,16 @@
   .legend-item { padding: 0 8px; }
   .card { --card-right: 80px; width: 330px; }
 }
-@media (max-width: 650px) {
+/* Below 820px the brand and legend leave too little room for a centered search, so the header wraps it onto its own row. */
+@media (max-width: 820px) {
   .site-header { display: flex; height: auto; flex-wrap: wrap; padding: 10px 12px; gap: 8px; }
   .brand { order: 1; }
   .legend { order: 2; margin-left: auto; gap: 2px; }
   .legend-item { height: 30px; padding: 0 6px; gap: 4px; font-size: 11px; }
   .search { order: 3; flex: 1 0 100%; width: auto; }
   .search input { height: 36px; }
+}
+@media (max-width: 650px) {
   .card { --card-right: 62px; top: auto; left: 10px; width: auto; bottom: calc(var(--timeline-height) + 8px); max-height: 40dvh; border-radius: 16px; }
   .card-content h2 + .card-ref { margin-bottom: 10px; }
   .card-content { padding: 14px 16px 18px; }
