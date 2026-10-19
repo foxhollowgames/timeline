@@ -35,6 +35,8 @@ export async function createBomMap({ container }) {
   L.control.zoom({ position: 'bottomright' }).addTo(map);
   map.createPane('land').style.zIndex = 250;
   map.createPane('water').style.zIndex = 260;
+  // Background paths sit below the selected routes, so a redraw never covers the selection.
+  map.createPane('paths').style.zIndex = 410;
   map.createPane('routes').style.zIndex = 420;
 
   L.tileLayer(shapes.tiles.url, {
@@ -51,7 +53,16 @@ export async function createBomMap({ container }) {
   const landBounds = L.latLngBounds(shapes.land.map(ll));
   map.fitBounds(landBounds, { padding: [16, 16] });
 
-  const routes = L.layerGroup().addTo(map);
+  const layers = { paths: L.layerGroup().addTo(map), selected: L.layerGroup().addTo(map) };
+  // An arrowhead at the end of a path, in miles. Its size follows the last leg.
+  const arrowhead = points => {
+    const [x1, y1] = points[points.length - 1], [x0, y0] = points[points.length - 2] ?? [];
+    const length = Math.hypot(x1 - x0, y1 - y0);
+    if (!length) return null;
+    const size = Math.min(14, Math.max(4, length * 0.35)), ux = (x1 - x0) / length, uy = (y1 - y0) / length;
+    const bx = x1 - ux * size, by = y1 - uy * size;
+    return [[bx - uy * size * 0.6, by + ux * size * 0.6], [x1, y1], [bx + uy * size * 0.6, by - ux * size * 0.6]];
+  };
   const callbacks = new Set();
   let pending = false;
   const draw = () => {
@@ -78,9 +89,16 @@ export async function createBomMap({ container }) {
       onFrame(callback) { callbacks.add(callback); request(); return () => callbacks.delete(callback); },
       request,
     },
-    setRoutes(list = []) {
-      routes.clearLayers();
-      for (const route of list) L.polyline(route.points.map(ll), { pane: 'routes', color: '#efcc88', weight: 2.4, opacity: 0.95, dashArray: route.dashed ? '6 6' : null, interactive: false }).addTo(routes);
+    // Two layers, as on the globe: every active event's paths, and the selected event's routes in gold.
+    setRoutes(list = [], layer = 'selected') {
+      const group = layers[layer];
+      group.clearLayers();
+      for (const route of list) {
+        const style = { pane: layer === 'selected' ? 'routes' : 'paths', color: route.color ?? '#efcc88', weight: layer === 'selected' ? 2.4 : 1.8, opacity: route.opacity ?? 0.95, interactive: false };
+        L.polyline(route.points.map(ll), { ...style, dashArray: route.dashed ? '6 6' : null }).addTo(group);
+        const head = arrowhead(route.points);
+        if (head) L.polyline(head.map(ll), style).addTo(group);
+      }
     },
     // Fit the map to a set of [x, y] points, or to the whole land.
     focus(points, { animate = true } = {}) {

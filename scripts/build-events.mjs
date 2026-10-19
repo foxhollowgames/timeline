@@ -549,6 +549,16 @@ for (const e of events) {
   e.covered = true;
   if (partOf.has(e.id)) e.partOf = partOf.get(e.id);
 }
+// A pinned event's paths are drawn whenever it is active, so they go in the index, not the details.
+let pathCount = 0;
+for (const e of events) {
+  if (e.covered || e.broad || e.volume === 'history') continue;
+  const routes = details[e.volume][e.id]?.routes ?? [];
+  const digits = e.map === 'bom' ? 10 : 1000;
+  if (routes.length) e.paths = routes.map(r => r.points.map(p => p.map(v => Math.round(v * digits) / digits)));
+  pathCount += routes.length;
+}
+stats.paths = pathCount;
 stats.scriptureEvents = scriptureEvents.length;
 stats.chaptersCovered = coveredIds.size;
 stats.chaptersInNoEvent = [...coveredIds].filter(id => !partOf.has(id));

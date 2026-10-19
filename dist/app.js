@@ -105,6 +105,14 @@ async function start() {
   const visibleYears = () => { const v = scrubber.view; return (v.u1 - v.u0) * yearsPerU(yearToU(scrubber.year)); };
   const tierShown = e => isScripture(e) || e.tier === 1 || visibleYears() <= TIER_2_YEARS;
   const item = event => ({ event, placeKey: event.place, place: data.places[event.place] });
+  // Every pinned event's paths show in its volume's hue, such as Lehi's journey or the scattering of Israel.
+  // While an event is selected, the others dim so its gold routes stand out.
+  let pathed = { onGlobe: [], onMap: [] };
+  const pathsOf = (events, color) => events.filter(e => e.id !== selected?.id).flatMap(e => (e.paths ?? []).map(points => ({ points, color: color(VOLUMES[e.volume].color), opacity: selected ? 0.35 : 0.75 })));
+  function drawPaths() {
+    globe?.setRoutes(pathsOf(pathed.onGlobe, c => parseInt(c.slice(1), 16)), 'paths');
+    bom?.setRoutes(split.open ? pathsOf(pathed.onMap, c => c) : [], 'paths');
+  }
 
   function refresh() {
     if (!data) return;
@@ -117,6 +125,8 @@ async function start() {
     // Only events in the window get pins (DESIGN.md Q6).
     pins?.setItems(onGlobe.map(item));
     bomPins?.setItems(split.open ? onMap.map(item) : []);
+    pathed = { onGlobe, onMap };
+    drawPaths();
 
     updatePanelNotes(onMap, window);
 
@@ -236,11 +246,13 @@ async function start() {
     pins?.setSelected(event.id); bomPins?.setSelected(event.id);
     pins?.setMarkers(onBom ? [] : others); bomPins?.setMarkers(onBom ? others : []);
     if (details) { globe?.setRoutes(onBom ? [] : routes); bom?.setRoutes(onBom ? routes : []); }
+    drawPaths();
   }
   function clearSelection() {
     selected = null;
     pins?.setSelected(null); pins?.setMarkers([]); globe?.setRoutes([]);
     bomPins?.setSelected(null); bomPins?.setMarkers([]); bom?.setRoutes([]);
+    drawPaths();
   }
 
   // ---------- Volume legend and filters ----------
