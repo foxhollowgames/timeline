@@ -2,6 +2,8 @@
 // The relief, land, rivers, and labels come from Book of Mormon Wayfinder via dist/data/bom-map.json.
 // Leaflet loads only the first time the panel opens.
 
+import { routeStyle, ARROW_PATH, ARROW_EDGE } from './volumes.js';
+
 let leafletLoading = null;
 function loadLeaflet() {
   if (window.L) return Promise.resolve(window.L);
@@ -55,15 +57,25 @@ export async function createBomMap({ container }) {
 
   let routeClick = null;
   const layers = { paths: L.layerGroup().addTo(map), selected: L.layerGroup().addTo(map) };
-  // An arrowhead at the end of a path, in miles. Its size follows the last leg.
-  const arrowhead = points => {
-    const [x1, y1] = points[points.length - 1], [x0, y0] = points[points.length - 2] ?? [];
-    const length = Math.hypot(x1 - x0, y1 - y0);
-    if (!length) return null;
-    const size = Math.min(14, Math.max(4, length * 0.35)), ux = (x1 - x0) / length, uy = (y1 - y0) / length;
-    const bx = x1 - ux * size, by = y1 - uy * size;
-    return [[bx - uy * size * 0.6, by + ux * size * 0.6], [x1, y1], [bx + uy * size * 0.6, by - ux * size * 0.6]];
-  };
+  // Paths as the Book of Mormon reader draws them: a shadow, a dashed line in the kind's color,
+  // a wide invisible line for clicks, and chevron arrows spaced in screen pixels (volumes.js routeStyle).
+  const drawn = { paths: [], selected: [] };
+  function placeArrows(item) {
+    item.arrows.clearLayers();
+    if (item.route.direction === false) return;
+    const { style } = item, pts = item.route.points.map(p => map.latLngToLayerPoint(ll(p)));
+    for (let i = 1; i < pts.length; i++) {
+      const a = pts[i - 1], b = pts[i], dx = b.x - a.x, dy = b.y - a.y, length = Math.hypot(dx, dy);
+      if (length < style.arrowMin) continue;
+      const count = Math.max(1, Math.floor(length / style.arrowEvery)), angle = Math.atan2(dy, dx) * 180 / Math.PI;
+      for (let j = 0; j < count; j++) {
+        const t = (j + style.arrowAt) / count;
+        const html = `<svg viewBox="0 0 18 18" aria-hidden="true" style="transform:rotate(${angle}deg)"><path d="${ARROW_PATH}" fill="${style.color}" stroke="${ARROW_EDGE}" stroke-width="1.2"/></svg>`;
+        L.marker(map.layerPointToLatLng([a.x + dx * t, a.y + dy * t]), { pane: item.pane, interactive: false, keyboard: false, opacity: item.opacity, icon: L.divIcon({ className: 'route-arrow', iconSize: [18, 18], iconAnchor: [9, 9], html }) }).addTo(item.arrows);
+      }
+    }
+  }
+  map.on('zoomend', () => { for (const item of [...drawn.paths, ...drawn.selected]) placeArrows(item); });
   const callbacks = new Set();
   let pending = false;
   const draw = () => {
@@ -90,23 +102,24 @@ export async function createBomMap({ container }) {
       onFrame(callback) { callbacks.add(callback); request(); return () => callbacks.delete(callback); },
       request,
     },
-    // Two layers, as on the globe: every active event's paths, and the selected event's routes in gold.
+    // Two layers, as on the globe: every active event's paths, and the selected event's paths above them.
     setRoutes(list = [], layer = 'selected') {
-      const group = layers[layer];
+      const group = layers[layer], pane = layer === 'selected' ? 'routes' : 'paths';
       group.clearLayers();
-      for (const route of list) {
-        const style = { pane: layer === 'selected' ? 'routes' : 'paths', color: route.color ?? '#efcc88', weight: layer === 'selected' ? 2.4 : 1.8, opacity: route.opacity ?? 0.95, interactive: false };
-        const line = L.polyline(route.points.map(ll), { ...style, dashArray: route.dashed ? '6 6' : null }).addTo(group);
-        const head = arrowhead(route.points);
-        if (head) L.polyline(head.map(ll), style).addTo(group);
-        // A wide, invisible line takes the click, as in the Book of Mormon reader.
+      drawn[layer] = list.map(route => {
+        const style = routeStyle(route.volume, route), points = route.points.map(ll), opacity = route.dimmed ? 0.35 : 1;
+        if (style.shadow) L.polyline(points, { pane, color: '#071a2a', weight: style.weight + 3, opacity: 0.35 * opacity, interactive: false }).addTo(group);
+        const line = L.polyline(points, { pane, color: style.color, weight: style.weight, opacity, dashArray: style.dash, interactive: false, className: 'route-line' }).addTo(group);
+        const item = { route, style, pane, opacity, arrows: L.layerGroup().addTo(group) };
+        placeArrows(item);
         if (route.key && routeClick) {
-          const hit = L.polyline(route.points.map(ll), { pane: style.pane, color: '#000', weight: 18, opacity: 0, className: 'route-hit' }).addTo(group);
+          const hit = L.polyline(points, { pane, color: style.color, weight: 20, opacity: 0, className: 'route-hit' }).addTo(group);
           hit.on('click', event => { L.DomEvent.stopPropagation(event); routeClick(route.key); });
-          hit.on('mouseover', () => line.setStyle({ opacity: 1, weight: style.weight + 1 }));
-          hit.on('mouseout', () => line.setStyle({ opacity: style.opacity, weight: style.weight }));
+          hit.on('mouseover', () => line.setStyle({ opacity: 1, weight: style.weight + 1.5 }));
+          hit.on('mouseout', () => line.setStyle({ opacity, weight: style.weight }));
         }
-      }
+        return item;
+      });
     },
     onRouteClick(callback) { routeClick = callback; },
     // Fit the map to a set of [x, y] points, or to the whole land.

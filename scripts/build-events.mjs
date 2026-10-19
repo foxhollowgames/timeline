@@ -186,9 +186,10 @@ function pushEvent(event, detail, date) {
 }
 
 // A route as the card shows it: what the text says, where it says it, and its named stops (DESIGN.md section 5).
-function routeRecord(id, source, points, { ref, text, note, stops = [] }) {
+// kind and context follow the Bible reader: a campaign with no kind is an army, unless Babylon sends it.
+function routeRecord(id, source, points, { ref, text, note, stops = [], kind = source.kind, context = false }) {
   const named = [...new Set(stops.filter(Boolean))];
-  return { id, title: source.title, kind: source.kind, points, ...(ref && { ref }), ...(text && { text }), ...(note && note !== text && { note }), ...(named.length && { stops: named }) };
+  return { id, title: source.title, kind, ...(context && { context: true }), ...(source.direction === false && { direction: false }), points, ...(ref && { ref }), ...(text && { text }), ...(note && note !== text && { note }), ...(named.length && { stops: named }) };
 }
 
 // ---------- Bible ----------
@@ -224,6 +225,7 @@ for (const [index, id] of config.bibleBooks.entries()) {
     const verseNumber = study?.verse ?? 1;
     const verseText = scripture.chapters[String(n)]?.find(v => v.verse === verseNumber)?.text;
     if (!verseText) warnings.push(`${where}: key verse ${verseNumber} not found`);
+    const contextIds = new Set((map.contextRoutes ?? []).map(r => r.id));
     const routes = [...(map.routes ?? []), ...(map.contextRoutes ?? [])].map(r => {
       const source = routeById.get(r.id);
       if (!source?.points) return null;
@@ -233,6 +235,8 @@ for (const [index, id] of config.bibleBooks.entries()) {
       return routeRecord(r.id, source, points, {
         ref: `${name} ${chapter}${verses}`, text: source.summary, note: source.detail ?? source.uncertainty,
         stops: (source.placeIds ?? []).map(pid => placeById.get(pid)?.name),
+        kind: r.kind ?? source.kind ?? (source.faction === 'babylonia' ? 'diplomacy' : 'military'),
+        context: contextIds.has(r.id) && !(map.routes ?? []).some(x => x.id === r.id),
       });
     }).filter(Boolean);
     pushEvent(
@@ -575,7 +579,7 @@ for (const e of events) {
   if (e.covered || e.broad || e.volume === 'history') continue;
   const routes = details[e.volume][e.id]?.routes ?? [];
   const digits = e.map === 'bom' ? 10 : 1000;
-  if (routes.length) e.paths = routes.map(r => ({ id: r.id, points: r.points.map(p => p.map(v => Math.round(v * digits) / digits)) }));
+  if (routes.length) e.paths = routes.map(r => ({ id: r.id, kind: r.kind, ...(r.context && { context: true }), ...(r.direction === false && { direction: false }), points: r.points.map(p => p.map(v => Math.round(v * digits) / digits)) }));
   pathCount += routes.length;
 }
 stats.paths = pathCount;

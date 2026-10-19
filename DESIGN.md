@@ -196,12 +196,15 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 - **Book of Mormon map events** are counted but not pinned on the globe. They wait for the panel in milestone 4.
 - **Selection.** The selected event's group gets a gold ring. Its other places show as small gold dots, labeled where labels do not overlap. Its routes are drawn as gold arcs.
 - **Paths (2026-10-18).** Every pinned event's routes are drawn while it is active, with no selection needed. Examples are Lehi's journey to Bountiful and the scattering of the ten tribes.
-  - Each path uses its volume's hue and ends in an arrowhead that shows its direction.
-  - While an event is selected, the other paths dim. Its own routes are drawn in gold, a little above the rest.
-  - The Book of Mormon panel draws its paths the same way. The build copies each pinned event's routes into `events.json` as `paths`.
-  - A path can be selected, as in the Wayfinder readers. Hovering brightens it and shows a pointer. A click opens a path card.
-  - The path card shows the kind of movement, the title, the reference, and what the text says. It lists the named stops and links to the path's event.
-  - Its route turns gold, and the event's other paths stay dimmed.
+  - Paths look as they do in the Wayfinder readers. `routeStyle` in `dist/volumes.js` holds both readers' styles.
+  - Bible, D&C, and Church history paths use the shared viewer's style. Each kind has its own color and dash, such as purple for exile. Lines are 5px, and context routes are thinner.
+  - Book of Mormon paths use that reader's palette. Each line has a dark shadow.
+  - Chevron arrows show direction. They are spaced in screen pixels. The shared viewer spaces them 85px apart, and the Book of Mormon 110px.
+  - On the globe the paths are SVG, projected each frame like the pins (`dist/route-layer.js`). Three.js lines cannot be wide or dashed.
+  - While an event is selected, the other paths dim. Its own paths are drawn at full strength above the rest.
+  - The build copies each pinned event's routes into `events.json` as `paths`, with their kind.
+  - A path can be selected, as in the readers. Hovering brightens it and shows a pointer. A click opens a path card.
+  - The path card names the kind of movement in its color. It shows the title, the reference, and what the text says. It lists the named stops and links to the path's event.
 - **Legend and filters (Q30, Q31).** The legend in the header shows each volume's shape and name. Each entry is also a toggle that hides or shows that volume. Hidden volumes leave the pins, the counts, the density bar, and the event buttons. A world history toggle joins in milestone 5.
 - **Search (Q31).** One box finds events by reference or title, places, and people. Choosing an event moves the scrubber, turns the globe, and opens its card. Choosing a place or a person opens a list of its events. People come from each repository's people data.
 

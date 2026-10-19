@@ -1,7 +1,7 @@
 // The side card: one event, or a list of events (a pin group, a place, or a person).
 // Details load per volume the first time a card needs them (dist/data/details/<volume>.json).
 
-import { VOLUMES, shapeSVG } from './volumes.js';
+import { VOLUMES, shapeSVG, routeStyle } from './volumes.js';
 import { formatRange } from './time-scale.js';
 import { CONFERENCE_GLOBE } from './config.js';
 
@@ -21,13 +21,6 @@ const titleFirst = e => e.volume === 'history' || e.basis === 'church-history' |
 const ALSO_COUNT = 4;
 const ALSO_MAX_GAP = 150; // years between two events' ranges
 const VERSE_WORDS = 40;
-// Route kinds, named as the Wayfinder readers name them.
-const ROUTE_KINDS = {
-  journey: 'Journey or mission', military: 'Army', flight: 'Escape or retreat', migration: 'Group moves to settle',
-  exploration: 'Search party', voyage: 'Sea voyage', gathering: 'Gathering', exile: 'Carried into exile',
-  restoration: 'Return from exile', diplomacy: 'Messengers or envoys', mission: 'Mission', expulsion: 'Driven out',
-  custody: 'Taken as a prisoner',
-};
 
 export const eventDate = e => (e.start == null ? 'Years not given' : formatRange(e.start, e.end));
 
@@ -183,7 +176,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     if (!route) { close(); return; }
     current.route = route;
     content.innerHTML = `${backButton()}
-      <p class="card-volume">${shapeSVG(event.volume, 16)}<span>${escapeHTML(ROUTE_KINDS[route.kind] ?? 'Path')}</span></p>
+      <p class="card-volume">${shapeSVG(event.volume, 16)}<span style="color:${routeStyle(event.volume, route).color}">${escapeHTML(routeStyle(event.volume, route).label)}</span></p>
       <h2>${escapeHTML(route.title)}</h2>
       ${route.ref ? `<p class="card-ref">${escapeHTML(route.ref)}</p>` : ''}
       ${route.text ? `<p class="card-summary">${escapeHTML(route.text)}</p>` : ''}

@@ -23,7 +23,6 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
   let spinning = !reducedMotion, dragging = false, pinchDistance = 0;
   let zoomMotion = null, zoomTarget = null, focusMotion = null;
   let viewShift = { x: 0, y: 0 }, slideMotion = null;
-  const overlay = new THREE.Group();
 
   // Move the sphere sideways so an open card does not cover it (from the conference globe).
   function slideTo(x, y) { slideMotion = { from: { ...viewShift }, to: { x, y }, start: performance.now(), duration: reducedMotion ? 0 : 850 }; }
@@ -36,7 +35,7 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
     if (t === 1) slideMotion = null;
   }
 
-  // Routes drawn as great-circle arcs just above the surface.
+  // A great-circle arc between two places, sampled for drawing paths (route-layer.js).
   function arc(a, b, lift = 1.004) {
     const va = vector(a, lift), vb = vector(b, lift);
     const angle = va.angleTo(vb), steps = Math.max(2, Math.ceil(angle / 0.01));
@@ -44,75 +43,6 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
     for (let i = 0; i <= steps; i++) points.push(new THREE.Vector3().copy(va).lerp(vb, i / steps).setLength(lift));
     return points;
   }
-  // An arrowhead at the end shows which way the path runs. Its size follows the last leg.
-  function arrowhead(points, legAngle, lift) {
-    const tip = points[points.length - 1], back = points[Math.max(0, points.length - 3)];
-    const along = new THREE.Vector3().subVectors(tip, back).normalize();
-    const side = new THREE.Vector3().crossVectors(along, tip).normalize();
-    const size = Math.min(0.014, Math.max(0.004, legAngle * 0.35));
-    const base = tip.clone().addScaledVector(along, -size);
-    return [base.clone().addScaledVector(side, size * 0.6).setLength(lift), tip, base.clone().addScaledVector(side, -size * 0.6).setLength(lift)];
-  }
-  // Two layers: the paths of every active event, and the selected event's routes in gold above them.
-  const layers = { paths: new THREE.Group(), selected: new THREE.Group() };
-  overlay.add(layers.paths, layers.selected);
-  layers.selected.renderOrder = 1;
-  function setRoutes(routes = [], layer = 'selected') {
-    // The selected routes sit a little higher, so the dimmed paths never cover them.
-    const group = layers[layer], lift = layer === 'selected' ? 1.007 : 1.004;
-    for (const child of [...group.children]) { group.remove(child); child.geometry.dispose(); child.material.dispose(); }
-    for (const route of routes) {
-      const points = [];
-      let legAngle = 0;
-      for (let i = 1; i < route.points.length; i++) {
-        const a = { lat: route.points[i - 1][0], lng: route.points[i - 1][1] }, b = { lat: route.points[i][0], lng: route.points[i][1] };
-        points.push(...arc(a, b, lift));
-        legAngle = vector(a).angleTo(vector(b));
-      }
-      if (points.length < 2) continue;
-      const material = new THREE.LineBasicMaterial({ color: route.color ?? 0xefcc88, transparent: true, opacity: route.opacity ?? 0.9, depthTest: true });
-      const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material);
-      // A route with a key can be selected. pickRoute finds it by its sampled points.
-      line.userData = { key: route.key, points, opacity: material.opacity };
-      group.add(line);
-      if (legAngle > 0) group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(arrowhead(points, legAngle, lift)), material.clone()));
-    }
-    if (hovered) { hovered = null; canvas.style.cursor = ''; }
-  }
-
-  // The route nearest a screen point, within a finger's reach. The selected layer wins ties.
-  const PICK_PIXELS = 10;
-  function pickRoute(x, y) {
-    let best = null, bestDistance = PICK_PIXELS;
-    for (const group of [layers.selected, layers.paths]) {
-      for (const line of group.children) {
-        if (!line.userData.key) continue;
-        let previous = null;
-        for (const point of line.userData.points) {
-          const p = project(point);
-          if (p && previous) {
-            const dx = p.x - previous.x, dy = p.y - previous.y, lengthSq = dx * dx + dy * dy;
-            const t = lengthSq ? THREE.MathUtils.clamp(((x - previous.x) * dx + (y - previous.y) * dy) / lengthSq, 0, 1) : 0;
-            const distance = Math.hypot(previous.x + t * dx - x, previous.y + t * dy - y);
-            if (distance < bestDistance) { bestDistance = distance; best = line; }
-          }
-          previous = p;
-        }
-      }
-      if (best) return best;
-    }
-    return best;
-  }
-  // Hovering a route brightens it and shows a pointer, as in the Wayfinder readers.
-  let hovered = null, routeClick = null, pressed = null;
-  function setHovered(line) {
-    if (line === hovered) return;
-    if (hovered) hovered.material.opacity = hovered.userData.opacity;
-    hovered = line;
-    if (line) line.material.opacity = 1;
-    canvas.style.cursor = line ? 'pointer' : '';
-  }
-  const stagePoint = event => { const rect = canvas.getBoundingClientRect(); return { x: event.clientX - rect.left, y: event.clientY - rect.top }; };
 
   // Screen position of a point on the globe, or null when it is behind the Earth.
   const scratch = new THREE.Vector3();
@@ -227,22 +157,6 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
   const releaseTouch = event => { touchPoints.delete(event.pointerId); pinchDistance = 0; };
   canvas.addEventListener('pointerup', releaseTouch);
   canvas.addEventListener('pointercancel', releaseTouch);
-  // A click is a press and release that barely moves. A drag turns the globe instead.
-  canvas.addEventListener('pointerdown', event => { pressed = { ...stagePoint(event), time: performance.now() }; });
-  canvas.addEventListener('pointermove', event => {
-    if (event.pointerType === 'touch' || event.buttons) return;
-    const { x, y } = stagePoint(event);
-    setHovered(routeClick ? pickRoute(x, y) : null);
-  });
-  canvas.addEventListener('pointerleave', () => setHovered(null));
-  canvas.addEventListener('pointerup', event => {
-    const start = pressed; pressed = null;
-    if (!start || !routeClick || touchPoints.size) return;
-    const { x, y } = stagePoint(event);
-    if (Math.hypot(x - start.x, y - start.y) > 6 || performance.now() - start.time > 600) return;
-    const line = pickRoute(x, y);
-    if (line) routeClick(line.userData.key);
-  });
   canvas.addEventListener('webglcontextlost', event => { event.preventDefault(); onStatus('The globe paused. Reload this page to restore it.'); });
 
   scene.add(new THREE.AmbientLight(0xabcde2, 2));
@@ -275,8 +189,6 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
     scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), gridMaterial));
   }
 
-  scene.add(overlay);
-
   const starPositions = []; let seed = 41;
   const random = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
   for (let i = 0; i < 1800; i++) {
@@ -297,8 +209,8 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
     vector,
     focusOn,
     slideTo,
-    setRoutes,
-    onRouteClick(callback) { routeClick = callback; },
+    arc,
+    canvas: renderer.domElement,
     project,
     zoomIn: () => zoomTo((zoomTarget ?? camera.position.length()) * 0.8),
     zoomOut: () => zoomTo((zoomTarget ?? camera.position.length()) * 1.25),
