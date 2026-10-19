@@ -19,6 +19,9 @@ const readJSON = async path => JSON.parse(await readFile(path, 'utf8'));
 
 const config = await readJSON(join(here, 'sources.json'));
 const overrides = await readJSON(join(here, 'date-overrides.json'));
+// Hand-written setup lines for path cards: who travels, and why (DESIGN.md section 5).
+const routeIntros = (await readJSON(join(here, 'route-intros.json'))).intros;
+const usedIntros = new Set();
 const problems = [], warnings = [];
 const stats = { chapters: 0, events: 0, noPlace: 0, skipped: [] };
 
@@ -189,7 +192,9 @@ function pushEvent(event, detail, date) {
 // kind and context follow the Bible reader: a campaign with no kind is an army, unless Babylon sends it.
 function routeRecord(id, source, points, { ref, text, note, stops = [], kind = source.kind, context = false }) {
   const named = [...new Set(stops.filter(Boolean))];
-  return { id, title: source.title, kind, ...(context && { context: true }), ...(source.direction === false && { direction: false }), points, ...(ref && { ref }), ...(text && { text }), ...(note && note !== text && { note }), ...(named.length && { stops: named }) };
+  const intro = routeIntros[id];
+  if (intro) usedIntros.add(id);
+  return { id, title: source.title, kind, ...(context && { context: true }), ...(source.direction === false && { direction: false }), points, ...(ref && { ref }), ...(intro && { intro }), ...(text && { text }), ...(note && note !== text && { note }), ...(named.length && { stops: named }) };
 }
 
 // ---------- Bible ----------
@@ -637,6 +642,7 @@ const index = {
   events,
 };
 
+for (const id of Object.keys(routeIntros)) if (!usedIntros.has(id)) problems.push(`route-intros.json: no route ${id}`);
 if (problems.length) {
   console.error(`Build stopped. ${problems.length} problem(s):\n  ` + problems.join('\n  '));
   process.exit(1);
