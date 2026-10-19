@@ -114,24 +114,9 @@ async function start() {
     // A chapter told by an event has no pin of its own (DESIGN.md section 3).
     const onGlobe = active.filter(e => e.map === 'globe' && !e.broad && !e.covered && tierShown(e));
     const onMap = active.filter(e => e.map === 'bom' && !e.covered);
-    const broad = active.filter(e => e.broad);
     // Only events in the window get pins (DESIGN.md Q6).
     pins?.setItems(onGlobe.map(item));
     bomPins?.setItems(split.open ? onMap.map(item) : []);
-
-    const parts = [];
-    const churchOnGlobe = onGlobe.filter(e => e.basis === 'church-history').length;
-    const scriptureOnGlobe = onGlobe.filter(isScripture).length - churchOnGlobe;
-    const historyOnGlobe = onGlobe.length - scriptureOnGlobe - churchOnGlobe;
-    if (scriptureOnGlobe) parts.push(`${plural(scriptureOnGlobe, 'scripture event')} on the globe.`);
-    if (churchOnGlobe) parts.push(`${plural(churchOnGlobe, 'Church history event')}.`);
-    if (historyOnGlobe) parts.push(`${plural(historyOnGlobe, 'world history event')}.`);
-    const hiddenTier = active.filter(e => !tierShown(e)).length;
-    if (hiddenTier) parts.push(`Zoom the strip in to see ${plural(hiddenTier, 'more history event')}.`);
-    if (onMap.length) parts.push(split.open ? `${onMap.length} on the Book of Mormon map.` : `${onMap.length} more for the Book of Mormon map.`);
-    if (broad.length) parts.push(`${plural(broad.length, 'psalm')} with wide dates are not pinned.`);
-    if ([...onGlobe, ...(split.open ? onMap : [])].some(e => e.start == null)) parts.push('Years are not given for some.');
-    $('overview-count').textContent = parts.length ? parts.join(' ') : 'No scripture events in this window.';
 
     updatePanelNotes(onMap, window);
 

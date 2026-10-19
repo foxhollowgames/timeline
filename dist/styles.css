@@ -38,6 +38,7 @@ main { height: 100dvh; min-height: 480px; position: relative; }
 .year-overview > strong { font-family: 'Libre Caslon Display', Georgia, serif; font-weight: 400; font-size: 64px; display: block; line-height: 1.15; letter-spacing: -.02em; }
 .year-overview > p { font-size: 14px; color: var(--muted); margin: 6px 0 0; line-height: 1.5; }
 .year-overview > .overview-count { color: var(--ink); }
+.year-overview > .overview-count:empty { display: none; }
 .year-overview > .overview-empty { color: var(--faint); font-size: 13px; }
 .globe-controls { position: absolute; right: 38px; bottom: 32px; display: flex; gap: 6px; z-index: 4; }
 .globe-controls button { width: 43px; height: 43px; border-radius: 50%; background: var(--control); backdrop-filter: blur(16px); border-color: #c7e1ff22; font-size: 22px; line-height: 1; box-shadow: 0 5px 24px #0002; }
