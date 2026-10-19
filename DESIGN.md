@@ -72,6 +72,7 @@ A pin is a scripture event, such as the scattering of the ten tribes. It is not 
 | 10 | Lehi's journey, the small plates, and the Jaredites | 1 Nephi through Words of Mormon, and Ether | 17 events |
 | 11 | King Benjamin to the Nephite wars | Mosiah and Alma | 32 events |
 | 12 | From Helaman to the end of the Nephites | Helaman, 3 Nephi, 4 Nephi, and Mormon | 16 events |
+| 13 | The Restoration in New York and Ohio, 1823–1831 | D&C 1–72, 74, and 133 | 28 events |
 
 - **Fields.** Each event has `id`, `volume`, `title`, `chapters`, and `summary`. It may add these:
   - `dateFrom`: the chapters that set its years.
