@@ -65,9 +65,38 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     ? `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.title)}</strong><small class="row-date">${escapeHTML([e.ref, e.region ?? (e.kind === 'event' ? eventDate(e) : '')].filter(Boolean).join(' · '))}${linked ? ' · <span class="row-linked">Linked</span>' : ''}</small></span></button>`
     : `<button class="event-row" data-event="${escapeHTML(e.id)}">${shapeSVG(e.volume, 16)}<span><strong>${escapeHTML(e.ref)}</strong><small>${escapeHTML(e.title)}</small><small class="row-date">${escapeHTML(eventDate(e))}</small></span></button>`;
 
+  // Drag the card by its top bar. The offset is a transform, so the layout code's placement stays as is.
+  // It keeps a strip of the bar on screen and resets when the card closes.
+  let drag = { x: 0, y: 0 };
+  const moveCard = (x, y) => {
+    panel.style.transform = 'none';
+    const box = panel.getBoundingClientRect(), keep = 48;
+    drag = {
+      x: Math.min(innerWidth - keep - box.left, Math.max(keep - box.right, x)),
+      y: Math.min(innerHeight - keep - box.top, Math.max(-box.top, y)),
+    };
+    panel.style.transform = drag.x || drag.y ? `translate(${drag.x}px, ${drag.y}px)` : '';
+  };
+  const bar = panel.querySelector('.card-bar');
+  bar.addEventListener('pointerdown', e => {
+    if (e.button !== 0 || e.target.closest('button')) return;
+    e.preventDefault();
+    const start = { x: e.clientX - drag.x, y: e.clientY - drag.y };
+    bar.setPointerCapture(e.pointerId);
+    panel.classList.add('card-dragging');
+    const move = ev => moveCard(ev.clientX - start.x, ev.clientY - start.y);
+    const end = () => {
+      panel.classList.remove('card-dragging');
+      bar.removeEventListener('pointermove', move); bar.removeEventListener('pointerup', end); bar.removeEventListener('pointercancel', end);
+    };
+    bar.addEventListener('pointermove', move); bar.addEventListener('pointerup', end); bar.addEventListener('pointercancel', end);
+  });
+  addEventListener('resize', () => { if (!panel.hidden && (drag.x || drag.y)) moveCard(drag.x, drag.y); });
+
   function open() { panel.hidden = false; }
   function close() {
     panel.hidden = true; history = []; current = null;
+    drag = { x: 0, y: 0 }; panel.style.transform = '';
     onClose?.();
   }
   closeButton.addEventListener('click', close);

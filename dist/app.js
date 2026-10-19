@@ -229,7 +229,7 @@ async function start() {
     const el = $('card');
     el.style.removeProperty('right'); el.style.removeProperty('top'); el.style.removeProperty('bottom'); el.style.removeProperty('max-height');
     if (!layoutInfo?.open) return;
-    if (!layoutInfo.stacked) { el.style.right = `${layoutInfo.panel.width + 24}px`; return; }
+    if (!layoutInfo.stacked) { el.style.right = `calc(${layoutInfo.panel.width}px + var(--card-right))`; return; }
     const header = document.querySelector('.site-header').offsetHeight;
     if (selected?.map === 'bom') {
       el.style.top = `${header + 6}px`; el.style.bottom = 'auto';
