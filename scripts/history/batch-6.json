@@ -3,7 +3,7 @@
   "title": "The modern world, 1800–2026",
   "reviewed": "2026-10-18. Each quote was copied from the linked article and is checked by npm run verify:sources.",
   "events": [
-    { "id": "slave-trade-act-1807", "title": "Britain bans the Atlantic slave trade", "start": 1807, "end": 1807, "dateLabel": "1807", "tier": 2, "region": "Europe", "place": "London", "lat": 51.5, "lng": -0.127,
+    { "id": "slave-trade-act-1807", "image": "File:Am I not a Man and a Brother, medallion modelled by William H. Hackwood, Wedgwood, Etruria, England, c. 1786, tinted stoneware - Brooklyn Museum - DSC09289 (cropped).JPG", "title": "Britain bans the Atlantic slave trade", "start": 1807, "end": 1807, "dateLabel": "1807", "tier": 2, "region": "Europe", "place": "London", "lat": 51.5, "lng": -0.127,
       "summary": "Parliament prohibits the Atlantic slave trade across the British Empire.",
       "source": { "wiki": "Slave Trade Act 1807", "quote": "royal assent by King George III on 25 March 1807" } },
     { "id": "waterloo", "title": "The Battle of Waterloo", "start": 1815, "end": 1815, "dateLabel": "18 June 1815", "tier": 1, "region": "Europe", "place": "Waterloo", "lat": 50.678, "lng": 4.412,
@@ -44,10 +44,10 @@
       "summary": "A revolution overthrows the Pahlavi monarchy. Iran becomes an Islamic republic.",
       "source": { "wiki": "Iranian revolution", "quote": "culminated in the overthrow of the Pahlavi dynasty in 1979" } },
 
-    { "id": "sokoto-caliphate", "title": "The Sokoto Caliphate is founded", "start": 1804, "end": 1804, "dateLabel": "1804", "tier": 2, "region": "Africa", "place": "Sokoto", "lat": 13.067, "lng": 5.248,
+    { "id": "sokoto-caliphate", "image": "File:Travels and discoveries in North and Central Africa. From the journal of an expedition undertaken under the auspices of H.B.M.'s government, in the years 1849-1855 (1859) (14781116835).jpg", "title": "The Sokoto Caliphate is founded", "start": 1804, "end": 1804, "dateLabel": "1804", "tier": 2, "region": "Africa", "place": "Sokoto", "lat": 13.067, "lng": 5.248,
       "summary": "Usman dan Fodio founds a caliphate in what is now northern Nigeria. It becomes West Africa's most populous state.",
       "source": { "wiki": "Sokoto Caliphate", "quote": "founded by Usman dan Fodio in 1804" } },
-    { "id": "liberia-1847", "title": "Liberia declares independence", "start": 1847, "end": 1847, "dateLabel": "26 July 1847", "tier": 2, "region": "Africa", "place": "Monrovia", "lat": 6.3, "lng": -10.8,
+    { "id": "liberia-1847", "image": "File:Joseph Jenkins Roberts (ca. 1851).jpg", "title": "Liberia declares independence", "start": 1847, "end": 1847, "dateLabel": "26 July 1847", "tier": 2, "region": "Africa", "place": "Monrovia", "lat": 6.3, "lng": -10.8,
       "summary": "Settlers in a colony founded for freed Black Americans declare Liberia independent.",
       "source": { "wiki": "Liberian Declaration of Independence", "quote": "adopted by the Liberian Constitutional Convention on 26 July 1847" } },
     { "id": "suez-canal", "title": "The Suez Canal opens", "start": 1869, "end": 1869, "dateLabel": "17 November 1869", "tier": 2, "region": "Africa", "place": "Ismailia", "lat": 30.705, "lng": 32.344,

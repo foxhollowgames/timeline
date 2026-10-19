@@ -40,7 +40,7 @@
       "summary": "Crowds in Paris seize a royal fortress. It becomes the symbol of the French Revolution.",
       "source": { "wiki": "Storming of the Bastille", "quote": "on 14 July 1789" } },
 
-    { "id": "safavid-iran", "title": "The Safavid dynasty rules Iran", "start": 1501, "end": 1501, "dateLabel": "1501", "tier": 2, "region": "Middle East", "place": "Tabriz", "lat": 38.08, "lng": 46.29,
+    { "id": "safavid-iran", "image": "File:Shah Ismail I portrait, Chehel Sotoun, painted circa 1647.jpg", "title": "The Safavid dynasty rules Iran", "start": 1501, "end": 1501, "dateLabel": "1501", "tier": 2, "region": "Middle East", "place": "Tabriz", "lat": 38.08, "lng": 46.29,
       "summary": "The Safavids found a new Iranian empire and make Shia Islam its state religion.",
       "source": { "wiki": "Safavid Iran", "quote": "ruled by the Safavid dynasty from 1501 to 1736" } },
     { "id": "suleiman", "title": "Suleiman the Magnificent", "start": 1520, "end": 1566, "dateLabel": "1520–1566", "tier": 2, "region": "Middle East", "place": "Istanbul", "lat": 41.008, "lng": 28.978,
@@ -59,7 +59,7 @@
     { "id": "gondar", "title": "Gondar becomes Ethiopia's capital", "start": 1636, "end": 1636, "dateLabel": "1636", "tier": 2, "region": "Africa", "place": "Gondar", "lat": 12.607, "lng": 37.459,
       "summary": "Emperor Fasilides settles his court at Gondar and builds a stone castle.",
       "source": { "wiki": "Gondar", "quote": "In 1636, Emperor Fasilides selected Gondar" } },
-    { "id": "cape-colony", "title": "The Dutch found a station at the Cape", "start": 1652, "end": 1652, "dateLabel": "1652", "tier": 2, "region": "Africa", "place": "Cape Town", "lat": -33.925, "lng": 18.42,
+    { "id": "cape-colony", "image": "File:Aernout Smit Table Bay, 1683 William Fehr Collection Cape Town.jpg", "title": "The Dutch found a station at the Cape", "start": 1652, "end": 1652, "dateLabel": "1652", "tier": 2, "region": "Africa", "place": "Cape Town", "lat": -33.925, "lng": 18.42,
       "summary": "The Dutch East India Company builds a supply post at the Cape of Good Hope. A colony grows from it.",
       "source": { "wiki": "Dutch Cape Colony", "quote": "founded in 1652 by a VOC expedition under Jan van Riebeeck" } },
     { "id": "asante-empire", "image": "File:Ghana, asante, peso per oro a forma di elefante, 1890-1910 ca., da regione di ashanti.JPG", "title": "The Asante Empire rises", "start": 1701, "end": 1701, "dateLabel": "1701", "tier": 2, "region": "Africa", "place": "Kumasi", "lat": 6.69, "lng": -1.62,
@@ -76,7 +76,7 @@
       "summary": "The British East India Company defeats the Nawab of Bengal. British rule in India begins to grow.",
       "source": { "wiki": "Battle of Plassey", "quote": "on 23 June 1757" } },
 
-    { "id": "macau", "title": "The Portuguese settle Macau", "start": 1557, "end": 1557, "dateLabel": "1557", "tier": 2, "region": "East Asia", "place": "Macau", "lat": 22.167, "lng": 113.55,
+    { "id": "macau", "image": "File:Ruins of St Paul's, Macau (30843847251).jpg", "title": "The Portuguese settle Macau", "start": 1557, "end": 1557, "dateLabel": "1557", "tier": 2, "region": "East Asia", "place": "Macau", "lat": 22.167, "lng": 113.55,
       "summary": "Portuguese traders found a settlement on the south China coast. It stays Portuguese until 1999.",
       "source": { "wiki": "Portuguese Macau", "quote": "the first official Portuguese settlement in 1557" } },
     { "id": "imjin-war", "title": "Japan invades Korea", "start": 1592, "end": 1598, "dateLabel": "1592–1598", "tier": 2, "region": "East Asia", "place": "Busan", "lat": 35.1, "lng": 129.04,
@@ -88,7 +88,7 @@
     { "id": "tokugawa-shogunate", "image": "File:Tokugawa Ieyasu2.JPG", "title": "The Tokugawa shogunate begins", "start": 1603, "end": 1603, "dateLabel": "1603", "tier": 1, "region": "East Asia", "place": "Edo (Tokyo)", "lat": 35.69, "lng": 139.69,
       "summary": "The Tokugawa shoguns rule Japan from Edo for more than two and a half centuries.",
       "source": { "wiki": "Tokugawa shogunate", "quote": "during the Edo period from 1603 to 1868" } },
-    { "id": "qing-beijing", "title": "The Qing take Beijing", "start": 1644, "end": 1644, "dateLabel": "1644", "tier": 1, "region": "East Asia", "place": "Beijing", "lat": 39.92, "lng": 116.39,
+    { "id": "qing-beijing", "image": "File:Shunzhi Court portrait.jpg", "title": "The Qing take Beijing", "start": 1644, "end": 1644, "dateLabel": "1644", "tier": 1, "region": "East Asia", "place": "Beijing", "lat": 39.92, "lng": 116.39,
       "summary": "The Manchu Qing dynasty takes the Ming capital. It rules China until 1912.",
       "source": { "wiki": "Qing dynasty", "quote": "seized control of the Ming capital Beijing and North China in 1644" } },
 
