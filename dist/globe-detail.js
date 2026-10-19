@@ -97,6 +97,8 @@ function createDeepDetail(scene,renderer,baseMaterial){
    const candidates=levels.flatMap(level=>visible(level,camera).slice(0,limit));
    wanted=new Set(candidates);for(const t of candidates)t.lastUsed=time;
    for(const t of tiles.values())if(t.mesh&&!wanted.has(t)&&time-t.lastUsed>1500)discard(t);
+   // Forget idle records too, so the per-frame loop stays bounded; a recent failure is kept to hold off retries.
+   for(const t of tiles.values())if(!t.mesh&&!t.loading&&!wanted.has(t)&&(!t.failed||time-t.failed>30000))tiles.delete(t.key);
    const resident=[...tiles.values()].filter(t=>t.mesh);for(const t of resident.filter(t=>!wanted.has(t)).sort((a,b)=>a.lastUsed-b.lastUsed).slice(0,Math.max(0,resident.length+inflight-limit*2)))discard(t);
    const queue=[...candidates].sort((a,b)=>a.level.z-b.level.z||b.center.dot(direction)-a.center.dot(direction));
    for(const t of queue){if(inflight>=4)break;if(!t.mesh&&!t.loading&&(!t.failed||time-t.failed>30000))load(t);}
