@@ -73,7 +73,7 @@ export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
     const volumes = VOLUME_ORDER.filter(v => g.items.some(i => i.event.volume === v));
     // A group shows the lead volume's shape. A second, smaller shape marks a mixed group.
     const second = volumes.find(v => v !== lead.volume);
-    const caption = g.items.length > 1 ? `${g.items.length} events · ${g.items[0].place.name}` : `${lead.ref} · ${lead.title}`;
+    const caption = g.items.length > 1 ? `${g.items.length} events · ${g.items[0].place.name}` : lead.title;
     const size = lead.volume === 'history' ? (g.items.length > 1 ? 16 : 14) : (g.items.length > 1 ? 20 : 17);
     return shapeSVG(lead.volume, size, { className: 'pin-shape' })
       + (second ? shapeSVG(second, 11, { className: 'pin-second' }) : '')
