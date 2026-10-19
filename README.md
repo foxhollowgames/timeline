@@ -113,7 +113,7 @@ To take in a fix from a Wayfinder repository, change its commit in `scripts/sour
 | `dist/index.html` | The page |
 | `dist/app.js` | Joins the globe, the strip, and the event data |
 | `dist/globe.js` | The globe scene, forked from the conference globe |
-| `dist/globe-detail.js` | High-detail Earth tiles, copied from the conference globe |
+| `dist/globe-detail.js` | High-detail Earth tiles: local 2 km tiles, then NASA GIBS 500 m tiles when zoomed in close |
 | `dist/scrubber.js` | The timeline strip |
 | `dist/time-scale.js` | Year math: the warped scale, zoom, ticks, and BCE/CE dates |
 | `dist/events.js` | Which events fall in the window, and the event-button stops |
