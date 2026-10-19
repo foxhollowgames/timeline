@@ -53,7 +53,9 @@
       "place": "b:jericho",
       "verse": "joshua-6:20",
       "summary": "The LORD tells Joshua to march around Jericho once a day for six days. Seven priests carry ram's horn trumpets before the ark. On the seventh day they circle seven times, and the people shout. The wall falls flat. Israel destroys the city and everyone in it. The two spies bring out Rahab and her whole family. Rahab lives in Israel from then on.",
-      "alsoRead": [{ "ref": "Hebrews 11:30", "note": "Hebrews says the walls fell by faith." }]
+      "alsoRead": [{ "ref": "Hebrews 11:30", "note": "Hebrews says the walls fell by faith." }],
+      "related": ["amarna-letters", "merneptah-stele"],
+      "relatedNote": "Canaan's city-states appear in the Amarna letters. Israel appears there on the Merneptah Stele."
     },
     {
       "id": "achan-and-ai",
@@ -80,7 +82,9 @@
       "chapters": ["joshua-11", "joshua-12"],
       "place": "b:hazor",
       "verse": "joshua-11:23",
-      "summary": "Jabin king of Hazor gathers the northern kings with horses and chariots. The LORD tells Joshua not to be afraid. Joshua attacks suddenly at the waters of Merom and wins. He burns Hazor, the leading city. The war with these kings lasts a long time. The book lists thirty-one kings Israel defeated west of the Jordan. The land rests from war."
+      "summary": "Jabin king of Hazor gathers the northern kings with horses and chariots. The LORD tells Joshua not to be afraid. Joshua attacks suddenly at the waters of Merom and wins. He burns Hazor, the leading city. The war with these kings lasts a long time. The book lists thirty-one kings Israel defeated west of the Jordan. The land rests from war.",
+      "related": ["bronze-age-collapse"],
+      "relatedNote": "Joshua 11 says Hazor was burned. Many Canaanite cities fell in the Late Bronze Age collapse."
     },
     {
       "id": "the-land-is-divided",
@@ -125,7 +129,9 @@
       "chapters": ["judges-1", "judges-2"],
       "place": "b:judges/canaan",
       "verse": "judges-2:16",
-      "summary": "After Joshua dies, Judah and the other tribes fight for their land. Many tribes leave Canaanites living in their towns. The LORD's angel says the nations will stay as thorns among them. A new generation grows up that does not know the LORD. They serve the Baals, the gods of Canaan, and raiders defeat them. The LORD raises up judges, leaders who save Israel. After each judge dies, the people turn back to other gods."
+      "summary": "After Joshua dies, Judah and the other tribes fight for their land. Many tribes leave Canaanites living in their towns. The LORD's angel says the nations will stay as thorns among them. A new generation grows up that does not know the LORD. They serve the Baals, the gods of Canaan, and raiders defeat them. The LORD raises up judges, leaders who save Israel. After each judge dies, the people turn back to other gods.",
+      "related": ["bronze-age-collapse", "sea-peoples"],
+      "relatedNote": "The judges' era follows the collapse of the Bronze Age empires."
     },
     {
       "id": "othniel-and-ehud",
@@ -188,7 +194,9 @@
       "chapters": ["judges-14", "judges-15"],
       "place": "b:lehi",
       "verse": "judges-15:15",
-      "summary": "Samson demands a Philistine woman from Timnah as his wife. On the way he tears a young lion apart with his hands. At his wedding feast, he gives the guests a riddle. They force his wife to learn the answer. Samson kills thirty Philistines to pay his bet, and his wife is given away. He burns the Philistines' grain with three hundred foxes and torches. The men of Judah tie him up and hand him over. He snaps the ropes and kills a thousand men with a donkey's jawbone."
+      "summary": "Samson demands a Philistine woman from Timnah as his wife. On the way he tears a young lion apart with his hands. At his wedding feast, he gives the guests a riddle. They force his wife to learn the answer. Samson kills thirty Philistines to pay his bet, and his wife is given away. He burns the Philistines' grain with three hundred foxes and torches. The men of Judah tie him up and hand him over. He snaps the ropes and kills a thousand men with a donkey's jawbone.",
+      "related": ["philistine-pentapolis", "sea-peoples"],
+      "relatedNote": "The Philistines came with the Sea Peoples and settled five cities on the coast."
     },
     {
       "id": "samson-and-delilah",

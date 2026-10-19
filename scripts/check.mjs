@@ -183,7 +183,9 @@ test('hand-picked related events come first, without duplicates, then the neares
   assert.deepEqual(ids(pool[0], ['h-old', 'missing']), ['h-old', 'h1', 'h2', 'h3']);
   // Order-only events still show their links.
   assert.deepEqual(ids(pool[8], ['h-far']), ['h-far']);
-  assert.deepEqual(ids(pool[0], ['h1', 'h2', 'h3', 'h4', 'h5']), ['h1', 'h2', 'h3', 'h4', 'h5']);
+  // Many links still leave room for the two nearest events.
+  assert.deepEqual(ids(pool[0], ['h-old', 'h-far', 'h5']), ['h-old', 'h-far', 'h5', 'h1', 'h2']);
+  assert.deepEqual(ids(pool[0], ['h1', 'h2', 'h3', 'h4', 'h5']), ['h1', 'h2', 'h3', 'h4', 'h5', 'h-far']);
 });
 
 // 2c. The address.

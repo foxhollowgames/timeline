@@ -37,7 +37,9 @@
       "chapters": ["1-samuel-4", "1-samuel-5", "1-samuel-6"],
       "place": "b:aphek",
       "verse": "1-samuel-4:11",
-      "summary": "Israel brings the ark of the covenant, the sacred chest, into battle. The Philistines win, take the ark, and kill Eli's sons. Eli hears the news, falls from his seat, and dies. In Ashdod the statue of the god Dagon falls before the ark. The LORD strikes the Philistine towns with tumors. After seven months they send the ark back on a cart pulled by two cows. The cows walk straight to Beth-shemesh."
+      "summary": "Israel brings the ark of the covenant, the sacred chest, into battle. The Philistines win, take the ark, and kill Eli's sons. Eli hears the news, falls from his seat, and dies. In Ashdod the statue of the god Dagon falls before the ark. The LORD strikes the Philistine towns with tumors. After seven months they send the ark back on a cart pulled by two cows. The cows walk straight to Beth-shemesh.",
+      "related": ["philistine-pentapolis"],
+      "relatedNote": "The ark is carried to Ashdod, Gath, and Ekron, three of the five Philistine cities."
     },
     {
       "id": "samuel-at-mizpah",
@@ -100,7 +102,9 @@
       "chapters": ["1-samuel-17"],
       "place": "b:elah",
       "verse": "1-samuel-17:45",
-      "summary": "The Philistine champion Goliath challenges Israel for forty days. Saul and his army are afraid. David brings food to his brothers and hears the challenge. He tells Saul the LORD saved him from a lion and a bear. He takes off Saul's armor and chooses five smooth stones and his sling. He tells Goliath the battle is the LORD's. His stone strikes Goliath's forehead, and the giant falls."
+      "summary": "The Philistine champion Goliath challenges Israel for forty days. Saul and his army are afraid. David brings food to his brothers and hears the challenge. He tells Saul the LORD saved him from a lion and a bear. He takes off Saul's armor and chooses five smooth stones and his sling. He tells Goliath the battle is the LORD's. His stone strikes Goliath's forehead, and the giant falls.",
+      "related": ["khirbet-qeiyafa", "philistine-pentapolis"],
+      "relatedNote": "Khirbet Qeiyafa guards the Valley of Elah, where the battle is set."
     },
     {
       "id": "jonathan-and-david",
@@ -184,7 +188,9 @@
       "dateFrom": ["2-samuel-5"],
       "place": "b:jerusalem",
       "verse": "2-samuel-5:7",
-      "summary": "All the tribes come to Hebron and anoint David king over Israel. He is thirty years old and rules forty years in all. He captures the stronghold of Zion from the Jebusites. Jerusalem becomes the City of David. Hiram king of Tyre sends cedar and builders for David's house. The Philistines attack twice, and each time David asks the LORD and wins. Chronicles lists David's mighty men."
+      "summary": "All the tribes come to Hebron and anoint David king over Israel. He is thirty years old and rules forty years in all. He captures the stronghold of Zion from the Jebusites. Jerusalem becomes the City of David. Hiram king of Tyre sends cedar and builders for David's house. The Philistines attack twice, and each time David asks the LORD and wins. Chronicles lists David's mighty men.",
+      "related": ["hiram-of-tyre"],
+      "relatedNote": "2 Samuel 5:11 says Hiram of Tyre sent cedar and builders for David's house."
     },
     {
       "id": "ark-comes-to-jerusalem",
@@ -205,7 +211,9 @@
       "place": "b:jerusalem",
       "verse": "2-samuel-7:16",
       "summary": "David wants to build a house of cedar for the ark. The prophet Nathan first tells him to go ahead. That night the LORD sends Nathan back with a different word. David will not build the temple. Instead the LORD will make David a house, a family line of kings. David's son will build the temple, and his throne will last forever. David sits before the LORD and asks, “Who am I?”",
-      "alsoRead": [{ "ref": "Luke 1:32", "note": "Gabriel says Jesus will receive the throne of David." }]
+      "alsoRead": [{ "ref": "Luke 1:32", "note": "Gabriel says Jesus will receive the throne of David." }],
+      "related": ["tel-dan-stele"],
+      "relatedNote": "An Aramean stele of the 9th century BCE names the house of David."
     },
     {
       "id": "davids-wars",
@@ -326,7 +334,9 @@
       "chapters": ["1-kings-5", "1-kings-6", "1-kings-7", "2-chronicles-2", "2-chronicles-3", "2-chronicles-4"],
       "place": "b:jerusalem",
       "verse": "1-kings-6:7",
-      "summary": "King Hiram of Tyre sends cedar from Lebanon. Solomon pays him in wheat and oil. Solomon begins the temple in the fourth year of his reign. Chronicles says it stands on Mount Moriah, at the threshing floor David bought. The stones are shaped at the quarry. No iron tool is heard at the site. A bronze worker named Hiram casts two great pillars and a huge basin. The work takes seven years."
+      "summary": "King Hiram of Tyre sends cedar from Lebanon. Solomon pays him in wheat and oil. Solomon begins the temple in the fourth year of his reign. Chronicles says it stands on Mount Moriah, at the threshing floor David bought. The stones are shaped at the quarry. No iron tool is heard at the site. A bronze worker named Hiram casts two great pillars and a huge basin. The work takes seven years.",
+      "related": ["hiram-of-tyre", "phoenician-alphabet"],
+      "relatedNote": "Hiram of Tyre sends cedar and craftsmen for the temple."
     },
     {
       "id": "temple-dedicated",
@@ -345,7 +355,9 @@
       "dateFrom": ["1-kings-10"],
       "place": "b:jerusalem",
       "verse": "1-kings-10:7",
-      "summary": "The queen of Sheba hears of Solomon and comes to test him with hard questions. He answers them all. She sees his house, his servants, and his offerings. She says the report was not even half the truth. She blesses the LORD, who made him king to do justice. They exchange rich gifts, and she goes home. Solomon's gold, ivory throne, and horses from Egypt are described."
+      "summary": "The queen of Sheba hears of Solomon and comes to test him with hard questions. He answers them all. She sees his house, his servants, and his offerings. She says the report was not even half the truth. She blesses the LORD, who made him king to do justice. They exchange rich gifts, and she goes home. Solomon's gold, ivory throne, and horses from Egypt are described.",
+      "related": ["kingdom-of-saba"],
+      "relatedNote": "Sheba is usually identified with Saba in southern Arabia, rich from the incense trade."
     },
     {
       "id": "solomon-turns-away",

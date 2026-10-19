@@ -400,6 +400,12 @@ for (const [id, { related, ...note }] of Object.entries(curated.annotations)) {
 export const REGIONS = ['Africa', 'Americas', 'Central Asia', 'East Asia', 'Europe', 'Middle East', 'Oceania', 'South Asia', 'Southeast Asia'];
 const historySources = {};
 const historyDir = join(here, 'history');
+// One picture per event, fetched by npm run images (scripts/fetch-images.mjs).
+const pictures = (await readJSON(join(historyDir, 'images.json')).catch(() => ({ images: {} }))).images;
+const picture = id => {
+  const p = pictures[id];
+  return p ? { image: { src: `assets/history/${p.file}`, width: p.width, height: p.height, title: p.title, artist: p.artist, license: p.license, page: p.page } } : {};
+};
 for (const file of (await readdir(historyDir)).filter(f => /^batch-\d+\.json$/.test(f)).sort()) {
   const batch = await readJSON(join(historyDir, file));
   // A Church history batch (batch.volume "dc") shares the D&C volume, hue, and shape (DESIGN.md Q30, Q36).
@@ -419,14 +425,14 @@ for (const file of (await readdir(historyDir)).filter(f => /^batch-\d+\.json$/.t
     if (church) {
       pushEvent(
         { id: sourceId, volume: 'dc', book: 'church-history', chapter: null, ref: item.dateLabel, title: item.title, map: 'globe', place: key, places: [key], curated: true },
-        { summary: item.summary, batch: batch.batch },
+        { summary: item.summary, batch: batch.batch, ...picture(item.id) },
         { basis: 'church-history', start: item.start, end: item.end, label: item.dateLabel, sourceIds: [sourceId] },
       );
       continue;
     }
     pushEvent(
       { id: `h-${item.id}`, volume: 'history', book: `batch-${batch.batch}`, chapter: null, ref: item.dateLabel, title: item.title, map: 'globe', place: key, places: [key], tier: item.tier, region: item.region },
-      { summary: item.summary, region: item.region, batch: batch.batch },
+      { summary: item.summary, region: item.region, batch: batch.batch, ...picture(item.id) },
       { basis: 'history', start: item.start, end: item.end, label: item.dateLabel, sourceIds: [sourceId] },
     );
   }
@@ -571,6 +577,12 @@ for (const file of (await readdir(scriptureDir)).filter(f => /^batch-\d+\.json$/
     const names = [...new Set(linked.flatMap(e => eventPeople[e.id] ?? []))];
     if (names.length) eventPeople[item.id] = names;
     for (const e of linked) { coveredIds.add(e.id); partOf.set(e.id, [...(partOf.get(e.id) ?? []), item.id]); }
+  }
+}
+// The other direction: a history card lists the scripture events that link to it.
+for (const volume of ['ot', 'nt', 'bom', 'dc']) {
+  for (const [id, d] of Object.entries(details[volume])) {
+    for (const h of d.related ?? []) if (details.history[h]) (details.history[h].linkedFrom ??= []).push(id);
   }
 }
 for (const e of events) {

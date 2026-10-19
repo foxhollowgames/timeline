@@ -1,0 +1,4285 @@
+{
+ "about": "One picture per history event, from Wikimedia Commons. Written by npm run images.",
+ "images": {
+  "accra-temple": {
+   "file": "accra-temple.jpg",
+   "title": "Ghana Mission 247.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ghana_Mission_247.jpg",
+   "artist": "Paul Moncur",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "achaemenid-empire": {
+   "file": "achaemenid-empire.jpg",
+   "title": "Achaemenid Empire 500 BCE.jpg",
+   "width": 440,
+   "height": 235,
+   "page": "https://commons.wikimedia.org/wiki/File:Achaemenid_Empire_500_BCE.jpg",
+   "artist": "Cattette",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "adena": {
+   "file": "adena.jpg",
+   "title": "Ohio Arch Cultures map HRoe 2008.jpg",
+   "width": 440,
+   "height": 314,
+   "page": "https://commons.wikimedia.org/wiki/File:Ohio_Arch_Cultures_map_HRoe_2008.jpg",
+   "artist": "Heironymous Rowe ( talk )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "adwa": {
+   "file": "adwa.jpg",
+   "title": "Battle of Adwa.png",
+   "width": 440,
+   "height": 207,
+   "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Adwa.png",
+   "artist": "Franko Khoury.",
+   "license": "PDM-owner",
+   "licenseUrl": null
+  },
+  "ain-jalut": {
+   "file": "ain-jalut.jpg",
+   "title": "Campaign of the Battle of Ain Jalut 1260.svg",
+   "width": 249,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Campaign_of_the_Battle_of_Ain_Jalut_1260.svg",
+   "artist": "MapMaster",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "ajanta": {
+   "file": "ajanta.jpg",
+   "title": "Ajanta (63).jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ajanta_(63).jpg",
+   "artist": "No machine-readable author provided. Soman assumed (based on copyright claims).",
+   "license": "CC BY 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "akkadian-empire": {
+   "file": "akkadian-empire.jpg",
+   "title": "Empire akkad.svg",
+   "width": 423,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Empire_akkad.svg",
+   "artist": "Middle_East_topographic_map-blank.svg : Sémhur ( talk ) derivative work: Zunkir ( talk )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "aksum-christianity": {
+   "file": "aksum-christianity.jpg",
+   "title": "KingEndybisEthiopia227-235CE.jpg",
+   "width": 440,
+   "height": 224,
+   "page": "https://commons.wikimedia.org/wiki/File:KingEndybisEthiopia227-235CE.jpg",
+   "artist": "PHGCOM",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "alexander-invades-persia": {
+   "file": "alexander-invades-persia.jpg",
+   "title": "Alexander Mosaic detail of Alexander the Great (3x4 cropped).jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg",
+   "artist": "Photo: This image has been extracted from another file",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "alexandria-founded": {
+   "file": "alexandria-founded.jpg",
+   "title": "San Stefano Grand Plaza.JPG",
+   "width": 440,
+   "height": 206,
+   "page": "https://commons.wikimedia.org/wiki/File:San_Stefano_Grand_Plaza.JPG",
+   "artist": "TheEgyptian",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "amarna": {
+   "file": "amarna.jpg",
+   "title": "GD-EG-Caire-Musée066 (cropped).JPG",
+   "width": 392,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:GD-EG-Caire-Mus%C3%A9e066_(cropped).JPG",
+   "artist": "Personal picture of Gérard Ducher.",
+   "license": "CC BY-SA 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "amarna-letters": {
+   "file": "amarna-letters.jpg",
+   "title": "Five Amarna letters on display at the British Museum, LondonA.jpg",
+   "width": 337,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Five_Amarna_letters_on_display_at_the_British_Museum,_LondonA.jpg",
+   "artist": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "american-civil-war": {
+   "file": "american-civil-war.jpg",
+   "title": "Battle of Gettysburg, by Currier and Ives.png",
+   "width": 440,
+   "height": 282,
+   "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Gettysburg,_by_Currier_and_Ives.png",
+   "artist": "Nathaniel Currier and James Merritt Ives",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "andrew-jackson": {
+   "file": "andrew-jackson.jpg",
+   "title": "Andrew jackson head (cropped).jpg",
+   "width": 266,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Andrew_jackson_head_(cropped).jpg",
+   "artist": "Ralph Eleaser Whiteside Earl",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "angkor-wat": {
+   "file": "angkor-wat.jpg",
+   "title": "Angkor Wat.jpg",
+   "width": 440,
+   "height": 299,
+   "page": "https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg",
+   "artist": "Bjørn Christian Tørrissen",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "antiochus-iv": {
+   "file": "antiochus-iv.jpg",
+   "title": "Antiochus IV Epiphanes.jpg",
+   "width": 440,
+   "height": 219,
+   "page": "https://commons.wikimedia.org/wiki/File:Antiochus_IV_Epiphanes.jpg",
+   "artist": "cngcoins",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "antonius-felix": {
+   "file": "antonius-felix.jpg",
+   "title": "Antonius Felix medal.svg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Antonius_Felix_medal.svg",
+   "artist": "Georges Reverdy",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "aotearoa-settled": {
+   "file": "aotearoa-settled.jpg",
+   "title": "1863 Meeting of Settlers and Maoris at Hawke's Bay, New Zealand - Right.png",
+   "width": 259,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:1863_Meeting_of_Settlers_and_Maoris_at_Hawke%27s_Bay,_New_Zealand_-_Right.png",
+   "artist": "M. Jackson",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "apollo-11": {
+   "file": "apollo-11.jpg",
+   "title": "A Man on the Moon, AS11-40-5903 (cropped).jpg",
+   "width": 326,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:A_Man_on_the_Moon,_AS11-40-5903_(cropped).jpg",
+   "artist": "Neil A. Armstrong",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "apries": {
+   "file": "apries.jpg",
+   "title": "Apries.jpg",
+   "width": 199,
+   "height": 290,
+   "page": "https://commons.wikimedia.org/wiki/File:Apries.jpg",
+   "artist": "de:Benutzer:Kl833x9 ; de:Benutzer:Daniel FR",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "arab-conquest-egypt": {
+   "file": "arab-conquest-egypt.jpg",
+   "title": "Mohammad adil-Muslim conquest of Egypt.PNG",
+   "width": 440,
+   "height": 313,
+   "page": "https://commons.wikimedia.org/wiki/File:Mohammad_adil-Muslim_conquest_of_Egypt.PNG",
+   "artist": "Mohammad Adil ( talk )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "arch-of-titus": {
+   "file": "arch-of-titus.jpg",
+   "title": "Arch Titus, Forum Romanum, Rome, Italy.jpg",
+   "width": 356,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Arch_Titus,_Forum_Romanum,_Rome,_Italy.jpg",
+   "artist": "Jebulon",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "artaxerxes-i": {
+   "file": "artaxerxes-i.jpg",
+   "title": "Relief of Artaxerxes I, from his tomb in Naqsh-e Rustam.jpg",
+   "width": 238,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Relief_of_Artaxerxes_I,_from_his_tomb_in_Naqsh-e_Rustam.jpg",
+   "artist": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "asante-empire": {
+   "file": "asante-empire.jpg",
+   "title": "Asante map.jpg",
+   "width": 296,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Asante_map.jpg",
+   "artist": "Uploaded by 4shizzal",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "ashurbanipal-library": {
+   "file": "ashurbanipal-library.jpg",
+   "title": "Library of Ashurbanipal.jpg",
+   "width": 440,
+   "height": 247,
+   "page": "https://commons.wikimedia.org/wiki/File:Library_of_Ashurbanipal.jpg",
+   "artist": "Gary Todd",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "athenian-democracy": {
+   "file": "athenian-democracy.jpg",
+   "title": "Discurso funebre pericles.PNG",
+   "width": 415,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Discurso_funebre_pericles.PNG",
+   "artist": "Philipp Foltz",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "atlantic-slave-trade": {
+   "file": "atlantic-slave-trade.jpg",
+   "title": "Slave Auction Ad.jpg",
+   "width": 204,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Slave_Auction_Ad.jpg",
+   "artist": "Photo: https://i.pinimg.com/originals/bf/aa/66/bfaa660a3b297993ea7bf5e3ade3cca4.jpg",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "augustus": {
+   "file": "augustus.jpg",
+   "title": "Augustus of Prima Porta.jpg",
+   "width": 220,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Augustus_of_Prima_Porta.jpg",
+   "artist": "Justin Benttinen",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "australia-federation": {
+   "file": "australia-federation.jpg",
+   "title": "Town Hall, Sydney, Inauguration of Australian Commonwealth.jpg",
+   "width": 259,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Town_Hall,_Sydney,_Inauguration_of_Australian_Commonwealth.jpg",
+   "artist": "W. A. Gullick",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "austronesian-expansion": {
+   "file": "austronesian-expansion.jpg",
+   "title": "Taiwanese aborigines.JPG",
+   "width": 440,
+   "height": 319,
+   "page": "https://commons.wikimedia.org/wiki/File:Taiwanese_aborigines.JPG",
+   "artist": "Stanislav Kozlovskiy",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "ayacucho": {
+   "file": "ayacucho.jpg",
+   "title": "Batalla de Ayacucho by Martín Tovar y Tovar (1827 - 1902).jpg",
+   "width": 440,
+   "height": 311,
+   "page": "https://commons.wikimedia.org/wiki/File:Batalla_de_Ayacucho_by_Mart%C3%ADn_Tovar_y_Tovar_(1827_-_1902).jpg",
+   "artist": "Martín Tovar y Tovar",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "ayutthaya": {
+   "file": "ayutthaya.jpg",
+   "title": "Flag of Thailand (Ayutthaya period).svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Thailand_(Ayutthaya_period).svg",
+   "artist": "Xiengyod",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "babylonian-chronicle-597": {
+   "file": "babylonian-chronicle-597.jpg",
+   "title": "ABC 05 Early Years of Nebuchadnezzar chronicle.jpg",
+   "width": 253,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:ABC_05_Early_Years_of_Nebuchadnezzar_chronicle.jpg",
+   "artist": "Jona Lendering",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "bangladesh-1971": {
+   "file": "bangladesh-1971.jpg",
+   "title": "BangladeshLiberationWarMontage.jpg",
+   "width": 440,
+   "height": 290,
+   "page": "https://commons.wikimedia.org/wiki/File:BangladeshLiberationWarMontage.jpg",
+   "artist": "ExcelD24",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "bantu-expansion": {
+   "file": "bantu-expansion.jpg",
+   "title": "East and southern africa early iron age.png",
+   "width": 285,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:East_and_southern_africa_early_iron_age.png",
+   "artist": "Photo: East&southern africa early iron age.gif",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "bar-kokhba-revolt": {
+   "file": "bar-kokhba-revolt.jpg",
+   "title": "Bar kochba22.jpg",
+   "width": 261,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Bar_kochba22.jpg",
+   "artist": "Tamar HaYardeni",
+   "license": "Attribution",
+   "licenseUrl": null
+  },
+  "batavia": {
+   "file": "batavia.jpg",
+   "title": "Collectie NMvWereldculturen, TM-60036462, Foto, 'De Kali Besar Zuid in de Chinese wijk van Batavia', fotograaf onbekend, 1925-1938.jpg",
+   "width": 440,
+   "height": 307,
+   "page": "https://commons.wikimedia.org/wiki/File:Collectie_NMvWereldculturen,_TM-60036462,_Foto,_%27De_Kali_Besar_Zuid_in_de_Chinese_wijk_van_Batavia%27,_fotograaf_onbekend,_1925-1938.jpg",
+   "artist": "Photo: View this image on the website of the Nationaal Museum van Wereldculturen",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "battle-of-carchemish-605": {
+   "file": "battle-of-carchemish-605.jpg",
+   "title": "The Battle of Carchemish.png",
+   "width": 440,
+   "height": 313,
+   "page": "https://commons.wikimedia.org/wiki/File:The_Battle_of_Carchemish.png",
+   "artist": "Egisto C.",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "battle-of-kadesh": {
+   "file": "battle-of-kadesh.jpg",
+   "title": "Egypt Abou Simbel6.jpg",
+   "width": 427,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Egypt_Abou_Simbel6.jpg",
+   "artist": "Uploaded by Ismoon",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "battle-of-marathon": {
+   "file": "battle-of-marathon.jpg",
+   "title": "Scene of the Battle of Marathon.jpg",
+   "width": 440,
+   "height": 289,
+   "page": "https://commons.wikimedia.org/wiki/File:Scene_of_the_Battle_of_Marathon.jpg",
+   "artist": "John Steeple Davis",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "battle-of-megiddo-1457": {
+   "file": "battle-of-megiddo-1457.jpg",
+   "title": "Thutmose III at Karnak.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Thutmose_III_at_Karnak.jpg",
+   "artist": "en:User:Markh",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "battle-of-megiddo-609": {
+   "file": "battle-of-megiddo-609.jpg",
+   "title": "Necho-KnellingStatue BrooklynMuseum.png",
+   "width": 135,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Necho-KnellingStatue_BrooklynMuseum.png",
+   "artist": "Keith Schengili-Roberts",
+   "license": "CC BY 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "battle-of-muye": {
+   "file": "battle-of-muye.jpg",
+   "title": "Battle of Muye.jpg",
+   "width": 440,
+   "height": 308,
+   "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Muye.jpg",
+   "artist": "SY",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "battle-of-qarqar": {
+   "file": "battle-of-qarqar.jpg",
+   "title": "Karkar.jpg",
+   "width": 149,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Karkar.jpg",
+   "artist": "Yuber",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "battle-of-salamis": {
+   "file": "battle-of-salamis.jpg",
+   "title": "Battle of salamis.png",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Battle_of_salamis.png",
+   "artist": "The Department of History, United States Military Academy",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "battle-of-talas": {
+   "file": "battle-of-talas.jpg",
+   "title": "Battle of Talas.png",
+   "width": 440,
+   "height": 300,
+   "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Talas.png",
+   "artist": "SY",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "battle-of-vienna": {
+   "file": "battle-of-vienna.jpg",
+   "title": "Anonym Entsatz Wien 1683.jpg",
+   "width": 440,
+   "height": 262,
+   "page": "https://commons.wikimedia.org/wiki/File:Anonym_Entsatz_Wien_1683.jpg",
+   "artist": "Anonymer, zeitgenössischer Maler",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "behistun-inscription": {
+   "file": "behistun-inscription.jpg",
+   "title": "کتیبه داریوش ( بیستون(.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:%DA%A9%D8%AA%DB%8C%D8%A8%D9%87_%D8%AF%D8%A7%D8%B1%DB%8C%D9%88%D8%B4_(_%D8%A8%DB%8C%D8%B3%D8%AA%D9%88%D9%86(.jpg",
+   "artist": "Korosh.091",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "berlin-wall": {
+   "file": "berlin-wall.jpg",
+   "title": "West and East Germans at the Brandenburg Gate in 1989.jpg",
+   "width": 438,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
+   "artist": "Photo: Original photo by unknown author. Reproduction from public documentation/memorial by Lear 21 at English Wikipedia .",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "bern-temple": {
+   "file": "bern-temple.jpg",
+   "title": "LDS Bern Switzerland Temple.jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:LDS_Bern_Switzerland_Temple.jpg",
+   "artist": "MTPICHON",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "bi-sheng": {
+   "file": "bi-sheng.jpg",
+   "title": "Beijing.Musee imprimerie.caracteres mobiles.Bisheng.jpg",
+   "width": 219,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Beijing.Musee_imprimerie.caracteres_mobiles.Bisheng.jpg",
+   "artist": "Popolon",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "black-death": {
+   "file": "black-death.jpg",
+   "title": "1346-1353 spread of the Black Death in Europe map.svg",
+   "width": 378,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:1346-1353_spread_of_the_Black_Death_in_Europe_map.svg",
+   "artist": "Flappiefh",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "black-hawk-war": {
+   "file": "black-hawk-war.jpg",
+   "title": "George Catlin - Múk-a-tah-mish-o-káh-kaik, Black Hawk, Prominent Sac Chief - 1985.66.2 - Smithsonian American Art Museum.jpg",
+   "width": 272,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:George_Catlin_-_M%C3%BAk-a-tah-mish-o-k%C3%A1h-kaik,_Black_Hawk,_Prominent_Sac_Chief_-_1985.66.2_-_Smithsonian_American_Art_Museum.jpg",
+   "artist": "George Catlin",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "black-obelisk": {
+   "file": "black-obelisk.jpg",
+   "title": "The Black Obelisk of Shalmaneser III, 9th century BC, from Nimrud, Iraq. The British Museum.jpg",
+   "width": 219,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:The_Black_Obelisk_of_Shalmaneser_III,_9th_century_BC,_from_Nimrud,_Iraq._The_British_Museum.jpg",
+   "artist": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "book-of-mormon-subtitle": {
+   "file": "book-of-mormon-subtitle.jpg",
+   "title": "Mormon-book.jpg",
+   "width": 229,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Mormon-book.jpg",
+   "artist": "101heather",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "borobudur": {
+   "file": "borobudur.jpg",
+   "title": "Pradaksina.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Pradaksina.jpg",
+   "artist": "Heri nugroho",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "brazil-independence": {
+   "file": "brazil-independence.jpg",
+   "title": "Pedro Américo - Independência ou Morte - Google Art Project.jpg",
+   "width": 440,
+   "height": 235,
+   "page": "https://commons.wikimedia.org/wiki/File:Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_Google_Art_Project.jpg",
+   "artist": "Pedro Américo",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "brigham-young-dies": {
+   "file": "brigham-young-dies.jpg",
+   "title": "Charles William Carter - Brigham Young - Google Art Project (3x4 cropped).jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Charles_William_Carter_-_Brigham_Young_-_Google_Art_Project_(3x4_cropped).jpg",
+   "artist": "Charles William Carter (1832 - 1918) Details on Google Art Project",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "brihadisvara": {
+   "file": "brihadisvara.jpg",
+   "title": "Brihadisvara Temple during Maha Shivaratri-WUS03611 (edit).jpg",
+   "width": 440,
+   "height": 275,
+   "page": "https://commons.wikimedia.org/wiki/File:Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_(edit).jpg",
+   "artist": "Original: Rainer Halama Derivative work: UnpetitproleX",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "bronze-age-collapse": {
+   "file": "bronze-age-collapse.jpg",
+   "title": "Bronze Age End.svg",
+   "width": 440,
+   "height": 311,
+   "page": "https://commons.wikimedia.org/wiki/File:Bronze_Age_End.svg",
+   "artist": "Alexikoua",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "byu": {
+   "file": "byu.jpg",
+   "title": "Brigham Young University medallion.svg",
+   "width": 329,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Brigham_Young_University_medallion.svg",
+   "artist": "Brigham Young University",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "caesar-assassinated": {
+   "file": "caesar-assassinated.jpg",
+   "title": "Vincenzo Camuccini - La morte di Cesare (cropped 3-2).jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Vincenzo_Camuccini_-_La_morte_di_Cesare_(cropped_3-2).jpg",
+   "artist": "Vincenzo Camuccini",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "caesarea-maritima": {
+   "file": "caesarea-maritima.jpg",
+   "title": "Caesarea.JPG",
+   "width": 232,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Caesarea.JPG",
+   "artist": "The original uploader was אסף.צ at Hebrew Wikipedia .",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "cahokia": {
+   "file": "cahokia.jpg",
+   "title": "Monks Mound - Summer 2024.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Monks_Mound_-_Summer_2024.jpg",
+   "artist": "Skubasteve834",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "cai-lun-paper": {
+   "file": "cai-lun-paper.jpg",
+   "title": "Cai-lun.jpg",
+   "width": 264,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Cai-lun.jpg",
+   "artist": "Photo: Tsien Tsuen-Hsuin (1985) Needham, Joseph, ed. Science and Civilisation in China: Volume 5, Chemistry and Chemical Technology, Part 1, Paper and Printing , Taipei : Caves Books, pp. 108–109 ISBN : 978-0-521-08690-5 . Etnografiska museet, Stockholm: 1935.50.3366.30",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "caiaphas": {
+   "file": "caiaphas.jpg",
+   "title": "Gerard van Honthorst - Christ before the High Priest - WGA11650 (cropped).jpg",
+   "width": 248,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Gerard_van_Honthorst_-_Christ_before_the_High_Priest_-_WGA11650_(cropped).jpg",
+   "artist": "Gerard van Honthorst",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "cajamarca": {
+   "file": "cajamarca.jpg",
+   "title": "La Captura de Atahualpa - Juan Lepiani 1920s.png",
+   "width": 440,
+   "height": 313,
+   "page": "https://commons.wikimedia.org/wiki/File:La_Captura_de_Atahualpa_-_Juan_Lepiani_1920s.png",
+   "artist": "Juan Lepiani",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "california-gold-rush": {
+   "file": "california-gold-rush.jpg",
+   "title": "1850 Woman and Men in California Gold Rush.jpg",
+   "width": 440,
+   "height": 319,
+   "page": "https://commons.wikimedia.org/wiki/File:1850_Woman_and_Men_in_California_Gold_Rush.jpg",
+   "artist": "Photo: https://www.neatorama.com/2013/11/05/Gold-Rush-Girls/",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "cape-colony": {
+   "file": "cape-colony.jpg",
+   "title": "Flag of the Dutch East India Company.svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Dutch_East_India_Company.svg",
+   "artist": "Himasaram",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "caral": {
+   "file": "caral.jpg",
+   "title": "Peru site locations.png",
+   "width": 251,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Peru_site_locations.png",
+   "artist": "Ontrvet",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "cardston-temple": {
+   "file": "cardston-temple.jpg",
+   "title": "Cardston Alberta Canada Temple.jpg",
+   "width": 259,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Cardston_Alberta_Canada_Temple.jpg",
+   "artist": "Uploaded by Ricardo630",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "carthage": {
+   "file": "carthage.jpg",
+   "title": "Carthage 264bc.svg",
+   "width": 440,
+   "height": 252,
+   "page": "https://commons.wikimedia.org/wiki/File:Carthage_264bc.svg",
+   "artist": "Cattette",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "census-of-quirinius": {
+   "file": "census-of-quirinius.jpg",
+   "title": "Meister der Kahriye-Cami-Kirche in Istanbul 005.jpg",
+   "width": 440,
+   "height": 304,
+   "page": "https://commons.wikimedia.org/wiki/File:Meister_der_Kahriye-Cami-Kirche_in_Istanbul_005.jpg",
+   "artist": "Master of the Church of the Holy Saviour in Chora, Istanbul",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "chaco-canyon": {
+   "file": "chaco-canyon.jpg",
+   "title": "Chaco Culture NHP (8023723138).jpg",
+   "width": 440,
+   "height": 255,
+   "page": "https://commons.wikimedia.org/wiki/File:Chaco_Culture_NHP_(8023723138).jpg",
+   "artist": "Greg Willis from Denver, CO, usa",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "chan-chan": {
+   "file": "chan-chan.jpg",
+   "title": "Chan chan view1.jpg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Chan_chan_view1.jpg",
+   "artist": "Håkan Svensson",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "charlemagne": {
+   "file": "charlemagne.jpg",
+   "title": "Charlemagne denier Mayence 812 814.jpg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Charlemagne_denier_Mayence_812_814.jpg",
+   "artist": "Charlemagne. Autorité émettrice de monnaie indéterminé. Atelier monétaire. Émetteur",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "chavin": {
+   "file": "chavin.jpg",
+   "title": "Chavín de Huántar - 51149086708.jpg",
+   "width": 440,
+   "height": 249,
+   "page": "https://commons.wikimedia.org/wiki/File:Chav%C3%ADn_de_Hu%C3%A1ntar_-_51149086708.jpg",
+   "artist": "Apollo⠀",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "cherokee-syllabary": {
+   "file": "cherokee-syllabary.jpg",
+   "title": "Cherokee sample.svg",
+   "width": 440,
+   "height": 153,
+   "page": "https://commons.wikimedia.org/wiki/File:Cherokee_sample.svg",
+   "artist": "Kaldari",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "chiapa-de-corzo-stela-2": {
+   "file": "chiapa-de-corzo-stela-2.jpg",
+   "title": "Mound 1.JPG",
+   "width": 440,
+   "height": 292,
+   "page": "https://commons.wikimedia.org/wiki/File:Mound_1.JPG",
+   "artist": "Bbachand",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "chola-rise": {
+   "file": "chola-rise.jpg",
+   "title": "Thanjavur temple.jpg",
+   "width": 219,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Thanjavur_temple.jpg",
+   "artist": "The original uploader was Venu62 at English Wikipedia .",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "cholera-1832": {
+   "file": "cholera-1832.jpg",
+   "title": "Cholera morbus.jpg",
+   "width": 226,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Cholera_morbus.jpg",
+   "artist": "Anonymous",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "code-of-hammurabi": {
+   "file": "code-of-hammurabi.jpg",
+   "title": "P1050763 Louvre code Hammurabi face rwk.JPG",
+   "width": 200,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
+   "artist": "Mbzt",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "columbus-1492": {
+   "file": "columbus-1492.jpg",
+   "title": "Viajes de colon en2.svg",
+   "width": 440,
+   "height": 296,
+   "page": "https://commons.wikimedia.org/wiki/File:Viajes_de_colon_en2.svg",
+   "artist": "Rezza Editores",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "conference-center": {
+   "file": "conference-center.jpg",
+   "title": "LDS Conference Center-up.jpg",
+   "width": 440,
+   "height": 282,
+   "page": "https://commons.wikimedia.org/wiki/File:LDS_Conference_Center-up.jpg",
+   "artist": "Uploaded by Cool Hand Luke",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "confucius": {
+   "file": "confucius.jpg",
+   "title": "Confucius, fresco from a Western Han tomb of Dongping County, Shandong province, China (cropped).jpg",
+   "width": 345,
+   "height": 322,
+   "page": "https://commons.wikimedia.org/wiki/File:Confucius,_fresco_from_a_Western_Han_tomb_of_Dongping_County,_Shandong_province,_China_(cropped).jpg",
+   "artist": "Anonymous Chinese painter of the Western Han period",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "constantinople": {
+   "file": "constantinople.jpg",
+   "title": "Byzantine Constantinople-en.png",
+   "width": 366,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Byzantine_Constantinople-en.png",
+   "artist": "Cplakidas",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "cook-first-voyage": {
+   "file": "cook-first-voyage.jpg",
+   "title": "Cook'sFirstVoyage54.png",
+   "width": 440,
+   "height": 221,
+   "page": "https://commons.wikimedia.org/wiki/File:Cook%27sFirstVoyage54.png",
+   "artist": "Jon Platek . Blank map by en:User:Reisio .",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "copernicus": {
+   "file": "copernicus.jpg",
+   "title": "Nikolaus Kopernikus MOT.jpg",
+   "width": 264,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Nikolaus_Kopernikus_MOT.jpg",
+   "artist": "Photo: http://www.frombork.art.pl/Ang10.htm https://www.welt.de/img/kultur/mobile152954235/1212503297-ci102l-w1024/Kopernikus-Gemaelde-in-Krakau.jpg https://muzeum.torun.pl/wp-content/uploads/2023/03/Portert-Mikolaja-Kopernika-MOT.jpg",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "council-of-nicaea": {
+   "file": "council-of-nicaea.jpg",
+   "title": "Μιχαήλ Δαμασκηνός - Α΄ Οικουμενική Σύνοδος 7741.jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%B9%CF%87%CE%B1%CE%AE%CE%BB_%CE%94%CE%B1%CE%BC%CE%B1%CF%83%CE%BA%CE%B7%CE%BD%CF%8C%CF%82_-_%CE%91%CE%84_%CE%9F%CE%B9%CE%BA%CE%BF%CF%85%CE%BC%CE%B5%CE%BD%CE%B9%CE%BA%CE%AE_%CE%A3%CF%8D%CE%BD%CE%BF%CE%B4%CE%BF%CF%82_7741.jpg",
+   "artist": "C messier",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "covid-19": {
+   "file": "covid-19.jpg",
+   "title": "Covid-19 SP - UTI V. Nova Cachoeirinha.jpg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg",
+   "artist": "Gustavo Basso",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "cuneiform": {
+   "file": "cuneiform.jpg",
+   "title": "Xerxes Cuneiform Van.JPG",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Xerxes_Cuneiform_Van.JPG",
+   "artist": "Bjørn Christian Tørrissen",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "cyrus-cylinder": {
+   "file": "cyrus-cylinder.jpg",
+   "title": "Cyrus Cylinder front.jpg",
+   "width": 440,
+   "height": 265,
+   "page": "https://commons.wikimedia.org/wiki/File:Cyrus_Cylinder_front.jpg",
+   "artist": "Prioryman",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "daguerreotype": {
+   "file": "daguerreotype.jpg",
+   "title": "Louis Daguerre 2.jpg",
+   "width": 258,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Louis_Daguerre_2.jpg",
+   "artist": "Photo: [1]",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "darius-the-great": {
+   "file": "darius-the-great.jpg",
+   "title": "Darius I.jpg",
+   "width": 264,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Darius_I.jpg",
+   "artist": "Rumlu",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "dead-sea-scrolls": {
+   "file": "dead-sea-scrolls.jpg",
+   "title": "Temple Scroll.png",
+   "width": 301,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Temple_Scroll.png",
+   "artist": "Israel Museum",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "declaration-of-independence": {
+   "file": "declaration-of-independence.jpg",
+   "title": "United States Declaration of Independence.jpg",
+   "width": 278,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:United_States_Declaration_of_Independence.jpg",
+   "artist": "original: w:Second Continental Congress ; reproduction: William Stone",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "delhi-sultanate": {
+   "file": "delhi-sultanate.jpg",
+   "title": "Map of the Mamluk Dynasty.png",
+   "width": 356,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_the_Mamluk_Dynasty.png",
+   "artist": "Maps created from DEMIS Mapserver , which are public domain. Koba-chan Territorial area: पाटलिपुत्र ( talk ), per Schwartberg Atlas p.147",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "delphi-inscription": {
+   "file": "delphi-inscription.jpg",
+   "title": "Delphes Gallion.jpg",
+   "width": 312,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Delphes_Gallion.jpg",
+   "artist": "Gérard",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "deseret-news": {
+   "file": "deseret-news.jpg",
+   "title": "Deseret News - first issue - 15 June 1850.jpg",
+   "width": 238,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Deseret_News_-_first_issue_-_15_June_1850.jpg",
+   "artist": "Deseret News",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "diamond-sutra": {
+   "file": "diamond-sutra.jpg",
+   "title": "Jingangjing.jpg",
+   "width": 440,
+   "height": 308,
+   "page": "https://commons.wikimedia.org/wiki/File:Jingangjing.jpg",
+   "artist": "The colophon, at the inner end, reads: Reverently [caused to be] made for universal free distribution by Wang Jie on behalf of his two parents on the 13th of the 4th moon of the 9th year of Xiantong [i.e. 11th May, CE 868 ].",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "djenne-djenno": {
+   "file": "djenne-djenno.jpg",
+   "title": "Djenné Moschee.jpg",
+   "width": 440,
+   "height": 209,
+   "page": "https://commons.wikimedia.org/wiki/File:Djenn%C3%A9_Moschee.jpg",
+   "artist": "The original uploader was Euronaut at German Wikipedia . Later versions were uploaded by Zahnstein at de.wikipedia .",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "dome-of-the-rock": {
+   "file": "dome-of-the-rock.jpg",
+   "title": "Jerusalem DomeoftheRock J65 (cropped).JPG",
+   "width": 440,
+   "height": 297,
+   "page": "https://commons.wikimedia.org/wiki/File:Jerusalem_DomeoftheRock_J65_(cropped).JPG",
+   "artist": "Ludvig14",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "domitian": {
+   "file": "domitian.jpg",
+   "title": "Domiziano da collezione albani, fine del I sec. dc. 02.JPG",
+   "width": 266,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Domiziano_da_collezione_albani,_fine_del_I_sec._dc._02.JPG",
+   "artist": "Photo: sailko (my camera)",
+   "license": "CC BY 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "dzungars": {
+   "file": "dzungars.jpg",
+   "title": "Map of the Dzungar Khanate, in 1717.png",
+   "width": 440,
+   "height": 253,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_the_Dzungar_Khanate,_in_1717.png",
+   "artist": "HorseBro the hemionus",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "eastern-zhou": {
+   "file": "eastern-zhou.jpg",
+   "title": "Chinese plain 5c. BC-en.svg",
+   "width": 440,
+   "height": 297,
+   "page": "https://commons.wikimedia.org/wiki/File:Chinese_plain_5c._BC-en.svg",
+   "artist": "Yug",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "edict-of-milan": {
+   "file": "edict-of-milan.jpg",
+   "title": "Constantine Chiaramonti Inv1749.jpg",
+   "width": 217,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Constantine_Chiaramonti_Inv1749.jpg",
+   "artist": "Marie-Lan Nguyen",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "edicts-of-ashoka": {
+   "file": "edicts-of-ashoka.jpg",
+   "title": "Ashoka Lauriya Areraj inscription.jpg",
+   "width": 232,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ashoka_Lauriya_Areraj_inscription.jpg",
+   "artist": "Sachin kumar tiwary",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "el-mirador": {
+   "file": "el-mirador.jpg",
+   "title": "Pirámide de la Danta, Petén.jpg",
+   "width": 281,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Pir%C3%A1mide_de_la_Danta,_Pet%C3%A9n.jpg",
+   "artist": "Konjiki1",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "elephantine-papyri": {
+   "file": "elephantine-papyri.jpg",
+   "title": "Papyrus narrating the story of the wise chancellor Ahiqar. Aramaic script. 5th century BCE. From Elephantine, Egypt. Neues Museum.jpg",
+   "width": 440,
+   "height": 224,
+   "page": "https://commons.wikimedia.org/wiki/File:Papyrus_narrating_the_story_of_the_wise_chancellor_Ahiqar._Aramaic_script._5th_century_BCE._From_Elephantine,_Egypt._Neues_Museum.jpg",
+   "artist": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "erie-canal": {
+   "file": "erie-canal.jpg",
+   "title": "Sunset over the Erie Canal in North Tonawanda, NY..jpg",
+   "width": 440,
+   "height": 247,
+   "page": "https://commons.wikimedia.org/wiki/File:Sunset_over_the_Erie_Canal_in_North_Tonawanda,_NY..jpg",
+   "artist": "Joshua Karn",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "erlitou": {
+   "file": "erlitou.jpg",
+   "title": "Erlitou map.svg",
+   "width": 302,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Erlitou_map.svg",
+   "artist": "Kanguole",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "esarhaddon": {
+   "file": "esarhaddon.jpg",
+   "title": "Detail. Sam'al stele of Esarhaddon, 671 BCE, Pergamon Museum.jpg",
+   "width": 220,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Detail._Sam%27al_stele_of_Esarhaddon,_671_BCE,_Pergamon_Museum.jpg",
+   "artist": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "fall-of-babylon": {
+   "file": "fall-of-babylon.jpg",
+   "title": "The fall of Babylon; Cyrus the Great defeating the Chaldean Wellcome V0034440.jpg",
+   "width": 440,
+   "height": 284,
+   "page": "https://commons.wikimedia.org/wiki/File:The_fall_of_Babylon;_Cyrus_the_Great_defeating_the_Chaldean_Wellcome_V0034440.jpg",
+   "artist": "Photo: https://wellcomeimages.org/indexplus/obf_images/fc/fc/32d4c8b927dea8bfbf69f55cbd10.jpg Gallery: https://wellcomeimages.org/indexplus/image/V0034440.html Wellcome Collection gallery (2018-04-03): https://wellcomecollection.org/works/pc9e75j3 CC-BY-4.0",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "fall-of-constantinople": {
+   "file": "fall-of-constantinople.jpg",
+   "title": "Siege of Constantinople fresco, Moldovița monastery, Vatra Moldoviței, 2017.jpg",
+   "width": 440,
+   "height": 246,
+   "page": "https://commons.wikimedia.org/wiki/File:Siege_of_Constantinople_fresco,_Moldovi%C8%9Ba_monastery,_Vatra_Moldovi%C8%9Bei,_2017.jpg",
+   "artist": "DimiTalen",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "fall-of-nineveh": {
+   "file": "fall-of-nineveh.jpg",
+   "title": "Fall of nineveh.jpg",
+   "width": 440,
+   "height": 291,
+   "page": "https://commons.wikimedia.org/wiki/File:Fall_of_nineveh.jpg",
+   "artist": "(Mu-tamajo) むーたんじょ",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "fall-of-saigon": {
+   "file": "fall-of-saigon.jpg",
+   "title": "The air evacuation of siege-stricken Vietnamese from Saigon to the U.S. was conducted after the Babylift operation.... - NARA - 542335.tif",
+   "width": 440,
+   "height": 297,
+   "page": "https://commons.wikimedia.org/wiki/File:The_air_evacuation_of_siege-stricken_Vietnamese_from_Saigon_to_the_U.S._was_conducted_after_the_Babylift_operation...._-_NARA_-_542335.tif",
+   "artist": "Photo: U.S. National Archives and Records Administration",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "fall-of-tenochtitlan": {
+   "file": "fall-of-tenochtitlan.jpg",
+   "title": "Conquista-de-México-por-Cortés-Tenochtitlan-Painting.png",
+   "width": 440,
+   "height": 292,
+   "page": "https://commons.wikimedia.org/wiki/File:Conquista-de-M%C3%A9xico-por-Cort%C3%A9s-Tenochtitlan-Painting.png",
+   "artist": "Photo: https://s.libertaddigital.com/2021/08/09/conquista-de-mexico.jpg",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "fall-of-western-rome": {
+   "file": "fall-of-western-rome.jpg",
+   "title": "Roman Republic Empire map.gif",
+   "width": 347,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Roman_Republic_Empire_map.gif",
+   "artist": "Roke ( d )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "family-proclamation": {
+   "file": "family-proclamation.jpg",
+   "title": "The Family A Proclamation to the World.jpg",
+   "width": 440,
+   "height": 247,
+   "page": "https://commons.wikimedia.org/wiki/File:The_Family_A_Proclamation_to_the_World.jpg",
+   "artist": "LDS Church",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "finney-rochester": {
+   "file": "finney-rochester.jpg",
+   "title": "Charles g finney.jpg",
+   "width": 290,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Charles_g_finney.jpg",
+   "artist": "Photo: version of Christian History vol. VII, n. 4, issue 20",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "first-crusade-jerusalem": {
+   "file": "first-crusade-jerusalem.jpg",
+   "title": "Taking of Jerusalem by the Crusaders, 15th July 1099.jpg",
+   "width": 440,
+   "height": 253,
+   "page": "https://commons.wikimedia.org/wiki/File:Taking_of_Jerusalem_by_the_Crusaders,_15th_July_1099.jpg",
+   "artist": "Émile Signol",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "first-fleet": {
+   "file": "first-fleet.jpg",
+   "title": "A view of Botany Bay A1475003h (cropped).jpg",
+   "width": 440,
+   "height": 303,
+   "page": "https://commons.wikimedia.org/wiki/File:A_view_of_Botany_Bay_A1475003h_(cropped).jpg",
+   "artist": "Original drawing by R. Cleveley, engraving by T. Medland.",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "first-jewish-roman-war": {
+   "file": "first-jewish-roman-war.jpg",
+   "title": "Arch of Titus Menorah.png",
+   "width": 440,
+   "height": 246,
+   "page": "https://commons.wikimedia.org/wiki/File:Arch_of_Titus_Menorah.png",
+   "artist": "derivative work: Steerpike ( talk ) Arc_de_Triumph_copy.jpg : user: בית השלום",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "first-opium-war": {
+   "file": "first-opium-war.jpg",
+   "title": "Destroying Chinese war junks, by E. Duncan (1843).jpg",
+   "width": 440,
+   "height": 288,
+   "page": "https://commons.wikimedia.org/wiki/File:Destroying_Chinese_war_junks,_by_E._Duncan_(1843).jpg",
+   "artist": "Edward Duncan",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "forbidden-city": {
+   "file": "forbidden-city.jpg",
+   "title": "The Forbidden City - View from Coal Hill.jpg",
+   "width": 440,
+   "height": 220,
+   "page": "https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+   "artist": "Pixelflake",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "founding-of-rome": {
+   "file": "founding-of-rome.jpg",
+   "title": "Kapitolinische Wölfin Museum Capitolini.jpg",
+   "width": 440,
+   "height": 302,
+   "page": "https://commons.wikimedia.org/wiki/File:Kapitolinische_W%C3%B6lfin_Museum_Capitolini.jpg",
+   "artist": "Rabax63",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "freiberg-temple": {
+   "file": "freiberg-temple.jpg",
+   "title": "Freiberg Tempel.JPG",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Freiberg_Tempel.JPG",
+   "artist": "No machine-readable author provided. Peter Wöllauer assumed (based on copyright claims).",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "galileo-dialogue": {
+   "file": "galileo-dialogue.jpg",
+   "title": "Galileo Galilei (1564-1642) RMG BHC2700.tiff",
+   "width": 260,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Galileo_Galilei_(1564-1642)_RMG_BHC2700.tiff",
+   "artist": "Justus Sustermans",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "german-empire": {
+   "file": "german-empire.jpg",
+   "title": "Deutsches Reich (1871-1918)-en.png",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Deutsches_Reich_(1871-1918)-en.png",
+   "artist": "Deutsches_Reich1.png : kgberger derivative work: Wiggy! ( talk )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "gezer-calendar": {
+   "file": "gezer-calendar.jpg",
+   "title": "Gezer calendar close up.jpg",
+   "width": 249,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Gezer_calendar_close_up.jpg",
+   "artist": "oncenawhile",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "ghana-empire": {
+   "file": "ghana-empire.jpg",
+   "title": "Ghana empire map.png",
+   "width": 376,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ghana_empire_map.png",
+   "artist": "Luxo",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "gilgamesh": {
+   "file": "gilgamesh.jpg",
+   "title": "British Museum Flood Tablet.jpg",
+   "width": 292,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:British_Museum_Flood_Tablet.jpg",
+   "artist": "Photo: BabelStone ( Own work )",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "gokturks": {
+   "file": "gokturks.jpg",
+   "title": "Tyurki.jpg",
+   "width": 440,
+   "height": 329,
+   "page": "https://commons.wikimedia.org/wiki/File:Tyurki.jpg",
+   "artist": "The Göktürks",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "gondar": {
+   "file": "gondar.jpg",
+   "title": "Gonder from the Goha hotel.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Gonder_from_the_Goha_hotel.jpg",
+   "artist": "Giustino",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "gran-colombia": {
+   "file": "gran-colombia.jpg",
+   "title": "Flag of Gran Colombia (1819–1820).svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Gran_Colombia_(1819%E2%80%931820).svg",
+   "artist": "HansenBCN",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "granada-1492": {
+   "file": "granada-1492.jpg",
+   "title": "La Rendición de Granada - Pradilla.jpg",
+   "width": 440,
+   "height": 282,
+   "page": "https://commons.wikimedia.org/wiki/File:La_Rendici%C3%B3n_de_Granada_-_Pradilla.jpg",
+   "artist": "Francisco Pradilla y Ortiz",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "great-disappointment": {
+   "file": "great-disappointment.jpg",
+   "title": "Millerite 1843 chart.jpg",
+   "width": 255,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Millerite_1843_chart.jpg",
+   "artist": "Uploaded by Colin MacLaurin",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "great-fire-of-rome": {
+   "file": "great-fire-of-rome.jpg",
+   "title": "Robert, Hubert - Incendie à Rome -.jpg",
+   "width": 415,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Robert,_Hubert_-_Incendie_%C3%A0_Rome_-.jpg",
+   "artist": "Hubert Robert",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "great-pyramid": {
+   "file": "great-pyramid.jpg",
+   "title": "Great Pyramid of Giza - Pyramid of Khufu.jpg",
+   "width": 440,
+   "height": 247,
+   "page": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+   "artist": "Douwe C. van der Zee",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "great-schism": {
+   "file": "great-schism.jpg",
+   "title": "Great Schism with former borders (1054).png",
+   "width": 308,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Great_Schism_with_former_borders_(1054).png",
+   "artist": "Barrikader ( talk · contribs )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "great-trek": {
+   "file": "great-trek.jpg",
+   "title": "Great Trek map full.png",
+   "width": 386,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Great_Trek_map_full.png",
+   "artist": "Discott",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "great-zimbabwe": {
+   "file": "great-zimbabwe.jpg",
+   "title": "Conical Tower - Great Enclosure III (33736918448).jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Conical_Tower_-_Great_Enclosure_III_(33736918448).jpg",
+   "artist": "Andrew Moore from Johannesburg, South Africa",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "greek-independence": {
+   "file": "greek-independence.jpg",
+   "title": "Greek revolution collage.jpg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Greek_revolution_collage.jpg",
+   "artist": "SJCAmerican",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "gupta-empire": {
+   "file": "gupta-empire.jpg",
+   "title": "Map of the Gupta Empire.png",
+   "width": 356,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_the_Gupta_Empire.png",
+   "artist": "Map created from DEMIS Mapserver , which are public domain. Koba-chan .",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "gutenberg": {
+   "file": "gutenberg.jpg",
+   "title": "Mainz Gutenbergdenkmal 2016 (cropped).jpg",
+   "width": 248,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Mainz_Gutenbergdenkmal_2016_(cropped).jpg",
+   "artist": "Kenneth C. Zirkel",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "hagia-sophia": {
+   "file": "hagia-sophia.jpg",
+   "title": "Hagia Sophia (228968325).jpeg",
+   "width": 440,
+   "height": 266,
+   "page": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_(228968325).jpeg",
+   "artist": "Adli Wahid",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "haitian-revolution": {
+   "file": "haitian-revolution.jpg",
+   "title": "Incendie de la Plaine du Cap. Massacre des Blancs par les esclaves noirs révoltés. France militaire. Martinet et Masson.jpg",
+   "width": 440,
+   "height": 298,
+   "page": "https://commons.wikimedia.org/wiki/File:Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_r%C3%A9volt%C3%A9s._France_militaire._Martinet_et_Masson.jpg",
+   "artist": "Aaron Martinet / Alphonse-Charles Masson",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "hamilton-temple": {
+   "file": "hamilton-temple.jpg",
+   "title": "LDSTempleHamiltonNewZealand.JPG",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:LDSTempleHamiltonNewZealand.JPG",
+   "artist": "w:en:User:DO'Neil",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "han-dynasty": {
+   "file": "han-dynasty.jpg",
+   "title": "Han Dynasty 2 BC (cropped).svg",
+   "width": 440,
+   "height": 297,
+   "page": "https://commons.wikimedia.org/wiki/File:Han_Dynasty_2_BC_(cropped).svg",
+   "artist": "DannamEmpire",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "handcarts": {
+   "file": "handcarts.jpg",
+   "title": "Handcart Pioneers (sculpture) - Brigham Young Historic Park, SLC - 25 August 2024 (cropped).jpg",
+   "width": 270,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Handcart_Pioneers_(sculpture)_-_Brigham_Young_Historic_Park,_SLC_-_25_August_2024_(cropped).jpg",
+   "artist": "Beneathtimp",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "hannibal-alps": {
+   "file": "hannibal-alps.jpg",
+   "title": "Hannibal route of invasion-en.svg",
+   "width": 440,
+   "height": 276,
+   "page": "https://commons.wikimedia.org/wiki/File:Hannibal_route_of_invasion-en.svg",
+   "artist": "Pinpin",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "hasmonean-dynasty": {
+   "file": "hasmonean-dynasty.jpg",
+   "title": "Monnaie - Prutah, bronze, Jérusalem, Judée, Mattathias Antigonos - btv1b8480202s (1 of 2).jpg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Prutah,_bronze,_J%C3%A9rusalem,_Jud%C3%A9e,_Mattathias_Antigonos_-_btv1b8480202s_(1_of_2).jpg",
+   "artist": "Antigone II (Mattathiah ; roi hasmonéen). Autorité émettrice de monnaie Hasmonéens (dynastie). Autorité émettrice de monnaie Jérusalem (Judée ; atelier monétaire). Atelier monétaire",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "hatshepsut": {
+   "file": "hatshepsut.jpg",
+   "title": "Seated Statue of Hatshepsut MET Hatshepsut2012 (cropped).jpg",
+   "width": 248,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Seated_Statue_of_Hatshepsut_MET_Hatshepsut2012_(cropped).jpg",
+   "artist": "Photo: This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "hawaii-settled": {
+   "file": "hawaii-settled.jpg",
+   "title": "Na mokupuni o Hawaii nei LOC 98680907.jpg",
+   "width": 440,
+   "height": 316,
+   "page": "https://commons.wikimedia.org/wiki/File:Na_mokupuni_o_Hawaii_nei_LOC_98680907.jpg",
+   "artist": "Kalama, Simona P.; Lahainaluna Seminary",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "herod-agrippa-i": {
+   "file": "herod-agrippa-i.jpg",
+   "title": "Piece Agrippa I.jpg",
+   "width": 364,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Piece_Agrippa_I.jpg",
+   "artist": "Adaptation of CNG by Mogador",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "herod-antipas": {
+   "file": "herod-antipas.jpg",
+   "title": "Herod Antipas medal.svg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Herod_Antipas_medal.svg",
+   "artist": "Georges Reverdy",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "herod-archelaus": {
+   "file": "herod-archelaus.jpg",
+   "title": "Archelaus medal.svg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Archelaus_medal.svg",
+   "artist": "Georges Reverdy",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "herod-the-great": {
+   "file": "herod-the-great.jpg",
+   "title": "HerodtheGreat2.jpg",
+   "width": 359,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:HerodtheGreat2.jpg",
+   "artist": "Photo: File from [1] , cf larger copy at Getty: [2] . Original publication: probably from a print edition of La court sainte by Nicolas Caussin , 17th century. See copy of the same print in a contemporary translation of the same book here: [3]",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "herodotus": {
+   "file": "herodotus.jpg",
+   "title": "Marble bust of Herodotos MET DT11742 (cropped).jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Marble_bust_of_Herodotos_MET_DT11742_(cropped).jpg",
+   "artist": "Photo: This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "herods-temple": {
+   "file": "herods-temple.jpg",
+   "title": "Second Temple.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Second_Temple.jpg",
+   "artist": "Ariely",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "hijrah": {
+   "file": "hijrah.jpg",
+   "title": "New York Public Library, Spencer Collection Turk. MS. 3 Siyar-i Nabî fol. 286r Jibril delivers to Muhammad a message from God telling him to leave Makka for Madina.jpg",
+   "width": 296,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:New_York_Public_Library,_Spencer_Collection_Turk._MS._3_Siyar-i_Nab%C3%AE_fol._286r_Jibril_delivers_to_Muhammad_a_message_from_God_telling_him_to_leave_Makka_for_Madina.jpg",
+   "artist": "Photo: https://digitalcollections.nypl.org/items/cff0bdb0-d434-012f-fdaa-58d385a7bbd0?canvasIndex=571",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "hiram-of-tyre": {
+   "file": "hiram-of-tyre.jpg",
+   "title": "LimestoneStatue-8cBC Tyre NationalMuseumOfBeirut 03102019RomanDeckert.jpg",
+   "width": 236,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:LimestoneStatue-8cBC_Tyre_NationalMuseumOfBeirut_03102019RomanDeckert.jpg",
+   "artist": "RomanDeckert",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "hiroshima-nagasaki": {
+   "file": "hiroshima-nagasaki.jpg",
+   "title": "Atomic bombing of Japan.jpg",
+   "width": 440,
+   "height": 261,
+   "page": "https://commons.wikimedia.org/wiki/File:Atomic_bombing_of_Japan.jpg",
+   "artist": "George R. Caron / Charles Levy",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "hittite-kingdom": {
+   "file": "hittite-kingdom.jpg",
+   "title": "Hittite kingdoms.png",
+   "width": 440,
+   "height": 261,
+   "page": "https://commons.wikimedia.org/wiki/File:Hittite_kingdoms.png",
+   "artist": "Nissrpska",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "hong-kong-mission-1853": {
+   "file": "hong-kong-mission-1853.jpg",
+   "title": "Hong Kong China Temple.jpg",
+   "width": 196,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Hong_Kong_China_Temple.jpg",
+   "artist": "Uploaded by Slick-o-bot",
+   "license": "CC BY-SA 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "hong-kong-temple": {
+   "file": "hong-kong-temple.jpg",
+   "title": "Hong Kong China Temple.jpg",
+   "width": 196,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Hong_Kong_China_Temple.jpg",
+   "artist": "Uploaded by Slick-o-bot",
+   "license": "CC BY-SA 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "hopewell": {
+   "file": "hopewell.jpg",
+   "title": "Hopewell Exchange Network HRoe 2010.jpg",
+   "width": 267,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Hopewell_Exchange_Network_HRoe_2010.jpg",
+   "artist": "Heironymous Rowe",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "hundred-years-war": {
+   "file": "hundred-years-war.jpg",
+   "title": "Schlacht von Azincourt.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Schlacht_von_Azincourt.jpg",
+   "artist": "Photo: Antoine Leduc, Sylvie Leluc et Olivier Renaudeau (dir.), D'Azincourt à Marignan. Chevaliers et bombardes, 1415-1515 , Paris, Gallimard / Musée de l'armée, 2015, p. 18-19, ISBN 978-2-07-014949-0",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "hyksos": {
+   "file": "hyksos.jpg",
+   "title": "Painting of foreign delegation in the tomb of Khnumhotep II circa 1900 BCE (Detail mentioning \"Abisha the Hyksos\" in hieroglyphs).jpg",
+   "width": 296,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Painting_of_foreign_delegation_in_the_tomb_of_Khnumhotep_II_circa_1900_BCE_(Detail_mentioning_%22Abisha_the_Hyksos%22_in_hieroglyphs).jpg",
+   "artist": "Macquarie University",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "igbo-ukwu": {
+   "file": "igbo-ukwu.jpg",
+   "title": "Bronze ornamental staff head, 9th century, Igbo-Ukwu.JPG",
+   "width": 242,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Bronze_ornamental_staff_head,_9th_century,_Igbo-Ukwu.JPG",
+   "artist": "Ochiwar",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "imjin-war": {
+   "file": "imjin-war.jpg",
+   "title": "Siege-of-Busanjin-1592.jpg",
+   "width": 218,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Siege-of-Busanjin-1592.jpg",
+   "artist": "Photo: http://www.cha.go.kr/unisearch/Culresult_Db_View.jsp?VdkVgwKey=12,03910000,11",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "inca-rise": {
+   "file": "inca-rise.jpg",
+   "title": "Banner of the Inca Empire.svg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Banner_of_the_Inca_Empire.svg",
+   "artist": "Made and uploaded by Huhsunqu .",
+   "license": "CC BY-SA 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "indian-ocean-tsunami": {
+   "file": "indian-ocean-tsunami.jpg",
+   "title": "US Navy 050102-N-9593M-040 A village near the coast of Sumatra lays in ruin after the Tsunami that struck South East Asia.jpg",
+   "width": 440,
+   "height": 314,
+   "page": "https://commons.wikimedia.org/wiki/File:US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg",
+   "artist": "U.S. Navy photo by Photographer's Mate 2nd Class Philip A. McDaniel",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "indian-rebellion-1857": {
+   "file": "indian-rebellion-1857.jpg",
+   "title": "Indian Rebellion of 1857.jpg",
+   "width": 393,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Indian_Rebellion_of_1857.jpg",
+   "artist": "Photo: Perry-Castañeda Library Map Collection Website .",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "indian-removal-act": {
+   "file": "indian-removal-act.jpg",
+   "title": "President Andrew Jackson's Message to Congress \"On Indian Removal\", 12-06-1830, Page 1-7 (6023478288).jpg",
+   "width": 201,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:President_Andrew_Jackson%27s_Message_to_Congress_%22On_Indian_Removal%22,_12-06-1830,_Page_1-7_(6023478288).jpg",
+   "artist": "The U.S. National Archives",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "indonesia-1945": {
+   "file": "indonesia-1945.jpg",
+   "title": "Indonesia declaration of independence 17 August 1945.jpg",
+   "width": 440,
+   "height": 314,
+   "page": "https://commons.wikimedia.org/wiki/File:Indonesia_declaration_of_independence_17_August_1945.jpg",
+   "artist": "Frans Mendur (also Frans Mendoer) (1913 – 1971)",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "indus-valley": {
+   "file": "indus-valley.jpg",
+   "title": "Indus Valley Civilization, Mature Phase (2600-1900 BCE).png",
+   "width": 405,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Indus_Valley_Civilization,_Mature_Phase_(2600-1900_BCE).png",
+   "artist": "Avantiputra7",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "iranian-revolution": {
+   "file": "iranian-revolution.jpg",
+   "title": "Mass demonstration in Iran, date unknown.jpg",
+   "width": 440,
+   "height": 300,
+   "page": "https://commons.wikimedia.org/wiki/File:Mass_demonstration_in_Iran,_date_unknown.jpg",
+   "artist": "Unknown author",
+   "license": "GFDL",
+   "licenseUrl": "http://www.gnu.org/copyleft/fdl.html"
+  },
+  "irish-famine": {
+   "file": "irish-famine.jpg",
+   "title": "Skibbereen by James Mahony, 1847.JPG",
+   "width": 239,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Skibbereen_by_James_Mahony,_1847.JPG",
+   "artist": "James Mahony",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "ishtar-gate": {
+   "file": "ishtar-gate.jpg",
+   "title": "Berlín, Museo de Pérgamo 05.jpg",
+   "width": 440,
+   "height": 274,
+   "page": "https://commons.wikimedia.org/wiki/File:Berl%C3%ADn,_Museo_de_P%C3%A9rgamo_05.jpg",
+   "artist": "LBM1948",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "israel-1948": {
+   "file": "israel-1948.jpg",
+   "title": "Declaration of State of Israel 1948.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Declaration_of_State_of_Israel_1948.jpg",
+   "artist": "Rudi Weissenstein",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "izapa": {
+   "file": "izapa.jpg",
+   "title": "Izapa ruins 1.jpg",
+   "width": 440,
+   "height": 295,
+   "page": "https://commons.wikimedia.org/wiki/File:Izapa_ruins_1.jpg",
+   "artist": "Simon Burchell",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "jamestown": {
+   "file": "jamestown.jpg",
+   "title": "Jamestownzuniga.jpg",
+   "width": 295,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Jamestownzuniga.jpg",
+   "artist": "Photo: Virtual Jamestown: Zuniga's Fort, 1608",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "jehoiachin-ration-tablets": {
+   "file": "jehoiachin-ration-tablets.jpg",
+   "title": "Jehoiachin Ration Tablet.JPG",
+   "width": 440,
+   "height": 324,
+   "page": "https://commons.wikimedia.org/wiki/File:Jehoiachin_Ration_Tablet.JPG",
+   "artist": "Scallaham",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "johannesburg-temple": {
+   "file": "johannesburg-temple.jpg",
+   "title": "Johannesburg Temple from skyline.jpeg",
+   "width": 221,
+   "height": 139,
+   "page": "https://commons.wikimedia.org/wiki/File:Johannesburg_Temple_from_skyline.jpeg",
+   "artist": "Greg",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "josephus-antiquities": {
+   "file": "josephus-antiquities.jpg",
+   "title": "Joseph, son of Gorian, called Flavius Josephus (cropped).jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Joseph,_son_of_Gorian,_called_Flavius_Josephus_(cropped).jpg",
+   "artist": "Scan by NYPL",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "kamakura": {
+   "file": "kamakura.jpg",
+   "title": "Ancient Provinces of Japan Ryoseikoku Map.png",
+   "width": 315,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ancient_Provinces_of_Japan_Ryoseikoku_Map.png",
+   "artist": "Artanisen",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "kaminaljuyu": {
+   "file": "kaminaljuyu.jpg",
+   "title": "Formative Period southern Mesoamerica 2.svg",
+   "width": 440,
+   "height": 209,
+   "page": "https://commons.wikimedia.org/wiki/File:Formative_Period_southern_Mesoamerica_2.svg",
+   "artist": "Madman2001",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "kerma": {
+   "file": "kerma.jpg",
+   "title": "Kerma city.JPG",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Kerma_city.JPG",
+   "artist": "Lassi",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "ketef-hinnom": {
+   "file": "ketef-hinnom.jpg",
+   "title": "Kettef Hinnom scrolls1.jpg",
+   "width": 440,
+   "height": 310,
+   "page": "https://commons.wikimedia.org/wiki/File:Kettef_Hinnom_scrolls1.jpg",
+   "artist": "Photo: Edited version of an image of the Kettef Hinnom scrolls",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "khirbet-qeiyafa": {
+   "file": "khirbet-qeiyafa.jpg",
+   "title": "View of Khirbet Qeiyafa.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:View_of_Khirbet_Qeiyafa.jpg",
+   "artist": "Davidbena",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "khmer-empire": {
+   "file": "khmer-empire.jpg",
+   "title": "Map-of-southeast-asia 900 CE.svg",
+   "width": 234,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Map-of-southeast-asia_900_CE.svg",
+   "artist": "Jembezmamy",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "kilwa": {
+   "file": "kilwa.jpg",
+   "title": "Flag used in the east coast of Tanzania according to a Portuguese 1576 map.svg",
+   "width": 440,
+   "height": 242,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_used_in_the_east_coast_of_Tanzania_according_to_a_Portuguese_1576_map.svg",
+   "artist": "Dekodrak",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "king-james-bible": {
+   "file": "king-james-bible.jpg",
+   "title": "KJV-King-James-Version-Bible-first-edition-title-page-1611.jpg",
+   "width": 211,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:KJV-King-James-Version-Bible-first-edition-title-page-1611.jpg",
+   "artist": "Church of England",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "kingdom-of-saba": {
+   "file": "kingdom-of-saba.jpg",
+   "title": "Yemen 100 BC.svg",
+   "width": 353,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Yemen_100_BC.svg",
+   "artist": "User:Schreiber",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "knossos": {
+   "file": "knossos.jpg",
+   "title": "Crete integrated map-en.svg",
+   "width": 440,
+   "height": 209,
+   "page": "https://commons.wikimedia.org/wiki/File:Crete_integrated_map-en.svg",
+   "artist": "Eric Gaba ( Sting )",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "kongo": {
+   "file": "kongo.jpg",
+   "title": "Flag of the Kingdom of Kongo according to Giovanni Cavazzi da Montecuccolo.svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Kingdom_of_Kongo_according_to_Giovanni_Cavazzi_da_Montecuccolo.svg",
+   "artist": "Oren neu dag",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "korean-war": {
+   "file": "korean-war.jpg",
+   "title": "Chosin.jpg",
+   "width": 411,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Chosin.jpg",
+   "artist": "Photo by Corporal Peter McDonald, USMC",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "kushan-empire": {
+   "file": "kushan-empire.jpg",
+   "title": "Map of the Kushan Empire.png",
+   "width": 356,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_the_Kushan_Empire.png",
+   "artist": "Map created from DEMIS Mapserver , which are public domain. Koba-chan . Reference: Schwartzberg Atlas, v. , p. 145. Map g",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "kushite-pharaohs": {
+   "file": "kushite-pharaohs.jpg",
+   "title": "Rulers of Kush, Kerma Museum.jpg",
+   "width": 404,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Rulers_of_Kush,_Kerma_Museum.jpg",
+   "artist": "Matthias Gehricke",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "kyiv-temple": {
+   "file": "kyiv-temple.jpg",
+   "title": "Kyiv Temple.jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Kyiv_Temple.jpg",
+   "artist": "Nckdrmn",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "la-mojarra-stela": {
+   "file": "la-mojarra-stela.jpg",
+   "title": "Harvestermountainlord.jpg",
+   "width": 200,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Harvestermountainlord.jpg",
+   "artist": "en:User:Maunus",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "la-tene": {
+   "file": "la-tene.jpg",
+   "title": "Hallstatt LaTene.png",
+   "width": 440,
+   "height": 321,
+   "page": "https://commons.wikimedia.org/wiki/File:Hallstatt_LaTene.png",
+   "artist": "Dbachmann",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "la-venta": {
+   "file": "la-venta.jpg",
+   "title": "La Venta Pirámide cara norte.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:La_Venta_Pir%C3%A1mide_cara_norte.jpg",
+   "artist": "Alfonsobouchot",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "lachish-letters": {
+   "file": "lachish-letters.jpg",
+   "title": "Steen met inscriptie in het Lahish schrift, Bestanddeelnr 255-6141.jpg",
+   "width": 237,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Steen_met_inscriptie_in_het_Lahish_schrift,_Bestanddeelnr_255-6141.jpg",
+   "artist": "Willem van de Poll",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "lachish-reliefs": {
+   "file": "lachish-reliefs.jpg",
+   "title": "Lachish inscription.jpeg",
+   "width": 440,
+   "height": 228,
+   "page": "https://commons.wikimedia.org/wiki/File:Lachish_inscription.jpeg",
+   "artist": "User:oncenawhile",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "laie-temple": {
+   "file": "laie-temple.jpg",
+   "title": "LDS Laie Hawaii Temple front view.jpg",
+   "width": 440,
+   "height": 329,
+   "page": "https://commons.wikimedia.org/wiki/File:LDS_Laie_Hawaii_Temple_front_view.jpg",
+   "artist": "Gh5046 at English Wikipedia",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "lalibela": {
+   "file": "lalibela.jpg",
+   "title": "Lalibela, san giorgio, esterno 24.jpg",
+   "width": 381,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Lalibela,_san_giorgio,_esterno_24.jpg",
+   "artist": "Sailko",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "lanse-aux-meadows": {
+   "file": "lanse-aux-meadows.jpg",
+   "title": "Authentic Viking recreation.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Authentic_Viking_recreation.jpg",
+   "artist": "Dylan Kereluk from White Rock, Canada",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "lapita": {
+   "file": "lapita.jpg",
+   "title": "Carte lapita.png",
+   "width": 440,
+   "height": 273,
+   "page": "https://commons.wikimedia.org/wiki/File:Carte_lapita.png",
+   "artist": "Christophe cagé",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "lei-aurea": {
+   "file": "lei-aurea.jpg",
+   "title": "Lei Áurea (Golden Law).tif",
+   "width": 251,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Lei_%C3%81urea_(Golden_Law).tif",
+   "artist": "Senado Imperial",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "lewis-and-clark": {
+   "file": "lewis-and-clark.jpg",
+   "title": "Lewis and Clark.jpg",
+   "width": 398,
+   "height": 300,
+   "page": "https://commons.wikimedia.org/wiki/File:Lewis_and_Clark.jpg",
+   "artist": "Uploaded by Kigsz",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "liangzhu": {
+   "file": "liangzhu.jpg",
+   "title": "Liangzhu map.svg",
+   "width": 302,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Liangzhu_map.svg",
+   "artist": "Kanguole",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "liberia-1847": {
+   "file": "liberia-1847.jpg",
+   "title": "Flag of Liberia.svg",
+   "width": 440,
+   "height": 232,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Liberia.svg",
+   "artist": "Government of Liberia",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "library-of-alexandria": {
+   "file": "library-of-alexandria.jpg",
+   "title": "Ancientlibraryalex.jpg",
+   "width": 325,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ancientlibraryalex.jpg",
+   "artist": "O. Von Corven",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "lindisfarne": {
+   "file": "lindisfarne.jpg",
+   "title": "Bildsten från Smiss, Gotland.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Bildsten_fr%C3%A5n_Smiss,_Gotland.jpg",
+   "artist": "historical museum",
+   "license": "CC BY 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "liverpool-manchester-railway": {
+   "file": "liverpool-manchester-railway.jpg",
+   "title": "Opening Liverpool and Manchester Railway.jpg",
+   "width": 408,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Opening_Liverpool_and_Manchester_Railway.jpg",
+   "artist": "A.B. Clayton",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "living-christ": {
+   "file": "living-christ.jpg",
+   "title": "Christus statue temple square salt lake city.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Christus_statue_temple_square_salt_lake_city.jpg",
+   "artist": "Uploaded by Ricardo630",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "louisiana-purchase": {
+   "file": "louisiana-purchase.jpg",
+   "title": "Louisiana Purchase.png",
+   "width": 440,
+   "height": 310,
+   "page": "https://commons.wikimedia.org/wiki/File:Louisiana_Purchase.png",
+   "artist": "William Morris",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "lydian-coins": {
+   "file": "lydian-coins.jpg",
+   "title": "Kingdom of Lydia.png",
+   "width": 440,
+   "height": 246,
+   "page": "https://commons.wikimedia.org/wiki/File:Kingdom_of_Lydia.png",
+   "artist": "Ennomus",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "macau": {
+   "file": "macau.jpg",
+   "title": "Flag of Portuguese Macau Unofficial.svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Portuguese_Macau_Unofficial.svg",
+   "artist": "tkl_darkspider",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "maccabean-revolt": {
+   "file": "maccabean-revolt.jpg",
+   "title": "Maccabean revolt.jpg",
+   "width": 414,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Maccabean_revolt.jpg",
+   "artist": "Machaerus ( talk · contribs )",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "magellan-expedition": {
+   "file": "magellan-expedition.jpg",
+   "title": "Detail from a map of Ortelius - Magellan's ship Victoria.png",
+   "width": 440,
+   "height": 268,
+   "page": "https://commons.wikimedia.org/wiki/File:Detail_from_a_map_of_Ortelius_-_Magellan%27s_ship_Victoria.png",
+   "artist": "Abraham Ortelius",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "magna-carta": {
+   "file": "magna-carta.jpg",
+   "title": "Magna Carta (British Library Cotton MS Augustus II.106).jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg",
+   "artist": "Original authors were the barons and King John of England . Uploaded by Earthsound .",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "majapahit": {
+   "file": "majapahit.jpg",
+   "title": "Naval flag of Majapahit Kingdom.svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Naval_flag_of_Majapahit_Kingdom.svg",
+   "artist": "source: BP47Dhorifah , svg: Puck04",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "malacca-1511": {
+   "file": "malacca-1511.jpg",
+   "title": "Conquista de Malaca, estudo - Ernesto Condeixa (cropped).png",
+   "width": 220,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Conquista_de_Malaca,_estudo_-_Ernesto_Condeixa_(cropped).png",
+   "artist": "Ernesto Ferreira Condeixa",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "manila-1571": {
+   "file": "manila-1571.jpg",
+   "title": "Cityscape of Manila, 2025 (01).jpg",
+   "width": 440,
+   "height": 247,
+   "page": "https://commons.wikimedia.org/wiki/File:Cityscape_of_Manila,_2025_(01).jpg",
+   "artist": "Bahnfrend",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "manila-temple": {
+   "file": "manila-temple.jpg",
+   "title": "Manila Philippines Temple - Whiting.jpg",
+   "width": 440,
+   "height": 288,
+   "page": "https://commons.wikimedia.org/wiki/File:Manila_Philippines_Temple_-_Whiting.jpg",
+   "artist": "18sdjackson",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "mansa-musa": {
+   "file": "mansa-musa.jpg",
+   "title": "Catalan Atlas BNF Sheet 6 Mansa Musa (cropped).jpg",
+   "width": 289,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg",
+   "artist": "attributed to Abraham Cresques",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "mari-archives": {
+   "file": "mari-archives.jpg",
+   "title": "MariZiggurat.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:MariZiggurat.jpg",
+   "artist": "Heretiq",
+   "license": "CC BY-SA 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "maurya-empire": {
+   "file": "maurya-empire.jpg",
+   "title": "Maurya Empire, c.250 BCE network model v01.png",
+   "width": 353,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Maurya_Empire,_c.250_BCE_network_model_v01.png",
+   "artist": "Joshua Jonathan",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "maya-collapse": {
+   "file": "maya-collapse.jpg",
+   "title": "TulumCatherwood1844.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:TulumCatherwood1844.jpg",
+   "artist": "Frederick Catherwood",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "meiji-restoration": {
+   "file": "meiji-restoration.jpg",
+   "title": "Emperor Meiji by Takahashi Yuichi.jpg",
+   "width": 261,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Emperor_Meiji_by_Takahashi_Yuichi.jpg",
+   "artist": "Takahashi Yuichi (1828-1894)",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "merneptah-stele": {
+   "file": "merneptah-stele.jpg",
+   "title": "Merneptah Steli (cropped).jpg",
+   "width": 168,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Merneptah_Steli_(cropped).jpg",
+   "artist": "𐰇𐱅𐰚𐰤",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "meroe": {
+   "file": "meroe.jpg",
+   "title": "NubianMeroePyramids30sep2005(2).jpg",
+   "width": 440,
+   "height": 211,
+   "page": "https://commons.wikimedia.org/wiki/File:NubianMeroePyramids30sep2005(2).jpg",
+   "artist": "Wufei07",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "mesha-stele": {
+   "file": "mesha-stele.jpg",
+   "title": "P1120870 Louvre stèle de Mésha AO5066 rwk.JPG",
+   "width": 214,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:P1120870_Louvre_st%C3%A8le_de_M%C3%A9sha_AO5066_rwk.JPG",
+   "artist": "Photo: Mbzt 2012",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "mexican-american-war": {
+   "file": "mexican-american-war.jpg",
+   "title": "Nebel Mexican War 12 Scott in Mexico City (cropped).jpg",
+   "width": 440,
+   "height": 286,
+   "page": "https://commons.wikimedia.org/wiki/File:Nebel_Mexican_War_12_Scott_in_Mexico_City_(cropped).jpg",
+   "artist": "Adolphe Jean-Baptiste Bayot / Carl Nebel",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "mexican-independence": {
+   "file": "mexican-independence.jpg",
+   "title": "Collage Independencia.jpg",
+   "width": 232,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Collage_Independencia.jpg",
+   "artist": "Hpav7",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "mexico-city-temple": {
+   "file": "mexico-city-temple.jpg",
+   "title": "Mexico city temple night.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Mexico_city_temple_night.jpg",
+   "artist": "Uploaded by Ricardo630",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "middle-kingdom-egypt": {
+   "file": "middle-kingdom-egypt.jpg",
+   "title": "Ancient Egyptian old and middle kingdom.svg",
+   "width": 284,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ancient_Egyptian_old_and_middle_kingdom.svg",
+   "artist": "Gert7",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "ming-dynasty": {
+   "file": "ming-dynasty.jpg",
+   "title": "Map of Ming Chinese empire 1415 (cropped 2).jpg",
+   "width": 276,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_Ming_Chinese_empire_1415_(cropped_2).jpg",
+   "artist": "Albert Herrmann Creator:Q1509115 & Georg Westermann",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "missionary-age-2012": {
+   "file": "missionary-age-2012.jpg",
+   "title": "MISSIONNAIRES MORMONS.JPG",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:MISSIONNAIRES_MORMONS.JPG",
+   "artist": "MTPICHON",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "missouri-compromise": {
+   "file": "missouri-compromise.jpg",
+   "title": "Map of the Missouri Compromise, 1820.jpg",
+   "width": 440,
+   "height": 319,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_the_Missouri_Compromise,_1820.jpg",
+   "artist": "McConnell Map Co.",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "moche": {
+   "file": "moche.jpg",
+   "title": "MocheEN.svg",
+   "width": 221,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:MocheEN.svg",
+   "artist": "QQuantum",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "mongol-empire": {
+   "file": "mongol-empire.jpg",
+   "title": "Expansion of the Mongol Empire 1206–1294.gif",
+   "width": 418,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Expansion_of_the_Mongol_Empire_1206%E2%80%931294.gif",
+   "artist": "DannamEmpire",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "monroe-doctrine": {
+   "file": "monroe-doctrine.jpg",
+   "title": "Uncle Sam Straddles the Americas Cartoon.jpg",
+   "width": 232,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Uncle_Sam_Straddles_the_Americas_Cartoon.jpg",
+   "artist": "Louis Dalrymple",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "monte-alban": {
+   "file": "monte-alban.jpg",
+   "title": "Monte Alban West Side Platform.jpg",
+   "width": 433,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Monte_Alban_West_Side_Platform.jpg",
+   "artist": "nsaum75 !Dígame¡ ‎",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "morse-telegraph": {
+   "file": "morse-telegraph.jpg",
+   "title": "Samuel Morse.jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Samuel_Morse.jpg",
+   "artist": "Mathew Benjamin Brady",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "mountain-meadows": {
+   "file": "mountain-meadows.jpg",
+   "title": "Mmm 1999 cairn.jpg",
+   "width": 440,
+   "height": 291,
+   "page": "https://commons.wikimedia.org/wiki/File:Mmm_1999_cairn.jpg",
+   "artist": "Mangoman88",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "mycenae": {
+   "file": "mycenae.jpg",
+   "title": "Path upto the Lion Gate, Mycenae (28693130016).jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Path_upto_the_Lion_Gate,_Mycenae_(28693130016).jpg",
+   "artist": "Andy Hay from UK",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "nabonidus": {
+   "file": "nabonidus.jpg",
+   "title": "Detail, stele of Nabonidus. Nabonidus wears the traditional dress of a Babylonian king, holding objects symbolizing justice and power.jpg",
+   "width": 220,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Detail,_stele_of_Nabonidus._Nabonidus_wears_the_traditional_dress_of_a_Babylonian_king,_holding_objects_symbolizing_justice_and_power.jpg",
+   "artist": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "nalanda": {
+   "file": "nalanda.jpg",
+   "title": "Temple No.- 3, Nalanda Archaeological Site.jpg",
+   "width": 440,
+   "height": 278,
+   "page": "https://commons.wikimedia.org/wiki/File:Temple_No.-_3,_Nalanda_Archaeological_Site.jpg",
+   "artist": "Odantapuribs",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "nara": {
+   "file": "nara.jpg",
+   "title": "Gokishichido.svg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Gokishichido.svg",
+   "artist": "Hyakurakuto",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "narmer": {
+   "file": "narmer.jpg",
+   "title": "Narmer palette (obverse) (cropped).jpg",
+   "width": 305,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Narmer_palette_(obverse)_(cropped).jpg",
+   "artist": "Photo: This image has been extracted from another file",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "nat-turner": {
+   "file": "nat-turner.jpg",
+   "title": "Horrid massacre in Virginia LCCN98510363.tif",
+   "width": 391,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Horrid_massacre_in_Virginia_LCCN98510363.tif",
+   "artist": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "nauvoo-temple": {
+   "file": "nauvoo-temple.jpg",
+   "title": "Front of the Nauvoo, Illinois Temple.jpg",
+   "width": 297,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Front_of_the_Nauvoo,_Illinois_Temple.jpg",
+   "artist": "BouncyDeer8",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "nazca-lines": {
+   "file": "nazca-lines.jpg",
+   "title": "Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 49.JPG",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:L%C3%ADneas_de_Nazca,_Nazca,_Per%C3%BA,_2015-07-29,_DD_49.JPG",
+   "artist": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "nebuchadnezzar-ii": {
+   "file": "nebuchadnezzar-ii.jpg",
+   "title": "Nebuchadnezzar II crop.png",
+   "width": 344,
+   "height": 319,
+   "page": "https://commons.wikimedia.org/wiki/File:Nebuchadnezzar_II_crop.png",
+   "artist": "Uploaded by Ichthyovenator",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "nelson-president": {
+   "file": "nelson-president.jpg",
+   "title": "Russell M Nelson (cropped2).jpg",
+   "width": 248,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Russell_M_Nelson_(cropped2).jpg",
+   "artist": "Jeffrey D. Allred, Deseret News",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "neo-assyrian-empire": {
+   "file": "neo-assyrian-empire.jpg",
+   "title": "Map of Assyria.png",
+   "width": 440,
+   "height": 303,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_Assyria.png",
+   "artist": "Ningyou",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "nero": {
+   "file": "nero.jpg",
+   "title": "Nero Glyptothek Munich 321.jpg",
+   "width": 243,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Nero_Glyptothek_Munich_321.jpg",
+   "artist": "Photo: User:Bibi Saint-Pol , own work, 2007-02-08",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "newgrange": {
+   "file": "newgrange.jpg",
+   "title": "Irelands history.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Irelands_history.jpg",
+   "artist": "Tjp finn",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "newton-principia": {
+   "file": "newton-principia.jpg",
+   "title": "Newton's Principia title page.png",
+   "width": 238,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Newton%27s_Principia_title_page.png",
+   "artist": "The original uploader was Zhaladshar at English Wikisource .",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "ninety-five-theses": {
+   "file": "ninety-five-theses.jpg",
+   "title": "Luther 95 Thesen.png",
+   "width": 231,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Luther_95_Thesen.png",
+   "artist": "Martin Luther",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "nok": {
+   "file": "nok.jpg",
+   "title": "Verbreitung Nok-Kultur-en.png",
+   "width": 404,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Verbreitung_Nok-Kultur-en.png",
+   "artist": "NordNordWest",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "norman-conquest": {
+   "file": "norman-conquest.jpg",
+   "title": "Norman-conquest-1066.svg",
+   "width": 364,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Norman-conquest-1066.svg",
+   "artist": "Amitchell125",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "nullification-crisis": {
+   "file": "nullification-crisis.jpg",
+   "title": "Democracy-1832-1864-Jackson.jpg",
+   "width": 237,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Democracy-1832-1864-Jackson.jpg",
+   "artist": "Pendleton's Lithography",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "nz-womens-suffrage": {
+   "file": "nz-womens-suffrage.jpg",
+   "title": "Tribute to the Suffragettes, Christchurch, NZ - cropped.jpg",
+   "width": 270,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Tribute_to_the_Suffragettes,_Christchurch,_NZ_-_cropped.jpg",
+   "artist": "Robert Cutts",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "nzinga": {
+   "file": "nzinga.jpg",
+   "title": "Ann Zingha.jpg",
+   "width": 248,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ann_Zingha.jpg",
+   "artist": "Achille Devéria",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "oaks-president": {
+   "file": "oaks-president.jpg",
+   "title": "Dallin Harris Oaks (cropped3x4).jpg",
+   "width": 239,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Dallin_Harris_Oaks_(cropped3x4).jpg",
+   "artist": "Scott G. Winterton for Deseret News",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "olmec-san-lorenzo": {
+   "file": "olmec-san-lorenzo.jpg",
+   "title": "CabezaColosal1 MuseoXalapa v1.1.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:CabezaColosal1_MuseoXalapa_v1.1.jpg",
+   "artist": "Uploaded by Madman2001",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "olympic-games": {
+   "file": "olympic-games.jpg",
+   "title": "GR-olympia-palaestra.jpg",
+   "width": 440,
+   "height": 292,
+   "page": "https://commons.wikimedia.org/wiki/File:GR-olympia-palaestra.jpg",
+   "artist": "Bgabel",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "oregon-trail": {
+   "file": "oregon-trail.jpg",
+   "title": "Wpdms nasa topo oregon trail.jpg",
+   "width": 440,
+   "height": 273,
+   "page": "https://commons.wikimedia.org/wiki/File:Wpdms_nasa_topo_oregon_trail.jpg",
+   "artist": "Uploaded by Mattes",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "origin-of-species": {
+   "file": "origin-of-species.jpg",
+   "title": "Origin of Species title page.jpg",
+   "width": 205,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Origin_of_Species_title_page.jpg",
+   "artist": "John Murray, Publisher",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "ottoman-empire": {
+   "file": "ottoman-empire.jpg",
+   "title": "Flag of the Ottoman Empire (1844–1922).svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Ottoman_Empire_(1844%E2%80%931922).svg",
+   "artist": "User:Orwellianist",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "ottoman-sultanate-abolished": {
+   "file": "ottoman-sultanate-abolished.jpg",
+   "title": "Sultanvahideddin.jpg",
+   "width": 440,
+   "height": 287,
+   "page": "https://commons.wikimedia.org/wiki/File:Sultanvahideddin.jpg",
+   "artist": "Photo: http://mideastimage.com/viewimages/viewimage.php?id=26",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "otzi": {
+   "file": "otzi.jpg",
+   "title": "Otzi-Quinson.jpg",
+   "width": 440,
+   "height": 314,
+   "page": "https://commons.wikimedia.org/wiki/File:Otzi-Quinson.jpg",
+   "artist": "120",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "pakal": {
+   "file": "pakal.jpg",
+   "title": "Palenque Collage.jpg",
+   "width": 166,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Palenque_Collage.jpg",
+   "artist": "Ricraider",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "panama-canal": {
+   "file": "panama-canal.jpg",
+   "title": "Panama Canal Map EN.svg",
+   "width": 319,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Panama_Canal_Map_EN.svg",
+   "artist": "Thoroe",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "panic-of-1837": {
+   "file": "panic-of-1837.jpg",
+   "title": "Panic1837.jpg",
+   "width": 440,
+   "height": 309,
+   "page": "https://commons.wikimedia.org/wiki/File:Panic1837.jpg",
+   "artist": "Henry Dacre (1820-?)",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "panipat-1526": {
+   "file": "panipat-1526.jpg",
+   "title": "The battle of Panipat and the death of Sultan Ibrāhīm, the last of the Lōdī Sultans of Delhi.jpg",
+   "width": 207,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:The_battle_of_Panipat_and_the_death_of_Sultan_Ibr%C4%81h%C4%ABm,_the_last_of_the_L%C5%8Dd%C4%AB_Sultans_of_Delhi.jpg",
+   "artist": "Ẓahīr ud-Dīn Muḥammad Bābur (1483-1530) It contains 30 mostly full-page miniatures in fine Mughal style by at least two different artists.",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "paracas": {
+   "file": "paracas.jpg",
+   "title": "ParacasMap.svg",
+   "width": 221,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:ParacasMap.svg",
+   "artist": "QQuantum",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "parthenon": {
+   "file": "parthenon.jpg",
+   "title": "The Parthenon in Athens.jpg",
+   "width": 440,
+   "height": 309,
+   "page": "https://commons.wikimedia.org/wiki/File:The_Parthenon_in_Athens.jpg",
+   "artist": "Steve Swayne",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "parthian-empire": {
+   "file": "parthian-empire.jpg",
+   "title": "Map of the Parthian Empire under Mithridates II.svg",
+   "width": 440,
+   "height": 246,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_the_Parthian_Empire_under_Mithridates_II.svg",
+   "artist": "Original file by Ro4444, edited by me",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "partition-of-india": {
+   "file": "partition-of-india.jpg",
+   "title": "Brit IndianEmpireReligions3.jpg",
+   "width": 408,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Brit_IndianEmpireReligions3.jpg",
+   "artist": "John George Bartholomew",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "paso-de-la-amada": {
+   "file": "paso-de-la-amada.jpg",
+   "title": "SE Mesoamerican Formative Period sites.svg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:SE_Mesoamerican_Formative_Period_sites.svg",
+   "artist": "Uploaded by Madman2001",
+   "license": "CC BY 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "peace-of-westphalia": {
+   "file": "peace-of-westphalia.jpg",
+   "title": "Münster, Historisches Rathaus -- 2014 -- 6855.jpg",
+   "width": 206,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_Historisches_Rathaus_--_2014_--_6855.jpg",
+   "artist": "Dietmar Rabich",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "pearl-canonized": {
+   "file": "pearl-canonized.jpg",
+   "title": "Latter-day Saint Scripture Quadruple Combination.jpg",
+   "width": 184,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Latter-day_Saint_Scripture_Quadruple_Combination.jpg",
+   "artist": "Uploaded by Ricardo630",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "pearl-of-great-price-1851": {
+   "file": "pearl-of-great-price-1851.jpg",
+   "title": "Abraham Facsimile 1 1851.png",
+   "width": 351,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Abraham_Facsimile_1_1851.png",
+   "artist": "From a work published by Franklin D. Richards in 1851 AD",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "perpetual-education-fund": {
+   "file": "perpetual-education-fund.jpg",
+   "title": "Gordon B. Hinckley, 2007.png",
+   "width": 229,
+   "height": 243,
+   "page": "https://commons.wikimedia.org/wiki/File:Gordon_B._Hinckley,_2007.png",
+   "artist": "Trödel",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "persepolis": {
+   "file": "persepolis.jpg",
+   "title": "2018-09-21 Iran, Persepolis, Tachara (from the southeast).jpg",
+   "width": 440,
+   "height": 291,
+   "page": "https://commons.wikimedia.org/wiki/File:2018-09-21_Iran,_Persepolis,_Tachara_(from_the_southeast).jpg",
+   "artist": "Laurens R. Krol",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "philistine-pentapolis": {
+   "file": "philistine-pentapolis.jpg",
+   "title": "Sea people02 upscayl 1x remacri-4x.png",
+   "width": 262,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Sea_people02_upscayl_1x_remacri-4x.png",
+   "artist": "Ant888nsmb2",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "philo-embassy": {
+   "file": "philo-embassy.jpg",
+   "title": "PhiloThevet.jpg",
+   "width": 272,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:PhiloThevet.jpg",
+   "artist": "André Thévet",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "phoenician-alphabet": {
+   "file": "phoenician-alphabet.jpg",
+   "title": "Ahiram Sarcophagus 1.JPG",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ahiram_Sarcophagus_1.JPG",
+   "artist": "O.Mustafin",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "pioneers-arrive": {
+   "file": "pioneers-arrive.jpg",
+   "title": "Adrien-Emmanuel-Marie-A-caravan-of-Mormon-neophytes-en-route-1874.jpg",
+   "width": 440,
+   "height": 316,
+   "page": "https://commons.wikimedia.org/wiki/File:Adrien-Emmanuel-Marie-A-caravan-of-Mormon-neophytes-en-route-1874.jpg",
+   "artist": "Adrien Marie",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "plassey": {
+   "file": "plassey.jpg",
+   "title": "Lord Clive meeting with Mir Jafar after the Battle of Plassey.jpg",
+   "width": 423,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Lord_Clive_meeting_with_Mir_Jafar_after_the_Battle_of_Plassey.jpg",
+   "artist": "Francis Hayman",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "plural-marriage-1852": {
+   "file": "plural-marriage-1852.jpg",
+   "title": "OrsonPratt.jpg",
+   "width": 196,
+   "height": 300,
+   "page": "https://commons.wikimedia.org/wiki/File:OrsonPratt.jpg",
+   "artist": "Photo: Deseret News Archives",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "plymouth-colony": {
+   "file": "plymouth-colony.jpg",
+   "title": "Plymouth Colony map.svg",
+   "width": 412,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Plymouth_Colony_map.svg",
+   "artist": "Hoodinski",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "pompey-takes-jerusalem": {
+   "file": "pompey-takes-jerusalem.jpg",
+   "title": "Pompée dans le Temple de Jérusalem.jpg",
+   "width": 282,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Pomp%C3%A9e_dans_le_Temple_de_J%C3%A9rusalem.jpg",
+   "artist": "Jean Fouquet",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "pontius-pilate": {
+   "file": "pontius-pilate.jpg",
+   "title": "Ecce homo by Antonio Ciseri (1).jpg",
+   "width": 430,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ecce_homo_by_Antonio_Ciseri_(1).jpg",
+   "artist": "Antonio Ciseri",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "porcius-festus": {
+   "file": "porcius-festus.jpg",
+   "title": "Coin of Porcius Festus.jpg",
+   "width": 389,
+   "height": 206,
+   "page": "https://commons.wikimedia.org/wiki/File:Coin_of_Porcius_Festus.jpg",
+   "artist": "Original uploader was Atzmonit at Hebrew Wikipedia . The pictures of coins are Itamar . Later version(s) were uploaded by Alorkezas at en.wikipedia",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "potosi": {
+   "file": "potosi.jpg",
+   "title": "Vista de la Villa Imperial de Potosí.jpg",
+   "width": 440,
+   "height": 247,
+   "page": "https://commons.wikimedia.org/wiki/File:Vista_de_la_Villa_Imperial_de_Potos%C3%AD.jpg",
+   "artist": "Parallelepiped09",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "poverty-point": {
+   "file": "poverty-point.jpg",
+   "title": "Louisiana - Poverty Point - Karte (English version).png",
+   "width": 226,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Louisiana_-_Poverty_Point_-_Karte_(English_version).png",
+   "artist": "Maximilian Dörrbecker ( Chumwa )",
+   "license": "CC BY-SA 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "prc-1949": {
+   "file": "prc-1949.jpg",
+   "title": "Mao Proclaiming New China.JPG",
+   "width": 440,
+   "height": 323,
+   "page": "https://commons.wikimedia.org/wiki/File:Mao_Proclaiming_New_China.JPG",
+   "artist": "Orihara1",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "primary": {
+   "file": "primary.jpg",
+   "title": "Rock Chapel Farmington Utah 001.jpg",
+   "width": 440,
+   "height": 239,
+   "page": "https://commons.wikimedia.org/wiki/File:Rock_Chapel_Farmington_Utah_001.jpg",
+   "artist": "Ben P L",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "psamtik-i": {
+   "file": "psamtik-i.jpg",
+   "title": "Bust from Statue of a King MET EGX.358.jpeg",
+   "width": 228,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Bust_from_Statue_of_a_King_MET_EGX.358.jpeg",
+   "artist": "Photo: This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "ptolemaic-kingdom": {
+   "file": "ptolemaic-kingdom.jpg",
+   "title": "Ptolemaic Kingdom III-II century BC - en.svg",
+   "width": 430,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ptolemaic_Kingdom_III-II_century_BC_-_en.svg",
+   "artist": "Ptolemaic Kingdom III-II century BC - ru.svg : Kaidor ( talk · contribs ) derivative work: rowanwindwhistler ( talk ) derivative work: Amphipolis",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "pyramid-of-djoser": {
+   "file": "pyramid-of-djoser.jpg",
+   "title": "Sakkara 01.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Sakkara_01.jpg",
+   "artist": "Olaf Tausch",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "pyramid-of-the-sun": {
+   "file": "pyramid-of-the-sun.jpg",
+   "title": "2020-02-11 Teotihuacan la Avenida de los Muertos y la Pirámide del Sol.jpg",
+   "width": 440,
+   "height": 247,
+   "page": "https://commons.wikimedia.org/wiki/File:2020-02-11_Teotihuacan_la_Avenida_de_los_Muertos_y_la_Pir%C3%A1mide_del_Sol.jpg",
+   "artist": "Burkhard Mücke",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "qin-unification": {
+   "file": "qin-unification.jpg",
+   "title": "Qin dynasty territory.svg",
+   "width": 275,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Qin_dynasty_territory.svg",
+   "artist": "Ian Remsen",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "qing-beijing": {
+   "file": "qing-beijing.jpg",
+   "title": "Flag of China (1889–1912).svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_China_(1889%E2%80%931912).svg",
+   "artist": "Original: zh:清朝政府 Vector: Sodacan",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "queen-victoria": {
+   "file": "queen-victoria.jpg",
+   "title": "Queen Victoria by Bassano.jpg",
+   "width": 234,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Queen_Victoria_by_Bassano.jpg",
+   "artist": "Alexander Bassano",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "ramesses-ii": {
+   "file": "ramesses-ii.jpg",
+   "title": "Ramses II British Museum.jpg",
+   "width": 220,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ramses_II_British_Museum.jpg",
+   "artist": "Pbuergler",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "rapa-nui-settled": {
+   "file": "rapa-nui-settled.jpg",
+   "title": "Easter Island 5.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:Easter_Island_5.jpg",
+   "artist": "kallerna",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "restoration-movement": {
+   "file": "restoration-movement.jpg",
+   "title": "Pioneers in the great religious reformation of the nineteenth century, eng. by J.C. Buttre.tif",
+   "width": 258,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Pioneers_in_the_great_religious_reformation_of_the_nineteenth_century,_eng._by_J.C._Buttre.tif",
+   "artist": "Engraving by J.C. Buttre; design by J.D.C. McFarland",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "revolutions-of-1848": {
+   "file": "revolutions-of-1848.jpg",
+   "title": "Horace Vernet-Barricade rue Soufflot.jpg",
+   "width": 421,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Horace_Vernet-Barricade_rue_Soufflot.jpg",
+   "artist": "Horace Vernet",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "rigveda": {
+   "file": "rigveda.jpg",
+   "title": "Rigveda MS2097.jpg",
+   "width": 344,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Rigveda_MS2097.jpg",
+   "artist": "Photo: http://www.nb.no/baser/schoyen/5/5.20/ms2097.jpg [ dead link ]",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "rome-temple": {
+   "file": "rome-temple.jpg",
+   "title": "RomeTempleatSunset.jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:RomeTempleatSunset.jpg",
+   "artist": "Mbattista22",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "round-city-baghdad": {
+   "file": "round-city-baghdad.jpg",
+   "title": "Baghdad 150 to 300 AH.png",
+   "width": 412,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Baghdad_150_to_300_AH.png",
+   "artist": "William Muir",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "russian-revolution": {
+   "file": "russian-revolution.jpg",
+   "title": "Митинг на Невском проспекте (1917).jpg",
+   "width": 440,
+   "height": 283,
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B8%D1%82%D0%B8%D0%BD%D0%B3_%D0%BD%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B5_(1917).jpg",
+   "artist": "Photo: Museum of Political History of Russia",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "rwandan-genocide": {
+   "file": "rwandan-genocide.jpg",
+   "title": "Nyamata Memorial Site 13.jpg",
+   "width": 440,
+   "height": 292,
+   "page": "https://commons.wikimedia.org/wiki/File:Nyamata_Memorial_Site_13.jpg",
+   "artist": "Fanny Schertzer",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "sack-of-baghdad": {
+   "file": "sack-of-baghdad.jpg",
+   "title": "Bagdad1258.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg",
+   "artist": "Sayf al-vâhidî et al.",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "safavid-iran": {
+   "file": "safavid-iran.jpg",
+   "title": "Safavid Flag.svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Safavid_Flag.svg",
+   "artist": "Safavid_Flag.png : Orange Tuesday ( talk ) The original uploader was Orange Tuesday at English Wikipedia . derivative work: Himasaram ( talk )",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "saint-petersburg": {
+   "file": "saint-petersburg.jpg",
+   "title": "Spb 06-2017 img20 StMichael Castle (cropped).jpg",
+   "width": 440,
+   "height": 228,
+   "page": "https://commons.wikimedia.org/wiki/File:Spb_06-2017_img20_StMichael_Castle_(cropped).jpg",
+   "artist": "A.Savin",
+   "license": "FAL",
+   "licenseUrl": "http://artlibre.org/licence/lal/en"
+  },
+  "saladin-jerusalem": {
+   "file": "saladin-jerusalem.jpg",
+   "title": "ChristiansBeforeSaladin.jpg",
+   "width": 227,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:ChristiansBeforeSaladin.jpg",
+   "artist": "Alphonse de Neuville",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "salt-lake-temple": {
+   "file": "salt-lake-temple.jpg",
+   "title": "Salt Lake Temple, Utah - Sept 2004.jpg",
+   "width": 293,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Salt_Lake_Temple,_Utah_-_Sept_2004.jpg",
+   "artist": "Diliff",
+   "license": "CC BY 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "san-bartolo-murals": {
+   "file": "san-bartolo-murals.jpg",
+   "title": "SBmural.jpg",
+   "width": 223,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:SBmural.jpg",
+   "artist": "No machine-readable author provided. Authenticmaya~commonswiki assumed (based on copyright claims).",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "sannai-maruyama": {
+   "file": "sannai-maruyama.jpg",
+   "title": "140913 Sannai-Maruyama site Aomori Japan01bs6bs6.jpg",
+   "width": 440,
+   "height": 293,
+   "page": "https://commons.wikimedia.org/wiki/File:140913_Sannai-Maruyama_site_Aomori_Japan01bs6bs6.jpg",
+   "artist": "663highland",
+   "license": "CC BY 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "sao-paulo-temple": {
+   "file": "sao-paulo-temple.jpg",
+   "title": "Templo de sao paulo.jpg",
+   "width": 220,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Templo_de_sao_paulo.jpg",
+   "artist": "Ricardo630",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "sargon-ii": {
+   "file": "sargon-ii.jpg",
+   "title": "Sargon II, Iraq Museum in Baghdad.jpg",
+   "width": 226,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Sargon_II,_Iraq_Museum_in_Baghdad.jpg",
+   "artist": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "sasanian-empire": {
+   "file": "sasanian-empire.jpg",
+   "title": "The Sasanian Empire at its apex under Khosrow II.svg",
+   "width": 440,
+   "height": 259,
+   "page": "https://commons.wikimedia.org/wiki/File:The_Sasanian_Empire_at_its_apex_under_Khosrow_II.svg",
+   "artist": "Original file by Ro4444, edited by me",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "scythians": {
+   "file": "scythians.jpg",
+   "title": "Scythian Kingdom in West Asia.jpg",
+   "width": 440,
+   "height": 268,
+   "page": "https://commons.wikimedia.org/wiki/File:Scythian_Kingdom_in_West_Asia.jpg",
+   "artist": "Antiquistik",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "sea-peoples": {
+   "file": "sea-peoples.jpg",
+   "title": "Medinet Habu Ramses III. Tempel Nordostwand Abzeichnung 01.jpg",
+   "width": 440,
+   "height": 218,
+   "page": "https://commons.wikimedia.org/wiki/File:Medinet_Habu_Ramses_III._Tempel_Nordostwand_Abzeichnung_01.jpg",
+   "artist": "Photo: Gray, Dorothea (1974) \"chapter G\" in (in German) Seewesen , Archaeologia Homerica, I, Göttingen , pp. 166−167",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "second-great-awakening": {
+   "file": "second-great-awakening.jpg",
+   "title": "Camp meeting of the Methodists in N. America J. Milbert del M. Dubourg sculp (cropped).jpg",
+   "width": 440,
+   "height": 296,
+   "page": "https://commons.wikimedia.org/wiki/File:Camp_meeting_of_the_Methodists_in_N._America_J._Milbert_del_M._Dubourg_sculp_(cropped).jpg",
+   "artist": "Dubourg, M., engraver Milbert, Jacques Gérard, 1766-1840 , artist",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "sekigahara": {
+   "file": "sekigahara.jpg",
+   "title": "Sekigaharascreen.jpg",
+   "width": 440,
+   "height": 207,
+   "page": "https://commons.wikimedia.org/wiki/File:Sekigaharascreen.jpg",
+   "artist": "User LordAmeth on en.wikipedia Collection of The Town of Sekigahara Archive of History and Cultural Anthropology",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "seleucid-empire": {
+   "file": "seleucid-empire.jpg",
+   "title": "201209071746a Berlin Pergamonmuseum, Tetradrachme Seleukos' I, Silber, Pergamon, 281-280 v.u.Z.jpg",
+   "width": 440,
+   "height": 216,
+   "page": "https://commons.wikimedia.org/wiki/File:201209071746a_Berlin_Pergamonmuseum,_Tetradrachme_Seleukos%27_I,_Silber,_Pergamon,_281-280_v.u.Z.jpg",
+   "artist": "Hartmann Linge",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "seneca-falls": {
+   "file": "seneca-falls.jpg",
+   "title": "Woman's Rights Convention.jpg",
+   "width": 255,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Woman%27s_Rights_Convention.jpg",
+   "artist": "https://pbs.twimg.com/media/CKXzBSKWwAEzQT8.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "sennacherib-annals": {
+   "file": "sennacherib-annals.jpg",
+   "title": "Taylor Prism-3.jpg",
+   "width": 400,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Taylor_Prism-3.jpg",
+   "artist": "This image was produced by me, David Castor ( user:dcastor ). The pictures I submit to the Wikipedia Project are released to the public domain. This gives you the right to use them in any way you like, without any kind of notification. This said, I would still appreciate to be mentioned as the originator whenever you think it complies well with your use of the picture. A message to me about how it has been used would also be welcome. You are obviously not required to respond to these wishes of mine, just in a friendly manner encouraged to. (All my photos are placed in Category:Images by David Castor or a subcategory thereof.)",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "september-11": {
+   "file": "september-11.jpg",
+   "title": "WTC smoking on 9-11.jpeg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:WTC_smoking_on_9-11.jpeg",
+   "artist": "Flickr user Michael Foran",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "septuagint": {
+   "file": "septuagint.jpg",
+   "title": "Codex Vaticanus (1 Esdras 1-55 to 2-5) (The S.S. Teacher's Edition-The Holy Bible).jpg",
+   "width": 188,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Codex_Vaticanus_(1_Esdras_1-55_to_2-5)_(The_S.S._Teacher%27s_Edition-The_Holy_Bible).jpg",
+   "artist": "Photo: Codex Vaticanus (Gregory-Aland no. B or 03)",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "shaka-zulu": {
+   "file": "shaka-zulu.jpg",
+   "title": "KingShaka.jpg",
+   "width": 244,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:KingShaka.jpg",
+   "artist": "James King",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "shang-dynasty": {
+   "file": "shang-dynasty.jpg",
+   "title": "Shang dynasty.svg",
+   "width": 383,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Shang_dynasty.svg",
+   "artist": "Lamassu Design Gurdjieff ( talk )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "shoshenq-campaign": {
+   "file": "shoshenq-campaign.jpg",
+   "title": "Shoshenq I by Rosellini.jpg",
+   "width": 262,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Shoshenq_I_by_Rosellini.jpg",
+   "artist": "Ippolito Rosellini (1800-1843)",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "siege-of-jerusalem-70": {
+   "file": "siege-of-jerusalem-70.jpg",
+   "title": "(Venice) La distruzione del tempio di Gerusalemme -Francesco Hayez - gallerie Accademia Venice.jpg",
+   "width": 440,
+   "height": 316,
+   "page": "https://commons.wikimedia.org/wiki/File:(Venice)_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg",
+   "artist": "Didier Descouens",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "siege-of-masada": {
+   "file": "siege-of-masada.jpg",
+   "title": "Israel-2013-Aerial 21-Masada.jpg",
+   "width": 248,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Israel-2013-Aerial_21-Masada.jpg",
+   "artist": "Godot13",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "siege-of-tyre-332": {
+   "file": "siege-of-tyre-332.jpg",
+   "title": "Siege tryre.gif",
+   "width": 433,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Siege_tryre.gif",
+   "artist": "Frank Martini. Cartographer, Department of History, United States Military Academy",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "silk-road": {
+   "file": "silk-road.jpg",
+   "title": "ZhangQianTravels.jpg",
+   "width": 440,
+   "height": 320,
+   "page": "https://commons.wikimedia.org/wiki/File:ZhangQianTravels.jpg",
+   "artist": "PHG",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "silla-unification": {
+   "file": "silla-unification.jpg",
+   "title": "6th century Silla.png",
+   "width": 211,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:6th_century_Silla.png",
+   "artist": "Asieon",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "siloam-inscription": {
+   "file": "siloam-inscription.jpg",
+   "title": "Siloam Inscription 2.jpg",
+   "width": 440,
+   "height": 211,
+   "page": "https://commons.wikimedia.org/wiki/File:Siloam_Inscription_2.jpg",
+   "artist": "Wikikati",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "sintashta": {
+   "file": "sintashta.jpg",
+   "title": "Sintashta culture.jpg",
+   "width": 387,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Sintashta_culture.jpg",
+   "artist": "Krakkos",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "siyaj-kak": {
+   "file": "siyaj-kak.jpg",
+   "title": "Tikal Stela 31.jpg",
+   "width": 220,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Tikal_Stela_31.jpg",
+   "artist": "Greg Willis",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "slave-trade-act-1807": {
+   "file": "slave-trade-act-1807.jpg",
+   "title": "Coat of Arms of the United Kingdom (1801-1816).svg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_the_United_Kingdom_(1801-1816).svg",
+   "artist": "Sodacan",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "slavery-abolition-act": {
+   "file": "slavery-abolition-act.jpg",
+   "title": "Coat of Arms of the United Kingdom (1816-1837).svg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_the_United_Kingdom_(1816-1837).svg",
+   "artist": "Sodacan",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "sokoto-caliphate": {
+   "file": "sokoto-caliphate.jpg",
+   "title": "Flag of the Sokoto Caliphate.svg",
+   "width": 440,
+   "height": 294,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Sokoto_Caliphate.svg",
+   "artist": "Orange Tuesday ( talk )",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "songhai": {
+   "file": "songhai.jpg",
+   "title": "Map of the Songhay Empire.png",
+   "width": 440,
+   "height": 310,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_the_Songhay_Empire.png",
+   "artist": "HetmanTheResearcher",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "south-africa-1994": {
+   "file": "south-africa-1994.jpg",
+   "title": "Nelson Mandela 1994.jpg",
+   "width": 255,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg",
+   "artist": "Kingkongphoto & www.celebrity-photos.com from Laurel",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "soviet-dissolution": {
+   "file": "soviet-dissolution.jpg",
+   "title": "Map of USSR with SSR names.svg",
+   "width": 440,
+   "height": 273,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_USSR_with_SSR_names.svg",
+   "artist": "Special:Contributions/Saul ip . Derivative work by Σ ( talk )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "spanish-armada": {
+   "file": "spanish-armada.jpg",
+   "title": "Armadaroute.jpg",
+   "width": 440,
+   "height": 304,
+   "page": "https://commons.wikimedia.org/wiki/File:Armadaroute.jpg",
+   "artist": "Robert Adams, Augustine Ryther",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "sputnik": {
+   "file": "sputnik.jpg",
+   "title": "Первый в мире искусственный спутник Земли.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg",
+   "artist": "Andrey Butko",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "srivijaya": {
+   "file": "srivijaya.jpg",
+   "title": "Srivijaya Empire.svg",
+   "width": 324,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Srivijaya_Empire.svg",
+   "artist": "Gunawan Kartapranata",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "st-george-temple": {
+   "file": "st-george-temple.jpg",
+   "title": "St. George Utah Temple 2023-10-02.jpg",
+   "width": 264,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:St._George_Utah_Temple_2023-10-02.jpg",
+   "artist": "Schwerdf",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "stonehenge": {
+   "file": "stonehenge.jpg",
+   "title": "Stonehenge2007 07 30.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Stonehenge2007_07_30.jpg",
+   "artist": "garethwiscombe",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "storming-of-the-bastille": {
+   "file": "storming-of-the-bastille.jpg",
+   "title": "Anonymous - Prise de la Bastille.jpg",
+   "width": 419,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Anonymous_-_Prise_de_la_Bastille.jpg",
+   "artist": "Unidentified painter",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "suez-canal": {
+   "file": "suez-canal.jpg",
+   "title": "Iss016e019375.jpg",
+   "width": 218,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Iss016e019375.jpg",
+   "artist": "NASA",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "sui-dynasty": {
+   "file": "sui-dynasty.jpg",
+   "title": "Cheui Dynasty 581 CE.png",
+   "width": 342,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Cheui_Dynasty_581_CE.png",
+   "artist": "Ian Kiu",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "suleiman": {
+   "file": "suleiman.jpg",
+   "title": "EmperorSuleiman.jpg",
+   "width": 282,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:EmperorSuleiman.jpg",
+   "artist": "Circle of Titian",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "sunday-school": {
+   "file": "sunday-school.jpg",
+   "title": "Richard Ballantyne.jpg",
+   "width": 246,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Richard_Ballantyne.jpg",
+   "artist": "Andrew Jenson",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "tabernacle": {
+   "file": "tabernacle.jpg",
+   "title": "S.L. Tabernacle on Temple Square.jpg",
+   "width": 440,
+   "height": 325,
+   "page": "https://commons.wikimedia.org/wiki/File:S.L._Tabernacle_on_Temple_Square.jpg",
+   "artist": "Leon7",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "taharqa": {
+   "file": "taharqa.jpg",
+   "title": "Taharqa, Louvre Museum.jpg",
+   "width": 139,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Taharqa,_Louvre_Museum.jpg",
+   "artist": "Tangopaso",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "taj-mahal": {
+   "file": "taj-mahal.jpg",
+   "title": "Taj Mahal (Edited).jpeg",
+   "width": 440,
+   "height": 290,
+   "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg",
+   "artist": "Yann ; edited by Jim Carter",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "takalik-abaj": {
+   "file": "takalik-abaj.jpg",
+   "title": "ESTRUCTURA 12 MUSEO AL AIRE LIBRE FACHADA OESTE - TAKALIK ABAJ.png",
+   "width": 440,
+   "height": 299,
+   "page": "https://commons.wikimedia.org/wiki/File:ESTRUCTURA_12_MUSEO_AL_AIRE_LIBRE_FACHADA_OESTE_-_TAKALIK_ABAJ.png",
+   "artist": "Gobierno de Guatemala",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "tale-of-genji": {
+   "file": "tale-of-genji.jpg",
+   "title": "Genji emaki 01003 002.jpg",
+   "width": 353,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Genji_emaki_01003_002.jpg",
+   "artist": "Imperial Palace Kyoto",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "tang-dynasty": {
+   "file": "tang-dynasty.jpg",
+   "title": "Tang outline map, 661.svg",
+   "width": 440,
+   "height": 259,
+   "page": "https://commons.wikimedia.org/wiki/File:Tang_outline_map,_661.svg",
+   "artist": "Kanguole",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "tashkent-1865": {
+   "file": "tashkent-1865.jpg",
+   "title": "Набег казаков на поселение туземцев.png",
+   "width": 440,
+   "height": 254,
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D0%B1%D0%B5%D0%B3_%D0%BA%D0%B0%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2_%D0%BD%D0%B0_%D0%BF%D0%BE%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D1%82%D1%83%D0%B7%D0%B5%D0%BC%D1%86%D0%B5%D0%B2.png",
+   "artist": "Nikolay Karazin",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "tasman-1642": {
+   "file": "tasman-1642.jpg",
+   "title": "Abel Tasman Navigateur en Australie (cropped).jpg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Abel_Tasman_Navigateur_en_Australie_(cropped).jpg",
+   "artist": "Photo: State Library of New South Wales",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "tel-dan-stele": {
+   "file": "tel-dan-stele.jpg",
+   "title": "JRSLM 300116 Tel Dan Stele 01.jpg",
+   "width": 341,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:JRSLM_300116_Tel_Dan_Stele_01.jpg",
+   "artist": "Oren Rozen",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "tenochtitlan": {
+   "file": "tenochtitlan.jpg",
+   "title": "Vista completa de Tenochtitlán.jpg",
+   "width": 440,
+   "height": 220,
+   "page": "https://commons.wikimedia.org/wiki/File:Vista_completa_de_Tenochtitl%C3%A1n.jpg",
+   "artist": "thomas kole",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "teotihuacan": {
+   "file": "teotihuacan.jpg",
+   "title": "ZA77 Teotihuacán edo de mex Herberto de la rosa.jpg",
+   "width": 440,
+   "height": 292,
+   "page": "https://commons.wikimedia.org/wiki/File:ZA77_Teotihuac%C3%A1n_edo_de_mex_Herberto_de_la_rosa.jpg",
+   "artist": "Hdlrosa",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "terracotta-army": {
+   "file": "terracotta-army.jpg",
+   "title": "51714-Terracota-Army.jpg",
+   "width": 440,
+   "height": 291,
+   "page": "https://commons.wikimedia.org/wiki/File:51714-Terracota-Army.jpg",
+   "artist": "xiquinhosilva",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "texas-revolution": {
+   "file": "texas-revolution.jpg",
+   "title": "Campaigns of the Texas Revolution.jpg",
+   "width": 262,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Campaigns_of_the_Texas_Revolution.jpg",
+   "artist": "original image drawn by Joseph L. Cain; update by karanacs",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "the-buddha": {
+   "file": "the-buddha.jpg",
+   "title": "Buddha in Sarnath Museum (Dhammajak Mutra).jpg",
+   "width": 258,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg",
+   "artist": "พระมหาเทวประภาส วชิรญาณเมธี (ผู้ถ่าย-ปล่อยสัญญาอนุญาตภาพให้นำไปใช้ได้เพื่อการศึกษาโดยอยู่ภา่ยใต้ cc-by-sa-3.0) ผู้สร้างสรรค์ผลงาน/ส่งข้อมูลเก็บในคลังข้อมูลเสรีวิกิมีเดียคอมมอนส์ - เทวประภาส มากคล้าย",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "thera-eruption": {
+   "file": "thera-eruption.jpg",
+   "title": "Santorini ASTER.jpg",
+   "width": 320,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Santorini_ASTER.jpg",
+   "artist": "NASA",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "thirty-years-war": {
+   "file": "thirty-years-war.jpg",
+   "title": "Carl Friedrich Lessing - The Siege (Defense of a Church Courtyard During the Thirty Years’ War) - Google Art Project.jpg",
+   "width": 440,
+   "height": 290,
+   "page": "https://commons.wikimedia.org/wiki/File:Carl_Friedrich_Lessing_-_The_Siege_(Defense_of_a_Church_Courtyard_During_the_Thirty_Years%E2%80%99_War)_-_Google_Art_Project.jpg",
+   "artist": "Karl Friedrich Lessing",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "tiberius": {
+   "file": "tiberius.jpg",
+   "title": "8095 - Roma - Ara Pacis - Tiberio - Foto Giovanni Dall'Orto - 28-Mar-2008.jpg",
+   "width": 247,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:8095_-_Roma_-_Ara_Pacis_-_Tiberio_-_Foto_Giovanni_Dall%27Orto_-_28-Mar-2008.jpg",
+   "artist": "Giovanni Dall'Orto",
+   "license": "Attribution",
+   "licenseUrl": null
+  },
+  "tiglath-pileser-iii": {
+   "file": "tiglath-pileser-iii.jpg",
+   "title": "Tilglath pileser iii.jpg",
+   "width": 333,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Tilglath_pileser_iii.jpg",
+   "artist": "Photo: See below",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "timur": {
+   "file": "timur.jpg",
+   "title": "Timurid State.png",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Timurid_State.png",
+   "artist": "DigitalNomadWikiKzRu",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "tiwanaku": {
+   "file": "tiwanaku.jpg",
+   "title": "PUERTA DEL SOL TIWANAKU.jpg",
+   "width": 412,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:PUERTA_DEL_SOL_TIWANAKU.jpg",
+   "artist": "CLAUDIOLD",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "tokugawa-shogunate": {
+   "file": "tokugawa-shogunate.jpg",
+   "title": "Map of Japan in Provinces in time of Iyeyasu.jpg",
+   "width": 440,
+   "height": 303,
+   "page": "https://commons.wikimedia.org/wiki/File:Map_of_Japan_in_Provinces_in_time_of_Iyeyasu.jpg",
+   "artist": "Maproom",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "tokyo-temple": {
+   "file": "tokyo-temple.jpg",
+   "title": "Tokyo Temple.jpg",
+   "width": 213,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Tokyo_Temple.jpg",
+   "artist": "Tambe",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "tondibi": {
+   "file": "tondibi.jpg",
+   "title": "SONGHAI empire map.PNG",
+   "width": 440,
+   "height": 275,
+   "page": "https://commons.wikimedia.org/wiki/File:SONGHAI_empire_map.PNG",
+   "artist": "No machine-readable author provided. Roke~commonswiki assumed (based on copyright claims).",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "tonga-settled": {
+   "file": "tonga-settled.jpg",
+   "title": "Tonga group.jpg",
+   "width": 301,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Tonga_group.jpg",
+   "artist": "Admiralty. Naval Intelligence Division.",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "trail-of-tears": {
+   "file": "trail-of-tears.jpg",
+   "title": "TrailofTearsMemorial-3.jpg",
+   "width": 341,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:TrailofTearsMemorial-3.jpg",
+   "artist": "http://en.wikipedia.org/wiki/User:Cculber007",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "trajan": {
+   "file": "trajan.jpg",
+   "title": "Traianus Glyptothek Munich 72.jpg",
+   "width": 253,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Traianus_Glyptothek_Munich_72.jpg",
+   "artist": "Photo: User:Bibi Saint-Pol , own work, 2007-02-08",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "transcontinental-railroad": {
+   "file": "transcontinental-railroad.jpg",
+   "title": "East and West Shaking hands at the laying of last rail Union Pacific Railroad - Restoration.jpg",
+   "width": 434,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg",
+   "artist": "Andrew J. Russell / Adam Cuerden",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "treaty-of-waitangi": {
+   "file": "treaty-of-waitangi.jpg",
+   "title": "Treatyofwaitangi.jpg",
+   "width": 176,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Treatyofwaitangi.jpg",
+   "artist": "William Hobson, James Freeman, and James Busby (English version); Henry Williams and Edward Williams (Māori translation)",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "tres-zapotes-stela-c": {
+   "file": "tres-zapotes-stela-c.jpg",
+   "title": "Olmec Heartland Overview 4.svg",
+   "width": 440,
+   "height": 314,
+   "page": "https://commons.wikimedia.org/wiki/File:Olmec_Heartland_Overview_4.svg",
+   "artist": "Uploaded by Madman2001",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "trial-of-socrates": {
+   "file": "trial-of-socrates.jpg",
+   "title": "Socrates Address by Belgian artist Louis Joseph Lebrun, 1867.jpg",
+   "width": 433,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Socrates_Address_by_Belgian_artist_Louis_Joseph_Lebrun,_1867.jpg",
+   "artist": "Louis Le Brun",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "tutankhamun": {
+   "file": "tutankhamun.jpg",
+   "title": "CairoEgMuseumTaaMaskMostlyPhotographed.jpg",
+   "width": 264,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:CairoEgMuseumTaaMaskMostlyPhotographed.jpg",
+   "artist": "Roland Unger",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "ugarit-destroyed": {
+   "file": "ugarit-destroyed.jpg",
+   "title": "Ugarit Corbel.jpg",
+   "width": 440,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ugarit_Corbel.jpg",
+   "artist": "Disdero ( talk · contribs )",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "united-nations": {
+   "file": "united-nations.jpg",
+   "title": "Uncharter.pdf",
+   "width": 258,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Uncharter.pdf",
+   "artist": "United Nations.",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "university-of-bologna": {
+   "file": "university-of-bologna.jpg",
+   "title": "Seal of the University of Bologna.svg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_the_University_of_Bologna.svg",
+   "artist": "Vectorized by User:Nandhp",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "ur-iii-falls": {
+   "file": "ur-iii-falls.jpg",
+   "title": "Ur III.svg",
+   "width": 431,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Ur_III.svg",
+   "artist": "Middle_East_topographic_map-blank.svg : Sémhur ( talk ) derivative work: Zunkir ( talk )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "uruk-period": {
+   "file": "uruk-period.jpg",
+   "title": "Uruk expansion.svg",
+   "width": 406,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Uruk_expansion.svg",
+   "artist": "Middle_East_topographic_map-blank.svg : Sémhur ( talk ) derivative work: Zunkir",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "us-constitution": {
+   "file": "us-constitution.jpg",
+   "title": "Constitution of the United States - DPLA - 9ca804144bd5965e992ae3528bc3c6a3 (page 1).jpg",
+   "width": 273,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States_-_DPLA_-_9ca804144bd5965e992ae3528bc3c6a3_(page_1).jpg",
+   "artist": "Constitutional Convention",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "utah-statehood": {
+   "file": "utah-statehood.jpg",
+   "title": "Flag of Utah.svg",
+   "width": 440,
+   "height": 264,
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Utah.svg",
+   "artist": "The State of Utah",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "utah-territory": {
+   "file": "utah-territory.jpg",
+   "title": "Utah Territory, vector image - 2011.svg",
+   "width": 440,
+   "height": 252,
+   "page": "https://commons.wikimedia.org/wiki/File:Utah_Territory,_vector_image_-_2011.svg",
+   "artist": "derivative work: Mangoman88 ( talk ) Blank_US_Map.svg : User:Theshibboleth Wpdms utah territory 1851 idx.png : User:Tsujigiri",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "utah-war": {
+   "file": "utah-war.jpg",
+   "title": "Interior of an Officer's Tent - Utah Expedition (Gen. Albert Johnston's Exped.) LCCN99614184.jpg",
+   "width": 440,
+   "height": 327,
+   "page": "https://commons.wikimedia.org/wiki/File:Interior_of_an_Officer%27s_Tent_-_Utah_Expedition_(Gen._Albert_Johnston%27s_Exped.)_LCCN99614184.jpg",
+   "artist": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "valdivia": {
+   "file": "valdivia.jpg",
+   "title": "Mapa De La Cultura Valdivia.jpg",
+   "width": 330,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Mapa_De_La_Cultura_Valdivia.jpg",
+   "artist": "Simón Luzuriaga",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "vesuvius-79": {
+   "file": "vesuvius-79.jpg",
+   "title": "Destruction of Pompeii and Herculaneum.jpg",
+   "width": 440,
+   "height": 274,
+   "page": "https://commons.wikimedia.org/wiki/File:Destruction_of_Pompeii_and_Herculaneum.jpg",
+   "artist": "John Martin",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "vijayanagara": {
+   "file": "vijayanagara.jpg",
+   "title": "Vijayanagara Empire c.1485.png",
+   "width": 392,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Vijayanagara_Empire_c.1485.png",
+   "artist": "Avantiputra7",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "wall-street-crash": {
+   "file": "wall-street-crash.jpg",
+   "title": "Crowd outside nyse.jpg",
+   "width": 231,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg",
+   "artist": "US-gov",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "war-of-1812": {
+   "file": "war-of-1812.jpg",
+   "title": "War of 1812 Montage.jpg",
+   "width": 222,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:War_of_1812_Montage.jpg",
+   "artist": "Clockwise, from top: George Munger, John David Kelly, Anton Otto Fischer, William Emmons, Edward Percy Moran",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "washington-temple": {
+   "file": "washington-temple.jpg",
+   "title": "Washington D.C. Temple At Dusk.jpg",
+   "width": 440,
+   "height": 299,
+   "page": "https://commons.wikimedia.org/wiki/File:Washington_D.C._Temple_At_Dusk.jpg",
+   "artist": "Joe Ravi",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "waterloo": {
+   "file": "waterloo.jpg",
+   "title": "Battle of Waterloo 1815.PNG",
+   "width": 440,
+   "height": 201,
+   "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Waterloo_1815.PNG",
+   "artist": "William Sadler",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "world-war-i": {
+   "file": "world-war-i.jpg",
+   "title": "Bataille de Verdun 1916.jpg",
+   "width": 440,
+   "height": 329,
+   "page": "https://commons.wikimedia.org/wiki/File:Bataille_de_Verdun_1916.jpg",
+   "artist": "Collection DocAnciens/docpix.fr",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "world-war-ii": {
+   "file": "world-war-ii.jpg",
+   "title": "Bundesarchiv Bild 101I-646-5188-17, Flugzeuge Junkers Ju 87.jpg",
+   "width": 440,
+   "height": 300,
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg",
+   "artist": "Richard Opitz",
+   "license": "CC BY-SA 3.0 de",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+  },
+  "world-wide-web": {
+   "file": "world-wide-web.jpg",
+   "title": "Chrome on Linux.png",
+   "width": 440,
+   "height": 238,
+   "page": "https://commons.wikimedia.org/wiki/File:Chrome_on_Linux.png",
+   "artist": "Liamd967",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "xerxes-i": {
+   "file": "xerxes-i.jpg",
+   "title": "National Museum of Iran Darafsh (785).JPG",
+   "width": 219,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Iran_Darafsh_(785).JPG",
+   "artist": "Darafsh",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "xinhai-revolution": {
+   "file": "xinhai-revolution.jpg",
+   "title": "Opstanden, revolutie, SFA022823302.jpg",
+   "width": 439,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Opstanden,_revolutie,_SFA022823302.jpg",
+   "artist": "Photo: https://beeldbank.spaarnestadphoto.com/search.pp?flush=1&multikeyword=SFA022823302&searchtype=0#ctr-thumbnails",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "xiongnu": {
+   "file": "xiongnu.jpg",
+   "title": "Xiongnu chieftain (black backgrouond).jpg",
+   "width": 153,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Xiongnu_chieftain_(black_backgrouond).jpg",
+   "artist": "Davide Mauro",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "xitle-cuicuilco": {
+   "file": "xitle-cuicuilco.jpg",
+   "title": "Western side of the circular pyramid at Cuicuilco. (32961693441).jpg",
+   "width": 440,
+   "height": 254,
+   "page": "https://commons.wikimedia.org/wiki/File:Western_side_of_the_circular_pyramid_at_Cuicuilco._(32961693441).jpg",
+   "artist": "Matthew T. Bradley",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "yayoi": {
+   "file": "yayoi.jpg",
+   "title": "東京国立博物館展示 銅鐸.JPG",
+   "width": 380,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E5%B1%95%E7%A4%BA_%E9%8A%85%E9%90%B8.JPG",
+   "artist": "Saigen Jiro",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "year-of-africa": {
+   "file": "year-of-africa.jpg",
+   "title": "Colonization 1945 Spanish script.png",
+   "width": 440,
+   "height": 203,
+   "page": "https://commons.wikimedia.org/wiki/File:Colonization_1945_Spanish_script.png",
+   "artist": "Penarc",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "year-without-a-summer": {
+   "file": "year-without-a-summer.jpg",
+   "title": "1816 summer.png",
+   "width": 416,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:1816_summer.png",
+   "artist": "Giorgiogp2",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "young-women": {
+   "file": "young-women.jpg",
+   "title": "Maria Young Dougall.jpg",
+   "width": 240,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Maria_Young_Dougall.jpg",
+   "artist": "General Superintendency of Y.L.M.I.A.",
+   "license": "Public domain",
+   "licenseUrl": null
+  },
+  "yuan-dynasty": {
+   "file": "yuan-dynasty.jpg",
+   "title": "Yuan Dynasty revised.png",
+   "width": 314,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:Yuan_Dynasty_revised.png",
+   "artist": "Cattette",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "zheng-he": {
+   "file": "zheng-he.jpg",
+   "title": "2016 Malakka, Stadhuys (09).jpg",
+   "width": 220,
+   "height": 330,
+   "page": "https://commons.wikimedia.org/wiki/File:2016_Malakka,_Stadhuys_(09).jpg",
+   "artist": "Marcin Konsek",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "ziggurat-of-ur": {
+   "file": "ziggurat-of-ur.jpg",
+   "title": "Ziggarat of Ur 001.jpg",
+   "width": 440,
+   "height": 192,
+   "page": "https://commons.wikimedia.org/wiki/File:Ziggarat_of_Ur_001.jpg",
+   "artist": "Tla2006 at English Wikipedia",
+   "license": "Public domain",
+   "licenseUrl": null
+  }
+ }
+}

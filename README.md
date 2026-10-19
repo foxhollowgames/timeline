@@ -67,12 +67,14 @@ The scripture events come from the three Wayfinder repositories. `scripts/source
 npm run import
 npm run build
 npm run verify:sources
+npm run images
 npm run check
 ```
 
 - `npm run import` downloads the pinned files into `scripts/source/`. That folder is not committed.
 - `npm run build` writes `dist/data/events.json`, `dist/data/details/<volume>.json`, and `dist/data/search.json`. It stops when a chapter has no date rule.
 - `npm run verify:sources` confirms each world-history quote is in its live source. Run it after you change a batch.
+- `npm run images` saves one picture for each history event in `dist/assets/history/`. It needs the network. Run it after you add a history event.
 - `npm run check` tests the scripts, the time scale, and the data.
 
 ### World history

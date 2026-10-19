@@ -20,7 +20,9 @@
       "alsoRead": [
         { "ref": "1 Nephi 11:18", "note": "Nephi sees the virgin who will be the mother of the Son of God." },
         { "ref": "Alma 7:10", "note": "Alma says the Son of God will be born of Mary." }
-      ]
+      ],
+      "related": ["herod-the-great"],
+      "relatedNote": "Luke 1:5 sets this in the days of Herod, king of Judea."
     },
     {
       "id": "jesus-is-born",
@@ -31,7 +33,9 @@
       "place": "b:bethlehem",
       "verse": "luke-2:11",
       "summary": "In Matthew, an angel tells Joseph in a dream to marry Mary. Caesar Augustus orders a count of the people, and Joseph and Mary go to Bethlehem. Mary gives birth and lays her son in a manger, a feeding trough. Angels announce the birth to shepherds in the fields. In the temple, old Simeon calls the child a light for the nations. The prophetess Anna gives thanks. At twelve, Jesus stays behind in the temple among the teachers.",
-      "alsoRead": [{ "ref": "3 Nephi 1:13", "note": "The Lord tells Nephi he will come into the world the next day." }]
+      "alsoRead": [{ "ref": "3 Nephi 1:13", "note": "The Lord tells Nephi he will come into the world the next day." }],
+      "related": ["herod-the-great", "augustus", "census-of-quirinius"],
+      "relatedNote": "Luke 2 names the decree of Caesar Augustus and a census under Quirinius."
     },
     {
       "id": "the-wise-men",
@@ -40,7 +44,9 @@
       "chapters": ["matthew-2"],
       "place": "b:bethlehem",
       "verse": "matthew-2:11",
-      "summary": "Wise men from the east come to Jerusalem seeking the newborn king of the Jews. King Herod is troubled. The star leads the wise men to the child, and they worship him with gifts. A dream warns them not to return to Herod. An angel tells Joseph to flee to Egypt with the child and his mother. Herod kills the young boys of Bethlehem. After Herod dies, the family settles in Nazareth."
+      "summary": "Wise men from the east come to Jerusalem seeking the newborn king of the Jews. King Herod is troubled. The star leads the wise men to the child, and they worship him with gifts. A dream warns them not to return to Herod. An angel tells Joseph to flee to Egypt with the child and his mother. Herod kills the young boys of Bethlehem. After Herod dies, the family settles in Nazareth.",
+      "related": ["herod-the-great", "herod-archelaus"],
+      "relatedNote": "Herod the Great seeks the child. Joseph avoids Archelaus and settles in Nazareth."
     },
     {
       "id": "jesus-is-baptized",
@@ -50,7 +56,9 @@
       "place": "b:jordan",
       "verse": "matthew-3:17",
       "summary": "John the Baptist preaches in the wilderness of Judea. He tells people to repent, for the kingdom of heaven is near. Crowds come and are baptized in the Jordan. Luke adds that John tells them to share their coats and food. John says one mightier than he is coming. Jesus comes to be baptized. The Spirit comes down like a dove, and a voice calls him God's beloved Son.",
-      "alsoRead": [{ "ref": "2 Nephi 31:5", "note": "Nephi asks how much more we need baptism, if the Lamb was baptized." }]
+      "alsoRead": [{ "ref": "2 Nephi 31:5", "note": "Nephi asks how much more we need baptism, if the Lamb was baptized." }],
+      "related": ["tiberius", "herod-antipas", "pontius-pilate"],
+      "relatedNote": "Luke 3:1 dates John's preaching to Tiberius's fifteenth year, under Pilate and Herod Antipas."
     },
     {
       "id": "jesus-begins-in-galilee",
@@ -59,7 +67,9 @@
       "chapters": ["matthew-4", "mark-1", "luke-4", "luke-5"],
       "place": "b:capernaum",
       "verse": "matthew-4:19",
-      "summary": "The Spirit leads Jesus into the wilderness, where he fasts forty days. He answers each temptation of the devil from Scripture. In Nazareth he reads from Isaiah and says it is fulfilled that day. His hometown tries to throw him off a cliff. He calls the fishermen Simon, Andrew, James, and John, and they leave their nets. He teaches in Capernaum and heals many. He calls Levi, a tax collector, to follow him."
+      "summary": "The Spirit leads Jesus into the wilderness, where he fasts forty days. He answers each temptation of the devil from Scripture. In Nazareth he reads from Isaiah and says it is fulfilled that day. His hometown tries to throw him off a cliff. He calls the fishermen Simon, Andrew, James, and John, and they leave their nets. He teaches in Capernaum and heals many. He calls Levi, a tax collector, to follow him.",
+      "related": ["herod-antipas"],
+      "relatedNote": "Herod Antipas ruled Galilee throughout Jesus's ministry."
     },
     {
       "id": "sermon-on-the-mount",
@@ -296,7 +306,9 @@
       "chapters": ["mark-12", "luke-20", "matthew-23"],
       "place": "b:jerusalem",
       "verse": "mark-12:43",
-      "summary": "Jesus tells of tenants who kill a vineyard owner's son. He is asked about paying taxes to Caesar and about the resurrection. A scribe asks which commandment is first. Jesus names love of God and love of neighbor. Matthew adds his woes on the scribes and Pharisees, who neglect justice and mercy. He watches people give at the temple treasury. A poor widow gives two small coins, all she has."
+      "summary": "Jesus tells of tenants who kill a vineyard owner's son. He is asked about paying taxes to Caesar and about the resurrection. A scribe asks which commandment is first. Jesus names love of God and love of neighbor. Matthew adds his woes on the scribes and Pharisees, who neglect justice and mercy. He watches people give at the temple treasury. A poor widow gives two small coins, all she has.",
+      "related": ["herods-temple"],
+      "relatedNote": "Jesus teaches in the temple Herod the Great had rebuilt."
     },
     {
       "id": "signs-of-his-coming",
@@ -305,7 +317,9 @@
       "chapters": ["matthew-24", "mark-13", "luke-21"],
       "place": "b:olives",
       "verse": "matthew-24:36",
-      "summary": "Jesus says the temple's stones will all be thrown down. On the Mount of Olives his disciples ask when this will happen. He warns of false christs, wars, famines, and persecution. Jerusalem will be surrounded by armies. The Son of Man will come in the clouds. No one knows the day or the hour. So they must watch and be ready."
+      "summary": "Jesus says the temple's stones will all be thrown down. On the Mount of Olives his disciples ask when this will happen. He warns of false christs, wars, famines, and persecution. Jerusalem will be surrounded by armies. The Son of Man will come in the clouds. No one knows the day or the hour. So they must watch and be ready.",
+      "related": ["siege-of-jerusalem-70", "arch-of-titus", "first-jewish-roman-war"],
+      "relatedNote": "Jesus foretells the temple's fall. Rome destroyed it in 70 CE."
     },
     {
       "id": "last-supper-and-gethsemane",
@@ -318,7 +332,9 @@
       "alsoRead": [
         { "ref": "Mosiah 3:7", "note": "King Benjamin says blood will come from every pore." },
         { "ref": "D&C 19:18", "note": "The Lord describes his suffering in his own words." }
-      ]
+      ],
+      "related": ["caiaphas"],
+      "relatedNote": "Jesus is taken to the high priest Caiaphas."
     },
     {
       "id": "the-crucifixion",
@@ -328,7 +344,9 @@
       "place": "b:jerusalem",
       "verse": "john-19:30",
       "summary": "Pilate says he finds no guilt in Jesus. The crowd asks for Barabbas instead. Pilate hands Jesus over to be crucified. Soldiers mock him with a crown of thorns. He is crucified between two robbers. Luke says he prays for those who crucify him. He says, “It is finished,” and dies. Joseph of Arimathea buries him in a tomb.",
-      "alsoRead": [{ "ref": "3 Nephi 8:5", "note": "In the Americas a great storm arises." }]
+      "alsoRead": [{ "ref": "3 Nephi 8:5", "note": "In the Americas a great storm arises." }],
+      "related": ["pontius-pilate", "caiaphas", "tiberius"],
+      "relatedNote": "Pilate, prefect under Tiberius, condemns Jesus. Caiaphas is high priest."
     },
     {
       "id": "the-resurrection",

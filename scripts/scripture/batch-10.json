@@ -28,7 +28,9 @@
       "title": "Lehi's family leaves Jerusalem",
       "chapters": ["1-nephi-2"],
       "verse": "1-nephi-2:20",
-      "summary": "The Lord tells Lehi in a dream to leave Jerusalem. Lehi takes his family into the wilderness near the Red Sea. They camp in a valley he names Lemuel. Laman and Lemuel, Nephi's older brothers, complain. Nephi prays, and the Lord softens his heart. The Lord promises Nephi a land if he keeps the commandments."
+      "summary": "The Lord tells Lehi in a dream to leave Jerusalem. Lehi takes his family into the wilderness near the Red Sea. They camp in a valley he names Lemuel. Laman and Lemuel, Nephi's older brothers, complain. Nephi prays, and the Lord softens his heart. The Lord promises Nephi a land if he keeps the commandments.",
+      "related": ["nebuchadnezzar-ii", "battle-of-carchemish-605"],
+      "relatedNote": "Lehi leaves as Babylon takes control of Judah."
     },
     {
       "id": "nephi-gets-the-brass-plates",
@@ -123,7 +125,9 @@
       "place": "bom:zarahemla",
       "verse": "omni-1:15",
       "summary": "Five of Jacob's descendants keep the small plates in turn. Amaleki, the last, tells how the Lord warns Mosiah to leave the land of Nephi. Mosiah leads the faithful north and finds the city of Zarahemla. Its people left Jerusalem when Zedekiah was taken to Babylon. Their language has changed, and they have no records. Mosiah becomes king of both peoples. Amaleki gives the plates to King Benjamin.",
-      "alsoRead": [{ "ref": "2 Kings 25:7", "note": "Zedekiah is taken in chains to Babylon." }]
+      "alsoRead": [{ "ref": "2 Kings 25:7", "note": "Zedekiah is taken in chains to Babylon." }],
+      "related": ["babylonian-chronicle-597", "nebuchadnezzar-ii"],
+      "relatedNote": "Omni says Mulek's party left Jerusalem when Zedekiah was taken to Babylon."
     },
     {
       "id": "mormon-joins-the-records",

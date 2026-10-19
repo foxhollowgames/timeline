@@ -1,7 +1,7 @@
 {
  "stats": {
   "chapters": 1568,
-  "events": 1846,
+  "events": 1977,
   "noPlace": 488,
   "skipped": [
    {
@@ -81,12 +81,12 @@
   "chaptersCovered": 1018,
   "chaptersInNoEvent": [],
   "historyRegions": {
-   "Africa": 37,
-   "Americas": 42,
+   "Africa": 52,
+   "Americas": 81,
    "Central Asia": 7,
    "East Asia": 39,
-   "Europe": 55,
-   "Middle East": 31,
+   "Europe": 73,
+   "Middle East": 90,
    "Oceania": 12,
    "South Asia": 19,
    "Southeast Asia": 12
