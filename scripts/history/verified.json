@@ -44,8 +44,8 @@
   {
    "id": "code-of-hammurabi",
    "article": "Code of Hammurabi",
-   "revision": 1379098230,
-   "checked": "2026-10-07T23:27:42Z",
+   "revision": 1381019397,
+   "checked": "2026-10-19T13:54:51Z",
    "ok": true,
    "missing": []
   },
@@ -594,6 +594,1134 @@
    "missing": []
   },
   {
+   "id": "mark-in-alexandria",
+   "article": "Mark the Evangelist",
+   "revision": 1376363094,
+   "checked": "2026-09-23T18:31:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "amanitore",
+   "article": "Amanitore",
+   "revision": 1350028577,
+   "checked": "2026-04-19T23:39:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "periplus-erythraean-sea",
+   "article": "Periplus of the Erythraean Sea",
+   "revision": 1377379361,
+   "checked": "2026-09-29T03:41:05Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kingdom-of-aksum",
+   "article": "Kingdom of Aksum",
+   "revision": 1374239548,
+   "checked": "2026-09-10T19:05:17Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "aksum-christianity",
+   "article": "Kingdom of Aksum",
+   "revision": 1374239548,
+   "checked": "2026-09-10T19:05:17Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hero-of-alexandria",
+   "article": "Hero of Alexandria",
+   "revision": 1380988093,
+   "checked": "2026-10-19T07:46:34Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "ptolemy-almagest",
+   "article": "Ptolemy",
+   "revision": 1380852947,
+   "checked": "2026-10-18T10:15:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "garamantes",
+   "article": "Garamantes",
+   "revision": 1378518920,
+   "checked": "2026-10-04T21:34:35Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "septimius-severus",
+   "article": "Septimius Severus",
+   "revision": 1380421897,
+   "checked": "2026-10-15T16:50:32Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "perpetua-and-felicity",
+   "article": "Perpetua and Felicity",
+   "revision": 1376670223,
+   "checked": "2026-09-25T15:39:10Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "anthony-the-great",
+   "article": "Anthony the Great",
+   "revision": 1380789772,
+   "checked": "2026-10-17T22:22:00Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "aksumite-coins",
+   "article": "Aksumite currency",
+   "revision": 1380042914,
+   "checked": "2026-10-13T12:36:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "pachomius",
+   "article": "Pachomius the Great",
+   "revision": 1369642881,
+   "checked": "2026-08-16T06:15:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "augustine-of-hippo",
+   "article": "Augustine of Hippo",
+   "revision": 1378111409,
+   "checked": "2026-10-03T01:05:43Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "nag-hammadi",
+   "article": "Nag Hammadi library",
+   "revision": 1371868303,
+   "checked": "2026-08-29T00:34:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "serapeum-closed",
+   "article": "Serapeum of Alexandria",
+   "revision": 1379005569,
+   "checked": "2026-10-07T09:29:52Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hypatia",
+   "article": "Hypatia",
+   "revision": 1376121327,
+   "checked": "2026-09-22T04:56:29Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "vandals-take-carthage",
+   "article": "Vandal Kingdom",
+   "revision": 1380921413,
+   "checked": "2026-10-18T20:09:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "lydenburg-heads",
+   "article": "Lydenburg heads",
+   "revision": 1355807444,
+   "checked": "2026-05-24T01:16:02Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "madagascar-settled",
+   "article": "Madagascar",
+   "revision": 1380304631,
+   "checked": "2026-10-14T23:56:09Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "vandalic-war",
+   "article": "Vandalic War",
+   "revision": 1374993432,
+   "checked": "2026-09-15T06:38:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "nubia-christianity",
+   "article": "Nobatia",
+   "revision": 1374818235,
+   "checked": "2026-09-14T06:50:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kairouan-founded",
+   "article": "Kairouan",
+   "revision": 1376268905,
+   "checked": "2026-09-23T03:21:21Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kanem-empire",
+   "article": "Kanem–Bornu Empire",
+   "revision": 1376385503,
+   "checked": "2026-09-23T21:39:12Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "cairo-founded",
+   "article": "Cairo",
+   "revision": 1379331139,
+   "checked": "2026-10-09T08:21:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "wang-mang",
+   "article": "Wang Mang",
+   "revision": 1376900077,
+   "checked": "2026-09-26T21:42:57Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "eastern-han",
+   "article": "Emperor Guangwu of Han",
+   "revision": 1379860247,
+   "checked": "2026-10-12T08:35:37Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "king-of-na-gold-seal",
+   "article": "King of Na gold seal",
+   "revision": 1379379447,
+   "checked": "2026-10-09T16:53:50Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "white-horse-temple",
+   "article": "White Horse Temple",
+   "revision": 1376672364,
+   "checked": "2026-09-25T15:54:21Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "ban-chao",
+   "article": "Ban Chao",
+   "revision": 1380958715,
+   "checked": "2026-10-19T01:56:27Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "zhang-heng-seismoscope",
+   "article": "Zhang Heng",
+   "revision": 1373209632,
+   "checked": "2026-09-04T16:06:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "yellow-turban-rebellion",
+   "article": "Yellow Turban Rebellion",
+   "revision": 1379207817,
+   "checked": "2026-10-08T15:42:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "three-kingdoms",
+   "article": "Three Kingdoms",
+   "revision": 1376621262,
+   "checked": "2026-09-25T06:50:34Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "himiko",
+   "article": "Himiko",
+   "revision": 1378932512,
+   "checked": "2026-10-07T00:12:05Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mogao-caves",
+   "article": "Mogao Caves",
+   "revision": 1373712116,
+   "checked": "2026-09-07T14:17:52Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-fei-river",
+   "article": "Battle of Fei River",
+   "revision": 1370440672,
+   "checked": "2026-08-21T03:33:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "gwanggaeto-stele",
+   "article": "Gwanggaeto Stele",
+   "revision": 1365860115,
+   "checked": "2026-07-24T21:29:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "yungang-grottoes",
+   "article": "Yungang Grottoes",
+   "revision": 1380297102,
+   "checked": "2026-10-14T22:57:04Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "longmen-grottoes",
+   "article": "Longmen Grottoes",
+   "revision": 1366154989,
+   "checked": "2026-07-26T16:28:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "buddhism-reaches-japan",
+   "article": "Buddhism in Japan",
+   "revision": 1376996529,
+   "checked": "2026-09-27T09:41:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "xuanzang",
+   "article": "Xuanzang",
+   "revision": 1379280231,
+   "checked": "2026-10-09T01:06:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "alopen",
+   "article": "Xi'an Stele",
+   "revision": 1378783690,
+   "checked": "2026-10-06T03:34:46Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "taika-reform",
+   "article": "Taika Reform",
+   "revision": 1379693599,
+   "checked": "2026-10-11T10:52:24Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "wu-zetian",
+   "article": "Wu Zetian",
+   "revision": 1380795462,
+   "checked": "2026-10-17T23:20:17Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "an-lushan-rebellion",
+   "article": "An Lushan rebellion",
+   "revision": 1377811389,
+   "checked": "2026-10-01T06:41:09Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "heian-kyo",
+   "article": "Heian-kyō",
+   "revision": 1374769376,
+   "checked": "2026-09-14T00:46:00Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "thomas-in-india",
+   "article": "Saint Thomas Christians",
+   "revision": 1379979627,
+   "checked": "2026-10-13T01:44:47Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "muziris-roman-trade",
+   "article": "Muziris",
+   "revision": 1376802069,
+   "checked": "2026-09-26T08:27:16Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "gautamiputra-satakarni",
+   "article": "Satavahana dynasty",
+   "revision": 1380132565,
+   "checked": "2026-10-14T00:11:03Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kanishka",
+   "article": "Kanishka",
+   "revision": 1379165482,
+   "checked": "2026-10-08T08:51:22Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "rabatak-inscription",
+   "article": "Rabatak inscription",
+   "revision": 1370482894,
+   "checked": "2026-08-21T10:30:49Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hephthalites",
+   "article": "Hephthalites",
+   "revision": 1374478076,
+   "checked": "2026-09-12T08:49:16Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "alchon-huns-india",
+   "article": "Alchon Huns",
+   "revision": 1361353878,
+   "checked": "2026-06-27T11:53:13Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sigiriya",
+   "article": "Sigiriya",
+   "revision": 1367952186,
+   "checked": "2026-08-06T04:17:41Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "aryabhata",
+   "article": "Aryabhata",
+   "revision": 1379593237,
+   "checked": "2026-10-10T21:59:13Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mahabodhi-temple",
+   "article": "Mahabodhi Temple",
+   "revision": 1376910731,
+   "checked": "2026-09-26T23:13:15Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "badami-caves",
+   "article": "Badami cave temples",
+   "revision": 1361755670,
+   "checked": "2026-06-29T22:02:06Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "harsha",
+   "article": "Harsha",
+   "revision": 1376860684,
+   "checked": "2026-09-26T17:27:54Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "shore-temple",
+   "article": "Shore Temple",
+   "revision": 1367351208,
+   "checked": "2026-08-02T15:34:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kailasa-temple",
+   "article": "Kailasa Temple, Ellora",
+   "revision": 1377667301,
+   "checked": "2026-09-30T12:57:00Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "pala-empire",
+   "article": "Pala Empire",
+   "revision": 1380700178,
+   "checked": "2026-10-17T09:20:43Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "rajaraja-i",
+   "article": "Rajaraja I",
+   "revision": 1378754057,
+   "checked": "2026-10-06T01:09:59Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "buddhas-of-bamiyan",
+   "article": "Buddhas of Bamiyan",
+   "revision": 1380852194,
+   "checked": "2026-10-18T10:07:35Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "songtsen-gampo",
+   "article": "Songtsen Gampo",
+   "revision": 1381034332,
+   "checked": "2026-10-19T16:05:16Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "afrasiab-murals",
+   "article": "Afrasiab painting",
+   "revision": 1352885946,
+   "checked": "2026-05-06T20:50:25Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "samanid-empire",
+   "article": "Samanid Empire",
+   "revision": 1380409608,
+   "checked": "2026-10-15T15:25:18Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "trung-sisters",
+   "article": "Trưng sisters",
+   "revision": 1375357219,
+   "checked": "2026-09-17T09:10:15Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "funan",
+   "article": "Funan",
+   "revision": 1375676966,
+   "checked": "2026-09-19T08:16:44Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "champa-founded",
+   "article": "Champa",
+   "revision": 1380446548,
+   "checked": "2026-10-15T19:27:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sri-ksetra",
+   "article": "Sri Ksetra",
+   "revision": 1367488802,
+   "checked": "2026-08-03T10:56:26Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "chenla",
+   "article": "Chenla",
+   "revision": 1375681791,
+   "checked": "2026-09-19T09:13:02Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "dvaravati",
+   "article": "Dvaravati",
+   "revision": 1380301995,
+   "checked": "2026-10-14T23:36:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "pagan-fortified",
+   "article": "Pagan Kingdom",
+   "revision": 1364234109,
+   "checked": "2026-07-15T09:43:55Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "prambanan",
+   "article": "Prambanan",
+   "revision": 1373977502,
+   "checked": "2026-09-09T02:32:25Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "laguna-copperplate",
+   "article": "Laguna Copperplate Inscription",
+   "revision": 1380764403,
+   "checked": "2026-10-17T18:57:20Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "teutoburg-forest",
+   "article": "Battle of the Teutoburg Forest",
+   "revision": 1380098620,
+   "checked": "2026-10-13T19:47:57Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "roman-conquest-of-britain",
+   "article": "Roman conquest of Britain",
+   "revision": 1377878696,
+   "checked": "2026-10-01T18:22:51Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "boudica",
+   "article": "Boudica",
+   "revision": 1379755278,
+   "checked": "2026-10-11T19:38:00Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "pliny-natural-history",
+   "article": "Natural History (Pliny)",
+   "revision": 1377056499,
+   "checked": "2026-09-27T18:12:24Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "colosseum",
+   "article": "Colosseum",
+   "revision": 1378181090,
+   "checked": "2026-10-03T09:11:57Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "pantheon-rome",
+   "article": "Pantheon, Rome",
+   "revision": 1379609926,
+   "checked": "2026-10-10T23:44:59Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "hadrians-wall",
+   "article": "Hadrian's Wall",
+   "revision": 1377043931,
+   "checked": "2026-09-27T16:55:56Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "galen-in-rome",
+   "article": "Galen",
+   "revision": 1378477128,
+   "checked": "2026-10-04T18:14:18Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "antonine-plague",
+   "article": "Antonine Plague",
+   "revision": 1379814349,
+   "checked": "2026-10-12T02:14:44Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "crisis-of-the-third-century",
+   "article": "Crisis of the Third Century",
+   "revision": 1378639657,
+   "checked": "2026-10-05T11:17:06Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "wulfila-gothic-bible",
+   "article": "Wulfila",
+   "revision": 1373900057,
+   "checked": "2026-09-08T16:39:23Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-adrianople",
+   "article": "Battle of Adrianople",
+   "revision": 1373460741,
+   "checked": "2026-09-06T02:53:44Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "edict-of-thessalonica",
+   "article": "Edict of Thessalonica",
+   "revision": 1361422549,
+   "checked": "2026-06-27T20:58:59Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "jerome-vulgate",
+   "article": "Vulgate",
+   "revision": 1375860928,
+   "checked": "2026-09-20T14:55:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sack-of-rome-410",
+   "article": "Sack of Rome (410)",
+   "revision": 1370729678,
+   "checked": "2026-08-22T20:05:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "saint-patrick",
+   "article": "Saint Patrick",
+   "revision": 1374888095,
+   "checked": "2026-09-14T17:20:43Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "attila",
+   "article": "Attila",
+   "revision": 1376552589,
+   "checked": "2026-09-24T21:59:16Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "clovis",
+   "article": "Clovis I",
+   "revision": 1379875850,
+   "checked": "2026-10-12T11:35:18Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "corpus-juris-civilis",
+   "article": "Corpus Juris Civilis",
+   "revision": 1379212337,
+   "checked": "2026-10-08T16:21:25Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "plague-of-justinian",
+   "article": "Plague of Justinian",
+   "revision": 1378565232,
+   "checked": "2026-10-05T01:11:17Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "lombards-invade-italy",
+   "article": "Lombards",
+   "revision": 1380897421,
+   "checked": "2026-10-18T16:36:52Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sutton-hoo",
+   "article": "Sutton Hoo",
+   "revision": 1377841372,
+   "checked": "2026-10-01T13:01:33Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "gregory-the-great",
+   "article": "Pope Gregory I",
+   "revision": 1380657901,
+   "checked": "2026-10-17T02:49:05Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "augustine-of-canterbury",
+   "article": "Augustine of Canterbury",
+   "revision": 1374566659,
+   "checked": "2026-09-12T20:52:32Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "muslim-conquest-of-iberia",
+   "article": "Umayyad conquest of Hispania",
+   "revision": 1380358503,
+   "checked": "2026-10-15T06:58:46Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "byzantine-iconoclasm",
+   "article": "Byzantine Iconoclasm",
+   "revision": 1374984227,
+   "checked": "2026-09-15T04:49:18Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "bede",
+   "article": "Bede",
+   "revision": 1379686149,
+   "checked": "2026-10-11T09:26:12Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-tours",
+   "article": "Battle of Tours",
+   "revision": 1380614693,
+   "checked": "2026-10-16T21:11:54Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "great-mosque-of-cordoba",
+   "article": "Mosque–Cathedral of Córdoba",
+   "revision": 1378245290,
+   "checked": "2026-10-03T17:33:40Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "book-of-kells",
+   "article": "Book of Kells",
+   "revision": 1379928416,
+   "checked": "2026-10-12T19:04:07Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "iceland-settled",
+   "article": "Settlement of Iceland",
+   "revision": 1377885635,
+   "checked": "2026-10-01T19:10:03Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "cyril-and-methodius",
+   "article": "Cyril and Methodius",
+   "revision": 1360688304,
+   "checked": "2026-06-23T00:43:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "bulgaria-christianized",
+   "article": "Christianization of Bulgaria",
+   "revision": 1380880885,
+   "checked": "2026-10-18T14:30:42Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "alfred-the-great",
+   "article": "Alfred the Great",
+   "revision": 1379500950,
+   "checked": "2026-10-10T10:31:19Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "kievan-rus",
+   "article": "Kievan Rus'",
+   "revision": 1379211684,
+   "checked": "2026-10-08T16:16:27Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "otto-the-great",
+   "article": "Otto the Great",
+   "revision": 1381001626,
+   "checked": "2026-10-19T10:42:33Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "vladimir-baptism",
+   "article": "Vladimir the Great",
+   "revision": 1371397413,
+   "checked": "2026-08-26T05:44:03Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mishnah",
+   "article": "Mishnah",
+   "revision": 1379204051,
+   "checked": "2026-10-08T15:08:15Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "mani",
+   "article": "Mani (prophet)",
+   "revision": 1380646485,
+   "checked": "2026-10-17T01:22:00Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "dura-europos-synagogue",
+   "article": "Dura-Europos synagogue",
+   "revision": 1370881944,
+   "checked": "2026-08-23T15:35:26Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-edessa",
+   "article": "Battle of Edessa",
+   "revision": 1379471894,
+   "checked": "2026-10-10T05:03:44Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "zenobia",
+   "article": "Zenobia",
+   "revision": 1377276142,
+   "checked": "2026-09-28T17:24:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "armenia-christian",
+   "article": "Tiridates III of Armenia",
+   "revision": 1375478042,
+   "checked": "2026-09-18T01:01:10Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "diocletianic-persecution",
+   "article": "Diocletian",
+   "revision": 1380491189,
+   "checked": "2026-10-16T01:26:09Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "church-of-the-holy-sepulchre",
+   "article": "Church of the Holy Sepulchre",
+   "revision": 1379870998,
+   "checked": "2026-10-12T10:39:57Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "codex-sinaiticus",
+   "article": "Codex Sinaiticus",
+   "revision": 1381008574,
+   "checked": "2026-10-19T11:57:15Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "council-of-ephesus",
+   "article": "Council of Ephesus",
+   "revision": 1380539789,
+   "checked": "2026-10-16T10:02:39Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "council-of-chalcedon",
+   "article": "Council of Chalcedon",
+   "revision": 1380942816,
+   "checked": "2026-10-18T23:24:11Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "babylonian-talmud",
+   "article": "Talmud",
+   "revision": 1378031247,
+   "checked": "2026-10-02T15:10:49Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "saint-catherines-monastery",
+   "article": "Saint Catherine's Monastery",
+   "revision": 1376776401,
+   "checked": "2026-09-26T04:00:30Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "sasanian-jerusalem-614",
+   "article": "Siege of Jerusalem (614)",
+   "revision": 1376804652,
+   "checked": "2026-09-26T08:57:19Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-the-yarmuk",
+   "article": "Battle of the Yarmuk",
+   "revision": 1380906740,
+   "checked": "2026-10-18T18:01:56Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-nahavand",
+   "article": "Battle of Nahavand",
+   "revision": 1380331186,
+   "checked": "2026-10-15T02:39:32Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "umayyad-caliphate",
+   "article": "Umayyad Caliphate",
+   "revision": 1380603977,
+   "checked": "2026-10-16T19:38:47Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "battle-of-karbala",
+   "article": "Battle of Karbala",
+   "revision": 1380718336,
+   "checked": "2026-10-17T12:19:35Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "abbasid-revolution",
+   "article": "Abbasid Caliphate",
+   "revision": 1379962196,
+   "checked": "2026-10-12T23:38:30Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "al-khwarizmi",
+   "article": "Al-Khwarizmi",
+   "revision": 1379593015,
+   "checked": "2026-10-10T21:58:12Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "great-mosque-of-samarra",
+   "article": "Great Mosque of Samarra",
+   "revision": 1366941664,
+   "checked": "2026-07-31T00:24:56Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "aleppo-codex",
+   "article": "Aleppo Codex",
+   "revision": 1366218497,
+   "checked": "2026-07-26T22:25:45Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "cahuachi",
+   "article": "Cahuachi",
+   "revision": 1351210741,
+   "checked": "2026-04-26T16:51:18Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "san-agustin",
+   "article": "San Agustín Archaeological Park",
+   "revision": 1365739903,
+   "checked": "2026-07-24T04:26:35Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "pachacamac",
+   "article": "Pachacamac",
+   "revision": 1373667392,
+   "checked": "2026-09-07T05:16:49Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "quimbaya-classic",
+   "article": "Quimbaya civilization",
+   "revision": 1379071259,
+   "checked": "2026-10-07T19:36:58Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "tierradentro",
+   "article": "Tierradentro",
+   "revision": 1366157102,
+   "checked": "2026-07-26T16:44:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "wari-empire",
+   "article": "Wari Empire",
+   "revision": 1378709077,
+   "checked": "2026-10-05T20:19:46Z",
+   "ok": true,
+   "missing": []
+  },
+  {
+   "id": "marajoara",
+   "article": "Marajoara culture",
+   "revision": 1369061205,
+   "checked": "2026-08-12T17:20:28Z",
+   "ok": true,
+   "missing": []
+  },
+  {
    "id": "ashurbanipal-library",
    "article": "Library of Ashurbanipal",
    "revision": 1368194875,
@@ -612,8 +1740,8 @@
   {
    "id": "achaemenid-empire",
    "article": "Achaemenid Empire",
-   "revision": 1380962971,
-   "checked": "2026-10-19T02:37:44Z",
+   "revision": 1380992903,
+   "checked": "2026-10-19T08:54:43Z",
    "ok": true,
    "missing": []
   },
@@ -932,8 +2060,8 @@
   {
    "id": "council-of-nicaea",
    "article": "First Council of Nicaea",
-   "revision": 1380369366,
-   "checked": "2026-10-15T09:24:55Z",
+   "revision": 1381038649,
+   "checked": "2026-10-19T16:39:51Z",
    "ok": true,
    "missing": []
   },
@@ -1022,14 +2150,6 @@
    "article": "Charlemagne",
    "revision": 1380396857,
    "checked": "2026-10-15T14:01:43Z",
-   "ok": true,
-   "missing": []
-  },
-  {
-   "id": "aksum-christianity",
-   "article": "Kingdom of Aksum",
-   "revision": 1374239548,
-   "checked": "2026-09-10T19:05:17Z",
    "ok": true,
    "missing": []
   },
@@ -1172,8 +2292,8 @@
   {
    "id": "gokturks",
    "article": "Göktürks",
-   "revision": 1380935750,
-   "checked": "2026-10-18T22:12:04Z",
+   "revision": 1380977570,
+   "checked": "2026-10-19T05:30:38Z",
    "ok": true,
    "missing": []
   },
@@ -1444,16 +2564,16 @@
   {
    "id": "angkor-wat",
    "article": "Angkor Wat",
-   "revision": 1379964727,
-   "checked": "2026-10-12T23:57:39Z",
+   "revision": 1381020125,
+   "checked": "2026-10-19T14:02:11Z",
    "ok": true,
    "missing": []
   },
   {
    "id": "majapahit",
    "article": "Majapahit",
-   "revision": 1379545208,
-   "checked": "2026-10-10T16:33:42Z",
+   "revision": 1380983337,
+   "checked": "2026-10-19T06:53:58Z",
    "ok": true,
    "missing": []
   },
@@ -1508,8 +2628,8 @@
   {
    "id": "songhai",
    "article": "Songhai Empire",
-   "revision": 1380150616,
-   "checked": "2026-10-14T02:17:04Z",
+   "revision": 1381037088,
+   "checked": "2026-10-19T16:28:01Z",
    "ok": true,
    "missing": []
   },
@@ -1628,8 +2748,8 @@
   {
    "id": "thirty-years-war",
    "article": "Thirty Years' War",
-   "revision": 1380801822,
-   "checked": "2026-10-18T00:25:53Z",
+   "revision": 1381038389,
+   "checked": "2026-10-19T16:38:03Z",
    "ok": true,
    "missing": []
   },
@@ -1716,8 +2836,8 @@
   {
    "id": "nzinga",
    "article": "Nzinga of Ndongo and Matamba",
-   "revision": 1379301327,
-   "checked": "2026-10-09T03:09:30Z",
+   "revision": 1380983036,
+   "checked": "2026-10-19T06:48:48Z",
    "ok": true,
    "missing": []
   },
@@ -1900,8 +3020,8 @@
   {
    "id": "haitian-revolution",
    "article": "Haitian Revolution",
-   "revision": 1380956338,
-   "checked": "2026-10-19T01:33:29Z",
+   "revision": 1381019581,
+   "checked": "2026-10-19T13:56:38Z",
    "ok": true,
    "missing": []
   },
@@ -1980,8 +3100,8 @@
   {
    "id": "world-war-ii",
    "article": "World War II",
-   "revision": 1380965552,
-   "checked": "2026-10-19T03:05:32Z",
+   "revision": 1381035579,
+   "checked": "2026-10-19T16:15:30Z",
    "ok": true,
    "missing": []
   },
@@ -2092,8 +3212,8 @@
   {
    "id": "indian-rebellion-1857",
    "article": "Indian Rebellion of 1857",
-   "revision": 1380604538,
-   "checked": "2026-10-16T19:42:51Z",
+   "revision": 1381018790,
+   "checked": "2026-10-19T13:49:04Z",
    "ok": true,
    "missing": []
   },
@@ -2156,8 +3276,8 @@
   {
    "id": "korean-war",
    "article": "Korean War",
-   "revision": 1379651424,
-   "checked": "2026-10-11T04:03:50Z",
+   "revision": 1381005552,
+   "checked": "2026-10-19T11:20:58Z",
    "ok": true,
    "missing": []
   },
@@ -2220,8 +3340,8 @@
   {
    "id": "mexican-independence",
    "article": "Mexican War of Independence",
-   "revision": 1380261153,
-   "checked": "2026-10-14T19:00:28Z",
+   "revision": 1381034600,
+   "checked": "2026-10-19T16:07:05Z",
    "ok": true,
    "missing": []
   },
@@ -2785,8 +3905,8 @@
   {
    "id": "ramesses-ii",
    "article": "Ramesses II",
-   "revision": 1378573543,
-   "checked": "2026-10-05T01:55:34Z",
+   "revision": 1381036754,
+   "checked": "2026-10-19T16:25:04Z",
    "ok": true,
    "missing": []
   },

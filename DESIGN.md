@@ -160,6 +160,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - Setting the url turns the link on with no other change.
 - **Batches (Q22, Q36).** World history comes in six era batches, and Church history is batch 7. Each batch is one pull request, and the user reviews each one.
 - **Scripture-era batches (2026-10-18).** Batches 8–10 add history where scripture events are dense. They favor events that touch a scripture account, such as the Mesha Stele or the Delphi inscription naming Gallio.
+- **Coverage batch (2026-10-19).** Batch 11 fills the first millennium CE beyond the Middle East and Mesoamerica. Before it, Africa had no event between 1 and 250 CE. East, Central, and Southeast Asia had three between them. It adds events for every region. Africa, East Asia, Southeast Asia, and Europe each gain a tier 1 event active at 50 CE. Where an event touches the scriptures, the summary says so.
 
 | Batch | Era | Status |
 | --- | --- | --- |
@@ -173,6 +174,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 | 8 | The world of the Old Testament, 2100–539 BCE | 44 events |
 | 9 | From the return to the Jewish revolts, and the Americas of the Book of Mormon, 539 BCE–400 CE | 51 events |
 | 10 | The world of the Restoration, 1800–1848 | 36 events |
+| 11 | The wider world of the first millennium CE: Africa, Asia, the Andes, and Europe beyond Rome, 1–1000 CE | 140 events |
 
 - **Data file.** `scripts/history/batch-N.json`. Each event has `id`, `title`, `start`, `end`, `dateLabel`, `tier`, `region`, `place`, `lat`, `lng`, `summary`, and `source`. A source is `{ wiki, quote }` for Wikipedia, or `{ title, publisher, url, quote }` otherwise. `quote` may be a list when the start and end need separate quotes. Batch 7 adds a top-level `"volume": "dc"`, and its events leave out `tier` and `region`. An event may set `image` to a Commons file name, or to `false` for no picture.
 - **Pictures (2026-10-18).** Each history and Church history event shows one picture, where a free one exists.
@@ -181,7 +183,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - Pictures are saved in `dist/assets/history/`. On Windows each is re-saved as a JPEG of at most 440 by 330 pixels (`scripts/shrink-image.ps1`).
   - `scripts/history/images.json` records each file's author, license, and Commons page. The card shows them under the picture.
   - For a photo of an old object, Commons often lists the object's unknown maker. The credit then names the photographer, or else the uploader.
-  - 428 of 430 events have a picture. The Seoul and Kinshasa temples have no free picture.
+  - 567 of 570 events have a picture. The Seoul and Kinshasa temples and Queen Himiko have no free picture.
 - **Display.** History pins are hollow grey hexagons, smaller than scripture pins, so shape and fill set them apart without color. In a group a scripture event always leads. History has its own legend toggle. The event buttons and the density bar follow scripture only.
 - **Also at this time.** A card lists up to four events of the other kind whose dates fall within 150 years. Closer dates rank first, and short events rank above centuries-long eras. Order-only events get none (Q28).
 - **Related history.** Ranking by years misses some clear links, such as D&C 87 and the Civil War. These are hand-picked in `scripts/curated-events.json` and in the scripture batch files. Batches 8–10 brought the count of linked scripture events from 12 to 90. An annotation's `related` lists history ids without the `h-` prefix. Its `relatedNote` gives the reason in one line. The build stops when an id is not a history event. Section 6 shows how the card uses them.
