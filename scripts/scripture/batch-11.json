@@ -1,0 +1,303 @@
+{
+  "about": "Scripture events, batch 11: Mosiah and Alma (DESIGN.md section 3). Same fields as batch-1.json. These events go on the Book of Mormon map.",
+  "batch": 11,
+  "era": "King Benjamin to the Nephite wars",
+  "covers": [
+    { "book": "mosiah", "chapters": [1, 29] },
+    { "book": "alma", "chapters": [1, 63] }
+  ],
+  "events": [
+    {
+      "id": "king-benjamins-address",
+      "volume": "bom",
+      "title": "King Benjamin speaks to his people",
+      "chapters": ["mosiah-1", "mosiah-2"],
+      "place": "bom:zarahemla",
+      "verse": "mosiah-2:17",
+      "summary": "King Benjamin teaches his sons from the records. He chooses his son Mosiah as the next king. Families gather near the temple in Zarahemla and pitch their tents facing it. Benjamin speaks from a tower so all can hear. He says he served them without seeking riches. When they serve others, they are serving God. He warns them not to rebel against God."
+    },
+    {
+      "id": "zeniff-returns-to-nephi",
+      "volume": "bom",
+      "title": "Zeniff leads a group back to the land of Nephi",
+      "chapters": ["mosiah-9", "mosiah-10"],
+      "place": "bom:nephi",
+      "verse": "mosiah-9:17",
+      "summary": "Zeniff wants to settle again in the land of Nephi, where the Nephites first lived. King Laman of the Lamanites lets Zeniff's people have the lands of Nephi and Shilom. They rebuild and farm the land. Later the Lamanites attack to take their crops and flocks. Zeniff's people pray and go out to battle in the Lord's strength. They drive the Lamanites back. Zeniff gives the kingdom to his son Noah."
+    },
+    {
+      "id": "abinadi-warns-king-noah",
+      "volume": "bom",
+      "title": "Abinadi warns King Noah",
+      "chapters": ["mosiah-11"],
+      "place": "bom:nephi",
+      "verse": "mosiah-11:20",
+      "summary": "King Noah taxes his people heavily to pay for his palaces and wine. He replaces his father's priests with proud ones. The people turn to wickedness. A prophet named Abinadi warns that they will be brought into bondage unless they repent. The people are angry and try to kill him. Noah orders Abinadi brought to him, and Abinadi escapes.",
+      "alsoRead": [{ "ref": "Mosiah 17:20", "note": "Abinadi is later put to death by fire." }]
+    },
+    {
+      "id": "waters-of-mormon",
+      "volume": "bom",
+      "title": "Alma baptizes believers at the waters of Mormon",
+      "chapters": ["mosiah-18"],
+      "place": "bom:mormon-place",
+      "verse": "mosiah-18:9",
+      "summary": "Alma, one of Noah's priests, believes Abinadi's words. He teaches them in secret. Believers gather at Mormon, a place with a fountain of pure water. Alma asks if they are willing to bear one another's burdens. He baptizes about two hundred and four people. He ordains priests and teaches them to care for one another. When Noah discovers them, they flee into the wilderness."
+    },
+    {
+      "id": "noah-falls-and-limhi-rules",
+      "volume": "bom",
+      "title": "King Noah falls, and Limhi's people are in bondage",
+      "chapters": ["mosiah-19", "mosiah-20", "mosiah-21"],
+      "place": "bom:nephi",
+      "verse": "mosiah-21:15",
+      "summary": "A Lamanite army attacks, and King Noah flees, leaving many families behind. His own men later put him to death by fire. Noah's son Limhi becomes king and pays the Lamanites half of all they own. Noah's former priests steal Lamanite daughters, and the Lamanites attack again. Limhi's people try three times to fight free, and they fail. They humble themselves, and the Lord softens the Lamanites' hearts."
+    },
+    {
+      "id": "ammon-finds-limhi",
+      "volume": "bom",
+      "title": "Ammon finds Limhi's people, and they escape",
+      "chapters": ["mosiah-7", "mosiah-8", "mosiah-22"],
+      "place": "bom:shilom",
+      "verse": "mosiah-8:17",
+      "summary": "King Mosiah sends sixteen men to find Zeniff's people. Ammon leads them to the land of Nephi. He meets King Limhi, Zeniff's grandson, who is glad that Zarahemla still exists. Limhi shows him twenty-four gold plates found among ruins. Ammon says King Mosiah is a seer who can translate them. Gideon proposes giving the Lamanite guards wine. While the guards are drunk, the people escape to Zarahemla."
+    },
+    {
+      "id": "alma-in-helam",
+      "volume": "bom",
+      "title": "The Lord eases the burdens of Alma's people",
+      "chapters": ["mosiah-23", "mosiah-24"],
+      "place": "bom:helam",
+      "verse": "mosiah-24:14",
+      "summary": "Alma's people settle in a land they call Helam. They ask Alma to be their king, and he refuses. A lost Lamanite army finds them. Amulon, the leader of Noah's former priests, rules over them harshly. He forbids them to pray aloud, so they pray in their hearts. The Lord eases their burdens. Then he puts the guards into a deep sleep, and the people escape to Zarahemla."
+    },
+    {
+      "id": "the-church-in-zarahemla",
+      "volume": "bom",
+      "title": "The peoples join in Zarahemla, and the church grows",
+      "chapters": ["mosiah-25", "mosiah-26"],
+      "place": "bom:zarahemla",
+      "verse": "mosiah-26:30",
+      "summary": "Mosiah gathers the people and reads the records of Zeniff's and Alma's groups. The people grieve and rejoice at what they hear. Alma baptizes Limhi's people and sets up churches through the land. Some of the rising generation do not believe. Alma does not know how to judge church members who sin. The Lord tells him to forgive those who repent."
+    },
+    {
+      "id": "alma-the-younger-converted",
+      "volume": "bom",
+      "title": "An angel stops Alma's son and the sons of Mosiah",
+      "chapters": ["mosiah-27"],
+      "place": "bom:zarahemla",
+      "verse": "mosiah-27:24",
+      "summary": "Alma's son, also named Alma, works to destroy the church. Four sons of King Mosiah join him. An angel appears to them, and the earth shakes. The angel tells the younger Alma to stop. Alma falls and cannot speak or move for two days. His father and the priests fast and pray. Alma rises and says he has been born of the Spirit. The young men travel to repair the harm they did.",
+      "alsoRead": [{ "ref": "Acts 9:4", "note": "A voice also stops Saul on the road to Damascus." }]
+    },
+    {
+      "id": "judges-replace-the-kings",
+      "volume": "bom",
+      "title": "Mosiah's sons go to the Lamanites, and judges replace kings",
+      "chapters": ["mosiah-28", "mosiah-29"],
+      "place": "bom:zarahemla",
+      "verse": "mosiah-29:26",
+      "summary": "Mosiah's four sons ask to teach the Lamanites. The Lord tells Mosiah to let them go. Mosiah translates the gold plates found by Limhi's people. None of his sons will be king. Mosiah warns of the harm a wicked king can do. He proposes judges chosen by the voice of the people. The people agree, and the younger Alma becomes the first chief judge."
+    },
+    {
+      "id": "nehor-and-the-church",
+      "volume": "bom",
+      "title": "Nehor kills Gideon, and the church cares for the poor",
+      "chapters": ["alma-1"],
+      "place": "bom:zarahemla",
+      "verse": "alma-1:30",
+      "summary": "Nehor teaches that priests should be paid and that all people will be saved. He kills Gideon, the old man who helped free Limhi's people. Alma, the chief judge, judges him under the law, and he is put to death. Others keep spreading his ideas. Some church members are persecuted. The church's priests work for their own living. The members share their goods with the poor, in the church or out of it."
+    },
+    {
+      "id": "amlicis-rebellion",
+      "volume": "bom",
+      "title": "Amlici rebels and joins the Lamanites",
+      "chapters": ["alma-2", "alma-3"],
+      "place": "bom:zarahemla",
+      "verse": "alma-2:28",
+      "summary": "Amlici, a follower of Nehor's ideas, wants to be king. The voice of the people rejects him. His followers make him king anyway and go to war. They join a Lamanite army. Alma leads the Nephites in battle near the river Sidon. He fights Amlici and kills him. The enemy flees into a wilderness of wild beasts."
+    },
+    {
+      "id": "alma-preaches-in-zarahemla",
+      "volume": "bom",
+      "title": "Alma leaves the judgment seat to preach",
+      "chapters": ["alma-4", "alma-5", "alma-6", "alma-7"],
+      "place": "bom:zarahemla",
+      "verse": "alma-5:14",
+      "summary": "Wealth brings pride into the church, and members neglect the poor. Alma gives the judgment seat to Nephihah, a wise elder. He goes out to preach. In Zarahemla he asks if they have been born of God. He asks if they feel a mighty change in their hearts. In Gideon he foretells Christ's birth to Mary and his suffering. He calls the people to repent and be baptized.",
+      "alsoRead": [{ "ref": "Luke 2:11", "note": "Angels announce the Savior's birth in Bethlehem." }]
+    },
+    {
+      "id": "alma-and-amulek-in-ammonihah",
+      "volume": "bom",
+      "title": "Alma and Amulek preach in Ammonihah",
+      "chapters": ["alma-8", "alma-9", "alma-10", "alma-14"],
+      "place": "bom:ammonihah",
+      "verse": "alma-14:26",
+      "summary": "The people of Ammonihah reject Alma and throw him out. An angel sends him back. Amulek, a man of the city, takes him in. Together they warn the people and teach of Christ. The lawyer Zeezrom tries to trap them with questions. The people burn the believing women and children and their scriptures. Alma and Amulek are bound and jailed for many days. They pray for strength, the ropes break, and the prison falls."
+    },
+    {
+      "id": "zeezrom-healed",
+      "volume": "bom",
+      "title": "Zeezrom is healed, and Ammonihah is destroyed",
+      "chapters": ["alma-15", "alma-16"],
+      "place": "bom:sidom",
+      "verse": "alma-15:10",
+      "summary": "Alma and Amulek find the believers driven from Ammonihah in the land of Sidom. Zeezrom lies sick with a fever because of his sins. He believes in Christ and asks to be healed. Alma prays, and Zeezrom leaps up. Zeezrom is baptized and begins to preach. Then a Lamanite army destroys Ammonihah in one day. The chief captain Zoram rescues the captives, and the church grows."
+    },
+    {
+      "id": "ammon-serves-king-lamoni",
+      "volume": "bom",
+      "title": "Ammon serves King Lamoni",
+      "chapters": ["alma-17", "alma-18"],
+      "place": "bom:ishmael-land",
+      "verse": "alma-18:33",
+      "summary": "Mosiah's sons go to teach the Lamanites. The Lord tells them to be patient in their trials. Ammon goes to the land of Ishmael and becomes a servant of King Lamoni. Other Lamanites scatter the king's flocks at the water. Ammon defends the flocks alone. Lamoni wonders if Ammon is the Great Spirit. Ammon teaches him about God, the creation, and Christ. Lamoni prays for mercy and falls to the earth."
+    },
+    {
+      "id": "lamonis-father-believes",
+      "volume": "bom",
+      "title": "Lamoni's father believes Aaron's teaching",
+      "chapters": ["alma-20", "alma-21", "alma-22"],
+      "place": "bom:nephi",
+      "verse": "alma-22:18",
+      "summary": "Ammon and Lamoni go to free Ammon's brother Aaron from prison in Middoni. On the way they meet Lamoni's father, the king over all the Lamanites. He orders his son to kill Ammon. Ammon defends himself and spares the king's life. The king lets Aaron and the others go free. Aaron later teaches the king about God and redemption. The king offers to give away all his sins to know God. He falls to the earth, and his household believes."
+    },
+    {
+      "id": "the-people-bury-their-weapons",
+      "volume": "bom",
+      "title": "The converted Lamanites bury their weapons",
+      "chapters": ["alma-23", "alma-24", "alma-25"],
+      "place": "bom:nephi",
+      "verse": "alma-24:17",
+      "summary": "The king sends word that the missionaries may teach freely in his lands. Thousands of Lamanites believe. They take the name Anti-Nephi-Lehies. Other Lamanites prepare to attack them. Their new king, Lamoni's brother, says they once killed many people. They bury their swords deep in the earth and promise never to fight again. When the attackers come, they kneel and pray. Many of the attackers stop and join them."
+    },
+    {
+      "id": "ammon-rejoices",
+      "volume": "bom",
+      "title": "Ammon and Alma rejoice in the work",
+      "chapters": ["alma-26", "alma-29"],
+      "place": "bom:zarahemla",
+      "verse": "alma-26:12",
+      "summary": "Ammon recalls their hardships among the Lamanites and the thousands who believed. His brother Aaron warns him against boasting. Ammon says he is nothing in his own strength. In God's strength he can do all things. Alma wishes he were an angel who could call every people to repent. Then he accepts the work God has given him. He rejoices in his brothers' success."
+    },
+    {
+      "id": "the-people-of-ammon",
+      "volume": "bom",
+      "title": "The people of Ammon settle in Jershon",
+      "chapters": ["alma-27", "alma-28"],
+      "place": "bom:jershon",
+      "verse": "alma-27:27",
+      "summary": "Lamanite attacks threaten the Anti-Nephi-Lehies again. Ammon asks the Lord if they should leave. The Nephites give them the land of Jershon and promise to protect them. They become known as the people of Ammon. They are honest and firm in their faith. A great battle follows, and many families mourn their dead."
+    },
+    {
+      "id": "korihor",
+      "volume": "bom",
+      "title": "Korihor preaches against Christ",
+      "chapters": ["alma-30"],
+      "place": "bom:zarahemla",
+      "verse": "alma-30:44",
+      "summary": "Korihor comes to Zarahemla and teaches that no Christ will come. He says people prosper only by their own skill. The people of Gideon bind him and send him to Alma. Korihor demands a sign. Alma says all things show there is a God. Korihor is struck so he cannot speak. He writes that the devil deceived him. He later dies among the Zoramites."
+    },
+    {
+      "id": "alma-among-the-zoramites",
+      "volume": "bom",
+      "title": "Alma teaches the Zoramites",
+      "chapters": ["alma-31", "alma-35"],
+      "place": "bom:antionum",
+      "verse": "alma-31:35",
+      "summary": "The Zoramites are Nephites who have left the church. Alma takes his companions to teach them in Antionum. They see the Zoramites climb a high stand and repeat the same prayer. The prayer thanks God that they are chosen and there will be no Christ. Alma prays for strength to bring them back. Later the Zoramites drive out those who believe. The people of Ammon take them in."
+    },
+    {
+      "id": "alma-counsels-corianton",
+      "volume": "bom",
+      "title": "Alma counsels his son Corianton",
+      "chapters": ["alma-39"],
+      "place": "bom:siron",
+      "verse": "alma-39:9",
+      "summary": "Alma speaks to his son Corianton. Corianton left his mission and went after a harlot named Isabel. His conduct turned the Zoramites away from the message. Alma tells him to repent and forsake his sins. He tells Corianton to go back and repair the harm. He explains why prophets teach of Christ before he comes."
+    },
+    {
+      "id": "moroni-defeats-zerahemnah",
+      "volume": "bom",
+      "title": "Captain Moroni defends the Nephites near the Sidon",
+      "chapters": ["alma-43"],
+      "place": "bom:manti",
+      "verse": "alma-43:47",
+      "summary": "The Zoramites join the Lamanites, and Zerahemnah leads an army against the Nephites. Moroni, the young chief captain, gives his men armor and shields. The enemy turns toward Manti. Moroni hides his troops on both sides of the river Sidon. The Nephites fight to defend their families and their freedom. They surround the enemy, and Moroni stops the killing."
+    },
+    {
+      "id": "alma-departs",
+      "volume": "bom",
+      "title": "Alma blesses Helaman and leaves",
+      "chapters": ["alma-45"],
+      "place": "bom:zarahemla",
+      "verse": "alma-45:19",
+      "summary": "Alma asks his son Helaman if he believes. Helaman says he does. Alma foretells that the Nephites will one day be destroyed for their sins. He blesses the land and the church. Then Alma leaves for the land of Melek and is never heard of again. Helaman and his brothers set the church in order.",
+      "alsoRead": [{ "ref": "Deuteronomy 34:6", "note": "No one knows where Moses is buried." }]
+    },
+    {
+      "id": "title-of-liberty",
+      "volume": "bom",
+      "title": "Moroni raises the title of liberty",
+      "chapters": ["alma-46", "alma-47"],
+      "place": "bom:zarahemla",
+      "verse": "alma-46:12",
+      "summary": "Amalickiah wants to be king and draws dissenters to him. Moroni tears his coat and writes on it. He calls the people to defend God, freedom, and families. He raises it on a pole as the title of liberty. The people covenant to defend their rights. Amalickiah flees to the Lamanites. He tricks his way to command of a Lamanite army. His servants kill the Lamanite king, and Amalickiah becomes king."
+    },
+    {
+      "id": "moroni-fortifies-the-cities",
+      "volume": "bom",
+      "title": "Moroni fortifies the Nephite cities",
+      "chapters": ["alma-48", "alma-49", "alma-50"],
+      "place": "bom:noah",
+      "verse": "alma-48:17",
+      "summary": "Amalickiah stirs up the Lamanites against the Nephites. Moroni builds walls of earth around the cities and towers above them. Mormon says that if all were like Moroni, the devil would have no power. The Lamanites attack Ammonihah and Noah and fail. Moroni strengthens the borders and builds new cities. Teancum stops Morianton's people from fleeing north. Pahoran becomes chief judge."
+    },
+    {
+      "id": "teancum-kills-amalickiah",
+      "volume": "bom",
+      "title": "Teancum kills Amalickiah, and the Nephites retake Mulek",
+      "chapters": ["alma-51", "alma-52"],
+      "place": "bom:mulek",
+      "verse": "alma-51:34",
+      "summary": "King-men want a king and refuse to defend the land. Moroni forces them to fight or be put down. Amalickiah takes the cities along the east sea. At night Teancum slips into his tent and kills him. Amalickiah's brother Ammoron becomes king. Moroni and Teancum draw the Lamanites out of the city of Mulek. They surround the army and take the city."
+    },
+    {
+      "id": "the-two-thousand-young-men",
+      "volume": "bom",
+      "title": "Helaman leads two thousand young men",
+      "chapters": ["alma-53", "alma-56", "alma-57", "alma-58"],
+      "place": "bom:judea",
+      "verse": "alma-56:47",
+      "summary": "The people of Ammon think of breaking their promise never to fight. Helaman persuades them not to. Two thousand of their sons, who made no such promise, enlist. They choose Helaman to lead them. Their mothers taught them that God would deliver them if they did not doubt. They fight to defend their families and take the cities of Cumeni and Manti. Many are wounded, but none of them dies."
+    },
+    {
+      "id": "moroni-frees-the-prisoners",
+      "volume": "bom",
+      "title": "Moroni frees the Nephite prisoners at Gid",
+      "chapters": ["alma-54", "alma-55"],
+      "place": "bom:gid",
+      "verse": "alma-55:19",
+      "summary": "Ammoron offers to trade prisoners. Moroni demands that the Lamanites also leave the land, and Ammoron refuses. Moroni finds a Lamanite servant among his men. The man carries wine to the guards at the city of Gid. While the guards sleep, the Nephites pass weapons to the prisoners. Moroni takes the city without killing the sleeping guards."
+    },
+    {
+      "id": "moroni-and-pahoran",
+      "volume": "bom",
+      "title": "Moroni and Pahoran restore the government",
+      "chapters": ["alma-59", "alma-60", "alma-61", "alma-62"],
+      "place": "bom:gideon",
+      "verse": "alma-61:9",
+      "summary": "The city of Nephihah falls because no help comes. Moroni writes an angry letter to Pahoran, the chief judge. He accuses the government of neglecting the armies. Pahoran answers that king-men have driven him out of Zarahemla. He says he is not angry. Moroni joins Pahoran and defeats the king-men. They retake the cities, and Teancum dies after killing Ammoron. Peace returns to the land."
+    },
+    {
+      "id": "hagoths-ships",
+      "volume": "bom",
+      "title": "Hagoth builds ships, and many go north",
+      "chapters": ["alma-63"],
+      "place": "bom:hagoth-yard",
+      "verse": "alma-63:5",
+      "summary": "Helaman dies, and his brother Shiblon receives the records. Many people move into the land northward. Hagoth builds a large ship by the west sea. Many sail away, and some are never heard of again. Moroni dies. Shiblon gives the records to Helaman's son, also named Helaman."
+    }
+  ]
+}

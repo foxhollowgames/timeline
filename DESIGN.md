@@ -70,6 +70,7 @@ A pin is a scripture event, such as the scattering of the ten tribes. It is not 
 | 8 | The life of Jesus | Matthew, Mark, Luke, John | 36 events |
 | 9 | The apostles | Acts, Paul's letters, and Revelation 1–3 | 25 events |
 | 10 | Lehi's journey, the small plates, and the Jaredites | 1 Nephi through Words of Mormon, and Ether | 17 events |
+| 11 | King Benjamin to the Nephite wars | Mosiah and Alma | 32 events |
 
 - **Fields.** Each event has `id`, `volume`, `title`, `chapters`, and `summary`. It may add these:
   - `dateFrom`: the chapters that set its years.
