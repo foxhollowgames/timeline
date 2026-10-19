@@ -235,7 +235,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 - **Divider.** Drag it, or focus it and use the arrow keys. Double-click resets it to 55/45. Each browser remembers its own split. Portrait screens stack the two views.
 - **Card placement.** On desktop the card sits beside the panel, over the globe. On a stacked phone layout it covers the half that does not hold the selected event.
 - **Selecting an event.** The panel opens if it is closed, and the map flies to the event's places. Closing the card zooms the map back out to the whole land.
-- **The Jaredite band (Q29).** Ether's events have no years. They are active from the Tower of Babel, at the start of the primeval band, until Omni 1, where Coriantumr is found (130 BCE). Their pins have a dashed ring, and a note in the panel explains the band. While the panel is open, the strip shows the band as a thin top lane.
+- **The Jaredite band (Q29).** Ether's events have no years. They are active from the Tower of Babel, at the start of the primeval band, until Omni 1, where Coriantumr is found (130 BCE). Their pins have a dashed ring. The strip labels the band, so the panel adds no note of its own. While the panel is open, the strip shows the band as a thin top lane.
 
 ## 8. Links (Q34)
 

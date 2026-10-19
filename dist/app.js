@@ -147,9 +147,6 @@ async function start() {
 
   // With no events in the window, the panel offers the nearest one in each direction.
   function updatePanelNotes(onMap, window) {
-    const jaredite = onMap.some(e => e.band === 'jaredite');
-    $('bom-band-note').hidden = !split.open || !jaredite;
-    $('bom-band-note').textContent = jaredite ? `Jaredite record: years not given. ${data.bands.jaredite.note}` : '';
     const empty = $('bom-empty');
     if (!split.open || onMap.length || hidden.has('bom')) { empty.hidden = true; return; }
     const dated = shown().filter(e => e.map === 'bom' && !e.covered && e.start != null);
