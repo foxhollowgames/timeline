@@ -22,10 +22,12 @@ export function globeView(globe) {
 
 export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
   const buttons = new Map();
-  let items = [], markers = [], selectedId = null;
+  let items = [], markers = [], cities = [], selectedId = null;
+  const cityLayer = document.createElement('div');
+  cityLayer.className = 'city-markers';
   const markerLayer = document.createElement('div');
   markerLayer.className = 'place-markers';
-  layer.before(markerLayer);
+  layer.before(cityLayer, markerLayer);
 
   const pinSize = () => (innerWidth <= 650 ? 26 : 30);
 
@@ -104,15 +106,27 @@ export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
     }
     for (const [key, button] of buttons) if (!used.has(key)) { button.remove(); buttons.delete(key); }
 
-    // Every other place gets a dot. A label shows only where it does not overlap one already placed.
-    const boxes = [];
+    // Every other place gets a dot. A label shows only where it does not overlap a pin or a label already placed.
+    const half = pinSize() / 2;
+    const boxes = groups.map(g => ({ x0: g.x - half, x1: g.x + half, y0: g.y - half, y1: g.y + half }));
+    const fits = box => !boxes.some(b => box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0);
     markerLayer.innerHTML = markers.map(m => {
       const screen = view.project(m.key, m);
       if (!screen) return '';
       const box = { x0: screen.x + 4, x1: screen.x + 10 + m.name.length * 6.2, y0: screen.y - 8, y1: screen.y + 8 };
-      const fits = !boxes.some(b => box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0);
-      if (fits) boxes.push(box);
-      return `<span class="place-marker" style="transform:translate(${screen.x}px,${screen.y}px)"><i></i>${fits ? `<b>${escapeHTML(m.name)}</b>` : ''}</span>`;
+      const shown = fits(box);
+      if (shown) boxes.push(box);
+      return `<span class="place-marker" style="transform:translate(${screen.x}px,${screen.y}px)"><i></i>${shown ? `<b>${escapeHTML(m.name)}</b>` : ''}</span>`;
+    }).join('');
+
+    // Cities of note, most important first. A city shows only when its dot and name fit.
+    cityLayer.innerHTML = cities.map(c => {
+      const screen = view.project(c.key, c);
+      if (!screen || screen.y < topInset()) return '';
+      const box = { x0: screen.x - 4, x1: screen.x + 8 + c.name.length * 5.8, y0: screen.y - 8, y1: screen.y + 8 };
+      if (!fits(box)) return '';
+      boxes.push(box);
+      return `<span class="city-marker" style="transform:translate(${screen.x}px,${screen.y}px)"><i></i><b>${escapeHTML(c.name)}</b></span>`;
     }).join('');
   });
 
@@ -122,6 +136,8 @@ export function createPins({ view, layer, onOpen, topInset = () => 64 }) {
     setSelected(id) { selectedId = id; view.request?.(); },
     // Small labeled dots for the selected event's other places.
     setMarkers(next) { markers = next; view.request?.(); },
+    // Cities of note: [{name, lat, lng}].
+    setCities(next) { cities = next.map((c, i) => ({ key: `city:${i}`, ...c })); view.request?.(); },
     describe: event => `${event.ref}, ${event.start == null ? 'years not given' : formatYear(event.start)}`,
   };
 }

@@ -608,12 +608,20 @@ const volumeOrder = { ot: 0, nt: 1, bom: 2, dc: 3, history: 4 };
 events.sort((a, b) => (a.start ?? -1e9) - (b.start ?? -1e9) || volumeOrder[a.volume] - volumeOrder[b.volume] || String(a.id).localeCompare(String(b.id), 'en', { numeric: true }));
 
 const usedSources = new Set(Object.values(details).flatMap(v => Object.values(v).flatMap(d => d.dateSourceIds ?? [])));
+// Cities of note for the globe, each a place already in the list (scripts/cities-of-note.json).
+const cities = (await readJSON(join(here, 'cities-of-note.json'))).cities.map(c => {
+  const place = places[c.place];
+  if (place?.lat == null) { problems.push(`cities-of-note.json: place ${c.place} not found`); return null; }
+  return { name: c.name ?? place.name, lat: place.lat, lng: place.lng };
+}).filter(Boolean);
+
 const index = {
   generated: new Date().toISOString().slice(0, 10),
   inputs: Object.fromEntries(Object.entries(config.repos).map(([key, r]) => [key, `${r.repo}@${r.commit}`])),
   bands,
   sources: { ...Object.fromEntries(Object.entries(overrides.sources).filter(([id]) => usedSources.has(id))), ...historySources },
   places,
+  cities,
   events,
 };
 

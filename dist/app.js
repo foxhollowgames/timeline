@@ -334,6 +334,7 @@ async function start() {
 
   if (globe) { routeLayer = createRouteLayer({ globe, layer: $('pins') }); routeLayer.onRouteClick(openRoute); }
   if (globe) pins = createPins({ view: globeView(globe), layer: $('pins'), topInset: () => document.querySelector('.site-header').offsetHeight + 6, onOpen: openGroup });
+  pins?.setCities(data.cities ?? []);
 
   createSearch({
     input: $('search-input'), list: $('search-results'), data, loadPeople: card.loadPeople,
