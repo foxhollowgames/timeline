@@ -70,8 +70,8 @@
       "place": "dc:kirtland",
       "verse": "dc-87:1",
       "summary": "On 25 December 1832, Joseph Smith dictates a revelation at or near Kirtland. That autumn South Carolina had threatened to leave the Union over tariffs. The revelation foretells war beginning with the rebellion of South Carolina. The southern states will call on Great Britain for help. War will be poured out on all nations. The Saints are told to stand in holy places.",
-      "related": ["american-civil-war"],
-      "relatedNote": "D&C 87 foretells war beginning with the rebellion of South Carolina. The Civil War began there in 1861."
+      "related": ["american-civil-war", "nullification-crisis"],
+      "relatedNote": "D&C 87 foretells war beginning with the rebellion of South Carolina. South Carolina had just nullified a federal tariff."
     },
     {
       "id": "the-olive-leaf",
@@ -126,8 +126,8 @@
       "place": "dc:independence",
       "verse": "dc-97:21",
       "summary": "In summer 1833, a revelation says Zion is the pure in heart. Then a mob in Independence destroys the church's printing office. Joseph Smith, far away in Kirtland, receives a revelation about bearing persecution. The Saints are to be patient, forgive, and renounce war. In November 1833, armed residents drive the Saints out of Jackson County. The Lord says Zion is chastened but will not be moved. He says he established the Constitution by wise men.",
-      "related": ["us-constitution"],
-      "relatedNote": "In D&C 101:80 the Lord says he established the Constitution of this land."
+      "related": ["us-constitution", "missouri-compromise"],
+      "relatedNote": "In D&C 101:80 the Lord says he established the Constitution. Missouri had entered the Union as a slave state."
     },
     {
       "id": "mission-to-upper-canada",
@@ -145,7 +145,9 @@
       "chapters": ["dc-103", "dc-104", "dc-105"],
       "place": "dc:fishing-river",
       "verse": "dc-105:6",
-      "summary": "In February 1834, two Missouri leaders report on the exiled Saints in Kirtland. A revelation calls for volunteers to march to Zion. The church's United Firm is deep in debt and is divided. The Lord says all things are his, and the owners are stewards. In May and June, Joseph Smith leads an armed group to Missouri. It is later called Zion's Camp. At Fishing River a revelation says Zion's redemption must wait. The people must first be prepared and endowed."
+      "summary": "In February 1834, two Missouri leaders report on the exiled Saints in Kirtland. A revelation calls for volunteers to march to Zion. The church's United Firm is deep in debt and is divided. The Lord says all things are his, and the owners are stewards. In May and June, Joseph Smith leads an armed group to Missouri. It is later called Zion's Camp. At Fishing River a revelation says Zion's redemption must wait. The people must first be prepared and endowed.",
+      "related": ["cholera-1832"],
+      "relatedNote": "Cholera strikes Zion's Camp in Missouri in June 1834."
     },
     {
       "id": "priesthood-councils",
@@ -201,7 +203,9 @@
       "chapters": ["dc-112", "dc-114", "dc-118"],
       "place": "dc:far-west",
       "verse": "dc-112:10",
-      "summary": "In 1837 many members in Kirtland, including some apostles, turn against Joseph Smith. Thomas B. Marsh, president of the Twelve, is told to be humble. The Twelve must follow the First Presidency. In April 1838, David W. Patten is told to prepare for a mission. In July 1838, the Twelve are refilled after dissent. They are told to cross the great waters the next spring."
+      "summary": "In 1837 many members in Kirtland, including some apostles, turn against Joseph Smith. Thomas B. Marsh, president of the Twelve, is told to be humble. The Twelve must follow the First Presidency. In April 1838, David W. Patten is told to prepare for a mission. In July 1838, the Twelve are refilled after dissent. They are told to cross the great waters the next spring.",
+      "related": ["panic-of-1837", "queen-victoria"],
+      "relatedNote": "The Panic of 1837 shakes Kirtland. Apostles reach England as Victoria takes the throne."
     },
     {
       "id": "far-west",
@@ -210,7 +214,9 @@
       "chapters": ["dc-113", "dc-115", "dc-116", "dc-117"],
       "place": "dc:far-west",
       "verse": "dc-115:4",
-      "summary": "Joseph Smith moves from Kirtland to Far West, Missouri, in March 1838. He answers questions about Isaiah 11. On 26 April a revelation gives the church its name. It is The Church of Jesus Christ of Latter-day Saints. The Saints are to gather and build a temple at Far West. In May, Spring Hill is named Adam-ondi-Ahman. Leaders are told to leave Kirtland's property behind."
+      "summary": "Joseph Smith moves from Kirtland to Far West, Missouri, in March 1838. He answers questions about Isaiah 11. On 26 April a revelation gives the church its name. It is The Church of Jesus Christ of Latter-day Saints. The Saints are to gather and build a temple at Far West. In May, Spring Hill is named Adam-ondi-Ahman. Leaders are told to leave Kirtland's property behind.",
+      "related": ["trail-of-tears"],
+      "relatedNote": "In 1838 the Cherokee are forced west and the Saints are driven from Missouri."
     },
     {
       "id": "the-law-of-tithing",
@@ -283,7 +289,9 @@
       "chapters": ["dc-136"],
       "place": "dc:winter-quarters",
       "verse": "dc-136:4",
-      "summary": "The Saints leave Nauvoo in 1846 and spend the winter on the Missouri River. On 14 January 1847, Brigham Young gives this revelation at Winter Quarters. It organizes the camp for the journey west into companies. Each company is to care for the poor, the widows, and the fatherless. The people covenant to walk in the Lord's ordinances."
+      "summary": "The Saints leave Nauvoo in 1846 and spend the winter on the Missouri River. On 14 January 1847, Brigham Young gives this revelation at Winter Quarters. It organizes the camp for the journey west into companies. Each company is to care for the poor, the widows, and the fatherless. The people covenant to walk in the Lord's ordinances.",
+      "related": ["mexican-american-war", "oregon-trail"],
+      "relatedNote": "The Mormon Battalion enlists in the war with Mexico. The trek follows the Platte, as the Oregon Trail did."
     },
     {
       "id": "official-declaration-1",
@@ -301,7 +309,9 @@
       "place": "dc:salt-lake-city",
       "verse": "dc-138:11",
       "summary": "On 3 October 1918, President Joseph F. Smith ponders Peter's words about Christ preaching to the dead. He sees the spirits of the righteous dead waiting for Christ. Christ does not go himself to the wicked. He organizes righteous messengers to teach all the spirits. The faithful in this life continue that work after death.",
-      "alsoRead": [{ "ref": "1 Peter 3:19", "note": "Peter says Christ preached to the spirits in prison." }]
+      "alsoRead": [{ "ref": "1 Peter 3:19", "note": "Peter says Christ preached to the spirits in prison." }],
+      "related": ["world-war-i"],
+      "relatedNote": "Joseph F. Smith receives this vision as the First World War ends."
     },
     {
       "id": "official-declaration-2",

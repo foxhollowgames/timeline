@@ -101,7 +101,7 @@
     { "id": "indonesia-1945", "title": "Indonesia proclaims independence", "start": 1945, "end": 1945, "dateLabel": "17 August 1945", "tier": 2, "region": "Southeast Asia", "place": "Jakarta", "lat": -6.2, "lng": 106.85,
       "summary": "Sukarno reads the proclamation of independence. A war against Dutch rule follows.",
       "source": { "wiki": "Proclamation of Indonesian Independence", "quote": "on Friday, 17 August 1945 in Jakarta" } },
-    { "id": "fall-of-saigon", "title": "The fall of Saigon", "start": 1975, "end": 1975, "dateLabel": "30 April 1975", "tier": 2, "region": "Southeast Asia", "place": "Saigon", "lat": 10.778, "lng": 106.696,
+    { "id": "fall-of-saigon", "image": "File:The air evacuation of siege-stricken Vietnamese from Saigon to the U.S. was conducted after the Babylift operation.... - NARA - 542335.tif", "title": "The fall of Saigon", "start": 1975, "end": 1975, "dateLabel": "30 April 1975", "tier": 2, "region": "Southeast Asia", "place": "Saigon", "lat": 10.778, "lng": 106.696,
       "summary": "North Vietnam captures Saigon. The Vietnam War ends.",
       "source": { "wiki": "Fall of Saigon", "quote": "captured by North Vietnam on 30 April 1975" } },
     { "id": "indian-ocean-tsunami", "title": "The Indian Ocean earthquake and tsunami", "start": 2004, "end": 2004, "dateLabel": "26 December 2004", "tier": 2, "region": "Southeast Asia", "place": "Banda Aceh", "lat": 5.55, "lng": 95.32,

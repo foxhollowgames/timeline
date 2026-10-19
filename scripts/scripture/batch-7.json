@@ -43,7 +43,9 @@
       "chapters": ["genesis-12"],
       "place": "b:haran",
       "verse": "genesis-12:2",
-      "summary": "The LORD tells Abram to leave his country and his father's house. He promises a great nation and a blessing for all families through Abram. Abram goes at seventy-five with his wife Sarai and his nephew Lot. In Canaan the LORD promises the land to his children, and Abram builds altars. A famine sends him to Egypt. He asks Sarai to say she is his sister. Pharaoh takes her, the LORD sends plagues, and Pharaoh sends them away."
+      "summary": "The LORD tells Abram to leave his country and his father's house. He promises a great nation and a blessing for all families through Abram. Abram goes at seventy-five with his wife Sarai and his nephew Lot. In Canaan the LORD promises the land to his children, and Abram builds altars. A famine sends him to Egypt. He asks Sarai to say she is his sister. Pharaoh takes her, the LORD sends plagues, and Pharaoh sends them away.",
+      "related": ["ur-iii-falls", "mari-archives", "middle-kingdom-egypt"],
+      "relatedNote": "Abram leaves Ur in an age of upheaval. Ur's last dynasty had fallen, and Mari ruled the upper Euphrates."
     },
     {
       "id": "abram-and-lot-part",
@@ -129,7 +131,9 @@
       "chapters": ["genesis-23"],
       "place": "b:hebron",
       "verse": "genesis-23:19",
-      "summary": "Sarah dies at Hebron at 127, and Abraham mourns her. He tells the Hittites he is a foreigner and asks for a burial place. He asks to buy the cave of Machpelah from Ephron. Ephron offers it as a gift, then names a price of four hundred shekels. Abraham weighs out the silver before the people at the city gate. He buries Sarah in the cave."
+      "summary": "Sarah dies at Hebron at 127, and Abraham mourns her. He tells the Hittites he is a foreigner and asks for a burial place. He asks to buy the cave of Machpelah from Ephron. Ephron offers it as a gift, then names a price of four hundred shekels. Abraham weighs out the silver before the people at the city gate. He buries Sarah in the cave.",
+      "related": ["hittite-kingdom"],
+      "relatedNote": "Abraham buys the cave of Machpelah from Ephron the Hittite."
     },
     {
       "id": "rebekah-marries-isaac",
@@ -218,7 +222,9 @@
       "chapters": ["genesis-37"],
       "place": "b:dothan",
       "verse": "genesis-37:28",
-      "summary": "Israel loves Joseph most and gives him a coat of many colors. His brothers hate him more when he dreams that they bow to him. Near Dothan they plan to kill him. Reuben persuades them to throw him in a pit instead. Judah proposes selling him, and they sell him for twenty pieces of silver. They dip his coat in goat's blood and show it to their father. In Egypt, Joseph is sold to Potiphar, the captain of Pharaoh's guard."
+      "summary": "Israel loves Joseph most and gives him a coat of many colors. His brothers hate him more when he dreams that they bow to him. Near Dothan they plan to kill him. Reuben persuades them to throw him in a pit instead. Judah proposes selling him, and they sell him for twenty pieces of silver. They dip his coat in goat's blood and show it to their father. In Egypt, Joseph is sold to Potiphar, the captain of Pharaoh's guard.",
+      "related": ["middle-kingdom-egypt", "hyksos"],
+      "relatedNote": "Many place Joseph in Egypt's Middle Kingdom or under the Hyksos kings."
     },
     {
       "id": "judah-and-tamar",
@@ -273,7 +279,9 @@
       "chapters": ["genesis-46", "genesis-47"],
       "place": "b:goshen",
       "verse": "genesis-46:3",
-      "summary": "God tells Jacob in a night vision not to fear going to Egypt. God will make him a great nation there and bring him back. Seventy people of Jacob's family go to Egypt. Joseph meets his father and weeps on his neck for a long time. Pharaoh gives them the land of Goshen. The famine grows worse, and the Egyptians sell their land to Pharaoh for grain. Jacob makes Joseph swear to bury him in Canaan."
+      "summary": "God tells Jacob in a night vision not to fear going to Egypt. God will make him a great nation there and bring him back. Seventy people of Jacob's family go to Egypt. Joseph meets his father and weeps on his neck for a long time. Pharaoh gives them the land of Goshen. The famine grows worse, and the Egyptians sell their land to Pharaoh for grain. Jacob makes Joseph swear to bury him in Canaan.",
+      "related": ["hyksos"],
+      "relatedNote": "The Hyksos were Semitic rulers of the Nile delta. Some link Jacob's family to their era."
     },
     {
       "id": "jacob-blesses-his-sons",

@@ -49,7 +49,7 @@
     { "id": "bantu-expansion", "title": "The Bantu expansion begins", "start": -4000, "end": -4000, "dateLabel": "c. 4000 BCE", "tier": 2, "region": "Africa", "place": "Cameroon highlands", "lat": 6.0, "lng": 11.0,
       "summary": "Bantu-speaking farmers begin a slow spread across central and southern Africa. It lasts for thousands of years.",
       "source": { "wiki": "Bantu expansion", "quote": "approximately 4,000 BC to 500 AD" } },
-    { "id": "amarna", "title": "Akhenaten moves Egypt's capital to Amarna", "start": -1353, "end": -1336, "dateLabel": "c. 1353–1336 BCE", "tier": 2, "region": "Africa", "place": "Amarna", "lat": 27.645, "lng": 30.905,
+    { "id": "amarna", "image": "File:GD-EG-Caire-Musée066 (cropped).JPG", "title": "Akhenaten moves Egypt's capital to Amarna", "start": -1353, "end": -1336, "dateLabel": "c. 1353–1336 BCE", "tier": 2, "region": "Africa", "place": "Amarna", "lat": 27.645, "lng": 30.905,
       "summary": "Akhenaten builds a new capital and puts the sun disc Aten above the other gods.",
       "source": { "wiki": "Amarna Period", "quote": "Akhenaten (1353–1336 BC)" } },
     { "id": "tutankhamun", "title": "Tutankhamun reigns", "start": -1332, "end": -1323, "dateLabel": "c. 1332–1323 BCE", "tier": 2, "region": "Africa", "place": "Thebes", "lat": 25.74, "lng": 32.601,

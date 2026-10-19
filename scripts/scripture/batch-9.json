@@ -106,7 +106,9 @@
       "chapters": ["acts-12"],
       "place": "b:jerusalem",
       "verse": "acts-12:7",
-      "summary": "King Herod kills James, the brother of John, with the sword. He arrests Peter, and the believers pray for him. At night an angel wakes Peter, and his chains fall off. The iron gate opens by itself. Peter goes to the house of Mary, mother of John Mark. A servant named Rhoda hears his voice and runs in without opening the gate. Later Herod accepts praise as a god, and an angel strikes him."
+      "summary": "King Herod kills James, the brother of John, with the sword. He arrests Peter, and the believers pray for him. At night an angel wakes Peter, and his chains fall off. The iron gate opens by itself. Peter goes to the house of Mary, mother of John Mark. A servant named Rhoda hears his voice and runs in without opening the gate. Later Herod accepts praise as a god, and an angel strikes him.",
+      "related": ["herod-agrippa-i"],
+      "relatedNote": "Acts 12 names King Herod, that is Agrippa I, who died in 44 CE."
     },
     {
       "id": "pauls-first-mission",
@@ -160,7 +162,9 @@
       "chapters": ["acts-18"],
       "place": "b:corinth",
       "verse": "acts-18:9",
-      "summary": "In Corinth, Paul lives and works with Aquila and Priscilla, who make tents. He teaches in the synagogue each Sabbath. When opposed, he moves next door. Crispus, the synagogue ruler, believes. The Lord tells Paul in a vision not to be afraid. The governor Gallio refuses to judge a dispute about Jewish law. In Ephesus, Priscilla and Aquila teach Apollos more fully."
+      "summary": "In Corinth, Paul lives and works with Aquila and Priscilla, who make tents. He teaches in the synagogue each Sabbath. When opposed, he moves next door. Crispus, the synagogue ruler, believes. The Lord tells Paul in a vision not to be afraid. The governor Gallio refuses to judge a dispute about Jewish law. In Ephesus, Priscilla and Aquila teach Apollos more fully.",
+      "related": ["delphi-inscription"],
+      "relatedNote": "Acts 18:12 names Gallio. The Delphi inscription dates his rule in Achaia."
     },
     {
       "id": "paul-in-ephesus",
@@ -206,7 +210,9 @@
       "chapters": ["acts-21", "acts-22", "acts-23"],
       "place": "b:jerusalem",
       "verse": "acts-23:11",
-      "summary": "The prophet Agabus binds his own hands and feet with Paul's belt. He says Paul will be bound in Jerusalem. In the temple, men from Asia stir up the crowd, and Roman soldiers take Paul. Paul tells the crowd how he saw Jesus near Damascus. He says he is a Roman citizen, and they do not flog him. The Lord tells him he must testify in Rome. Soldiers take him by night to Caesarea."
+      "summary": "The prophet Agabus binds his own hands and feet with Paul's belt. He says Paul will be bound in Jerusalem. In the temple, men from Asia stir up the crowd, and Roman soldiers take Paul. Paul tells the crowd how he saw Jesus near Damascus. He says he is a Roman citizen, and they do not flog him. The Lord tells him he must testify in Rome. Soldiers take him by night to Caesarea.",
+      "related": ["antonius-felix"],
+      "relatedNote": "Paul is sent to Felix, the governor at Caesarea."
     },
     {
       "id": "paul-before-agrippa",
@@ -215,7 +221,9 @@
       "chapters": ["acts-24", "acts-25", "acts-26"],
       "place": "b:caesarea",
       "verse": "acts-26:28",
-      "summary": "The high priest brings charges against Paul before the governor Felix. Paul says he worships the God of his fathers and hopes for a resurrection. Felix keeps him in prison for two years. When Festus becomes governor, Paul appeals to Caesar. Paul tells King Agrippa how he saw the light on the Damascus road. Festus says learning has made him mad. Agrippa says Paul could have gone free."
+      "summary": "The high priest brings charges against Paul before the governor Felix. Paul says he worships the God of his fathers and hopes for a resurrection. Felix keeps him in prison for two years. When Festus becomes governor, Paul appeals to Caesar. Paul tells King Agrippa how he saw the light on the Damascus road. Festus says learning has made him mad. Agrippa says Paul could have gone free.",
+      "related": ["porcius-festus"],
+      "relatedNote": "Festus hears Paul's case and sends him to Caesar."
     },
     {
       "id": "shipwreck-and-rome",
@@ -224,7 +232,9 @@
       "chapters": ["acts-27", "acts-28"],
       "place": "b:malta",
       "verse": "acts-27:22",
-      "summary": "Paul sails for Italy as a prisoner. A violent storm drives the ship for many days. Paul says an angel told him no one will die. The ship breaks up, and all 276 people reach land on Malta. A viper bites Paul, and he is not harmed. In Rome he lives under guard for two years. He teaches all who come to him."
+      "summary": "Paul sails for Italy as a prisoner. A violent storm drives the ship for many days. Paul says an angel told him no one will die. The ship breaks up, and all 276 people reach land on Malta. A viper bites Paul, and he is not harmed. In Rome he lives under guard for two years. He teaches all who come to him.",
+      "related": ["nero"],
+      "relatedNote": "Paul appeals to Caesar, who is then Nero."
     },
     {
       "id": "letters-from-prison",
@@ -242,7 +252,9 @@
       "chapters": ["1-timothy-1", "2-timothy-1", "2-timothy-4", "titus-1"],
       "place": "b:ephesus",
       "verse": "2-timothy-4:7",
-      "summary": "Paul writes to Timothy, who leads the believers at Ephesus. He tells Timothy to stop false teaching. He calls himself the chief of sinners whom Christ came to save. He writes to Titus, whom he left in Crete to appoint elders. In a last letter Paul says God gave a spirit of power, not fear. He says he has fought the good fight and kept the faith. He asks Timothy to come soon."
+      "summary": "Paul writes to Timothy, who leads the believers at Ephesus. He tells Timothy to stop false teaching. He calls himself the chief of sinners whom Christ came to save. He writes to Titus, whom he left in Crete to appoint elders. In a last letter Paul says God gave a spirit of power, not fear. He says he has fought the good fight and kept the faith. He asks Timothy to come soon.",
+      "related": ["nero", "great-fire-of-rome"],
+      "relatedNote": "Tradition sets Paul's last letters and death in Nero's persecution after the fire."
     },
     {
       "id": "letters-to-the-seven-churches",
@@ -251,7 +263,9 @@
       "chapters": ["revelation-1", "revelation-2", "revelation-3"],
       "place": "b:patmos",
       "verse": "revelation-3:20",
-      "summary": "John is on the island of Patmos. On the Lord's day he sees one like a son of man among seven lampstands. The lampstands are seven churches in Asia. Christ sends a message to each one. Ephesus has left its first love, and Smyrna will suffer. Laodicea is neither cold nor hot. Christ stands at the door and knocks."
+      "summary": "John is on the island of Patmos. On the Lord's day he sees one like a son of man among seven lampstands. The lampstands are seven churches in Asia. Christ sends a message to each one. Ephesus has left its first love, and Smyrna will suffer. Laodicea is neither cold nor hot. Christ stands at the door and knocks.",
+      "related": ["first-jewish-roman-war", "domitian"],
+      "relatedNote": "Scholars date Revelation to Nero's last years or to Domitian's reign."
     }
   ]
 }

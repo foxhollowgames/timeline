@@ -262,7 +262,9 @@
         "isaiah-19"
       ],
       "verse": "isaiah-19:25",
-      "summary": "Isaiah's message about Damascus says it will become a heap of ruins. Ephraim, the northern kingdom of Israel, will lose its strength. A land beyond the rivers of Ethiopia sends messengers in papyrus boats. It will later bring gifts to Mount Zion. The LORD rides a swift cloud to Egypt, and its idols shake. Egyptians fight one another, and the Nile dries up. Then Egypt will cry to the LORD, and he will heal it. Egypt, Assyria, and Israel will be a blessing in the earth."
+      "summary": "Isaiah's message about Damascus says it will become a heap of ruins. Ephraim, the northern kingdom of Israel, will lose its strength. A land beyond the rivers of Ethiopia sends messengers in papyrus boats. It will later bring gifts to Mount Zion. The LORD rides a swift cloud to Egypt, and its idols shake. Egyptians fight one another, and the Nile dries up. Then Egypt will cry to the LORD, and he will heal it. Egypt, Assyria, and Israel will be a blessing in the earth.",
+      "related": ["kushite-pharaohs", "taharqa"],
+      "relatedNote": "Kushite kings from the upper Nile ruled Egypt in Isaiah's day."
     },
     {
       "id": "isaiah-walks-barefoot",
@@ -272,7 +274,9 @@
         "isaiah-20"
       ],
       "verse": "isaiah-20:3",
-      "summary": "Sargon king of Assyria sends his commander to capture Ashdod, a Philistine city. The LORD tells Isaiah to take off his sackcloth and sandals. Isaiah walks naked and barefoot for three years. This is a sign against Egypt and Ethiopia. The king of Assyria will lead their captives away the same way. Those who looked to Ethiopia and Egypt for help will be ashamed."
+      "summary": "Sargon king of Assyria sends his commander to capture Ashdod, a Philistine city. The LORD tells Isaiah to take off his sackcloth and sandals. Isaiah walks naked and barefoot for three years. This is a sign against Egypt and Ethiopia. The king of Assyria will lead their captives away the same way. Those who looked to Ethiopia and Egypt for help will be ashamed.",
+      "related": ["sargon-ii", "kushite-pharaohs"],
+      "relatedNote": "Isaiah 20 dates this sign to Sargon's capture of Ashdod."
     },
     {
       "id": "babylon-is-fallen",
@@ -283,7 +287,9 @@
         "isaiah-23"
       ],
       "verse": "isaiah-21:9",
-      "summary": "Isaiah sees a hard vision and shakes with pain. A watchman sees riders come and cries that Babylon has fallen. Its idols lie broken on the ground. Short messages follow for Dumah and Arabia. Then the message turns to Tyre, a trading city on the coast. Ships of Tarshish are told to howl, for Tyre is destroyed. Tyre will be forgotten for seventy years. Then it will trade again, and its gain will go to the LORD."
+      "summary": "Isaiah sees a hard vision and shakes with pain. A watchman sees riders come and cries that Babylon has fallen. Its idols lie broken on the ground. Short messages follow for Dumah and Arabia. Then the message turns to Tyre, a trading city on the coast. Ships of Tarshish are told to howl, for Tyre is destroyed. Tyre will be forgotten for seventy years. Then it will trade again, and its gain will go to the LORD.",
+      "related": ["fall-of-babylon"],
+      "relatedNote": "Babylon fell to the Persians in 539 BCE."
     },
     {
       "id": "key-of-the-house-of-david",
@@ -407,7 +413,9 @@
       ],
       "place": "b:babylon",
       "verse": "isaiah-45:1",
-      "summary": "The LORD calls Cyrus his anointed and goes before him. He will open gates and give Cyrus hidden treasures. Cyrus will build the LORD's city and free his exiles. The LORD says every knee will bow to him. Bel and Nebo, Babylon's gods, are carried off on tired animals. Then the LORD speaks to Babylon as a proud queen. She will sit in the dust. Her spells and her stargazers cannot save her."
+      "summary": "The LORD calls Cyrus his anointed and goes before him. He will open gates and give Cyrus hidden treasures. Cyrus will build the LORD's city and free his exiles. The LORD says every knee will bow to him. Bel and Nebo, Babylon's gods, are carried off on tired animals. Then the LORD speaks to Babylon as a proud queen. She will sit in the dust. Her spells and her stargazers cannot save her.",
+      "related": ["cyrus-cylinder", "achaemenid-empire"],
+      "relatedNote": "Isaiah names Cyrus. His cylinder records that he sent captive peoples home."
     },
     {
       "id": "go-forth-from-babylon",
@@ -767,7 +775,9 @@
         "jeremiah-34"
       ],
       "verse": "jeremiah-34:17",
-      "summary": "Nebuchadnezzar's army attacks Jerusalem and Judah's last towns. Jeremiah tells Zedekiah he will see the king of Babylon face to face. Zedekiah and the people make a covenant to free their Hebrew slaves. Then they take the slaves back. The LORD says they did not proclaim liberty. So he proclaims a liberty for them to the sword, plague, and famine."
+      "summary": "Nebuchadnezzar's army attacks Jerusalem and Judah's last towns. Jeremiah tells Zedekiah he will see the king of Babylon face to face. Zedekiah and the people make a covenant to free their Hebrew slaves. Then they take the slaves back. The LORD says they did not proclaim liberty. So he proclaims a liberty for them to the sword, plague, and famine.",
+      "related": ["lachish-letters"],
+      "relatedNote": "Jeremiah 34:7 names Lachish and Azekah as the last fortified cities of Judah."
     },
     {
       "id": "faithful-rechabites",
@@ -823,7 +833,9 @@
       ],
       "place": "b:tahpanhes",
       "verse": "jeremiah-43:7",
-      "summary": "The people ask Jeremiah to pray for guidance and promise to obey. After ten days the LORD says to stay in Judah and not go to Egypt. Johanan and Azariah call Jeremiah a liar. They take everyone to Tahpanhes in Egypt, with Jeremiah and Baruch. Jeremiah hides stones there where Nebuchadnezzar will set his throne. The Jews in Egypt burn incense to the queen of heaven. Jeremiah says only a few will escape back to Judah."
+      "summary": "The people ask Jeremiah to pray for guidance and promise to obey. After ten days the LORD says to stay in Judah and not go to Egypt. Johanan and Azariah call Jeremiah a liar. They take everyone to Tahpanhes in Egypt, with Jeremiah and Baruch. Jeremiah hides stones there where Nebuchadnezzar will set his throne. The Jews in Egypt burn incense to the queen of heaven. Jeremiah says only a few will escape back to Judah.",
+      "related": ["apries", "elephantine-papyri"],
+      "relatedNote": "Jeremiah 44:30 names Pharaoh Hophra, called Apries by the Greeks. Jews later served at Elephantine."
     },
     {
       "id": "battle-of-carchemish",
@@ -834,7 +846,9 @@
       ],
       "place": "b:carchemish",
       "verse": "jeremiah-46:2",
-      "summary": "Jeremiah's messages to the nations begin with Egypt. Nebuchadnezzar defeats Pharaoh Necho's army at Carchemish, by the Euphrates. Egypt rose like the Nile, but its soldiers flee in terror. Babylon will come and strike Egypt's own land. Then the LORD tells Jacob not to fear. He will save Jacob from far away."
+      "summary": "Jeremiah's messages to the nations begin with Egypt. Nebuchadnezzar defeats Pharaoh Necho's army at Carchemish, by the Euphrates. Egypt rose like the Nile, but its soldiers flee in terror. Babylon will come and strike Egypt's own land. Then the LORD tells Jacob not to fear. He will save Jacob from far away.",
+      "related": ["battle-of-carchemish-605", "nebuchadnezzar-ii"],
+      "relatedNote": "Jeremiah 46 names the battle where Nebuchadnezzar defeated Pharaoh Necho."
     },
     {
       "id": "messages-to-the-nations",
@@ -1015,7 +1029,9 @@
         "ezekiel-28"
       ],
       "verse": "ezekiel-28:2",
-      "summary": "Tyre, a rich trading city, gloated when Jerusalem fell. God will bring many nations against it like waves. Nebuchadnezzar will besiege it, and it will become a bare rock. Ezekiel laments Tyre as a beautiful ship sunk at sea. Tyre's prince says he is a god, but he is only a man. Then God speaks against Sidon. Israel will be gathered and live safely."
+      "summary": "Tyre, a rich trading city, gloated when Jerusalem fell. God will bring many nations against it like waves. Nebuchadnezzar will besiege it, and it will become a bare rock. Ezekiel laments Tyre as a beautiful ship sunk at sea. Tyre's prince says he is a god, but he is only a man. Then God speaks against Sidon. Israel will be gathered and live safely.",
+      "related": ["siege-of-tyre-332"],
+      "relatedNote": "Nebuchadnezzar besieged Tyre for years. Alexander finally destroyed the island city in 332 BCE."
     },
     {
       "id": "pharaoh-and-egypt-judged",
@@ -1028,7 +1044,9 @@
         "ezekiel-32"
       ],
       "verse": "ezekiel-29:3",
-      "summary": "God calls Pharaoh a great monster lying in the Nile. Pharaoh says the river is his own. God will put hooks in his jaws and leave him in the desert. Nebuchadnezzar will take Egypt as wages for his work against Tyre. Egypt is a tall cedar that will fall as Assyria fell. Ezekiel sings a lament as Pharaoh goes down to the pit."
+      "summary": "God calls Pharaoh a great monster lying in the Nile. Pharaoh says the river is his own. God will put hooks in his jaws and leave him in the desert. Nebuchadnezzar will take Egypt as wages for his work against Tyre. Egypt is a tall cedar that will fall as Assyria fell. Ezekiel sings a lament as Pharaoh goes down to the pit.",
+      "related": ["apries"],
+      "relatedNote": "Ezekiel's oracles against Pharaoh fall in the reign of Apries."
     },
     {
       "id": "jerusalem-has-fallen",
@@ -1072,7 +1090,9 @@
         "daniel-1"
       ],
       "verse": "daniel-1:8",
-      "summary": "Nebuchadnezzar takes Jerusalem and carries off some temple vessels. Ashpenaz, his chief officer, trains young nobles for the court. Among them are Daniel, Hananiah, Mishael, and Azariah. Daniel will not defile himself with the king's food and wine. The four eat vegetables and drink water for ten days. They look healthier than the others. God gives them knowledge, and Daniel understands visions and dreams."
+      "summary": "Nebuchadnezzar takes Jerusalem and carries off some temple vessels. Ashpenaz, his chief officer, trains young nobles for the court. Among them are Daniel, Hananiah, Mishael, and Azariah. Daniel will not defile himself with the king's food and wine. The four eat vegetables and drink water for ten days. They look healthier than the others. God gives them knowledge, and Daniel understands visions and dreams.",
+      "related": ["nebuchadnezzar-ii", "ishtar-gate"],
+      "relatedNote": "Daniel serves at the court of Nebuchadnezzar II in Babylon."
     },
     {
       "id": "nebuchadnezzars-dream",
@@ -1118,7 +1138,9 @@
         "daniel-5"
       ],
       "verse": "daniel-5:25",
-      "summary": "King Belshazzar drinks from the gold vessels taken from Jerusalem's temple. A hand appears and writes on the palace wall. No wise man can read it. The queen tells him about Daniel. Daniel reads the words MENE, MENE, TEKEL, UPHARSIN. God has numbered the kingdom, weighed the king, and divided the kingdom. That night Belshazzar is killed, and Darius the Mede receives the kingdom."
+      "summary": "King Belshazzar drinks from the gold vessels taken from Jerusalem's temple. A hand appears and writes on the palace wall. No wise man can read it. The queen tells him about Daniel. Daniel reads the words MENE, MENE, TEKEL, UPHARSIN. God has numbered the kingdom, weighed the king, and divided the kingdom. That night Belshazzar is killed, and Darius the Mede receives the kingdom.",
+      "related": ["nabonidus", "fall-of-babylon"],
+      "relatedNote": "Babylonian texts show Belshazzar ruling for his father Nabonidus. Babylon fell to Cyrus in 539 BCE."
     },
     {
       "id": "daniel-in-the-lions-den",
@@ -1270,7 +1292,9 @@
           "ref": "Matthew 12:40",
           "note": "Jesus compares his burial to Jonah's three days in the fish."
         }
-      ]
+      ],
+      "related": ["neo-assyrian-empire"],
+      "relatedNote": "Nineveh was a capital of the Assyrian Empire, Israel's great enemy."
     },
     {
       "id": "nineveh-repents",
@@ -1344,7 +1368,9 @@
         "nahum-3"
       ],
       "verse": "nahum-1:7",
-      "summary": "Nahum's message is about Nineveh, the capital of Assyria. The LORD is slow to anger, but he will not leave the guilty unpunished. He is a stronghold for those who trust him. Then an attacker advances against Nineveh. Chariots race through the streets, and the river gates open. Nahum cries woe to the city of blood. All who hear of its fall will clap their hands."
+      "summary": "Nahum's message is about Nineveh, the capital of Assyria. The LORD is slow to anger, but he will not leave the guilty unpunished. He is a stronghold for those who trust him. Then an attacker advances against Nineveh. Chariots race through the streets, and the river gates open. Nahum cries woe to the city of blood. All who hear of its fall will clap their hands.",
+      "related": ["fall-of-nineveh"],
+      "relatedNote": "Nineveh fell to the Babylonians and Medes in 612 BCE."
     },
     {
       "id": "just-shall-live-by-faith",
@@ -1362,7 +1388,9 @@
           "ref": "Romans 1:17",
           "note": "Paul quotes the just living by faith."
         }
-      ]
+      ],
+      "related": ["battle-of-carchemish-605", "nebuchadnezzar-ii"],
+      "relatedNote": "Habakkuk foresees the Chaldeans of Babylon rising after Carchemish."
     },
     {
       "id": "zephaniah-day-of-wrath",

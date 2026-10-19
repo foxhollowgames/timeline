@@ -19,13 +19,14 @@ const BASIS = {
 // Hand-sourced events (world and Church history) and scripture events lead with their title, not a reference.
 const titleFirst = e => e.volume === 'history' || e.basis === 'church-history' || e.kind === 'event';
 const ALSO_COUNT = 4;
+const ALSO_MIN_NEAREST = 2; // nearest rows still shown when hand-picked links fill the list
 const ALSO_MAX_GAP = 150; // years between two events' ranges
 const VERSE_WORDS = 40;
 
 export const eventDate = e => (e.start == null ? 'Years not given' : formatRange(e.start, e.end));
 
 // The nearest events of the other kind: history for scripture, scripture for history (DESIGN.md Q8).
-// Hand-picked related ids (scripts/curated-events.json) come first, then the nearest fill up to four.
+// Hand-picked related ids come first, then the nearest fill up to four, never fewer than two.
 // Order-only events have no years, so they get no nearest links (Q28).
 export function alsoAtThisTime(event, events, related = []) {
   const linked = [...new Set(related)].map(id => events.find(e => e.id === id)).filter(Boolean);
@@ -39,8 +40,18 @@ export function alsoAtThisTime(event, events, related = []) {
     .map(e => ({ e, score: gap(e) + Math.abs(mid(e) - center) * 0.5 + (e.end - e.start) * 0.25 }))
     .sort((a, b) => a.score - b.score)
     .map(({ e }) => e)
-    .slice(0, Math.max(0, ALSO_COUNT - linked.length));
+    .slice(0, Math.max(ALSO_MIN_NEAREST, ALSO_COUNT - linked.length));
   return [...linked, ...nearest];
+}
+
+// A history event's picture, with its Commons credit (scripts/fetch-images.mjs).
+// A long artist line is cut, since the Commons page carries the full credit.
+function picture(image, title) {
+  const artist = image.artist.length > 70 ? image.artist.slice(0, 68).trimEnd() + '…' : image.artist;
+  return `<figure class="card-figure">
+    <img src="${escapeHTML(image.src)}" width="${image.width}" height="${image.height}" alt="${escapeHTML(title)}" loading="lazy" decoding="async">
+    <figcaption>${escapeHTML(artist)} · ${escapeHTML(image.license)} · <a href="${escapeHTML(image.page)}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption>
+  </figure>`;
 }
 
 // One verse, cut to about 40 words (DESIGN.md Q24). A cut ends with an ellipsis.
@@ -143,7 +154,8 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     const isHistory = event.volume === 'history';
     const conference = CONFERENCE_GLOBE.url && event.volume === 'dc' && event.start >= CONFERENCE_GLOBE.firstYear
       ? `${CONFERENCE_GLOBE.url}#year=${event.start}` : null;
-    const related = d.related ?? [];
+    // A history card lists the scripture events that link to it (built as linkedFrom).
+    const related = d.related ?? d.linkedFrom ?? [];
     const also = alsoAtThisTime(event, data.events, related);
     const sources = (d.dateSourceIds ?? []).map(id => data.sources[id]).filter(Boolean);
     const dateLines = [
@@ -166,6 +178,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
       <p class="card-volume">${shapeSVG(event.volume, 16)}<span>${escapeHTML(VOLUMES[event.volume].label)}</span></p>
       <h2>${escapeHTML(event.title)}</h2>
       ${titleFirst(event) ? '' : `<p class="card-ref">${escapeHTML(event.ref)}</p>`}
+      ${d.image ? picture(d.image, event.title) : ''}
       <div class="card-date">
         <p><strong>${escapeHTML(d.dateLabel)}</strong> <span>${escapeHTML(d.dateKept ? 'Scholarly date, inside the prophet’s lifetime' : BASIS[event.basis] ?? '')}</span></p>
         ${dateLines.map(line => `<p class="card-date-note">${escapeHTML(line)}</p>`).join('')}

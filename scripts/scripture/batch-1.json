@@ -37,7 +37,9 @@
       ],
       "place": "b:shechem",
       "verse": "1-kings-12:16",
-      "summary": "The people of Israel gather at Shechem to make Rehoboam king. They ask him to lighten the heavy work his father Solomon laid on them. The older advisers tell him to agree. Rehoboam follows the young men and answers harshly. Israel makes Jeroboam king, and only Judah stays with David's house. Chronicles adds that priests and Levites move to Judah. Jeroboam sets up two gold calves at Bethel and Dan."
+      "summary": "The people of Israel gather at Shechem to make Rehoboam king. They ask him to lighten the heavy work his father Solomon laid on them. The older advisers tell him to agree. Rehoboam follows the young men and answers harshly. Israel makes Jeroboam king, and only Judah stays with David's house. Chronicles adds that priests and Levites move to Judah. Jeroboam sets up two gold calves at Bethel and Dan.",
+      "related": ["gezer-calendar"],
+      "relatedNote": "The Gezer calendar shows Hebrew writing in this century."
     },
     {
       "id": "bethel-altar-condemned",
@@ -65,7 +67,9 @@
       ],
       "place": "b:jerusalem",
       "verse": "2-chronicles-12:9",
-      "summary": "Jeroboam's son falls sick, and his wife goes to the prophet Ahijah. Ahijah says the child will die and Jeroboam's family will end. In Judah, the people build hilltop shrines and idols. In Rehoboam's fifth year, Shishak king of Egypt attacks Jerusalem. He carries off the treasures of the temple and the palace. He takes the gold shields that Solomon made."
+      "summary": "Jeroboam's son falls sick, and his wife goes to the prophet Ahijah. Ahijah says the child will die and Jeroboam's family will end. In Judah, the people build hilltop shrines and idols. In Rehoboam's fifth year, Shishak king of Egypt attacks Jerusalem. He carries off the treasures of the temple and the palace. He takes the gold shields that Solomon made.",
+      "related": ["shoshenq-campaign"],
+      "relatedNote": "Shoshenq I listed the towns he took in Canaan on a wall at Karnak."
     },
     {
       "id": "judah-israel-border-war",
@@ -100,7 +104,9 @@
       ],
       "place": "b:samaria",
       "verse": "1-kings-16:24",
-      "summary": "In Israel, one king after another is killed by a rival. Zimri kills King Elah and rules for seven days. The army makes its commander Omri king instead. Omri buys a hill from Shemer and builds the city of Samaria there. Samaria becomes Israel's capital. Omri's son Ahab marries Jezebel of Sidon and worships Baal."
+      "summary": "In Israel, one king after another is killed by a rival. Zimri kills King Elah and rules for seven days. The army makes its commander Omri king instead. Omri buys a hill from Shemer and builds the city of Samaria there. Samaria becomes Israel's capital. Omri's son Ahab marries Jezebel of Sidon and worships Baal.",
+      "related": ["mesha-stele"],
+      "relatedNote": "The Mesha Stele names Omri as the king of Israel who oppressed Moab."
     },
     {
       "id": "elijah-drought",
@@ -160,7 +166,9 @@
       ],
       "place": "b:ramoth-gilead",
       "verse": "1-kings-22:17",
-      "summary": "Ben-hadad of Syria besieges Samaria, and Ahab defeats him. The next year Ahab defeats him again at Aphek. Ahab lets Ben-hadad go, and a prophet condemns him for it. Later Ahab asks Jehoshaphat of Judah to fight with him for Ramoth-gilead. Ahab's 400 prophets promise victory. Micaiah says he saw Israel scattered like sheep with no shepherd. Ahab goes into battle in disguise. An arrow shot at random hits him, and he dies."
+      "summary": "Ben-hadad of Syria besieges Samaria, and Ahab defeats him. The next year Ahab defeats him again at Aphek. Ahab lets Ben-hadad go, and a prophet condemns him for it. Later Ahab asks Jehoshaphat of Judah to fight with him for Ramoth-gilead. Ahab's 400 prophets promise victory. Micaiah says he saw Israel scattered like sheep with no shepherd. Ahab goes into battle in disguise. An arrow shot at random hits him, and he dies.",
+      "related": ["battle-of-qarqar"],
+      "relatedNote": "Assyrian records say Ahab brought 2,000 chariots to Qarqar in 853 BCE."
     },
     {
       "id": "jehoshaphat-reforms",
@@ -208,7 +216,9 @@
       ],
       "place": "b:kir-hareseth",
       "verse": "2-kings-3:27",
-      "summary": "King Mesha of Moab stops sending Israel his yearly payment of lambs and wool. Jehoram of Israel, Jehoshaphat of Judah, and the king of Edom march against him. They go the long way through Edom, and their water runs out. Elisha says the LORD will fill the valley with water. The water comes, and the allies defeat Moab. At Kir-hareseth, Mesha offers his oldest son on the wall. The armies then leave Moab."
+      "summary": "King Mesha of Moab stops sending Israel his yearly payment of lambs and wool. Jehoram of Israel, Jehoshaphat of Judah, and the king of Edom march against him. They go the long way through Edom, and their water runs out. Elisha says the LORD will fill the valley with water. The water comes, and the allies defeat Moab. At Kir-hareseth, Mesha offers his oldest son on the wall. The armies then leave Moab.",
+      "related": ["mesha-stele"],
+      "relatedNote": "King Mesha tells his side of this revolt on his own stele."
     },
     {
       "id": "elisha-miracles",
@@ -263,7 +273,9 @@
       ],
       "place": "b:jezreel",
       "verse": "2-kings-9:6",
-      "summary": "Elisha sends a young prophet to Ramoth-gilead. He pours oil on Jehu's head to make him king of Israel. Jehu drives to Jezreel and kills King Joram of Israel. He also kills King Ahaziah of Judah. Jezebel is thrown from a window at Jezreel. Jehu has Ahab's seventy sons killed in Samaria. He gathers Baal's worshipers into Baal's temple and kills them."
+      "summary": "Elisha sends a young prophet to Ramoth-gilead. He pours oil on Jehu's head to make him king of Israel. Jehu drives to Jezreel and kills King Joram of Israel. He also kills King Ahaziah of Judah. Jezebel is thrown from a window at Jezreel. Jehu has Ahab's seventy sons killed in Samaria. He gathers Baal's worshipers into Baal's temple and kills them.",
+      "related": ["black-obelisk", "tel-dan-stele"],
+      "relatedNote": "The Black Obelisk shows Jehu paying tribute to Assyria. The Tel Dan stele claims the same kings' deaths."
     },
     {
       "id": "joash-crowned",
@@ -352,7 +364,9 @@
           "ref": "Isaiah 7:14",
           "note": "Isaiah gives Ahaz the sign of Immanuel."
         }
-      ]
+      ],
+      "related": ["tiglath-pileser-iii", "neo-assyrian-empire"],
+      "relatedNote": "Ahaz pays tribute to Tiglath-Pileser III. Assyrian records list Ahaz among his vassals."
     },
     {
       "id": "scattering-of-the-ten-tribes",
@@ -381,7 +395,9 @@
           "ref": "D&C 110:11",
           "note": "Moses gives the keys to lead the ten tribes back."
         }
-      ]
+      ],
+      "related": ["tiglath-pileser-iii", "sargon-ii", "neo-assyrian-empire"],
+      "relatedNote": "Assyrian kings deported Israel in waves. Sargon II claims the capture of Samaria."
     },
     {
       "id": "hezekiahs-passover",
@@ -413,7 +429,9 @@
       ],
       "place": "b:jerusalem",
       "verse": "2-kings-19:35",
-      "summary": "Sennacherib king of Assyria captures Judah's walled cities. Hezekiah sends him silver and gold, but Assyria still sends an army. The Assyrian officer shouts at Jerusalem's wall in the people's language. He mocks their trust in the LORD. Hezekiah takes the king's letter and spreads it before the LORD. Isaiah sends word that the city will not fall. That night the LORD's angel strikes the Assyrian camp. Sennacherib goes home to Nineveh."
+      "summary": "Sennacherib king of Assyria captures Judah's walled cities. Hezekiah sends him silver and gold, but Assyria still sends an army. The Assyrian officer shouts at Jerusalem's wall in the people's language. He mocks their trust in the LORD. Hezekiah takes the king's letter and spreads it before the LORD. Isaiah sends word that the city will not fall. That night the LORD's angel strikes the Assyrian camp. Sennacherib goes home to Nineveh.",
+      "related": ["sennacherib-annals", "lachish-reliefs", "siloam-inscription", "taharqa"],
+      "relatedNote": "Sennacherib's prisms and the Lachish reliefs tell this campaign from Assyria's side. Hezekiah's tunnel was cut for it."
     },
     {
       "id": "hezekiah-healed",
@@ -442,7 +460,9 @@
       ],
       "place": "b:jerusalem",
       "verse": "2-chronicles-33:12",
-      "summary": "Manasseh rules Judah for fifty-five years. He rebuilds the hilltop shrines his father Hezekiah tore down. He sets up idols in the temple. He makes his son pass through the fire. He kills many innocent people in Jerusalem. Chronicles adds that Assyria takes him in chains to Babylon. There he humbles himself and prays. The LORD brings him back to Jerusalem, and he removes the idols."
+      "summary": "Manasseh rules Judah for fifty-five years. He rebuilds the hilltop shrines his father Hezekiah tore down. He sets up idols in the temple. He makes his son pass through the fire. He kills many innocent people in Jerusalem. Chronicles adds that Assyria takes him in chains to Babylon. There he humbles himself and prays. The LORD brings him back to Jerusalem, and he removes the idols.",
+      "related": ["esarhaddon", "ashurbanipal-library"],
+      "relatedNote": "Assyrian records name Manasseh of Judah among the vassals of Esarhaddon and Ashurbanipal."
     },
     {
       "id": "josiah-finds-the-law",
@@ -457,9 +477,7 @@
       "place": "b:jerusalem",
       "verse": "2-kings-23:3",
       "summary": "Workers repair the temple, and the high priest Hilkiah finds the book of the law. King Josiah hears it read and tears his clothes. The prophetess Huldah says its warnings will come, but not in his days. Josiah reads the book to the people, and they make a covenant. He destroys idols and hilltop shrines, even the altar at Bethel. He keeps a great Passover. Pharaoh Necho of Egypt kills him at Megiddo.",
-      "related": [
-        "fall-of-nineveh"
-      ],
+      "related": ["fall-of-nineveh", "battle-of-megiddo-609", "psamtik-i"],
       "relatedNote": "Necho was marching north to help Assyria. Nineveh, its capital, had fallen in 612 BCE."
     },
     {
@@ -477,7 +495,9 @@
           "ref": "1 Nephi 1:4",
           "note": "Lehi lives in Jerusalem in Zedekiah's first year."
         }
-      ]
+      ],
+      "related": ["babylonian-chronicle-597", "jehoiachin-ration-tablets"],
+      "relatedNote": "A Babylonian chronicle dates the capture to March 597 BCE. Ration tablets name Jehoiachin in Babylon."
     },
     {
       "id": "jerusalem-destroyed",
@@ -508,7 +528,9 @@
           "ref": "Helaman 8:21",
           "note": "Nephi says Zedekiah's sons were killed, all except Mulek."
         }
-      ]
+      ],
+      "related": ["nebuchadnezzar-ii", "lachish-letters", "apries"],
+      "relatedNote": "Letters from Lachish record the last days before the fall. Pharaoh Apries failed to save the city."
     }
   ]
 }
