@@ -13,7 +13,7 @@
     { "id": "deseret-news", "title": "The Deseret News is founded", "start": 1850, "end": 1850, "dateLabel": "1850", "place": "Salt Lake City", "lat": 40.762, "lng": -111.89,
       "summary": "The first newspaper in Utah begins publication.",
       "source": { "wiki": "Deseret News", "quote": "Founded in 1850, it was the first newspaper to be published in Utah." } },
-    { "id": "utah-territory", "title": "Congress creates Utah Territory", "start": 1850, "end": 1850, "dateLabel": "9 September 1850", "place": "Salt Lake City", "lat": 40.76, "lng": -111.89,
+    { "id": "utah-territory", "image": "File:1853 Brigham Young Daguerreotype.jpg", "title": "Congress creates Utah Territory", "start": 1850, "end": 1850, "dateLabel": "9 September 1850", "place": "Salt Lake City", "lat": 40.76, "lng": -111.89,
       "summary": "The United States organizes the Territory of Utah. Brigham Young becomes its first governor.",
       "source": { "wiki": "Utah Territory", "quote": "existed from September 9, 1850" } },
     { "id": "pearl-of-great-price-1851", "image": "File:Abraham Facsimile 1 1851.png", "title": "The Pearl of Great Price is first published", "start": 1851, "end": 1851, "dateLabel": "1851", "place": "Liverpool", "lat": 53.408, "lng": -2.991,
