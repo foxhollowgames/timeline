@@ -1,0 +1,240 @@
+{
+  "about": "Scripture events, batch 5: the conquest and the judges (DESIGN.md section 3). Same fields as batch-1.json.",
+  "batch": 5,
+  "era": "The conquest and the judges",
+  "covers": [
+    { "book": "joshua", "chapters": [1, 24] },
+    { "book": "judges", "chapters": [1, 21] },
+    { "book": "ruth", "chapters": [1, 4] }
+  ],
+  "events": [
+    {
+      "id": "joshua-takes-command",
+      "volume": "ot",
+      "title": "The LORD charges Joshua to lead Israel",
+      "chapters": ["joshua-1"],
+      "place": "b:shittim",
+      "verse": "joshua-1:9",
+      "summary": "After Moses dies, the LORD tells Joshua to lead Israel across the Jordan. He promises to be with Joshua as he was with Moses. Three times he tells Joshua to be strong and brave. Joshua must keep the law and think about it day and night. Joshua tells the officers to prepare to cross in three days. Reuben, Gad, and half of Manasseh promise to fight beside the other tribes."
+    },
+    {
+      "id": "rahab-hides-the-spies",
+      "volume": "ot",
+      "title": "Rahab hides the spies at Jericho",
+      "chapters": ["joshua-2"],
+      "place": "b:jericho",
+      "verse": "joshua-2:11",
+      "summary": "Joshua sends two spies to Jericho in secret. They stay in the house of Rahab, a prostitute. She hides them under flax on her roof when the king sends for them. She tells the spies the LORD has given Israel the land. She asks them to spare her family, and they swear to it. She lets them down by a rope from her window in the city wall. She must tie a scarlet cord in that window.",
+      "alsoRead": [{ "ref": "Hebrews 11:31", "note": "Hebrews names Rahab as an example of faith." }]
+    },
+    {
+      "id": "israel-crosses-the-jordan",
+      "volume": "ot",
+      "title": "Israel crosses the Jordan on dry ground",
+      "chapters": ["joshua-3", "joshua-4"],
+      "place": "b:jordan",
+      "verse": "joshua-3:17",
+      "summary": "The priests carry the ark of the covenant to the Jordan, which is in flood. When their feet touch the water, the river stops and piles up upstream. The priests stand on dry ground in the middle of the river. All Israel crosses over near Jericho. Twelve men, one from each tribe, carry a stone from the riverbed. Israel camps at Gilgal, and Joshua sets up the twelve stones there. The stones are for children who will ask what they mean."
+    },
+    {
+      "id": "israel-camps-at-gilgal",
+      "volume": "ot",
+      "title": "Passover at Gilgal and the commander of the LORD's army",
+      "chapters": ["joshua-5"],
+      "place": "b:gilgal",
+      "verse": "joshua-5:15",
+      "summary": "The kings of the land hear about the Jordan and lose heart. The men born in the wilderness are circumcised at Gilgal. Israel keeps the Passover in the plains of Jericho. They eat food grown in the land, and the manna stops. Near Jericho, Joshua meets a man holding a sword. He is the commander of the LORD's army. Joshua bows down and takes off his sandals."
+    },
+    {
+      "id": "walls-of-jericho",
+      "volume": "ot",
+      "title": "The walls of Jericho fall",
+      "chapters": ["joshua-6"],
+      "place": "b:jericho",
+      "verse": "joshua-6:20",
+      "summary": "The LORD tells Joshua to march around Jericho once a day for six days. Seven priests carry ram's horn trumpets before the ark. On the seventh day they circle seven times, and the people shout. The wall falls flat. Israel destroys the city and everyone in it. The two spies bring out Rahab and her whole family. Rahab lives in Israel from then on.",
+      "alsoRead": [{ "ref": "Hebrews 11:30", "note": "Hebrews says the walls fell by faith." }]
+    },
+    {
+      "id": "achan-and-ai",
+      "volume": "ot",
+      "title": "Achan's theft and the battles for Ai",
+      "chapters": ["joshua-7", "joshua-8"],
+      "place": "b:ai",
+      "verse": "joshua-7:20",
+      "summary": "Achan of Judah secretly takes goods that belong to the LORD. Israel attacks the town of Ai and is driven back. Joshua falls before the ark and asks why. The LORD says Israel has stolen what was set apart for him. Achan confesses that he hid a robe, silver, and gold in his tent. He and his household are stoned. Israel then takes Ai by an ambush. At Mount Ebal, Joshua reads the whole law to all the people."
+    },
+    {
+      "id": "the-sun-stands-still",
+      "volume": "ot",
+      "title": "The Gibeonite treaty and the day the sun stood still",
+      "chapters": ["joshua-9", "joshua-10"],
+      "place": "b:gibeon",
+      "verse": "joshua-10:13",
+      "summary": "The people of Gibeon come in worn clothes with moldy bread. They claim to be from a far country. Israel's leaders do not ask the LORD and swear a covenant with them. Three days later Israel learns that they live nearby. Five Amorite kings attack Gibeon for making peace with Israel. Joshua marches all night to help, and the LORD sends great hailstones. Joshua asks the sun and moon to stand still, and they do."
+    },
+    {
+      "id": "northern-kings-defeated",
+      "volume": "ot",
+      "title": "Joshua defeats the northern kings at Hazor",
+      "chapters": ["joshua-11", "joshua-12"],
+      "place": "b:hazor",
+      "verse": "joshua-11:23",
+      "summary": "Jabin king of Hazor gathers the northern kings with horses and chariots. The LORD tells Joshua not to be afraid. Joshua attacks suddenly at the waters of Merom and wins. He burns Hazor, the leading city. The war with these kings lasts a long time. The book lists thirty-one kings Israel defeated west of the Jordan. The land rests from war."
+    },
+    {
+      "id": "the-land-is-divided",
+      "volume": "ot",
+      "title": "Joshua divides the land among the tribes",
+      "chapters": ["joshua-13", "joshua-14", "joshua-15", "joshua-16", "joshua-17", "joshua-18", "joshua-19", "joshua-21"],
+      "place": "b:shiloh",
+      "verse": "joshua-21:45",
+      "summary": "Joshua is old, and much land still remains to be taken. Caleb, now eighty-five, asks for the hill country of Hebron. Joshua gives it to him. Zelophehad's five daughters receive land, as the LORD commanded Moses. The tribes set up the Tent of Meeting at Shiloh. Joshua casts lots there for the seven tribes still without land. The Levites receive forty-eight towns among the other tribes. Not one good promise of the LORD has failed."
+    },
+    {
+      "id": "cities-of-refuge",
+      "volume": "ot",
+      "title": "Israel sets up the cities of refuge",
+      "chapters": ["joshua-20"],
+      "place": "b:shechem",
+      "verse": "joshua-20:3",
+      "summary": "The LORD tells Joshua to set up cities of refuge. A person who kills someone by accident may flee to one. He explains his case to the elders at the city gate. They must not hand him over to the family member seeking revenge. He stays until his trial and until the high priest dies. Three cities are west of the Jordan, and three are east."
+    },
+    {
+      "id": "altar-by-the-jordan",
+      "volume": "ot",
+      "title": "The eastern tribes build an altar by the Jordan",
+      "chapters": ["joshua-22"],
+      "place": "b:jordan",
+      "verse": "joshua-22:27",
+      "summary": "Joshua sends Reuben, Gad, and half of Manasseh home across the Jordan. Near the river they build a large altar. The other tribes gather at Shiloh to go to war against them. First they send the priest Phinehas and ten leaders to ask what it means. The eastern tribes say the altar is not for sacrifice. It is a witness that their children also belong to the LORD. Phinehas is satisfied, and the war is called off."
+    },
+    {
+      "id": "covenant-at-shechem",
+      "volume": "ot",
+      "title": "Joshua's farewell and the covenant at Shechem",
+      "chapters": ["joshua-23", "joshua-24"],
+      "place": "b:shechem",
+      "verse": "joshua-24:15",
+      "summary": "Joshua is old and calls Israel's leaders together. He warns them not to serve the gods of the nations left in the land. He gathers all the tribes at Shechem and retells their story from Abraham. He tells them to choose whom they will serve. He says he and his house will serve the LORD. The people promise three times, and Joshua sets up a stone as a witness. Joshua dies at 110, and Joseph's bones are buried at Shechem."
+    },
+    {
+      "id": "the-cycle-of-the-judges",
+      "volume": "ot",
+      "title": "A new generation forgets the LORD",
+      "chapters": ["judges-1", "judges-2"],
+      "place": "b:judges/canaan",
+      "verse": "judges-2:16",
+      "summary": "After Joshua dies, Judah and the other tribes fight for their land. Many tribes leave Canaanites living in their towns. The LORD's angel says the nations will stay as thorns among them. A new generation grows up that does not know the LORD. They serve the Baals, the gods of Canaan, and raiders defeat them. The LORD raises up judges, leaders who save Israel. After each judge dies, the people turn back to other gods."
+    },
+    {
+      "id": "othniel-and-ehud",
+      "volume": "ot",
+      "title": "Othniel and Ehud save Israel",
+      "chapters": ["judges-3"],
+      "place": "b:jericho",
+      "verse": "judges-3:15",
+      "summary": "Israel marries among the nations and serves their gods. A king of Mesopotamia rules them for eight years, and Othniel saves them. Then Eglon king of Moab rules Israel for eighteen years. The LORD raises up Ehud, a left-handed man of Benjamin. Ehud hides a sword on his right thigh and kills Eglon in private. He calls Israel to fight, and Moab is defeated. Shamgar later kills six hundred Philistines with an ox goad, a pointed stick."
+    },
+    {
+      "id": "deborah-and-barak",
+      "volume": "ot",
+      "title": "Deborah and Barak defeat Sisera",
+      "chapters": ["judges-4", "judges-5"],
+      "place": "b:tabor",
+      "verse": "judges-4:14",
+      "summary": "Jabin king of Canaan oppresses Israel for twenty years. His general Sisera has nine hundred iron chariots. Deborah, a prophetess, judges Israel under a palm tree. She tells Barak to gather ten thousand men at Mount Tabor. Barak will go only if she goes with him. The LORD routs Sisera's army, and Sisera flees to Jael's tent. Jael kills him with a tent peg as he sleeps. Deborah and Barak sing a song of victory."
+    },
+    {
+      "id": "gideon",
+      "volume": "ot",
+      "title": "Gideon's three hundred defeat Midian",
+      "chapters": ["judges-6", "judges-7", "judges-8"],
+      "place": "b:ophrah",
+      "verse": "judges-6:12",
+      "summary": "Midian raids Israel for seven years. The LORD's angel finds Gideon threshing wheat in a winepress to hide it. He sends Gideon to save Israel. Gideon tears down his father's altar to Baal and asks for signs with a fleece. The LORD sends most of his army home and keeps three hundred men. At night they blow trumpets, break jars, and raise torches. The Midianites turn on each other and flee. Gideon refuses to rule, but he makes a gold ephod that Israel worships."
+    },
+    {
+      "id": "abimelech",
+      "volume": "ot",
+      "title": "Abimelech makes himself king at Shechem",
+      "chapters": ["judges-9"],
+      "place": "b:shechem",
+      "verse": "judges-9:8",
+      "summary": "Abimelech, a son of Gideon, asks Shechem to make him ruler. With their silver he hires men and kills his seventy brothers. Only the youngest, Jotham, escapes. From Mount Gerizim, Jotham tells a story of trees choosing a king. The olive, fig, and vine refuse, and the thorn bush accepts. Three years later Shechem turns against Abimelech, and he destroys the city. At Thebez a woman drops a millstone on his head, and he dies."
+    },
+    {
+      "id": "jephthah",
+      "volume": "ot",
+      "title": "Jephthah's vow and his daughter",
+      "chapters": ["judges-10", "judges-11", "judges-12"],
+      "place": "b:gilead",
+      "verse": "judges-11:30",
+      "summary": "Israel serves other gods, and the Ammonites oppress them for eighteen years. Israel confesses and puts away the foreign gods. Jephthah is a fighter whose brothers drove him out. The elders of Gilead ask him to lead them. Jephthah vows to offer whatever first comes out of his house if he wins. He wins, and his only daughter comes out dancing to meet him. She asks for two months to mourn, and he does as he vowed. Later Gilead kills men of Ephraim at the Jordan crossings."
+    },
+    {
+      "id": "samsons-birth",
+      "volume": "ot",
+      "title": "An angel announces Samson's birth",
+      "chapters": ["judges-13"],
+      "place": "b:zorah",
+      "verse": "judges-13:5",
+      "summary": "The Philistines rule Israel for forty years. The LORD's angel appears to the childless wife of Manoah of Dan. She will bear a son who must be a Nazirite. A Nazirite is set apart to God. No razor may touch his head. The angel comes again, and Manoah offers a goat. The angel goes up in the flame from the altar. The woman bears a son and names him Samson."
+    },
+    {
+      "id": "samson-fights-the-philistines",
+      "volume": "ot",
+      "title": "Samson fights the Philistines",
+      "chapters": ["judges-14", "judges-15"],
+      "place": "b:lehi",
+      "verse": "judges-15:15",
+      "summary": "Samson demands a Philistine woman from Timnah as his wife. On the way he tears a young lion apart with his hands. At his wedding feast, he gives the guests a riddle. They force his wife to learn the answer. Samson kills thirty Philistines to pay his bet, and his wife is given away. He burns the Philistines' grain with three hundred foxes and torches. The men of Judah tie him up and hand him over. He snaps the ropes and kills a thousand men with a donkey's jawbone."
+    },
+    {
+      "id": "samson-and-delilah",
+      "volume": "ot",
+      "title": "Samson and Delilah",
+      "chapters": ["judges-16"],
+      "place": "b:gaza",
+      "verse": "judges-16:28",
+      "summary": "Samson carries off the gates of Gaza at midnight. He loves Delilah, and the Philistine lords pay her to learn his secret. Three times he lies to her. At last he tells her about his uncut hair. She has his head shaved while he sleeps, and the LORD leaves him. The Philistines blind him and make him grind grain in prison. At a feast for their god Dagon, Samson prays and pushes down the two pillars. He dies with the Philistines in the temple."
+    },
+    {
+      "id": "dan-takes-laish",
+      "volume": "ot",
+      "title": "Micah's idol and the tribe of Dan",
+      "chapters": ["judges-17", "judges-18"],
+      "place": "b:dan-city",
+      "verse": "judges-17:6",
+      "summary": "Micah of Ephraim has an idol made from silver. He hires a young Levite as his priest. In those days Israel had no king, and everyone did what seemed right to them. The tribe of Dan is looking for land. Its scouts find Laish, a quiet town with no one to defend it. Six hundred armed men of Dan set out. They take Micah's idol and his priest with them. They burn Laish, rename it Dan, and set up the idol."
+    },
+    {
+      "id": "war-against-benjamin",
+      "volume": "ot",
+      "title": "The crime at Gibeah and the war against Benjamin",
+      "chapters": ["judges-19", "judges-20", "judges-21"],
+      "place": "b:gibeah",
+      "verse": "judges-19:30",
+      "summary": "A Levite and his concubine stop for the night at Gibeah of Benjamin. Men of the city surround the house. The Levite pushes her out, and they abuse her until she dies. He cuts her body in twelve pieces and sends them through Israel. The tribes gather at Mizpah and go to war when Benjamin protects the guilty men. Benjamin is nearly destroyed, and only six hundred men escape. The book ends: there was no king, and everyone did what seemed right to them."
+    },
+    {
+      "id": "ruth-and-naomi",
+      "volume": "ot",
+      "title": "Ruth stays with Naomi",
+      "chapters": ["ruth-1", "ruth-2"],
+      "place": "b:bethlehem",
+      "verse": "ruth-1:16",
+      "summary": "In the days of the judges, a famine sends Naomi's family from Bethlehem to Moab. Her husband and both sons die there. Naomi starts home and tells her daughters-in-law to go back to their mothers. Orpah leaves, but Ruth promises to share Naomi's people and God. In Bethlehem, Ruth gathers leftover grain behind the harvesters. She comes to the field of Boaz, a relative of Naomi's husband. Boaz has heard of her kindness and gives her extra grain."
+    },
+    {
+      "id": "boaz-marries-ruth",
+      "volume": "ot",
+      "title": "Boaz marries Ruth",
+      "chapters": ["ruth-3", "ruth-4"],
+      "place": "b:bethlehem",
+      "verse": "ruth-4:17",
+      "summary": "Naomi wants a secure home for Ruth. Ruth goes to the threshing floor at night and lies at Boaz's feet. She asks him to act as a near kinsman. That is a relative who can buy back the family's land. Boaz promises, but a nearer kinsman has the first right. At the town gate the other man gives up his claim. Boaz buys the land and marries Ruth. Ruth bears Obed, who becomes the grandfather of David.",
+      "alsoRead": [{ "ref": "Matthew 1:5", "note": "Matthew names Boaz and Ruth among Jesus' ancestors." }]
+    }
+  ]
+}
