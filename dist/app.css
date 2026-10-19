@@ -23,6 +23,7 @@
 .legend-item[aria-pressed="false"] .legend-short { text-decoration: line-through; }
 
 .pins, .place-markers { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.route-layer { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: hidden; }
 .pin { position: absolute; left: 0; top: 0; width: 30px; height: 30px; padding: 0; border: 0; background: transparent; display: grid; place-items: center; pointer-events: auto; opacity: 0; transition: opacity .25s; z-index: 2; }
 .pin.shown { opacity: 1; }
 .pin .pin-shape { filter: drop-shadow(0 1px 3px #000a); }
@@ -108,6 +109,10 @@
 .card-chapters, .card-part-of { margin: 4px 0 16px; }
 .card-chapters h3, .card-part-of h3, .card-chapters h4 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 500; margin: 0 0 6px; }
 .card-chapters h4 { margin-top: 12px; }
+.card-stops { margin: 0 0 14px; }
+.card-stops h3 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 500; margin: 0 0 6px; }
+.card-stops p { font-size: 14px; line-height: 1.6; color: #d7e1ea; margin: 0; }
+.card-footnote { font-size: 12px; color: var(--faint); line-height: 1.5; margin: 14px 2px 0; }
 .card-part-note { font-size: 12px; color: var(--faint); line-height: 1.5; margin: 0 2px 6px; }
 .also-read { list-style: none; margin: 0; padding: 0; font-size: 13px; line-height: 1.5; }
 .also-read li { margin: 0 0 6px; }

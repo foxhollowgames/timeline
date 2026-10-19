@@ -33,3 +33,43 @@ export function shapeSVG(volume, size = 16, { ring = SURFACE, className = '' } =
     : `<g fill="${v.color}" stroke="${ring}" stroke-width="2.4" stroke-linejoin="round" paint-order="stroke">${PATHS[v.shape]}</g>`;
   return `<svg class="shape ${className}" width="${size}" height="${size}" viewBox="0 0 20 20" aria-hidden="true" focusable="false">${body}</svg>`;
 }
+
+// Paths, drawn as the Wayfinder readers draw them. The Bible and the D&C share one viewer
+// (foxhollowgames.github.io viewer/chapter-map.js). The Book of Mormon reader has its own palette,
+// a shadow under each line, and wider arrow spacing (book-of-mormon dist/app.js).
+const SHARED_KINDS = {
+  journey: { label: 'Journey', color: '#128879', dash: '8 5' },
+  military: { label: 'Army path', color: '#c43c32', dash: '9 5' },
+  flight: { label: 'Escape path', color: '#db8410', dash: '3 6' },
+  exile: { label: 'Path into exile', color: '#904fac', dash: '10 4 2 4' },
+  restoration: { label: 'Path home', color: '#128879', dash: '8 5' },
+  diplomacy: { label: 'Message or gift', color: '#257fbd', dash: '12 5' },
+  mission: { label: 'Mission journey', color: '#128879', dash: '8 5' },
+  gathering: { label: 'Move to gather', color: '#257fbd', dash: '12 5' },
+  expulsion: { label: 'Forced departure', color: '#db8410', dash: '3 6' },
+  custody: { label: 'Taken as prisoners', color: '#904fac', dash: '10 4 2 4' },
+};
+const BOM_KINDS = {
+  military: { label: 'Army', color: '#e0503f', dash: '9 5' },
+  flight: { label: 'Escape or retreat', color: '#f0a020', dash: '3 6' },
+  journey: { label: 'Journey or mission', color: '#4cb3f0', dash: '12 5' },
+  migration: { label: 'Group moves to settle', color: '#3fc7a8', dash: '8 5' },
+  exploration: { label: 'Search party', color: '#b98cf0', dash: '10 4 2 4' },
+  voyage: { label: 'Sea voyage', color: '#9be7ff', dash: '2 7' },
+  gathering: { label: 'Gathering', color: '#f3d36b', dash: '6 4' },
+};
+const SHARED_LINE = { weight: 5, contextWeight: 3.5, contextDash: '10 7', shadow: false, arrowEvery: 85, arrowAt: 0.65, arrowMin: 18 };
+const BOM_LINE = { weight: 4, shadow: true, arrowEvery: 110, arrowAt: 0.6, arrowMin: 26 };
+
+// The full look of one path: its kind's label, color, and dash, and the reader's line and arrow spacing.
+export function routeStyle(volume, route) {
+  const bom = volume === 'bom';
+  const kind = (bom ? BOM_KINDS : SHARED_KINDS)[route.kind] ?? (bom ? BOM_KINDS.journey : SHARED_KINDS.diplomacy);
+  const line = bom ? BOM_LINE : SHARED_LINE;
+  const context = route.context && !bom;
+  return { ...line, ...kind, weight: context ? line.contextWeight : line.weight, dash: context ? line.contextDash : kind.dash };
+}
+
+// The arrow both readers draw along a path: a chevron in the path's color with a cream edge.
+export const ARROW_PATH = 'M3 3 L14 9 L3 15 L6 9 Z';
+export const ARROW_EDGE = '#fff0d5';

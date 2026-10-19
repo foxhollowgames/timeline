@@ -1,7 +1,7 @@
 // The side card: one event, or a list of events (a pin group, a place, or a person).
 // Details load per volume the first time a card needs them (dist/data/details/<volume>.json).
 
-import { VOLUMES, shapeSVG } from './volumes.js';
+import { VOLUMES, shapeSVG, routeStyle } from './volumes.js';
 import { formatRange } from './time-scale.js';
 import { CONFERENCE_GLOBE } from './config.js';
 
@@ -75,13 +75,15 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
   function backButton() {
     if (!history.length) return '';
     const previous = history[history.length - 1];
-    const name = previous.type === 'event' ? (titleFirst(previous.event) ? previous.event.title : previous.event.ref) : previous.title;
+    const name = previous.type === 'event' ? (titleFirst(previous.event) ? previous.event.title : previous.event.ref)
+      : previous.type === 'route' ? previous.route.title : previous.title;
     return `<button class="card-back" data-back>Back to ${escapeHTML(name)}</button>`;
   }
   function bind() {
     content.querySelector('[data-back]')?.addEventListener('click', () => {
       const previous = history.pop();
       if (previous?.type === 'event') { onPick?.(previous.event); showEvent(previous.event); }
+      else if (previous?.type === 'route') showRoute(previous.event, previous.route.id, { push: false });
       else if (previous) showList(previous.title, previous.events, { note: previous.note, push: false });
     });
     for (const row of content.querySelectorAll('[data-event]')) {
@@ -158,6 +160,35 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     onShow?.({ type: 'event', event, details: d });
   }
 
+  // One path, opened from the globe or the Book of Mormon map. It links back to its event.
+  async function showRoute(event, routeId, { push = true } = {}) {
+    if (push && current && !(current.type === 'route' && current.route.id === routeId)) history.push(current);
+    open();
+    labelEl.textContent = 'PATH';
+    current = { type: 'route', event, route: { id: routeId, title: '' } };
+    content.innerHTML = `${backButton()}<p class="card-loading">Loading this path…</p>`;
+    bind();
+    let d;
+    try { d = (await loadDetails(event.volume))[event.id]; }
+    catch { content.innerHTML = `${backButton()}<p class="card-loading">This path's details could not load. Reload the page to try again.</p>`; bind(); return; }
+    if (current?.type !== 'route' || current.event !== event || current.route.id !== routeId) return;
+    const route = d?.routes?.find(r => r.id === routeId);
+    if (!route) { close(); return; }
+    current.route = route;
+    content.innerHTML = `${backButton()}
+      <p class="card-volume">${shapeSVG(event.volume, 16)}<span style="color:${routeStyle(event.volume, route).color}">${escapeHTML(routeStyle(event.volume, route).label)}</span></p>
+      <h2>${escapeHTML(route.title)}</h2>
+      ${route.ref ? `<p class="card-ref">${escapeHTML(route.ref)}</p>` : ''}
+      ${route.text ? `<p class="card-summary">${escapeHTML(route.text)}</p>` : ''}
+      ${route.stops?.length ? `<div class="card-stops"><h3>Named stops</h3><p>${route.stops.map(escapeHTML).join(' → ')}</p></div>` : ''}
+      ${route.note ? `<p class="card-note">${escapeHTML(route.note)}</p>` : ''}
+      <div class="card-part-of"><h3>Part of</h3><div class="event-rows">${row(event)}</div></div>
+      <p class="card-footnote">The line joins the named stops in order. It does not trace the road.</p>`;
+    content.scrollTop = 0;
+    bind();
+    onShow?.({ type: 'route', event, route });
+  }
+
   function showList(title, events, { note = '', push = true, label = 'EVENTS' } = {}) {
     if (push && current?.type === 'event') history = [];
     open();
@@ -172,5 +203,5 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     onShow?.({ type: 'list', events });
   }
 
-  return { showEvent, showList, close, get isOpen() { return !panel.hidden; }, get current() { return current; }, loadPeople };
+  return { showEvent, showRoute, showList, close, get isOpen() { return !panel.hidden; }, get current() { return current; }, loadPeople };
 }

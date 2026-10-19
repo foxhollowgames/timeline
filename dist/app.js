@@ -6,6 +6,7 @@ import { createScrubber } from './scrubber.js';
 import { formatYear, formatRange, yearsPerU, yearToU, zoomView, WINDOW_SHARE } from './time-scale.js';
 import { loadEvents, stripBands, isActive, eventStops, nextStop, previousStop } from './events.js';
 import { createPins, globeView } from './pins.js';
+import { createRouteLayer } from './route-layer.js';
 import { createCard } from './card.js';
 import { createSearch } from './search.js';
 import { VOLUMES, VOLUME_ORDER, SCRIPTURE, shapeSVG } from './volumes.js';
@@ -68,9 +69,10 @@ async function start() {
   function ensureBom() {
     bomLoading ??= createBomMap({ container: $('bom-map') }).then(map => {
       bom = map;
+      map.onRouteClick(openRoute);
       bomPins = createPins({ view: map.view, layer: $('bom-pins'), onOpen: openGroup });
       refresh();
-      if (selected?.map === 'bom') showSelection(selected, card.current?.details);
+      if (selected?.map === 'bom') showSelection(selected, card.current?.type === 'route' ? { routes: [card.current.route] } : card.current?.details);
       return map;
     }).catch(error => {
       console.error(error);
@@ -109,13 +111,21 @@ async function start() {
   const visibleYears = () => { const v = scrubber.view; return (v.u1 - v.u0) * yearsPerU(yearToU(scrubber.year)); };
   const tierShown = e => isScripture(e) || e.tier === 1 || visibleYears() <= TIER_2_YEARS;
   const item = event => ({ event, placeKey: event.place, place: data.places[event.place] });
-  // Every pinned event's paths show in its volume's hue, such as Lehi's journey or the scattering of Israel.
-  // While an event is selected, the others dim so its gold routes stand out.
-  let pathed = { onGlobe: [], onMap: [] };
-  const pathsOf = (events, color) => events.filter(e => e.id !== selected?.id).flatMap(e => (e.paths ?? []).map(points => ({ points, color: color(VOLUMES[e.volume].color), opacity: selected ? 0.35 : 0.75 })));
+  // Every pinned event's paths show, such as Lehi's journey or the scattering of Israel. They are styled
+  // by kind, as in the Wayfinder readers (volumes.js routeStyle), and a click opens a path card.
+  // Each path has a key, "<event id>|<route id>". The selected event's paths draw above the rest,
+  // and the others dim while an event is selected.
+  let pathed = { onGlobe: [], onMap: [] }, selectedKeys = new Set(), routeLayer = null;
+  const pathKey = (event, route) => `${event.id}|${route.id}`;
+  const routeItem = (event, route, dimmed = false) => ({ key: pathKey(event, route), volume: event.volume, kind: route.kind, context: route.context, direction: route.direction, points: route.points, dimmed });
+  const pathsOf = events => events.flatMap(e => (e.paths ?? []).filter(p => !selectedKeys.has(pathKey(e, p))).map(p => routeItem(e, p, Boolean(selected))));
+  function openRoute(key) {
+    const split = key.indexOf('|'), event = data.events.find(e => e.id === key.slice(0, split));
+    if (event) card.showRoute(event, key.slice(split + 1));
+  }
   function drawPaths() {
-    globe?.setRoutes(pathsOf(pathed.onGlobe, c => parseInt(c.slice(1), 16)), 'paths');
-    bom?.setRoutes(split.open ? pathsOf(pathed.onMap, c => c) : [], 'paths');
+    routeLayer?.setRoutes(pathsOf(pathed.onGlobe), 'paths');
+    bom?.setRoutes(split.open ? pathsOf(pathed.onMap) : [], 'paths');
   }
 
   function refresh() {
@@ -245,16 +255,17 @@ async function start() {
   }
   function showSelection(event, details) {
     const others = event.places.filter(k => k !== event.place).map(k => ({ key: k, ...data.places[k] }));
-    const routes = (details?.routes ?? []).map(r => ({ points: r.points, color: 0xefcc88 }));
+    const chosen = (details?.routes ?? []).map(r => routeItem(event, r));
+    if (details) selectedKeys = new Set(chosen.map(r => r.key));
     const onBom = event.map === 'bom';
     pins?.setSelected(event.id); bomPins?.setSelected(event.id);
     pins?.setMarkers(onBom ? [] : others); bomPins?.setMarkers(onBom ? others : []);
-    if (details) { globe?.setRoutes(onBom ? [] : routes); bom?.setRoutes(onBom ? routes : []); }
+    if (details) { routeLayer?.setRoutes(onBom ? [] : chosen); bom?.setRoutes(onBom ? chosen : []); }
     drawPaths();
   }
   function clearSelection() {
-    selected = null;
-    pins?.setSelected(null); pins?.setMarkers([]); globe?.setRoutes([]);
+    selected = null; selectedKeys = new Set();
+    pins?.setSelected(null); pins?.setMarkers([]); routeLayer?.setRoutes([]);
     bomPins?.setSelected(null); bomPins?.setMarkers([]); bom?.setRoutes([]);
     drawPaths();
   }
@@ -297,8 +308,9 @@ async function start() {
 
   card = createCard({
     panel: $('card'), content: $('card-content'), labelEl: $('card-label'), closeButton: $('card-close'), data,
-    onShow({ type, event, details }) {
+    onShow({ type, event, details, route }) {
       if (type === 'event') { selected = event; showSelection(event, details); }
+      else if (type === 'route') { selected = event; showSelection(event, { routes: [route] }); }
       else clearSelection();
       placeCard();
       slideForCard();
@@ -320,6 +332,7 @@ async function start() {
     },
   });
 
+  if (globe) { routeLayer = createRouteLayer({ globe, layer: $('pins') }); routeLayer.onRouteClick(openRoute); }
   if (globe) pins = createPins({ view: globeView(globe), layer: $('pins'), topInset: () => document.querySelector('.site-header').offsetHeight + 6, onOpen: openGroup });
 
   createSearch({
