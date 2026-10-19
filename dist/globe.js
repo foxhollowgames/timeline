@@ -215,6 +215,7 @@ export function createGlobe({ stage, container, onStatus = () => {}, isPaused = 
     zoomIn: () => zoomTo((zoomTarget ?? camera.position.length()) * 0.8),
     zoomOut: () => zoomTo((zoomTarget ?? camera.position.length()) * 1.25),
     reset() { zoomMotion = null; zoomTarget = null; focusMotion = null; resetCamera(); controls.target.set(0, 0, 0); controls.update(); activity(); },
+    setDistance: gestureZoom,
     distance: () => zoomTarget ?? camera.position.length(),
     limits: { min: MIN_ZOOM, max: MAX_ZOOM },
     onFrame(callback) { frameCallbacks.add(callback); return () => frameCallbacks.delete(callback); },

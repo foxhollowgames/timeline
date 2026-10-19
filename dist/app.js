@@ -49,10 +49,14 @@ async function start() {
     $('globe-zoom-in').addEventListener('click', globe.zoomIn);
     $('globe-zoom-out').addEventListener('click', globe.zoomOut);
     $('globe-reset').addEventListener('click', () => { card?.close(); globe.reset(); });
+    // On desktop the slider replaces the buttons. It runs on a log scale, with zoomed in to the right.
+    const slider = $('globe-zoom'), { min, max } = globe.limits, ratio = Math.log(max / min);
+    slider.addEventListener('input', () => globe.setDistance(max * Math.exp(-ratio * slider.value / 1000)));
     globe.onFrame(() => {
       const distance = globe.distance();
-      $('globe-zoom-in').disabled = distance <= globe.limits.min + 0.005;
-      $('globe-zoom-out').disabled = distance >= globe.limits.max - 0.005;
+      $('globe-zoom-in').disabled = distance <= min + 0.005;
+      $('globe-zoom-out').disabled = distance >= max - 0.005;
+      slider.value = Math.round(1000 * Math.log(max / distance) / ratio);
     });
   }
 

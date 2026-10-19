@@ -60,6 +60,8 @@
 .split-stacked .year-overview > .overview-count { font-size: 11px; max-width: 220px; }
 .split-stacked .globe-controls { bottom: 10px; right: 10px; gap: 4px; }
 .split-stacked .globe-controls button { width: 32px; height: 32px; font-size: 16px; }
+.split-stacked .globe-zoom-slider { height: 32px; padding: 0 12px; gap: 8px; font-size: 15px; }
+.split-stacked .globe-zoom-slider input { width: 110px; }
 /* Arrows along a path, as in the Book of Mormon reader. */
 .route-arrow { background: none; border: 0; pointer-events: none; }
 .route-arrow svg { display: block; width: 18px; height: 18px; }
