@@ -49,7 +49,7 @@ function shortVerse(text) {
   return words.length <= VERSE_WORDS ? text : words.slice(0, VERSE_WORDS).join(' ').replace(/[,;:]$/, '') + ' …';
 }
 
-export function createCard({ panel, content, labelEl, closeButton, data, onClose, onShow, onPick }) {
+export function createCard({ panel, content, labelEl, closeButton, data, onClose, onShow, onPick, onMove }) {
   const detailCache = new Map();
   let searchIndex = null, history = [], current = null;
 
@@ -87,11 +87,12 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     const move = ev => moveCard(ev.clientX - start.x, ev.clientY - start.y);
     const end = () => {
       panel.classList.remove('card-dragging');
+      onMove?.();
       bar.removeEventListener('pointermove', move); bar.removeEventListener('pointerup', end); bar.removeEventListener('pointercancel', end);
     };
     bar.addEventListener('pointermove', move); bar.addEventListener('pointerup', end); bar.addEventListener('pointercancel', end);
   });
-  addEventListener('resize', () => { if (!panel.hidden && (drag.x || drag.y)) moveCard(drag.x, drag.y); });
+  addEventListener('resize', () => { if (!panel.hidden && (drag.x || drag.y)) { moveCard(drag.x, drag.y); onMove?.(); } });
 
   function open() { panel.hidden = false; }
   function close() {
