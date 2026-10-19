@@ -73,6 +73,7 @@ A pin is a scripture event, such as the scattering of the ten tribes. It is not 
 | 11 | King Benjamin to the Nephite wars | Mosiah and Alma | 32 events |
 | 12 | From Helaman to the end of the Nephites | Helaman, 3 Nephi, 4 Nephi, and Mormon | 16 events |
 | 13 | The Restoration in New York and Ohio, 1823–1831 | D&C 1–72, 74, and 133 | 28 events |
+| 14 | Kirtland, Missouri, Nauvoo, and after, 1832–1978 | D&C 73–138 and both Official Declarations | 33 events |
 
 - **Fields.** Each event has `id`, `volume`, `title`, `chapters`, and `summary`. It may add these:
   - `dateFrom`: the chapters that set its years.
@@ -88,7 +89,7 @@ A pin is a scripture event, such as the scattering of the ten tribes. It is not 
 - **Chapters stay findable.** Search still finds each chapter. Its card lists the events it is part of under "Part of." Place and person lists show the event instead of its chapters.
 - **Event card.** It leads with the title. "In scripture" lists its chapters, and each opens that chapter's card. "Also read" links other volumes, such as D&C 110:11 for the ten tribes. These links never change the event's years.
 - **Readers.** `chapters.json` still lists chapter ids, so "See on timeline" opens the chapter's card. That card links to its event.
-- **Not yet events.** Chapters outside every batch keep their own pins until their era's batch lands.
+- **Coverage.** Batches 1–14 cover every placed chapter in all four volumes. The Psalms still have no pin, because their dates span more than 300 years. Church history and world history events keep their own pins.
 - **Pearl of Great Price (Q23).** Left out of version 1. It will be added later as its own batch of about 20 events.
 
 ### Dates
