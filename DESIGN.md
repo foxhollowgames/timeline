@@ -204,6 +204,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - While an event is selected, the other paths dim. Its own paths are drawn at full strength above the rest.
   - The build copies each pinned event's routes into `events.json` as `paths`, with their kind.
   - A path can be selected, as in the readers. Hovering brightens it and shows a pointer. A click opens a path card.
+  - Paths that share a leg between the same two places run side by side in lanes, so each can be clicked (`dist/route-lanes.js`). The lanes meet at the places. They are 9px apart, and squeeze to 6px when many paths share a leg. A leg that is short on screen keeps its lanes narrow.
   - The path card names the kind of movement in its color. It shows the title, the reference, and what the text says. It lists the named stops and links to the path's event.
 - **Legend and filters (Q30, Q31).** The legend in the header shows each volume's shape and name. Each entry is also a toggle that hides or shows that volume. Hidden volumes leave the pins, the counts, the density bar, and the event buttons. A world history toggle joins in milestone 5.
 - **Search (Q31).** One box finds events by reference or title, places, and people. Choosing an event moves the scrubber, turns the globe, and opens its card. Choosing a place or a person opens a list of its events. People come from each repository's people data.

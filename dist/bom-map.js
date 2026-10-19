@@ -3,6 +3,9 @@
 // Leaflet loads only the first time the panel opens.
 
 import { routeStyle, ARROW_PATH, ARROW_EDGE } from './volumes.js';
+import { assignLanes, shiftLeg, laneSpacing } from './route-lanes.js';
+
+const SAME_PLACE = 4; // miles: endpoints this close share a lane group
 
 let leafletLoading = null;
 function loadLeaflet() {
@@ -60,22 +63,41 @@ export async function createBomMap({ container }) {
   // Paths as the Book of Mormon reader draws them: a shadow, a dashed line in the kind's color,
   // a wide invisible line for clicks, and chevron arrows spaced in screen pixels (volumes.js routeStyle).
   const drawn = { paths: [], selected: [] };
-  function placeArrows(item) {
+  // Lay a path out at the current zoom: shared legs take their own lanes (route-lanes.js), then the
+  // chevrons are spaced along the shifted line.
+  function layout(item) {
+    const { style, route } = item, legs = [];
+    for (let i = 1; i < route.points.length; i++) {
+      const a = map.latLngToLayerPoint(ll(route.points[i - 1])), b = map.latLngToLayerPoint(ll(route.points[i]));
+      const steps = item.lanes[i - 1] ? 16 : 1;
+      legs.push(shiftLeg(Array.from({ length: steps + 1 }, (_, j) => ({ x: a.x + (b.x - a.x) * j / steps, y: a.y + (b.y - a.y) * j / steps })), item.lanes[i - 1]));
+    }
+    const latLngs = legs.flatMap((leg, i) => (i ? leg.slice(1) : leg).map(p => map.layerPointToLatLng([p.x, p.y])));
+    for (const line of item.lines) line.setLatLngs(latLngs);
+    // A lone path keeps a wide hit line. One running beside others gets a lane-wide one, so each can be clicked.
+    const lanes = item.lanes.filter(Boolean);
+    item.hit?.setStyle({ weight: lanes.length ? Math.max(4, Math.min(...lanes.map(l => laneSpacing(l.count)))) : 20 });
     item.arrows.clearLayers();
-    if (item.route.direction === false) return;
-    const { style } = item, pts = item.route.points.map(p => map.latLngToLayerPoint(ll(p)));
-    for (let i = 1; i < pts.length; i++) {
-      const a = pts[i - 1], b = pts[i], dx = b.x - a.x, dy = b.y - a.y, length = Math.hypot(dx, dy);
+    if (route.direction === false) return;
+    for (const leg of legs) {
+      const along = [0];
+      for (let i = 1; i < leg.length; i++) along.push(along[i - 1] + Math.hypot(leg[i].x - leg[i - 1].x, leg[i].y - leg[i - 1].y));
+      const length = along[along.length - 1];
       if (length < style.arrowMin) continue;
-      const count = Math.max(1, Math.floor(length / style.arrowEvery)), angle = Math.atan2(dy, dx) * 180 / Math.PI;
+      const count = Math.max(1, Math.floor(length / style.arrowEvery));
       for (let j = 0; j < count; j++) {
-        const t = (j + style.arrowAt) / count;
+        const at = length * (j + style.arrowAt) / count, i = Math.max(1, along.findIndex(d => d >= at)), a = leg[i - 1], b = leg[i];
+        const t = (at - along[i - 1]) / ((along[i] - along[i - 1]) || 1), angle = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
         const html = `<svg viewBox="0 0 18 18" aria-hidden="true" style="transform:rotate(${angle}deg)"><path d="${ARROW_PATH}" fill="${style.color}" stroke="${ARROW_EDGE}" stroke-width="1.2"/></svg>`;
-        L.marker(map.layerPointToLatLng([a.x + dx * t, a.y + dy * t]), { pane: item.pane, interactive: false, keyboard: false, opacity: item.opacity, icon: L.divIcon({ className: 'route-arrow', iconSize: [18, 18], iconAnchor: [9, 9], html }) }).addTo(item.arrows);
+        L.marker(map.layerPointToLatLng([a.x + (b.x - a.x) * t, a.y + (b.y - a.y) * t]), { pane: item.pane, interactive: false, keyboard: false, opacity: item.opacity, icon: L.divIcon({ className: 'route-arrow', iconSize: [18, 18], iconAnchor: [9, 9], html }) }).addTo(item.arrows);
       }
     }
   }
-  map.on('zoomend', () => { for (const item of [...drawn.paths, ...drawn.selected]) placeArrows(item); });
+  const layoutAll = () => {
+    const all = [...drawn.paths, ...drawn.selected];
+    assignLanes(all.map(item => item.route), SAME_PLACE).forEach((lanes, i) => { all[i].lanes = lanes; layout(all[i]); });
+  };
+  map.on('zoomend', layoutAll);
   const callbacks = new Set();
   let pending = false;
   const draw = () => {
@@ -108,18 +130,21 @@ export async function createBomMap({ container }) {
       group.clearLayers();
       drawn[layer] = list.map(route => {
         const style = routeStyle(route.volume, route), points = route.points.map(ll), opacity = route.dimmed ? 0.35 : 1;
-        if (style.shadow) L.polyline(points, { pane, color: '#071a2a', weight: style.weight + 3, opacity: 0.35 * opacity, interactive: false }).addTo(group);
+        const lines = [];
+        let hit = null;
+        if (style.shadow) lines.push(L.polyline(points, { pane, color: '#071a2a', weight: style.weight + 3, opacity: 0.35 * opacity, interactive: false }).addTo(group));
         const line = L.polyline(points, { pane, color: style.color, weight: style.weight, opacity, dashArray: style.dash, interactive: false, className: 'route-line' }).addTo(group);
-        const item = { route, style, pane, opacity, arrows: L.layerGroup().addTo(group) };
-        placeArrows(item);
+        lines.push(line);
         if (route.key && routeClick) {
-          const hit = L.polyline(points, { pane, color: style.color, weight: 20, opacity: 0, className: 'route-hit' }).addTo(group);
+          hit = L.polyline(points, { pane, color: style.color, weight: 20, opacity: 0, className: 'route-hit' }).addTo(group);
+          lines.push(hit);
           hit.on('click', event => { L.DomEvent.stopPropagation(event); routeClick(route.key); });
           hit.on('mouseover', () => line.setStyle({ opacity: 1, weight: style.weight + 1.5 }));
           hit.on('mouseout', () => line.setStyle({ opacity, weight: style.weight }));
         }
-        return item;
+        return { route, style, pane, opacity, lines, hit, arrows: L.layerGroup().addTo(group) };
       });
+      layoutAll();
     },
     onRouteClick(callback) { routeClick = callback; },
     // Fit the map to a set of [x, y] points, or to the whole land.
