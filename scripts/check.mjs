@@ -72,6 +72,12 @@ test('zoom keeps the anchor in place and stays in bounds', () => {
   assert.equal(edge.u1, 1);
 });
 
+test('history is active within 25 years of the selected year, or the scripture window if wider', () => {
+  assert.deepEqual(t.historyWindow({ start: 40, end: 60 }, 50), { start: 25, end: 75 });
+  assert.deepEqual(t.historyWindow({ start: -10, end: 10 }, 1), { start: -25, end: 26 }, 'there is no year 0');
+  assert.deepEqual(t.historyWindow({ start: 1800, end: 1860 }, 1830), { start: 1800, end: 1860 }, 'a wider scripture window is kept');
+});
+
 test('the active window is about 2% of the visible strip, at most 10 years either side', () => {
   const full = t.activeWindow(-600, t.FULL_VIEW);
   assert.deepEqual(full, { start: -610, end: -590 }, 'zoomed out, the window is capped');
@@ -166,7 +172,7 @@ test('also at this time links the other kind of event, nearest first', () => {
   assert.deepEqual(card.alsoAtThisTime(pool[1], pool).map(e => e.id), ['s1', 's2']);
   assert.deepEqual(card.alsoAtThisTime(pool[5], pool), []);
 });
-test('hand-picked related events come first, without duplicates, then the nearest fill to four', () => {
+test('hand-picked related events come first, without duplicates, then the nearest fill to eight', () => {
   const pool = [
     { id: 's1', volume: 'dc', start: 1832, end: 1832 },
     ...[1831, 1829, 1836, 1840, 1845].map((year, i) => ({ id: `h${i + 1}`, volume: 'history', start: year, end: year })),
@@ -174,17 +180,23 @@ test('hand-picked related events come first, without duplicates, then the neares
     { id: 'h-old', volume: 'history', start: 1500, end: 1500 },
     { id: 's2', volume: 'ot', start: null, end: null, band: 'primeval' },
   ];
-  const ids = (event, related) => card.alsoAtThisTime(event, pool, related).map(e => e.id);
-  assert.deepEqual(ids(pool[0], []), ['h1', 'h2', 'h3', 'h4']);
-  assert.deepEqual(ids(pool[0], ['h-far']), ['h-far', 'h1', 'h2', 'h3']);
+  const ids = (event, related, options) => card.alsoAtThisTime(event, pool, related, options).map(e => e.id);
+  assert.deepEqual(ids(pool[0], []), ['h1', 'h2', 'h3', 'h4', 'h5', 'h-far']);
+  assert.deepEqual(ids(pool[0], ['h-far']), ['h-far', 'h1', 'h2', 'h3', 'h4', 'h5']);
   // A linked event that also ranks nearest is listed once.
-  assert.deepEqual(ids(pool[0], ['h-far', 'h2', 'h2']), ['h-far', 'h2', 'h1', 'h3']);
+  assert.deepEqual(ids(pool[0], ['h-far', 'h2', 'h2']), ['h-far', 'h2', 'h1', 'h3', 'h4', 'h5']);
   // Links ignore the 150-year window, and an unknown id is skipped.
-  assert.deepEqual(ids(pool[0], ['h-old', 'missing']), ['h-old', 'h1', 'h2', 'h3']);
+  assert.deepEqual(ids(pool[0], ['h-old', 'missing']), ['h-old', 'h1', 'h2', 'h3', 'h4', 'h5', 'h-far']);
   // Order-only events still show their links.
   assert.deepEqual(ids(pool[8], ['h-far']), ['h-far']);
   // Many links still leave room for the two nearest events.
-  assert.deepEqual(ids(pool[0], ['h-old', 'h-far', 'h5']), ['h-old', 'h-far', 'h5', 'h1', 'h2']);
+  const many = [1831, 1829, 1836, 1840, 1845, 1833, 1834, 1835, 1837].map((year, i) => ({ id: 'm' + (i + 1), volume: 'history', start: year, end: year }));
+  const wide = [pool[0], ...many];
+  assert.deepEqual(card.alsoAtThisTime(pool[0], wide, ['m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7']).map(e => e.id), ['m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'm8', 'm9']);
+  assert.equal(card.alsoAtThisTime(pool[0], wide).length, 8, 'eight rows at most');
+  // The "See all" list holds every event within the gap, nearest first.
+  assert.deepEqual(ids(pool[0], ['h-old'], { all: true }), ['h-old', 'h1', 'h2', 'h3', 'h4', 'h5', 'h-far']);
+  assert.deepEqual(ids(pool[0], ['h-old', 'h-far', 'h5']), ['h-old', 'h-far', 'h5', 'h1', 'h2', 'h3', 'h4']);
   assert.deepEqual(ids(pool[0], ['h1', 'h2', 'h3', 'h4', 'h5']), ['h1', 'h2', 'h3', 'h4', 'h5', 'h-far']);
 });
 

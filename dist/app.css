@@ -114,6 +114,7 @@
 .pin.secondary .count { background: #c9d2db; font-size: 10px; min-width: 16px; }
 .card-also { margin: 4px 0 16px; }
 .event-row .row-linked { color: var(--gold); }
+.card-also-all { border: 0; padding: 0; margin: 8px 2px 0; background: none; color: var(--gold); font-size: 13px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
 .card-also-note { font-size: 12px; color: var(--faint); line-height: 1.5; margin: 6px 2px 0; }
 .card-also h3 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 500; margin: 0 0 6px; }
 .source-quote { margin: 0 0 4px; font-size: 13px; color: var(--muted); font-style: italic; line-height: 1.5; }

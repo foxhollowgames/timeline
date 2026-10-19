@@ -21,8 +21,9 @@ The decisions below were settled in a design interview on 2026-10-18. The questi
 - **Span (Q3).** From 4000 BCE (the Fall of Adam in the Church Bible Chronology) to 2026 CE.
 - **Scale (Q3).** The scale is non-linear, and users can zoom with the wheel or a pinch on the strip. The default view compresses 4000–2000 BCE and 100–1800 CE. It expands 2000 BCE–100 CE and 1800–2026 CE.
 - **Notation (Q14).** BCE and CE. BCE years are negative integers in data, as in the Bible repository.
-- **Active window (Q6).** The scrubber selects one year. An event is active when its date or range overlaps a window around that year. The window is about 2% of the visible timeline width, so it narrows as the user zooms in, but it never reaches more than 10 years either side of the selected year.
+- **Active window (Q6).** The scrubber selects one year. A scripture event is active when its date or range overlaps a window around that year. The window is about 2% of the visible timeline width, so it narrows as the user zooms in, but it never reaches more than 10 years either side of the selected year.
   - Only active events get pins. Past and future pins are hidden.
+  - **History window (2026-10-19).** A history event is active within 25 years either side of the selected year, or inside the scripture window when that is wider. A reader at a gospel event then sees the world of that generation, not only the events of the same decade. The overview line names both windows.
 - **Navigation (Q6, Q12).** There is no play button. Users drag the scrubber or type a year, as in the conference globe. Arrow keys step through time. The previous and next event buttons jump to the nearest scripture event.
 - **Strip contents (Q33).**
   - A density bar shows the number of events in each period.
@@ -137,8 +138,9 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 
 - **New writing (Q22).** The repositories have no world-history data except Isaiah's 12 events. These events are written from scratch.
 - **Scope (Q5).** Global history, as broad as responsible sources allow, including Mesoamerica (Olmec and Preclassic Maya).
-  - Tier 1 (about 60 events) always shows, for example the Giza pyramids, Hammurabi, Alexander, the Han dynasty, and the printing press.
-  - Tier 2 (about 200 events) shows once the strip shows 1,500 years or fewer. The count line says how many are waiting. Opening a tier 2 event from search or a list zooms the strip in.
+  - Tier 1 (about 100 events) marks the headline events, for example the Giza pyramids, Hammurabi, Alexander, the Han dynasty, and the printing press.
+  - Tier 2 (about 430 events) holds the rest.
+  - **Every tier shows at every zoom (2026-10-19).** Tier 2 used to wait until the strip showed 1,500 years or fewer, which left two or three pins at most years in the default view. The active window already limits what is on the globe, so the gate was removed. Tier is kept in the data as a mark of the headline events.
 - **Sourcing (Q13).**
   - Every event cites at least one reputable reference: Britannica, a museum or university page, or a Wikipedia article that cites the date.
   - An uncertain date uses "c." and a range.
@@ -185,7 +187,7 @@ The Church Bible Chronology does not give a year for every era. These rules fill
   - For a photo of an old object, Commons often lists the object's unknown maker. The credit then names the photographer, or else the uploader.
   - 567 of 570 events have a picture. The Seoul and Kinshasa temples and Queen Himiko have no free picture.
 - **Display.** History pins are hollow grey hexagons, smaller than scripture pins, so shape and fill set them apart without color. In a group a scripture event always leads. History has its own legend toggle. The event buttons and the density bar follow scripture only.
-- **Also at this time.** A card lists up to four events of the other kind whose dates fall within 150 years. Closer dates rank first, and short events rank above centuries-long eras. Order-only events get none (Q28).
+- **Also at this time.** A card lists up to eight events of the other kind whose dates fall within 150 years. Closer dates rank first, and short events rank above centuries-long eras. A "See all" link opens the full list, nearest first. Order-only events get none (Q28).
 - **Related history.** Ranking by years misses some clear links, such as D&C 87 and the Civil War. These are hand-picked in `scripts/curated-events.json` and in the scripture batch files. Batches 8–10 brought the count of linked scripture events from 12 to 90. An annotation's `related` lists history ids without the `h-` prefix. Its `relatedNote` gives the reason in one line. The build stops when an id is not a history event. Section 6 shows how the card uses them.
 
 ## 5. Globe and pins
@@ -233,7 +235,8 @@ The Church Bible Chronology does not give a year for every era. These rules fill
 - **Sources.** The source list for the event.
 - **Also at this time.** The nearest events of the other kind, history for a scripture event and scripture for a history event.
   - Hand-picked related history comes first, marked "Linked", with its reason below the list. These links ignore the 150-year window.
-  - The nearest events fill the rest, up to four in all. At least two nearest events always show, even when links fill the list. An event already linked is not listed twice.
+  - The nearest events fill the rest, up to eight in all. At least two nearest events always show, even when links fill the list. An event already linked is not listed twice.
+  - When more events fall within 150 years, a "See all N events from these years" link opens them as a list, nearest first. The list's back link returns to the card.
   - A history card lists the scripture events that link to it, marked "Linked" in the same way. The build writes these as `linkedFrom`.
 - **Map details.** The event's other places and its routes, drawn on the globe.
 - **Date lines.** The card names the date's basis. It adds the scholarly estimate, the Church table's biblical-number years, and any correction where they apply. A prophet chapter that keeps the repository's own date says so.

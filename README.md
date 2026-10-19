@@ -39,7 +39,7 @@ GitHub Pages publishes `dist/` after each push to `main`. The workflow is `.gith
 - A pin with a number holds several events. Select it to see the list.
 - Select an event to open its card. Its other places and its routes show in gold.
 - Select a volume in the header to hide or show it. **History** hides or shows world history.
-- World history pins are hollow grey hexagons. Zoom the strip in to see the smaller events. A card's **Also at this time** lists events of the other kind from the same years.
+- World history pins are hollow grey hexagons. History counts as contemporary within 25 years of the selected year, so the globe shows the world of that generation. A card's **Also at this time** lists up to eight events of the other kind from the same years, with a link to see them all.
 - Search finds events, places, and people. Choose a result to go to it.
 - The address keeps the year, the open event, hidden volumes, the strip zoom, and the open panel. Copy it to share the view.
 
@@ -55,7 +55,7 @@ The Book of Mormon map is relative. It is not placed on real land. One unit is o
 
 The strip is not drawn to one scale. It gives more space to 2000 BCE–100 CE and to 1800–2026. The striped spans, 4000–2000 BCE and 100–1800 CE, are compressed.
 
-The bars show how many events fall at each point. The gold band around the selected year is the active window. The window is about 2% of the visible strip, so it narrows when you zoom in. It never reaches more than 10 years either side of the selected year.
+The bars show how many events fall at each point. The gold band around the selected year is the active window for scripture. The window is about 2% of the visible strip, so it narrows when you zoom in. It never reaches more than 10 years either side of the selected year. World history stays active within 25 years either side, so a scripture event is seen among the events of its generation.
 
 The block marked **Years not given** holds Genesis 1–11 and Adam-ondi-Ahman. The Church chronology gives their order, not their years. All of them count as active while the selected year is inside the block.
 

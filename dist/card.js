@@ -18,7 +18,7 @@ const BASIS = {
 };
 // Hand-sourced events (world and Church history) and scripture events lead with their title, not a reference.
 const titleFirst = e => e.volume === 'history' || e.basis === 'church-history' || e.kind === 'event';
-const ALSO_COUNT = 4;
+const ALSO_COUNT = 8;
 const ALSO_MIN_NEAREST = 2; // nearest rows still shown when hand-picked links fill the list
 const ALSO_MAX_GAP = 150; // years between two events' ranges
 const VERSE_WORDS = 40;
@@ -26,9 +26,10 @@ const VERSE_WORDS = 40;
 export const eventDate = e => (e.start == null ? 'Years not given' : formatRange(e.start, e.end));
 
 // The nearest events of the other kind: history for scripture, scripture for history (DESIGN.md Q8).
-// Hand-picked related ids come first, then the nearest fill up to four, never fewer than two.
+// Hand-picked related ids come first, then the nearest fill up to eight, never fewer than two.
+// With `all`, every event within the gap is returned, for the "See all" list.
 // Order-only events have no years, so they get no nearest links (Q28).
-export function alsoAtThisTime(event, events, related = []) {
+export function alsoAtThisTime(event, events, related = [], { all = false } = {}) {
   const linked = [...new Set(related)].map(id => events.find(e => e.id === id)).filter(Boolean);
   if (event.start == null) return linked;
   const wantHistory = event.volume !== 'history';
@@ -40,7 +41,7 @@ export function alsoAtThisTime(event, events, related = []) {
     .map(e => ({ e, score: gap(e) + Math.abs(mid(e) - center) * 0.5 + (e.end - e.start) * 0.25 }))
     .sort((a, b) => a.score - b.score)
     .map(({ e }) => e)
-    .slice(0, Math.max(ALSO_MIN_NEAREST, ALSO_COUNT - linked.length));
+    .slice(0, all ? Infinity : Math.max(ALSO_MIN_NEAREST, ALSO_COUNT - linked.length));
   return [...linked, ...nearest];
 }
 
@@ -125,7 +126,13 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
       const previous = history.pop();
       if (previous?.type === 'event') { onPick?.(previous.event); showEvent(previous.event); }
       else if (previous?.type === 'route') showRoute(previous.event, previous.route.id, { push: false });
-      else if (previous) showList(previous.title, previous.events, { note: previous.note, push: false });
+      else if (previous) showList(previous.title, previous.events, { note: previous.note, push: false, keepOrder: previous.keepOrder });
+    });
+    content.querySelector('[data-also-all]')?.addEventListener('click', () => {
+      if (current?.type !== 'event') return;
+      const event = current.event, kind = event.volume === 'history' ? 'scripture' : 'history';
+      history.push(current);
+      showList(`Around ${eventDate(event)}`, current.alsoAll, { push: false, note: `${current.alsoAll.length} ${kind} events within ${ALSO_MAX_GAP} years of ${titleFirst(event) ? event.title : event.ref}. Nearest first.`, keepOrder: true });
     });
     for (const row of content.querySelectorAll('[data-event]')) {
       row.addEventListener('click', () => {
@@ -157,6 +164,8 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     // A history card lists the scripture events that link to it (built as linkedFrom).
     const related = d.related ?? d.linkedFrom ?? [];
     const also = alsoAtThisTime(event, data.events, related);
+    const alsoAll = alsoAtThisTime(event, data.events, related, { all: true });
+    current.alsoAll = alsoAll;
     const sources = (d.dateSourceIds ?? []).map(id => data.sources[id]).filter(Boolean);
     const dateLines = [
       d.dateNote, d.dateDetail, d.biblical,
@@ -196,7 +205,7 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
         ${names.length ? `<dt>People</dt><dd>${escapeHTML(names.join(', '))}</dd>` : ''}
         ${d.citations ? `<dt>In scripture</dt><dd>${escapeHTML(d.citations.join('; '))}</dd>` : ''}
       </dl>
-      ${also.length ? `<div class="card-also"><h3>Also at this time</h3><div class="event-rows">${also.map(e => row(e, related.includes(e.id))).join('')}</div>${d.relatedNote && also.some(e => related.includes(e.id)) ? `<p class="card-also-note">Linked: ${escapeHTML(d.relatedNote)}</p>` : ''}</div>` : ''}
+      ${also.length ? `<div class="card-also"><h3>Also at this time</h3><div class="event-rows">${also.map(e => row(e, related.includes(e.id))).join('')}</div>${d.relatedNote && also.some(e => related.includes(e.id)) ? `<p class="card-also-note">Linked: ${escapeHTML(d.relatedNote)}</p>` : ''}${alsoAll.length > also.length ? `<button class="card-also-all" data-also-all>See all ${alsoAll.length} ${isHistory ? 'scripture' : 'history'} events from these years</button>` : ''}</div>` : ''}
       ${sources.length ? `<div class="card-sources"><h3>${titleFirst(event) && event.kind !== 'event' ? 'Source' : 'Date sources'}</h3>${sources.map(s => `${s.quote ? `<blockquote class="source-quote">“${escapeHTML(s.quote.join(' … '))}”</blockquote>` : ''}<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a>`).join('')}</div>` : ''}`;
     content.scrollTop = 0;
     bind();
@@ -233,12 +242,12 @@ export function createCard({ panel, content, labelEl, closeButton, data, onClose
     onShow?.({ type: 'route', event, route });
   }
 
-  function showList(title, events, { note = '', push = true, label = 'EVENTS' } = {}) {
+  function showList(title, events, { note = '', push = true, label = 'EVENTS', keepOrder = false } = {}) {
     if (push && current?.type === 'event') history = [];
     open();
     labelEl.textContent = label;
-    current = { type: 'list', title, events, note };
-    const sorted = [...events].sort((a, b) => (a.start ?? -1e9) - (b.start ?? -1e9));
+    current = { type: 'list', title, events, note, keepOrder };
+    const sorted = keepOrder ? events : [...events].sort((a, b) => (a.start ?? -1e9) - (b.start ?? -1e9));
     content.innerHTML = `${backButton()}<h2 class="list-title">${escapeHTML(title)}</h2>
       <p class="list-note">${escapeHTML(note || `${events.length} ${events.length === 1 ? 'event' : 'events'}. Select one to read more.`)}</p>
       <div class="event-rows">${sorted.map(e => row(e)).join('')}</div>`;

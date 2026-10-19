@@ -3,7 +3,7 @@
 
 import { createGlobe } from './globe.js';
 import { createScrubber } from './scrubber.js';
-import { formatYear, formatRange, yearsPerU, yearToU, zoomView, WINDOW_SHARE } from './time-scale.js';
+import { formatYear, formatRange, yearsPerU, yearToU, zoomView, historyWindow, WINDOW_SHARE } from './time-scale.js';
 import { loadEvents, stripBands, isActive, eventStops, nextStop, previousStop } from './events.js';
 import { createPins, globeView } from './pins.js';
 import { createRouteLayer } from './route-layer.js';
@@ -16,8 +16,6 @@ import { createBomMap } from './bom-map.js';
 
 const $ = id => document.getElementById(id);
 const START_YEAR = -600;
-// Tier 2 history shows once the strip shows this many years or fewer (DESIGN.md Q5).
-const TIER_2_YEARS = 1500;
 // Jumping to an event zooms the strip until the 2% window spans at most this many years,
 // so the gold band stays visible on the strip.
 const JUMP_WINDOW_YEARS = 20;
@@ -100,7 +98,8 @@ async function start() {
     zoomIn: $('strip-zoom-in'), zoomOut: $('strip-zoom-out'), fit: $('strip-fit'),
     onChange({ year, window }) {
       $('overview-year').textContent = formatYear(year);
-      $('overview-window').textContent = `Showing events from ${formatRange(window.start, window.end)}`;
+      const hist = historyWindow(window, year);
+      $('overview-window').textContent = `Scripture from ${formatRange(window.start, window.end)} · History from ${formatRange(hist.start, hist.end)}`;
       refresh();
     },
   });
@@ -108,8 +107,9 @@ async function start() {
   // ---------- What is shown ----------
   const shown = () => data.events.filter(e => !hidden.has(e.volume));
   const isScripture = e => e.volume !== 'history';
-  const visibleYears = () => { const v = scrubber.view; return (v.u1 - v.u0) * yearsPerU(yearToU(scrubber.year)); };
-  const tierShown = e => isScripture(e) || e.tier === 1 || visibleYears() <= TIER_2_YEARS;
+  // Scripture is active inside the strip's gold window. History is active within a generation
+  // of the selected year, so the globe shows the world around a scripture event (DESIGN.md Q6).
+  const windowFor = (e, window, year) => (isScripture(e) ? window : historyWindow(window, year));
   const item = event => ({ event, placeKey: event.place, place: data.places[event.place] });
   // Every pinned event's paths show, such as Lehi's journey or the scattering of Israel. They are styled
   // by kind, as in the Wayfinder readers (volumes.js routeStyle), and a click opens a path card.
@@ -132,9 +132,9 @@ async function start() {
     if (!data) return;
     const year = scrubber.year, window = scrubber.window();
     const events = shown();
-    const active = events.filter(e => isActive(e, window, year, data.bands));
+    const active = events.filter(e => isActive(e, windowFor(e, window, year), year, data.bands));
     // A chapter told by an event has no pin of its own (DESIGN.md section 3).
-    const onGlobe = active.filter(e => e.map === 'globe' && !e.broad && !e.covered && tierShown(e));
+    const onGlobe = active.filter(e => e.map === 'globe' && !e.broad && !e.covered);
     const onMap = active.filter(e => e.map === 'bom' && !e.covered);
     // Only events in the window get pins (DESIGN.md Q6).
     pins?.setItems(onGlobe.map(item));
@@ -190,12 +190,14 @@ async function start() {
   // ---------- Selecting events ----------
   const bandYear = band => Math.round((band.start + band.end) / 2);
   function moveTo(event) {
-    // Zoom in so the window stays near the event. This also shows second-tier history.
+    // Zoom in so the window stays near the event.
     if (event.start != null) {
       const u = yearToU(event.start), most = JUMP_WINDOW_YEARS / WINDOW_SHARE;
       const years = (scrubber.view.u1 - scrubber.view.u0) * yearsPerU(u);
       if (years > most) scrubber.setView(zoomView(scrubber.view, most / years, u));
     }
+    // Navigation keeps the narrow window for every kind, so opening a history event from search
+    // or a list moves the scrubber to it even when the wider history window already shows its pin.
     const window = scrubber.window();
     if (isActive(event, window, scrubber.year, data.bands)) return;
     if (event.start == null) scrubber.setYear(bandYear(data.bands[event.band] ?? data.bands.primeval));
