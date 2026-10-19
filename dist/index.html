@@ -6,9 +6,9 @@
   <meta name="description" content="Explore the events of the scriptures beside world history on a globe with a timeline.">
   <title>Wayfinder Timeline</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23efcc88' stroke-width='2'/%3E%3Cellipse cx='16' cy='16' rx='5' ry='12' fill='none' stroke='%23efcc88'/%3E%3Cpath d='M4 16h24' stroke='%23efcc88'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
   <link rel="stylesheet" href="app.css?v=4">
-  <link rel="stylesheet" href="bom.css?v=4">
+  <link rel="stylesheet" href="bom.css?v=5">
   <script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script>
   <script type="module" src="app.js?v=8"></script>
 </head>
@@ -34,7 +34,7 @@
       <div class="globe-controls" aria-label="Globe controls">
         <button id="globe-zoom-in" aria-label="Zoom in on the globe">+</button>
         <button id="globe-zoom-out" aria-label="Zoom out from the globe">−</button>
-        <label class="globe-zoom-slider"><span aria-hidden="true">−</span><input id="globe-zoom" type="range" min="0" max="1000" step="1" aria-label="Globe zoom"><span aria-hidden="true">+</span></label>
+        <label class="zoom-slider"><span aria-hidden="true">−</span><input id="globe-zoom" type="range" min="0" max="1000" step="1" aria-label="Globe zoom"><span aria-hidden="true">+</span></label>
         <button id="globe-reset" aria-label="Reset the globe view">⟲</button>
       </div>
       <p id="status" class="status" role="status" hidden></p>

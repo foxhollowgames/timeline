@@ -40,16 +40,18 @@ main { height: 100dvh; min-height: 480px; position: relative; }
 .year-overview > .overview-count { color: var(--ink); }
 .year-overview > .overview-count:empty { display: none; }
 .year-overview > .overview-empty { color: var(--faint); font-size: 13px; }
-.globe-controls { position: absolute; right: 38px; bottom: 32px; display: flex; gap: 6px; z-index: 4; }
+.globe-controls { position: absolute; right: 38px; bottom: 32px; display: flex; flex-direction: column; align-items: center; gap: 6px; z-index: 4; }
 .globe-controls button { width: 43px; height: 43px; border-radius: 50%; background: var(--control); backdrop-filter: blur(16px); border-color: #c7e1ff22; font-size: 22px; line-height: 1; box-shadow: 0 5px 24px #0002; }
-.globe-controls #globe-zoom-in, .globe-controls #globe-zoom-out { display: none; }
-.globe-zoom-slider { display: flex; align-items: center; gap: 10px; height: 43px; padding: 0 16px; border-radius: 22px; background: var(--control); backdrop-filter: blur(16px); border: 1px solid #c7e1ff22; box-shadow: 0 5px 24px #0002; color: var(--muted); font-size: 18px; line-height: 1; }
-.globe-zoom-slider input { width: 140px; margin: 0; accent-color: var(--gold); cursor: pointer; }
-/* A narrow split globe has no room for the slider, so it falls back to the buttons. */
-.globe-stage { container-type: inline-size; }
-@container (max-width: 360px) {
-  .globe-controls #globe-zoom-in, .globe-controls #globe-zoom-out { display: block; }
-  .globe-zoom-slider { display: none; }
+/* On desktop a slider replaces the zoom buttons, on the globe and the Book of Mormon map. */
+.globe-controls #globe-zoom-in, .globe-controls #globe-zoom-out, .bom-map .leaflet-control-zoom { display: none; }
+.zoom-slider { display: flex; flex-direction: column-reverse; align-items: center; gap: 10px; width: 43px; padding: 14px 0; border-radius: 22px; background: var(--control); backdrop-filter: blur(16px); border: 1px solid #c7e1ff22; box-shadow: 0 5px 24px #0002; color: var(--muted); font-size: 18px; line-height: 1; }
+/* Vertical, with zoomed in at the top. */
+.zoom-slider input { writing-mode: vertical-lr; direction: rtl; width: 20px; height: 140px; margin: 0; accent-color: var(--gold); cursor: pointer; }
+/* A small split panel has no room for the slider, so it falls back to the buttons. */
+.globe-stage, .bom-stage { container-type: size; }
+@container (max-width: 360px) or (max-height: 330px) {
+  .globe-controls #globe-zoom-in, .globe-controls #globe-zoom-out, .bom-map .leaflet-control-zoom { display: block; }
+  .zoom-slider { display: none; }
 }
 .status { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); padding: 13px 18px; border-radius: 24px; background: #0a142de8; font-size: 14px; max-width: 80%; text-align: center; z-index: 7; margin: 0; }
 
@@ -112,8 +114,8 @@ main { height: 100dvh; min-height: 480px; position: relative; }
   .year-overview > p { font-size: 12px; margin-top: 2px; }
   .year-overview > .overview-empty { display: none; }
   .globe-controls { right: 16px; bottom: 16px; flex-direction: column; }
-  .globe-controls #globe-zoom-in, .globe-controls #globe-zoom-out { display: block; }
-  .globe-zoom-slider { display: none; }
+  .globe-controls #globe-zoom-in, .globe-controls #globe-zoom-out, .bom-map .leaflet-control-zoom { display: block; }
+  .zoom-slider { display: none; }
   .globe-controls button { width: 38px; height: 38px; font-size: 19px; }
   .timeline { padding: 12px 16px; }
   .timeline-heading { gap: 6px; }

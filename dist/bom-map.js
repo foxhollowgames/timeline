@@ -35,6 +35,21 @@ export async function createBomMap({ container }) {
   map.attributionControl.setPrefix(false);
   map.attributionControl.addAttribution(escapeHTML(shapes.credit));
   L.control.zoom({ position: 'bottomright' }).addTo(map);
+  // On desktop the CSS swaps the buttons above for this slider, as on the globe.
+  const ZoomSlider = L.Control.extend({
+    onAdd() {
+      const label = L.DomUtil.create('label', 'leaflet-control zoom-slider');
+      label.innerHTML = '<span aria-hidden="true">−</span><input type="range" aria-label="Book of Mormon map zoom"><span aria-hidden="true">+</span>';
+      const slider = label.querySelector('input');
+      Object.assign(slider, { min: map.getMinZoom(), max: map.getMaxZoom(), step: map.options.zoomSnap, value: map.getZoom() });
+      slider.addEventListener('input', () => map.setZoom(Number(slider.value)));
+      map.on('zoom zoomend', () => { slider.value = map.getZoom(); });
+      L.DomEvent.disableClickPropagation(label);
+      L.DomEvent.disableScrollPropagation(label);
+      return label;
+    },
+  });
+  new ZoomSlider({ position: 'bottomright' }).addTo(map);
   map.createPane('land').style.zIndex = 250;
   map.createPane('water').style.zIndex = 260;
   // Background paths sit below the selected routes, so a redraw never covers the selection.
