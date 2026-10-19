@@ -67,8 +67,29 @@ export async function createBomMap({ container }) {
   for (const label of shapes.labels) {
     L.marker(ll(label.at), { interactive: false, keyboard: false, icon: L.divIcon({ className: `bom-label bom-label-${label.kind ?? 'area'}`, html: `<span>${escapeHTML(label.text)}</span>`, iconSize: null }) }).addTo(map);
   }
+  // Cities of note: a dot for each, and a name wherever it does not overlap one already placed.
+  // Cities the text places come first, then Sorenson's inferences.
+  map.createPane('cities').style.zIndex = 400;
+  const rank = { known: 0, text: 0, inferred: 1 };
+  const cities = [...(shapes.cities ?? [])].sort((a, b) => (rank[a.conf] ?? 2) - (rank[b.conf] ?? 2)).map(city =>
+    L.marker(ll(city.at), { pane: 'cities', interactive: false, keyboard: false, icon: L.divIcon({ className: `bom-city bom-city-${city.conf}`, html: `<i></i><span>${escapeHTML(city.name)}</span>`, iconSize: null }) }).addTo(map));
+  function placeCityNames() {
+    // Sea and land names hold their place. City names fit around them.
+    const boxes = [...container.querySelectorAll('.bom-label span')].map(el => el.getBoundingClientRect()).filter(b => b.width);
+    for (const marker of cities) {
+      const name = marker.getElement()?.querySelector('span');
+      if (!name) continue;
+      name.hidden = false;
+      const box = name.getBoundingClientRect();
+      if (!box.width) continue;
+      if (boxes.some(b => box.left < b.right + 4 && box.right + 4 > b.left && box.top < b.bottom && box.bottom > b.top)) name.hidden = true;
+      else boxes.push(box);
+    }
+  }
+  map.on('zoomend resize', placeCityNames);
   const landBounds = L.latLngBounds(shapes.land.map(ll));
   map.fitBounds(landBounds, { padding: [16, 16] });
+  placeCityNames();
 
   let routeClick = null;
   const layers = { paths: L.layerGroup().addTo(map), selected: L.layerGroup().addTo(map) };
@@ -146,6 +167,6 @@ export async function createBomMap({ container }) {
         : L.latLngBounds(points.map(ll));
       map.flyToBounds(bounds, { padding: [48, 48], maxZoom: 1.5, duration: animate ? 0.8 : 0 });
     },
-    resize() { map.invalidateSize({ pan: false }); request(); },
+    resize() { map.invalidateSize({ pan: false }); placeCityNames(); request(); },
   };
 }
