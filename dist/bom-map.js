@@ -35,6 +35,8 @@ export async function createBomMap({ container }) {
   L.control.zoom({ position: 'bottomright' }).addTo(map);
   map.createPane('land').style.zIndex = 250;
   map.createPane('water').style.zIndex = 260;
+  // Background paths sit below the selected routes, so a redraw never covers the selection.
+  map.createPane('paths').style.zIndex = 410;
   map.createPane('routes').style.zIndex = 420;
 
   L.tileLayer(shapes.tiles.url, {
@@ -92,7 +94,7 @@ export async function createBomMap({ container }) {
       const group = layers[layer];
       group.clearLayers();
       for (const route of list) {
-        const style = { pane: 'routes', color: route.color ?? '#efcc88', weight: layer === 'selected' ? 2.4 : 1.8, opacity: route.opacity ?? 0.95, interactive: false };
+        const style = { pane: layer === 'selected' ? 'routes' : 'paths', color: route.color ?? '#efcc88', weight: layer === 'selected' ? 2.4 : 1.8, opacity: route.opacity ?? 0.95, interactive: false };
         L.polyline(route.points.map(ll), { ...style, dashArray: route.dashed ? '6 6' : null }).addTo(group);
         const head = arrowhead(route.points);
         if (head) L.polyline(head.map(ll), style).addTo(group);
