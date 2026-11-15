@@ -139,3 +139,7 @@ Data years use negative numbers for BCE, as the Bible volume does. The year 701 
 ## Credits
 
 Earth imagery is NASA's Blue Marble: Next Generation. The 3D graphics use three.js under the MIT license. The Book of Mormon relief and shapes come from Book of Mormon Wayfinder, after Sorenson's *Mormon's Map* (2000). The flat map uses Leaflet under the BSD 2-Clause license. Land outlines for the checks come from Natural Earth. See `dist/assets/CREDITS.txt`.
+
+## Optional analytics
+
+The consent-gated analytics source is in the hub repository at viewer/analytics.js. Run npm run sync-analytics there to update all copies. Keep the loader in each HTML page. Analytics choices lets visitors accept, decline, or withdraw. Only broad site sections are reported, not chapter or search state. See the hub README for privacy settings and verification instructions.
