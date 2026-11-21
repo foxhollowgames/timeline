@@ -76,16 +76,19 @@
       clearCookies();
       if (loaded) { location.reload(); return; }
     } else start();
-    panel.hidden = true; settings.setAttribute('aria-expanded', 'false');
-    settings.focus();
+    show(false, true);
   }
   const style = document.createElement('style');
   style.textContent = `
     #wf-analytics-settings,#wf-analytics-panel{font:14px/1.5 system-ui,sans-serif;color:#142b3b;background:#fff;border:1px solid #647580;border-radius:6px;box-sizing:border-box}
     #wf-analytics-settings{position:fixed;bottom:8px;left:8px;z-index:10000;padding:7px 10px;cursor:pointer;min-height:36px}
+    #wf-analytics-settings[hidden]{display:none}
+    #wf-analytics-menu-item{display:block;margin-top:12px}
     #wf-analytics-panel{position:fixed;left:12px;bottom:54px;width:min(440px,calc(100vw - 24px));max-height:calc(100dvh - 76px);overflow:auto;z-index:10001;padding:18px;box-shadow:0 4px 24px #0004}
     #wf-analytics-panel[hidden]{display:none}
-    #wf-analytics-panel h2{font:700 18px/1.3 system-ui,sans-serif;margin:0 0 8px;color:#142b3b}
+    #wf-analytics-panel h2{font:700 18px/1.3 system-ui,sans-serif;margin:0 0 8px;padding-right:40px;color:#142b3b}
+    #wf-analytics-panel #wf-analytics-close{position:absolute;top:8px;right:8px;margin:0;width:44px;min-height:44px;padding:0;font:400 24px/1 system-ui,sans-serif;background:transparent;border-color:transparent}
+    #wf-analytics-panel #wf-analytics-close:hover{border-color:#647580}
     #wf-analytics-panel p{margin:8px 0}
     #wf-analytics-panel a{color:#174c72;text-decoration:underline}
     #wf-analytics-panel button{font:600 14px/1.4 system-ui,sans-serif;min-height:44px;padding:9px 14px;background:#edf3f6;color:#142b3b;border:1px solid #647580;border-radius:4px;cursor:pointer;margin:8px 8px 0 0}
@@ -106,10 +109,38 @@
   const decline = document.createElement('button');
   decline.type = 'button'; decline.textContent = 'Decline analytics'; decline.addEventListener('click', () => save('declined'));
   panel.append(accept, decline);
-  panel.hidden = choice !== null; settings.setAttribute('aria-expanded', String(!panel.hidden));
-  settings.addEventListener('click', () => { panel.hidden = !panel.hidden; settings.setAttribute('aria-expanded', String(!panel.hidden)); if (!panel.hidden) accept.focus(); });
-  panel.addEventListener('keydown', event => { if (event.key === 'Escape') { panel.hidden = true; settings.setAttribute('aria-expanded', 'false'); settings.focus(); } });
+  // A visible way to close the panel without changing the saved choice.
+  const close = document.createElement('button');
+  close.id = 'wf-analytics-close'; close.type = 'button'; close.textContent = '×';
+  close.setAttribute('aria-label', 'Close analytics choices');
+  close.addEventListener('click', () => show(false, true));
+  panel.prepend(close);
+  // After a choice, the shared settings menu holds the control. Pages without that menu keep the floating button.
+  const menuPanel = document.querySelector ? document.querySelector('.settings-panel') : null;
+  let menuItem = null;
+  const menuButton = menuPanel && menuPanel.closest ? menuPanel.closest('.settings-menu')?.querySelector('.settings-button') : null;
+  if (menuPanel) {
+    menuItem = document.createElement('button');
+    menuItem.id = 'wf-analytics-menu-item';
+    menuItem.type = 'button';
+    menuItem.className = 'source-details-button';
+    menuItem.textContent = 'Analytics choices';
+    menuItem.setAttribute('aria-controls', 'wf-analytics-panel');
+    menuItem.addEventListener('click', () => show(true, true));
+    menuPanel.append(menuItem);
+  }
+  function show(open, moveFocus = false) {
+    panel.hidden = !open;
+    settings.hidden = choice !== null && menuItem !== null;
+    for (const trigger of [settings, menuItem]) if (trigger) trigger.setAttribute('aria-expanded', String(open));
+    if (!moveFocus) return;
+    if (open) accept.focus();
+    else (settings.hidden ? menuButton || menuItem : settings).focus();
+  }
+  settings.addEventListener('click', () => show(panel.hidden, true));
+  panel.addEventListener('keydown', event => { if (event.key === 'Escape') show(false, true); });
   document.body.append(settings, panel);
+  show(choice === null);
   window.addEventListener('storage', event => {
     if (event.key !== key && event.key !== null) return;
     choice = readChoice();
@@ -118,9 +149,9 @@
       clearCookies();
       if (loaded) location.reload();
     } else start();
-    panel.hidden = choice !== null; settings.setAttribute('aria-expanded', String(!panel.hidden));
+    show(choice === null);
   });
-  window.wayfinderAnalytics = Object.freeze({ openChoices() { panel.hidden = false; settings.setAttribute('aria-expanded', 'true'); accept.focus(); } });
+  window.wayfinderAnalytics = Object.freeze({ openChoices() { show(true, true); } });
   if (choice !== 'accepted') clearCookies();
   start();
 })();
