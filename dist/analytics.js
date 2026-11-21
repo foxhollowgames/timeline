@@ -86,7 +86,9 @@
     #wf-analytics-menu-item{display:block;margin-top:12px}
     #wf-analytics-panel{position:fixed;left:12px;bottom:54px;width:min(440px,calc(100vw - 24px));max-height:calc(100dvh - 76px);overflow:auto;z-index:10001;padding:18px;box-shadow:0 4px 24px #0004}
     #wf-analytics-panel[hidden]{display:none}
-    #wf-analytics-panel h2{font:700 18px/1.3 system-ui,sans-serif;margin:0 0 8px;color:#142b3b}
+    #wf-analytics-panel h2{font:700 18px/1.3 system-ui,sans-serif;margin:0 0 8px;padding-right:40px;color:#142b3b}
+    #wf-analytics-panel #wf-analytics-close{position:absolute;top:8px;right:8px;margin:0;width:44px;min-height:44px;padding:0;font:400 24px/1 system-ui,sans-serif;background:transparent;border-color:transparent}
+    #wf-analytics-panel #wf-analytics-close:hover{border-color:#647580}
     #wf-analytics-panel p{margin:8px 0}
     #wf-analytics-panel a{color:#174c72;text-decoration:underline}
     #wf-analytics-panel button{font:600 14px/1.4 system-ui,sans-serif;min-height:44px;padding:9px 14px;background:#edf3f6;color:#142b3b;border:1px solid #647580;border-radius:4px;cursor:pointer;margin:8px 8px 0 0}
@@ -107,6 +109,12 @@
   const decline = document.createElement('button');
   decline.type = 'button'; decline.textContent = 'Decline analytics'; decline.addEventListener('click', () => save('declined'));
   panel.append(accept, decline);
+  // A visible way to close the panel without changing the saved choice.
+  const close = document.createElement('button');
+  close.id = 'wf-analytics-close'; close.type = 'button'; close.textContent = '×';
+  close.setAttribute('aria-label', 'Close analytics choices');
+  close.addEventListener('click', () => show(false, true));
+  panel.prepend(close);
   // After a choice, the shared settings menu holds the control. Pages without that menu keep the floating button.
   const menuPanel = document.querySelector ? document.querySelector('.settings-panel') : null;
   let menuItem = null;
